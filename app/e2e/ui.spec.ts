@@ -4,7 +4,7 @@ import {resolve} from 'node:path';
 test('Windows: template, MR-independent completion, HTML text, stock/budget, custom node and file recovery',async({page})=>{
  await page.goto('/');await page.getByRole('button',{name:'使用 MR12 模板创建档案'}).click();await expect(page.getByRole('heading',{name:'你的七条养成路线'})).toBeVisible();
  await mkdir('../docs/evidence',{recursive:true});await page.screenshot({path:'../docs/evidence/M0_Windows_Tree.png',fullPage:true});
- await page.getByRole('button',{name:'节点 MR14 · 经验扩容'}).click();await page.getByRole('button',{name:'标记完成',exact:true}).click();await expect(page.getByTestId('mr-value')).toHaveText('12');
+ await page.getByRole('button',{name:'节点 MR14 · 经验扩容'}).click();await page.getByLabel('目标状态',{exact:true}).selectOption('progress');await expect(page.getByLabel('目标状态',{exact:true})).toHaveValue('progress');await page.getByRole('button',{name:'标记完成',exact:true}).click();await expect(page.getByTestId('mr-value')).toHaveText('12');
  const notes=page.getByLabel('个人笔记');await notes.fill('中文<script>window.__xss=1</script>');await notes.blur();await expect(page.getByRole('status')).toContainText('已保存');expect(await page.evaluate(()=>Reflect.get(window,'__xss'))).toBeUndefined();
  await page.getByRole('button',{name:'关闭节点详情'}).click();await page.getByRole('button',{name:'档案与物资',exact:true}).click();await page.getByLabel('当前段位').fill('13');await page.getByRole('button',{name:'保存账号档案'}).click();await expect(page.getByTestId('mr-value')).toHaveText('13');
  await page.getByLabel('星币（Credits）库存').fill('0');await page.getByRole('button',{name:'保存库存'}).click();await expect(page.getByRole('status')).toContainText('已保存');

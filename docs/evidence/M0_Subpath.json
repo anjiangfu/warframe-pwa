@@ -1,0 +1,7 @@
+{
+  "base": "/tenno/",
+  "scope": "/tenno/",
+  "start_url": "/tenno/#tree",
+  "offlineDeepLinkReopen": true,
+  "profilePreserved": true
+}

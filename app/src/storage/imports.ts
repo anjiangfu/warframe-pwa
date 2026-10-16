@@ -36,14 +36,14 @@ export function validateProfile(value:unknown):asserts value is ProfileDocument 
 export function bytesToBase64(bytes:Uint8Array):string {let result='';for(let i=0;i<bytes.length;i+=16384)result+=String.fromCharCode(...bytes.subarray(i,i+16384));return btoa(result);}
 export function originalBytes(original:Original):Uint8Array {return Uint8Array.from(atob(original.base64),c=>c.charCodeAt(0));}
 export async function parseImport(bytes:Uint8Array,name:string,provider:DataProvider):Promise<ImportPreview>{
- if(bytes.length>2*1024*1024)fail('存档文件过大（上限2 MiB）');
+ if(bytes.length>8*1024*1024)fail('备份文件过大（上限8 MiB）');
  let raw:unknown;try{raw=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(bytes));}catch{fail('JSON损坏或文字编码无效');}
  inspect(raw);const obj=record(raw,'存档');const c=provider.getCatalog();
  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new Uint8Array(bytes)))).map(x=>x.toString(16).padStart(2,'0')).join('');
  const original={name,hash,base64:bytesToBase64(bytes)};let profile:ProfileDocument;let format:'legacy'|'backup';const warnings:string[]=[];
  if(obj.schemaVersion===SCHEMA_VERSION){format='backup';if(typeof obj.catalogVersion!=='string')fail('缺少目录版本');validateProfile(obj.profile);profile=structuredClone(obj.profile);if(obj.catalogVersion!==c.catalogVersion)warnings.push('备份目录版本不同；未匹配的状态将保留，不会删除。');}
  else if(obj.version===1){
-  format='legacy';if(typeof obj.rank!=='number'||!Number.isFinite(obj.rank)||obj.rank<0)fail('旧存档段位无效');const statuses=record(obj.statuses,'旧状态'),stock=record(obj.stock,'旧库存');
+  format='legacy';if(bytes.length>2*1024*1024)fail('旧存档文件过大（上限2 MiB）');if(typeof obj.rank!=='number'||!Number.isFinite(obj.rank)||obj.rank<0)fail('旧存档段位无效');const statuses=record(obj.statuses,'旧状态'),stock=record(obj.stock,'旧库存');
   profile=newProfile(c,'import','导入的行动档案',false);profile.masteryRank=obj.rank;
   const known=new Set(c.nodes.map(n=>n.id));for(const [id,v]of Object.entries(statuses)){if(!['todo','progress','done'].includes(String(v)))fail('旧存档状态无效');profile.statuses[id]=v as Status;if(!known.has(id))profile.legacyArchive['status:'+id]=v;}
   for(const [id,v]of Object.entries(record(obj.notes??{},'旧笔记'))){if(typeof v!=='string')fail('旧笔记无效');profile.notes[id]=v;if(!known.has(id))profile.legacyArchive['note:'+id]=v;}
@@ -54,6 +54,7 @@ export async function parseImport(bytes:Uint8Array,name:string,provider:DataProv
   const fields=new Set(['version','rank','statuses','steps','notes','stock','budget','events']);for(const [k,v]of Object.entries(obj))if(!fields.has(k))profile.legacyArchive[k]=v;
   profile.originals=[original];validateProfile(profile);
  }else fail('不是兼容存档；seed目录不能代替个人备份，或版本过新');
+ for(const saved of profile.originals){let original:Uint8Array;try{original=originalBytes(saved);}catch{fail('归档原件编码损坏');}const actual=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new Uint8Array(original)))).map(x=>x.toString(16).padStart(2,'0')).join('');if(actual!==saved.hash)fail('归档原件hash不匹配');}
  const unknown=Object.keys(profile.legacyArchive).length;if(unknown)warnings.push(`${unknown}项未知字段或旧引用已归档保留`);
  return {hash,format,profile,original,warnings,counts:{nodes:Object.keys(profile.statuses).length,steps:Object.values(profile.steps).reduce((s,m)=>s+Object.keys(m).length,0),notes:Object.keys(profile.notes).length,stock:Object.keys(profile.stock).length,budget:Object.keys(profile.budget).length,events:profile.events.length,unknown}};
 }
