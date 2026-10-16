@@ -1,0 +1,874 @@
+{
+  "catalogVersion": "2026.10.16.1",
+  "source": {
+    "kind": "user",
+    "verification": "unverified",
+    "reference": "user-supplied original tech tree",
+    "checkedAt": "2026-10-16"
+  },
+  "lanes": [
+    {
+      "id": "weapon",
+      "name": "武器火力",
+      "color": "#65e2ff",
+      "y": 170,
+      "icon": "sword"
+    },
+    {
+      "id": "frame",
+      "name": "战甲战术",
+      "color": "#c2a0ff",
+      "y": 420,
+      "icon": "frame"
+    },
+    {
+      "id": "rank",
+      "name": "段位跃升",
+      "color": "#ffcf8b",
+      "y": 670,
+      "icon": "rank"
+    },
+    {
+      "id": "system",
+      "name": "舰船系统",
+      "color": "#ff91c8",
+      "y": 920,
+      "icon": "gear"
+    },
+    {
+      "id": "endgame",
+      "name": "高难征途",
+      "color": "#6fe6c4",
+      "y": 1170,
+      "icon": "planet"
+    },
+    {
+      "id": "reputation",
+      "name": "集团声望",
+      "color": "#ffe1a2",
+      "y": 1420,
+      "icon": "radar"
+    },
+    {
+      "id": "companion",
+      "name": "同伴守护",
+      "color": "#88b5ff",
+      "y": 1670,
+      "icon": "robot"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "origin",
+      "goalId": "origin",
+      "lane": "origin",
+      "title": "天诺行动档案",
+      "sub": "你的 MR12 远征起点",
+      "description": "记录已确认的账号进度，作为后续科技树的出发点。",
+      "priority": "S",
+      "x": 70,
+      "y": 680,
+      "recommended": [],
+      "steps": [
+        {
+          "id": "legacy:origin:0",
+          "text": "确认当前 MR12 与主要战甲武器"
+        },
+        {
+          "id": "legacy:origin:1",
+          "text": "浏览七条养成路线"
+        },
+        {
+          "id": "legacy:origin:2",
+          "text": "挑选本周的第一项行动"
+        }
+      ]
+    },
+    {
+      "id": "torid",
+      "goalId": "torid",
+      "lane": "weapon",
+      "title": "托里德 · 灵化核心",
+      "sub": "六福马 / 已有百级清场能力",
+      "description": "现有主力武器已经可以处理许多 100 级以上敌人，没必要推倒重练；优先完善真正的短板。",
+      "priority": "S",
+      "x": 420,
+      "y": 170,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:torid:0",
+          "text": "确认现有六福马槽位"
+        },
+        {
+          "id": "legacy:torid:1",
+          "text": "保存当前托里德配卡"
+        },
+        {
+          "id": "legacy:torid:2",
+          "text": "记录护盾与卓越者的实战问题"
+        }
+      ]
+    },
+    {
+      "id": "toridmax",
+      "goalId": "toridmax",
+      "lane": "weapon",
+      "title": "主力 MOD 满级",
+      "sub": "先补星币，提升现有武器",
+      "description": "已经接近 MOD 全满级，继续强化现有主武器的收益通常比另起炉灶更直接。",
+      "priority": "S",
+      "x": 755,
+      "y": 170,
+      "recommended": [
+        "torid"
+      ],
+      "steps": [
+        {
+          "id": "legacy:toridmax:0",
+          "text": "列出尚未满级的关键 MOD"
+        },
+        {
+          "id": "legacy:toridmax:1",
+          "text": "优先获取所缺星币"
+        },
+        {
+          "id": "legacy:toridmax:2",
+          "text": "升级关键 MOD 并记录对比伤害"
+        }
+      ]
+    },
+    {
+      "id": "shieldfix",
+      "goalId": "shieldfix",
+      "lane": "weapon",
+      "title": "护盾与卓越者对策",
+      "sub": "补足重甲、护盾和单体体验",
+      "description": "现阶段感觉护盾多的单位和卓越者费时，值得准备单体爆发、克制配置并优化实测流程。",
+      "priority": "A",
+      "x": 1090,
+      "y": 170,
+      "recommended": [
+        "toridmax"
+      ],
+      "steps": [
+        {
+          "id": "legacy:shieldfix:0",
+          "text": "在相近等级下复测护盾敌人"
+        },
+        {
+          "id": "legacy:shieldfix:1",
+          "text": "核对伤害属性与敌人抗性"
+        },
+        {
+          "id": "legacy:shieldfix:2",
+          "text": "尝试武器或技能组合并保存方案"
+        }
+      ]
+    },
+    {
+      "id": "arsenal",
+      "goalId": "arsenal",
+      "lane": "weapon",
+      "title": "终局武器组合",
+      "sub": "托里德＋伯斯顿 P＋补位武器",
+      "description": "已有伯斯顿 Prime 灵化，可与托里德互补；不必强求两把武器拥有相同的灵化触发效率。",
+      "priority": "A",
+      "x": 1425,
+      "y": 170,
+      "recommended": [
+        "shieldfix"
+      ],
+      "steps": [
+        {
+          "id": "legacy:arsenal:0",
+          "text": "对比伯斯顿 Prime 与托里德定位"
+        },
+        {
+          "id": "legacy:arsenal:1",
+          "text": "形成清杂与单体两种配置"
+        },
+        {
+          "id": "legacy:arsenal:2",
+          "text": "为钢铁路线选一套稳定装备组"
+        }
+      ]
+    },
+    {
+      "id": "valkyr",
+      "goalId": "valkyr",
+      "lane": "frame",
+      "title": "瓦尔基里 · 主力",
+      "sub": "当前常用战甲",
+      "description": "围绕自己喜欢且常用的瓦尔基里建立一套稳定配置，再逐步补齐功能性战甲。",
+      "priority": "S",
+      "x": 420,
+      "y": 420,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:valkyr:0",
+          "text": "保存当前瓦尔基里 MOD 配卡"
+        },
+        {
+          "id": "legacy:valkyr:1",
+          "text": "明确近战输出与生存的主要短板"
+        },
+        {
+          "id": "legacy:valkyr:2",
+          "text": "选择一项优先改进"
+        }
+      ]
+    },
+    {
+      "id": "valkyrbuild",
+      "goalId": "valkyrbuild",
+      "lane": "frame",
+      "title": "瓦喵配置深化",
+      "sub": "能量循环 / 生存 / 近战",
+      "description": "提高战甲在长局和钢铁模式中的稳定性，比频繁换用未成型战甲更有价值。",
+      "priority": "S",
+      "x": 755,
+      "y": 420,
+      "recommended": [
+        "valkyr"
+      ],
+      "steps": [
+        {
+          "id": "legacy:valkyrbuild:0",
+          "text": "检查能量维持和技能覆盖"
+        },
+        {
+          "id": "legacy:valkyrbuild:1",
+          "text": "根据目标玩法测试近战与生存能力"
+        },
+        {
+          "id": "legacy:valkyrbuild:2",
+          "text": "保存并命名两个不同任务配置"
+        }
+      ]
+    },
+    {
+      "id": "utility",
+      "goalId": "utility",
+      "lane": "frame",
+      "title": "功能战甲工具箱",
+      "sub": "速刷、生存、控场与团队",
+      "description": "瓦尔基里擅长自己熟悉的场景，但资源速刷、任务防守或特殊模式通常值得准备功能性战甲。",
+      "priority": "A",
+      "x": 1090,
+      "y": 420,
+      "recommended": [
+        "valkyrbuild"
+      ],
+      "steps": [
+        {
+          "id": "legacy:utility:0",
+          "text": "选一套资源/任务效率战甲"
+        },
+        {
+          "id": "legacy:utility:1",
+          "text": "准备一套防守或控场战甲"
+        },
+        {
+          "id": "legacy:utility:2",
+          "text": "为两套战甲保存通用配置"
+        }
+      ]
+    },
+    {
+      "id": "framefinal",
+      "goalId": "framefinal",
+      "lane": "frame",
+      "title": "多模式战甲矩阵",
+      "sub": "一键切换实用配置",
+      "description": "将战甲作为不同任务的工具，而不是只用一套全场景硬打。",
+      "priority": "B",
+      "x": 1425,
+      "y": 420,
+      "recommended": [
+        "utility"
+      ],
+      "steps": [
+        {
+          "id": "legacy:framefinal:0",
+          "text": "记录常打的四类任务"
+        },
+        {
+          "id": "legacy:framefinal:1",
+          "text": "为每类任务指定首选战甲"
+        },
+        {
+          "id": "legacy:framefinal:2",
+          "text": "整理配卡与配置切换清单"
+        }
+      ]
+    },
+    {
+      "id": "mr12",
+      "goalId": "mr12",
+      "lane": "rank",
+      "title": "MR12 · 当前节点",
+      "sub": "已达到的账号段位",
+      "description": "MR12 是当前的实际起点。段位提升主要依赖未获得的装备精通经验等，并不直接提升单把武器伤害。",
+      "priority": "S",
+      "x": 420,
+      "y": 670,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:mr12:0",
+          "text": "清点未练满的装备"
+        },
+        {
+          "id": "legacy:mr12:1",
+          "text": "预留成型装备不要随意出售"
+        },
+        {
+          "id": "legacy:mr12:2",
+          "text": "规划接下来练级池"
+        }
+      ]
+    },
+    {
+      "id": "mr14",
+      "goalId": "mr14",
+      "lane": "rank",
+      "title": "MR14 · 经验扩容",
+      "sub": "连续升级不同新装备",
+      "description": "优先选择容易获取、成本较低的新装备获取精通经验，边推进体系边升段。",
+      "priority": "A",
+      "x": 755,
+      "y": 670,
+      "recommended": [
+        "mr12"
+      ],
+      "steps": [
+        {
+          "id": "legacy:mr14:0",
+          "text": "查看当前精通经验条"
+        },
+        {
+          "id": "legacy:mr14:1",
+          "text": "收集一批未获得精通的武器蓝图"
+        },
+        {
+          "id": "legacy:mr14:2",
+          "text": "分批练满并参加段位考试"
+        }
+      ]
+    },
+    {
+      "id": "mr16",
+      "goalId": "mr16",
+      "lane": "rank",
+      "title": "MR16 · 核心里程碑",
+      "sub": "更多装备门槛覆盖",
+      "description": "将 MR16 作为中期里程碑，逐步减少常见装备与交易方面的段位限制；具体要求以游戏内为准。",
+      "priority": "A",
+      "x": 1090,
+      "y": 670,
+      "recommended": [
+        "mr14"
+      ],
+      "steps": [
+        {
+          "id": "legacy:mr16:0",
+          "text": "确认距离 MR16 还差多少经验"
+        },
+        {
+          "id": "legacy:mr16:1",
+          "text": "优先升级可顺便用于实际战斗的装备"
+        },
+        {
+          "id": "legacy:mr16:2",
+          "text": "通过 MR15 与 MR16 段位考试"
+        }
+      ]
+    },
+    {
+      "id": "mr18",
+      "goalId": "mr18",
+      "lane": "rank",
+      "title": "MR18 · 阶段目标",
+      "sub": "完成本轮段位解锁计划",
+      "description": "MR18 是这次路线的阶段目标，而不是游戏全部毕业；之后可以继续追求专精与其他玩法。",
+      "priority": "B",
+      "x": 1425,
+      "y": 670,
+      "recommended": [
+        "mr16"
+      ],
+      "steps": [
+        {
+          "id": "legacy:mr18:0",
+          "text": "规划 MR17、MR18 经验来源"
+        },
+        {
+          "id": "legacy:mr18:1",
+          "text": "完成两次段位考试"
+        },
+        {
+          "id": "legacy:mr18:2",
+          "text": "回顾这段路上尚未完成的其他分支"
+        }
+      ]
+    },
+    {
+      "id": "blueprint",
+      "goalId": "blueprint",
+      "lane": "system",
+      "title": "大嘴（Helminth）蓝图在手",
+      "sub": "已获得，但尚未安装",
+      "description": "你此前表示已有大嘴蓝图，下一步重点是材料准备与安装，而不是重复买蓝图。Helminth 通常需要 MR8 和英择谛等级3购买蓝图。",
+      "priority": "S",
+      "x": 420,
+      "y": 920,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:blueprint:0",
+          "text": "确认背包中的模块蓝图"
+        },
+        {
+          "id": "legacy:blueprint:1",
+          "text": "检查制造所需材料"
+        },
+        {
+          "id": "legacy:blueprint:2",
+          "text": "记录尚缺的资源"
+        }
+      ]
+    },
+    {
+      "id": "helminth",
+      "goalId": "helminth",
+      "lane": "system",
+      "title": "解锁大嘴系统",
+      "sub": "补材料 · 制作 · 安装",
+      "description": "解锁 Helminth 后可以吞噬符合条件的普通战甲来获得可移植技能，这是战甲配置系统的一条重要分支。",
+      "priority": "S",
+      "x": 755,
+      "y": 920,
+      "recommended": [
+        "blueprint"
+      ],
+      "steps": [
+        {
+          "id": "legacy:helminth:0",
+          "text": "查看蓝图的实际制作材料"
+        },
+        {
+          "id": "legacy:helminth:1",
+          "text": "获取短缺材料并在铸造厂制作"
+        },
+        {
+          "id": "legacy:helminth:2",
+          "text": "安装模块并首次进入 Helminth 系统"
+        }
+      ]
+    },
+    {
+      "id": "subsume",
+      "goalId": "subsume",
+      "lane": "system",
+      "title": "移植与配卡联动",
+      "sub": "把辅助能力加入实际配置",
+      "description": "优先针对真正遇到的问题选择移植技能，不要只追逐抽象的“毕业”搭配。",
+      "priority": "A",
+      "x": 1090,
+      "y": 920,
+      "recommended": [
+        "helminth"
+      ],
+      "steps": [
+        {
+          "id": "legacy:subsume:0",
+          "text": "筛选可吞噬的备用普通战甲"
+        },
+        {
+          "id": "legacy:subsume:1",
+          "text": "选择一项明确改善体验的技能"
+        },
+        {
+          "id": "legacy:subsume:2",
+          "text": "测试移植后的实际配置"
+        }
+      ]
+    },
+    {
+      "id": "systemsfinal",
+      "goalId": "systemsfinal",
+      "lane": "system",
+      "title": "系统整合与战甲强化",
+      "sub": "技能 / 赋能 / 碎片协同",
+      "description": "在高难活动可稳定完成后再优化碎片、赋能和 Helminth 搭配，避免将大量资源投入尚未验证的组合。",
+      "priority": "B",
+      "x": 1425,
+      "y": 920,
+      "recommended": [
+        "subsume",
+        "archon"
+      ],
+      "steps": [
+        {
+          "id": "legacy:systemsfinal:0",
+          "text": "整理战甲技能配置"
+        },
+        {
+          "id": "legacy:systemsfinal:1",
+          "text": "核查可用赋能与执刑官源力石"
+        },
+        {
+          "id": "legacy:systemsfinal:2",
+          "text": "只对常用战甲投入高价值资源"
+        }
+      ]
+    },
+    {
+      "id": "steel",
+      "goalId": "steel",
+      "lane": "endgame",
+      "title": "钢铁之路已开启",
+      "sub": "从可打通到稳定高效",
+      "description": "已解锁钢铁之路，但难打的节点不需要硬啃；先补好主力配置和关键系统。",
+      "priority": "S",
+      "x": 420,
+      "y": 1170,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:steel:0",
+          "text": "确认钢铁之路可进入"
+        },
+        {
+          "id": "legacy:steel:1",
+          "text": "挑选难度适中的测试任务"
+        },
+        {
+          "id": "legacy:steel:2",
+          "text": "记录生存和伤害的短板"
+        }
+      ]
+    },
+    {
+      "id": "galvanized",
+      "goalId": "galvanized",
+      "lane": "endgame",
+      "title": "关键 MOD 与赋能",
+      "sub": "仲裁 / 钢铁积累强化",
+      "description": "强化 MOD、解锁适用赋能和完善容量能够显著提高钢铁之路的实用体验。实际获取方式以游戏内对应活动为准。",
+      "priority": "A",
+      "x": 755,
+      "y": 1170,
+      "recommended": [
+        "steel"
+      ],
+      "steps": [
+        {
+          "id": "legacy:galvanized:0",
+          "text": "检查尚缺的重要强化 MOD"
+        },
+        {
+          "id": "legacy:galvanized:1",
+          "text": "安排仲裁或其他对应奖励活动"
+        },
+        {
+          "id": "legacy:galvanized:2",
+          "text": "为主武器安装并升级适用赋能"
+        }
+      ]
+    },
+    {
+      "id": "archon",
+      "goalId": "archon",
+      "lane": "endgame",
+      "title": "执刑官猎杀实战",
+      "sub": "从第一次打通到稳定周常",
+      "description": "拥有稳定装备之后可以练习执刑官猎杀的任务流程、阶段机制和输出窗口。",
+      "priority": "A",
+      "x": 1090,
+      "y": 1170,
+      "recommended": [
+        "galvanized"
+      ],
+      "steps": [
+        {
+          "id": "legacy:archon:0",
+          "text": "确认任务入口与所需前置任务"
+        },
+        {
+          "id": "legacy:archon:1",
+          "text": "先用公开队伍熟悉首轮流程"
+        },
+        {
+          "id": "legacy:archon:2",
+          "text": "总结最容易失误的环节和对应打法"
+        }
+      ]
+    },
+    {
+      "id": "weekly",
+      "goalId": "weekly",
+      "lane": "endgame",
+      "title": "高难周常循环",
+      "sub": "钢铁 / 执刑官 / 其他终局活动",
+      "description": "当主力装备成型后，按回报和兴趣安排高难周常，避免刷取变成无方向的重复劳动。",
+      "priority": "B",
+      "x": 1425,
+      "y": 1170,
+      "recommended": [
+        "archon",
+        "systemsfinal"
+      ],
+      "steps": [
+        {
+          "id": "legacy:weekly:0",
+          "text": "创建自己真正愿意做的周常列表"
+        },
+        {
+          "id": "legacy:weekly:1",
+          "text": "按资源缺口安排挑战顺序"
+        },
+        {
+          "id": "legacy:weekly:2",
+          "text": "复盘每周收益与尚缺装备"
+        }
+      ]
+    },
+    {
+      "id": "repstart",
+      "goalId": "repstart",
+      "lane": "reputation",
+      "title": "声望系统摸底",
+      "sub": "英择谛 / 平原集团 / 中枢",
+      "description": "先核对每个主要集团的当前等级、每日声望上限与真正需要兑换的奖励，不必一口气刷满全部集团。",
+      "priority": "A",
+      "x": 420,
+      "y": 1420,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:repstart:0",
+          "text": "记录主要开放世界与中继站集团声望"
+        },
+        {
+          "id": "legacy:repstart:1",
+          "text": "标出最想要的关键奖励"
+        },
+        {
+          "id": "legacy:repstart:2",
+          "text": "确定一组每日任务的优先顺序"
+        }
+      ]
+    },
+    {
+      "id": "entrati",
+      "goalId": "entrati",
+      "lane": "reputation",
+      "title": "开放世界定点提升",
+      "sub": "优先刷当前真正缺的集团",
+      "description": "大嘴材料、必要模块与角色养成可能涉及不同集团；建议按目标奖励倒推升级顺序，别把时间都消耗在无用声望上。",
+      "priority": "A",
+      "x": 755,
+      "y": 1420,
+      "recommended": [
+        "repstart"
+      ],
+      "steps": [
+        {
+          "id": "legacy:entrati:0",
+          "text": "核对英择谛当前等级和大嘴材料"
+        },
+        {
+          "id": "legacy:entrati:1",
+          "text": "选择声望效率较高的任务类型"
+        },
+        {
+          "id": "legacy:entrati:2",
+          "text": "按需求推进扎里曼或相关集团奖励"
+        }
+      ]
+    },
+    {
+      "id": "repgear",
+      "goalId": "repgear",
+      "lane": "reputation",
+      "title": "必需奖励兑换",
+      "sub": "MOD / 模块 / 赋能按需选取",
+      "description": "通过明确的奖励清单决定刷什么，不必为了升等级而升等级；材料与兑换价格以游戏内为准。",
+      "priority": "B",
+      "x": 1090,
+      "y": 1420,
+      "recommended": [
+        "entrati"
+      ],
+      "steps": [
+        {
+          "id": "legacy:repgear:0",
+          "text": "列出立即影响战力的奖励"
+        },
+        {
+          "id": "legacy:repgear:1",
+          "text": "先兑换主流实用部件或 MOD"
+        },
+        {
+          "id": "legacy:repgear:2",
+          "text": "记录尚需的勋章与声望"
+        }
+      ]
+    },
+    {
+      "id": "repfinal",
+      "goalId": "repfinal",
+      "lane": "reputation",
+      "title": "集团日常自动化",
+      "sub": "形成轻量、稳定的每日路线",
+      "description": "将声望任务压缩成有价值的轻量循环，剩余时间留给喜欢的玩法。",
+      "priority": "B",
+      "x": 1425,
+      "y": 1420,
+      "recommended": [
+        "repgear"
+      ],
+      "steps": [
+        {
+          "id": "legacy:repfinal:0",
+          "text": "挑选 2–3 个值得持续推进的集团"
+        },
+        {
+          "id": "legacy:repfinal:1",
+          "text": "为日常任务设定合理时间上限"
+        },
+        {
+          "id": "legacy:repfinal:2",
+          "text": "每周复查兑换清单"
+        }
+      ]
+    },
+    {
+      "id": "compstart",
+      "goalId": "compstart",
+      "lane": "companion",
+      "title": "同伴现状盘点",
+      "sub": "先确定当前同伴的实际作用",
+      "description": "伙伴不仅是附加火力，还影响生存、拾取、状态辅助等体验；先清点已有类型和关键 MOD。",
+      "priority": "A",
+      "x": 420,
+      "y": 1670,
+      "recommended": [
+        "origin"
+      ],
+      "steps": [
+        {
+          "id": "legacy:compstart:0",
+          "text": "查看已有守护、宠物与 MOD"
+        },
+        {
+          "id": "legacy:compstart:1",
+          "text": "确定当前最常缺少的辅助能力"
+        },
+        {
+          "id": "legacy:compstart:2",
+          "text": "挑选一名值得优先培养的同伴"
+        }
+      ]
+    },
+    {
+      "id": "bondmods",
+      "goalId": "bondmods",
+      "lane": "companion",
+      "title": "联结 MOD 与实用配置",
+      "sub": "强化同伴辅助与稳定性",
+      "description": "围绕合适的联结 MOD 和基础功能构建同伴，帮助战甲体系而不是抢占大量资源。",
+      "priority": "A",
+      "x": 755,
+      "y": 1670,
+      "recommended": [
+        "compstart"
+      ],
+      "steps": [
+        {
+          "id": "legacy:bondmods:0",
+          "text": "检查已有联结 MOD 与来源"
+        },
+        {
+          "id": "legacy:bondmods:1",
+          "text": "组建生存、拾取或状态辅助配置"
+        },
+        {
+          "id": "legacy:bondmods:2",
+          "text": "在实际任务中验证表现"
+        }
+      ]
+    },
+    {
+      "id": "compbuild",
+      "goalId": "compbuild",
+      "lane": "companion",
+      "title": "守护与宠物分工",
+      "sub": "资源、日常、困难任务分别匹配",
+      "description": "按常玩模式而不是单一榜单决定同伴配置，避免反复改动已经稳定的装备。",
+      "priority": "B",
+      "x": 1090,
+      "y": 1670,
+      "recommended": [
+        "bondmods"
+      ],
+      "steps": [
+        {
+          "id": "legacy:compbuild:0",
+          "text": "设定一套日常刷取同伴方案"
+        },
+        {
+          "id": "legacy:compbuild:1",
+          "text": "设定一套高难生存辅助方案"
+        },
+        {
+          "id": "legacy:compbuild:2",
+          "text": "保存两种配置供快速切换"
+        }
+      ]
+    },
+    {
+      "id": "compfinal",
+      "goalId": "compfinal",
+      "lane": "companion",
+      "title": "同伴毕业工具箱",
+      "sub": "辅助体系与战甲武器协同",
+      "description": "将同伴的实际增益融入战甲与武器组合，形成稳定、适合你常玩模式的终局工具箱。",
+      "priority": "B",
+      "x": 1425,
+      "y": 1670,
+      "recommended": [
+        "compbuild"
+      ],
+      "steps": [
+        {
+          "id": "legacy:compfinal:0",
+          "text": "测试同伴与瓦尔基里的配合"
+        },
+        {
+          "id": "legacy:compfinal:1",
+          "text": "评估与远程主武器的辅助效果"
+        },
+        {
+          "id": "legacy:compfinal:2",
+          "text": "固定两套长期使用的方案"
+        }
+      ]
+    }
+  ]
+}
