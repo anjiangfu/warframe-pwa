@@ -1,0 +1,22 @@
+{
+  "base": "08fda3880f0cdd796f3b1c9e3d84032083aa0091",
+  "files": {
+    "AGENTS.md": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a",
+    "README.md": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09",
+    "data/tech-tree-seed.json": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2",
+    "docs/Budget_and_Workflow.md": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de",
+    "docs/Code_Review_Tech_Tree.md": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6",
+    "docs/M0_Implementation_Plan.md": "6ece456cb623ac833883b3cbfd259972d8bf893d5943bf9ad849a9149e5330e4",
+    "docs/Original_PRD_v1.md": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16",
+    "docs/PRD_v2_Architecture.md": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b",
+    "docs/Research_and_Reuse.md": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7",
+    "docs/Short_Action_Sequence.md": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110",
+    "docs/TennoHub_Audit_Result.md": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7",
+    "docs/TennoHub_Initial_Audit_2026-10-16.md": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4",
+    "prompts/LowCost-Agent.md": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4",
+    "prompts/M0-Codex.md": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13",
+    "prompts/TennoHub-Audit-Codex-Next.md": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b",
+    "prompts/TennoHub-Audit-Codex.md": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9",
+    "reference/Original_Tech_Tree.html": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef"
+  }
+}

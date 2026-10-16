@@ -1,6 +1,19 @@
 # M0 实施计划：中文离线骨架与原科技树迁移
 
-状态：**待用户批准，尚未实施。** 2026-10-16。按路径 A 独立实现；本文件仅定义 M0 文件、模块、测试、验收和工序。技术选型依据及未验证事项见 [M-1 审核](TennoHub_Audit_Result.md)。
+状态：**2026-10-16 用户已批准路径 A，按五个 Git 检查点连续实施。** 补充指令优先于本文旧版。只做 M0，不合并 main、不推送、不公开部署。技术选型依据见 [M-1 审核](TennoHub_Audit_Result.md)。
+
+## 批准后的约束补充
+
+- 实际使用 DataProvider 接口和 LocalProvider；组件不导入第三方/seed 响应。未来远端必须经验证、转换、缓存，本次无远程请求/插件系统。
+- 所有个人记录按 profileId 隔离；个人快照一处存储目标状态，组件通过 repository 访问，revision 乐观并发控制。
+- nodeId 保留旧值，goalId 显式映射；itemId 不与节点混用；87 个 stepId 冻结。目录更新/失去引用不删除个人状态。官方/社区/用户来源与 verified/unverified/conflicting 分开。
+- DB version、backup schemaVersion、catalogVersion、build ID 各自管理。未来 ActivityDefinition 与 ProfileActivityState 分离；用户优先级只属个人状态。
+- 升级在 versionchange 事务中先读取完整旧记录，写入同事务 snapshots 并确认可读，失败中止整个升级；未来迁移必须通过此前置步骤。旧应用发现新库只提示，不写、不删、不降级。多标签页及 SW 更新统一写入暂停屏障，等待未完成写入后确认切换；无法协调的旧标签页必须关闭。
+- 旧档保留 ArrayBuffer 原字节与 SHA-256；预览/取消不写库。确认时事务备份并检查 revision；幂等键为 targetProfileId+sourceHash，允许同档恢复到另一档案。整档恢复，不做字段自动合并。
+- U01—U10 全部执行；追加多档隔离、Provider、目录孤立引用、来源三态、失败提示和多标签页更新验证。fake-indexeddb 不代替浏览器关闭重开。
+- 计划、契约和验收矩阵先提交；数据恢复、中文界面、PWA、最终交付依次提交。每次 diff 审查，记录实际验证；测试/类型/lint/build 未通过不把失效状态作为检查点。
+- Windows 生产构建实测；Android 真机/信任 HTTPS 不可用时列待验步骤，只能报告实现完成、实机验收未完成。
+- 原始输入 hash 见 evidence/M0_Input_Hashes.json；除本计划按授权更新外，原 HTML、seed、交接资料和审核报告不改。契约见 M0_Contracts.md，验收状态见 M0_Acceptance_Record.md。
 
 ## 1. 文件目录（拟新增，当前不创建）
 
@@ -63,7 +76,7 @@ docs/M0_Acceptance_Record.md             # 实际命令输出、截图、设备�
 
 ## 4. 测试清单与质量命令
 
-至少以下测试，其中单元层使用 Vitest，IndexedDB 集成使用许可核验后的 fake-indexeddb 或隔离浏览器。不能用内存 mock 代替真正关闭/重开数据库验证。
+完整执行以下 U01—U10，其中单元层使用 Vitest，IndexedDB 集成使用许可核验后的 fake-indexeddb 或隔离浏览器。不能用内存 mock 代替真正关闭/重开数据库验证。另实跑 `npm run typecheck`。
 
 | 编号 | 输入/操作 | 必须断言 |
 |---|---|---|

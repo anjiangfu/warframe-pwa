@@ -1,0 +1,147 @@
+{
+  "origin": [
+    "legacy:origin:0",
+    "legacy:origin:1",
+    "legacy:origin:2"
+  ],
+  "torid": [
+    "legacy:torid:0",
+    "legacy:torid:1",
+    "legacy:torid:2"
+  ],
+  "toridmax": [
+    "legacy:toridmax:0",
+    "legacy:toridmax:1",
+    "legacy:toridmax:2"
+  ],
+  "shieldfix": [
+    "legacy:shieldfix:0",
+    "legacy:shieldfix:1",
+    "legacy:shieldfix:2"
+  ],
+  "arsenal": [
+    "legacy:arsenal:0",
+    "legacy:arsenal:1",
+    "legacy:arsenal:2"
+  ],
+  "valkyr": [
+    "legacy:valkyr:0",
+    "legacy:valkyr:1",
+    "legacy:valkyr:2"
+  ],
+  "valkyrbuild": [
+    "legacy:valkyrbuild:0",
+    "legacy:valkyrbuild:1",
+    "legacy:valkyrbuild:2"
+  ],
+  "utility": [
+    "legacy:utility:0",
+    "legacy:utility:1",
+    "legacy:utility:2"
+  ],
+  "framefinal": [
+    "legacy:framefinal:0",
+    "legacy:framefinal:1",
+    "legacy:framefinal:2"
+  ],
+  "mr12": [
+    "legacy:mr12:0",
+    "legacy:mr12:1",
+    "legacy:mr12:2"
+  ],
+  "mr14": [
+    "legacy:mr14:0",
+    "legacy:mr14:1",
+    "legacy:mr14:2"
+  ],
+  "mr16": [
+    "legacy:mr16:0",
+    "legacy:mr16:1",
+    "legacy:mr16:2"
+  ],
+  "mr18": [
+    "legacy:mr18:0",
+    "legacy:mr18:1",
+    "legacy:mr18:2"
+  ],
+  "blueprint": [
+    "legacy:blueprint:0",
+    "legacy:blueprint:1",
+    "legacy:blueprint:2"
+  ],
+  "helminth": [
+    "legacy:helminth:0",
+    "legacy:helminth:1",
+    "legacy:helminth:2"
+  ],
+  "subsume": [
+    "legacy:subsume:0",
+    "legacy:subsume:1",
+    "legacy:subsume:2"
+  ],
+  "systemsfinal": [
+    "legacy:systemsfinal:0",
+    "legacy:systemsfinal:1",
+    "legacy:systemsfinal:2"
+  ],
+  "steel": [
+    "legacy:steel:0",
+    "legacy:steel:1",
+    "legacy:steel:2"
+  ],
+  "galvanized": [
+    "legacy:galvanized:0",
+    "legacy:galvanized:1",
+    "legacy:galvanized:2"
+  ],
+  "archon": [
+    "legacy:archon:0",
+    "legacy:archon:1",
+    "legacy:archon:2"
+  ],
+  "weekly": [
+    "legacy:weekly:0",
+    "legacy:weekly:1",
+    "legacy:weekly:2"
+  ],
+  "repstart": [
+    "legacy:repstart:0",
+    "legacy:repstart:1",
+    "legacy:repstart:2"
+  ],
+  "entrati": [
+    "legacy:entrati:0",
+    "legacy:entrati:1",
+    "legacy:entrati:2"
+  ],
+  "repgear": [
+    "legacy:repgear:0",
+    "legacy:repgear:1",
+    "legacy:repgear:2"
+  ],
+  "repfinal": [
+    "legacy:repfinal:0",
+    "legacy:repfinal:1",
+    "legacy:repfinal:2"
+  ],
+  "compstart": [
+    "legacy:compstart:0",
+    "legacy:compstart:1",
+    "legacy:compstart:2"
+  ],
+  "bondmods": [
+    "legacy:bondmods:0",
+    "legacy:bondmods:1",
+    "legacy:bondmods:2"
+  ],
+  "compbuild": [
+    "legacy:compbuild:0",
+    "legacy:compbuild:1",
+    "legacy:compbuild:2"
+  ],
+  "compfinal": [
+    "legacy:compfinal:0",
+    "legacy:compfinal:1",
+    "legacy:compfinal:2"
+  ]
+}
