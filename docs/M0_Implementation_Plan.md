@@ -1,6 +1,6 @@
 # M0 实施计划：中文离线骨架与原科技树迁移
 
-状态：**2026-10-16 用户已批准路径 A，按五个 Git 检查点连续实施。** 补充指令优先于本文旧版。只做 M0，不合并 main、不推送、不公开部署。技术选型依据见 [M-1 审核](TennoHub_Audit_Result.md)。
+状态：**2026-10-16 路径 A 的 M0 实现完成、实机验收未完成。** 按五个 Git 检查点交付，实际结果和待验项见 [验收记录](M0_Acceptance_Record.md)。只做 M0，不合并 main、不推送、不公开部署。技术选型依据见 [M-1 审核](TennoHub_Audit_Result.md)。
 
 ## 批准后的约束补充
 
@@ -15,41 +15,39 @@
 - Windows 生产构建实测；Android 真机/信任 HTTPS 不可用时列待验步骤，只能报告实现完成、实机验收未完成。
 - 原始输入 hash 见 evidence/M0_Input_Hashes.json；除本计划按授权更新外，原 HTML、seed、交接资料和审核报告不改。契约见 M0_Contracts.md，验收状态见 M0_Acceptance_Record.md。
 
-## 1. 文件目录（拟新增，当前不创建）
+## 1. 实际交付目录
 
 ```text
 app/
   package.json / package-lock.json      # 固定依赖与 dev/test/lint/build/preview 脚本
   index.html / vite.config.ts           # React/TS 入口、部署 base 与 PWA 配置
-  tsconfig*.json / eslint.config.* / vitest.config.ts
-  public/icons/                        # 本项目自制或许可明确的安装图标
+  tsconfig.json / eslint.config.js / playwright.config.ts
+  public/icons/                        # 本项目原创安装图标
+  public/THIRD_PARTY_LICENSES.txt       # 随应用缓存的运行时许可
+  scripts/sw-template.js               # 自行编写的 SW，由构建替换资源清单
+  scripts/create-icons.mjs / subpath-smoke.mjs
+  scripts/collect-licenses.mjs / run-quality.mjs / verify-delivery.mjs
   src/
     main.tsx / App.tsx / styles.css
-    components/AppShell.tsx             # 桌面侧栏/手机导航/状态反馈
-    features/profile/ProfileEditor.tsx
-    features/tree/TechTree.tsx / TechNode.tsx / TreeEdges.tsx
-    features/tree/TreeMinimap.tsx / NodeDetail.tsx / RouteNavigation.tsx
-    features/tree/useTreeViewport.ts    # pointer 平移、双指/滚轮缩放
-    features/tree/CustomNodeEditor.tsx
-    features/backup/ImportPreview.tsx / BackupPanel.tsx
-    features/pwa/UpdateNotice.tsx / OfflineStatus.tsx
-    domain/model.ts / dependencyState.ts
+    features/ProfilePanel.tsx           # 账号、库存、预算
+    features/TechTree.tsx               # 原树、视口、详情、自定义节点
+    features/BackupPanel.tsx            # 预览、确认、导出和原件下载
+    domain/model.ts                    # 数据契约、四类版本和硬条件三态
+    catalog/provider.ts                # DataProvider / 实际使用 LocalProvider
     catalog/tech-tree.v1.json           # 从用户 seed 规范化，保留原 ID
     catalog/legacy-step-map.v1.json     # 冻结 87 个步骤的旧索引→stable ID
-    catalog/provenance.json            # 用户模板来源和审核标记
-    storage/db.ts / schemaVersions.ts / migrations.ts
-    storage/profileRepository.ts / backupRepository.ts
-    storage/legacyImport.ts / importValidation.ts / importPlan.ts
-    storage/export.ts
-    pwa/register.ts                    # 按配置注册、等待与用户确认更新
-    test/fixtures/                     # 合成数据，不放真实账号信息
-    test/*.test.ts(x)
+    storage/db.ts                      # Repository、事务、并发与升级快照
+    storage/imports.ts                 # 校验、纯映射、原件和备份
+    pwa/UpdateNotice.tsx                # 注册、等待和多页更新握手
+    test/data.test.ts                  # 16项数据测试，合成输入
+  e2e/                                 # 8项生产 Chrome 操作测试
   README.md                            # Windows 启动、手机 HTTPS、备份和更新步骤
-  THIRD_PARTY_NOTICES.md                # 实际采用依赖的许可/版权与图标来源
+  licenses/THIRD_PARTY_LICENSES.txt      # 已安装开发依赖完整许可/NOTICE
+THIRD_PARTY_NOTICES.md                  # 许可清单与图标来源
 docs/M0_Acceptance_Record.md             # 实际命令输出、截图、设备与未验证项
 ```
 
-若使用 PWA 构建插件生成 manifest/SW，二者落在构建产物并检查内容；若手写 SW，增加 `app/src/pwa/sw.ts`。实施时选定一种方式并固定版本。保留原 `reference/Original_Tech_Tree.html`、`data/tech-tree-seed.json` 和所有输入文档。
+Vite 配置内的小型自有构建插件生成 manifest 和资源清单，使用自有 SW 模板；没有引入通用 PWA 插件框架。原 `reference/Original_Tech_Tree.html`、`data/tech-tree-seed.json` 和其他受保护输入均未修改。
 
 ## 2. 模块与边界
 
@@ -60,17 +58,17 @@ docs/M0_Acceptance_Record.md             # 实际命令输出、截图、设备�
 | 目录/事实 | 游戏模板作为版本化静态 JSON；7 路线 29 节点、30 条旧 deps 全为推荐关系，根节点 origin 单独识别；保留来源、checkedAt、verification。未经证实的游戏条件/数值显示 unverified。 |
 | 科技树 | 原配色/节点布局作为起点；拖拽、双指/滚轮缩放、缩放按钮、小地图、路线定位/折叠、节点搜索、详情、状态/步骤/笔记；中文可读。自定义普通节点可新增，ID 独立且稳定；进度和 notes 刷新不丢。 |
 | 状态一致性 | 同一 goalId 的状态只保存一份，树/详情/档案页读同源；完成 MR 节点不自动提高账号 MR；建议关系不阻止手工完成；硬条件以三态函数表达，M0 用合成测试，不录入未经核实门槛。 |
-| 本地存储 | DB version、export schemaVersion、catalogVersion、build ID 分离。表至少含 profile、goalStates、checklist、notes、inventory、personalBudgets、customNodes、changeLog、importRuns、backupSnapshots、legacyArchive；事务管理和错误反馈。 |
+| 本地存储 | DB version、export schemaVersion、catalogVersion、build ID 分离。实际四表 profiles、snapshots、imports、meta；profile 文档聚合 statuses、steps、notes、stock、budget、customNodes、events、legacyArchive 和 originals，单份目标状态便于一致快照和整档事务恢复；不为各视图复制状态。 |
 | 外部动态接口 | 仅留类型边界/“尚未同步”状态，不请求在线活动、不建立假活动数据。不实现集团计算、装备百科、自动账号读取、推荐算法、订阅或云同步。 |
 | PWA | manifest、自有图标、应用壳与小型目录离线缓存、SW 更新等待/保存后确认切换；清缓存仅限本应用版本缓存，不删除 IndexedDB。 |
 
 ## 3. 原档导入、迁移与恢复工序
 
 1. **读取与校验**：只读本地 JSON，限制字节/集合数量/文本长度及有限数值，拒绝损坏、过新版本、异常结构和危险对象键；不执行 HTML/脚本。类型错误不静默变成 0。不认识的数据在容量限制内隔离保留，不能直接作为页面 HTML。
-2. **识别格式**：旧 `version:1` 裸状态与新备份分别解析；seed 是目录，不当用户备份。新版备份含 schemaVersion/catalogVersion/profile/自定义节点/存档数据与必要来源字段；未知新版本只提供导出原件，不写库。
+2. **识别格式**：旧 `version:1` 裸状态与新备份分别解析；seed 是目录，不当用户备份。新版备份含 schemaVersion/catalogVersion/profile/自定义节点/存档数据与必要来源字段；未知新版本报错、不写库，用户所选原文件保持不变。旧档上限2 MiB，新完整备份上限8 MiB，容纳内嵌原件。
 3. **确定性映射**：rank→masteryRank；statuses→原 goalId 状态；steps→冻结的 v1 stepId；notes 原文保留；stock→库存稳定 ID；budget→个人预算；events→原时序日志；未知节点/字段→legacyArchive。缺少 status 按旧 status() 的 todo 语义，不注入初始六个 done；显式零保留，缺失库存为 unknown。
 4. **导入预览**：显示格式/版本、29 节点匹配情况、状态/步骤/笔记/库存/预算/日志数量、冲突、新增、自定义节点及未知字段、验证警告和恢复策略。选择目标档案；M0 提供“新建本地档案”或明确确认的“整档恢复”，不承诺字段级跨设备自动合并。默认不覆盖已有档案，取消不写任何数据。
-5. **确认并提交**：确认前保存当前可恢复快照与导入原字节 hash；事务中写全部关联表和 importRuns。相同档案重复导入不重复造日志/步骤/节点；UI 时间戳由外层提供，迁移纯函数不读系统时钟。处理并发修改：预览生成后档案 revision 变更则要求重新预览。
+5. **确认并提交**：确认前保存当前可恢复快照与导入原字节 hash；事务中写 profiles、snapshots、imports，并检查 meta 写屏障。相同档案重复确认不重复造日志/步骤/节点；UI 时间戳由外层提供，迁移纯函数不读系统时钟。处理并发修改：预览生成后档案 revision 变更则要求重新预览。
 6. **回滚与版本升级**：事务失败保留旧状态并报错；升级前创建可读取的备份。versionchange 关闭旧连接并提示，多标签页 blocked 时给可理解提示；禁止自动删库。应用降级不尝试降低同库版本，使用兼容恢复流程。
 7. **导出恢复**：支持新格式完整 JSON、原 v1 输入原字节再下载。用测试专用档案/浏览器 profile 验证恢复；不为验证而清用户真实应用数据。跨 Windows/Android 使用文件手动交换，每次先预览、确认；不宣称自动同步。
 

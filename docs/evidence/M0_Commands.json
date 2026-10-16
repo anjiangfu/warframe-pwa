@@ -1,0 +1,51 @@
+[
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:16:36.586Z",
+    "finishedAt": "2026-10-16T13:16:38.506Z",
+    "output": "\n> tenno-local-planner@0.1.0 lint\n> eslint .\n\n"
+  },
+  {
+    "command": "npm.cmd test",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:16:38.508Z",
+    "finishedAt": "2026-10-16T13:16:40.061Z",
+    "output": "\n> tenno-local-planner@0.1.0 test\n> vitest run\n\n\n RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app\n\n\n Test Files  1 passed (1)\n      Tests  16 passed (16)\n   Start at  21:16:39\n   Duration  716ms (tests 83%, import 13%, transform 3%, worker 1%)\n\n"
+  },
+  {
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:16:40.061Z",
+    "finishedAt": "2026-10-16T13:16:42.223Z",
+    "output": "\n> tenno-local-planner@0.1.0 typecheck\n> tsc --noEmit\n\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:16:42.223Z",
+    "finishedAt": "2026-10-16T13:16:44.789Z",
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 28 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.38 kB\ndist/assets/index-Dw7k_Tq5.css   15.06 kB │ gzip:   4.30 kB\ndist/assets/index-BeqknSaw.js   371.69 kB │ gzip: 120.65 kB\n\n✓ built in 168ms\n"
+  },
+  {
+    "command": "npm.cmd run test:browser -- --reporter=line",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:16:44.789Z",
+    "finishedAt": "2026-10-16T13:17:19.350Z",
+    "output": "\n> tenno-local-planner@0.1.0 test:browser\n> playwright test --reporter=line\n\n\n\nRunning 8 tests using 1 worker\n\n\n\n[1/8] e2e\\pwa.spec.ts:4:1 › manifest, PNG dimensions, Chrome installability and measured localhost startup\n[2/8] e2e\\pwa.spec.ts:10:1 › production PWA controls page, survives offline page close and deep-link reopening\ne2e\\pwa.spec.ts:10:1 › production PWA controls page, survives offline page close and deep-link reopening\nCACHE_HEADERS [\n  {\n    url: 'http://127.0.0.1:4173/assets/index-BeqknSaw.js',\n    vary: 'Origin'\n  },\n  {\n    url: 'http://127.0.0.1:4173/assets/index-Dw7k_Tq5.css',\n    vary: 'Origin'\n  },\n  { url: 'http://127.0.0.1:4173/icons/icon-192.png', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4173/icons/icon-512.png', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4173/index.html', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4173/manifest.webmanifest', vary: 'Origin' },\n  {\n    url: 'http://127.0.0.1:4173/THIRD_PARTY_LICENSES.txt',\n    vary: 'Origin'\n  }\n]\n\n[3/8] e2e\\safety.spec.ts:3:1 › save quota failure never claims success; cross-tab drafts stay visible\n[4/8] e2e\\safety.spec.ts:7:1 › touch emulation pinch/pan suppresses completion clicks; no external requests\n[5/8] e2e\\ui.spec.ts:4:1 › Windows: template, MR-independent completion, HTML text, stock/budget, custom node and file recovery\n[6/8] e2e\\ui.spec.ts:15:1 › Windows Chrome: close browser, relaunch same isolated profile, recover IndexedDB\n[7/8] e2e\\ui.spec.ts:19:1 › desktop routes/search/collapse/minimap and mobile viewport boundaries\n[8/8] e2e\\zz-update.spec.ts:6:1 › v1→v2: defer, unsaved form blocks, cancel unlocks, all tabs save and update without data loss\n  8 passed (33.7s)\n[WebServer] (node:16760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:28796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:17:19.350Z",
+    "finishedAt": "2026-10-16T13:17:21.980Z",
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 28 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.38 kB\ndist/assets/index-Dw7k_Tq5.css   15.06 kB │ gzip:   4.30 kB\ndist/assets/index-BeqknSaw.js   371.69 kB │ gzip: 120.65 kB\n\n✓ built in 169ms\n"
+  },
+  {
+    "command": "node scripts/verify-delivery.mjs",
+    "exitCode": 0,
+    "startedAt": "2026-10-16T13:17:21.981Z",
+    "finishedAt": "2026-10-16T13:17:22.122Z",
+    "output": "{\n  \"build\": {\n    \"build\": \"m0-f54e0bcc44f7\",\n    \"catalogVersion\": \"2026.10.16.1\",\n    \"base\": \"/\"\n  },\n  \"catalog\": {\n    \"lanes\": 7,\n    \"nodes\": 29,\n    \"steps\": 87,\n    \"recommendedEdges\": 30\n  },\n  \"protectedInputs\": 16,\n  \"resources\": [\n    {\n      \"path\": \"dist/assets/index-BeqknSaw.js\",\n      \"bytes\": 371692,\n      \"gzipBytes\": 119616\n    },\n    {\n      \"path\": \"dist/assets/index-Dw7k_Tq5.css\",\n      \"bytes\": 15067,\n      \"gzipBytes\": 4270\n    },\n    {\n      \"path\": \"dist/build-info.json\",\n      \"bytes\": 70,\n      \"gzipBytes\": 89\n    },\n    {\n      \"path\": \"dist/icons/icon-192.png\",\n      \"bytes\": 1558,\n      \"gzipBytes\": 1425\n    },\n    {\n      \"path\": \"dist/icons/icon-512.png\",\n      \"bytes\": 5754,\n      \"gzipBytes\": 4599\n    },\n    {\n      \"path\": \"dist/index.html\",\n      \"bytes\": 545,\n      \"gzipBytes\": 387\n    },\n    {\n      \"path\": \"dist/manifest.webmanifest\",\n      \"bytes\": 517,\n      \"gzipBytes\": 294\n    },\n    {\n      \"path\": \"dist/sw.js\",\n      \"bytes\": 3566,\n      \"gzipBytes\": 1487\n    },\n    {\n      \"path\": \"dist/THIRD_PARTY_LICENSES.txt\",\n      \"bytes\": 15432,\n      \"gzipBytes\": 4586\n    }\n  ],\n  \"totalRawBytes\": 414201\n}\n"
+  }
+]
