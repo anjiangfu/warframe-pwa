@@ -1,6 +1,9 @@
 import 'fake-indexeddb/auto';
 import {afterEach,expect,it} from 'vitest';
 import Dexie from 'dexie';
+import {createElement} from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {WeaponAssistant} from '../features/WeaponAssistant';
 import {LocalProvider} from '../catalog/provider';
 import {newProfile,parseImport,exportBackup,validateProfile} from '../storage/imports';
 import {Repository,openDatabase} from '../storage/db';
@@ -18,6 +21,7 @@ it('verified Chinese and English names are searchable and a test-only second ent
  for(const q of ['苦栓','Pathos Clamps','瑶丛','Yao Shrub','延凡草','EEVANI'])expect(searchGuides(catalog,q).some(x=>x.kind==='material')).toBe(true);
  const fake=structuredClone(catalog) as WeaponCatalog;fake.weapons.push({...fake.weapons[0],id:'weapon:fixture',name:'仅测试条目',english:'Fixture Pistol',stages:fake.weapons[0].stages.map((s,i)=>({...s,id:'fixture:'+i}))});
  const second=new LocalProvider(undefined,fake).getWeaponCatalog();expect(searchGuides(second,'Fixture Pistol')).toContainEqual({kind:'weapon',id:'weapon:fixture',label:'仅测试条目（Fixture Pistol）'});expect(catalog.weapons).toHaveLength(1);
+ const onlyFake={...fake,weapons:[fake.weapons[1]]};const html=renderToStaticMarkup(createElement(WeaponAssistant,{catalog:onlyFake,profile:newProfile(tree,'fixture','测试档',false),mutate:async()=>true,onError:()=>{}}));expect(html).toContain('Fixture Pistol');expect(html).toContain('仅测试条目');
 });
 it('old profiles read unknown without mutation or progress inferred from old done nodes',()=>{
  const p=newProfile(tree,'one','旧档',true),before=structuredClone(p);expect(progressOf(p,id)).toEqual({owned:null,adapterOwned:null,installed:null,currentStageId:null,stages:{}});expect(progressOf(p,id)).toEqual(progressOf(p,id));expect(p).toEqual(before);
