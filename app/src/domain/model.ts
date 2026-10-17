@@ -1,3 +1,4 @@
+import type {WeaponProgress} from './weapon';
 export const DB_VERSION = 1;
 export const SCHEMA_VERSION = 1;
 export type Status = 'todo' | 'progress' | 'done';
@@ -12,6 +13,7 @@ export interface ProfileDocument {
  statuses:Record<string,Status>; steps:Record<string,Record<string,boolean>>; notes:Record<string,string>;
  stock:Record<string,KnownNumber>; budget:Record<string,Record<string,KnownNumber>>;
  events:{time:string;text:string}[]; customNodes:TechNode[]; legacyArchive:Record<string,unknown>; originals:Original[];
+ weaponProgress?:Record<string,WeaponProgress>;
 }
 export interface Backup {schemaVersion:1; catalogVersion:string; profile:ProfileDocument}
 export type ConditionState = 'satisfied'|'unmet'|'unknown';

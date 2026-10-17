@@ -1,0 +1,458 @@
+{
+  "catalogVersion": "2026.10.17.1",
+  "sources": [
+    {
+      "id": "official-33",
+      "title": "DE Update 33",
+      "url": "https://www.warframe.com/de/patch-notes/switch/33-0-0",
+      "kind": "official-history",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "系统推出时的官方说明，非当前轮换或账号资格实时核验。"
+    },
+    {
+      "id": "official-3313",
+      "title": "DE Hotfix 33.0.13",
+      "url": "https://www.warframe.com/en/patch-notes/pc/33-0-13",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-17",
+      "note": "历史修正：连续爆头，装填不重置，身体命中会重置。未游戏亲测。"
+    },
+    {
+      "id": "official-335",
+      "title": "DE Update 33.5",
+      "url": "https://www.warframe.com/en/patch-notes/pc/33-5-0",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-17",
+      "note": "历史修复触发伤害造成挑战归零；不是当前版本实测。"
+    },
+    {
+      "id": "weapon-en",
+      "title": "WARFRAME Wiki · Dual Toxocyst",
+      "url": "https://wiki.warframe.com/w/Dual_Toxocyst",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "社区汇编；本轮只取得检索缓存，未游戏亲测。"
+    },
+    {
+      "id": "weapon-zh",
+      "title": "中文Wiki · 毒囊双枪灵化之源",
+      "url": "https://warframe.huijiwiki.com/wiki/毒囊双枪灵化之源",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "核对武器/材料中文名称、安装用量和任务；不是官方本地化导出。"
+    },
+    {
+      "id": "clamp-zh",
+      "title": "中文Wiki · 苦栓",
+      "url": "https://warframe.huijiwiki.com/wiki/苦栓",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "页面有待更新提示；只采用奥金魇龙奖励获取类别，不给收益速率。"
+    },
+    {
+      "id": "yao-zh",
+      "title": "中文Wiki · 瑶丛",
+      "url": "https://warframe.huijiwiki.com/wiki/瑶丛",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "核对Yao Shrub中文名和寒冷区域采集。"
+    },
+    {
+      "id": "eevani-zh",
+      "title": "中文Wiki · 延凡草",
+      "url": "https://warframe.huijiwiki.com/wiki/延凡草",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "核对Eevani中文名及言录书院/圆形剧场。"
+    },
+    {
+      "id": "eevani-en",
+      "title": "社区Wiki · Eevani",
+      "url": "https://warframe.fandom.com/wiki/Eevani",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "区域受情绪影响；不表示当前情绪或固定刷新。"
+    },
+    {
+      "id": "archarbor",
+      "title": "社区Wiki · Archarbor",
+      "url": "https://warframe.fandom.com/wiki/Archarbor",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "言录书院在喜悦、嫉妒、哀伤螺旋出现。"
+    },
+    {
+      "id": "earth",
+      "title": "社区Wiki · E Prime",
+      "url": "https://warframe.fandom.com/wiki/E_Prime",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "地球普通歼灭，作为建议地点，不是挑战强制要求。"
+    },
+    {
+      "id": "saturn",
+      "title": "社区Wiki · Saturn",
+      "url": "https://warframe.fandom.com/wiki/Saturn",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-17",
+      "note": "Titan是土星普通生存；先确认节点权限。"
+    }
+  ],
+  "materials": [
+    {
+      "id": "material:pathos-clamp",
+      "name": "苦栓",
+      "english": "Pathos Clamp",
+      "aliases": [
+        "Pathos Clamps"
+      ],
+      "acquisitionIds": [
+        "farm:clamp"
+      ],
+      "sourceIds": [
+        "clamp-zh",
+        "weapon-zh"
+      ]
+    },
+    {
+      "id": "material:yao-shrub",
+      "name": "瑶丛",
+      "english": "Yao Shrub",
+      "aliases": [
+        "Yao Shrubs"
+      ],
+      "acquisitionIds": [
+        "farm:yao"
+      ],
+      "sourceIds": [
+        "yao-zh",
+        "weapon-zh"
+      ]
+    },
+    {
+      "id": "material:eevani",
+      "name": "延凡草",
+      "english": "Eevani",
+      "aliases": [],
+      "acquisitionIds": [
+        "farm:eevani"
+      ],
+      "sourceIds": [
+        "eevani-zh",
+        "weapon-zh"
+      ]
+    }
+  ],
+  "acquisitions": [
+    {
+      "id": "acquire:base",
+      "label": "本体蓝图与制造",
+      "mode": "氏族道场 → 铸造厂",
+      "place": "氏族道场 · 生物实验室",
+      "action": "确认氏族已完成研究后复制毒囊双枪蓝图，再到铸造厂查看制造需求。",
+      "restrictions": [
+        "本体精通门槛MR11（社区资料）。",
+        "研究成本与个人制造成本不同；本版只做获取摘要。"
+      ],
+      "sourceIds": [
+        "weapon-en"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "acquire:adapter",
+      "label": "灵化之源获取",
+      "mode": "钢铁之路 · 无尽回廊",
+      "place": "双衍王境 · 无尽回廊奖励选择",
+      "action": "在包含毒囊双枪的奖励轮换时选择适配器，并达到相应奖励进度。",
+      "restrictions": [
+        "先核对双衍悖论、扎里曼的天使与钢铁之路资格。",
+        "本应用不显示本周轮换，不承诺随时能买到。"
+      ],
+      "sourceIds": [
+        "official-33",
+        "weapon-en"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "acquire:install",
+      "label": "安装与核对进化",
+      "mode": "中继站 · NPC交互",
+      "place": "扎里曼 · Chrysalith（区域中文名待核）· 卡瓦莱罗（Cavalero）",
+      "action": "携带本体、对应适配器和三种材料，与卡瓦莱罗交互检查安装/进化界面。",
+      "restrictions": [
+        "先确认扎里曼及NPC已开放。",
+        "手工标记安装不会在应用内自动扣材料。"
+      ],
+      "sourceIds": [
+        "official-33",
+        "weapon-zh"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "farm:clamp",
+      "label": "苦栓获取",
+      "mode": "双衍王境 · 螺旋主线（The Lone Story / The Duviri Experience）",
+      "place": "螺旋主线终战 · 奥金魇龙",
+      "action": "推进该次螺旋主线，击败奥金魇龙并领取结算奖励。",
+      "restrictions": [
+        "先确认双衍王境开放。",
+        "这是完成奖励，不是星图普通敌人的固定掉落；不估计每小时收益。"
+      ],
+      "sourceIds": [
+        "clamp-zh"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "farm:yao",
+      "label": "瑶丛采集",
+      "mode": "双衍王境 · 自由探索（The Duviri Experience）",
+      "place": "地图南部大岛 · 中部雪山等寒冷区域",
+      "action": "在寒冷地形寻找发光的瑶丛，攻击植物后拾取资源。",
+      "restrictions": [
+        "这是开放区域采集，不是固定星图任务节点。",
+        "植株分布和刷新以本次地图为准，先确认模式开放。"
+      ],
+      "sourceIds": [
+        "yao-zh"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "farm:eevani",
+      "label": "延凡草采集",
+      "mode": "双衍王境 · 自由探索（The Duviri Experience）",
+      "place": "言录书院（Archarbor）；备选圆形剧场（Amphitheater）",
+      "action": "在岛上寻找延凡草植株，攻击后拾取；地点不出现时先查看本次情绪与地图。",
+      "restrictions": [
+        "言录书院在喜悦、嫉妒、哀伤螺旋出现（社区资料）。",
+        "不同情绪的岛屿可用性不同，不保证固定数量/当前刷新；不是固定星图掉落节点。"
+      ],
+      "sourceIds": [
+        "eevani-zh",
+        "eevani-en",
+        "archarbor"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "mission:earth",
+      "label": "单人/精确射击练习",
+      "mode": "普通星图 · 歼灭 · 单人",
+      "place": "地球 · E Prime · 歼灭",
+      "action": "先确认已开放，选普通难度和单人匹配；逐个处理能清楚瞄准头部的敌人。",
+      "restrictions": [
+        "仅是II/IV的建议地点；挑战并不限定该节点。",
+        "不要用模拟环境替代正式任务计数。"
+      ],
+      "sourceIds": [
+        "earth"
+      ],
+      "kind": "suggestion"
+    },
+    {
+      "id": "mission:saturn",
+      "label": "灵化击杀练习",
+      "mode": "普通星图 · 生存",
+      "place": "土星 · Titan · 生存",
+      "action": "先确认节点与装备适合；保持生命维持，切换到灵化形态后用本武器击杀。",
+      "restrictions": [
+        "只是III的建议，不要求钢铁之路，也不是唯一地点。",
+        "敌人数不足或生存困难时选自己已开放的其他正式任务，不保证单局完成。"
+      ],
+      "sourceIds": [
+        "saturn"
+      ],
+      "kind": "suggestion"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "weapon:dual-toxocyst",
+      "name": "毒囊双枪",
+      "english": "Dual Toxocyst",
+      "summary": "先核对你已有的部分，再选正在做的进化；四阶段任务都可以提前查看。",
+      "requirements": [
+        "本体蓝图来自氏族道场生物实验室，个人制造在铸造厂；不要把氏族研究消耗当制造材料。",
+        "适配器的已核验途径是钢铁之路无尽回廊相应轮换；先核对双衍悖论、扎里曼的天使和钢铁之路资格。",
+        "在卡瓦莱罗处安装对应适配器；本页不判断你已开放的地图，不显示当前周轮换。"
+      ],
+      "acquisitionIds": [
+        "acquire:base",
+        "acquire:adapter",
+        "acquire:install"
+      ],
+      "installCost": [
+        {
+          "materialId": "material:pathos-clamp",
+          "quantity": 20,
+          "sourceIds": [
+            "weapon-zh",
+            "weapon-en"
+          ]
+        },
+        {
+          "materialId": "material:yao-shrub",
+          "quantity": 70,
+          "sourceIds": [
+            "weapon-zh",
+            "weapon-en"
+          ]
+        },
+        {
+          "materialId": "material:eevani",
+          "quantity": 80,
+          "sourceIds": [
+            "weapon-zh",
+            "weapon-en"
+          ]
+        }
+      ],
+      "stages": [
+        {
+          "id": "dual-toxocyst:i",
+          "label": "进化 I",
+          "challenge": {
+            "kind": "installation",
+            "target": null,
+            "description": "安装毒囊双枪灵化之源后解锁进化I。"
+          },
+          "checks": [
+            "本体、对应适配器与安装材料齐备。",
+            "向卡瓦莱罗确认安装成功，核对游戏内进化界面。"
+          ],
+          "tips": [
+            "先打开三材料详情，未知库存先手工核对。",
+            "安装完成后在游戏中查看进化I是否解锁，再更新本页记录。",
+            "弱点命中用于灵化充能，次要开火转换形态；不要与IV的连续爆头条件混为一谈。"
+          ],
+          "troubleshooting": [
+            "没有解锁：确认所选是毒囊双枪及对应适配器，重新查看NPC进化界面。",
+            "本应用只记录你的声明，不读取游戏，也不替你安装。"
+          ],
+          "locationIds": [
+            "acquire:install"
+          ],
+          "sourceIds": [
+            "weapon-en",
+            "weapon-zh"
+          ]
+        },
+        {
+          "id": "dual-toxocyst:ii",
+          "label": "进化 II",
+          "challenge": {
+            "kind": "solo-mission",
+            "target": 1,
+            "description": "装备这把武器完成一场单人任务。"
+          },
+          "checks": [
+            "核对游戏当前待完成的是进化II。",
+            "在军械库装备毒囊双枪，并把匹配方式切到单人。"
+          ],
+          "tips": [
+            "选择一个自己已开放的普通任务，如地球E Prime歼灭。",
+            "出发前核对次要武器槽和单人匹配设置。",
+            "完成目标并正常撤离结算，再回进化界面核对计数。"
+          ],
+          "troubleshooting": [
+            "未计数：先查是否真的装备本武器、是否单人、是否正常完成。",
+            "其他进化任务可能仍需先在游戏内解锁；页面提前查看不代表已具备资格。"
+          ],
+          "locationIds": [
+            "mission:earth"
+          ],
+          "sourceIds": [
+            "weapon-en",
+            "weapon-zh"
+          ]
+        },
+        {
+          "id": "dual-toxocyst:iii",
+          "label": "进化 III",
+          "challenge": {
+            "kind": "incarnon-kills",
+            "target": 100,
+            "description": "用这把武器的灵化形态击杀100名敌人。"
+          },
+          "checks": [
+            "核对III在游戏中已可挑战，武器已安装灵化之源。",
+            "普通形态的击杀不能代替灵化形态击杀。"
+          ],
+          "tips": [
+            "可尝试已开放的土星Titan普通生存，先保证自身生存和生命维持。",
+            "先获得充能，用次要开火进入灵化形态，再集中用本武器击杀。",
+            "形态弹药耗尽后重新充能转换，留意游戏内挑战计数。",
+            "难度不合适就换已开放的正式任务；不承诺固定分钟或一局完成。"
+          ],
+          "troubleshooting": [
+            "不计数先确认正在灵化形态，并由该武器完成击杀。",
+            "排查技能/队友代杀等情况；没有亲测模拟环境计数，因此不以模拟环境为建议。"
+          ],
+          "locationIds": [
+            "mission:saturn"
+          ],
+          "sourceIds": [
+            "weapon-en",
+            "weapon-zh"
+          ]
+        },
+        {
+          "id": "dual-toxocyst:iv",
+          "label": "进化 IV",
+          "challenge": {
+            "kind": "consecutive-headshots",
+            "target": 17,
+            "description": "取得连续17次爆头命中；不是连续击杀17个敌人。",
+            "resets": [
+              "body-shot"
+            ]
+          },
+          "checks": [
+            "核对游戏当前挑战已开放。",
+            "历史官方说明：装填不重置；身体命中会重置。当前以游戏提示为准。"
+          ],
+          "tips": [
+            "建议在地球E Prime普通单人歼灭，找视线清楚的敌人逐个瞄头。",
+            "可优先用普通形态练习单发精确命中；任务文本本身没有强制此形态。",
+            "放慢节奏观察计数，不把“击杀数”当作“连续爆头数”。",
+            "如反复归零，可暂时去掉会主动攻击的同伴作对照：仅社区注意事项，非必备条件。"
+          ],
+          "troubleshooting": [
+            "先排查打中身体；不要因需要装填就认定必须重开。",
+            "DE 33.5曾修复触发伤害导致归零，不能把卸掉全部触发MOD列为当前硬条件。",
+            "宠物干扰及多重射击计数只有社区说明，未在本轮游戏亲测；异常时对照当前补丁与游戏计数。"
+          ],
+          "locationIds": [
+            "mission:earth"
+          ],
+          "sourceIds": [
+            "official-3313",
+            "official-335",
+            "weapon-en"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "weapon-en",
+        "weapon-zh",
+        "official-33"
+      ]
+    }
+  ]
+}
