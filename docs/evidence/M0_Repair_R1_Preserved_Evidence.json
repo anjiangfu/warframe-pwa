@@ -1,0 +1,14 @@
+{
+  "previousEvidenceRestored": true,
+  "latestRunArtifacts": "M0_Repair_R1_Browser",
+  "changed": [
+    "M0_Browser.json",
+    "M0_Emulated_412.png",
+    "M0_Emulated_Touch.png",
+    "M0_Fix_Update_Reopen.png",
+    "M0_Offline_Backup.png",
+    "M0_Save_Failure.png",
+    "M0_Startup.json",
+    "M0_Windows_Tree.png"
+  ]
+}

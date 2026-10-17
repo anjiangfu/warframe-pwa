@@ -1,6 +1,6 @@
 # M0 验收记录
 
-结论：**M0 实现完成、实机验收未完成。** 2026-10-17已完成备份约束和更新中断修复，最新结果见第8节（24项数据测试、13项Chrome测试）。第1—7节保留2026-10-16初次交付记录；共用截图/浏览器元数据已随回归刷新，初次证据原字节保留在Git提交cda0b32中。Android真机、可信HTTPS安装、Windows系统级安装仍尚未验收，模拟视口不算真机证据。
+结论：**M0 实现完成、实机验收未完成。** 2026-10-17备份约束和更新中断修复见第8节（24项数据测试、13项Chrome测试）；最新的第1轮测试夹具修正及5次零重试重复结果见第9节。第1—7节保留2026-10-16初次交付记录；初次证据原字节保留在Git提交cda0b32中，第9节本轮证据另存归档。Android真机、可信HTTPS安装、Windows系统级安装仍尚未验收，模拟视口不算真机证据。
 
 ## 1. 范围和Git检查点
 
@@ -168,3 +168,38 @@ Chrome生产测试从8项扩为13项，全部通过；新增5项：
 最终build为 `m0-aef31a53e917`，资源原始合计417,205字节；[资源清单](evidence/M0_Fix_Build.json)。相对本次修复前cda0b32，包含已修订M0计划在内的17个基线资料全部原字节不变，独立hash核对退出0：[17项保护输入对照](evidence/M0_Fix_Protected_Inputs.json)。没有新增依赖或更改许可正文。
 
 此次仅Windows本机生产构建自动化，不改变第6节的设备待验结论：**M0实现完成、实机验收未完成**。Android真机、可信HTTPS安装/软键盘、Windows OS级安装仍未测试。完成独立本地修复提交后停止，不进入M1—M4。
+
+## 9. 第1轮M0测试可靠性修正（2026-10-17）
+
+基线：`f56bfdca6aabc51307edf2ec41fe7fd28b5b1fa5`，工作区初始干净，继续使用 `m0/local-planner`。本轮仅修改 `app/e2e/backup-boundaries.spec.ts` 的超限档案测试夹具和相关验收记录；应用运行代码、SW、数据约束和依赖均未修改，不进入M1—M4。独立本地提交hash见交付回复。
+
+原夹具通过原生IndexedDB直接注入超限笔记后，只做 `page.goto('/#backup')`。该操作可能是同文档hash导航，React仍持有旧档案；原来在初次创建尚未完全结束时注入，又会偶然被创建流程的刷新加载，从而产生不可靠的通过结果。
+
+先等待初始创建完成、给注入档案设置唯一名称，并在hash导航后断言所选档案名称，实际失败：期望“已注入超限笔记的专用档案”，收到“我的行动档案”。[红灯复现日志](evidence/M0_Repair_R1_Red.json)退出1，证明测试的页面状态与DB注入状态不同，并非产品容量保护失效。两次Windows嵌套引号导致未匹配测试的调用错误也另存为M0_Repair_R1_Invocation_Error*.json，不计为产品测试结果。
+
+修正后流程：
+
+1. 等待模板档案确实创建完成，再在专用测试数据库的事务中注入唯一名称和29条100000字中文笔记。
+2. 显式 `page.reload()`，等待“本地档案就绪”，断言页面选中的档案就是注入名称。
+3. 实际打开托里德节点，读取界面“个人笔记”的值，逐字比较为100000个“字”，证明React确已加载注入后的笔记，而不只是从DB复查数据。
+4. 通过界面导航进入备份页，再点击导出；保留原断言：提示“备份未生成”、下载数0、原库29条笔记逐项完整。没有放宽断言、固定等待或自动重试，也没有修改产品读取逻辑来迎合测试。
+
+### 本轮实际验证
+
+[完整新日志](evidence/M0_Repair_R1_Commands.json)保留命令、退出码、UTC起止时间和stdout/stderr。用例重复执行与测试失败后的重试不同：这里是5次独立重复，均设 `--retries=0`。
+
+| 命令 | 退出码 | 结果 |
+|---|---|---|
+| npm.cmd run lint | 0 | 通过 |
+| npm.cmd run typecheck | 0 | 通过 |
+| npm.cmd run test:browser -- --grep existing --repeat-each=5 --retries=0 --reporter=line | 0 | 连续5/5通过，11.3秒，零重试 |
+| npm.cmd run test:browser -- --retries=0 --reporter=line | 0 | 完整13/13通过，34.3秒，零重试 |
+| npm.cmd run build | 0 | 浏览器测试后恢复正常生产构建，28模块；运行构建仍为m0-aef31a53e917 |
+
+本轮没有更改应用运行代码或数据单测，未将此前24项单测结果冒充本轮重跑；其记录仍见第8节。新的导出失败[截图](evidence/M0_Repair_R1_Backup_Failure.png)及[元数据](evidence/M0_Repair_R1_Backup_Failure.json)增加pageReloaded/injectedProfileMarkerVisible/injectedNoteVisible断言证据。
+
+完整浏览器测试会生成原有命名的公共截图/元数据，因此执行前保存旧证据字节，结束后把本轮变化的8项另存于 [M0_Repair_R1_Browser](evidence/M0_Repair_R1_Browser)，再恢复旧证据原字节；[保存记录](evidence/M0_Repair_R1_Preserved_Evidence.json)。没有覆盖第8节的日志和证据。仅操作专用Chrome上下文和测试档案，未清理真实用户数据。
+
+本轮直接在原执行目录运行，持久Chrome测试档案使用 `app/.test-browser/<随机ID>` 及 `manifest-<随机ID>`。隔离复跑应使用简短的专用profile路径并记录路径前缀；长路径隔离副本的SW就绪差异不据此当作产品缺陷，也不据此修改SW、放宽超时或更改浏览器安全配置。本轮原目录环境完整通过。
+
+17项保护输入相对本轮开始保持原字节，见 [hash对照](evidence/M0_Repair_R1_Protected_Inputs.json)。不推送、不合并main、不公开部署、不请求或实施M1—M4。Android真机及既有安装待验项维持原状态；本轮只完成M0测试可靠性返修，提交后停止。

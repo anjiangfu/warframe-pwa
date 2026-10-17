@@ -1,0 +1,37 @@
+[
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T01:47:15.676Z",
+    "finishedAt": "2026-10-17T01:47:17.990Z",
+    "output": "\n> tenno-local-planner@0.1.0 lint\n> eslint .\n\n"
+  },
+  {
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T01:47:17.991Z",
+    "finishedAt": "2026-10-17T01:47:20.249Z",
+    "output": "\n> tenno-local-planner@0.1.0 typecheck\n> tsc --noEmit\n\n"
+  },
+  {
+    "command": "npm.cmd run test:browser -- --grep existing --repeat-each=5 --retries=0 --reporter=line",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T01:47:20.250Z",
+    "finishedAt": "2026-10-17T01:47:32.437Z",
+    "output": "\n> tenno-local-planner@0.1.0 test:browser\n> playwright test --grep existing --repeat-each=5 --retries=0 --reporter=line\n\n\n\nRunning 5 tests using 1 worker\n\n\n\n[1/5] e2e\\backup-boundaries.spec.ts:4:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n\n\n[2/5] e2e\\backup-boundaries.spec.ts:4:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n\n\n[3/5] e2e\\backup-boundaries.spec.ts:4:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n\n\n[4/5] e2e\\backup-boundaries.spec.ts:4:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n\n\n[5/5] e2e\\backup-boundaries.spec.ts:4:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n  5 passed (11.3s)\n[WebServer] (node:22124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:12212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:27152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:16288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:22816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:19856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "command": "npm.cmd run test:browser -- --retries=0 --reporter=line",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T01:47:32.438Z",
+    "finishedAt": "2026-10-17T01:48:07.659Z",
+    "output": "\n> tenno-local-planner@0.1.0 test:browser\n> playwright test --retries=0 --reporter=line\n\n\n\nRunning 13 tests using 1 worker\n\n\n\n[1/13] e2e\\backup-boundaries.spec.ts:4:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n[2/13] e2e\\backup-boundaries.spec.ts:14:1 › legacy depth-boundary file is downloaded and restored through the actual backup UI\n[3/13] e2e\\pwa.spec.ts:4:1 › manifest, PNG dimensions, Chrome installability and measured localhost startup\n[4/13] e2e\\pwa.spec.ts:10:1 › production PWA controls page, survives offline page close and deep-link reopening\ne2e\\pwa.spec.ts:10:1 › production PWA controls page, survives offline page close and deep-link reopening\nCACHE_HEADERS [\n  {\n    url: 'http://127.0.0.1:4173/assets/index-CkLgvgXT.js',\n    vary: 'Origin'\n  },\n  {\n    url: 'http://127.0.0.1:4173/assets/index-Dw7k_Tq5.css',\n    vary: 'Origin'\n  },\n  { url: 'http://127.0.0.1:4173/icons/icon-192.png', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4173/icons/icon-512.png', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4173/index.html', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4173/manifest.webmanifest', vary: 'Origin' },\n  {\n    url: 'http://127.0.0.1:4173/THIRD_PARTY_LICENSES.txt',\n    vary: 'Origin'\n  }\n]\n\n[5/13] e2e\\safety.spec.ts:3:1 › save quota failure never claims success; cross-tab drafts stay visible\n[6/13] e2e\\safety.spec.ts:7:1 › touch emulation pinch/pan suppresses completion clicks; no external requests\n[7/13] e2e\\ui.spec.ts:4:1 › Windows: template, MR-independent completion, HTML text, stock/budget, custom node and file recovery\n[8/13] e2e\\ui.spec.ts:15:1 › Windows Chrome: close browser, relaunch same isolated profile, recover IndexedDB\n[9/13] e2e\\ui.spec.ts:19:1 › desktop routes/search/collapse/minimap and mobile viewport boundaries\n[10/13] e2e\\zz-update.spec.ts:6:1 › v1→v2: defer, unsaved form blocks, cancel unlocks, all tabs save and update without data loss\n[11/13] e2e\\zz-update.spec.ts:13:1 › update session survives initiator refresh and close; another/reopened page can cancel and write\n[12/13] e2e\\zz-update.spec.ts:22:1 › persistent write barrier is cancellable after refresh and loss of the waiting worker session\n[13/13] e2e\\zz-update.spec.ts:37:1 › orphaned write barrier with no waiting worker can be explicitly cancelled after reopening\n  13 passed (34.3s)\n[WebServer] (node:13600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:10168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T01:48:07.660Z",
+    "finishedAt": "2026-10-17T01:48:10.402Z",
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 28 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.38 kB\ndist/assets/index-Dw7k_Tq5.css   15.06 kB │ gzip:   4.30 kB\ndist/assets/index-CkLgvgXT.js   373.46 kB │ gzip: 121.21 kB\n\n✓ built in 166ms\n"
+  }
+]
