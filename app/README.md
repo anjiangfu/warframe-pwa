@@ -81,3 +81,31 @@ npm.cmd run test:browser
 test非watch。浏览器测试使用本机Chrome和127.0.0.1:4173的生产预览，创建独立上下文/`.test-browser`临时测试档案。升级测试最后会把测试dist变成m0-v2，交付/手工使用前再运行build生成正常内容hash版本。不要在用户真实档案中执行清数据测试。
 
 验收记录与截图在 `../docs/M0_Acceptance_Record.md` 和 `../docs/evidence/`。第三方许可见项目根 `THIRD_PARTY_NOTICES.md`、本目录 `licenses/THIRD_PARTY_LICENSES.txt`；运行时许可文本随dist提供。
+
+## 毒囊双枪养成样例 v0（2026-10-17）
+
+在侧栏打开“养成助手”，或访问 `/#assistant`。首版仅整理毒囊双枪（Dual Toxocyst），不增加托里德/第二把武器新模块。可先看I—IV全部任务，再手工填写拥有本体/适配器、安装及当前进化，从中途开始；默认未知，不从原科技树推断。当前阶段标记完成后提示后续未完成阶段，不自动改写其他阶段。
+
+点击苦栓、瑶丛、延凡草进入材料详情，也可搜索中文或英文（例如Eevani、Pathos Clamps）。持有量留空为未知，明确0才显示完整参考缺口。材料页和档案页共用stock；标记安装不扣材料。已经安装的记录仍可查看安装用量，但不表示必须重新采集。来源等级/日期在每项攻略中列出；未游戏内亲测，Chrysalith区域中文名仍待核。资料和独立攻略离线可用，外部原文链接需要联网。
+
+DB/备份schema保持1，新武器进度为可选字段，旧档缺字段按未知读取且不自动写库；首次手工填写才保存。旧四库存ID不变，新增三项使用material:稳定ID，共享同一stock，不建立第二套数字。旧档/未知引用/原件保留与容量、更新写保护继续生效。
+
+本次体验使用4180端口，避免占用4173审阅服务：
+
+```powershell
+Set-Location 'D:\wf\Warframe_PWA_Handoff_20261016\app'
+npm.cmd run build
+npm.cmd run preview -- --port 4180
+```
+
+打开 `http://127.0.0.1:4180/#assistant`。4180与4173是不同origin，不会自动看到另一地址的档案；需要时先从旧地址导出，在新地址预览后新建恢复，不把空界面当作旧存档被删。
+
+独立运行测试及证据输出：
+
+```powershell
+$env:APP_TEST_PORT='4180'
+$env:APP_EVIDENCE_DIR='../docs/evidence/Dual_Toxocyst_v0'
+npm.cmd run test:browser -- --retries=0
+```
+
+新测试仍使用随机.test-browser档案/隔离上下文，绝不清真实存档。设计/来源/结果见docs/Dual_Toxocyst_v0_Design.md、Dual_Toxocyst_v0_Sources.md及Dual_Toxocyst_v0_Acceptance.md。没有Android真机及可信HTTPS安装证据，不能把移动视口截图当实机验收。

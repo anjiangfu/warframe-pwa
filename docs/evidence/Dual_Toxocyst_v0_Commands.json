@@ -1,0 +1,51 @@
+[
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:37:39.416Z",
+    "finishedAt": "2026-10-17T02:37:41.626Z",
+    "output": "\n> tenno-local-planner@0.1.0 lint\n> eslint .\n\n"
+  },
+  {
+    "command": "npm.cmd test",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:37:41.629Z",
+    "finishedAt": "2026-10-17T02:37:45.616Z",
+    "output": "\n> tenno-local-planner@0.1.0 test\n> vitest run\n\n\n RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app\n\n\n Test Files  3 passed (3)\n      Tests  30 passed (30)\n   Start at  10:37:42\n   Duration  3.09s (tests 91%, import 8%, transform 1%)\n\n"
+  },
+  {
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:37:45.616Z",
+    "finishedAt": "2026-10-17T02:37:48.117Z",
+    "output": "\n> tenno-local-planner@0.1.0 typecheck\n> tsc --noEmit\n\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:37:48.118Z",
+    "finishedAt": "2026-10-17T02:37:51.192Z",
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 31 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.38 kB\ndist/assets/index-jAuLutPL.css   19.70 kB │ gzip:   5.26 kB\ndist/assets/index-C4o4Y7cg.js   395.71 kB │ gzip: 128.91 kB\n\n✓ built in 184ms\n"
+  },
+  {
+    "command": "npm.cmd run test:browser -- --reporter=line",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:37:51.192Z",
+    "finishedAt": "2026-10-17T02:38:32.228Z",
+    "output": "\n> tenno-local-planner@0.1.0 test:browser\n> playwright test --reporter=line\n\n\n\nRunning 15 tests using 1 worker\n\n\n\n[1/15] e2e\\backup-boundaries.spec.ts:5:1 › existing oversized document reports export failure, downloads nothing and keeps every note\n[2/15] e2e\\backup-boundaries.spec.ts:15:1 › legacy depth-boundary file is downloaded and restored through the actual backup UI\n[3/15] e2e\\pwa.spec.ts:5:1 › manifest, PNG dimensions, Chrome installability and measured localhost startup\n[4/15] e2e\\pwa.spec.ts:11:1 › production PWA controls page, survives offline page close and deep-link reopening\ne2e\\pwa.spec.ts:11:1 › production PWA controls page, survives offline page close and deep-link reopening\nCACHE_HEADERS [\n  {\n    url: 'http://127.0.0.1:4180/assets/index-C4o4Y7cg.js',\n    vary: 'Origin'\n  },\n  {\n    url: 'http://127.0.0.1:4180/assets/index-jAuLutPL.css',\n    vary: 'Origin'\n  },\n  { url: 'http://127.0.0.1:4180/icons/icon-192.png', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4180/icons/icon-512.png', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4180/index.html', vary: 'Origin' },\n  { url: 'http://127.0.0.1:4180/manifest.webmanifest', vary: 'Origin' },\n  {\n    url: 'http://127.0.0.1:4180/THIRD_PARTY_LICENSES.txt',\n    vary: 'Origin'\n  }\n]\n\n[5/15] e2e\\safety.spec.ts:4:1 › save quota failure never claims success; cross-tab drafts stay visible\n[6/15] e2e\\safety.spec.ts:8:1 › touch emulation pinch/pan suppresses completion clicks; no external requests\n[7/15] e2e\\ui.spec.ts:5:1 › Windows: template, MR-independent completion, HTML text, stock/budget, custom node and file recovery\n[8/15] e2e\\ui.spec.ts:16:1 › Windows Chrome: close browser, relaunch same isolated profile, recover IndexedDB\n[9/15] e2e\\ui.spec.ts:20:1 › desktop routes/search/collapse/minimap and mobile viewport boundaries\n[10/15] e2e\\weapon-assistant.spec.ts:4:1 › weapon pilot: middle stage, shared stock, downloaded backup restore and profile isolation\n[11/15] e2e\\weapon-assistant.spec.ts:18:1 › weapon pilot opens offline; failed material writes retain existing data and report failure\n[12/15] e2e\\zz-update.spec.ts:7:1 › v1→v2: defer, unsaved form blocks, cancel unlocks, all tabs save and update without data loss\n[13/15] e2e\\zz-update.spec.ts:14:1 › update session survives initiator refresh and close; another/reopened page can cancel and write\n[14/15] e2e\\zz-update.spec.ts:23:1 › persistent write barrier is cancellable after refresh and loss of the waiting worker session\n[15/15] e2e\\zz-update.spec.ts:38:1 › orphaned write barrier with no waiting worker can be explicitly cancelled after reopening\n  15 passed (40.1s)\n[WebServer] (node:3420) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:8148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:38:32.228Z",
+    "finishedAt": "2026-10-17T02:38:35.132Z",
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 31 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.38 kB\ndist/assets/index-jAuLutPL.css   19.70 kB │ gzip:   5.26 kB\ndist/assets/index-C4o4Y7cg.js   395.71 kB │ gzip: 128.91 kB\n\n✓ built in 176ms\n"
+  },
+  {
+    "command": "node scripts/verify-delivery.mjs",
+    "exitCode": 0,
+    "startedAt": "2026-10-17T02:38:35.133Z",
+    "finishedAt": "2026-10-17T02:38:35.288Z",
+    "output": "{\n  \"build\": {\n    \"build\": \"m0-59de0833f2ff\",\n    \"catalogVersion\": \"2026.10.17.1\",\n    \"base\": \"/\"\n  },\n  \"catalog\": {\n    \"lanes\": 7,\n    \"nodes\": 29,\n    \"steps\": 87,\n    \"recommendedEdges\": 30\n  },\n  \"protectedInputs\": 16,\n  \"resources\": [\n    {\n      \"path\": \"dist/assets/index-C4o4Y7cg.js\",\n      \"bytes\": 395712,\n      \"gzipBytes\": 127804\n    },\n    {\n      \"path\": \"dist/assets/index-jAuLutPL.css\",\n      \"bytes\": 19702,\n      \"gzipBytes\": 5221\n    },\n    {\n      \"path\": \"dist/build-info.json\",\n      \"bytes\": 70,\n      \"gzipBytes\": 89\n    },\n    {\n      \"path\": \"dist/icons/icon-192.png\",\n      \"bytes\": 1558,\n      \"gzipBytes\": 1425\n    },\n    {\n      \"path\": \"dist/icons/icon-512.png\",\n      \"bytes\": 5754,\n      \"gzipBytes\": 4599\n    },\n    {\n      \"path\": \"dist/index.html\",\n      \"bytes\": 545,\n      \"gzipBytes\": 388\n    },\n    {\n      \"path\": \"dist/manifest.webmanifest\",\n      \"bytes\": 517,\n      \"gzipBytes\": 294\n    },\n    {\n      \"path\": \"dist/sw.js\",\n      \"bytes\": 4798,\n      \"gzipBytes\": 1950\n    },\n    {\n      \"path\": \"dist/THIRD_PARTY_LICENSES.txt\",\n      \"bytes\": 15432,\n      \"gzipBytes\": 4586\n    }\n  ],\n  \"totalRawBytes\": 444088\n}\n"
+  }
+]
