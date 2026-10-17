@@ -1,6 +1,6 @@
 # M0 验收记录
 
-结论：**M0 实现完成、实机验收未完成。** 2026-10-16，Windows本机生产构建的数据和Chrome自动化验收通过；Android真机、可信HTTPS安装、Windows系统级安装尚未验收。模拟视口不算Android真机证据。
+结论：**M0 实现完成、实机验收未完成。** 2026-10-17已完成备份约束和更新中断修复，最新结果见第8节（24项数据测试、13项Chrome测试）。第1—7节保留2026-10-16初次交付记录；共用截图/浏览器元数据已随回归刷新，初次证据原字节保留在Git提交cda0b32中。Android真机、可信HTTPS安装、Windows系统级安装仍尚未验收，模拟视口不算真机证据。
 
 ## 1. 范围和Git检查点
 
@@ -12,7 +12,7 @@
 | 2 数据与恢复 | `2dcfca4` | 工程、LocalProvider、IndexedDB事务/revision/快照、预览/原件/新档与整档恢复。13项测试通过，lint/typecheck/build退出0。首次11通过2失败，修正目录测试输入和旧应用拒绝新版数据库逻辑后重跑通过。 |
 | 3 中文界面 | `4c16086` | 档案/库存/预算、原树、搜索/路线/小地图、触控、自定义节点。3项Chrome生产测试通过，包括浏览器关闭重开、实际下载再导入和HTML文本安全；360/412截图仅为模拟。 |
 | 4 PWA | `8903526` | 自有manifest/图标/SW、离线壳、多页更新协议。16项数据测试和8项Chrome测试通过，lint/typecheck/build退出0；另通过子路径离线测试。 |
-| 5 最终交付 | 本文件所属提交，hash见最终回复或 `git log -1` | 加强全量迁移逐值断言，最终16项数据测试和8项Chrome测试通过，lint/typecheck/build退出0；提交说明、许可、命令日志、资源/hash对照和本记录。 |
+| 5 最终交付 | `cda0b32f0d4af0913b3cb4fab7f4c7164e86ae6d` | 加强全量迁移逐值断言，初次交付16项数据测试和8项Chrome测试通过，lint/typecheck/build退出0；提交说明、许可、命令日志、资源/hash对照和本记录。 |
 
 每次提交前检查diff和空白错误。最终全量 `git diff --cached --check` 仅报告第三方原许可归档自带的上游尾空白，保留正文不改写；排除 `app/licenses/THIRD_PARTY_LICENSES.txt` 后退出0。最终提交hash不能写进自身受跟踪内容，故由最终回复记录。16个受保护输入原字节不变；唯一获准改动的原文件是M0实施计划。
 
@@ -106,3 +106,65 @@ Vitest + fake-indexeddb共16项，源文件 `app/src/test/data.test.ts`。模拟
 | data/tech-tree-seed.json | `f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2` |
 
 启动步骤见 [app/README.md](../app/README.md)。交付后停在M0工作分支，等待下一里程碑授权。
+
+## 8. M0修复与补充验收（2026-10-17）
+
+本次从 `m0/local-planner` / `cda0b32f0d4af0913b3cb4fab7f4c7164e86ae6d` 的干净工作区开始。仅修复M0，不修改原HTML、seed、交接资料、M-1报告或M0计划；不新增依赖，不推送、合并或公开部署。单独本地修复提交的hash见交付回复（提交无法在自身文件中嵌入自身hash）。
+
+### 原因和修复契约
+
+旧版validateProfile只限制单字段/结构，不检查整档字节数；exportBackup直接序列化，因此29×100000中文字笔记可导出约8.7MB但被8MiB导入门槛拒绝。旧parseImport又从备份外层计算深度及遍历计数，同一profile被多计一层/多个包装值；legacyArchive.field的18层child在存储时有效，回导时超限。这两类问题均先添加失败测试复现，原6项边界测试全部失败后才修改实现。
+
+现在保存、导出和导入共用BACKUP_LIMITS：
+
+- 新格式文件8 MiB，旧格式文件2 MiB；完整备份使用紧凑JSON，旧的缩进备份只要仍在限制内也能导入，schemaVersion保持1。
+- 业务负载为移除id/revision后的整个profile紧凑JSON，包含全部笔记、日志、未知字段、自定义节点、库存/预算及原件；UTF-8上限8,386,560字节。预留2 KiB给最多100字符的id/catalogVersion、安全整数revision和备份头，跨目标恢复不会仅因UUID变化越界。控制字符全部需要转义的100字符元数据也通过边界测试。
+- 深度20（profile根深度0）、遍历值总数50,000，都按profile本身计算；备份包装元数据另检，不再重复占用档案限制。普通文本100,000、base64 3,000,000个UTF-16代码单元；非JSON值明确拒绝，避免序列化静默丢字段。
+- create/save/restore在提交前校验同一约束，save/restore在生成最终id/revision后再次校验；失败不写入。exportBackup检查业务和最终文件容量，界面捕获失败、明确显示“备份未生成”，不触发下载、不裁剪数据。旧版已有超限档案保留原状态，也不能假报已生成备份。
+
+更新中断问题也已复现：旧版刷新后取消按钮丢失；持久写屏障建立后停止worker并重载也无取消入口。现在候选版本Cache Storage记录不含个人资料的会话token，worker消息串行处理；新页面可重新加入、重新排空写入并确认，不继承旧页面ACK。其他页面/重新打开的页面可以取消；取消按token解除meta屏障，迟到ACK/屏障写入不会重新建立已取消的保护。没有waiting worker的孤立屏障也提供明确取消入口，经active worker回应后解除，不以超时自动放开写入。SW激活后清理会话日志，仍不删除IndexedDB。
+
+### 新增回归和实际结果
+
+原U01—U10的16项全部保留；新增8项数据测试，共24项。源文件 `app/src/test/backup-boundaries.test.ts`；每个有效边界均实际运行导出→解析导入→Repository事务恢复到不同档案，并比较除目标id/revision外的完整业务字段。
+
+| 新增数据场景 | 实际结果 |
+|---|---|
+| 29节点各100000个中文字 | validateProfile和导出均明确拒绝超限，不截断原笔记；浏览器另验证已有超限文档不下载且全部29笔记仍完整。 |
+| 业务负载恰好8,386,560字节／再加1字节 | 边界保存、实际导出/导入/恢复成功；+1时保存/导出/导入均拒绝，DB旧状态逐项保持。 |
+| 18层child归档（profile深度20）／再深1层 | 边界无损恢复，超限一致拒绝；不将包装层计入profile。 |
+| 遍历值恰好50,000／再加1项 | 边界实际往返成功，超限拒绝。 |
+| 旧档18层child迁移 | 中文笔记、原日志时间、未知字段、原件字节均保留，迁移后的新备份可恢复。 |
+| 旧档文件恰好2 MiB／再加1字节 | 边界迁移、保留原字节、完整备份往返成功；+1拒绝。 |
+| 非JSON归档值undefined | 保存/导出拒绝，不能静默丢字段。 |
+| 有效新备份文件恰好8 MiB／再加1字节 | 有效JSON补空白至文件边界仍可导入和恢复；+1明确拒绝。 |
+
+Chrome生产测试从8项扩为13项，全部通过；新增5项：
+
+| 场景 | 实际操作、结果和证据 |
+|---|---|
+| 已有超限档案导出 | 专用Chrome测试库中构造29×100000中文字，实际点击导出，提示未生成，下载数0；直接读取原库确认每条笔记未变。[记录](evidence/M0_Fix_Backup_Failure.json)、[截图](evidence/M0_Fix_Backup_Failure.png)。 |
+| 深度边界真实文件往返 | 界面导入18层旧档→确认→真实下载新备份→选择下载文件→预览/恢复新档→重载；未知字段、原件字节、原日志时间保持。[记录](evidence/M0_Fix_Depth_Restore.json)。 |
+| 排空阶段刷新/关闭发起页 | 另一页保留未提交草稿阻止激活；发起页刷新仍有取消入口，再关闭发起页，由另一页取消并保存；重新打开页面可写MR、读取数据。[记录](evidence/M0_Fix_Update_Refresh.json)、[重开截图](evidence/M0_Fix_Update_Reopen.png)。 |
+| 屏障阶段worker停止/刷新/关闭发起页 | 测试故意延迟BARRIER_READY，确认meta屏障实际存在；CDP停止worker，刷新发起页，再关闭、重新打开，由新页取消。其他受控页同步解锁，MR可保存且重载保持。[记录](evidence/M0_Fix_Update_Barrier.json)。 |
+| 没有waiting worker的孤立屏障 | 注入专用中断状态，重载后先确认界面锁定，明确取消后写MR18，重载仍为18。[记录](evidence/M0_Fix_Update_Orphan.json)。 |
+
+屏障阶段测试保留真正受旧SW控制的应用页，并跨刷新延迟ACK；如果所有旧受控页关闭，Chrome合法自动激活新SW，此时取消按钮消失不代表写保护遗留。测试没有把该正常行为当作故障。研发中还修正了worker的Response全局声明及大原件逐元素断言耗时（改为Buffer逐字节比对），最终不存在未通过的本次自动化项。
+
+### 最终命令和交付状态
+
+本轮从app执行，设置 `M0_EVIDENCE_PREFIX=M0_Fix`，调用 `node scripts/run-quality.mjs`；实跑命令及UTC起止时间/stdout/stderr完整保存在 [M0_Fix_Commands.json](evidence/M0_Fix_Commands.json)，首次M0_Commands.json不覆盖。
+
+| 实跑命令 | 退出码 | 实际结果 |
+|---|---|---|
+| npm.cmd run lint | 0 | ESLint通过 |
+| npm.cmd test | 0 | 非watch，2文件24/24通过 |
+| npm.cmd run typecheck | 0 | TypeScript通过 |
+| npm.cmd run build | 0 | 生产构建通过，28模块 |
+| npm.cmd run test:browser -- --reporter=line | 0 | Windows本机headless Chrome，13/13通过（34.2秒），含原持久化/离线/更新/恢复 |
+| npm.cmd run build（浏览器测试后） | 0 | 恢复普通内容hash构建，非测试专用覆盖ID |
+| node scripts/verify-delivery.mjs | 0 | 原M0的16个保护输入hash及7/29/87/30映射、manifest/图标/资源检查通过 |
+
+最终build为 `m0-aef31a53e917`，资源原始合计417,205字节；[资源清单](evidence/M0_Fix_Build.json)。相对本次修复前cda0b32，包含已修订M0计划在内的17个基线资料全部原字节不变，独立hash核对退出0：[17项保护输入对照](evidence/M0_Fix_Protected_Inputs.json)。没有新增依赖或更改许可正文。
+
+此次仅Windows本机生产构建自动化，不改变第6节的设备待验结论：**M0实现完成、实机验收未完成**。Android真机、可信HTTPS安装/软键盘、Windows OS级安装仍未测试。完成独立本地修复提交后停止，不进入M1—M4。

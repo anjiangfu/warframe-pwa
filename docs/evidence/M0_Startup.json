@@ -1,6 +1,6 @@
 {
   "conditions": "Windows headless Chrome, localhost production preview, no throttling, fresh isolated context; landing page only",
-  "landingInteractiveMs": 269,
+  "landingInteractiveMs": 245,
   "manifest": {
     "id": "/",
     "name": "天诺星图 · 本地行动档案",
@@ -36,8 +36,8 @@
       "height": 512
     }
   ],
-  "DOMContentLoadedMs": 121,
-  "loadMs": 121.5,
+  "DOMContentLoadedMs": 133.79999999981374,
+  "loadMs": 133.79999999981374,
   "installability": {
     "installabilityErrors": []
   },

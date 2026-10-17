@@ -1,0 +1,9 @@
+{
+  "persistentBarrierReached": true,
+  "workerStopped": true,
+  "refresh": true,
+  "initiatorClosed": true,
+  "reopenedPageCancelled": true,
+  "cancelClearedBarrier": true,
+  "writeAndReopen": true
+}

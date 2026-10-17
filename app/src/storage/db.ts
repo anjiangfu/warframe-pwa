@@ -22,7 +22,7 @@ export class Repository {
  list(){return this.db.profiles.toArray();}get(id:string){return this.db.profiles.get(id);}
  private async guard(){if(this.db.unavailable)throw Error('数据库版本变化，请重新打开');if(await this.db.meta.get('writeBarrier'))throw Error('正在准备更新，写入已暂停，请更新或取消更新后继续。');}
  async create(p:ProfileDocument){validateProfile(p);return this.db.transaction('rw',[this.db.profiles,this.db.meta],async()=>{await this.guard();await this.db.profiles.add(structuredClone(p));return p;});}
- async save(p:ProfileDocument,expectedRevision:number){validateProfile(p);return this.db.transaction('rw',[this.db.profiles,this.db.meta],async()=>{await this.guard();const previous=await this.get(p.id);if(!previous||previous.revision!==expectedRevision)throw Error('档案已在其他页面改变，请重新载入后再修改。');const next={...structuredClone(p),revision:expectedRevision+1};await this.db.profiles.put(next);return next;});}
+ async save(p:ProfileDocument,expectedRevision:number){validateProfile(p);return this.db.transaction('rw',[this.db.profiles,this.db.meta],async()=>{await this.guard();const previous=await this.get(p.id);if(!previous||previous.revision!==expectedRevision)throw Error('档案已在其他页面改变，请重新载入后再修改。');const next={...structuredClone(p),revision:expectedRevision+1};validateProfile(next);await this.db.profiles.put(next);return next;});}
  async restore(preview:ImportPreview,targetId:string,expectedRevision:number|null){
   validateProfile(preview.profile);
   return this.db.transaction('rw',[this.db.profiles,this.db.snapshots,this.db.imports,this.db.meta],async()=>{
@@ -30,7 +30,7 @@ export class Repository {
    if(previous&&prior&&prior.revision===previous.revision&&(expectedRevision===null||expectedRevision===previous.revision||expectedRevision===previous.revision-1))return previous;
    if((previous?.revision??null)!==expectedRevision)throw Error('预览后档案已改变，请重新预览。');
    if(previous){const id=crypto.randomUUID();await this.db.snapshots.add({id,profileId:targetId,document:structuredClone(previous)});const saved=await this.db.snapshots.get(id);if(!saved||JSON.stringify(saved.document)!==JSON.stringify(previous))throw Error('备份失败，恢复已取消');}
-   const next={...structuredClone(preview.profile),id:targetId,revision:(previous?.revision??-1)+1};await this.db.profiles.put(next);await this.db.imports.put({profileId:targetId,hash:preview.hash,revision:next.revision});return next;
+   const next={...structuredClone(preview.profile),id:targetId,revision:(previous?.revision??-1)+1};validateProfile(next);await this.db.profiles.put(next);await this.db.imports.put({profileId:targetId,hash:preview.hash,revision:next.revision});return next;
   });
  }
 }
