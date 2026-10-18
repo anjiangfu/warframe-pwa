@@ -1,0 +1,62 @@
+{
+  "build": {
+    "build": "m0-22fbd5eace8e",
+    "catalogVersion": "2026.10.18.2",
+    "base": "/"
+  },
+  "catalog": {
+    "lanes": 7,
+    "nodes": 29,
+    "steps": 87,
+    "recommendedEdges": 30
+  },
+  "protectedInputs": 16,
+  "resources": [
+    {
+      "path": "dist/assets/index-Cii0wOrv.css",
+      "bytes": 24602,
+      "gzipBytes": 6239
+    },
+    {
+      "path": "dist/assets/index-njnMUZkz.js",
+      "bytes": 453979,
+      "gzipBytes": 144195
+    },
+    {
+      "path": "dist/build-info.json",
+      "bytes": 70,
+      "gzipBytes": 88
+    },
+    {
+      "path": "dist/icons/icon-192.png",
+      "bytes": 1558,
+      "gzipBytes": 1425
+    },
+    {
+      "path": "dist/icons/icon-512.png",
+      "bytes": 5754,
+      "gzipBytes": 4599
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 545,
+      "gzipBytes": 385
+    },
+    {
+      "path": "dist/manifest.webmanifest",
+      "bytes": 517,
+      "gzipBytes": 294
+    },
+    {
+      "path": "dist/sw.js",
+      "bytes": 4798,
+      "gzipBytes": 1947
+    },
+    {
+      "path": "dist/THIRD_PARTY_LICENSES.txt",
+      "bytes": 15432,
+      "gzipBytes": 4586
+    }
+  ],
+  "totalRawBytes": 507255
+}

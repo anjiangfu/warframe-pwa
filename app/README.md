@@ -133,3 +133,38 @@ npm.cmd run preview -- --port 4184
 打开 `http://127.0.0.1:4184/#assistant`。端口不同即不同origin；如要带入旧地址档案，先在旧地址导出，再到新地址预览后新建恢复。别将新地址的空档当作原存档丢失。
 
 复跑浏览器：设置 `$env:APP_TEST_PORT='4182'`、`$env:APP_EVIDENCE_DIR='../docs/evidence/Current_Goal_v0/Manual'`，运行 `npm.cmd run build`、`npm.cmd run test:browser -- --reporter=line`；更新用例结束后再次build恢复正常版本。验收见 `../docs/Current_Goal_v0_Acceptance.md`；本轮不宣称Android真机/HTTPS安装或游戏内挑战实测通过。
+
+## 材料查询与制作缺口 v0（2026-10-18）
+
+独立入口 `/#materials` 可查当前10项资料，支持中文、英文和已核别名，空搜索列出全部。未创建档案也能查询；查找、选配方、改预览不会创建目标或写日志。点击材料查看获取方式、建议地点、进入限制、来源和日期；新四节点中文名明确待核，地点不是最快或必掉承诺。武器页使用同一材料详情和同一份stock。
+
+在 `/#crafting` 查看普通福马蓝图配方，填写“本次计划新制作数量”，核对批次及多产出后点击“加入制作目标”。已拥有福马不会抵扣本次新产出。改变数量需要明确保存；完成/暂缓从汇总排除，恢复关注可重新计入，不自动加成品或扣材料。在养成助手中也能选择已加入的制作目标并打开制作需求。
+
+单项目差值表示单独做该项目的参考；共享汇总先合并同ID用量，再抵扣一次库存，可展开每项贡献。不把多个单项差值相加。未知库存、待核用量、缺目录引用及计算溢出不会当作0；材料够用仍需核对游戏前提。原毒囊安装清单继续兼容，海波IV操作挑战不列作材料需求，已完成声明不会被重新加入。
+
+DB version/备份schemaVersion仍为1，目录2026.10.18.2。可选craftingTargets按recipeId保存数量，完成安排只存goalStates。旧档缺字段不自动补写；改名、排序或目录失去引用保留个人记录。8MiB、2KiB元数据预留、深度20、50000值约束保持，失败明确提示且不裁剪数据。
+
+体验新地址（4192，与旧地址档案隔离）：
+
+```powershell
+Set-Location 'D:\wf\Warframe_PWA_Handoff_20261016\app'
+npm.cmd run build
+npm.cmd run preview -- --port 4192
+```
+
+打开 `http://127.0.0.1:4192/#crafting` 或 `/#materials`。如要带入原4173/4180/4184档案，先从原地址导出完整备份，再在新地址选择文件→核对预览→选择新建档案→明确确认。默认新建、不自动合并；整档覆盖恢复须明确确认。旧HTML原件可从归档重新下载，不能用seed代替个人备份。不同端口、Chrome与应用内浏览器的存储也不会自动互通。
+
+完整复跑并独立保存证据（先确认4186未被占用）：
+
+```powershell
+$env:APP_TEST_PORT='4186'
+$env:APP_BROWSER_PROFILE_ROOT='.b'
+$env:APP_EVIDENCE_DIR='../docs/evidence/M1_Crafting_Materials_v0/Manual'
+$env:M0_EVIDENCE_DIR='../docs/evidence/M1_Crafting_Materials_v0/Manual'
+$env:M0_EVIDENCE_PREFIX='M1_Manual'
+node scripts/run-quality.mjs
+```
+
+测试使用专用短Chrome目录 `app/.b/<8位ID>`（安装性测试为m-前缀），不使用用户Chrome资料；真实关闭/重开实际路径见浏览器记录。生产更新测试后脚本会重新构建正常内容hash版本。历史默认脚本输出位置保留，新环境变量只将证据重定向到本轮目录。4190曾不可绑定，未改系统端口配置，改用可绑定的4186。
+
+来源、限制和完整验收见 `../docs/M1_Crafting_Materials_v0_Sources.md`、`../docs/M1_Crafting_Materials_v0_Acceptance.md`。Android真机、可信HTTPS安装、Windows系统安装UI及游戏内制作尚未验收；移动截图仅为Windows Chrome模拟视口。本轮结束后停止，集团/遗物/活动等后续功能另行授权。

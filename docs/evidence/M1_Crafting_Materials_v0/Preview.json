@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-18T11:52:00.015Z",
+  "url": "http://127.0.0.1:4192/#crafting",
+  "host": "127.0.0.1",
+  "publicDeployment": false,
+  "/": {
+    "status": 200
+  },
+  "/build-info.json": {
+    "status": 200,
+    "body": {
+      "build": "m0-7531c058be74",
+      "catalogVersion": "2026.10.18.2",
+      "base": "/"
+    }
+  },
+  "/manifest.webmanifest": {
+    "status": 200
+  },
+  "processId": 38572,
+  "testPort4186Closed": true
+}

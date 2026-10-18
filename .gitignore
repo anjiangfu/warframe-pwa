@@ -3,5 +3,6 @@ app/dist/
 app/test-results/
 app/playwright-report/
 app/.test-browser/
+app/.b/
 app/.vite/
 *.tsbuildinfo

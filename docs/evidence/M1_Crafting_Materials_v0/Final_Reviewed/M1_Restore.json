@@ -1,0 +1,14 @@
+{
+  "queryNoWrites": true,
+  "full29Nodes87Steps": true,
+  "notesBudgetsStockLogsArchiveOriginalsEqual": true,
+  "newCraftingAndManualWeaponFactsEqual": true,
+  "actualDownloadRestoreReload": true,
+  "profilesIsolated": true,
+  "statusesDoNotChangeStock": true,
+  "mobileWidths": [
+    360,
+    412
+  ],
+  "androidPhysical": false
+}

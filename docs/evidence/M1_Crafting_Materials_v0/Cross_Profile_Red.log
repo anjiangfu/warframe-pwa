@@ -1,0 +1,49 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test crafting-materials.spec.ts --grep lookup --reporter=line
+
+
+[WebServer] (node:37628) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:25580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] e2e\crafting-materials.spec.ts:6:1 › independent lookup is read only, crafting shares stock, statuses filter and complete backup downloads/restores all fields
+  1) e2e\crafting-materials.spec.ts:6:1 › independent lookup is read only, crafting shares stock, statuses filter and complete backup downloads/restores all fields 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.material-numbers')
+    Expected substring: "未指定目标"
+    Received string:    "本项目参考用量3持有量未知参考缺口未知（先核对用量与持有量）"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('.material-numbers') with timeout 5000ms
+      - waiting for locator('.material-numbers')
+        14 × locator resolved to <div class="material-numbers">…</div>
+           - unexpected value "本项目参考用量3持有量未知参考缺口未知（先核对用量与持有量）"
+
+
+      15 |  await page.screenshot({path:evidencePath('M1_Desktop_Crafting.png'),fullPage:true});for(const width of [360,412]){await page.setViewportSize({width,height:860});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:evidencePath(`M1_Mobile_${width}.png`),fullPage:true});await page.screenshot({path:evidencePath(`M1_Mobile_${width}_Top.png`)});}
+      16 |  await page.setViewportSize({width:1440,height:960});await page.getByRole('button',{name:'备份与恢复',exact:true}).click();const waiting=page.waitForEvent('download');await page.getByRole('button',{name:'↓ 导出完整备份'}).click();const file=(await(await waiting).path())!,exported=JSON.parse(await readFile(file,'utf8')).profile;await page.getByLabel('选择存档文件').setInputFiles(file);await page.getByLabel('我已核对目标，确认新建').check();await page.getByRole('button',{name:'确认导入',exact:true}).click();await expect(page.getByRole('status')).toContainText('导入完成');const restoredId=await page.getByLabel('切换档案').inputValue();await page.reload();await page.getByLabel('切换档案').selectOption(restoredId);const restored=(await records(page)).profiles.find(p=>p.id===restoredId)!;expect({...restored,id:exported.id,revision:exported.revision}).toEqual(exported);expect(Object.values(restored.steps).reduce((s,x)=>s+Object.keys(x).length,0)).toBe(87);expect(Object.keys(restored.notes)).toHaveLength(29);expect(restored.originals[0].base64).toBe(Buffer.from(JSON.stringify(legacy)).toString('base64'));
+    > 17 |  await page.getByRole('button',{name:'＋ 新建空白档案'}).click();await expect(page.getByRole('status')).toContainText('已创建');const blankId=await page.getByLabel('切换档案').inputValue();expect((await records(page)).profiles.find(p=>p.id===blankId)?.craftingTargets).toBeUndefined();await page.getByLabel('切换档案').selectOption(restoredId);await page.getByRole('button',{name:'制作缺口',exact:true}).click();await page.getByRole('region',{name:'单项目参考'}).getByRole('button',{name:'查询材料 神经元（Neurodes）',exact:true}).click();await expect(page.getByTestId('material-deficit')).toHaveText('3');await page.getByLabel('切换档案').selectOption(blankId);await expect(page.locator('.material-numbers')).toContainText('未指定目标');await expect(page.getByLabel('材料持有量')).toHaveValue('');await page.getByLabel('切换档案').selectOption(restoredId);await page.getByRole('button',{name:'养成助手',exact:true}).click();await page.getByLabel('当前目标',{exact:true}).selectOption('crafting:recipe:forma');await expect(page.getByRole('button',{name:'打开制作需求',exact:true})).toBeVisible();await page.getByLabel('当前目标',{exact:true}).selectOption('goal:nami-solo');await expect(page.getByLabel('当前目标卡点')).toContainText('操作挑战');
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
+      18 |  await writeFile(evidencePath('M1_Restore.json'),JSON.stringify({queryNoWrites:true,full29Nodes87Steps:true,notesBudgetsStockLogsArchiveOriginalsEqual:true,newCraftingAndManualWeaponFactsEqual:true,actualDownloadRestoreReload:true,profilesIsolated:true,statusesDoNotChangeStock:true,mobileWidths:[360,412],androidPhysical:false},null,2));
+      19 | });
+      20 | test('crafting quantity quota/conflict/update failures preserve existing data and do not report success',async({page,context})=>{
+        at D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\crafting-materials.spec.ts:17:671
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\crafting-materials-indepen-2478c-wnloads-restores-all-fields\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\crafting-materials-indepen-2478c-wnloads-restores-all-fields\error-context.md
+
+
+  1 failed
+    e2e\crafting-materials.spec.ts:6:1 › independent lookup is read only, crafting shares stock, statuses filter and complete backup downloads/restores all fields 

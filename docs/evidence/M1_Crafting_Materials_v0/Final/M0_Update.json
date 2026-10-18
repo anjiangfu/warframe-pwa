@@ -1,0 +1,14 @@
+{
+  "from": "m0-v1",
+  "to": "m0-v2",
+  "deferred": true,
+  "unsavedFormBlocked": true,
+  "cancelUnlocked": true,
+  "twoTabsUpdated": true,
+  "unresponsiveClientBlockedUntilClosed": true,
+  "notesPreserved": true,
+  "craftingTargetPreserved": true,
+  "caches": [
+    "tenno-shell-m0-v2"
+  ]
+}
