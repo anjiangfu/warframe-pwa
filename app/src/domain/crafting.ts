@@ -4,11 +4,15 @@ import {progressOf,type WeaponCatalog} from './weapon';
 export interface CheckedAmount {quantity:number|null;verification:'verified'|'unverified'|'conflicting';sourceIds:string[];checkedAt:string}
 export interface Recipe {id:string;title:string;output:CheckedAmount&{resourceId:string};inputs:(CheckedAmount&{resourceId:string})[];prerequisites:string[];sourceIds:string[]}
 export interface CraftingCatalog {catalogVersion:string;recipes:Recipe[]}
-export type CraftingProfile=ProfileDocument&{craftingTargets?:Record<string,number>};
+export type CraftingProfile=ProfileDocument;
 export interface RequirementLine {resourceId:string;required:number|null;owned:number|null;deficit:number|null}
 export type MaterialState='empty'|'incomplete'|'unknown'|'missing'|'sufficient';
 export interface CraftPlan {id:string;title:string;kind:'crafting'|'installation';quantity:number;batches:number|null;produced:number|null;extra:number|null;lines:RequirementLine[];issues:string[];prerequisites:string[];requirementsComplete:boolean;materialState:MaterialState}
 export const craftGoalId=(id:string)=>'crafting:'+id;
+export function setCraftingTarget(p:ProfileDocument,id:string,quantity:number){
+ if(!id||['__proto__','constructor','prototype'].includes(id)||!positiveInteger(quantity))throw Error('计划新制作数量必须为正安全整数');
+ p.craftingTargets??={};p.craftingTargets[id]=quantity;p.goalStates??={};p.goalStates[craftGoalId(id)]??='focused';
+}
 export function positiveInteger(n:unknown):n is number{return typeof n==='number'&&Number.isSafeInteger(n)&&n>0;}
 const knownStock=(n:unknown):number|null=>typeof n==='number'&&Number.isSafeInteger(n)&&n>=0?n:null;
 function checked(a:CheckedAmount){return positiveInteger(a.quantity)&&a.verification==='verified'&&a.sourceIds.length>0&&!!a.checkedAt;}
