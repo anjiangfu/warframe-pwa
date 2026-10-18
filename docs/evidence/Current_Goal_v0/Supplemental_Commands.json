@@ -1,0 +1,30 @@
+[
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "startedAt": "2026-10-18T05:36:55.183Z",
+    "finishedAt": "2026-10-18T05:36:57.334Z",
+    "output": "\n> tenno-local-planner@0.1.0 lint\n> eslint .\n\n"
+  },
+  {
+    "command": "npm.cmd test",
+    "exitCode": 0,
+    "startedAt": "2026-10-18T05:36:57.335Z",
+    "finishedAt": "2026-10-18T05:37:01.264Z",
+    "output": "\n> tenno-local-planner@0.1.0 test\n> vitest run\n\n\n RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app\n\n\n Test Files  4 passed (4)\n      Tests  37 passed (37)\n   Start at  13:36:58\n   Duration  3.04s (tests 87%, import 10%, transform 2%, worker 1%)\n\n"
+  },
+  {
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-10-18T05:37:01.265Z",
+    "finishedAt": "2026-10-18T05:37:03.809Z",
+    "output": "\n> tenno-local-planner@0.1.0 typecheck\n> tsc --noEmit\n\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "startedAt": "2026-10-18T05:37:03.809Z",
+    "finishedAt": "2026-10-18T05:37:06.826Z",
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 35 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.38 kB\ndist/assets/index-D3X8a6O0.css   22.05 kB │ gzip:   5.78 kB\ndist/assets/index-BjO-3Vss.js   425.39 kB │ gzip: 138.06 kB\n\n✓ built in 176ms\n"
+  }
+]

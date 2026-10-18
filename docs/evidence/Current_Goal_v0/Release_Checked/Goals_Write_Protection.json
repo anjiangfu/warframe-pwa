@@ -1,0 +1,6 @@
+{
+  "snapshotQuotaRollback": true,
+  "noFalseSuccess": true,
+  "updateBarrierRespected": true,
+  "isolatedSyntheticDatabase": true
+}

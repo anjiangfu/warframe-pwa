@@ -1,0 +1,6 @@
+{
+  "noWaitingWorker": true,
+  "explicitCancel": true,
+  "barrierCleared": true,
+  "writeAndReload": true
+}

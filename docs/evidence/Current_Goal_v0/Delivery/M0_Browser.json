@@ -1,0 +1,8 @@
+{
+  "browser": "155.0.8059.80",
+  "platform": "win32",
+  "headless": true,
+  "profile": "isolated test profile",
+  "realCloseAndRelaunch": true,
+  "date": "2026-10-18T05:34:44.180Z"
+}

@@ -1,0 +1,15 @@
+{
+  "cancelNoWrites": true,
+  "conflictsOptIn": true,
+  "revisionConflictNoWrites": true,
+  "snapshotBeforeApplication": true,
+  "oldAndNewActualDownloadRestoreReloadEqual": true,
+  "profilesIsolated": true,
+  "noAutomaticStageFacts": true,
+  "treeSharedDeclaration": true,
+  "mobileWidths": [
+    360,
+    412
+  ],
+  "androidPhysical": false
+}

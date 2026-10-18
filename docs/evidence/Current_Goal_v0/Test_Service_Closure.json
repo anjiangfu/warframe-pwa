@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-18T05:43:21.150Z",
+  "ports": [
+    {
+      "port": 4182,
+      "listening": false
+    },
+    {
+      "port": 4183,
+      "listening": false
+    },
+    {
+      "port": 4184,
+      "listening": false
+    }
+  ]
+}

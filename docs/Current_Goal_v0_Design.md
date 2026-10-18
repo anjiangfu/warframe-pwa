@@ -22,12 +22,12 @@ Repository新增独立事务方法：guard→检查重复操作/revision→保�
 
 ## 实施与验收清单
 
-1. [ ] 先补goal纯函数/草案/存储失败用例，看到缺功能失败；实现domain/goals.ts、goal目录和Provider边界，新增Nami Solo I—IV结构化资料。
-2. [ ] 保存字段校验及Repository草案事务，测试旧档无写入适配、冲突/取消/重复/快照失败/配额/更新屏障和两档隔离、新旧完整往返。
-3. [ ] 新GoalAssistant、ProgressDraft组件；WeaponAssistant复用攻略/材料；TechTree只读关联与定位；1999仅手工等级/点数。桌面/360/412截图逐张检查。
-4. [ ] 新浏览器测试实际草案预览取消/冲突/应用/刷新、导出下载恢复并全字段比较、离线操作与保存失败，保留原15浏览器回归及30单测。
-5. [ ] lint、非watch test、typecheck、build、生产browser、正常版本重建；证据写Current_Goal_v0独立前缀。测试端口4182，专用上下文；不结束4173/4180。最终关闭本轮测试服务，体验预览使用独立4184（仅localhost）。
-6. [ ] 17项hash复核、README/许可声明/验收记录及本地提交完整hash；保留Android/HTTPS/游戏内实测未验项，交付后停止。
+1. [x] 先补goal纯函数/草案/存储失败用例，看到缺功能失败；实现domain/goals.ts、goal目录和Provider边界，新增Nami Solo I—IV结构化资料。
+2. [x] 保存字段校验及Repository草案事务，测试旧档无写入适配、冲突/取消/重复/快照失败/配额/更新屏障和两档隔离、新旧完整往返。
+3. [x] 新GoalAssistant、ProgressDraft组件；WeaponAssistant复用攻略/材料；TechTree只读关联与定位；1999仅手工等级/点数。桌面/360/412截图逐张检查。
+4. [x] 新浏览器测试实际草案预览取消/冲突/应用/刷新、导出下载恢复并全字段比较、离线操作与保存失败，保留原15浏览器回归及30单测。
+5. [x] lint、非watch test、typecheck、build、生产browser、正常版本重建；证据写Current_Goal_v0独立前缀。测试端口4182，专用上下文；不结束4173/4180。最终关闭本轮测试服务，体验预览使用独立4184（仅localhost）。
+6. [x] 17项hash复核、README/许可声明/验收记录及本地提交完整hash；保留Android/HTTPS/游戏内实测未验项，交付后停止。
 
 测试覆盖：同构虚构目标和改中文名/顺序，完成过滤、未知库存/已知缺口、40处决操作型无虚构材料、旧目录引用保留；真实备份含全部新增字段和旧档业务数据；预览/取消不写、revision冲突、重复确认、失败事务；移动和离线用真实桌面Chrome但不称Android。
 

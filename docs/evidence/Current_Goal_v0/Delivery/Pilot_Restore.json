@@ -1,0 +1,12 @@
+{
+  "actualDownload": true,
+  "restoredAfterReload": true,
+  "wholeBusinessDocumentEqual": true,
+  "profilesIsolated": true,
+  "sharedStock": true,
+  "viewports": [
+    360,
+    412
+  ],
+  "androidPhysical": false
+}

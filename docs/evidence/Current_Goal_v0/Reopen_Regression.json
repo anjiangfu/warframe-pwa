@@ -1,0 +1,8 @@
+{
+  "command": "npm.cmd run test:browser -- current-goals.spec.ts --grep \"can reopen offline\" --reporter=line",
+  "exitCode": 1,
+  "expected": "goal:nami-solo",
+  "received": "goal:dual-toxocyst",
+  "cause": "initial selection ignored saved focus; no profile data loss",
+  "fix": "initialize from pendingGoals focus order; rerun complete suite in Delivery"
+}

@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-18T05:44:44.558Z",
+  "url": "http://127.0.0.1:4184/#assistant",
+  "status": 200,
+  "build": {
+    "build": "m0-20352eefc589",
+    "catalogVersion": "2026.10.18.1",
+    "base": "/"
+  },
+  "testServices4182And4183Closed": true,
+  "originalUserProfilesTouched": false
+}
