@@ -1,15 +1,25 @@
 import type {ProfileDocument} from './model';
 import {editWeaponProgress,materialDeficit,progressOf,type WeaponCatalog} from './weapon';
+import {planRecipe,type CraftingCatalog} from './crafting';
 export type GoalState='focused'|'done'|'deferred';
 export interface PersonalFact {value:boolean|number|null;recordedAt:string;originalLabel?:string;entityId?:string|null}
 export interface GoalDefinition {id:string;title:string;summary:string;kind:'weapon'|'installation'|'crafting';weaponId?:string;factId?:string;recipeId?:string;treeNodeIds:string[]}
 export interface GoalCatalog {catalogVersion:string;goals:GoalDefinition[]}
 export interface GoalEvaluation {kind:'completed'|'deferred'|'operation'|'missing-item'|'missing-material'|'unknown'|'ready';action:string;reason:string;unknowns:string[];stageId?:string;materials:{id:string;required:number;owned:number|null;deficit:number|null}[]}
-export function evaluateGoal(goal:GoalDefinition,p:ProfileDocument,c:Readonly<WeaponCatalog>):GoalEvaluation {
+export function evaluateGoal(goal:GoalDefinition,p:ProfileDocument,c:Readonly<WeaponCatalog>,crafting?:Readonly<CraftingCatalog>):GoalEvaluation {
  const result=(kind:GoalEvaluation['kind'],action:string,reason:string,unknowns:string[]=[],materials:GoalEvaluation['materials']=[],stageId?:string):GoalEvaluation=>({kind,action,reason,unknowns,materials,...stageId?{stageId}:{}});
  const state=p.goalStates?.[goal.id];
  if(state==='done')return result('completed','整体目标已由你声明完成；可随时恢复关注','整体声明不代表所有游戏事实或分项已填写。');
  if(state==='deferred')return result('deferred','暂缓，恢复关注后再列入待办','保留全部已有细节与库存。');
+ if(goal.kind==='crafting'){
+  const recipe=crafting?.recipes.find(r=>r.id===goal.recipeId),quantity=p.craftingTargets?.[goal.recipeId??''];
+  const plan=planRecipe(recipe,quantity??NaN,p.stock,goal.recipeId);
+  const materials=plan.lines.filter(l=>l.required!==null).map(l=>({id:l.resourceId,required:l.required!,owned:l.owned,deficit:l.deficit}));
+  const unknowns=[...plan.issues,...plan.prerequisites,...plan.lines.filter(l=>l.owned===null).map(l=>l.resourceId+'库存未知')];
+  if(plan.materialState==='missing')return result('missing-material','打开制作需求，核对共享汇总与材料获取方式','计划为新制作产出；只抵扣同一份手工库存，不自动制作。',unknowns,materials);
+  if(plan.materialState==='sufficient')return result('ready','打开游戏核对制作前提；完成后手工更新库存与目标','已知材料满足，不代表其他游戏条件已满足。',unknowns,materials);
+  return result('unknown','打开制作需求，先核对资料与未知库存','未知不能按0计算；旧引用与已有数量保留。',unknowns,materials);
+ }
  if(goal.kind==='installation'){
   const fact=goal.factId?p.personalFacts?.[goal.factId]:undefined;
   if(fact?.value===true)return result('completed','已记录安装，不再建议重复制作或采集','这是手工声明，不推断其他任务或功能开放。',fact.originalLabel&&!fact.entityId?['用户原称的准确模块实体尚未关联']:[]);
@@ -32,7 +42,7 @@ export function evaluateGoal(goal:GoalDefinition,p:ProfileDocument,c:Readonly<We
  if(unknowns.length)return result('unknown','填写材料持有量后再核对差值','持有量未知不能按0处理。',unknowns,materials);
  return result('ready','在游戏安装界面核对并安装；安装后手工更新记录','已知库存满足参考用量，不代表其他游戏前提已满足。',['实际地图与任务前提未核对'],materials);
 }
-export function pendingGoals(goals:readonly GoalDefinition[],p:ProfileDocument,c:Readonly<WeaponCatalog>){return goals.filter(g=>!['completed','deferred'].includes(evaluateGoal(g,p,c).kind)).sort((a,b)=>Number(p.goalStates?.[b.id]==='focused')-Number(p.goalStates?.[a.id]==='focused'));}
+export function pendingGoals(goals:readonly GoalDefinition[],p:ProfileDocument,c:Readonly<WeaponCatalog>,crafting?:Readonly<CraftingCatalog>){return goals.filter(g=>!['completed','deferred'].includes(evaluateGoal(g,p,c,crafting).kind)).sort((a,b)=>Number(p.goalStates?.[b.id]==='focused')-Number(p.goalStates?.[a.id]==='focused'));}
 type DraftPatch={kind:'goal';id:string;value:GoalState}|{kind:'fact';id:string;value:PersonalFact['value'];originalLabel?:string;entityId?:string|null}|{kind:'stage';id:string;value:string};
 export interface DraftRow {id:string;label:string;before:string;after:string;conflict:boolean;patch:DraftPatch}
 export interface ProgressPreview {profileId:string;revision:number;rows:DraftRow[]}
