@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "2026.10.17.1",
+  "catalogVersion": "2026.10.18.1",
   "sources": [
     {
       "id": "official-33",
@@ -108,6 +108,60 @@
       "access": "search-cache",
       "checkedAt": "2026-10-17",
       "note": "Titan是土星普通生存；先确认节点权限。"
+    },
+    {
+      "id": "nami-en",
+      "title": "Nami Solo 进化资料",
+      "url": "https://warframe.fandom.com/wiki/Nami_Solo?page=2",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
+    },
+    {
+      "id": "nami-zh",
+      "title": "海波单剑中文名称与任务",
+      "url": "https://warframe.huijiwiki.com/wiki/海波单剑",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
+    },
+    {
+      "id": "finisher-community",
+      "title": "近战处决与圣剑技能提示",
+      "url": "https://warframe.fandom.com/wiki/Finisher?page=1",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
+    },
+    {
+      "id": "de-u36-finishers",
+      "title": "DE Update36处决历史调整",
+      "url": "https://www.warframe.com/en/patch-notes/pc/36-0-0",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-18",
+      "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
+    },
+    {
+      "id": "shard-module-zh",
+      "title": "Helminth执刑官源力石升级模块",
+      "url": "https://warframe.huijiwiki.com/wiki/破障者",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
+    },
+    {
+      "id": "shard-module-official",
+      "title": "DE执刑官猎杀简介",
+      "url": "https://www.warframe.com/th/news/intro-to-archon-hunts",
+      "kind": "official-history",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
     }
   ],
   "materials": [
@@ -277,6 +331,22 @@
       ],
       "sourceIds": [
         "saturn"
+      ],
+      "kind": "suggestion"
+    },
+    {
+      "id": "nami-practice-earth",
+      "label": "普通敌人处决试做",
+      "mode": "普通星图 · 歼灭 · 建议单人",
+      "place": "地球 · E Prime · 歼灭",
+      "action": "先找一名未警觉或已被技能致盲的普通敌人，靠近读取互动提示，试做后查看任务计数。",
+      "restrictions": [
+        "建议地点，非挑战限定；先确认节点可进入。",
+        "避免卓越者超宏防护、队友抢杀或模拟场干扰；不保证一次任务完成40次。"
+      ],
+      "sourceIds": [
+        "earth",
+        "finisher-community"
       ],
       "kind": "suggestion"
     }
@@ -452,6 +522,142 @@
         "weapon-en",
         "weapon-zh",
         "official-33"
+      ]
+    },
+    {
+      "id": "weapon:nami-solo",
+      "name": "海波单剑",
+      "english": "Nami Solo",
+      "summary": "优先解决当前操作卡点，四阶段仍可查看；游戏内进度由你手工确认。",
+      "requirements": [
+        "前序具体记录未知不阻止看IV。",
+        "本轮只提供任务指引，海波安装用量尚未整理；不复制其他武器材料。"
+      ],
+      "acquisitionIds": [],
+      "installCost": [],
+      "stages": [
+        {
+          "id": "nami-solo:i",
+          "label": "进化 I",
+          "challenge": {
+            "kind": "installation",
+            "target": null,
+            "description": "安装海波单剑灵化之源后解锁进化I。"
+          },
+          "checks": [
+            "在游戏武器进化界面核对是否已安装；未填写不代表未安装。"
+          ],
+          "tips": [
+            "已在做IV时直接查看IV，不必重做安装。",
+            "需要核对时查看武器进化界面与已激活阶段。",
+            "6倍连击后重击可激活形态；这与IV的处决条件分开。"
+          ],
+          "troubleshooting": [
+            "本轮不整理海波安装材料，不能套用毒囊双枪材料。"
+          ],
+          "locationIds": [
+            "acquire:install"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh"
+          ]
+        },
+        {
+          "id": "nami-solo:ii",
+          "label": "进化 II",
+          "challenge": {
+            "kind": "solo-mission",
+            "target": 1,
+            "description": "装备海波单剑完成一场单人任务。"
+          },
+          "checks": [
+            "核对该阶段已开放；匹配模式设为单人。"
+          ],
+          "tips": [
+            "选一个已开放的普通任务，保持海波单剑装备。",
+            "以正常完成并撤离为准，不以中途退出代替。",
+            "如果已在后续阶段，无需在应用中补填II才查看。"
+          ],
+          "troubleshooting": [
+            "不计数先检查阶段和是否真正单人；应用不读取实际计数。"
+          ],
+          "locationIds": [
+            "nami-practice-earth"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh"
+          ]
+        },
+        {
+          "id": "nami-solo:iii",
+          "label": "进化 III",
+          "challenge": {
+            "kind": "incarnon-activations",
+            "target": 6,
+            "description": "在同一任务中激活海波单剑灵化形态6次。"
+          },
+          "checks": [
+            "核对本阶段开放及游戏内变形提示；不是击杀6个敌人。"
+          ],
+          "tips": [
+            "先在熟悉的正式任务中积累连击。",
+            "达到6倍连击后按重击激活，观察形态与挑战计数。",
+            "按游戏提示等待可再次激活后重复，未确认前不承诺最快用时。"
+          ],
+          "troubleshooting": [
+            "激活间隔与当前姿态实操未验证（unverified）；先确认一次计数。",
+            "任务过短可换自己熟悉且已开放的正式任务，不用模拟场代替。"
+          ],
+          "locationIds": [
+            "nami-practice-earth"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh"
+          ]
+        },
+        {
+          "id": "nami-solo:iv",
+          "label": "进化 IV",
+          "challenge": {
+            "kind": "held-melee-finishers",
+            "target": 40,
+            "description": "完整持握近战武器时进行40次处决攻击；不是40次普通击杀。"
+          },
+          "checks": [
+            "完整持握海波单剑，与拿枪时快速近战挥砍不同。PC通常长按切换武器键F，以当前按键设置为准。",
+            "可暂时卸下主副武器方便保持近战持握；这是建议配置，不是必须销毁或更换装备。",
+            "核对游戏内IV挑战开放；不要求在应用中补全I—III。"
+          ],
+          "tips": [
+            "建议普通单人地球E Prime歼灭，先做1—2次并看本任务计数，再继续。",
+            "若已有圣剑／圣剑Umbra，可用2技能致盲普通敌人，靠近等处决互动提示；不是开4技能挥砍。",
+            "没有这些战甲时，潜行接近未警觉普通敌人背后，等近战处决提示，无需为一次挑战额外购买战甲。",
+            "按画面互动键执行近战处决（PC默认通常X，以自定义键位为准），普通挥砍不会替代。",
+            "一次成功后记录有效方式；按任务计数继续，不以击杀总数判断完成。"
+          ],
+          "troubleshooting": [
+            "先排查持握状态、阶段是否开放、是否看到近战处决互动，以及是否被队友先击杀。",
+            "不同姿态、是否必须击杀、倒地处决和怜悯对本武器挑战是否计数仍unverified，先试做。",
+            "DE36调整了通用处决/互动机制，但MOD与赋能的通用归类不能证明本挑战所有类型计数相同。",
+            "不要将旧攻略的“所有倒地或怜悯都绝不算”当当前定论；优先试上述普通近战处决。"
+          ],
+          "locationIds": [
+            "nami-practice-earth"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh",
+            "finisher-community",
+            "de-u36-finishers"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "nami-en",
+        "nami-zh"
       ]
     }
   ]

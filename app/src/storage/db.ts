@@ -1,6 +1,7 @@
 import Dexie,{type Table,type Transaction} from 'dexie';
 import {DB_VERSION,type ProfileDocument} from '../domain/model';
 import {validateProfile,type ImportPreview} from './imports';
+import {applyProgress,type ProgressPreview} from '../domain/goals';
 type Snapshot={id:string;profileId:string;document:ProfileDocument};
 export class PlannerDB extends Dexie {
  profiles!:Table<ProfileDocument,string>;snapshots!:Table<Snapshot,string>;imports!:Table<{profileId:string;hash:string;revision:number},[string,string]>;meta!:Table<{key:string;value:unknown},string>;
@@ -23,6 +24,16 @@ export class Repository {
  private async guard(){if(this.db.unavailable)throw Error('数据库版本变化，请重新打开');if(await this.db.meta.get('writeBarrier'))throw Error('正在准备更新，写入已暂停，请更新或取消更新后继续。');}
  async create(p:ProfileDocument){validateProfile(p);return this.db.transaction('rw',[this.db.profiles,this.db.meta],async()=>{await this.guard();await this.db.profiles.add(structuredClone(p));return p;});}
  async save(p:ProfileDocument,expectedRevision:number){validateProfile(p);return this.db.transaction('rw',[this.db.profiles,this.db.meta],async()=>{await this.guard();const previous=await this.get(p.id);if(!previous||previous.revision!==expectedRevision)throw Error('档案已在其他页面改变，请重新载入后再修改。');const next={...structuredClone(p),revision:expectedRevision+1};validateProfile(next);await this.db.profiles.put(next);return next;});}
+ async applyProgressDraft(preview:ProgressPreview,selected:string[]){
+  const bytes=new TextEncoder().encode(JSON.stringify({draft:'user-progress-2026-10-18-v1',preview,selected:[...selected].sort()}));const hash='draft:'+Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))).map(x=>x.toString(16).padStart(2,'0')).join('');
+  return this.db.transaction('rw',[this.db.profiles,this.db.snapshots,this.db.imports,this.db.meta],async()=>{
+   await this.guard();const previous=await this.get(preview.profileId);if(!previous)throw Error('目标档案不存在，请重新预览');
+   const prior=await this.db.imports.get([preview.profileId,hash]);if(prior?.revision===previous.revision)return previous;
+   validateProfile(previous);const next=applyProgress(previous,preview,selected,new Date().toISOString());
+   const id=crypto.randomUUID();await this.db.snapshots.add({id,profileId:previous.id,document:structuredClone(previous)});const snapshot=await this.db.snapshots.get(id);if(!snapshot||JSON.stringify(snapshot.document)!==JSON.stringify(previous))throw Error('备份失败，草案未应用');
+   next.revision=previous.revision+1;next.events.unshift({time:new Date().toISOString(),text:'显式应用本次进度草案（'+selected.length+'项）；旧档已备份'});validateProfile(next);await this.db.profiles.put(next);await this.db.imports.put({profileId:next.id,hash,revision:next.revision});return next;
+  });
+ }
  async restore(preview:ImportPreview,targetId:string,expectedRevision:number|null){
   validateProfile(preview.profile);
   return this.db.transaction('rw',[this.db.profiles,this.db.snapshots,this.db.imports,this.db.meta],async()=>{

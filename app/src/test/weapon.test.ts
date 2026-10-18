@@ -11,8 +11,8 @@ import {progressOf,editWeaponProgress,materialDeficit,searchGuides,type WeaponCa
 const provider=new LocalProvider(),tree=provider.getCatalog(),catalog=provider.getWeaponCatalog();
 const id='weapon:dual-toxocyst',dbs:string[]=[];
 afterEach(async()=>{for(const n of dbs.splice(0))await Dexie.delete(n);});
-it('catalog has one real weapon, I installed, II solo, III incarnon 100, IV 17 headshots',()=>{
- expect(catalog.weapons).toHaveLength(1);expect(catalog.weapons[0].id).toBe(id);const stages=catalog.weapons[0].stages;
+it('catalog retains the original weapon tasks, I installed, II solo, III incarnon 100, IV 17 headshots',()=>{
+ expect(catalog.weapons).toHaveLength(2);expect(catalog.weapons[0].id).toBe(id);const stages=catalog.weapons[0].stages;
  expect(stages.map(s=>[s.challenge.kind,s.challenge.target])).toEqual([['installation',null],['solo-mission',1],['incarnon-kills',100],['consecutive-headshots',17]]);
  expect(stages[3].challenge.resets).toEqual(['body-shot']);expect(stages[3].checks.join('')).toContain('装填不重置');expect(stages.every(s=>s.tips.length>=3&&s.tips.length<=5&&s.locationIds.length>0)).toBe(true);
  expect(catalog.weapons[0].installCost.map(x=>x.quantity)).toEqual([20,70,80]);
@@ -20,8 +20,8 @@ it('catalog has one real weapon, I installed, II solo, III incarnon 100, IV 17 h
 it('verified Chinese and English names are searchable and a test-only second entry uses the same queries',()=>{
  for(const q of ['苦栓','Pathos Clamps','瑶丛','Yao Shrub','延凡草','EEVANI'])expect(searchGuides(catalog,q).some(x=>x.kind==='material')).toBe(true);
  const fake=structuredClone(catalog) as WeaponCatalog;fake.weapons.push({...fake.weapons[0],id:'weapon:fixture',name:'仅测试条目',english:'Fixture Pistol',stages:fake.weapons[0].stages.map((s,i)=>({...s,id:'fixture:'+i}))});
- const second=new LocalProvider(undefined,fake).getWeaponCatalog();expect(searchGuides(second,'Fixture Pistol')).toContainEqual({kind:'weapon',id:'weapon:fixture',label:'仅测试条目（Fixture Pistol）'});expect(catalog.weapons).toHaveLength(1);
- const onlyFake={...fake,weapons:[fake.weapons[1]]};const html=renderToStaticMarkup(createElement(WeaponAssistant,{catalog:onlyFake,profile:newProfile(tree,'fixture','测试档',false),mutate:async()=>true,onError:()=>{}}));expect(html).toContain('Fixture Pistol');expect(html).toContain('仅测试条目');
+ const second=new LocalProvider(undefined,fake).getWeaponCatalog();expect(searchGuides(second,'Fixture Pistol')).toContainEqual({kind:'weapon',id:'weapon:fixture',label:'仅测试条目（Fixture Pistol）'});expect(catalog.weapons).toHaveLength(2);
+ const onlyFake={...fake,weapons:[fake.weapons.at(-1)!]};const html=renderToStaticMarkup(createElement(WeaponAssistant,{catalog:onlyFake,profile:newProfile(tree,'fixture','测试档',false),mutate:async()=>true,onError:()=>{}}));expect(html).toContain('Fixture Pistol');expect(html).toContain('仅测试条目');
 });
 it('old profiles read unknown without mutation or progress inferred from old done nodes',()=>{
  const p=newProfile(tree,'one','旧档',true),before=structuredClone(p);expect(progressOf(p,id)).toEqual({owned:null,adapterOwned:null,installed:null,currentStageId:null,stages:{}});expect(progressOf(p,id)).toEqual(progressOf(p,id));expect(p).toEqual(before);

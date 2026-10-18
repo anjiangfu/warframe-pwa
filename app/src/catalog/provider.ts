@@ -1,13 +1,16 @@
 import raw from './tech-tree.v1.json';
 import guides from './weapon-guides.v1.json';
+import goals from './goals.v1.json';
+import type {GoalCatalog} from '../domain/goals';
 import type {WeaponCatalog} from '../domain/weapon';
 import type {Catalog} from '../domain/model';
-export interface DataProvider {getCatalog():Readonly<Catalog>;getWeaponCatalog():Readonly<WeaponCatalog>}
+export interface DataProvider {getCatalog():Readonly<Catalog>;getWeaponCatalog():Readonly<WeaponCatalog>;getGoalCatalog():Readonly<GoalCatalog>}
 function freeze<T>(v:T):T {if(v&&typeof v==='object'){Object.freeze(v);Object.values(v).forEach(freeze);}return v;}
 export class LocalProvider implements DataProvider {
  private catalog:Catalog;
  private weapons:WeaponCatalog;
- constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog){
+ private goals:GoalCatalog;
+ constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog){
   const c=structuredClone(input),ids=new Set(c.nodes.map(n=>n.id));
   if(ids.size!==c.nodes.length||new Set(c.lanes.map(l=>l.id)).size!==c.lanes.length)throw Error('目录ID重复');
   const steps=new Set<string>();
@@ -19,7 +22,12 @@ export class LocalProvider implements DataProvider {
   for(const m of w.materials){check(m.sourceIds,sourceIds);check(m.acquisitionIds,locations);}for(const a of w.acquisitions)check(a.sourceIds,sourceIds);
   for(const weapon of w.weapons){check(weapon.sourceIds,sourceIds);check(weapon.acquisitionIds,locations);for(const cost of weapon.installCost){check([cost.materialId],materials);check(cost.sourceIds,sourceIds);if(!Number.isFinite(cost.quantity)||cost.quantity<0)throw Error('材料用量无效');}for(const stage of weapon.stages){if(stageIds.has(stage.id))throw Error('进化ID重复');stageIds.add(stage.id);check(stage.sourceIds,sourceIds);check(stage.locationIds,locations);}}
   this.weapons=freeze(w);
+  const g=structuredClone(goalInput);if(new Set(g.goals.map(x=>x.id)).size!==g.goals.length)throw Error('目标ID重复');
+  // An injected test catalog may deliberately omit production weapon references.
+  for(const goal of g.goals){if(!['weapon','installation'].includes(goal.kind)||goal.treeNodeIds.some(id=>!ids.has(id)))throw Error('目标目录关系无效');}
+  this.goals=freeze(g);
  }
  getCatalog(){return this.catalog;}
  getWeaponCatalog(){return this.weapons;}
+ getGoalCatalog(){return this.goals;}
 }

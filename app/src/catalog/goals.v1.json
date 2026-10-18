@@ -1,0 +1,45 @@
+{
+  "catalogVersion": "2026.10.18.1",
+  "goals": [
+    {
+      "id": "goal:dual-toxocyst",
+      "title": "毒囊双枪整体养成",
+      "summary": "整体完成声明与各项武器事实分开保存。",
+      "kind": "weapon",
+      "weaponId": "weapon:dual-toxocyst",
+      "treeNodeIds": [
+        "arsenal"
+      ]
+    },
+    {
+      "id": "goal:helminth-install",
+      "title": "大嘴（Helminth）安装",
+      "summary": "只核对安装，不推断技能、等级或其他系统开放。",
+      "kind": "installation",
+      "factId": "system:helminth:installed",
+      "treeNodeIds": [
+        "helminth"
+      ]
+    },
+    {
+      "id": "goal:shard-module",
+      "title": "原力石模块 · 用户原称",
+      "summary": "先保留你的称呼；候选实体需本人确认。",
+      "kind": "installation",
+      "factId": "declaration:shard-module:installed",
+      "treeNodeIds": [
+        "systemsfinal"
+      ]
+    },
+    {
+      "id": "goal:nami-solo",
+      "title": "海波单剑整体养成",
+      "summary": "可直接关注进化IV，不需要补填前序。",
+      "kind": "weapon",
+      "weaponId": "weapon:nami-solo",
+      "treeNodeIds": [
+        "arsenal"
+      ]
+    }
+  ]
+}
