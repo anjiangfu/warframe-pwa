@@ -168,3 +168,9 @@ node scripts/run-quality.mjs
 测试使用专用短Chrome目录 `app/.b/<8位ID>`（安装性测试为m-前缀），不使用用户Chrome资料；真实关闭/重开实际路径见浏览器记录。生产更新测试后脚本会重新构建正常内容hash版本。历史默认脚本输出位置保留，新环境变量只将证据重定向到本轮目录。4190曾不可绑定，未改系统端口配置，改用可绑定的4186。
 
 来源、限制和完整验收见 `../docs/M1_Crafting_Materials_v0_Sources.md`、`../docs/M1_Crafting_Materials_v0_Acceptance.md`。Android真机、可信HTTPS安装、Windows系统安装UI及游戏内制作尚未验收；移动截图仅为Windows Chrome模拟视口。本轮结束后停止，集团/遗物/活动等后续功能另行授权。
+
+### 材料参考用量同步返修（2026-10-18）
+
+材料详情会注明来源：当前保存的单项目、共享合计、助手目标或未保存数量预览。已保存目标的数量/状态在另一页改变时，用当前档案和目录重算；目标完成、暂缓、被移除或资料不全时显示未知及重新查询提示，恢复关注可重新计算。库存单独保存不会清空有效用量。未保存预览保留其计划数量，并明确不代表最新已保存目标；它仍读取当前档案库存，查询本身不写库。普通材料浏览无指定目标，切档不沿用另一档案用量。
+
+此修复无数据迁移，DB/schema/catalog版本均不变。已开着的旧页面按更新提示保存后更新即可；勿删库。仍可访问4192，启动命令同上。新增回归和红/绿证据见 `../docs/M1_Crafting_Materials_v0_Repair_R1_Acceptance.md`。手工复跑时将上述APP_EVIDENCE_DIR/M0_EVIDENCE_DIR改成 `../docs/evidence/M1_Crafting_Materials_v0_Repair_R1/Manual`、M0_EVIDENCE_PREFIX改成 `M1_Repair_R1_Manual`，保留原证据。

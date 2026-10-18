@@ -1,0 +1,53 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test material-reference.spec.ts --grep saved single project --reporter=line
+
+
+[WebServer] (node:31440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:36600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] e2e\material-reference.spec.ts:11:1 › saved single project recomputes with cross-page quantity, inventory-only saves and current target status
+  1) e2e\material-reference.spec.ts:11:1 › saved single project recomputes with cross-page quantity, inventory-only saves and current target status 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByTestId('material-deficit')
+    Expected: "2"
+    Received: "0"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" getByTestId('material-deficit') with timeout 5000ms
+      - waiting for getByTestId('material-deficit')
+        14 × locator resolved to <b data-testid="material-deficit">0</b>
+           - unexpected value "0"
+
+
+      12 |  await create(page);await openSingle(page);await stock(page,0);await expect(page.getByTestId('material-deficit')).toHaveText('1');
+      13 |  const second=await context.newPage();await second.goto(TEST_ORIGIN+'/#crafting');await second.getByLabel('本次计划新制作数量').fill('3');await second.getByRole('button',{name:'保存制作数量',exact:true}).click();await expect(second.getByRole('status')).toContainText('已保存');await openSingle(second);await stock(second,1);
+    > 14 |  await expect(second.getByTestId('material-deficit')).toHaveText('2');await expect(page.getByLabel('材料持有量')).toHaveValue('1');await expect(page.getByTestId('material-deficit')).toHaveText('2');await expect(required(page)).toHaveText('3');
+         |                                                                                                                                                                                  ^
+      15 |  await page.screenshot({path:evidencePath('Saved_Project_A.png'),fullPage:true});await second.screenshot({path:evidencePath('Saved_Project_B.png'),fullPage:true});
+      16 |  await stock(second,2);await expect(page.getByLabel('材料持有量')).toHaveValue('2');await expect(required(page)).toHaveText('3');await expect(page.getByTestId('material-deficit')).toHaveText('1');
+      17 |  await second.getByRole('button',{name:'制作缺口',exact:true}).click();for(const state of ['done','deferred','focused']){await second.getByLabel('制作目标状态').selectOption(state);await expect(second.getByRole('status')).toContainText('已保存');if(state==='focused'){await expect(required(page)).toHaveText('3');await expect(page.getByTestId('material-deficit')).toHaveText('1');}else{await expect(page.getByTestId('material-deficit')).toContainText('未知');await expect(page.getByText('目标已变化，请返回重新查询',{exact:false})).toBeVisible();}}
+        at D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\material-reference.spec.ts:14:178
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\material-reference-saved-s-f6fde-s-and-current-target-status\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\material-reference-saved-s-f6fde-s-and-current-target-status\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\material-reference-saved-s-f6fde-s-and-current-target-status\error-context.md
+
+
+  1 failed
+    e2e\material-reference.spec.ts:11:1 › saved single project recomputes with cross-page quantity, inventory-only saves and current target status 

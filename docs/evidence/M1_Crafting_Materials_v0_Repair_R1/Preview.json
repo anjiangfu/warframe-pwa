@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-18T12:22:29.230Z",
+  "url": "http://127.0.0.1:4192/#crafting",
+  "host": "127.0.0.1",
+  "publicDeployment": false,
+  "/": {
+    "status": 200
+  },
+  "/build-info.json": {
+    "status": 200,
+    "body": {
+      "build": "m0-b7f3fdc0c850",
+      "catalogVersion": "2026.10.18.2",
+      "base": "/"
+    }
+  },
+  "/manifest.webmanifest": {
+    "status": 200
+  },
+  "testPort4186Closed": true
+}

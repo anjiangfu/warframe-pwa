@@ -1,0 +1,29 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/material-reference.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app
+
+ ❯ src/test/material-reference.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/material-reference.test.ts [ src/test/material-reference.test.ts ]
+Error: Cannot find module '../domain/material-reference' imported from D:/wf/Warframe_PWA_Handoff_20261016/app/src/test/material-reference.test.ts
+ ❯ src/test/material-reference.test.ts:5:1
+      3| import {newProfile} from '../storage/imports';
+      4| import {craftGoalId,type CraftingCatalog} from '../domain/crafting';
+      5| import {resolveMaterialReference,type MaterialContext} from '../domain…
+       | ^
+      6| const provider=new LocalProvider(),crafting=provider.getCraftingCatalo…
+      7| const profile=()=>{const p=newProfile(provider.getCatalog(),'one','档案'…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  20:15:54
+   Duration  295ms (worker 96%, environment 4%)
+

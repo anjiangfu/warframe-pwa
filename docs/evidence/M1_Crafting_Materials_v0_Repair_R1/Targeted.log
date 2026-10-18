@@ -1,0 +1,18 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test material-reference.spec.ts --reporter=line
+
+
+[WebServer] (node:22264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+
+(node:15344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/3] e2e\material-reference.spec.ts:11:1 › saved single project recomputes with cross-page quantity, inventory-only saves and current target status
+[2/3] e2e\material-reference.spec.ts:21:1 › shared reference follows current target membership, status and quantity instead of a numerical snapshot
+[3/3] e2e\material-reference.spec.ts:28:1 › unsaved preview stays explicit and read-only while assistant links follow the current saved plan
+  3 passed (15.6s)
