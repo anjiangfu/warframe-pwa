@@ -9,7 +9,7 @@
 | [海波单剑](https://warframe.huijiwiki.com/wiki/海波单剑) | 中文社区检索缓存 | 中英文对应及I—IV，中文“只装备”与英文“持握”措辞有差；只携带近战为便于操作的建议配置，不冒充唯一硬前提 |
 | [Finisher](https://warframe.fandom.com/wiki/Finisher?page=1) | 社区检索缓存 | 圣剑/圣剑Umbra二技能创造处决机会、互动提示默认X。潜行近战处决是无需另养新战甲的备选；不同处决是否击杀/计数仍先试做 |
 | [DE Update36](https://www.warframe.com/en/patch-notes/pc/36-0-0) | 官方历史正文，Finisher Changes | 区分怜悯、近战处决、倒地处决；倒地处决改为互动。通用MOD/赋能归类不能直接推定本武器挑战计数，明确unverified |
-| [E Prime](https://warframe.fandom.com/wiki/E_Prime) | 上轮已核社区记录 | 地球普通歼灭作为试做建议，非挑战限定节点；未游戏内复验 |
+| [E Prime](https://warframe.fandom.com/wiki/E_Prime) | 本轮社区检索缓存 | 地球普通歼灭作为试做建议，非挑战限定节点；未游戏内实测 |
 | [Helminth执刑官源力石模块线索](https://warframe.huijiwiki.com/wiki/破障者) | 中文社区检索缓存 | 当前中文名称为Helminth执刑官源力石升级模块，与联结模块区分；本用户“原力石模块”仍须本人确认关联 |
 | [DE Intro to Archon Hunts](https://www.warframe.com/th/news/intro-to-archon-hunts) | 官方检索缓存 | 英文实体Helminth Archon Shard Segment；只用于候选名称核对，不由安装声明推断任务全部开放 |
 | [DE Support quest tips](https://support.warframe.com/hc/en-us/articles/9503863772557-Quest-Tips-Post-Second-Dream-Spoilers-Warning) | 官方检索缓存 | Veilbreaker奖励含模块蓝图，和其他模块区别；不录入完整任务链 |

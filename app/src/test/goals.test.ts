@@ -24,6 +24,7 @@ it('completion and defer filter generically; restoring and catalog renames prese
  const second={...weaponGoal,id:'goal:second',title:'改名不改ID'};p.goalStates={[weaponGoal.id]:'done',[second.id]:'deferred'};expect(pendingGoals([weaponGoal,second],p,weapons)).toEqual([]);
  p.goalStates[second.id]='focused';expect(pendingGoals([second,weaponGoal],p,weapons).map(g=>g.id)).toEqual([second.id]);expect(p.weaponProgress).toBeUndefined();
  const system:GoalDefinition={id:'goal:system',title:'已改名',summary:'',kind:'installation',factId:'system:fixture',treeNodeIds:[]};p.personalFacts={'system:fixture':{value:true,recordedAt:'原时间'}};expect(evaluateGoal(system,p,weapons).kind).toBe('completed');expect(p.statuses.helminth).toBe('todo');
+ const snapshot=structuredClone(p),changed=structuredClone(weapons);changed.catalogVersion='future';changed.weapons.reverse();changed.weapons.forEach(w=>{w.name='目录改名';w.stages.reverse();});const replacement=new LocalProvider(undefined,changed,{catalogVersion:'future',goals:[second,weaponGoal]}).getWeaponCatalog();expect(evaluateGoal(weaponGoal,p,replacement).kind).toBe('completed');expect(p).toEqual(snapshot);
 });
 it('Nami guide has four sourced tasks, six activations and forty held-melee finishers, no fake material challenge',()=>{
  const w=weapons.weapons.find(w=>w.id==='weapon:nami-solo')!;expect(w).toBeDefined();expect(w.stages.map(s=>[s.challenge.kind,s.challenge.target])).toEqual([['installation',null],['solo-mission',1],['incarnon-activations',6],['held-melee-finishers',40]]);
