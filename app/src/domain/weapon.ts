@@ -1,5 +1,5 @@
 import type {ProfileDocument,Status} from './model';
-export interface GuideSource {id:string;title:string;url:string;kind:'official-history'|'community';access:'page'|'search-cache';checkedAt:string;note:string}
+export interface GuideSource {id:string;title:string;url:string;kind:'official'|'official-history'|'community';access:'page'|'search-cache';checkedAt:string;note:string}
 export interface Acquisition {id:string;label:string;mode:string;place:string;action:string;restrictions:string[];sourceIds:string[];kind:'acquisition'|'suggestion'}
 export interface GuideMaterial {id:string;name:string;english:string;aliases:string[];acquisitionIds:string[];sourceIds:string[]}
 export interface WeaponStage {id:string;label:string;challenge:{kind:string;target:number|null;description:string;resets?:string[]};checks:string[];tips:string[];troubleshooting:string[];locationIds:string[];sourceIds:string[]}

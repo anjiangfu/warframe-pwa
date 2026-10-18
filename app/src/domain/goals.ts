@@ -2,7 +2,7 @@ import type {ProfileDocument} from './model';
 import {editWeaponProgress,materialDeficit,progressOf,type WeaponCatalog} from './weapon';
 export type GoalState='focused'|'done'|'deferred';
 export interface PersonalFact {value:boolean|number|null;recordedAt:string;originalLabel?:string;entityId?:string|null}
-export interface GoalDefinition {id:string;title:string;summary:string;kind:'weapon'|'installation';weaponId?:string;factId?:string;treeNodeIds:string[]}
+export interface GoalDefinition {id:string;title:string;summary:string;kind:'weapon'|'installation'|'crafting';weaponId?:string;factId?:string;recipeId?:string;treeNodeIds:string[]}
 export interface GoalCatalog {catalogVersion:string;goals:GoalDefinition[]}
 export interface GoalEvaluation {kind:'completed'|'deferred'|'operation'|'missing-item'|'missing-material'|'unknown'|'ready';action:string;reason:string;unknowns:string[];stageId?:string;materials:{id:string;required:number;owned:number|null;deficit:number|null}[]}
 export function evaluateGoal(goal:GoalDefinition,p:ProfileDocument,c:Readonly<WeaponCatalog>):GoalEvaluation {

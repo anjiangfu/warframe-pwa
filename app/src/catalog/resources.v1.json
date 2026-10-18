@@ -1,0 +1,320 @@
+{
+  "catalogVersion": "2026.10.18.2",
+  "resources": [
+    {
+      "id": "credits",
+      "name": "星币",
+      "english": "Credits",
+      "kind": "currency",
+      "acquisitionIds": [
+        "m1:earn:credits"
+      ],
+      "sourceIds": [
+        "m1:chart"
+      ],
+      "aliases": [
+        "现金"
+      ]
+    },
+    {
+      "id": "forma",
+      "name": "福马",
+      "english": "Forma",
+      "kind": "product",
+      "acquisitionIds": [
+        "m1:craft:forma"
+      ],
+      "sourceIds": [
+        "m1:forma-en",
+        "m1:forma-zh"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "blueprint:forma",
+      "name": "福马蓝图",
+      "english": "Forma Blueprint",
+      "kind": "blueprint",
+      "acquisitionIds": [
+        "m1:earn:blueprint"
+      ],
+      "sourceIds": [
+        "m1:forma-en",
+        "m1:prime-official"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "material:morphics",
+      "name": "非晶态合金",
+      "english": "Morphics",
+      "kind": "material",
+      "acquisitionIds": [
+        "m1:farm:morphics"
+      ],
+      "sourceIds": [
+        "m1:resources-zh",
+        "m1:morphics"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "material:neural-sensors",
+      "name": "神经传感器",
+      "english": "Neural Sensors",
+      "kind": "material",
+      "acquisitionIds": [
+        "m1:farm:sensors"
+      ],
+      "sourceIds": [
+        "m1:resources-zh",
+        "m1:sensors"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "material:neurodes",
+      "name": "神经元",
+      "english": "Neurodes",
+      "kind": "material",
+      "acquisitionIds": [
+        "m1:farm:neurodes"
+      ],
+      "sourceIds": [
+        "m1:neurodes"
+      ],
+      "aliases": []
+    },
+    {
+      "id": "material:orokin-cell",
+      "name": "奥罗金电池",
+      "english": "Orokin Cell",
+      "kind": "material",
+      "acquisitionIds": [
+        "m1:farm:cell"
+      ],
+      "sourceIds": [
+        "m1:resources-zh",
+        "m1:cell"
+      ],
+      "aliases": [
+        "Orokin电池"
+      ]
+    }
+  ],
+  "acquisitions": [
+    {
+      "id": "m1:farm:morphics",
+      "label": "非晶态合金区域试刷",
+      "place": "水星 · 中文节点名待核（Tolstoj）",
+      "mode": "普通星图 · 刺杀",
+      "action": "完成Vor上尉任务，沿途检查资源容器并拾取；核对结算所得。",
+      "sourceIds": [
+        "m1:resources-zh",
+        "m1:chart"
+      ],
+      "kind": "suggestion",
+      "restrictions": [
+        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
+      ]
+    },
+    {
+      "id": "m1:farm:sensors",
+      "label": "神经传感器区域试刷",
+      "place": "木星 · 中文节点名待核（Themisto）",
+      "mode": "普通星图 · 刺杀",
+      "action": "尝试Alad V任务并留意沿途容器；资源并非首领结算必发。",
+      "sourceIds": [
+        "m1:resources-zh",
+        "m1:chart"
+      ],
+      "kind": "suggestion",
+      "restrictions": [
+        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
+      ]
+    },
+    {
+      "id": "m1:farm:neurodes",
+      "label": "神经元区域探索",
+      "place": "地球 · 中文节点名待核（Mariana）",
+      "mode": "普通星图 · 歼灭",
+      "action": "检查资源沉积物与容器，拾取神经元；任务可完成不代表资源必掉。",
+      "sourceIds": [
+        "m1:neurodes"
+      ],
+      "kind": "suggestion",
+      "restrictions": [
+        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
+      ]
+    },
+    {
+      "id": "m1:farm:cell",
+      "label": "奥罗金电池区域探索",
+      "place": "土星 · 中文节点名待核（Telesto）",
+      "mode": "普通星图 · 歼灭",
+      "action": "沿途查看电池阵列与容器，获得后再记录库存；没有固定每局数量承诺。",
+      "sourceIds": [
+        "m1:cell",
+        "m1:telesto"
+      ],
+      "kind": "suggestion",
+      "restrictions": [
+        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
+      ]
+    },
+    {
+      "id": "m1:earn:credits",
+      "label": "星币一般来源",
+      "place": "已开放的普通星图任务",
+      "mode": "任务结算 / 拾取",
+      "action": "完成已开放任务并检查结算及拾取星币；这里不提供未经验证的收益率。",
+      "sourceIds": [
+        "m1:chart"
+      ],
+      "kind": "acquisition",
+      "restrictions": [
+        "实际任务开放未知；不同模式收益不同，来源不等于最优地点。"
+      ]
+    },
+    {
+      "id": "m1:earn:blueprint",
+      "label": "福马蓝图来源（不是成品）",
+      "place": "导航 · 当前可参加的虚空裂缝",
+      "mode": "虚空裂缝 · 按所选任务模式",
+      "action": "先看自己遗物的奖励预览是否含福马蓝图，再按任务要求开遗物并核对可选奖励；本目录不列当前轮换或概率。",
+      "sourceIds": [
+        "m1:prime-official"
+      ],
+      "kind": "acquisition",
+      "restrictions": [
+        "需已解锁裂缝且持有适合任务的遗物；账号前提未知。",
+        "不是任意遗物/任意一局都能获得蓝图；奖励张数不等于每批成品数。"
+      ]
+    },
+    {
+      "id": "m1:craft:forma",
+      "label": "普通福马蓝图制作",
+      "place": "轨道飞行器 · 铸造厂",
+      "mode": "普通蓝图制作",
+      "action": "核对蓝图和投入，在游戏制作并领取后再手工记录；应用不计时、不自动扣料或增加成品。",
+      "sourceIds": [
+        "m1:forma-en",
+        "m1:forma-zh"
+      ],
+      "kind": "acquisition",
+      "restrictions": [
+        "单批资料为1福马；本轮不做其他福马变体或活动推荐。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "m1:forma-en",
+      "title": "Forma普通蓝图与制造专页",
+      "url": "https://warframe.fandom.com/wiki/Forma",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:forma-zh",
+      "title": "中文Forma专页",
+      "url": "https://warframe.huijiwiki.com/wiki/Forma",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:inputs",
+      "title": "蓝图投入汇总（仅交叉核对投入）",
+      "url": "https://warframe.fandom.com/wiki/Blueprints/Item",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:foundry",
+      "title": "铸造厂单次蓝图规则",
+      "url": "https://warframe.fandom.com/wiki/Foundry",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:morphics",
+      "title": "Morphics反向制作需求",
+      "url": "https://warframe.fandom.com/wiki/Morphics",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:sensors",
+      "title": "Neural Sensors反向制作需求",
+      "url": "https://warframe.fandom.com/wiki/Neural_Sensors?page=4",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:resources-zh",
+      "title": "中文资源与获取区域",
+      "url": "https://warframe.huijiwiki.com/wiki/资源",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:neurodes",
+      "title": "神经元中文名称与采集建议",
+      "url": "https://warframe.huijiwiki.com/wiki/神经元",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:cell",
+      "title": "Orokin Cell资源与建议",
+      "url": "https://warframe.fandom.com/wiki/Orokin_Cell",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:telesto",
+      "title": "Telesto普通歼灭节点",
+      "url": "https://warframe.fandom.com/wiki/Telesto",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:prime-official",
+      "title": "DE裂缝与蓝图获取说明",
+      "url": "https://www.warframe.com/en/prime-access",
+      "kind": "official",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "m1:chart",
+      "title": "中文星图区域与节点模式",
+      "url": "https://warframe.huijiwiki.com/wiki/星图",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-18",
+      "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    }
+  ]
+}

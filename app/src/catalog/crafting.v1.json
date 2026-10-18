@@ -1,0 +1,91 @@
+{
+  "catalogVersion": "2026.10.18.2",
+  "recipes": [
+    {
+      "id": "recipe:forma",
+      "title": "普通福马蓝图制作",
+      "output": {
+        "resourceId": "forma",
+        "quantity": 1,
+        "sourceIds": [
+          "m1:forma-en",
+          "m1:forma-zh",
+          "m1:foundry"
+        ],
+        "verification": "verified",
+        "checkedAt": "2026-10-18"
+      },
+      "inputs": [
+        {
+          "resourceId": "credits",
+          "quantity": 35000,
+          "sourceIds": [
+            "m1:forma-en",
+            "m1:forma-zh"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "blueprint:forma",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:forma-en",
+            "m1:foundry"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:morphics",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:morphics"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:neural-sensors",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:sensors"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:neurodes",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:forma-en"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:orokin-cell",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:forma-en"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        }
+      ],
+      "prerequisites": [
+        "蓝图为单次消耗，持有张数另列；不要由科技树状态推断。",
+        "铸造厂、裂缝及相关地图是否开放未确认。",
+        "材料满足只表示已知投入足够；开始制作前请核对当前游戏界面。"
+      ],
+      "sourceIds": [
+        "m1:forma-en",
+        "m1:forma-zh"
+      ]
+    }
+  ]
+}
