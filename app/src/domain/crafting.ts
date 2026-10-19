@@ -1,3 +1,4 @@
+import {syndicateContributions,type SyndicateCatalog} from './syndicates';
 import type {ProfileDocument} from './model';
 import type {GoalCatalog,GoalDefinition} from './goals';
 import {progressOf,type WeaponCatalog} from './weapon';
@@ -32,7 +33,9 @@ export function planRecipe(recipe:Recipe|undefined,quantity:number,stock:Profile
  if(!p.lines.length)p.issues.push('投入清单缺失');p.requirementsComplete=p.issues.length===0;p.materialState=materialState(p.lines,p.requirementsComplete);return p;
 }
 export interface SummaryLine extends RequirementLine {knownSubtotal:number|null;contributors:{id:string;title:string;required:number|null}[]}
-export function summarizePlans(plans:CraftPlan[],stock:ProfileDocument['stock']){
+export interface RequirementContribution {id:string;title:string;kind:'crafting'|'installation'|'syndicate';lines:RequirementLine[];issues:string[];prerequisites:string[];requirementsComplete:boolean}
+export function currentRequirements(c:Readonly<CraftingCatalog>,p:ProfileDocument,w:Readonly<WeaponCatalog>,g:Readonly<GoalCatalog>,s?:Readonly<SyndicateCatalog>):RequirementContribution[]{return [...currentPlans(c,p,w,g),...s?syndicateContributions(s,p):[]];}
+export function summarizePlans(plans:RequirementContribution[],stock:ProfileDocument['stock']){
  const map=new Map<string,{sum:bigint;incomplete:boolean;contributors:SummaryLine['contributors']}>();const issues=plans.flatMap(p=>p.issues.map(text=>p.title+'：'+text));
  for(const p of plans)for(const l of p.lines){const item=map.get(l.resourceId)??{sum:0n,incomplete:false,contributors:[]};if(l.required===null)item.incomplete=true;else item.sum+=BigInt(l.required);item.contributors.push({id:p.id,title:p.title,required:l.required});map.set(l.resourceId,item);}
  const rows:SummaryLine[]=[...map].map(([resourceId,item])=>{const subtotal=safe(item.sum);if(subtotal===null){issues.push(resourceId+'合计溢出');item.incomplete=true;}const required=item.incomplete?null:subtotal;return {...line(resourceId,required,stock),knownSubtotal:subtotal,contributors:item.contributors};});

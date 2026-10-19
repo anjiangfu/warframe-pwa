@@ -1,7 +1,7 @@
 import {useEffect,useRef,useState,type MutableRefObject} from 'react';
 import type {Repository} from '../storage/db';
 declare const __BUILD_ID__:string;
-function dirtyForm(){return [...document.querySelectorAll<HTMLFormElement>('form')].some(form=>[...form.querySelectorAll<HTMLInputElement|HTMLTextAreaElement>('input:not([type=checkbox]),textarea')].some(el=>el.type!=='file'&&el.value!==el.defaultValue));}
+function dirtyForm(){return !!document.querySelector('form[data-dirty=true]')||[...document.querySelectorAll<HTMLFormElement>('form')].some(form=>[...form.querySelectorAll<HTMLInputElement|HTMLTextAreaElement>('input:not([type=checkbox]),textarea')].some(el=>el.type!=='file'&&el.value!==el.defaultValue));}
 export function UpdateNotice({repo,queue,lock,hasError}:{repo:Repository;queue:MutableRefObject<Promise<void>>;lock:(b:boolean)=>void;hasError:()=>boolean}){
  const [offlineState,setOfflineState]=useState(navigator.serviceWorker?.controller?'离线应用壳已就绪':'正在准备离线资源');const [registration,setRegistration]=useState<ServiceWorkerRegistration>();const [ready,setReady]=useState(false);const [busy,setBusy]=useState(false);const [text,setText]=useState('新版本已缓存。可以保存后更新，也可以稍后处理。');const token=useRef('');const latest=useRef({lock,hasError});latest.current={lock,hasError};
  useEffect(()=>{

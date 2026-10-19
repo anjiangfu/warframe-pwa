@@ -33,7 +33,7 @@ export class LocalProvider implements DataProvider {
   this.weapons=freeze(w);
   const g=structuredClone(goalInput);if(new Set(g.goals.map(x=>x.id)).size!==g.goals.length)throw Error('目标ID重复');
   // An injected test catalog may deliberately omit production weapon references.
-  for(const goal of g.goals){if(!['weapon','installation','crafting'].includes(goal.kind)||goal.treeNodeIds.some(id=>!ids.has(id)))throw Error('目标目录关系无效');}
+  for(const goal of g.goals){if(!['weapon','installation','crafting','syndicate'].includes(goal.kind)||goal.treeNodeIds.some(id=>!ids.has(id)))throw Error('目标目录关系无效');}
   this.goals=freeze(g);
   const resourceCatalog=combineResources(w,structuredClone(resourceInput));this.resources=freeze(resourceCatalog);
   const cc=structuredClone(craftInput),resourceIds=new Set(resourceCatalog.resources.map(r=>r.id)),allSources=new Set(resourceCatalog.sources.map(r=>r.id));

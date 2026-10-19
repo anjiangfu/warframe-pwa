@@ -1,3 +1,4 @@
+import type {GoalDefinition} from './goals';
 import type {ProfileDocument,ConditionState} from './model';
 import type {CheckedAmount,RequirementLine} from './crafting';
 export interface RankStep {id:string;from:number;to:number;standing:CheckedAmount;sacrifices:(CheckedAmount&{resourceId:string})[];conditions:{finale:boolean;likedForFinale:boolean;verification:CheckedAmount['verification'];sourceIds:string[];checkedAt:string}}
@@ -11,12 +12,12 @@ const amount=(v:CheckedAmount)=>proven(v)&&integer(v.quantity)?v.quantity:null;
 const state=(values:ConditionState[]):ConditionState=>values.includes('unmet')?'unmet':values.includes('unknown')?'unknown':'satisfied';
 export interface RankCondition {state:ConditionState;applies:boolean;reason:string}
 export interface RankEvaluation {mode:'no-target'|'unknown'|'inactive'|'reached'|'next';definition?:SyndicateDefinition;step?:RankStep;rank:number|null;target:number|null;standing:{state:ConditionState;required:number|null;owned:number|null;deficit:number|null};materials:RequirementLine[];materialsState:ConditionState;task:RankCondition;relations:RankCondition;issues:string[];requirementsComplete:boolean;ready:boolean;action:string}
-export function evaluateSyndicate(c:Readonly<SyndicateCatalog>,p:SyndicateProfile,id:string,previewTarget?:number|null):RankEvaluation {
+export function evaluateSyndicate(c:Readonly<SyndicateCatalog>,p:Pick<SyndicateProfile,'personalFacts'|'stock'|'goalStates'|'syndicateTargets'>,id:string,previewTarget?:number|null):RankEvaluation {
  const d=c.syndicates.find(s=>s.id===id),rawRank=d?p.personalFacts?.[d.rankFactId]?.value:undefined,rawTarget=previewTarget===undefined?p.syndicateTargets?.[id]:previewTarget,rawStanding=d?p.personalFacts?.[d.standingFactId]?.value:undefined;
  const rank=d&&integer(rawRank)&&rawRank<=d.maxRank?rawRank:null,target=d&&integer(rawTarget)&&rawTarget>=1&&rawTarget<=d.maxRank?rawTarget:null;
  const r:RankEvaluation={mode:'unknown',definition:d,rank,target,standing:{state:'unknown',required:null,owned:integer(rawStanding)?rawStanding:null,deficit:null},materials:[],materialsState:'unknown',task:{state:'unknown',applies:false,reason:'尚未确定当前晋升'},relations:{state:'unknown',applies:false,reason:'尚未确定当前晋升'},issues:[],requirementsComplete:false,ready:false,action:'核对当前等级及目标；未知不按0处理。'};
- if(!d){r.issues.push('集团目录引用未匹配，旧记录保留');return r;}
  if(previewTarget===undefined&&['done','deferred'].includes(p.goalStates?.[syndicateGoalId(id)]??'')){r.mode='inactive';r.action='目标已完成或暂缓，不加入当前需求；恢复关注后按最新记录计算。';return r;}
+ if(!d){r.issues.push('集团目录引用未匹配，旧记录保留');return r;}
  if(rawTarget==null){r.mode='no-target';r.action='先核对当前等级，并显式设置目标等级；查询不会创建目标。';return r;}
  if(target===null){r.issues.push('目标等级异常，旧值保留，请核对');return r;}
  if(rank===null){r.issues.push(rawRank==null?'当前等级未知':'旧等级异常，原值保留，请手工核对');return r;}
@@ -24,7 +25,7 @@ export function evaluateSyndicate(c:Readonly<SyndicateCatalog>,p:SyndicateProfil
  const step=d.steps.find(s=>s.from===rank&&s.to===rank+1);if(!step){r.issues.push('当前相邻晋升资料缺失');return r;}r.mode='next';r.step=step;
  const needed=amount(step.standing),owned=r.standing.owned,deficit=needed===null||owned===null?null:Math.max(0,needed-owned);r.standing={required:needed,owned,deficit,state:deficit===null?'unknown':deficit>0?'unmet':'satisfied'};if(needed===null)r.issues.push('本次晋升声望消耗待核');
  r.materials=step.sacrifices.map(x=>{const required=amount(x),owned=integer(p.stock[x.resourceId])?p.stock[x.resourceId]:null;if(required===null)r.issues.push(x.resourceId+'祭品用量待核');return {resourceId:x.resourceId,required,owned,deficit:required===null||owned===null?null:Math.max(0,required-owned)};});
- if(!r.materials.length)r.issues.push('本次晋升祭品清单缺失');r.materialsState=state(r.materials.map(l=>l.deficit===null?'unknown':l.deficit>0?'unmet':'satisfied'));
+ if(!r.materials.length)r.issues.push('本次晋升祭品清单缺失');r.materialsState=!r.materials.length?'unknown':state(r.materials.map(l=>l.deficit===null?'unknown':l.deficit>0?'unmet':'satisfied'));
  const task=p.personalFacts?.[d.finaleFactId]?.value;
  if(!proven(step.conditions)){r.issues.push('任务/关系条件资料待核');r.task={state:'unknown',applies:true,reason:'条件资料待核'};r.relations={...r.task};}
  else{
@@ -50,3 +51,5 @@ export function saveSyndicateFacts(p:ProfileDocument,d:SyndicateDefinition,rank:
 export function setSyndicateCondition(p:ProfileDocument,d:SyndicateDefinition,factId:string,value:boolean|null,at:string){
  if(![d.finaleFactId,...d.members.map(m=>m.factId)].includes(factId)||(value!==null&&typeof value!=='boolean'))throw Error('任务/关系声明无效');p.personalFacts??={};p.personalFacts[factId]={...p.personalFacts[factId],value,recordedAt:at};
 }
+
+export function syndicateGoals(c:Readonly<SyndicateCatalog>,p:ProfileDocument):GoalDefinition[]{return Object.keys(p.syndicateTargets??{}).map(id=>({id:syndicateGoalId(id),title:(c.syndicates.find(d=>d.id===id)?.name??'旧集团引用待匹配')+' · 晋升目标',summary:'只处理下一次晋升，声望、祭品、任务和关系分开核对。',kind:'syndicate',syndicateId:id,treeNodeIds:[]}));}

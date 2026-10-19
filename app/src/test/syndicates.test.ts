@@ -2,8 +2,16 @@ import {it,expect} from 'vitest';
 import {LocalProvider} from '../catalog/provider';
 import {newProfile} from '../storage/imports';
 import {evaluateSyndicate,syndicateContributions,syndicateGoalId,type SyndicateProfile} from '../domain/syndicates';
+import {currentRequirements,summarizePlans} from '../domain/crafting';
+import {resolveMaterialReference} from '../domain/material-reference';
 const provider=new LocalProvider(),catalog=provider.getSyndicateCatalog(),id='syndicate:hex',definition=catalog.syndicates[0];
 function profile(rank:number|null=3,standing:number|null=65000):SyndicateProfile{const p:SyndicateProfile=newProfile(provider.getCatalog(),'p','测试',false);p.personalFacts={[definition.rankFactId]:{value:rank,recordedAt:'原时间'},[definition.standingFactId]:{value:standing,recordedAt:'原时间'}};p.syndicateTargets={[id]:5};return p;}
+it('shared credits merge current rankup and crafting once; future rankup does not reserve inventory',()=>{
+ const p=profile();p.craftingTargets={'recipe:forma':1};p.stock.credits=100000;const plans=currentRequirements(provider.getCraftingCatalog(),p,provider.getWeaponCatalog(),provider.getGoalCatalog(),catalog),sum=summarizePlans(plans,p.stock);expect(sum.rows.find(x=>x.resourceId==='credits')).toMatchObject({required:135000,owned:100000,deficit:35000});expect(plans.some(x=>x.kind==='syndicate'&&'batches' in x)).toBe(false);expect(sum.rows.some(x=>x.resourceId==='material:techrot-motherboard')).toBe(false);
+});
+it('rankup material reference uses stable current step and becomes unknown when current rank, target or status changes',()=>{
+ const p=profile();p.id='one';const ref={id:'credits',profileId:'one',from:'syndicates' as const,source:{kind:'syndicate' as const,syndicateId:id,stepId:'hex:3-4'}};expect(resolveMaterialReference(ref,p,provider.getCraftingCatalog(),provider.getWeaponCatalog(),provider.getGoalCatalog(),catalog).required).toBe(100000);p.personalFacts![definition.rankFactId].value=4;expect(resolveMaterialReference(ref,p,provider.getCraftingCatalog(),provider.getWeaponCatalog(),provider.getGoalCatalog(),catalog).required).toBeNull();p.personalFacts![definition.rankFactId].value=3;p.syndicateTargets![id]=3;expect(resolveMaterialReference(ref,p,provider.getCraftingCatalog(),provider.getWeaponCatalog(),provider.getGoalCatalog(),catalog).required).toBeNull();
+});
 it('catalog covers exactly five adjacent steps with checked costs, shared credits and thirteen new resources',()=>{
  expect(definition.steps.map(s=>[s.from,s.to,s.standing.quantity,s.sacrifices.find(x=>x.resourceId==='credits')?.quantity])).toEqual([[0,1,5000,10000],[1,2,22000,25000],[2,3,44000,50000],[3,4,70000,100000],[4,5,99000,200000]]);expect(provider.getResourceCatalog().resources).toHaveLength(23);expect(provider.getResourceCatalog().resources.filter(r=>r.id==='credits')).toHaveLength(1);expect(definition.steps[3].sacrifices.map(x=>x.quantity)).toEqual([100000,25,25,40]);
 });
@@ -27,4 +35,7 @@ it('synthetic second syndicate uses its own stable facts, standing and goal ID',
 });
 it('catalog renames, missing old references and unsaved target queries preserve all personal fields',()=>{
  const p=profile(),before=structuredClone(p),c=structuredClone(catalog);c.syndicates[0].name='重命名';c.syndicates[0].steps.reverse();expect(evaluateSyndicate(c,p,id).step?.id).toBe('hex:3-4');expect(evaluateSyndicate(c,p,id,3).mode).toBe('reached');expect(p).toEqual(before);p.syndicateTargets!['old:unknown']=2;expect(syndicateContributions(c,p).find(x=>x.id==='goal:old:unknown')?.requirementsComplete).toBe(false);
+});
+it('missing sacrifice lists remain unknown and inactive orphan targets never become active contributions',()=>{
+ const p=profile(),c=structuredClone(catalog);c.syndicates[0].steps[3].sacrifices=[];const r=evaluateSyndicate(c,p,id);expect(r.materialsState).toBe('unknown');expect(r.ready).toBe(false);p.syndicateTargets!['old:missing']=2;p.goalStates={['goal:old:missing']:'done'};expect(syndicateContributions(c,p).some(x=>x.id==='goal:old:missing')).toBe(false);p.goalStates['goal:old:missing']='deferred';expect(syndicateContributions(c,p).some(x=>x.id==='goal:old:missing')).toBe(false);expect(p.syndicateTargets!['old:missing']).toBe(2);
 });
