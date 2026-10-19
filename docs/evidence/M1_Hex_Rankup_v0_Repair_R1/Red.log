@@ -1,0 +1,89 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/syndicate-drafts.spec.ts --grep target submission --reporter=line
+
+
+[WebServer] (node:1616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+
+(node:34680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/2] e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (changed and same target)
+  1) e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (changed and same target) 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator:  getByLabel('集团当前等级', { exact: true })
+    Expected: "4"
+    Received: "3"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveValue" getByLabel('集团当前等级', { exact: true }) with timeout 5000ms
+      - waiting for getByLabel('集团当前等级', { exact: true })
+        14 × locator resolved to <input min="0" max="5" step="1" value="3" type="number" placeholder="未知" aria-label="集团当前等级"/>
+           - unexpected value "3"
+
+
+      30 | }
+      31 | async function expectDraft(page:Page){
+    > 32 |  await expect(page.getByLabel('集团当前等级',{exact:true})).toHaveValue('4');
+         |                                                       ^
+      33 |  await expect(page.getByLabel('集团当前声望',{exact:true})).toHaveValue('12345');
+      34 |  await expect(page.getByLabel('等级变更后的声望处理')).toHaveValue('confirmed');
+      35 | }
+        at expectDraft (D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\syndicate-drafts.spec.ts:32:55)
+        at D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\syndicate-drafts.spec.ts:43:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\syndicate-drafts-target-su-a102c-ts-changed-and-same-target-\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\syndicate-drafts-target-su-a102c-ts-changed-and-same-target-\error-context.md
+
+
+(node:1988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/2] e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (first target)
+  2) e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (first target) ──
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator:  getByLabel('集团当前等级', { exact: true })
+    Expected: "4"
+    Received: "3"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveValue" getByLabel('集团当前等级', { exact: true }) with timeout 5000ms
+      - waiting for getByLabel('集团当前等级', { exact: true })
+        14 × locator resolved to <input min="0" max="5" step="1" value="3" type="number" placeholder="未知" aria-label="集团当前等级"/>
+           - unexpected value "3"
+
+
+      30 | }
+      31 | async function expectDraft(page:Page){
+    > 32 |  await expect(page.getByLabel('集团当前等级',{exact:true})).toHaveValue('4');
+         |                                                       ^
+      33 |  await expect(page.getByLabel('集团当前声望',{exact:true})).toHaveValue('12345');
+      34 |  await expect(page.getByLabel('等级变更后的声望处理')).toHaveValue('confirmed');
+      35 | }
+        at expectDraft (D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\syndicate-drafts.spec.ts:32:55)
+        at D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\syndicate-drafts.spec.ts:43:8
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\syndicate-drafts-target-su-2d645-pending-facts-first-target-\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\syndicate-drafts-target-su-2d645-pending-facts-first-target-\error-context.md
+
+
+  2 failed
+    e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (changed and same target) 
+    e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (first target) ───

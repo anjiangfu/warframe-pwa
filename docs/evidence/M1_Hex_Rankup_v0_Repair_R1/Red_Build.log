@@ -1,0 +1,14 @@
+
+> tenno-local-planner@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 47 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.54 kB │ gzip:   0.39 kB
+dist/assets/index-B9h2PxDG.css   26.77 kB │ gzip:   6.71 kB
+dist/assets/index-DlXWSt_b.js   491.16 kB │ gzip: 154.07 kB
+
+✓ built in 687ms

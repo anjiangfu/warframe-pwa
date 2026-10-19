@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-19T11:29:33.942804+00:00",
+  "commandExitCode": 1,
+  "existingPreview4194": "unavailable",
+  "error": "ECONNREFUSED 127.0.0.1:4194",
+  "testPort4186BindAndCloseSucceeded": true,
+  "startedExistingServices": false,
+  "stoppedExistingServices": false,
+  "action": "read-only probe only; no restart",
+  "qualification": "Production browser acceptance used dedicated port4186 and passed; this is not a 4194 UI acceptance."
+}
