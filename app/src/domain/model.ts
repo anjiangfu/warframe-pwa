@@ -18,6 +18,7 @@ export interface ProfileDocument {
  goalStates?:Record<string,GoalState>;
  personalFacts?:Record<string,PersonalFact>;
  craftingTargets?:Record<string,number>;
+ syndicateTargets?:Record<string,number>;
 }
 export interface Backup {schemaVersion:1; catalogVersion:string; profile:ProfileDocument}
 export type ConditionState = 'satisfied'|'unmet'|'unknown';

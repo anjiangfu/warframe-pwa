@@ -36,6 +36,7 @@ export function validateProfile(value:unknown):asserts value is ProfileDocument 
  for(const v of Object.values(record(p.budget,'预算')))for(const n of Object.values(record(v,'预算行')))numeric(n,'预算');
  if(!Array.isArray(p.events)||p.events.some(e=>!object(e)||typeof e.time!=='string'||typeof e.text!=='string'))fail('日志无效');
  record(p.legacyArchive,'旧字段归档');
+ if(p.syndicateTargets!==undefined)for(const [id,rank] of Object.entries(record(p.syndicateTargets,'集团目标')))if(!id||typeof rank!=='number'||!Number.isSafeInteger(rank)||rank<0)fail('集团目标等级必须为非负安全整数；旧引用不裁剪');
  if(p.craftingTargets!==undefined)for(const [id,quantity] of Object.entries(record(p.craftingTargets,'制作目标')))if(!id||typeof quantity!=='number'||!Number.isSafeInteger(quantity)||quantity<=0)fail('制作目标数量必须为正安全整数');
  if(p.goalStates!==undefined)for(const status of Object.values(record(p.goalStates,'目标声明')))if(typeof status!=='string'||!['focused','done','deferred'].includes(status))fail('目标声明状态无效');
  if(p.personalFacts!==undefined)for(const value of Object.values(record(p.personalFacts,'个人事实'))){const f=record(value,'个人事实项');if(f.value!==null&&typeof f.value!=='boolean'&&(typeof f.value!=='number'||!Number.isFinite(f.value)||f.value<0))fail('个人事实必须为非负数字、布尔值或未知');if(typeof f.recordedAt!=='string')fail('个人事实记录时间无效');if(f.originalLabel!==undefined&&typeof f.originalLabel!=='string')fail('用户原称无效');if(f.entityId!==undefined&&f.entityId!==null&&typeof f.entityId!=='string')fail('实体关联无效');}

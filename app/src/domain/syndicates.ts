@@ -37,3 +37,16 @@ export function evaluateSyndicate(c:Readonly<SyndicateCatalog>,p:SyndicateProfil
 }
 export interface RankupContribution {id:string;title:string;kind:'syndicate';lines:RequirementLine[];issues:string[];prerequisites:string[];requirementsComplete:boolean}
 export function syndicateContributions(c:Readonly<SyndicateCatalog>,p:SyndicateProfile):RankupContribution[]{return Object.keys(p.syndicateTargets??{}).flatMap(id=>{const r=evaluateSyndicate(c,p,id);if(['inactive','reached','no-target'].includes(r.mode))return [];return [{id:syndicateGoalId(id),title:(r.definition?.name??'旧集团引用待匹配')+' · 下一次晋升',kind:'syndicate' as const,lines:r.materials,issues:r.issues,prerequisites:['声望、任务与关系条件另外核对；材料足够不代表可以晋升'],requirementsComplete:r.requirementsComplete}];});}
+export function setSyndicateTarget(p:ProfileDocument,d:SyndicateDefinition,target:number){
+ if(!integer(target)||target<1||target>d.maxRank)throw Error('目标等级超出本集团范围');p.syndicateTargets??={};p.syndicateTargets[d.id]=target;p.goalStates??={};p.goalStates[syndicateGoalId(d.id)]??='focused';
+}
+export type BalanceReview='unreviewed'|'unknown'|'confirmed';
+export function saveSyndicateFacts(p:ProfileDocument,d:SyndicateDefinition,rank:number|null,standing:number|null,review:BalanceReview,at:string){
+ if(rank!==null&&(!integer(rank)||rank>d.maxRank))throw Error('当前等级请输入本集团范围内整数或留空');if(standing!==null&&!integer(standing))throw Error('当前声望请输入非负安全整数或留空');
+ const previousRank=p.personalFacts?.[d.rankFactId]?.value??null,previousStanding=p.personalFacts?.[d.standingFactId]?.value??null;
+ if(rank!==previousRank&&(previousRank!==null||previousStanding!==null)&&review==='unreviewed')throw Error('等级已改变，请明确核对声望余额或选择未知，再保存');
+ p.personalFacts??={};p.personalFacts[d.rankFactId]={...p.personalFacts[d.rankFactId],value:rank,recordedAt:at};p.personalFacts[d.standingFactId]={...p.personalFacts[d.standingFactId],value:review==='unknown'?null:standing,recordedAt:at};
+}
+export function setSyndicateCondition(p:ProfileDocument,d:SyndicateDefinition,factId:string,value:boolean|null,at:string){
+ if(![d.finaleFactId,...d.members.map(m=>m.factId)].includes(factId)||(value!==null&&typeof value!=='boolean'))throw Error('任务/关系声明无效');p.personalFacts??={};p.personalFacts[factId]={...p.personalFacts[factId],value,recordedAt:at};
+}

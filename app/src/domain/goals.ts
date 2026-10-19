@@ -62,11 +62,13 @@ export function previewProgress(p:ProfileDocument,moduleEntity:string|null):Prog
   {label:'1999手工等级',patch:{kind:'fact',id:'syndicate:hex:rank',value:3}},
   {label:'其他集团进展中，具体数据未知',patch:{kind:'fact',id:'syndicates:others:progressing',value:true}}
  ];
+ if(p.personalFacts?.['syndicate:hex:rank']?.value!==3&&p.personalFacts?.['syndicate:hex:standing']?.value!=null)changes.push({label:'历史等级变更：当前声望改为未知，需重新核对',patch:{kind:'fact',id:'syndicate:hex:standing',value:null}});
  return {profileId:p.id,revision:p.revision,rows:changes.map(({label,patch})=>{const before=patchValue(p,patch),after=targetValue(patch);return {id:patch.kind+':'+patch.id,label,before:before===undefined?'未填写 / 未知':JSON.stringify(before),after:JSON.stringify(after),conflict:before!==undefined&&JSON.stringify(before)!==JSON.stringify(after),patch};})};
 }
 export function applyProgress(p:ProfileDocument,preview:ProgressPreview,selected:string[],at:string):ProfileDocument {
  if(p.id!==preview.profileId||p.revision!==preview.revision)throw Error('预览后档案已改变，请重新预览。');
  if(!selected.length||new Set(selected).size!==selected.length||selected.some(id=>!preview.rows.some(r=>r.id===id)))throw Error('请选择有效草案项目');
+ if(selected.includes('fact:syndicate:hex:rank')&&p.personalFacts?.['syndicate:hex:rank']?.value!==3&&p.personalFacts?.['syndicate:hex:standing']?.value!=null&&!selected.includes('fact:syndicate:hex:standing'))throw Error('历史等级改变时需明确选择声望改为未知，或取消等级项目后在摘要中核对余额。');
  const next=structuredClone(p);
  for(const row of preview.rows.filter(r=>selected.includes(r.id))){const x=row.patch;if(x.kind==='goal'){next.goalStates??={};next.goalStates[x.id]=x.value;}else if(x.kind==='stage')editWeaponProgress(next,x.id,s=>{s.currentStageId=x.value;});else{next.personalFacts??={};next.personalFacts[x.id]={value:x.value,recordedAt:at,...x.originalLabel?{originalLabel:x.originalLabel}:{},...x.entityId!==undefined?{entityId:x.entityId}:{}};}}
  return next;
