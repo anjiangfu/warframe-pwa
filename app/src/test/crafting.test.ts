@@ -7,7 +7,7 @@ const provider=new LocalProvider(),resources=provider.getResourceCatalog(),craft
 const stock={'material:test':100};const amount=(quantity:number|null,verification:'verified'|'unverified'='verified')=>({quantity,verification,sourceIds:['test-source'],checkedAt:'2026-10-18'});
 const recipe=(id:string,quantity=80,output=1):Recipe=>({id,title:'测试清单',output:{resourceId:'forma',...amount(output)},inputs:[{resourceId:'material:test',...amount(quantity)}],prerequisites:['地图开放未知'],sourceIds:['test-source']});
 it('shared resource index keeps old IDs and searches Chinese, English and aliases without writing profiles',()=>{
- expect(resources.resources).toHaveLength(10);for(const q of ['福马','Forma','蓝图','Morphics','神经元','Pathos Clamps','Yao Shrub','EEVANI'])expect(searchResources(resources,q).length).toBeGreaterThan(0);expect(findResource(resources,'missing')).toBeUndefined();
+ expect(resources.resources).toHaveLength(23);for(const q of ['福马','Forma','蓝图','Morphics','神经元','Pathos Clamps','Yao Shrub','EEVANI'])expect(searchResources(resources,q).length).toBeGreaterThan(0);expect(findResource(resources,'missing')).toBeUndefined();
  for(const m of weapons.materials)expect(findResource(resources,m.id)?.name).toBe(m.name);expect(findResource(resources,'credits')?.english).toBe('Credits');expect(findResource(resources,'forma')?.name).toBe('福马');
 });
 it('provider rejects duplicate resources and bad quantities while retaining custom weapon catalog injection',()=>{

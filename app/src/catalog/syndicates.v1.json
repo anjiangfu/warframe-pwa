@@ -1,0 +1,421 @@
+{
+  "catalogVersion": "2026.10.19.1",
+  "syndicates": [
+    {
+      "id": "syndicate:hex",
+      "name": "六人组",
+      "english": "The Hex",
+      "maxRank": 5,
+      "rankFactId": "syndicate:hex:rank",
+      "standingFactId": "syndicate:hex:standing",
+      "finaleFactId": "quest:hex:finale",
+      "sourceIds": [
+        "hex:table",
+        "hex:u38",
+        "hex:kim",
+        "hex:quest"
+      ],
+      "members": [
+        {
+          "id": "arthur",
+          "name": "亚瑟",
+          "english": "Arthur",
+          "factId": "hex:liked:arthur"
+        },
+        {
+          "id": "aoi",
+          "name": "碧",
+          "english": "Aoi",
+          "factId": "hex:liked:aoi"
+        },
+        {
+          "id": "amir",
+          "name": "阿米尔",
+          "english": "Amir",
+          "factId": "hex:liked:amir"
+        },
+        {
+          "id": "quincy",
+          "name": "昆西",
+          "english": "Quincy",
+          "factId": "hex:liked:quincy"
+        },
+        {
+          "id": "lettie",
+          "name": "莱蒂西娅",
+          "english": "Lettie",
+          "factId": "hex:liked:lettie"
+        },
+        {
+          "id": "eleanor",
+          "name": "埃莉诺",
+          "english": "Eleanor",
+          "factId": "hex:liked:eleanor"
+        }
+      ],
+      "steps": [
+        {
+          "id": "hex:0-1",
+          "to": 1,
+          "standing": {
+            "quantity": 5000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 10000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:efervon-sample",
+              "quantity": 15,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:pitchweave-fragment",
+              "quantity": 5,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 0
+        },
+        {
+          "id": "hex:1-2",
+          "to": 2,
+          "standing": {
+            "quantity": 22000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 25000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:experimental-arc-relay",
+              "quantity": 5,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:entrati-obols",
+              "quantity": 12,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:pitchweave-fragment",
+              "quantity": 25,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 1
+        },
+        {
+          "id": "hex:2-3",
+          "to": 3,
+          "standing": {
+            "quantity": 44000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 50000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:countessa-comic",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:on-lyne-cd",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:chuggin-sixpack",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:mood-crystal",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:cheddar-crowns",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:35mm-film",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 2
+        },
+        {
+          "id": "hex:3-4",
+          "to": 4,
+          "standing": {
+            "quantity": 70000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 100000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:techrot-chitin",
+              "quantity": 25,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:necracoil",
+              "quantity": 25,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:efervon-sample",
+              "quantity": 40,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": true,
+            "likedForFinale": true,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table",
+              "hex:u38",
+              "hex:quest"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 3
+        },
+        {
+          "id": "hex:4-5",
+          "to": 5,
+          "standing": {
+            "quantity": 99000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 200000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:techrot-motherboard",
+              "quantity": 5,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:countessa-comic",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:on-lyne-cd",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:chuggin-sixpack",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:mood-crystal",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:cheddar-crowns",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:35mm-film",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 4
+        }
+      ],
+      "guidance": {
+        "standing": "到霍瓦尼亚中央商场核对可参加赏金。珍品可向莱蒂兑换，但未兑换物不是已持有声望，本页不自动兑换。",
+        "relations": "在轨道器或后房电脑的KIM查看六位成员档案；核对至少喜欢（Liked）。完成介绍对话后可核对对应赏金；不提供礼物喜好或聊天答案。",
+        "task": "在后房核对卡利莫斯（Kalymos）处的六人组终章入口与解锁提示；仅核对是否完成，不展开剧情。"
+      }
+    }
+  ]
+}

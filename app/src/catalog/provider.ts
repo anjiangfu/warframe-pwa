@@ -3,12 +3,14 @@ import guides from './weapon-guides.v1.json';
 import goals from './goals.v1.json';
 import resources from './resources.v1.json';
 import crafting from './crafting.v1.json';
+import syndicates from './syndicates.v1.json';
+import type {SyndicateCatalog} from '../domain/syndicates';
 import {combineResources,type ResourceCatalog} from '../domain/resources';
 import {positiveInteger,type CraftingCatalog} from '../domain/crafting';
 import type {GoalCatalog} from '../domain/goals';
 import type {WeaponCatalog} from '../domain/weapon';
 import type {Catalog} from '../domain/model';
-export interface DataProvider {getCatalog():Readonly<Catalog>;getWeaponCatalog():Readonly<WeaponCatalog>;getGoalCatalog():Readonly<GoalCatalog>;getResourceCatalog():Readonly<ResourceCatalog>;getCraftingCatalog():Readonly<CraftingCatalog>}
+export interface DataProvider {getCatalog():Readonly<Catalog>;getWeaponCatalog():Readonly<WeaponCatalog>;getGoalCatalog():Readonly<GoalCatalog>;getResourceCatalog():Readonly<ResourceCatalog>;getCraftingCatalog():Readonly<CraftingCatalog>;getSyndicateCatalog():Readonly<SyndicateCatalog>}
 function freeze<T>(v:T):T {if(v&&typeof v==='object'){Object.freeze(v);Object.values(v).forEach(freeze);}return v;}
 export class LocalProvider implements DataProvider {
  private catalog:Catalog;
@@ -16,7 +18,8 @@ export class LocalProvider implements DataProvider {
  private goals:GoalCatalog;
  private resources:ResourceCatalog;
  private crafting:CraftingCatalog;
- constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog,resourceInput:ResourceCatalog=resources as ResourceCatalog,craftInput:CraftingCatalog=crafting as CraftingCatalog){
+ private syndicates:SyndicateCatalog;
+ constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog,resourceInput:ResourceCatalog=resources as ResourceCatalog,craftInput:CraftingCatalog=crafting as CraftingCatalog,syndicateInput:SyndicateCatalog=syndicates as SyndicateCatalog){
   const c=structuredClone(input),ids=new Set(c.nodes.map(n=>n.id));
   if(ids.size!==c.nodes.length||new Set(c.lanes.map(l=>l.id)).size!==c.lanes.length)throw Error('目录ID重复');
   const steps=new Set<string>();
@@ -37,10 +40,15 @@ export class LocalProvider implements DataProvider {
   if(new Set(cc.recipes.map(r=>r.id)).size!==cc.recipes.length)throw Error('配方ID重复');
   for(const r of cc.recipes){if(new Set(r.inputs.map(x=>x.resourceId)).size!==r.inputs.length)throw Error('配方投入ID重复');if(r.sourceIds.some(id=>!allSources.has(id)))throw Error('配方来源无效');for(const a of [r.output,...r.inputs]){if(!resourceIds.has(a.resourceId)||a.sourceIds.some(id=>!allSources.has(id)))throw Error('配方资源或来源引用无效');if(a.quantity!==null&&!positiveInteger(a.quantity)||a.verification==='verified'&&!positiveInteger(a.quantity))throw Error('配方数量无效');if(!['verified','unverified','conflicting'].includes(a.verification))throw Error('配方核验状态无效');}}
   this.crafting=freeze(cc);
+  const sc=structuredClone(syndicateInput),stepIds=new Set<string>();if(new Set(sc.syndicates.map(x=>x.id)).size!==sc.syndicates.length)throw Error('集团ID重复');
+  const provenance=(a:{verification:string;sourceIds:string[];checkedAt:string})=>{if(!['verified','unverified','conflicting'].includes(a.verification)||typeof a.checkedAt!=='string'||a.sourceIds.some(id=>!allSources.has(id)))throw Error('集团来源或核验无效');};
+  for(const d of sc.syndicates){if(!Number.isSafeInteger(d.maxRank)||d.maxRank<1||!d.rankFactId||!d.standingFactId||d.rankFactId===d.standingFactId||new Set(d.members.map(m=>m.id)).size!==d.members.length||d.sourceIds.some(id=>!allSources.has(id)))throw Error('集团定义无效');const adjacent=new Set<number>();for(const step of d.steps){if(stepIds.has(step.id)||adjacent.has(step.from)||!Number.isSafeInteger(step.from)||step.from<0||step.to!==step.from+1||step.to>d.maxRank)throw Error('集团相邻步骤无效');stepIds.add(step.id);adjacent.add(step.from);provenance(step.conditions);if(typeof step.conditions.finale!=='boolean'||typeof step.conditions.likedForFinale!=='boolean')throw Error('集团条件无效');if(new Set(step.sacrifices.map(x=>x.resourceId)).size!==step.sacrifices.length)throw Error('集团祭品重复');for(const a of [step.standing,...step.sacrifices]){provenance(a);if(a.quantity!==null&&(!Number.isSafeInteger(a.quantity)||a.quantity<0))throw Error('集团用量无效');}for(const a of step.sacrifices)if(!resourceIds.has(a.resourceId))throw Error('集团资源引用无效');}}
+  this.syndicates=freeze(sc);
  }
  getCatalog(){return this.catalog;}
  getWeaponCatalog(){return this.weapons;}
  getGoalCatalog(){return this.goals;}
  getResourceCatalog(){return this.resources;}
  getCraftingCatalog(){return this.crafting;}
+ getSyndicateCatalog(){return this.syndicates;}
 }

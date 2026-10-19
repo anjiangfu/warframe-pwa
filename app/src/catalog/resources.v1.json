@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "2026.10.18.2",
+  "catalogVersion": "2026.10.19.1",
   "resources": [
     {
       "id": "credits",
@@ -10,10 +10,13 @@
         "m1:earn:credits"
       ],
       "sourceIds": [
-        "m1:chart"
+        "m1:chart",
+        "hex:u38"
       ],
       "aliases": [
-        "现金"
+        "现金",
+        "霍币",
+        "Höllars"
       ]
     },
     {
@@ -99,6 +102,179 @@
       ],
       "aliases": [
         "Orokin电池"
+      ]
+    },
+    {
+      "id": "material:efervon-sample",
+      "name": "艾弗旺样本",
+      "english": "Efervon Sample",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:city"
+      ],
+      "sourceIds": [
+        "hex:efervon"
+      ]
+    },
+    {
+      "id": "material:pitchweave-fragment",
+      "name": "霍瓦尼亚沥青布碎片",
+      "english": "Höllvanian Pitchweave Fragment",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:city"
+      ],
+      "sourceIds": [
+        "hex:pitch"
+      ]
+    },
+    {
+      "id": "material:experimental-arc-relay",
+      "name": "实验性电弧继电器",
+      "english": "Experimental Arc-Relay",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:city"
+      ],
+      "sourceIds": [
+        "hex:relay"
+      ]
+    },
+    {
+      "id": "material:entrati-obols",
+      "name": "英择谛银币",
+      "english": "Entrati Obols",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:lab"
+      ],
+      "sourceIds": [
+        "hex:obols",
+        "hex:lab"
+      ]
+    },
+    {
+      "id": "material:techrot-chitin",
+      "name": "科腐者几丁质",
+      "english": "Techrot Chitin",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:city"
+      ],
+      "sourceIds": [
+        "hex:zh-resources",
+        "hex:u38"
+      ]
+    },
+    {
+      "id": "material:necracoil",
+      "name": "殁世线圈",
+      "english": "Necracoil",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:lab"
+      ],
+      "sourceIds": [
+        "hex:zh-lab",
+        "hex:lab"
+      ]
+    },
+    {
+      "id": "material:techrot-motherboard",
+      "name": "科腐者主板",
+      "english": "Techrot Motherboard",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:city"
+      ],
+      "sourceIds": [
+        "hex:zh-resources",
+        "hex:u38"
+      ]
+    },
+    {
+      "id": "treasure:countessa-comic",
+      "name": "女伯爵漫画",
+      "english": "The Countessa Comic",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:treasure"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
+      ]
+    },
+    {
+      "id": "treasure:on-lyne-cd",
+      "name": "线上时代CD",
+      "english": "On-lyne CD",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:treasure"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
+      ]
+    },
+    {
+      "id": "treasure:chuggin-sixpack",
+      "name": "酌趣六瓶装啤酒",
+      "english": "Chuggin’ Along Sixpack",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:treasure"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
+      ]
+    },
+    {
+      "id": "treasure:mood-crystal",
+      "name": "心情水晶",
+      "english": "Mood Crystal",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:treasure"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
+      ]
+    },
+    {
+      "id": "treasure:cheddar-crowns",
+      "name": "切达芝士皇冠麦片",
+      "english": "Cheddar Crowns Cereal",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:treasure"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
+      ]
+    },
+    {
+      "id": "treasure:35mm-film",
+      "name": "35毫米胶片",
+      "english": "35mm Film",
+      "aliases": [],
+      "kind": "material",
+      "acquisitionIds": [
+        "hex:acquire:treasure"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
       ]
     }
   ],
@@ -205,6 +381,55 @@
       "restrictions": [
         "单批资料为1福马；本轮不做其他福马变体或活动推荐。"
       ]
+    },
+    {
+      "id": "hex:acquire:city",
+      "label": "区域获取方式",
+      "place": "霍瓦尼亚中央商场（Höllvania Central Mall）→城市任务区域",
+      "mode": "已开放的城市任务／赏金途中探索",
+      "action": "从商场核对可进入的任务；沿途击败敌人、搜索容器及资源点并拾取所需资源，不承诺必掉。",
+      "restrictions": [
+        "地图和任务开放状态未确认，先核对可进入。",
+        "这是区域动作指引，不是实时赏金/最优路线，不提供掉率或收益承诺。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "hex:efervon",
+        "hex:pitch",
+        "hex:relay"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "hex:acquire:treasure",
+      "label": "区域获取方式",
+      "place": "霍瓦尼亚（Höllvania）· 城市任务区域",
+      "mode": "探索与交互拾取",
+      "action": "沿途观察绿色珍品，核对名称后交互拾取；离开前检查任务取得物。珍品兑换不自动增加本应用声望。",
+      "restrictions": [
+        "地图和任务开放状态未确认，先核对可进入。",
+        "这是区域动作指引，不是实时赏金/最优路线，不提供掉率或收益承诺。"
+      ],
+      "sourceIds": [
+        "hex:zh-treasures"
+      ],
+      "kind": "acquisition"
+    },
+    {
+      "id": "hex:acquire:lab",
+      "label": "区域获取方式",
+      "place": "解剖圣所（Sanctum Anatomica）→阿尔布雷希特的实验室（Albrecht’s Laboratories）",
+      "mode": "已开放的实验室任务区域／探索",
+      "action": "先在游戏确认区域已开放；击败敌人并搜寻战利品容器，核对银币或线圈拾取。",
+      "restrictions": [
+        "地图和任务开放状态未确认，先核对可进入。",
+        "这是区域动作指引，不是实时赏金/最优路线，不提供掉率或收益承诺。"
+      ],
+      "sourceIds": [
+        "hex:lab",
+        "hex:zh-lab"
+      ],
+      "kind": "acquisition"
     }
   ],
   "sources": [
@@ -315,6 +540,132 @@
       "access": "search-cache",
       "checkedAt": "2026-10-18",
       "note": "人工对照资料，未游戏内实测。部分页面仅检索缓存；已核字段不代表全页或当前版本全部数值获官方确认。"
+    },
+    {
+      "id": "hex:table",
+      "title": "六人组晋升表",
+      "url": "https://warframe.fandom.com/wiki/The_Hex_%28Syndicate%29",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:u38",
+      "title": "DE Update38：货币/关系/区域",
+      "url": "https://www.warframe.com/en/patch-notes/pc/38-0-0",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:kim",
+      "title": "DE关系等级澄清",
+      "url": "https://forums.warframe.com/topic/1428487-psa-kim-chemistry-ranks-hex-syndicate-rank-clarification/",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:quest",
+      "title": "终章解锁与四级",
+      "url": "https://warframe.fandom.com/wiki/The_Hex_%28Quest%29",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:zh-resources",
+      "title": "中文资源名称",
+      "url": "https://warframe.huijiwiki.com/wiki/资源",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:zh-treasures",
+      "title": "中文六种珍品与拾取",
+      "url": "https://warframe.huijiwiki.com/wiki/切达芝士皇冠麦片",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:zh-lab",
+      "title": "殁世线圈与实验室获取",
+      "url": "https://warframe.huijiwiki.com/wiki/殁世线圈",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:obols",
+      "title": "英择谛银币中文名",
+      "url": "https://warframe.huijiwiki.com/wiki/英择谛银币",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:lab",
+      "title": "实验室两种资源获取",
+      "url": "https://www.orokinarchives.com/deimos-resources/",
+      "kind": "community",
+      "access": "page",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:mall",
+      "title": "中文商场与六名成员",
+      "url": "https://warframe.huijiwiki.com/wiki/霍瓦尼亚中央商场",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:instant",
+      "title": "中文喜欢与KIM核对",
+      "url": "https://warframe.huijiwiki.com/wiki/即时通",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:efervon",
+      "title": "艾弗旺样本",
+      "url": "https://warframe.huijiwiki.com/wiki/Efervon",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:pitch",
+      "title": "沥青布碎片",
+      "url": "https://warframe.huijiwiki.com/wiki/霍瓦尼亚沥青布碎片",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "hex:relay",
+      "title": "实验性继电器",
+      "url": "https://warframe.huijiwiki.com/wiki/实验性电弧继电器",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-19",
+      "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
     }
   ]
 }
