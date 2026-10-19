@@ -1,0 +1,24 @@
+# 六人组晋升助手v0：设计与实施计划
+
+2026-10-19，用户已批准完整方案并授权交付后独立复核，本轮连续实施，不再重复等待。基线2cda996f58ca8259fa0d758b5694a1c38acd9b8b，干净工作区，新分支codex/m1-hex-rankup-v0。只做六人组下一次晋升；无第二真实集团、天数/日上限、负声望、活动、恋爱、自动扣料、云同步。资料见Sources同名前缀文件。
+
+## 模型及ID
+
+- Provider新增getSyndicateCatalog，版本化syndicates.v1.json含五次相邻晋升、逐字段来源/日期/核验、条件和短指引。resources.v1.json只加实际所需13资源，credits原ID共用（23资源合计）；旧三材料和其他资料定义不重复。
+- syndicate:hex；goal:syndicate:hex；hex:0-1…hex:4-5步骤ID。数量祭品与声望消耗分开；声望不放stock。个人事实仍使用syndicate:hex:rank/standing；六关系用hex:liked:arthur/aoi/amir/quincy/lettie/eleanor，终章quest:hex:finale。
+- 可选syndicateTargets按稳定集团ID保存目标等级，状态沿goalStates。新档/旧档查询不补字段，历史3级不默认注入。新增字段校验结构/安全整数，旧事实不增加0—5恢复限制，旧异常值保留并提示。手工设置当前/目标才验证集团范围。
+- 原摘要和新页共用小型事实编辑器。实际等级改变时先显示待保存等级/点数，用户须明确确认余额或改未知；不默认为0、不自动沿用旧余额当确认。两个事实同一事务保存，沿用revision/队列/广播/更新保护。
+- 纯查询evaluateSyndicate返回下一步、四条件三态、已知差值/待核和动作。只算当前→当前+1，达到目标不排晋升；完成/暂缓不贡献。3→4六人Liked是终章准备，已完成终章不重复催关系，但不自动补写关系或等级。
+- 制作保留currentPlans兼容，新增currentRequirements组合制作/安装/晋升贡献；summarizePlans接受最小需求贡献接口（晋升没有批次/产出）。未知等级/缺目录为不完整贡献，不当0；未来步骤不参与。
+- 材料来源增加集团ID＋当前步骤ID，重新读取当前等级/目标/状态与目录；步骤改变明确失效；未保存目标预览另标来源和目标值，不伪装保存状态。共享/助手/旧制作重算继续保留。
+- DB/schema仍1，catalogVersion2026.10.19.1，build仍由内容hash。无数据库结构迁移/依赖变动。
+
+## 文件与验证步骤
+
+- [x] G0：核对AGENTS/PRD/原树/现有验收，17保护hash；先提交本设计、来源、ID与货币边界。
+- [ ] G1：先写失败领域/目录用例，再实现syndicates.ts、目录及Provider验证；覆盖未知/异常、全部五步骤、四类门槛、完成/暂缓、合成第二集团隔离，测试通过提交。
+- [ ] G2：先写保存/完整恢复失败用例；model/imports最小可选字段、统一事实/目标保存；旧29/87及全部个人数据/原件、新状态完整往返，事务/配额/revision保护通过提交。
+- [ ] G3：先写生产Chrome失败闭环，再实现SyndicatePage、共用事实编辑器、助手入口、currentRequirements与material-reference衔接；新旧页同步、跨页来源、离线/真实下载恢复/失败保护、桌面及360/412截图通过提交。
+- [ ] G4：完整lint/test/typecheck/build/Chrome（保留原57/24）；17hash/许可/使用说明/验收/全部失败修正与Git检查点；本地最终提交后停止。证据只用docs/evidence/M1_Hex_Rankup_v0/，短Chrome app/.b/，空闲4186测试、4194体验；不停止4173/4180/4184/4192。
+
+常规设计按已批准范围自主实施。无真实设备/可信HTTPS则明确Android/安装/游戏内尚未验，不用模拟替代。只在本聊天交付，不回发审阅端、不启用自动化；不推送/合并/公开部署/改系统。
