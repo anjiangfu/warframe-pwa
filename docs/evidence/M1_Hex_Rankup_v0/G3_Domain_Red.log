@@ -1,0 +1,40 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/syndicates.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app
+
+ ❯ src/test/syndicates.test.ts (10 tests | 2 failed) 15ms
+   × shared credits merge current rankup and crafting once; future rankup does not reserve inventory 5ms
+   × rankup material reference uses stable current step and becomes unknown when current rank, target or status changes 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/syndicates.test.ts > shared credits merge current rankup and crafting once; future rankup does not reserve inventory
+TypeError: currentRequirements is not a function
+ ❯ src/test/syndicates.test.ts:10:92
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/test/syndicates.test.ts > rankup material reference uses stable current step and becomes unknown when current rank, target or status changes
+AssertionError: expected null to be 100000 // Object.is equality
+
+- Expected:
+100000
+
++ Received:
+null
+
+ ❯ src/test/syndicates.test.ts:13:307
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 8 passed (10)
+   Start at  09:49:52
+   Duration  298ms (transform 46%, import 37%, tests 12%, worker 4%)
+

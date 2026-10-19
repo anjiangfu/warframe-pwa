@@ -1,0 +1,20 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test syndicates.spec.ts --reporter=line
+
+
+[WebServer] (node:35652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+
+(node:32212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/5] e2e\syndicates.spec.ts:12:1 › Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data
+[2/5] e2e\syndicates.spec.ts:25:1 › Hex current-step material source invalidates across rank, target and status changes with new stock
+[3/5] e2e\syndicates.spec.ts:29:1 › Hex target quota, revision and update failures preserve all saved data
+[4/5] e2e\syndicates.spec.ts:34:1 › Hex page reopens offline and saves standing, relationship and shared material
+[5/5] e2e\syndicates.spec.ts:38:1 › unsaved target selection stays explicit across another page saving and cannot overwrite its newer revision
+  5 passed (15.1s)

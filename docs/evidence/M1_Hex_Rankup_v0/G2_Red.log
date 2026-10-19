@@ -1,0 +1,49 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/syndicate-storage.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app
+
+ ❯ src/test/syndicate-storage.test.ts (4 tests | 4 failed) 23ms
+   × facts are unique; changed rank requires explicit balance review before any mutation 4ms
+   × optional targets/conditions only save explicitly and abnormal old facts remain recoverable 2ms
+   × legacy 29/87 and all previous business data plus new target/relationships/finale download-format roundtrip 3ms
+   × two profiles, quota, revision and update barriers preserve saved syndicate facts and targets 13ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/syndicate-storage.test.ts > facts are unique; changed rank requires explicit balance review before any mutation
+TypeError: saveSyndicateFacts is not a function
+ ❯ src/test/syndicate-storage.test.ts:11:59
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/test/syndicate-storage.test.ts > optional targets/conditions only save explicitly and abnormal old facts remain recoverable
+TypeError: setSyndicateTarget is not a function
+ ❯ src/test/syndicate-storage.test.ts:14:188
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/test/syndicate-storage.test.ts > legacy 29/87 and all previous business data plus new target/relationships/finale download-format roundtrip
+TypeError: saveSyndicateFacts is not a function
+ ❯ src/test/syndicate-storage.test.ts:17:736
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/test/syndicate-storage.test.ts > two profiles, quota, revision and update barriers preserve saved syndicate facts and targets
+TypeError: setSyndicateTarget is not a function
+ ❯ src/test/syndicate-storage.test.ts:20:267
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed (4)
+   Start at  09:45:39
+   Duration  357ms (import 52%, transform 33%, tests 12%, worker 3%)
+

@@ -1,0 +1,29 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/syndicates.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app
+
+ ❯ src/test/syndicates.test.ts (11 tests | 1 failed) 15ms
+   × missing sacrifice lists remain unknown and inactive orphan targets never become active contributions 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/syndicates.test.ts > missing sacrifice lists remain unknown and inactive orphan targets never become active contributions
+AssertionError: expected 'satisfied' to be 'unknown' // Object.is equality
+
+Expected: "unknown"
+Received: "satisfied"
+
+ ❯ src/test/syndicates.test.ts:40:145
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 passed (11)
+   Start at  09:57:52
+   Duration  267ms (transform 46%, import 37%, tests 13%, worker 4%)
+

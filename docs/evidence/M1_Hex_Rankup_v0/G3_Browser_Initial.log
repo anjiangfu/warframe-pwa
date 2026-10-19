@@ -1,0 +1,61 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test syndicates.spec.ts --reporter=line
+
+
+[WebServer] (node:7712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+
+(node:36792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] e2e\syndicates.spec.ts:12:1 › Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data
+[2/4] e2e\syndicates.spec.ts:25:1 › Hex current-step material source invalidates across rank, target and status changes with new stock
+[3/4] e2e\syndicates.spec.ts:29:1 › Hex target quota, revision and update failures preserve all saved data
+  1) e2e\syndicates.spec.ts:29:1 › Hex target quota, revision and update failures preserve all saved data 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('status')
+    Expected substring: "保存失败"
+    Received string:    "已保存到此设备"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('status') with timeout 5000ms
+      - waiting for getByRole('status')
+        14 × locator resolved to <span role="status" aria-live="polite">已保存到此设备</span>
+           - unexpected value "已保存到此设备"
+
+
+      29 | test('Hex target quota, revision and update failures preserve all saved data',async({page,context})=>{
+      30 |  await create(page);const before=await records(page);await page.evaluate(()=>{const put=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(...args:Parameters<IDBObjectStore['put']>){if(this.name==='profiles')throw new DOMException('test quota','QuotaExceededError');return put.apply(this,args);};});await page.getByLabel('目标集团等级',{exact:true}).selectOption('4');await page.getByRole('button',{name:'设置晋升目标'}).click();await expect(page.getByRole('status')).toContainText('保存失败');expect(await records(page)).toEqual(before);
+    > 31 |  await page.reload();await page.getByLabel('集团当前声望',{exact:true}).fill('1');const second=await context.newPage();await second.goto(TEST_ORIGIN+'/#syndicates');await target(second,'4');const changed=await records(second);await page.getByRole('button',{name:'保存集团事实'}).click();await expect(page.getByRole('status')).toContainText('保存失败');expect(await records(page)).toEqual(changed);await page.getByRole('button',{name:'重新载入档案'}).click();await expect(page.getByRole('status')).toContainText('已重新载入');await page.evaluate(()=>new Promise<void>(resolve=>{const r=indexedDB.open('tenno-planner');r.onsuccess=()=>{const db=r.result,tx=db.transaction('meta','readwrite');tx.objectStore('meta').put({key:'writeBarrier',value:{target:'hex-test'}});tx.oncomplete=()=>{db.close();resolve();};};}));await page.getByRole('button',{name:'设置晋升目标'}).click();await expect(page.getByRole('status')).toContainText('保存失败');await expect(page.getByRole('alert')).toContainText('更新');expect(await records(page)).toEqual(changed);await writeFile(evidencePath('Hex_Save_Protection.json'),JSON.stringify({quota:true,revision:true,updateBarrier:true,allPriorStatePreserved:true,noFalseSuccess:true},null,2));
+         |                                                                                                                                                                                                                                                                                                                           ^
+      32 | });
+      33 |
+      34 | test('Hex page reopens offline and saves standing, relationship and shared material',async({page,context})=>{
+        at D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\syndicates.spec.ts:31:315
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\syndicates-Hex-target-quot-87120-res-preserve-all-saved-data\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\syndicates-Hex-target-quot-87120-res-preserve-all-saved-data\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\syndicates-Hex-target-quot-87120-res-preserve-all-saved-data\error-context.md
+
+
+
+(node:24500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/4] e2e\syndicates.spec.ts:34:1 › Hex page reopens offline and saves standing, relationship and shared material
+  1 failed
+    e2e\syndicates.spec.ts:29:1 › Hex target quota, revision and update failures preserve all saved data 
+  3 passed (16.6s)

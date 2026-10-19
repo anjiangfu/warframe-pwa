@@ -1,0 +1,9 @@
+{
+  "queryNoWrites": true,
+  "factsShared": true,
+  "creditsSingleStock": true,
+  "explicitBalanceReview": true,
+  "allBusinessEqualAfterDownloadRestoreReload": true,
+  "old29Nodes87StepsAndOriginalsEqual": true,
+  "blankProfileIsolated": true
+}

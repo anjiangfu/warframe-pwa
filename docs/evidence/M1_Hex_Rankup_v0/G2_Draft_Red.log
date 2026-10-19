@@ -1,0 +1,25 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/syndicate-storage.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/app
+
+ ❯ src/test/syndicate-storage.test.ts (5 tests | 1 failed) 37ms
+   × historical progress draft cannot silently carry an old standing balance across a rank change 4ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/syndicate-storage.test.ts > historical progress draft cannot silently carry an old standing balance across a rank change
+AssertionError: expected undefined to be defined
+ ❯ src/test/syndicate-storage.test.ts:12:280
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 4 passed (5)
+   Start at  09:47:14
+   Duration  340ms (import 48%, transform 29%, tests 20%, worker 3%)
+

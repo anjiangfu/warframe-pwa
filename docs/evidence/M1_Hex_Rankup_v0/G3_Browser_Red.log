@@ -1,0 +1,47 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test syndicates.spec.ts --grep closed loop --reporter=line
+
+
+[WebServer] (node:24192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+
+(node:28472) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\syndicates.spec.ts:12:1 › Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data
+  1) e2e\syndicates.spec.ts:12:1 › Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: '集团晋升', exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: '集团晋升', exact: true }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: '集团晋升', exact: true })
+
+
+      11 |
+      12 | test('Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data',async({page})=>{
+    > 13 |  await page.goto('/#syndicates');await expect(page.getByRole('heading',{name:'集团晋升',exact:true})).toBeVisible();const empty=await records(page);await page.getByLabel('目标集团等级',{exact:true}).selectOption('5');await expect(page.getByTestId('rankup-action')).toContainText('核对');expect(await records(page)).toEqual(empty);
+         |                                                                                                   ^
+      14 |  const tree=JSON.parse(await readFile('src/catalog/tech-tree.v1.json','utf8')),legacy={version:1,rank:12,statuses:Object.fromEntries(tree.nodes.map((n:{id:string})=>[n.id,'todo'])),steps:Object.fromEntries(tree.nodes.map((n:{id:string;steps:unknown[]})=>[n.id,n.steps.map((_,i)=>i%2===0)])),notes:Object.fromEntries(tree.nodes.map((n:{id:string})=>[n.id,'中文<script>普通文本</script>'])),stock:{credits:100000,endo:18,forma:9,platinum:0},budget:{origin:{credits:0,forma:1}},events:[{time:'原时间1',text:'第一条'},{time:'原时间2',text:'第二条'}],extra:{unknown:['保留',0]}};
+      15 |  await page.getByRole('button',{name:'备份与恢复',exact:true}).click();await page.getByLabel('选择存档文件').setInputFiles({name:'原始个人档.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(legacy))});await page.getByLabel('我已核对目标，确认新建').check();await page.getByRole('button',{name:'确认导入',exact:true}).click();await expect(page.getByRole('status')).toContainText('导入完成');
+      16 |  await page.getByRole('button',{name:'养成助手',exact:true}).click();await page.getByRole('button',{name:'预览本次进度草案'}).click();await page.getByRole('button',{name:'生成差异预览'}).click();await page.getByLabel('确认草案档案与所选差异').check();await page.getByRole('button',{name:'确认应用所选草案'}).click();await expect(page.getByRole('status')).toContainText('草案已应用');await page.getByRole('button',{name:'集团晋升',exact:true}).click();await expect(page.getByLabel('集团当前等级',{exact:true})).toHaveValue('3');await facts(page,'3','65000');const before=await records(page);await page.getByLabel('目标集团等级',{exact:true}).selectOption('5');expect(await records(page)).toEqual(before);await page.getByRole('button',{name:'设置晋升目标'}).click();await expect(page.getByTestId('rankup-step')).toHaveText('3 → 4');await expect(page.getByTestId('rankup-standing-gap')).toHaveText('5000');await expect(page.getByRole('region',{name:'当前晋升祭品'})).not.toContainText('科腐者主板');
+        at D:\wf\Warframe_PWA_Handoff_20261016\app\e2e\syndicates.spec.ts:13:99
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\syndicates-Hex-closed-loop-ae194-es-full-legacy-and-new-data\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\syndicates-Hex-closed-loop-ae194-es-full-legacy-and-new-data\error-context.md
+
+
+  1 failed
+    e2e\syndicates.spec.ts:12:1 › Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data 
