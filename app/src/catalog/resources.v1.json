@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "2026.10.19.1",
+  "catalogVersion": "2026.10.21.1",
   "resources": [
     {
       "id": "credits",
@@ -111,7 +111,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:city"
+        "mg1:route:efervon"
       ],
       "sourceIds": [
         "hex:efervon"
@@ -124,7 +124,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:city"
+        "mg1:route:pitch"
       ],
       "sourceIds": [
         "hex:pitch"
@@ -137,7 +137,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:city"
+        "mg1:route:relay"
       ],
       "sourceIds": [
         "hex:relay"
@@ -150,7 +150,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:lab"
+        "mg1:route:obols"
       ],
       "sourceIds": [
         "hex:obols",
@@ -164,7 +164,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:city"
+        "mg1:route:chitin"
       ],
       "sourceIds": [
         "hex:zh-resources",
@@ -178,7 +178,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:lab"
+        "mg1:route:necracoil"
       ],
       "sourceIds": [
         "hex:zh-lab",
@@ -192,7 +192,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:city"
+        "mg1:route:motherboard"
       ],
       "sourceIds": [
         "hex:zh-resources",
@@ -206,7 +206,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:treasure"
+        "mg1:route:treasure"
       ],
       "sourceIds": [
         "hex:zh-treasures"
@@ -219,7 +219,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:treasure"
+        "mg1:route:treasure"
       ],
       "sourceIds": [
         "hex:zh-treasures"
@@ -232,7 +232,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:treasure"
+        "mg1:route:treasure"
       ],
       "sourceIds": [
         "hex:zh-treasures"
@@ -245,7 +245,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:treasure"
+        "mg1:route:treasure"
       ],
       "sourceIds": [
         "hex:zh-treasures"
@@ -258,7 +258,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:treasure"
+        "mg1:route:treasure"
       ],
       "sourceIds": [
         "hex:zh-treasures"
@@ -271,7 +271,7 @@
       "aliases": [],
       "kind": "material",
       "acquisitionIds": [
-        "hex:acquire:treasure"
+        "mg1:route:treasure"
       ],
       "sourceIds": [
         "hex:zh-treasures"
@@ -281,106 +281,134 @@
   "acquisitions": [
     {
       "id": "m1:farm:morphics",
-      "label": "非晶态合金区域试刷",
+      "label": "非晶态合金：Vor任务沿途收集",
       "place": "水星 · 中文节点名待核（Tolstoj）",
       "mode": "普通星图 · 刺杀",
-      "action": "完成Vor上尉任务，沿途检查资源容器并拾取；核对结算所得。",
+      "action": "在水星选择Tolstoj，完成Vor上尉刺杀。沿途打开战利品容器，留意可破坏的非晶态合金资源体（Morphics Stabilizer），拾取后正常撤离。适合已开放该节点时顺路收集。",
+      "restrictions": [
+        "先确认节点已开放；普通难度即可尝试，不要求钢铁之路。",
+        "节点原名用于星图定位，中文译名未核；这是区域资源与节点模式组合的探索建议，不保证数量或最快。",
+        "任务完成后正常撤离并核对结算，不将结算奖励表等同于沿途资源必掉。"
+      ],
       "sourceIds": [
-        "m1:resources-zh",
-        "m1:chart"
+        "mg1:tolstoj",
+        "mg1:deposits",
+        "mg1:regions"
       ],
       "kind": "suggestion",
-      "restrictions": [
-        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
-      ]
+      "verification": "verified",
+      "checkedAt": "2026-10-21"
     },
     {
       "id": "m1:farm:sensors",
-      "label": "神经传感器区域试刷",
+      "label": "神经传感器：Alad V任务沿途收集",
       "place": "木星 · 中文节点名待核（Themisto）",
       "mode": "普通星图 · 刺杀",
-      "action": "尝试Alad V任务并留意沿途容器；资源并非首领结算必发。",
+      "action": "在木星选择Themisto，完成Alad V刺杀。沿途检查容器与神经传感器资源体（Neural Array），拾取后撤离核对结算。完成刺杀不等于首领结算必发神经传感器。",
+      "restrictions": [
+        "先确认节点已开放；普通难度即可尝试，不要求钢铁之路。",
+        "节点原名用于星图定位，中文译名未核；这是区域资源与节点模式组合的探索建议，不保证数量或最快。",
+        "任务完成后正常撤离并核对结算，不将结算奖励表等同于沿途资源必掉。"
+      ],
       "sourceIds": [
-        "m1:resources-zh",
-        "m1:chart"
+        "mg1:themisto",
+        "mg1:deposits"
       ],
       "kind": "suggestion",
-      "restrictions": [
-        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
-      ]
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "m1:farm:neurodes",
-      "label": "神经元区域探索",
+      "label": "神经元：地球短程探索",
       "place": "地球 · 中文节点名待核（Mariana）",
       "mode": "普通星图 · 歼灭",
-      "action": "检查资源沉积物与容器，拾取神经元；任务可完成不代表资源必掉。",
+      "action": "在地球选择Mariana，沿任务路线检查支路与房间。发现神经元资源体（Neuroptic Mass）时打破并拾取，兼顾歼灭目标。完成目标后正常撤离，按结算结果决定是否再来。",
+      "restrictions": [
+        "先确认节点已开放；普通难度即可尝试，不要求钢铁之路。",
+        "节点原名用于星图定位，中文译名未核；这是区域资源与节点模式组合的探索建议，不保证数量或最快。",
+        "任务完成后正常撤离并核对结算，不将结算奖励表等同于沿途资源必掉。"
+      ],
       "sourceIds": [
-        "m1:neurodes"
+        "mg1:earth",
+        "mg1:deposits",
+        "mg1:regions"
       ],
       "kind": "suggestion",
-      "restrictions": [
-        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
-      ]
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "m1:farm:cell",
-      "label": "奥罗金电池区域探索",
+      "label": "奥罗金电池：土星沿途资源体",
       "place": "土星 · 中文节点名待核（Telesto）",
       "mode": "普通星图 · 歼灭",
-      "action": "沿途查看电池阵列与容器，获得后再记录库存；没有固定每局数量承诺。",
+      "action": "在土星选择Telesto，推进歼灭时检查沿途房间。发现电池资源体（Cell Array）时打破拾取，再完成任务并撤离。选择非无尽任务是为了完成目标后仍可检查支路，不是效率排名。",
+      "restrictions": [
+        "先确认节点已开放；普通难度即可尝试，不要求钢铁之路。",
+        "节点原名用于星图定位，中文译名未核；这是区域资源与节点模式组合的探索建议，不保证数量或最快。",
+        "任务完成后正常撤离并核对结算，不将结算奖励表等同于沿途资源必掉。"
+      ],
       "sourceIds": [
-        "m1:cell",
-        "m1:telesto"
+        "mg1:telesto",
+        "mg1:deposits"
       ],
       "kind": "suggestion",
-      "restrictions": [
-        "先确认已开放该节点与模式；建议并非唯一地点，不保证必掉或最快。"
-      ]
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "m1:earn:credits",
-      "label": "星币一般来源",
-      "place": "已开放的普通星图任务",
-      "mode": "任务结算 / 拾取",
-      "action": "完成已开放任务并检查结算及拾取星币；这里不提供未经验证的收益率。",
-      "sourceIds": [
-        "m1:chart"
-      ],
-      "kind": "acquisition",
+      "label": "星币：指数之场得分结算",
+      "place": "海王星 · 指数之场（The Index）",
+      "mode": "星图特殊竞技场 · 投入星币参赛",
+      "action": "从海王星选择指数之场，先在游戏核对可选投入档和入场资格。击败对手拾取分数并交到得分点，达到本轮目标后选择结算。回到飞船核对实际余额，再手工更新记录。",
       "restrictions": [
-        "实际任务开放未知；不同模式收益不同，来源不等于最优地点。"
-      ]
+        "先确认海王星入口已开放；本轮不把历史任务解锁描述当作当前账号资格。",
+        "入场需要星币投入，失败可能失去投入；余额不足或不熟悉规则时先不要参赛。",
+        "不估算每分钟利润；霍币仍是同一星币余额，不建第二钱包。"
+      ],
+      "sourceIds": [
+        "mg1:index"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-21"
     },
     {
       "id": "m1:earn:blueprint",
-      "label": "福马蓝图来源（不是成品）",
-      "place": "导航 · 当前可参加的虚空裂缝",
-      "mode": "虚空裂缝 · 按所选任务模式",
-      "action": "先看自己遗物的奖励预览是否含福马蓝图，再按任务要求开遗物并核对可选奖励；本目录不列当前轮换或概率。",
+      "label": "福马蓝图：裂缝奖励选择",
+      "place": "导航 · 虚空裂缝列表 → 对应纪元遗物",
+      "mode": "裂缝任务 · 开启遗物（非固定星图节点）",
+      "action": "在遗物奖励预览中找包含普通福马蓝图的遗物，再从裂缝列表选择匹配纪元的已开放任务。任务中收集10个反应物，完成目标后在实际出现的奖励中选择福马蓝图。小队其他人的奖励也只能从本次实际选项中选择。",
+      "restrictions": [
+        "本应用不提供当前裂缝或遗物轮换；任务类型与地图以游戏列表为准。",
+        "蓝图不是成品；不保证每次抽中，也不要求用白金加速或购买。"
+      ],
       "sourceIds": [
-        "m1:prime-official"
+        "mg1:prime",
+        "mg1:forma"
       ],
       "kind": "acquisition",
-      "restrictions": [
-        "需已解锁裂缝且持有适合任务的遗物；账号前提未知。",
-        "不是任意遗物/任意一局都能获得蓝图；奖励张数不等于每批成品数。"
-      ]
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "m1:craft:forma",
-      "label": "普通福马蓝图制作",
-      "place": "轨道飞行器 · 铸造厂",
-      "mode": "普通蓝图制作",
-      "action": "核对蓝图和投入，在游戏制作并领取后再手工记录；应用不计时、不自动扣料或增加成品。",
+      "label": "成品福马：铸造厂制作与领取",
+      "place": "飞船 · 铸造厂 → 普通福马蓝图",
+      "mode": "铸造厂交互 · 蓝图消耗制作",
+      "action": "先取得普通福马蓝图，在飞船铸造厂搜索福马。核对游戏显示的材料和星币后开始制作，完成后领取成品。只有实际领取后再更新本应用库存；记录本身不自动扣料或增加成品。",
+      "restrictions": [
+        "普通福马与特殊福马不是同一配方；本轮只完善现有普通福马资料。",
+        "配方用量和获取路线分别核验；此处不改变制作目标数量或安排。"
+      ],
       "sourceIds": [
-        "m1:forma-en",
-        "m1:forma-zh"
+        "mg1:forma"
       ],
       "kind": "acquisition",
-      "restrictions": [
-        "单批资料为1福马；本轮不做其他福马变体或活动推荐。"
-      ]
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "hex:acquire:city",
@@ -430,6 +458,173 @@
         "hex:zh-lab"
       ],
       "kind": "acquisition"
+    },
+    {
+      "id": "mg1:route:efervon",
+      "label": "艾弗旺样本：城市歼灭探索",
+      "place": "霍瓦尼亚 · Mausoleum East",
+      "mode": "普通难度 · 歼灭（清剿者）",
+      "action": "在飞船或中央商场车库的POM-2打开NavNow，选择Mausoleum East普通歼灭。推进清剿者任务时检查沿途支路，留意敌人、容器与艾弗旺样本堆（Efervon Sample Stockpile）并拾取艾弗旺样本。完成目标后检查结算，再按实际收获记录库存。",
+      "restrictions": [
+        "先核对六人组任务、POM-2与该节点已开放；NavNow选择普通难度即可，不强制钢铁。",
+        "节点中文译名未核，按原名定位；这里的阵营/地图是探索入口，不表示资源只由该阵营掉落。",
+        "正常完成并撤离；资源、支路及容器随机，不保证每局数量，不是最快路线。",
+        "艾弗旺腐蚀液罐会伤及玩家，不要把危险液体罐当作样本必掉箱。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "mg1:city-nodes",
+        "mg1:efervon",
+        "mg1:deposits"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:pitch",
+      "label": "霍瓦尼亚沥青布碎片：城市歼灭探索",
+      "place": "霍瓦尼亚 · Mausoleum East",
+      "mode": "普通难度 · 歼灭（清剿者）",
+      "action": "在飞船或中央商场车库的POM-2打开NavNow，选择Mausoleum East普通歼灭。推进清剿者任务时检查沿途支路，留意敌人和战利品容器并拾取霍瓦尼亚沥青布碎片。完成目标后检查结算，再按实际收获记录库存。",
+      "restrictions": [
+        "先核对六人组任务、POM-2与该节点已开放；NavNow选择普通难度即可，不强制钢铁。",
+        "节点中文译名未核，按原名定位；这里的阵营/地图是探索入口，不表示资源只由该阵营掉落。",
+        "正常完成并撤离；资源、支路及容器随机，不保证每局数量，不是最快路线。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "mg1:city-nodes",
+        "mg1:pitch",
+        "mg1:deposits"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:relay",
+      "label": "实验性电弧继电器：城市歼灭探索",
+      "place": "霍瓦尼亚 · Mausoleum East",
+      "mode": "普通难度 · 歼灭（清剿者）",
+      "action": "在飞船或中央商场车库的POM-2打开NavNow，选择Mausoleum East普通歼灭。推进清剿者任务时检查沿途支路，留意敌人和战利品容器并拾取实验性电弧继电器。完成目标后检查结算，再按实际收获记录库存。",
+      "restrictions": [
+        "先核对六人组任务、POM-2与该节点已开放；NavNow选择普通难度即可，不强制钢铁。",
+        "节点中文译名未核，按原名定位；这里的阵营/地图是探索入口，不表示资源只由该阵营掉落。",
+        "正常完成并撤离；资源、支路及容器随机，不保证每局数量，不是最快路线。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "mg1:city-nodes",
+        "mg1:relay",
+        "mg1:deposits"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:chitin",
+      "label": "科腐者几丁质：城市歼灭探索",
+      "place": "霍瓦尼亚 · Rhu Manor",
+      "mode": "普通难度 · 歼灭（科腐者）",
+      "action": "在飞船或中央商场车库的POM-2打开NavNow，选择Rhu Manor普通歼灭。推进科腐者任务时检查沿途支路，留意敌人、战利品容器和感染资源体并拾取科腐者几丁质。完成目标后检查结算，再按实际收获记录库存。",
+      "restrictions": [
+        "先核对六人组任务、POM-2与该节点已开放；NavNow选择普通难度即可，不强制钢铁。",
+        "节点中文译名未核，按原名定位；这里的阵营/地图是探索入口，不表示资源只由该阵营掉落。",
+        "正常完成并撤离；资源、支路及容器随机，不保证每局数量，不是最快路线。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "mg1:rhu",
+        "mg1:chitin",
+        "mg1:deposits"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:motherboard",
+      "label": "科腐者主板：城市歼灭探索",
+      "place": "霍瓦尼亚 · Rhu Manor",
+      "mode": "普通难度 · 歼灭（科腐者）",
+      "action": "在飞船或中央商场车库的POM-2打开NavNow，选择Rhu Manor普通歼灭。推进科腐者任务时检查沿途支路，留意敌人、容器与主板簇（Techrot Motherboard Cluster）并拾取科腐者主板。完成目标后检查结算，再按实际收获记录库存。",
+      "restrictions": [
+        "先核对六人组任务、POM-2与该节点已开放；NavNow选择普通难度即可，不强制钢铁。",
+        "节点中文译名未核，按原名定位；这里的阵营/地图是探索入口，不表示资源只由该阵营掉落。",
+        "正常完成并撤离；资源、支路及容器随机，不保证每局数量，不是最快路线。",
+        "主板较稀有，地下支路只作为搜索方向，不是固定生成点。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "mg1:rhu",
+        "mg1:motherboard",
+        "mg1:deposits"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:obols",
+      "label": "英择谛银币：实验室沿路收集",
+      "place": "火卫二 · 解剖圣所 → 阿尔布雷希特实验室 · Nex",
+      "mode": "普通星图 · 歼灭（实验室）",
+      "action": "从火卫二星图或解剖圣所实验室导航选择Nex。推进歼灭时打破沿途容器、拾取敌人掉落并留意英择谛银币。完成目标后正常撤离，核对本次拾取和结算所得。",
+      "restrictions": [
+        "先核对墙中密语、解剖圣所与实验室节点已开放；不是霍瓦尼亚的城市任务。",
+        "Nex沿用节点原名，中文译名待核；普通难度可尝试，钢铁为已开放者的可选更难版本。",
+        "沿途资源与任务奖励不等于每次必发，不给掉率或每分钟数量。"
+      ],
+      "sourceIds": [
+        "mg1:u35",
+        "mg1:nex",
+        "mg1:obols"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:necracoil",
+      "label": "殁世线圈：实验室沿路收集",
+      "place": "火卫二 · 解剖圣所 → 阿尔布雷希特实验室 · Nex",
+      "mode": "普通星图 · 歼灭（实验室）",
+      "action": "从火卫二星图或解剖圣所实验室导航选择Nex。推进歼灭时打破沿途容器、拾取敌人掉落并留意殁世线圈。完成目标后正常撤离，核对本次拾取和结算所得。",
+      "restrictions": [
+        "先核对墙中密语、解剖圣所与实验室节点已开放；不是霍瓦尼亚的城市任务。",
+        "Nex沿用节点原名，中文译名待核；普通难度可尝试，钢铁为已开放者的可选更难版本。",
+        "沿途资源与任务奖励不等于每次必发，不给掉率或每分钟数量。"
+      ],
+      "sourceIds": [
+        "mg1:u35",
+        "mg1:nex",
+        "mg1:necracoil"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "mg1:route:treasure",
+      "label": "珍品：非无尽城市探索",
+      "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+      "mode": "普通难度 · 歼灭后探索（互动拾取）",
+      "action": "从POM-2的NavNow进入Mausoleum East，先完成歼灭目标。沿支路寻找发出绿色光泽的珍品，靠近读取名称并互动拾取；若已有战利品探测，可用作搜索辅助。正常撤离后分别核对本次拿到的珍品名称。",
+      "restrictions": [
+        "先确认城市节点开放；非无尽任务便于完成目标后检查支路，不是最快承诺。",
+        "珍品种类和位置随机，不保证每图有某一种或固定生成点；六种名称与库存各自独立。",
+        "本页只收集资料，不自动兑换声望；晋升祭品与可兑换珍品不能提前重复花费。"
+      ],
+      "sourceIds": [
+        "hex:u38",
+        "mg1:city-nodes",
+        "mg1:treasures"
+      ],
+      "kind": "suggestion",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     }
   ],
   "sources": [
@@ -666,6 +861,195 @@
       "access": "search-cache",
       "checkedAt": "2026-10-19",
       "note": "人工对照少量事实；历史/社区资料不代表当前游戏亲测，来源作用范围见核验表。"
+    },
+    {
+      "id": "mg1:deposits",
+      "title": "资源体与区域资源",
+      "url": "https://warframe.fandom.com/wiki/Resources",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:regions",
+      "title": "星球资源类别",
+      "url": "https://warframe.fandom.com/wiki/Region_Resource",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:tolstoj",
+      "title": "Tolstoj节点",
+      "url": "https://warframe.fandom.com/wiki/Tolstoj",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-21",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:themisto",
+      "title": "Themisto节点",
+      "url": "https://warframe.fandom.com/wiki/Themisto",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:earth",
+      "title": "地球节点",
+      "url": "https://warframe.fandom.com/wiki/Earth",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:telesto",
+      "title": "Telesto节点",
+      "url": "https://warframe.fandom.com/wiki/Telesto",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:efervon",
+      "title": "样本获取类别",
+      "url": "https://warframe.fandom.com/wiki/Efervon_Sample",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:pitch",
+      "title": "沥青布获取类别",
+      "url": "https://warframe.fandom.com/wiki/H%C3%B6llvanian_Pitchweave_Fragment",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:relay",
+      "title": "继电器获取类别",
+      "url": "https://warframe.fandom.com/wiki/Experimental_Arc-Relay",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:chitin",
+      "title": "几丁质获取类别",
+      "url": "https://warframe.fandom.com/wiki/Techrot_Chitin",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:motherboard",
+      "title": "主板获取类别",
+      "url": "https://warframe.fandom.com/wiki/Techrot_Motherboard",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:city-nodes",
+      "title": "城市非无尽节点",
+      "url": "https://warframe.fandom.com/wiki/Mausoleum_East",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:rhu",
+      "title": "科腐者歼灭节点",
+      "url": "https://warframe.fandom.com/wiki/Rhu_Manor",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:obols",
+      "title": "银币获取类别",
+      "url": "https://warframe.fandom.com/wiki/Entrati_Obols",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:necracoil",
+      "title": "线圈获取类别",
+      "url": "https://warframe.fandom.com/wiki/Necracoil",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:nex",
+      "title": "实验室歼灭节点",
+      "url": "https://warframe.fandom.com/wiki/Nex",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:treasures",
+      "title": "六种珍品共同探索类别",
+      "url": "https://warframe.fandom.com/wiki/On-lyne_CD",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:index",
+      "title": "指数之场规则",
+      "url": "https://warframe.fandom.com/wiki/The_Index",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-21",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:forma",
+      "title": "普通福马蓝图与制作",
+      "url": "https://warframe.fandom.com/wiki/Forma",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "社区检索缓存约3—4个月前；只对照地点、模式或获取类别，非游戏亲测，不保证当前刷新/效率。"
+    },
+    {
+      "id": "mg1:prime",
+      "title": "官方裂缝奖励步骤",
+      "url": "https://www.warframe.com/en/prime-access",
+      "kind": "official",
+      "access": "page",
+      "checkedAt": "2026-10-20",
+      "note": "本轮只采用10反应物及奖励选择步骤；不是当前遗物轮换/每次必出证明。"
+    },
+    {
+      "id": "mg1:u35",
+      "title": "DE Update35实验室入口与资源",
+      "url": "https://www.warframe.com/en/patch-notes/pc/35-0-0",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-20",
+      "note": "历史正文核对Nex歼灭、实验室两资源类别及入口；未游戏亲测，不为掉落效率背书。"
     }
   ]
 }

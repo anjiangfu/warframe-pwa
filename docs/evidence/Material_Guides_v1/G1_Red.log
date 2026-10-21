@@ -1,0 +1,72 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/material-guides.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/mg/app
+
+ ❯ src/test/material-guides.test.ts (7 tests | 4 failed) 18ms
+   × each active material route has explicit independent verification, date, executable action and resolving evidence 4ms
+   × locates ordinary, city and laboratory routes separately with documented modes and original node names 3ms
+   × plant routes stay unverified with a useful alternative and shared treasure instructions keep six distinct resources 1ms
+   × rejects invalid route metadata and unsupported proof but accepts legacy records without inferring verification 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/material-guides.test.ts > each active material route has explicit independent verification, date, executable action and resolving evidence
+AssertionError: expected [ 'verified', 'unverified', …(1) ] to include undefined
+ ❯ src/test/material-guides.test.ts:18:51
+     16| it('each active material route has explicit independent verification, …
+     17|  for(const resource of catalog.resources){expect(resource.acquisitionI…
+     18|   expect(['verified','unverified','conflicting']).toContain(Reflect.ge…
+       |                                                   ^
+     19|   expect(Reflect.get(route,'checkedAt')).toMatch(/^2026-10-2[01]$/);
+     20|   expect(route.place.length).toBeGreaterThan(8);expect(route.mode.leng…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/test/material-guides.test.ts > locates ordinary, city and laboratory routes separately with documented modes and original node names
+AssertionError: expected '霍瓦尼亚中央商场（Höllvania Central Mall）→城市任务…' to contain 'Mausoleum East'
+
+Expected: "Mausoleum East"
+Received: "霍瓦尼亚中央商场（Höllvania Central Mall）→城市任务区域"
+
+ ❯ src/test/material-guides.test.ts:28:31
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/test/material-guides.test.ts > plant routes stay unverified with a useful alternative and shared treasure instructions keep six distinct resources
+AssertionError: expected undefined to be 'unverified' // Object.is equality
+
+- Expected:
+"unverified"
+
++ Received:
+undefined
+
+ ❯ src/test/material-guides.test.ts:33:124
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/test/material-guides.test.ts > rejects invalid route metadata and unsupported proof but accepts legacy records without inferring verification
+AssertionError: expected [Function] to throw an error
+
+- Expected:
+null
+
++ Received:
+undefined
+
+ ❯ src/test/material-guides.test.ts:45:122
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 3 passed (7)
+   Start at  10:32:47
+   Duration  688ms (transform 45%, import 42%, worker 7%, tests 6%)
+

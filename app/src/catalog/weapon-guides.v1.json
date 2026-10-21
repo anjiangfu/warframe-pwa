@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "2026.10.19.1",
+  "catalogVersion": "2026.10.21.1",
   "sources": [
     {
       "id": "official-33",
@@ -162,6 +162,42 @@
       "access": "search-cache",
       "checkedAt": "2026-10-18",
       "note": "独立摘要，未游戏内实测；社区检索缓存可能与当前游戏有差异。"
+    },
+    {
+      "id": "mg1:w:u33",
+      "title": "DE Update33螺旋与保存点",
+      "url": "https://www.warframe.com/en/patch-notes/pc/33-0-0",
+      "kind": "official-history",
+      "access": "page",
+      "checkedAt": "2026-10-20",
+      "note": "历史正文：螺旋、龙后开箱、最后新令保存点；2023新玩家入口条件不作为当前资格。"
+    },
+    {
+      "id": "mg1:w:yao",
+      "title": "瑶丛区域线索",
+      "url": "https://warframe.fandom.com/wiki/Yao_Shrub",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "页面有待更新提示；Soprano Springs雪地仅为待核区域线索，未确认当前植株分布或中文译名。"
+    },
+    {
+      "id": "mg1:w:eevani",
+      "title": "延凡草岛屿线索",
+      "url": "https://warframe.fandom.com/wiki/Eevani",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "页面有待更新提示；Archarbor/Amphitheater与情绪是缓存线索，当前刷新未亲测。"
+    },
+    {
+      "id": "mg1:w:eevani-cross",
+      "title": "延凡草区域交叉核对",
+      "url": "https://www.shacknews.com/article/144072/eevani-location-warframe",
+      "kind": "community",
+      "access": "search-cache",
+      "checkedAt": "2026-10-20",
+      "note": "2025文章检索缓存交叉核对岛屿及采集动作；不采纳旧入口条件作当前资格。"
     }
   ],
   "materials": [
@@ -201,7 +237,8 @@
       "english": "Eevani",
       "aliases": [],
       "acquisitionIds": [
-        "farm:eevani"
+        "farm:eevani",
+        "mg1:route:eevani-alt"
       ],
       "sourceIds": [
         "eevani-zh",
@@ -259,50 +296,61 @@
     },
     {
       "id": "farm:clamp",
-      "label": "苦栓获取",
-      "mode": "双衍王境 · 螺旋主线（The Lone Story / The Duviri Experience）",
-      "place": "螺旋主线终战 · 奥金魇龙",
-      "action": "推进该次螺旋主线，击败奥金魇龙并领取结算奖励。",
+      "label": "苦栓：螺旋终战后开箱",
+      "place": "双衍王境 → The Lone Story → 奥金魇龙终战",
+      "mode": "普通难度 · 螺旋主线（非无尽回廊）",
+      "action": "从双衍区域选择The Lone Story，按主线阶段推进到奥金魇龙终战。完成战斗后打开出现的奖励宝箱，再通过正常出口离开并核对苦栓。若还想同时自由探索，可改选The Duviri Experience完成同一终战。",
       "restrictions": [
-        "先确认双衍王境开放。",
-        "这是完成奖励，不是星图普通敌人的固定掉落；不估计每小时收益。"
+        "先确认双衍悖论与相应模式已开放；不用历史新手条件推断账号资格。",
+        "钢铁之路为已开放者的更难版本，本轮不对比收益，也不自动按难度修改库存。",
+        "不要把中途离开或无尽回廊完成当作已领取终战苦栓。"
       ],
       "sourceIds": [
-        "clamp-zh"
+        "mg1:w:u33"
       ],
-      "kind": "acquisition"
+      "kind": "acquisition",
+      "verification": "verified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "farm:yao",
-      "label": "瑶丛采集",
-      "mode": "双衍王境 · 自由探索（The Duviri Experience）",
-      "place": "地图南部大岛 · 中部雪山等寒冷区域",
-      "action": "在寒冷地形寻找发光的瑶丛，攻击植物后拾取资源。",
+      "label": "瑶丛：雪地区域采集线索",
+      "place": "双衍王境 · Soprano Springs 附近雪地（区域中文名待核）",
+      "mode": "The Duviri Experience · 开放区域探索",
+      "action": "进入双衍的The Duviri Experience后，在地图寻找Soprano Springs附近雪地。沿地表检查发光瑶丛，攻击植物并拾取；未找到时不要假定固定刷新。采集后获取一次新令再核对离开提示。",
       "restrictions": [
-        "这是开放区域采集，不是固定星图任务节点。",
-        "植株分布和刷新以本次地图为准，先确认模式开放。"
+        "社区植物页面有待更新提示；当前植株分布及中文地图译名尚待核验，路线保持待核。",
+        "采集后再完成一次主线或支线以获取新令，核对退出提示后离开；也可完成螺旋正常撤离，不强退游戏。",
+        "先核对双衍模式与当前地图开放；不采用2023新玩家立即开放的历史条件推断当前资格。"
       ],
       "sourceIds": [
-        "yao-zh"
+        "mg1:w:yao",
+        "mg1:w:u33"
       ],
-      "kind": "acquisition"
+      "kind": "acquisition",
+      "verification": "unverified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "farm:eevani",
-      "label": "延凡草采集",
-      "mode": "双衍王境 · 自由探索（The Duviri Experience）",
-      "place": "言录书院（Archarbor）；备选圆形剧场（Amphitheater）",
-      "action": "在岛上寻找延凡草植株，攻击后拾取；地点不出现时先查看本次情绪与地图。",
+      "label": "延凡草：言录书院采集线索",
+      "place": "双衍王境 · 言录书院（Archarbor）",
+      "mode": "The Duviri Experience · 开放区域探索",
+      "action": "进入The Duviri Experience，先看当前地图是否出现言录书院。按缓存线索在岛上寻找延凡草植株，攻击后拾取，不以抵达岛屿代替采集。地图没有此岛时可查看下方圆形剧场备选，不预测本次刷新。",
       "restrictions": [
-        "言录书院在喜悦、嫉妒、哀伤螺旋出现（社区资料）。",
-        "不同情绪的岛屿可用性不同，不保证固定数量/当前刷新；不是固定星图掉落节点。"
+        "社区植物页面有待更新提示；当前植株分布及中文地图译名尚待核验，路线保持待核。",
+        "采集后再完成一次主线或支线以获取新令，核对退出提示后离开；也可完成螺旋正常撤离，不强退游戏。",
+        "先核对双衍模式与当前地图开放；不采用2023新玩家立即开放的历史条件推断当前资格。",
+        "缓存交叉指出言录书院出现在喜悦、嫉妒、哀伤螺旋；仍以当前地图为准。"
       ],
       "sourceIds": [
-        "eevani-zh",
-        "eevani-en",
-        "archarbor"
+        "mg1:w:eevani",
+        "mg1:w:eevani-cross",
+        "mg1:w:u33"
       ],
-      "kind": "acquisition"
+      "kind": "acquisition",
+      "verification": "unverified",
+      "checkedAt": "2026-10-20"
     },
     {
       "id": "mission:earth",
@@ -349,6 +397,27 @@
         "finisher-community"
       ],
       "kind": "suggestion"
+    },
+    {
+      "id": "mg1:route:eevani-alt",
+      "label": "延凡草：圆形剧场备选",
+      "place": "双衍王境 · 圆形剧场（Amphitheater）",
+      "mode": "The Duviri Experience · 开放区域探索",
+      "action": "言录书院不在本次地图时，再查看是否有圆形剧场。若该岛出现，检查岛上延凡草并攻击拾取。采后获取新令再核对离开提示，不为找不到的岛屿反复盲飞。",
+      "restrictions": [
+        "社区植物页面有待更新提示；当前植株分布及中文地图译名尚待核验，路线保持待核。",
+        "采集后再完成一次主线或支线以获取新令，核对退出提示后离开；也可完成螺旋正常撤离，不强退游戏。",
+        "先核对双衍模式与当前地图开放；不采用2023新玩家立即开放的历史条件推断当前资格。",
+        "备选理由是主要岛屿可能不出现；本轮未核齐此备选岛的全部情绪周期，不填固定日程。"
+      ],
+      "sourceIds": [
+        "mg1:w:eevani",
+        "mg1:w:eevani-cross",
+        "mg1:w:u33"
+      ],
+      "kind": "acquisition",
+      "verification": "unverified",
+      "checkedAt": "2026-10-20"
     }
   ],
   "weapons": [

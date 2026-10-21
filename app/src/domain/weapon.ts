@@ -1,6 +1,11 @@
 import type {ProfileDocument,Status} from './model';
 export interface GuideSource {id:string;title:string;url:string;kind:'official'|'official-history'|'community';access:'page'|'search-cache';checkedAt:string;note:string}
-export interface Acquisition {id:string;label:string;mode:string;place:string;action:string;restrictions:string[];sourceIds:string[];kind:'acquisition'|'suggestion'}
+export interface Acquisition {id:string;label:string;mode:string;place:string;action:string;restrictions:string[];sourceIds:string[];kind:'acquisition'|'suggestion';verification?:'verified'|'unverified'|'conflicting';checkedAt?:string}
+export function validateAcquisition(a:Acquisition){
+ if(a.verification!==undefined&&!['verified','unverified','conflicting'].includes(a.verification))throw Error('获取路线核验状态无效');
+ if(a.checkedAt!==undefined&&(!/^\d{4}-\d{2}-\d{2}$/.test(a.checkedAt)||!Number.isFinite(Date.parse(a.checkedAt))||new Date(a.checkedAt).toISOString().slice(0,10)!==a.checkedAt))throw Error('获取路线核验日期无效');
+ if(a.verification==='verified'&&(!a.checkedAt||!a.sourceIds.length))throw Error('获取路线核验缺少日期或来源');
+}
 export interface GuideMaterial {id:string;name:string;english:string;aliases:string[];acquisitionIds:string[];sourceIds:string[]}
 export interface WeaponStage {id:string;label:string;challenge:{kind:string;target:number|null;description:string;resets?:string[]};checks:string[];tips:string[];troubleshooting:string[];locationIds:string[];sourceIds:string[]}
 export interface WeaponGuide {id:string;name:string;english:string;summary:string;requirements:string[];acquisitionIds:string[];installCost:{materialId:string;quantity:number;sourceIds:string[]}[];stages:WeaponStage[];sourceIds:string[]}

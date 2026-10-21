@@ -1,0 +1,32 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/mg/app
+
+ ❯ src/test/material-guides.test.ts (7 tests | 1 failed) 26ms
+   × rejects invalid route metadata and unsupported proof but accepts legacy records without inferring verification 9ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/material-guides.test.ts > rejects invalid route metadata and unsupported proof but accepts legacy records without inferring verification
+AssertionError: expected [Function] to throw an error
+
+- Expected:
+null
+
++ Received:
+undefined
+
+ ❯ src/test/material-guides.test.ts:45:122
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 9 passed (10)
+      Tests  1 failed | 79 passed (80)
+   Start at  10:35:29
+   Duration  3.59s (tests 44%, import 39%, transform 15%, worker 1%)
+
