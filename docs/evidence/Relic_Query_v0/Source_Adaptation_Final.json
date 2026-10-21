@@ -1,0 +1,46 @@
+{
+  "upstreamCommit": "3263b2dff8bc1b434a191f0364395b156bd26561",
+  "inputs": [
+    {
+      "path": "data/relics.json",
+      "expected": "b77c93d465d205c4b9eead29390c4cf8f9f7b5e58309fa0c92565b7726e5c3cb",
+      "actual": "b77c93d465d205c4b9eead29390c4cf8f9f7b5e58309fa0c92565b7726e5c3cb"
+    },
+    {
+      "path": "data/missionRewards.json",
+      "expected": "992c80479af48ef4fcd922c2f81125f9232abed6083418b290dc7b706f5133f8",
+      "actual": "992c80479af48ef4fcd922c2f81125f9232abed6083418b290dc7b706f5133f8"
+    },
+    {
+      "path": "data/info.json",
+      "expected": "f23416884a22b30ce0fa32f850c3bc902ea35987d22aa6477c1b6e9fee491b59",
+      "actual": "f23416884a22b30ce0fa32f850c3bc902ea35987d22aa6477c1b6e9fee491b59"
+    },
+    {
+      "path": "README.md",
+      "expected": "d55aeddee37bfa8f51ca200116ac1dd45cc5309a651a7eb86965e01914fc2106",
+      "actual": "d55aeddee37bfa8f51ca200116ac1dd45cc5309a651a7eb86965e01914fc2106"
+    },
+    {
+      "path": "package.json",
+      "expected": "b9ba6c9a516b036c64e2bf0944dc8bf03abd47584fc543b98bf3f51b404265f6",
+      "actual": "b9ba6c9a516b036c64e2bf0944dc8bf03abd47584fc543b98bf3f51b404265f6"
+    },
+    {
+      "path": "data-index.json",
+      "expected": "644e8987761335679a9bc1712a99df1cae99965e049318910fa15877e9bb68fd",
+      "actual": "644e8987761335679a9bc1712a99df1cae99965e049318910fa15877e9bb68fd"
+    }
+  ],
+  "licenseSha256": "b57bb7363d9858a2b549e17bb5804c3a18761659f47a8a092e729757d58c3cba",
+  "licenseCompleteInBothDistributions": true,
+  "catalogSha256": "a386054471f90d9674a58c9fe63595c8acf51443834dd4cdf68f59a33fee5b79",
+  "catalogBytes": 61546,
+  "relics": 12,
+  "distinctRewards": 57,
+  "rewardRelations": 72,
+  "excerptedRoutes": 24,
+  "officialMd5MatchesPinnedBuild": true,
+  "allAvailabilityUnknown": true,
+  "allSourceScopesPartial": true
+}

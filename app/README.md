@@ -243,3 +243,17 @@ node scripts/run-quality.mjs
 本轮测试仅在 `.v/ac/app` 隔离副本执行，端口4186和短Chrome测试目录与真实档案分开。原app/dist在临时v1/v2测试全过程保持原hash，全部验证后才正常生产构建。独立复跑先从项目根执行 `docs/evidence/Action_List_v0/prepare-isolated.py`（Python3），缺少隔离node_modules时仅联接现有app/node_modules；再于隔离app设APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR及M0_EVIDENCE_DIR指向新的绝对证据目录，M0_EVIDENCE_PREFIX使用新前缀，执行 `node scripts/run-quality.mjs`。不要在正在提供4194的原app直接运行临时SW升级测试。
 
 本地启动沿用 `npm.cmd run build` 和 `npm.cmd run preview -- --host 127.0.0.1 --port 4194 --strictPort`；已有4194服务时不重复启动。不同端口/浏览器档案隔离，带入旧档先在原地址导出，再在新地址预览并明确新建恢复。结果与未验项见 `../docs/Action_List_v0_Acceptance.md`；本轮不增加资料、联网或依赖，交付后停工待独立复核。
+
+## 虚空遗物查询 v0（2026-10-21）
+
+打开“虚空遗物”或 `http://127.0.0.1:4194/#relics`，无需创建个人档案。按遗物名称/编号及纪元筛选，点开看6项完整基础奖励；切换“按奖励查遗物”，输入“福马蓝图”或物品原名，即可反查本目录内遗物。详情中的“反查此奖励”和“返回查询结果”只改变当前页面，不记录库存、目标或查询历史；切换个人档案不影响公共查询。
+
+本轮仅12个真实样本：Lith C7/G14/S19，Meso A12/V13/V17，Neo C10/C7/K10，Axi A21/P10/S8；均以既有福马蓝图需求为选样线索，非全遗物库。每个基础表6奖励、每个来源只摘录2条。反查始终“仅本目录范围”，无结果是本目录未收录/未找到，不能当作全游戏不存在或全部来源。福马蓝图沿用blueprint:forma；其他蓝图、部件保留原类型及英文专名，中文名待核，不制造译名。
+
+每条来源展示星球/节点原名、模式、奖励轮次、检查日期和资料快照日期；额外触发/入场条件未核，Caches不猜缓存数量。奖励关系、来源表快照、当前可获取状态分开；本轮当前可获取均未知，固定表有记录不等于当前可刷、复刻开放或你的账号已解锁。来源仅摘录，不标完整已核；本版不展示概率，不计算精炼/队伍、掉率、局数、收益或刷取时间。
+
+内置奖励和来源断网可读，外部来源链接需联网打开。没有个人遗物库存、精炼记录、目标加入、自动扣核、实时轮换或云同步；个人模型/DB/备份格式及旧目录均不变。新增独立目录relics.2026.10.21.1，来源/许可见 `../docs/Relic_Query_v0_Sources.md`，本地和随应用许可汇编已保留WFCD MIT正文。
+
+本轮全部测试在 `.v/rl/app`、4186及短Chrome目录执行，原4194/dist不提供临时v1/v2构建。复跑从项目根执行 `docs/evidence/Relic_Query_v0/prepare-isolated.py`（Python3），隔离node_modules联接原app/node_modules；进入隔离app，将APP_TEST_PORT设4186、APP_BROWSER_PROFILE_ROOT设.b，APP_EVIDENCE_DIR/M0_EVIDENCE_DIR设为新的绝对证据目录，M0_EVIDENCE_PREFIX用新前缀，再执行 `node scripts/run-quality.mjs`。不要覆盖旧证据，也不要在原服务目录跑临时升级测试。
+
+本机正常预览启动沿用4194命令，已有服务不重复启动或停止；旧页面按提示保存后更新，勿清库。验收与包体变化见 `../docs/Relic_Query_v0_Acceptance.md`。Android真机、可信HTTPS/系统安装及游戏内事实尚未验；本轮本地提交后停止，等待独立复核。

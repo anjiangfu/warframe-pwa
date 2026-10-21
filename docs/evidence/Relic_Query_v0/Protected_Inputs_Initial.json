@@ -1,6 +1,6 @@
 {
   "base": "81cd6128c0b43f378ad1e3d3ed8ec7ca47d3eac2",
-  "checkedAt": "2026-10-21T07:15:59.213713+00:00",
+  "checkedAt": "2026-10-21T11:02:50.640146+00:00",
   "count": 17,
   "results": [
     {
@@ -105,5 +105,6 @@
       "after": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef",
       "unchanged": true
     }
-  ]
+  ],
+  "priorBaselineRecordedAt": "2026-10-21T07:15:59.213713+00:00"
 }

@@ -1,0 +1,11 @@
+{
+  "emulated": true,
+  "physicalAndroid": false,
+  "viewport": {
+    "width": 412,
+    "height": 860
+  },
+  "pinchChangedTransform": true,
+  "noNodeClick": true,
+  "externalRequests": []
+}

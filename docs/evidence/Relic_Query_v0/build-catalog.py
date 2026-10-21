@@ -18,6 +18,8 @@ for sample in audit['samples']:
     for raw in sample['upstream']['rewards']:
         reward_id = 'blueprint:forma' if raw['itemName'] == 'Forma Blueprint' else 'reward:wfcd:' + raw['_id']
         kind = 'blueprint' if raw['itemName'].endswith(' Blueprint') else 'component'
+        if kind == 'component':
+            assert raw['itemName'].endswith((' Lower Limb', ' Upper Limb', ' Barrel', ' Receiver', ' Stock', ' Handle', ' Blade', ' Blades', ' Grip', ' Pouch', ' Head', ' String'))
         label = '蓝图' if kind == 'blueprint' else '部件'
         item = dict(id=reward_id, upstreamId=raw['_id'], name='福马蓝图' if reward_id == 'blueprint:forma' else label + ' · ' + raw['itemName'], english=raw['itemName'], type=kind,
                     nameStatus='verified' if reward_id == 'blueprint:forma' else 'unverified')

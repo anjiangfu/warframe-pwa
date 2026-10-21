@@ -1,0 +1,15 @@
+{
+  "startedPid": 36268,
+  "url": "http://127.0.0.1:4194/#relics",
+  "existingServicesStopped": false,
+  "build": {
+    "build": "m0-d25c234ca092",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "checkedAt": "2026-10-21T11:26:38.5758500Z",
+  "homeStatus": 200,
+  "bindAddress": "127.0.0.1",
+  "normalOriginalDistOnly": true,
+  "port": 4194
+}
