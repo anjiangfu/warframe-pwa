@@ -1,0 +1,85 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relics.spec.ts --grep without --reporter=line
+
+
+[WebServer] (node:24196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:35496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/2] e2e\relics.spec.ts:11:1 › without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges
+  1) e2e\relics.spec.ts:11:1 › without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator: getByTestId('relic-count')
+    Expected: "本轮已收录12个遗物"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveText" getByTestId('relic-count') with timeout 5000ms
+      - waiting for getByTestId('relic-count')
+
+
+       8 | const reverse=(page:Page)=>page.getByRole('region',{name:'奖励反查结果',exact:true});
+       9 | async function records(page:Page){return page.evaluate(()=>new Promise<unknown>((resolve,reject)=>{const r=indexedDB.open('tenno-planner');r.onerror=()=>reject(r.error);r.onsuccess=()=>{const db=r.result,tx=db.transaction(['profiles','snapshots','imports']),a=tx.objectStore('profiles').getAll(),b=tx.objectStore('snapshots').getAll(),c=tx.objectStore('imports').getAll();tx.oncomplete=()=>{resolve([a.result,b.result,c.result]);db.close();};};}));}
+    > 10 | async function open(page:Page){await page.goto('/#relics');await expect(page.getByRole('status')).toContainText('本地档案就绪');await expect(page.getByTestId('relic-count')).toHaveText('本轮已收录12个遗物');}
+         |                                                                                                                                                                         ^
+      11 | test('without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges',async({page})=>{
+      12 |  test.setTimeout(120000);await open(page);const before=await records(page);
+      13 |  for(const relic of catalog.relics){await results(page).getByRole('button',{name:`查看遗物 ${relic.tier} ${relic.code}`,exact:true}).click();await expect(detail(page).getByTestId('relic-rewards').locator('li')).toHaveCount(6);await expect(detail(page)).toContainText('当前可获取：未知');await expect(detail(page)).toContainText('来源仅摘录');await expect(detail(page).getByTestId('relic-route')).toHaveCount(2);
+        at open (D:\wf\Warframe_PWA_Handoff_20261016\.v\rl\app\e2e\relics.spec.ts:10:169)
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\rl\app\e2e\relics.spec.ts:12:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\relics-without-a-profile-a-776ac-s-and-bounded-reverse-edges\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\relics-without-a-profile-a-776ac-s-and-bounded-reverse-edges\error-context.md
+
+
+(node:6468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/2] e2e\relics.spec.ts:22:1 › public relic queries survive profile switches without storing inventory, targets or query history
+  2) e2e\relics.spec.ts:22:1 › public relic queries survive profile switches without storing inventory, targets or query history 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator: getByTestId('relic-count')
+    Expected: "本轮已收录12个遗物"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveText" getByTestId('relic-count') with timeout 5000ms
+      - waiting for getByTestId('relic-count')
+
+
+       8 | const reverse=(page:Page)=>page.getByRole('region',{name:'奖励反查结果',exact:true});
+       9 | async function records(page:Page){return page.evaluate(()=>new Promise<unknown>((resolve,reject)=>{const r=indexedDB.open('tenno-planner');r.onerror=()=>reject(r.error);r.onsuccess=()=>{const db=r.result,tx=db.transaction(['profiles','snapshots','imports']),a=tx.objectStore('profiles').getAll(),b=tx.objectStore('snapshots').getAll(),c=tx.objectStore('imports').getAll();tx.oncomplete=()=>{resolve([a.result,b.result,c.result]);db.close();};};}));}
+    > 10 | async function open(page:Page){await page.goto('/#relics');await expect(page.getByRole('status')).toContainText('本地档案就绪');await expect(page.getByTestId('relic-count')).toHaveText('本轮已收录12个遗物');}
+         |                                                                                                                                                                         ^
+      11 | test('without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges',async({page})=>{
+      12 |  test.setTimeout(120000);await open(page);const before=await records(page);
+      13 |  for(const relic of catalog.relics){await results(page).getByRole('button',{name:`查看遗物 ${relic.tier} ${relic.code}`,exact:true}).click();await expect(detail(page).getByTestId('relic-rewards').locator('li')).toHaveCount(6);await expect(detail(page)).toContainText('当前可获取：未知');await expect(detail(page)).toContainText('来源仅摘录');await expect(detail(page).getByTestId('relic-route')).toHaveCount(2);
+        at open (D:\wf\Warframe_PWA_Handoff_20261016\.v\rl\app\e2e\relics.spec.ts:10:169)
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\rl\app\e2e\relics.spec.ts:23:2
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\relics-public-relic-querie-0c9dc-ry-targets-or-query-history\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\relics-public-relic-querie-0c9dc-ry-targets-or-query-history\error-context.md
+
+
+  2 failed
+    e2e\relics.spec.ts:11:1 › without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges 
+    e2e\relics.spec.ts:22:1 › public relic queries survive profile switches without storing inventory, targets or query history 

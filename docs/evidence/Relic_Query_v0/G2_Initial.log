@@ -1,0 +1,20 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relics.spec.ts --reporter=line
+
+
+[WebServer] (node:33456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+
+(node:25344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/5] e2e\relics.spec.ts:11:1 › without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges
+[2/5] e2e\relics.spec.ts:19:1 › era and code filters, Forma reverse search and unrecorded queries disclose finite scope
+[3/5] e2e\relics.spec.ts:22:1 › public relic queries survive profile switches without storing inventory, targets or query history
+[4/5] e2e\relics.spec.ts:25:1 › all embedded relic tables and source snapshots reopen offline after a controlled page closes
+[5/5] e2e\relics.spec.ts:28:1 › desktop and 360/412 portrait and landscape layouts keep source limits and unknown conditions readable
+  5 passed (11.0s)
