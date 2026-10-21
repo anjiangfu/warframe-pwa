@@ -6,3 +6,4 @@ app/.test-browser/
 app/.b/
 app/.vite/
 *.tsbuildinfo
+/.v/

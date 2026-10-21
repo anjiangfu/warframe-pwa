@@ -1,0 +1,1010 @@
+{
+  "identities": [
+    {
+      "id": "material:pathos-clamp",
+      "name": "苦栓",
+      "english": "Pathos Clamp",
+      "aliases": [
+        "Pathos Clamps"
+      ]
+    },
+    {
+      "id": "material:yao-shrub",
+      "name": "瑶丛",
+      "english": "Yao Shrub",
+      "aliases": [
+        "Yao Shrubs"
+      ]
+    },
+    {
+      "id": "material:eevani",
+      "name": "延凡草",
+      "english": "Eevani",
+      "aliases": []
+    },
+    {
+      "id": "credits",
+      "name": "星币",
+      "english": "Credits",
+      "aliases": [
+        "现金",
+        "霍币",
+        "Höllars"
+      ]
+    },
+    {
+      "id": "forma",
+      "name": "福马",
+      "english": "Forma",
+      "aliases": []
+    },
+    {
+      "id": "blueprint:forma",
+      "name": "福马蓝图",
+      "english": "Forma Blueprint",
+      "aliases": []
+    },
+    {
+      "id": "material:morphics",
+      "name": "非晶态合金",
+      "english": "Morphics",
+      "aliases": []
+    },
+    {
+      "id": "material:neural-sensors",
+      "name": "神经传感器",
+      "english": "Neural Sensors",
+      "aliases": []
+    },
+    {
+      "id": "material:neurodes",
+      "name": "神经元",
+      "english": "Neurodes",
+      "aliases": []
+    },
+    {
+      "id": "material:orokin-cell",
+      "name": "奥罗金电池",
+      "english": "Orokin Cell",
+      "aliases": [
+        "Orokin电池"
+      ]
+    },
+    {
+      "id": "material:efervon-sample",
+      "name": "艾弗旺样本",
+      "english": "Efervon Sample",
+      "aliases": []
+    },
+    {
+      "id": "material:pitchweave-fragment",
+      "name": "霍瓦尼亚沥青布碎片",
+      "english": "Höllvanian Pitchweave Fragment",
+      "aliases": []
+    },
+    {
+      "id": "material:experimental-arc-relay",
+      "name": "实验性电弧继电器",
+      "english": "Experimental Arc-Relay",
+      "aliases": []
+    },
+    {
+      "id": "material:entrati-obols",
+      "name": "英择谛银币",
+      "english": "Entrati Obols",
+      "aliases": []
+    },
+    {
+      "id": "material:techrot-chitin",
+      "name": "科腐者几丁质",
+      "english": "Techrot Chitin",
+      "aliases": []
+    },
+    {
+      "id": "material:necracoil",
+      "name": "殁世线圈",
+      "english": "Necracoil",
+      "aliases": []
+    },
+    {
+      "id": "material:techrot-motherboard",
+      "name": "科腐者主板",
+      "english": "Techrot Motherboard",
+      "aliases": []
+    },
+    {
+      "id": "treasure:countessa-comic",
+      "name": "女伯爵漫画",
+      "english": "The Countessa Comic",
+      "aliases": []
+    },
+    {
+      "id": "treasure:on-lyne-cd",
+      "name": "线上时代CD",
+      "english": "On-lyne CD",
+      "aliases": []
+    },
+    {
+      "id": "treasure:chuggin-sixpack",
+      "name": "酌趣六瓶装啤酒",
+      "english": "Chuggin’ Along Sixpack",
+      "aliases": []
+    },
+    {
+      "id": "treasure:mood-crystal",
+      "name": "心情水晶",
+      "english": "Mood Crystal",
+      "aliases": []
+    },
+    {
+      "id": "treasure:cheddar-crowns",
+      "name": "切达芝士皇冠麦片",
+      "english": "Cheddar Crowns Cereal",
+      "aliases": []
+    },
+    {
+      "id": "treasure:35mm-film",
+      "name": "35毫米胶片",
+      "english": "35mm Film",
+      "aliases": []
+    }
+  ],
+  "recipes": [
+    {
+      "id": "recipe:forma",
+      "title": "普通福马蓝图制作",
+      "output": {
+        "resourceId": "forma",
+        "quantity": 1,
+        "sourceIds": [
+          "m1:forma-en",
+          "m1:forma-zh",
+          "m1:foundry"
+        ],
+        "verification": "verified",
+        "checkedAt": "2026-10-18"
+      },
+      "inputs": [
+        {
+          "resourceId": "credits",
+          "quantity": 35000,
+          "sourceIds": [
+            "m1:forma-en",
+            "m1:forma-zh"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "blueprint:forma",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:forma-en",
+            "m1:foundry"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:morphics",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:morphics"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:neural-sensors",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:sensors"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:neurodes",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:forma-en"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        },
+        {
+          "resourceId": "material:orokin-cell",
+          "quantity": 1,
+          "sourceIds": [
+            "m1:inputs",
+            "m1:forma-en"
+          ],
+          "verification": "verified",
+          "checkedAt": "2026-10-18"
+        }
+      ],
+      "prerequisites": [
+        "蓝图为单次消耗，持有张数另列；不要由科技树状态推断。",
+        "铸造厂、裂缝及相关地图是否开放未确认。",
+        "材料满足只表示已知投入足够；开始制作前请核对当前游戏界面。"
+      ],
+      "sourceIds": [
+        "m1:forma-en",
+        "m1:forma-zh"
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "id": "weapon:dual-toxocyst",
+      "name": "毒囊双枪",
+      "english": "Dual Toxocyst",
+      "summary": "先核对你已有的部分，再选正在做的进化；四阶段任务都可以提前查看。",
+      "requirements": [
+        "本体蓝图来自氏族道场生物实验室，个人制造在铸造厂；不要把氏族研究消耗当制造材料。",
+        "适配器的已核验途径是钢铁之路无尽回廊相应轮换；先核对双衍悖论、扎里曼的天使和钢铁之路资格。",
+        "在卡瓦莱罗处安装对应适配器；本页不判断你已开放的地图，不显示当前周轮换。"
+      ],
+      "acquisitionIds": [
+        "acquire:base",
+        "acquire:adapter",
+        "acquire:install"
+      ],
+      "installCost": [
+        {
+          "materialId": "material:pathos-clamp",
+          "quantity": 20,
+          "sourceIds": [
+            "weapon-zh",
+            "weapon-en"
+          ]
+        },
+        {
+          "materialId": "material:yao-shrub",
+          "quantity": 70,
+          "sourceIds": [
+            "weapon-zh",
+            "weapon-en"
+          ]
+        },
+        {
+          "materialId": "material:eevani",
+          "quantity": 80,
+          "sourceIds": [
+            "weapon-zh",
+            "weapon-en"
+          ]
+        }
+      ],
+      "stages": [
+        {
+          "id": "dual-toxocyst:i",
+          "label": "进化 I",
+          "challenge": {
+            "kind": "installation",
+            "target": null,
+            "description": "安装毒囊双枪灵化之源后解锁进化I。"
+          },
+          "checks": [
+            "本体、对应适配器与安装材料齐备。",
+            "向卡瓦莱罗确认安装成功，核对游戏内进化界面。"
+          ],
+          "tips": [
+            "先打开三材料详情，未知库存先手工核对。",
+            "安装完成后在游戏中查看进化I是否解锁，再更新本页记录。",
+            "弱点命中用于灵化充能，次要开火转换形态；不要与IV的连续爆头条件混为一谈。"
+          ],
+          "troubleshooting": [
+            "没有解锁：确认所选是毒囊双枪及对应适配器，重新查看NPC进化界面。",
+            "本应用只记录你的声明，不读取游戏，也不替你安装。"
+          ],
+          "locationIds": [
+            "acquire:install"
+          ],
+          "sourceIds": [
+            "weapon-en",
+            "weapon-zh"
+          ]
+        },
+        {
+          "id": "dual-toxocyst:ii",
+          "label": "进化 II",
+          "challenge": {
+            "kind": "solo-mission",
+            "target": 1,
+            "description": "装备这把武器完成一场单人任务。"
+          },
+          "checks": [
+            "核对游戏当前待完成的是进化II。",
+            "在军械库装备毒囊双枪，并把匹配方式切到单人。"
+          ],
+          "tips": [
+            "选择一个自己已开放的普通任务，如地球E Prime歼灭。",
+            "出发前核对次要武器槽和单人匹配设置。",
+            "完成目标并正常撤离结算，再回进化界面核对计数。"
+          ],
+          "troubleshooting": [
+            "未计数：先查是否真的装备本武器、是否单人、是否正常完成。",
+            "其他进化任务可能仍需先在游戏内解锁；页面提前查看不代表已具备资格。"
+          ],
+          "locationIds": [
+            "mission:earth"
+          ],
+          "sourceIds": [
+            "weapon-en",
+            "weapon-zh"
+          ]
+        },
+        {
+          "id": "dual-toxocyst:iii",
+          "label": "进化 III",
+          "challenge": {
+            "kind": "incarnon-kills",
+            "target": 100,
+            "description": "用这把武器的灵化形态击杀100名敌人。"
+          },
+          "checks": [
+            "核对III在游戏中已可挑战，武器已安装灵化之源。",
+            "普通形态的击杀不能代替灵化形态击杀。"
+          ],
+          "tips": [
+            "可尝试已开放的土星Titan普通生存，先保证自身生存和生命维持。",
+            "先获得充能，用次要开火进入灵化形态，再集中用本武器击杀。",
+            "形态弹药耗尽后重新充能转换，留意游戏内挑战计数。",
+            "难度不合适就换已开放的正式任务；不承诺固定分钟或一局完成。"
+          ],
+          "troubleshooting": [
+            "不计数先确认正在灵化形态，并由该武器完成击杀。",
+            "排查技能/队友代杀等情况；没有亲测模拟环境计数，因此不以模拟环境为建议。"
+          ],
+          "locationIds": [
+            "mission:saturn"
+          ],
+          "sourceIds": [
+            "weapon-en",
+            "weapon-zh"
+          ]
+        },
+        {
+          "id": "dual-toxocyst:iv",
+          "label": "进化 IV",
+          "challenge": {
+            "kind": "consecutive-headshots",
+            "target": 17,
+            "description": "取得连续17次爆头命中；不是连续击杀17个敌人。",
+            "resets": [
+              "body-shot"
+            ]
+          },
+          "checks": [
+            "核对游戏当前挑战已开放。",
+            "历史官方说明：装填不重置；身体命中会重置。当前以游戏提示为准。"
+          ],
+          "tips": [
+            "建议在地球E Prime普通单人歼灭，找视线清楚的敌人逐个瞄头。",
+            "可优先用普通形态练习单发精确命中；任务文本本身没有强制此形态。",
+            "放慢节奏观察计数，不把“击杀数”当作“连续爆头数”。",
+            "如反复归零，可暂时去掉会主动攻击的同伴作对照：仅社区注意事项，非必备条件。"
+          ],
+          "troubleshooting": [
+            "先排查打中身体；不要因需要装填就认定必须重开。",
+            "DE 33.5曾修复触发伤害导致归零，不能把卸掉全部触发MOD列为当前硬条件。",
+            "宠物干扰及多重射击计数只有社区说明，未在本轮游戏亲测；异常时对照当前补丁与游戏计数。"
+          ],
+          "locationIds": [
+            "mission:earth"
+          ],
+          "sourceIds": [
+            "official-3313",
+            "official-335",
+            "weapon-en"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "weapon-en",
+        "weapon-zh",
+        "official-33"
+      ]
+    },
+    {
+      "id": "weapon:nami-solo",
+      "name": "海波单剑",
+      "english": "Nami Solo",
+      "summary": "优先解决当前操作卡点，四阶段仍可查看；游戏内进度由你手工确认。",
+      "requirements": [
+        "前序具体记录未知不阻止看IV。",
+        "本轮只提供任务指引，海波安装用量尚未整理；不复制其他武器材料。"
+      ],
+      "acquisitionIds": [],
+      "installCost": [],
+      "stages": [
+        {
+          "id": "nami-solo:i",
+          "label": "进化 I",
+          "challenge": {
+            "kind": "installation",
+            "target": null,
+            "description": "安装海波单剑灵化之源后解锁进化I。"
+          },
+          "checks": [
+            "在游戏武器进化界面核对是否已安装；未填写不代表未安装。"
+          ],
+          "tips": [
+            "已在做IV时直接查看IV，不必重做安装。",
+            "需要核对时查看武器进化界面与已激活阶段。",
+            "6倍连击后重击可激活形态；这与IV的处决条件分开。"
+          ],
+          "troubleshooting": [
+            "本轮不整理海波安装材料，不能套用毒囊双枪材料。"
+          ],
+          "locationIds": [
+            "acquire:install"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh"
+          ]
+        },
+        {
+          "id": "nami-solo:ii",
+          "label": "进化 II",
+          "challenge": {
+            "kind": "solo-mission",
+            "target": 1,
+            "description": "装备海波单剑完成一场单人任务。"
+          },
+          "checks": [
+            "核对该阶段已开放；匹配模式设为单人。"
+          ],
+          "tips": [
+            "选一个已开放的普通任务，保持海波单剑装备。",
+            "以正常完成并撤离为准，不以中途退出代替。",
+            "如果已在后续阶段，无需在应用中补填II才查看。"
+          ],
+          "troubleshooting": [
+            "不计数先检查阶段和是否真正单人；应用不读取实际计数。"
+          ],
+          "locationIds": [
+            "nami-practice-earth"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh"
+          ]
+        },
+        {
+          "id": "nami-solo:iii",
+          "label": "进化 III",
+          "challenge": {
+            "kind": "incarnon-activations",
+            "target": 6,
+            "description": "在同一任务中激活海波单剑灵化形态6次。"
+          },
+          "checks": [
+            "核对本阶段开放及游戏内变形提示；不是击杀6个敌人。"
+          ],
+          "tips": [
+            "先在熟悉的正式任务中积累连击。",
+            "达到6倍连击后按重击激活，观察形态与挑战计数。",
+            "按游戏提示等待可再次激活后重复，未确认前不承诺最快用时。"
+          ],
+          "troubleshooting": [
+            "激活间隔与当前姿态实操未验证（unverified）；先确认一次计数。",
+            "任务过短可换自己熟悉且已开放的正式任务，不用模拟场代替。"
+          ],
+          "locationIds": [
+            "nami-practice-earth"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh"
+          ]
+        },
+        {
+          "id": "nami-solo:iv",
+          "label": "进化 IV",
+          "challenge": {
+            "kind": "held-melee-finishers",
+            "target": 40,
+            "description": "完整持握近战武器时进行40次处决攻击；不是40次普通击杀。"
+          },
+          "checks": [
+            "完整持握海波单剑，与拿枪时快速近战挥砍不同。PC通常长按切换武器键F，以当前按键设置为准。",
+            "可暂时卸下主副武器方便保持近战持握；这是建议配置，不是必须销毁或更换装备。",
+            "核对游戏内IV挑战开放；不要求在应用中补全I—III。"
+          ],
+          "tips": [
+            "建议普通单人地球E Prime歼灭，先做1—2次并看本任务计数，再继续。",
+            "若已有圣剑／圣剑Umbra，可用2技能致盲普通敌人，靠近等处决互动提示；不是开4技能挥砍。",
+            "没有这些战甲时，潜行接近未警觉普通敌人背后，等近战处决提示，无需为一次挑战额外购买战甲。",
+            "按画面互动键执行近战处决（PC默认通常X，以自定义键位为准），普通挥砍不会替代。",
+            "一次成功后记录有效方式；按任务计数继续，不以击杀总数判断完成。"
+          ],
+          "troubleshooting": [
+            "先排查持握状态、阶段是否开放、是否看到近战处决互动，以及是否被队友先击杀。",
+            "不同姿态、是否必须击杀、倒地处决和怜悯对本武器挑战是否计数仍unverified，先试做。",
+            "DE36调整了通用处决/互动机制，但MOD与赋能的通用归类不能证明本挑战所有类型计数相同。",
+            "不要将旧攻略的“所有倒地或怜悯都绝不算”当当前定论；优先试上述普通近战处决。"
+          ],
+          "locationIds": [
+            "nami-practice-earth"
+          ],
+          "sourceIds": [
+            "nami-en",
+            "nami-zh",
+            "finisher-community",
+            "de-u36-finishers"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "nami-en",
+        "nami-zh"
+      ]
+    }
+  ],
+  "syndicates": [
+    {
+      "id": "syndicate:hex",
+      "name": "六人组",
+      "english": "The Hex",
+      "maxRank": 5,
+      "rankFactId": "syndicate:hex:rank",
+      "standingFactId": "syndicate:hex:standing",
+      "finaleFactId": "quest:hex:finale",
+      "sourceIds": [
+        "hex:table",
+        "hex:u38",
+        "hex:kim",
+        "hex:quest"
+      ],
+      "members": [
+        {
+          "id": "arthur",
+          "name": "亚瑟",
+          "english": "Arthur",
+          "factId": "hex:liked:arthur"
+        },
+        {
+          "id": "aoi",
+          "name": "碧",
+          "english": "Aoi",
+          "factId": "hex:liked:aoi"
+        },
+        {
+          "id": "amir",
+          "name": "阿米尔",
+          "english": "Amir",
+          "factId": "hex:liked:amir"
+        },
+        {
+          "id": "quincy",
+          "name": "昆西",
+          "english": "Quincy",
+          "factId": "hex:liked:quincy"
+        },
+        {
+          "id": "lettie",
+          "name": "莱蒂西娅",
+          "english": "Lettie",
+          "factId": "hex:liked:lettie"
+        },
+        {
+          "id": "eleanor",
+          "name": "埃莉诺",
+          "english": "Eleanor",
+          "factId": "hex:liked:eleanor"
+        }
+      ],
+      "steps": [
+        {
+          "id": "hex:0-1",
+          "to": 1,
+          "standing": {
+            "quantity": 5000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 10000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:efervon-sample",
+              "quantity": 15,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:pitchweave-fragment",
+              "quantity": 5,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 0
+        },
+        {
+          "id": "hex:1-2",
+          "to": 2,
+          "standing": {
+            "quantity": 22000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 25000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:experimental-arc-relay",
+              "quantity": 5,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:entrati-obols",
+              "quantity": 12,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:pitchweave-fragment",
+              "quantity": 25,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 1
+        },
+        {
+          "id": "hex:2-3",
+          "to": 3,
+          "standing": {
+            "quantity": 44000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 50000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:countessa-comic",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:on-lyne-cd",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:chuggin-sixpack",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:mood-crystal",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:cheddar-crowns",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:35mm-film",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 2
+        },
+        {
+          "id": "hex:3-4",
+          "to": 4,
+          "standing": {
+            "quantity": 70000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 100000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:techrot-chitin",
+              "quantity": 25,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:necracoil",
+              "quantity": 25,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:efervon-sample",
+              "quantity": 40,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": true,
+            "likedForFinale": true,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table",
+              "hex:u38",
+              "hex:quest"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 3
+        },
+        {
+          "id": "hex:4-5",
+          "to": 5,
+          "standing": {
+            "quantity": 99000,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "sacrifices": [
+            {
+              "resourceId": "credits",
+              "quantity": 200000,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "material:techrot-motherboard",
+              "quantity": 5,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:countessa-comic",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:on-lyne-cd",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:chuggin-sixpack",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:mood-crystal",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:cheddar-crowns",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            },
+            {
+              "resourceId": "treasure:35mm-film",
+              "quantity": 1,
+              "verification": "verified",
+              "sourceIds": [
+                "hex:table"
+              ],
+              "checkedAt": "2026-10-19"
+            }
+          ],
+          "conditions": {
+            "finale": false,
+            "likedForFinale": false,
+            "verification": "verified",
+            "sourceIds": [
+              "hex:table"
+            ],
+            "checkedAt": "2026-10-19"
+          },
+          "from": 4
+        }
+      ],
+      "guidance": {
+        "standing": "到霍瓦尼亚中央商场核对可参加赏金。珍品可向莱蒂兑换，但未兑换物不是已持有声望，本页不自动兑换。",
+        "relations": "在轨道器或后房电脑的KIM查看六位成员档案；核对至少喜欢（Liked）。完成介绍对话后可核对对应赏金；不提供礼物喜好或聊天答案。",
+        "task": "在后房核对卡利莫斯（Kalymos）处的六人组终章入口与解锁提示；仅核对是否完成，不展开剧情。"
+      }
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal:dual-toxocyst",
+      "title": "毒囊双枪整体养成",
+      "summary": "整体完成声明与各项武器事实分开保存。",
+      "kind": "weapon",
+      "weaponId": "weapon:dual-toxocyst",
+      "treeNodeIds": [
+        "arsenal"
+      ]
+    },
+    {
+      "id": "goal:helminth-install",
+      "title": "大嘴（Helminth）安装",
+      "summary": "只核对安装，不推断技能、等级或其他系统开放。",
+      "kind": "installation",
+      "factId": "system:helminth:installed",
+      "treeNodeIds": [
+        "helminth"
+      ]
+    },
+    {
+      "id": "goal:shard-module",
+      "title": "原力石模块 · 用户原称",
+      "summary": "先保留你的称呼；候选实体需本人确认。",
+      "kind": "installation",
+      "factId": "declaration:shard-module:installed",
+      "treeNodeIds": [
+        "systemsfinal"
+      ]
+    },
+    {
+      "id": "goal:nami-solo",
+      "title": "海波单剑整体养成",
+      "summary": "可直接关注进化IV，不需要补填前序。",
+      "kind": "weapon",
+      "weaponId": "weapon:nami-solo",
+      "treeNodeIds": [
+        "arsenal"
+      ]
+    }
+  ]
+}
