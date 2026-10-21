@@ -1,0 +1,30 @@
+{
+  "resourceIds": [
+    "material:pathos-clamp",
+    "material:yao-shrub",
+    "material:eevani",
+    "credits",
+    "forma",
+    "blueprint:forma",
+    "material:morphics",
+    "material:neural-sensors",
+    "material:neurodes",
+    "material:orokin-cell",
+    "material:efervon-sample",
+    "material:pitchweave-fragment",
+    "material:experimental-arc-relay",
+    "material:entrati-obols",
+    "material:techrot-chitin",
+    "material:necracoil",
+    "material:techrot-motherboard",
+    "treasure:countessa-comic",
+    "treasure:on-lyne-cd",
+    "treasure:chuggin-sixpack",
+    "treasure:mood-crystal",
+    "treasure:cheddar-crowns",
+    "treasure:35mm-film"
+  ],
+  "allRoutesDisplayed": true,
+  "queryNoWrites": true,
+  "identities": 23
+}

@@ -1,0 +1,83 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/material-guides.spec.ts e2e/weapon-assistant.spec.ts --reporter=line
+
+[WebServer] (node:35268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+
+(node:18476) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/6] e2e\material-guides.spec.ts:11:1 › all 23 resources show scoped routes, verification, dates and evidence without profile writes
+[2/6] e2e\material-guides.spec.ts:24:1 › search, crafting, syndicate and assistant use identical material routes and do not change saved business data
+  1) e2e\material-guides.spec.ts:24:1 › search, crafting, syndicate and assistant use identical material routes and do not change saved business data 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('搜索武器或材料')
+
+
+      29 |  await page.getByRole('button',{name:'集团晋升',exact:true}).click();await page.getByRole('region',{name:'当前晋升祭品'}).getByRole('button',{name:'查询祭品 星币（Credits）',exact:true}).click();expect(await locations(page).innerText()).toBe(creditText);
+      30 |  await page.getByRole('button',{name:'材料查询',exact:true}).click();await select(page,'material:yao-shrub');const yaoText=await locations(page).innerText();
+    > 31 |  await page.getByRole('button',{name:'养成助手',exact:true}).click();await page.getByLabel('搜索武器或材料').fill('Yao Shrub');await page.getByRole('button',{name:'瑶丛（Yao Shrub）',exact:true}).click();expect(await locations(page).innerText()).toBe(yaoText);
+         |                                                                                                   ^
+      32 |  expect(await records(page)).toEqual(before);await writeFile(evidencePath('Guides_Entry_Consistency.json'),JSON.stringify({fourEntryRoutesMatch:true,allBusinessUnchanged:true},null,2));
+      33 | });
+      34 | test('material routes and explicit unverified alternatives reopen after offline page close',async({page,context})=>{
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\mg\app\e2e\material-guides.spec.ts:31:99
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\material-guides-search-cra-4a94f--change-saved-business-data\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\material-guides-search-cra-4a94f--change-saved-business-data\error-context.md
+
+
+
+(node:11296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/6] e2e\material-guides.spec.ts:34:1 › material routes and explicit unverified alternatives reopen after offline page close
+[4/6] e2e\material-guides.spec.ts:39:1 › detailed routes remain readable on desktop and 360/412 viewports without horizontal overflow
+[5/6] e2e\weapon-assistant.spec.ts:4:1 › weapon pilot: middle stage, shared stock, downloaded backup restore and profile isolation
+[6/6] e2e\weapon-assistant.spec.ts:18:1 › weapon pilot opens offline; failed material writes retain existing data and report failure
+  2) e2e\weapon-assistant.spec.ts:18:1 › weapon pilot opens offline; failed material writes retain existing data and report failure 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('螺旋主线终战 · 奥金魇龙', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('螺旋主线终战 · 奥金魇龙', { exact: true }) with timeout 5000ms
+      - waiting for getByText('螺旋主线终战 · 奥金魇龙', { exact: true })
+
+
+      17 | });
+      18 | test('weapon pilot opens offline; failed material writes retain existing data and report failure',async({page,context})=>{
+    > 19 |  await page.goto('/#assistant');await page.getByRole('button',{name:'使用 MR12 模板创建档案'}).click();await page.getByLabel('拥有本体').selectOption('yes');await expect(page.getByRole('status')).toContainText('已保存');await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);await context.setOffline(true);await page.close();const offline=await context.newPage();await offline.goto(TEST_ORIGIN+'/#assistant');await expect(offline.getByRole('heading',{name:/毒囊双枪/,level:2})).toBeVisible();await expect(offline.getByLabel('拥有本体')).toHaveValue('yes');await offline.getByLabel('搜索武器或材料').fill('Pathos Clamps');await offline.getByRole('button',{name:'苦栓（Pathos Clamp）',exact:true}).click();await expect(offline.getByText('螺旋主线终战 · 奥金魇龙',{exact:true})).toBeVisible();await offline.getByLabel('材料持有量').fill('0');await offline.getByRole('button',{name:'保存材料持有量'}).click();await expect(offline.getByTestId('material-deficit')).toHaveText('20');
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+      20 |  await offline.evaluate(()=>{const original=IDBObjectStore.prototype.put;IDBObjectStore.prototype.put=function(...args:Parameters<IDBObjectStore['put']>){if(this.name==='profiles')throw new DOMException('test quota','QuotaExceededError');return original.apply(this,args);};});await offline.getByLabel('材料持有量').fill('99');await offline.getByRole('button',{name:'保存材料持有量'}).click();await expect(offline.getByRole('status')).toContainText('保存失败');await expect(offline.getByTestId('material-deficit')).toHaveText('20');await offline.screenshot({path:evidencePath('Pilot_Offline_Failure.png'),fullPage:true});
+      21 |  await writeFile(evidencePath('Pilot_Offline.json'),JSON.stringify({offlineNewPage:true,manualStateRetained:true,materialDetailsOffline:true,quotaFailureNoSuccess:true,oldStockPreserved:true},null,2));
+      22 | });
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\mg\app\e2e\weapon-assistant.spec.ts:19:768
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\weapon-assistant-weapon-pi-f917d-ing-data-and-report-failure\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\weapon-assistant-weapon-pi-f917d-ing-data-and-report-failure\error-context.md
+
+
+  2 failed
+    e2e\material-guides.spec.ts:24:1 › search, crafting, syndicate and assistant use identical material routes and do not change saved business data 
+    e2e\weapon-assistant.spec.ts:18:1 › weapon pilot opens offline; failed material writes retain existing data and report failure 
+  4 passed (44.4s)

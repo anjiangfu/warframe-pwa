@@ -1,0 +1,21 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/material-guides.spec.ts e2e/weapon-assistant.spec.ts --reporter=line
+
+[WebServer] (node:28324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 6 tests using 1 worker
+
+(node:21120) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/6] e2e\material-guides.spec.ts:11:1 › all 23 resources show scoped routes, verification, dates and evidence without profile writes
+[2/6] e2e\material-guides.spec.ts:24:1 › search, crafting, syndicate and assistant use identical material routes and do not change saved business data
+[3/6] e2e\material-guides.spec.ts:34:1 › material routes and explicit unverified alternatives reopen after offline page close
+[4/6] e2e\material-guides.spec.ts:39:1 › detailed routes remain readable on desktop and 360/412 viewports without horizontal overflow
+[5/6] e2e\weapon-assistant.spec.ts:4:1 › weapon pilot: middle stage, shared stock, downloaded backup restore and profile isolation
+[6/6] e2e\weapon-assistant.spec.ts:18:1 › weapon pilot opens offline; failed material writes retain existing data and report failure
+  6 passed (9.6s)

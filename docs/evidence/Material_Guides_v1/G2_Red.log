@@ -1,0 +1,49 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/material-guides.spec.ts --grep all 23 --reporter=line
+
+
+[WebServer] (node:7560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:33096) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\material-guides.spec.ts:11:1 › all 23 resources show scoped routes, verification, dates and evidence without profile writes
+  1) e2e\material-guides.spec.ts:11:1 › all 23 resources show scoped routes, verification, dates and evidence without profile writes 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.material-detail .guide-locations').locator('article').first()
+    Expected substring: "主要方式"
+    Received string:    "获取方式苦栓：螺旋终战后开箱双衍王境 → The Lone Story → 奥金魇龙终战普通难度 · 螺旋主线（非无尽回廊）从双衍区域选择The Lone Story，按主线阶段推进到奥金魇龙终战。完成战斗后打开出现的奖励宝箱，再通过正常出口离开并核对苦栓。若还想同时自由探索，可改选The Duviri Experience完成同一终战。先确认双衍悖论与相应模式已开放；不用历史新手条件推断账号资格。钢铁之路为已开放者的更难版本，本轮不对比收益，也不自动按难度修改库存。不要把中途离开或无尽回廊完成当作已领取终战苦栓。官方历史 · DE Update33螺旋与保存点2026-10-20 · 正文核对"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('.material-detail .guide-locations').locator('article').first() with timeout 5000ms
+      - waiting for locator('.material-detail .guide-locations').locator('article').first()
+        14 × locator resolved to <article>…</article>
+           - unexpected value "获取方式苦栓：螺旋终战后开箱双衍王境 → The Lone Story → 奥金魇龙终战普通难度 · 螺旋主线（非无尽回廊）从双衍区域选择The Lone Story，按主线阶段推进到奥金魇龙终战。完成战斗后打开出现的奖励宝箱，再通过正常出口离开并核对苦栓。若还想同时自由探索，可改选The Duviri Experience完成同一终战。先确认双衍悖论与相应模式已开放；不用历史新手条件推断账号资格。钢铁之路为已开放者的更难版本，本轮不对比收益，也不自动按难度修改库存。不要把中途离开或无尽回廊完成当作已领取终战苦栓。官方历史 · DE Update33螺旋与保存点2026-10-20 · 正文核对"
+
+
+      15 |   for(const [i,id] of resource.acquisitionIds.entries()){
+      16 |    const route=catalog.acquisitions.find(a=>a.id===id)!,article=articles.nth(i);
+    > 17 |    await expect(article).toContainText(i===0?'主要方式':'备选方式');await expect(article).toContainText(route.verification==='verified'?'路线已对照资料':'路线待核');
+         |                          ^
+      18 |    await expect(article).toContainText(route.place);await expect(article).toContainText(route.mode);await expect(article).toContainText('核对日期：'+route.checkedAt);
+      19 |    for(const source of route.sourceIds){await expect(article.locator(`a[href="${catalog.sources.find(s=>s.id===source)!.url}"]`)).toHaveCount(1);}
+      20 |   }
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\mg\app\e2e\material-guides.spec.ts:17:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\material-guides-all-23-res-03bec-ence-without-profile-writes\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\material-guides-all-23-res-03bec-ence-without-profile-writes\error-context.md
+
+
+  1 failed
+    e2e\material-guides.spec.ts:11:1 › all 23 resources show scoped routes, verification, dates and evidence without profile writes 
