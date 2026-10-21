@@ -1,0 +1,1000 @@
+{
+  "commit": "3263b2dff8bc1b434a191f0364395b156bd26561",
+  "checkedAt": "2026-10-21",
+  "info": {
+    "hash": "142932ad92328573f6a7527c0b4c8998",
+    "timestamp": 1791393425057,
+    "modified": 1791386313000
+  },
+  "officialUrl": "https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html",
+  "officialSha256": "599169fc08deda359ddc661de5397566dbd6b9603dd1681fdd602ed71d08d37b",
+  "officialBytes": 4517072,
+  "officialMd5MatchesPinnedBuild": true,
+  "sourceScope": "Two excerpted mission rows per relic, not all acquisition sources; current availability unknown.",
+  "samples": [
+    {
+      "id": "relic:lith:c7",
+      "name": "Lith C7 Relic",
+      "tier": "Lith",
+      "number": "C7",
+      "upstream": {
+        "tier": "Lith",
+        "relicName": "C7",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "7b51b942f5f3eed9f76370e5c3a534c1",
+            "itemName": "Cernos Prime Lower Limb",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "2f87fdd9c219d08cb8218e771ca8a700",
+            "itemName": "Nyx Prime Systems Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "cded061517b20aed22c18d585c97e806",
+            "itemName": "Scindo Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "50049628c0d3bd1ceb67f37202c48532",
+            "itemName": "Valkyr Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "2a8861dcb3ce0bed47775bbabc078969",
+            "itemName": "Hikou Prime Pouch",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "db781e94d115818b91fd13bc8cd51824"
+      },
+      "routes": [
+        {
+          "planet": "Venus",
+          "node": "Bifrost Echo (Caches)",
+          "gameMode": "Caches",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "5d6b7afd7d464f59823226d735c96a5a",
+            "itemName": "Lith C7 Relic",
+            "rarity": "Rare",
+            "chance": 9.68
+          },
+          "officialHeading": "Venus/Bifrost Echo (Caches)"
+        },
+        {
+          "planet": "Venus",
+          "node": "Beacon Shield Ring (Caches)",
+          "gameMode": "Caches",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "5d6b7afd7d464f59823226d735c96a5a",
+            "itemName": "Lith C7 Relic",
+            "rarity": "Rare",
+            "chance": 9.68
+          },
+          "officialHeading": "Venus/Beacon Shield Ring (Caches)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:lith:g14",
+      "name": "Lith G14 Relic",
+      "tier": "Lith",
+      "number": "G14",
+      "upstream": {
+        "tier": "Lith",
+        "relicName": "G14",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "bcb4ef9bcd1ce402a4c35983bd9770dc",
+            "itemName": "Gyre Prime Neuroptics Blueprint",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "2aeb605b226d5a8caaf58ef1d3d9e537",
+            "itemName": "Fang Prime Handle",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "d9f88efbe255d169fdb79408e93eea6b",
+            "itemName": "Vadarya Prime Receiver",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "09b661a7b05d22813e35766d6376536c",
+            "itemName": "Lavos Prime Chassis Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "9d8e76b94105f92d4bfedb4bc15e14fc",
+            "itemName": "Paris Prime Lower Limb",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "38c82bd397f1476ae6ea0ff80a958793"
+      },
+      "routes": [
+        {
+          "planet": "Mercury",
+          "node": "Apollodorus",
+          "gameMode": "Survival",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "e39169363bf5127e016c86683c45209e",
+            "itemName": "Lith G14 Relic",
+            "rarity": "Rare",
+            "chance": 7.69
+          },
+          "officialHeading": "Mercury/Apollodorus (Survival)"
+        },
+        {
+          "planet": "Mercury",
+          "node": "Lares",
+          "gameMode": "Defense",
+          "rotation": "A",
+          "isEvent": false,
+          "row": {
+            "_id": "e39169363bf5127e016c86683c45209e",
+            "itemName": "Lith G14 Relic",
+            "rarity": "Rare",
+            "chance": 9.09
+          },
+          "officialHeading": "Mercury/Lares (Defense)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:lith:s19",
+      "name": "Lith S19 Relic",
+      "tier": "Lith",
+      "number": "S19",
+      "upstream": {
+        "tier": "Lith",
+        "relicName": "S19",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "8dac1c4170057091a7cd0cfcf66b8905",
+            "itemName": "Sarofang Prime Blade",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "fac2551e31071237c99c585dbb387b2b",
+            "itemName": "Orthos Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "8666500cee4ceb2ca075f4e2b29a7920",
+            "itemName": "Citrine Prime Systems Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "27b3d3259c2f10457bd73f830ea67069",
+            "itemName": "Braton Prime Barrel",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "48fe1f6902db4e025280c5481068ae49",
+            "itemName": "Bronco Prime Receiver",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "4aefbe4aab8969115c99a5bb80424f5c"
+      },
+      "routes": [
+        {
+          "planet": "Mercury",
+          "node": "Apollodorus",
+          "gameMode": "Survival",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "b7dacd6e6f75ff7ac001e3a9b29257af",
+            "itemName": "Lith S19 Relic",
+            "rarity": "Rare",
+            "chance": 7.69
+          },
+          "officialHeading": "Mercury/Apollodorus (Survival)"
+        },
+        {
+          "planet": "Mercury",
+          "node": "Lares",
+          "gameMode": "Defense",
+          "rotation": "A",
+          "isEvent": false,
+          "row": {
+            "_id": "b7dacd6e6f75ff7ac001e3a9b29257af",
+            "itemName": "Lith S19 Relic",
+            "rarity": "Rare",
+            "chance": 9.09
+          },
+          "officialHeading": "Mercury/Lares (Defense)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:meso:a12",
+      "name": "Meso A12 Relic",
+      "tier": "Meso",
+      "number": "A12",
+      "upstream": {
+        "tier": "Meso",
+        "relicName": "A12",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "9df211334588bd54f29533faec5ff802",
+            "itemName": "Afentis Prime Blade",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "3535d5eed7720f117b9dee5baaa53af1",
+            "itemName": "Bronco Prime Barrel",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "757f0564a054758e392a5e50ff911d6b",
+            "itemName": "Voruna Prime Neuroptics Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "64f85f8ffff7d9ce68a774addc8ea2ba",
+            "itemName": "Sarofang Prime Handle",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "1d4a93ebd979a7ea3699066a275be94a",
+            "itemName": "Perigale Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "cbb217b589a6d5e9bf6c0d977995a0ca"
+      },
+      "routes": [
+        {
+          "planet": "Mercury",
+          "node": "Lares",
+          "gameMode": "Defense",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "3f7c57e354c092b04f6615f044856def",
+            "itemName": "Meso A12 Relic",
+            "rarity": "Rare",
+            "chance": 7.69
+          },
+          "officialHeading": "Mercury/Lares (Defense)"
+        },
+        {
+          "planet": "Mercury",
+          "node": "Odin",
+          "gameMode": "Interception",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "3f7c57e354c092b04f6615f044856def",
+            "itemName": "Meso A12 Relic",
+            "rarity": "Rare",
+            "chance": 5.56
+          },
+          "officialHeading": "Mercury/Odin (Interception)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:meso:v13",
+      "name": "Meso V13 Relic",
+      "tier": "Meso",
+      "number": "V13",
+      "upstream": {
+        "tier": "Meso",
+        "relicName": "V13",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "a674788804a65095dfd4fadaa1490ab4",
+            "itemName": "Venato Prime Blade",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "3e8719fda222b72b6f6fb71cb15c6e00",
+            "itemName": "Burston Prime Barrel",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "085dc2caa03edfdbf41d068efa6b72d0",
+            "itemName": "Caliban Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "74a6140f2c1bb7ec7ca14c64e5e3eef5",
+            "itemName": "Braton Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "48fe1f6902db4e025280c5481068ae49",
+            "itemName": "Bronco Prime Receiver",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "19c916a024c94e2fff62aad1b8f4edda"
+      },
+      "routes": [
+        {
+          "planet": "Mercury",
+          "node": "Lares",
+          "gameMode": "Defense",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "89692e5bad7f0aaad91050e8ce75402e",
+            "itemName": "Meso V13 Relic",
+            "rarity": "Rare",
+            "chance": 7.69
+          },
+          "officialHeading": "Mercury/Lares (Defense)"
+        },
+        {
+          "planet": "Mercury",
+          "node": "Odin",
+          "gameMode": "Interception",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "89692e5bad7f0aaad91050e8ce75402e",
+            "itemName": "Meso V13 Relic",
+            "rarity": "Rare",
+            "chance": 5.56
+          },
+          "officialHeading": "Mercury/Odin (Interception)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:meso:v17",
+      "name": "Meso V17 Relic",
+      "tier": "Meso",
+      "number": "V17",
+      "upstream": {
+        "tier": "Meso",
+        "relicName": "V17",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "f779c6ea92af1b1dc9011a3949e9b83e",
+            "itemName": "Voruna Prime Systems Blueprint",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "6b65b2d83a1cdc91c169e5c3949fb1f5",
+            "itemName": "Paris Prime Grip",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "f26f6851c1ab0465d385228e19981567",
+            "itemName": "Lavos Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "d04c14f2cf28e6707ccb2faae6d6b365",
+            "itemName": "Corufell Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "bd60f5414db72b77df25741fb54ccad1",
+            "itemName": "Akbronco Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "990958a5eb2bc8a48b70ead40f14f248"
+      },
+      "routes": [
+        {
+          "planet": "Mercury",
+          "node": "Lares",
+          "gameMode": "Defense",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "24ff40132e49e827b145235946e998b9",
+            "itemName": "Meso V17 Relic",
+            "rarity": "Rare",
+            "chance": 7.69
+          },
+          "officialHeading": "Mercury/Lares (Defense)"
+        },
+        {
+          "planet": "Mercury",
+          "node": "Odin",
+          "gameMode": "Interception",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "24ff40132e49e827b145235946e998b9",
+            "itemName": "Meso V17 Relic",
+            "rarity": "Rare",
+            "chance": 5.56
+          },
+          "officialHeading": "Mercury/Odin (Interception)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:neo:c10",
+      "name": "Neo C10 Relic",
+      "tier": "Neo",
+      "number": "C10",
+      "upstream": {
+        "tier": "Neo",
+        "relicName": "C10",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "a01e2194d22ec638e14cde901c746fc9",
+            "itemName": "Corufell Prime Receiver",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "42019f4e46cf624e639f03cf6d26a1ad",
+            "itemName": "Styanax Prime Systems Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "3efad7425a3edc25a3bca401dadea294",
+            "itemName": "Afentis Prime Barrel",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "40e2febc8810c68d9c79b57894928d4d",
+            "itemName": "Caliban Prime Chassis Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "c534d3c6c7c29b9891620a6411234912",
+            "itemName": "Braton Prime Stock",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "2cff2e2248a4da74e6049137b1bde7e0"
+      },
+      "routes": [
+        {
+          "planet": "Venus",
+          "node": "Romula",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "10e5b4019b79c2a1eab98a9d4cdd5ef5",
+            "itemName": "Neo C10 Relic",
+            "rarity": "Rare",
+            "chance": 1.84
+          },
+          "officialHeading": "Venus/Romula (Defense)"
+        },
+        {
+          "planet": "Earth",
+          "node": "Coba",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "10e5b4019b79c2a1eab98a9d4cdd5ef5",
+            "itemName": "Neo C10 Relic",
+            "rarity": "Rare",
+            "chance": 1.84
+          },
+          "officialHeading": "Earth/Coba (Defense)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:neo:c7",
+      "name": "Neo C7 Relic",
+      "tier": "Neo",
+      "number": "C7",
+      "upstream": {
+        "tier": "Neo",
+        "relicName": "C7",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "bf3e81ec9106c5af13d4461761424f3d",
+            "itemName": "Caliban Prime Neuroptics Blueprint",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "2f1a526a94cf4e5e64a3e8781f8dd3cf",
+            "itemName": "Daikyu Prime Upper Limb",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "d9f88efbe255d169fdb79408e93eea6b",
+            "itemName": "Vadarya Prime Receiver",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "fbd093234df1b676f811caa64a5e4381",
+            "itemName": "Kompressa Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "27b3d3259c2f10457bd73f830ea67069",
+            "itemName": "Braton Prime Barrel",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "3e10a50021a133695130fc118aba4b87"
+      },
+      "routes": [
+        {
+          "planet": "Venus",
+          "node": "Romula",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "8634cda748085c197b8d6caa2329fdbc",
+            "itemName": "Neo C7 Relic",
+            "rarity": "Rare",
+            "chance": 1.84
+          },
+          "officialHeading": "Venus/Romula (Defense)"
+        },
+        {
+          "planet": "Earth",
+          "node": "Coba",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "8634cda748085c197b8d6caa2329fdbc",
+            "itemName": "Neo C7 Relic",
+            "rarity": "Rare",
+            "chance": 1.84
+          },
+          "officialHeading": "Earth/Coba (Defense)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:neo:k10",
+      "name": "Neo K10 Relic",
+      "tier": "Neo",
+      "number": "K10",
+      "upstream": {
+        "tier": "Neo",
+        "relicName": "K10",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "8c3eb5e7c3acc6072d20440f2c58acc6",
+            "itemName": "Kompressa Prime Barrel",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "3287aecbf624c51485dbbde7a8115d41",
+            "itemName": "Venato Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "ee3ad24051b9b514797eb2ebaf206aae",
+            "itemName": "Daikyu Prime Lower Limb",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "c02f4f2d913f96493c8518cdf7248219",
+            "itemName": "Bronco Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "29d6d6e54807218cde498fd78a3da3be",
+            "itemName": "Gyre Prime Systems Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "db207eace236df4564d46241d533336a"
+      },
+      "routes": [
+        {
+          "planet": "Venus",
+          "node": "Romula",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "c52bd06c90b7b21a447d42bce80090a2",
+            "itemName": "Neo K10 Relic",
+            "rarity": "Rare",
+            "chance": 1.84
+          },
+          "officialHeading": "Venus/Romula (Defense)"
+        },
+        {
+          "planet": "Earth",
+          "node": "Coba",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "c52bd06c90b7b21a447d42bce80090a2",
+            "itemName": "Neo K10 Relic",
+            "rarity": "Rare",
+            "chance": 1.84
+          },
+          "officialHeading": "Earth/Coba (Defense)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:axi:a21",
+      "name": "Axi A21 Relic",
+      "tier": "Axi",
+      "number": "A21",
+      "upstream": {
+        "tier": "Axi",
+        "relicName": "A21",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "ff3c6fe717140cf36d17f502b0c96405",
+            "itemName": "Alternox Prime Stock",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "d17679371c2f5d199dedb75fd66b3128",
+            "itemName": "Voruna Prime Chassis Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "8ccd89edcf35a4a440935b3b9aee8531",
+            "itemName": "Cedo Prime Barrel",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "346b26c8bf197c415ac758b6c6894f04",
+            "itemName": "Styanax Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f7beacbe122fcccb6070344cbe7a60c3",
+            "itemName": "Vadarya Prime Stock",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "9ac33d8ef967d9645a4f1fa8ec44b05f"
+      },
+      "routes": [
+        {
+          "planet": "Mars",
+          "node": "Tyana Pass",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "c7c2d21e9527ea6371b518468f29a50c",
+            "itemName": "Axi A21 Relic",
+            "rarity": "Rare",
+            "chance": 7.9
+          },
+          "officialHeading": "Mars/Tyana Pass (Defense)"
+        },
+        {
+          "planet": "Jupiter",
+          "node": "Ganymede",
+          "gameMode": "Disruption",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "c7c2d21e9527ea6371b518468f29a50c",
+            "itemName": "Axi A21 Relic",
+            "rarity": "Rare",
+            "chance": 5
+          },
+          "officialHeading": "Jupiter/Ganymede (Disruption)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:axi:p10",
+      "name": "Axi P10 Relic",
+      "tier": "Axi",
+      "number": "P10",
+      "upstream": {
+        "tier": "Axi",
+        "relicName": "P10",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "f1c60efa353285c9a6571b88e24c3c4b",
+            "itemName": "Perigale Prime Barrel",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "0e3fbe815c79cfea9ea621f8d439125a",
+            "itemName": "Athodai Prime Receiver",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "fd3f77342b8b03fc9469e44f931eb1d5",
+            "itemName": "Lavos Prime Neuroptics Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "371732a7c5612bde4c88027a2224814d",
+            "itemName": "Fang Prime Blade",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "40e2febc8810c68d9c79b57894928d4d",
+            "itemName": "Caliban Prime Chassis Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "e4cc83ac5c7665225337f419caec6bf8"
+      },
+      "routes": [
+        {
+          "planet": "Mars",
+          "node": "Tyana Pass",
+          "gameMode": "Defense",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "4d09f9fba4f29774eba886ba16551f78",
+            "itemName": "Axi P10 Relic",
+            "rarity": "Rare",
+            "chance": 7.9
+          },
+          "officialHeading": "Mars/Tyana Pass (Defense)"
+        },
+        {
+          "planet": "Jupiter",
+          "node": "Ganymede",
+          "gameMode": "Disruption",
+          "rotation": "C",
+          "isEvent": false,
+          "row": {
+            "_id": "4d09f9fba4f29774eba886ba16551f78",
+            "itemName": "Axi P10 Relic",
+            "rarity": "Rare",
+            "chance": 5
+          },
+          "officialHeading": "Jupiter/Ganymede (Disruption)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    },
+    {
+      "id": "relic:axi:s8",
+      "name": "Axi S8 Relic",
+      "tier": "Axi",
+      "number": "S8",
+      "upstream": {
+        "tier": "Axi",
+        "relicName": "S8",
+        "state": "Intact",
+        "rewards": [
+          {
+            "_id": "b08a274cab1ed295fa20cdf977e0dac8",
+            "itemName": "Scindo Prime Blade",
+            "rarity": "Rare",
+            "chance": 2
+          },
+          {
+            "_id": "1d58b996a075ba13126e794ebdcad70e",
+            "itemName": "Venka Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "27671ce5061f68c945c5791ffcd018ac",
+            "itemName": "Nyx Prime Chassis Blueprint",
+            "rarity": "Uncommon",
+            "chance": 11
+          },
+          {
+            "_id": "9f4cff0612ac47cdea7a21943b6acbe9",
+            "itemName": "Cernos Prime Grip",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "832651c58c3e75e7b3aba8324e844965",
+            "itemName": "Hikou Prime Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          },
+          {
+            "_id": "f1d3923651587359f9444f183330e4c2",
+            "itemName": "Forma Blueprint",
+            "rarity": "Uncommon",
+            "chance": 25.33
+          }
+        ],
+        "_id": "c23495bf252ea97faced78b83bc7de00"
+      },
+      "routes": [
+        {
+          "planet": "Pluto",
+          "node": "Khufu Envoy (Caches)",
+          "gameMode": "Caches",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "54fc42a289866b50242463c3c9e06bb1",
+            "itemName": "Axi S8 Relic",
+            "rarity": "Rare",
+            "chance": 9.09
+          },
+          "officialHeading": "Pluto/Khufu Envoy (Caches)"
+        },
+        {
+          "planet": "Pluto",
+          "node": "Seven Sirens (Caches)",
+          "gameMode": "Caches",
+          "rotation": "B",
+          "isEvent": false,
+          "row": {
+            "_id": "54fc42a289866b50242463c3c9e06bb1",
+            "itemName": "Axi S8 Relic",
+            "rarity": "Rare",
+            "chance": 9.09
+          },
+          "officialHeading": "Pluto/Seven Sirens (Caches)"
+        }
+      ],
+      "rewardRowsOfficialEqual": true,
+      "variantRewardSetsEqual": true
+    }
+  ]
+}

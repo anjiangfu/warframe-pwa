@@ -1,0 +1,109 @@
+{
+  "base": "81cd6128c0b43f378ad1e3d3ed8ec7ca47d3eac2",
+  "checkedAt": "2026-10-21T07:15:59.213713+00:00",
+  "count": 17,
+  "results": [
+    {
+      "path": "AGENTS.md",
+      "before": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a",
+      "after": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "before": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09",
+      "after": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09",
+      "unchanged": true
+    },
+    {
+      "path": "data/tech-tree-seed.json",
+      "before": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2",
+      "after": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Budget_and_Workflow.md",
+      "before": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de",
+      "after": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Code_Review_Tech_Tree.md",
+      "before": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6",
+      "after": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/M0_Implementation_Plan.md",
+      "before": "45d0be1f8deaac1a4cd4a0b4b258bf9a8b3b6f1199bbb2b6ee94b2c22d6f13c7",
+      "after": "45d0be1f8deaac1a4cd4a0b4b258bf9a8b3b6f1199bbb2b6ee94b2c22d6f13c7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Original_PRD_v1.md",
+      "before": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16",
+      "after": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16",
+      "unchanged": true
+    },
+    {
+      "path": "docs/PRD_v2_Architecture.md",
+      "before": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b",
+      "after": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Research_and_Reuse.md",
+      "before": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7",
+      "after": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Short_Action_Sequence.md",
+      "before": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110",
+      "after": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110",
+      "unchanged": true
+    },
+    {
+      "path": "docs/TennoHub_Audit_Result.md",
+      "before": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7",
+      "after": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/TennoHub_Initial_Audit_2026-10-16.md",
+      "before": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4",
+      "after": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/LowCost-Agent.md",
+      "before": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4",
+      "after": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/M0-Codex.md",
+      "before": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13",
+      "after": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/TennoHub-Audit-Codex-Next.md",
+      "before": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b",
+      "after": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/TennoHub-Audit-Codex.md",
+      "before": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9",
+      "after": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9",
+      "unchanged": true
+    },
+    {
+      "path": "reference/Original_Tech_Tree.html",
+      "before": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef",
+      "after": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef",
+      "unchanged": true
+    }
+  ]
+}
