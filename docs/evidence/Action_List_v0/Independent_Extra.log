@@ -1,0 +1,16 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/_independent-hex-draft.spec.ts --retries=0 --reporter=line
+
+
+[WebServer] (node:25124) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+
+(node:15592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\_independent-hex-draft.spec.ts:4:1 › saving a target must preserve an unsaved rank and standing draft
+  1 passed (3.3s)

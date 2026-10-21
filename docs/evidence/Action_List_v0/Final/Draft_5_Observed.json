@@ -1,0 +1,85 @@
+{
+  "rank": "4",
+  "standing": "12345",
+  "review": "confirmed",
+  "persisted": [
+    {
+      "id": "09be9fcd-2f61-4940-bef6-d32c2a5773ef",
+      "revision": 2,
+      "name": "空白行动档案",
+      "masteryRank": null,
+      "targetRank": null,
+      "dailyMinutes": null,
+      "mainFrame": "",
+      "statuses": {
+        "origin": "todo",
+        "torid": "todo",
+        "toridmax": "todo",
+        "shieldfix": "todo",
+        "arsenal": "todo",
+        "valkyr": "todo",
+        "valkyrbuild": "todo",
+        "utility": "todo",
+        "framefinal": "todo",
+        "mr12": "todo",
+        "mr14": "todo",
+        "mr16": "todo",
+        "mr18": "todo",
+        "blueprint": "todo",
+        "helminth": "todo",
+        "subsume": "todo",
+        "systemsfinal": "todo",
+        "steel": "todo",
+        "galvanized": "todo",
+        "archon": "todo",
+        "weekly": "todo",
+        "repstart": "todo",
+        "entrati": "todo",
+        "repgear": "todo",
+        "repfinal": "todo",
+        "compstart": "todo",
+        "bondmods": "todo",
+        "compbuild": "todo",
+        "compfinal": "todo"
+      },
+      "steps": {},
+      "notes": {},
+      "stock": {
+        "credits": null,
+        "endo": null,
+        "forma": null,
+        "platinum": null
+      },
+      "budget": {},
+      "events": [
+        {
+          "time": "2026-10-21T09:13:16.198Z",
+          "text": "设置集团目标等级"
+        },
+        {
+          "time": "2026-10-21T09:13:16.155Z",
+          "text": "更新集团等级与当前声望"
+        }
+      ],
+      "customNodes": [],
+      "legacyArchive": {},
+      "originals": [],
+      "personalFacts": {
+        "syndicate:hex:rank": {
+          "value": 3,
+          "recordedAt": "2026-10-21T09:13:16.155Z"
+        },
+        "syndicate:hex:standing": {
+          "value": 65000,
+          "recordedAt": "2026-10-21T09:13:16.155Z"
+        }
+      },
+      "syndicateTargets": {
+        "syndicate:hex": 5
+      },
+      "goalStates": {
+        "goal:syndicate:hex": "focused"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "addedE2E": "app/e2e/actions.spec.ts",
+  "originalFormalBrowserTests": 37,
+  "packageAndLockUnchanged": true,
+  "diffExitCode": 0,
+  "addedUnit": "app/src/test/actions.test.ts",
+  "existingE2EAndUnitSourcesUnchanged": true,
+  "base": "d405b7e3712885f1796b9fc81d7d1ae3442be11b",
+  "originalUnitTests": 80
+}

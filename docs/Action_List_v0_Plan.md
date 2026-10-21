@@ -10,9 +10,9 @@
 
 新增按钮导航前按既有脏表单口径检查，未保存则明确阻止并保留输入，不能自动保存。跨页广播/revision/更新保护沿用；切档重建局部视图，展开/查看仅本地UI状态。无profile/DB/schema/catalog变动，无外部接口、依赖或游戏事实。
 
-- [ ] G0：范围、保护17hash、目录/持久结构及原dist快照提交。
-- [ ] G1：domain/actions.ts及actions.test.ts先失败，适配现有引擎、排序、未知贡献、未关联/失联记录；原80单元保留并测试提交。
-- [ ] G2：ActionOverview.tsx、GoalAssistant及必要App回调/WeaponAssistant阶段定位/CSS；先正式浏览器失败，再实现前三/全部、入口、脏表单、跨页/切档/离线，只读验证后提交。
-- [ ] G3：完整lint/test/typecheck/build及原37正式浏览器+新增回归；旧独立Hex复现另计。17hash、29/87、完整备份/容量深度/保存失败/中断更新回归；README、许可/验收记录与独立证据，本地提交后停工。
+- [x] G0：范围、保护17hash、目录/持久结构及原dist快照提交。d0b1531c48127daa9736942c4f6055b71c1b28bb。
+- [x] G1：domain/actions.ts及actions.test.ts先失败，适配现有引擎、排序、未知贡献、未关联/失联记录；原80单元保留并测试提交。2de154f5b815deb2168b0174937e7fd48aaa967b，91/91单元。
+- [x] G2：ActionOverview.tsx、GoalAssistant及必要App回调/WeaponAssistant阶段定位/CSS；先正式浏览器失败，再实现前三/全部、入口、脏表单、跨页/切档/离线，只读验证后提交。f7ee1f65f73af43a5cf780493496f3a81848ac2e，6/6新增生产浏览器、91/91单元、lint/build通过。
+- [x] G3：完整lint/test/typecheck/build及原37正式浏览器+新增6项，共43/43；91/91单元，旧独立Hex复现另计1/1。17hash、29/87、完整备份/容量深度/保存失败/中断更新回归通过；README、许可/验收记录与独立证据完成，原app正常构建和隔离正常构建9文件相同。最终本地提交后停工，完整hash见交付回复。
 
 所有测试构建在忽略目录.v/ac/app，独立dist/4186/短Chrome目录，依赖仅联接已安装目录。原app/dist在全部临时SW测试前后hash必须一致；最后全部通过后才原app正常正式build。证据仅docs/evidence/Action_List_v0，不覆盖旧交付、审阅work/outputs、原件或真实数据库。不停止4194等服务，不推送/合并/部署/付费/第三方AI/系统更改或自动循环。Android/HTTPS安装/OS安装及游戏实测无证据仍未验。

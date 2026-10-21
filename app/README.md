@@ -231,3 +231,15 @@ node scripts/run-quality.mjs
 为避免测试临时SW版本影响4194，本轮所有自动化构建及浏览器升级测试都在忽略目录 `.v/mg/app` 执行，复用现有依赖，独立dist/4186/短Chrome测试目录。原app/dist在测试前后hash一致；只在最后通过回归后于原app做正常正式构建。隔离准备脚本和完整复跑条件见 `../docs/Material_Guides_v1_Acceptance.md`，不要直接在原app运行会重建v1/v2的浏览器全套测试来影响正在使用的服务。
 
 资料逐项核查见 `../docs/Material_Guides_v1_Sources.md`；独立证据前缀为 `../docs/evidence/Material_Guides_v1/`，保留旧验收。Android真机、可信HTTPS安装、Windows系统安装及游戏内掉落实测尚未执行；桌面360/412截图只证明桌面视口。本轮本地交付后停止，等待独立复核。
+
+## 行动清单 v0（2026-10-21）
+
+打开“养成助手”或 `http://127.0.0.1:4194/#assistant`，顶部从当前已保存目标和记录派生下一步行动。关注目标优先，其余按目录顺序；默认前三条，可以展开全部。空白档案不注入历史武器、集团等级或90分钟预算。每条说明目标、下一步、原因、现有地点/模式或核对入口和未知事项；点击可以查看已有攻略、制作需求、晋升条件及材料详情。
+
+完成、暂缓和已确认安装的系统不重复安排，六人组只看当前下一阶。共同材料从同一引擎合计后只抵扣一次库存；已知共享缺项和其他未知项可同时存在。没有整理的需求使汇总不完整，不视为0。这里只显示保存的每日预算（包括明确0）；耗时未估，不推荐局数、收益或晋升天数。查看、排序和跳转不保存派生结果，也不自动扣料或完成进度。
+
+如跳转发现未保存输入，会保留草稿并阻止跳转。请先明确保存，或按现有冲突提示重新载入后处理；不会把事实草稿随目标一起保存。跨页改变数量、库存、等级、完成/暂缓/恢复后重新计算；旧revision仍拒绝覆盖。完整备份格式、DB版本、目录版本及原29节点/87步骤不变；不迁移个人数据。旧页面按SW提示保存后更新，勿清库。
+
+本轮测试仅在 `.v/ac/app` 隔离副本执行，端口4186和短Chrome测试目录与真实档案分开。原app/dist在临时v1/v2测试全过程保持原hash，全部验证后才正常生产构建。独立复跑先从项目根执行 `docs/evidence/Action_List_v0/prepare-isolated.py`（Python3），缺少隔离node_modules时仅联接现有app/node_modules；再于隔离app设APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR及M0_EVIDENCE_DIR指向新的绝对证据目录，M0_EVIDENCE_PREFIX使用新前缀，执行 `node scripts/run-quality.mjs`。不要在正在提供4194的原app直接运行临时SW升级测试。
+
+本地启动沿用 `npm.cmd run build` 和 `npm.cmd run preview -- --host 127.0.0.1 --port 4194 --strictPort`；已有4194服务时不重复启动。不同端口/浏览器档案隔离，带入旧档先在原地址导出，再在新地址预览并明确新建恢复。结果与未验项见 `../docs/Action_List_v0_Acceptance.md`；本轮不增加资料、联网或依赖，交付后停工待独立复核。

@@ -1,0 +1,15 @@
+{
+  "port": 4194,
+  "startedPid": 29180,
+  "homeStatus": 200,
+  "url": "http://127.0.0.1:4194/#assistant",
+  "normalOriginalDistOnly": true,
+  "bindAddress": "127.0.0.1",
+  "checkedAt": "2026-10-21T09:15:38.8268488Z",
+  "build": {
+    "build": "m0-8ead65550296",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "existingServicesStopped": false
+}
