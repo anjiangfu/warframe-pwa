@@ -1,0 +1,13 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/ac/app
+
+
+ Test Files  11 passed (11)
+      Tests  91 passed (91)
+   Start at  15:22:54
+   Duration  3.22s (tests 66%, import 22%, transform 10%, worker 2%)
+

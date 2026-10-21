@@ -1,0 +1,19 @@
+
+> tenno-local-planner@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 47 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.54 kB │ gzip:   0.38 kB
+dist/assets/index-0E7Hp-P9.css   26.96 kB │ gzip:   6.75 kB
+dist/assets/index-CA9P2c3n.js   513.68 kB │ gzip: 158.12 kB
+
+✓ built in 667ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

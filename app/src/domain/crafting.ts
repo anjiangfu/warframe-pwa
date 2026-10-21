@@ -1,6 +1,6 @@
 import {syndicateContributions,type SyndicateCatalog} from './syndicates';
 import type {ProfileDocument} from './model';
-import type {GoalCatalog,GoalDefinition} from './goals';
+import {evaluateGoal,type GoalCatalog,type GoalDefinition} from './goals';
 import {progressOf,type WeaponCatalog} from './weapon';
 export interface CheckedAmount {quantity:number|null;verification:'verified'|'unverified'|'conflicting';sourceIds:string[];checkedAt:string}
 export interface Recipe {id:string;title:string;output:CheckedAmount&{resourceId:string};inputs:(CheckedAmount&{resourceId:string})[];prerequisites:string[];sourceIds:string[]}
@@ -34,7 +34,22 @@ export function planRecipe(recipe:Recipe|undefined,quantity:number,stock:Profile
 }
 export interface SummaryLine extends RequirementLine {knownSubtotal:number|null;contributors:{id:string;title:string;required:number|null}[]}
 export interface RequirementContribution {id:string;title:string;kind:'crafting'|'installation'|'syndicate';lines:RequirementLine[];issues:string[];prerequisites:string[];requirementsComplete:boolean}
-export function currentRequirements(c:Readonly<CraftingCatalog>,p:ProfileDocument,w:Readonly<WeaponCatalog>,g:Readonly<GoalCatalog>,s?:Readonly<SyndicateCatalog>):RequirementContribution[]{return [...currentPlans(c,p,w,g),...s?syndicateContributions(s,p):[]];}
+export function currentRequirements(c:Readonly<CraftingCatalog>,p:ProfileDocument,w:Readonly<WeaponCatalog>,g:Readonly<GoalCatalog>,s?:Readonly<SyndicateCatalog>):RequirementContribution[]{
+ const plans:RequirementContribution[]=[...currentPlans(c,p,w,g),...s?syndicateContributions(s,p):[]];
+ const unknown=(id:string,title:string,reason:string)=>{if(!plans.some(x=>x.id===id))plans.push({id,title,kind:'installation',lines:[],issues:[reason],prerequisites:[],requirementsComplete:false});};
+ // Unknown current needs must reach the same summary used by every page.
+ for(const goal of g.goals){
+  const recorded=p.goalStates?.[goal.id]==='focused'||!!(goal.factId&&p.personalFacts?.[goal.factId])||!!(goal.weaponId&&p.weaponProgress?.[goal.weaponId]);
+  if(!recorded||['crafting','syndicate'].includes(goal.kind)||plans.some(x=>x.id===goal.id))continue;
+  const evaluation=evaluateGoal(goal,p,w,c,s);
+  if(['completed','deferred','operation'].includes(evaluation.kind)||goal.weaponId&&p.weaponProgress?.[goal.weaponId]?.installed===true)continue;
+  unknown(goal.id,goal.title,'本目标需求尚未确认或未整理，不按0计入共享用量；请核对目标/关注状态');
+ }
+ const known=new Set([...g.goals.map(x=>x.id),...Object.keys(p.craftingTargets??{}).map(craftGoalId),...Object.keys(p.syndicateTargets??{}).map(id=>'goal:'+id)]);
+ for(const [id,state] of Object.entries(p.goalStates??{}))if(state==='focused'&&!known.has(id))unknown(id,'旧目标引用待匹配','目标目录引用缺失，需求未知，旧记录保留');
+ for(const id of Object.keys(p.weaponProgress??{}))if(!g.goals.some(x=>x.weaponId===id)&&!['done','deferred'].includes(p.goalStates?.['record:'+id]??''))unknown('record:'+id,'旧武器引用待匹配','武器记录失去目录关联，需求未知，旧记录保留');
+ return plans;
+}
 export function summarizePlans(plans:RequirementContribution[],stock:ProfileDocument['stock']){
  const map=new Map<string,{sum:bigint;incomplete:boolean;contributors:SummaryLine['contributors']}>();const issues=plans.flatMap(p=>p.issues.map(text=>p.title+'：'+text));
  for(const p of plans)for(const l of p.lines){const item=map.get(l.resourceId)??{sum:0n,incomplete:false,contributors:[]};if(l.required===null)item.incomplete=true;else item.sum+=BigInt(l.required);item.contributors.push({id:p.id,title:p.title,required:l.required});map.set(l.resourceId,item);}

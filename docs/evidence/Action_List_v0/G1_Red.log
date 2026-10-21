@@ -1,0 +1,24 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/actions.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/ac/app
+
+ ❯ src/test/actions.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/actions.test.ts [ src/test/actions.test.ts ]
+Error: Cannot find module '../domain/actions' imported from D:/wf/Warframe_PWA_Handoff_20261016/.v/ac/app/src/test/actions.test.ts
+ ❯ src/test/actions.test.ts:4:1
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  15:18:03
+   Duration  636ms (worker 99%, environment 1%)
+

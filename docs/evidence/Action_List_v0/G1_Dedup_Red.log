@@ -1,0 +1,32 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/actions.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/ac/app
+
+ ❯ src/test/actions.test.ts (11 tests | 1 failed) 16ms
+   × one orphan record referenced by a saved focus has one action and one unknown contribution 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/actions.test.ts > one orphan record referenced by a saved focus has one action and one unknown contribution
+AssertionError: expected [ { …(8) }, { …(8) } ] to have a length of 1 but got 2
+
+- Expected
++ Received
+
+- 1
++ 2
+
+ ❯ src/test/actions.test.ts:51:273
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 passed (11)
+   Start at  15:22:22
+   Duration  282ms (transform 47%, import 36%, tests 13%, worker 4%)
+
