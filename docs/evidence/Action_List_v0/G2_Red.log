@@ -1,0 +1,48 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/actions.spec.ts --grep blank action --reporter=line
+
+
+[WebServer] (node:34892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+
+(node:27844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\actions.spec.ts:17:1 › blank action list has no historical facts; focus sorting, top three, expansion and browsing are read only
+  1) e2e\actions.spec.ts:17:1 › blank action list has no historical facts; focus sorting, top three, expansion and browsing are read only 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('region', { name: '行动清单', exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('region', { name: '行动清单', exact: true }) with timeout 5000ms
+      - waiting for getByRole('region', { name: '行动清单', exact: true })
+
+
+      11 |  await page.goto('/#assistant');await page.getByRole('button',{name:'从空白档案开始',exact:true}).click();await expect(page.getByRole('status')).toContainText('已创建');const id=await page.getByLabel('切换档案').inputValue();
+      12 |  // Only this Playwright context's synthetic database is seeded, before assertions.
+    > 13 |  await page.evaluate(([id,patch])=>new Promise<void>((resolve,reject)=>{const r=indexedDB.open('tenno-planner');r.onerror=()=>reject(r.error);r.onsuccess=()=>{const db=r.result,tx=db.transaction('profiles','readwrite'),store=tx.objectStore('profiles'),get=store.get(id);get.onsuccess=()=>{const p=get.result;Object.assign(p,patch);p.revision++;store.put(p);};tx.oncomplete=()=>{db.close();resolve();};tx.onabort=()=>reject(tx.error);};}),[id,patch] as const);await page.reload();await expect(overview(page)).toBeVisible();return id;
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+      14 | }
+      15 | const sharedFixture:Partial<ProfileDocument>={craftingTargets:{'recipe:forma':1},syndicateTargets:{'syndicate:hex':5},goalStates:{'crafting:recipe:forma':'focused','goal:syndicate:hex':'focused'},stock:{credits:100000},personalFacts:{'syndicate:hex:rank':{value:3,recordedAt:'t'},'syndicate:hex:standing':{value:0,recordedAt:'t'}}};
+      16 |
+        at create (D:\wf\Warframe_PWA_Handoff_20261016\.v\ac\app\e2e\actions.spec.ts:13:509)
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\ac\app\e2e\actions.spec.ts:18:2
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\actions-blank-action-list--b0b6a--and-browsing-are-read-only\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\actions-blank-action-list--b0b6a--and-browsing-are-read-only\error-context.md
+
+
+  1 failed
+    e2e\actions.spec.ts:17:1 › blank action list has no historical facts; focus sorting, top three, expansion and browsing are read only 

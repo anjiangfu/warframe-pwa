@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import {deriveActions,type ActionItem} from '../domain/actions';
+import {ActionOverview} from './ActionOverview';
 import type {ProfileDocument} from '../domain/model';
 import {evaluateGoal,pendingGoals,type GoalCatalog,type ProgressPreview,type GoalState} from '../domain/goals';
 import type {WeaponCatalog} from '../domain/weapon';
@@ -9,16 +11,29 @@ import {ProgressDraft} from './ProgressDraft';
 import type {CraftingCatalog} from '../domain/crafting';
 import type {MaterialSource} from '../domain/material-reference';
 import type {ResourceCatalog} from '../domain/resources';
-type Props={syndicates:Readonly<SyndicateCatalog>;openSyndicate:(id:string)=>void;crafting?:Readonly<CraftingCatalog>;resources?:Readonly<ResourceCatalog>;openCraft?:(id:string)=>void;openMaterial?:(id:string,source:MaterialSource)=>void;goals:Readonly<GoalCatalog>;weapons:Readonly<WeaponCatalog>;profile:ProfileDocument;profiles:ProfileDocument[];initialGoalId?:string;busy:boolean;load:(id:string)=>Promise<ProfileDocument|undefined>;applyDraft:(preview:ProgressPreview,selected:string[])=>Promise<boolean>;mutate:(edit:(p:ProfileDocument)=>void,description:string)=>Promise<boolean>;onError:(text:string)=>void;openTree:(id:string)=>void};
+type Props={openShared:()=>void;openBackup:()=>void;syndicates:Readonly<SyndicateCatalog>;openSyndicate:(id:string)=>void;crafting?:Readonly<CraftingCatalog>;resources?:Readonly<ResourceCatalog>;openCraft?:(id:string)=>void;openMaterial?:(id:string,source:MaterialSource)=>void;goals:Readonly<GoalCatalog>;weapons:Readonly<WeaponCatalog>;profile:ProfileDocument;profiles:ProfileDocument[];initialGoalId?:string;busy:boolean;load:(id:string)=>Promise<ProfileDocument|undefined>;applyDraft:(preview:ProgressPreview,selected:string[])=>Promise<boolean>;mutate:(edit:(p:ProfileDocument)=>void,description:string)=>Promise<boolean>;onError:(text:string)=>void;openTree:(id:string)=>void};
 const labels={completed:'已完成',deferred:'已暂缓',operation:'操作挑战待完成','missing-item':'缺已知物品','missing-material':'缺已知材料',unknown:'信息待确认',ready:'参考用量已满足'};
-export function GoalAssistant({goals,weapons,crafting,resources,syndicates,openSyndicate,openCraft,openMaterial,profile,profiles,initialGoalId,busy,load,applyDraft,mutate,onError,openTree}:Props){
+export function GoalAssistant({openShared,openBackup,goals,weapons,crafting,resources,syndicates,openSyndicate,openCraft,openMaterial,profile,profiles,initialGoalId,busy,load,applyDraft,mutate,onError,openTree}:Props){
  const [selected,setSelected]=useState(initialGoalId??pendingGoals(goals.goals,profile,weapons,crafting,syndicates)[0]?.id??goals.goals[0]?.id),[material,setMaterial]=useState<string>();
  const goal=goals.goals.find(g=>g.id===selected)??goals.goals[0];if(!goal)return <p>暂无匹配目标，旧记录已保留。</p>;
  const result=evaluateGoal(goal,profile,weapons,crafting,syndicates),pending=pendingGoals(goals.goals,profile,weapons,crafting,syndicates),fact=goal.factId?profile.personalFacts?.[goal.factId]:undefined;
  const hex=syndicates.syndicates.find(d=>d.id==='syndicate:hex'),rankup=goal.syndicateId?evaluateSyndicate(syndicates,profile,goal.syndicateId):undefined;
  function select(id:string){setSelected(id);setMaterial(undefined);}
+ const overview=crafting&&resources?deriveActions(profile,{goals,weapons,crafting,resources,syndicates}):undefined;
+ function navigateAction(run:()=>void){
+  const dirty=!!document.querySelector('form[data-dirty=true]')||[...document.querySelectorAll<HTMLInputElement|HTMLTextAreaElement>('form input:not([type=checkbox]),form textarea')].some(el=>el.type!=='file'&&el.value!==el.defaultValue);
+  if(dirty){onError('行动跳转未执行：有未保存表单，请先保存或处理上方档案冲突提示。输入已保留。');return;}run();
+ }
+ function openAction(item:ActionItem){navigateAction(()=>{
+  if(!item.goal){openBackup();return;}
+  if(item.goal.kind==='crafting'){openCraft?.(item.goal.recipeId!);return;}
+  if(item.goal.kind==='syndicate'){openSyndicate(item.goal.syndicateId!);return;}
+  select(item.id);requestAnimationFrame(()=>{const target=item.stageId?[...document.querySelectorAll<HTMLElement>('[data-stage-id]')].find(el=>el.dataset.stageId===item.stageId):document.querySelector<HTMLElement>('.goal-blocker');target?.scrollIntoView({block:'start'});});
+ });}
+ function openActionMaterial(item:ActionItem,id:string){navigateAction(()=>{const material=item.materials.find(m=>m.id===id);if(material?.source){openMaterial?.(id,material.source);return;}select(item.id);setMaterial(id);requestAnimationFrame(()=>document.querySelector('.material-detail')?.scrollIntoView({block:'start'}));});}
  const saveFact=(id:string,value:boolean|number|null,extras={})=>mutate(p=>{p.personalFacts??={};p.personalFacts[id]={...p.personalFacts[id],value,recordedAt:new Date().toISOString(),...extras};},'更新手工事实声明');
  return <section className="goal-assistant"><header className="section-heading"><div><p className="eyebrow">目标 → 当前卡点 → 下一步行动</p><h2>通用目标助手</h2><p>按你的手工记录解释下一步，不读取游戏账号，不按未知资料计算天数。</p></div><span className="guide-version">资料 {goals.catalogVersion}</span></header>
+ {overview&&<ActionOverview model={overview} busy={busy} openGoal={openAction} openMaterial={openActionMaterial} openShared={()=>navigateAction(openShared)} openBackup={()=>navigateAction(openBackup)} browse={()=>navigateAction(()=>{select(goals.goals[0].id);requestAnimationFrame(()=>document.querySelector('.goal-blocker')?.scrollIntoView({block:'start'}));})}/>}
  <div className="goal-selector panel"><label>当前查看目标<select aria-label="当前目标" value={goal.id} onChange={e=>select(e.target.value)}>{goals.goals.map(g=><option value={g.id} key={g.id}>{g.title} · {labels[evaluateGoal(g,profile,weapons,crafting,syndicates).kind]}</option>)}</select></label><label>目标安排<select aria-label="目标安排" value={profile.goalStates?.[goal.id]??'available'} onChange={e=>{const status=e.target.value;void mutate(p=>{if(status==='available'){if(p.goalStates)delete p.goalStates[goal.id];}else{p.goalStates??={};p.goalStates[goal.id]=status as GoalState;}},'调整整体目标声明');}}><option value="available">待核对</option><option value="focused">关注</option><option value="done">整体目标已完成</option><option value="deferred">暂缓</option></select></label></div>
  <section className="panel goal-blocker" aria-label="当前目标卡点"><span className={'goal-kind '+result.kind}>{labels[result.kind]}</span><h3>{goal.title}</h3><p>{goal.summary}</p><h4>建议下一步</h4><p className="goal-action" data-testid="goal-action">{result.action}</p><h4>为什么</h4><p>{result.reason}</p>{result.unknowns.length>0&&<><h4>未确认事项</h4><ul>{result.unknowns.map(x=><li key={x}>{x}</li>)}</ul></>}{result.kind==='operation'&&<p>当前是操作挑战，不列安装材料为本次任务需求。</p>}
  {result.materials.length>0&&<div className="goal-materials">{result.materials.map(m=><button key={m.id} onClick={()=>{if(goal.kind==='crafting')openMaterial?.(m.id,{kind:'assistant',goalId:goal.id});else if(goal.kind==='syndicate'&&rankup?.step)openMaterial?.(m.id,{kind:'syndicate',syndicateId:goal.syndicateId!,stepId:rankup.step.id});else setMaterial(m.id);}}>查看缺项 {resources?.resources.find(x=>x.id===m.id)?.name??weapons.materials.find(x=>x.id===m.id)?.name??m.id}<small>需{m.required} / 持有{m.owned??'未知'} / 缺口{m.deficit??'未知'}</small></button>)}</div>}

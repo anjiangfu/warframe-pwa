@@ -1,0 +1,21 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/actions.spec.ts --reporter=line
+
+
+[WebServer] (node:32032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+
+(node:27524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/6] e2e\actions.spec.ts:17:1 › blank action list has no historical facts; focus sorting, top three, expansion and browsing are read only
+[2/6] e2e\actions.spec.ts:24:1 › completed and installed targets are excluded; operation and unverified material links use existing guides
+[3/6] e2e\actions.spec.ts:32:1 › shared entry uses one deduction and follows quantity, inventory, next rank and goal status across pages
+[4/6] e2e\actions.spec.ts:41:1 › action navigation preserves unsaved facts, stale writes fail and profile switches do not leak actions
+[5/6] e2e\actions.spec.ts:47:1 › full backup restores business state and derived actions reopen offline with desktop and mobile views
+[6/6] e2e\actions.spec.ts:53:1 › unsaved overview facts block a production update; cancel keeps the draft and later update retains explicit save
+  6 passed (19.2s)

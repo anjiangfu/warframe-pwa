@@ -1,0 +1,29 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/actions.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/ac/app
+
+ ❯ src/test/actions.test.ts (11 tests | 1 failed) 17ms
+   × crafting plus the next Hex rank share exactly the existing calculation, not summed independent deficits 7ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/actions.test.ts > crafting plus the next Hex rank share exactly the existing calculation, not summed independent deficits
+AssertionError: expected '蓝图为单次消耗，持有张数另列；不要由科技树状态推断。铸造厂、裂缝及相关地图…' not to contain 'blueprint:'
+
+Expected: "blueprint:"
+Received: "蓝图为单次消耗，持有张数另列；不要由科技树状态推断。铸造厂、裂缝及相关地图是否开放未确认。材料满足只表示已知投入足够；开始制作前请核对当前游戏界面。blueprint:福马（Forma）库存未知非晶态合金（Morphics）库存未知神经传感器（Neural Sensors）库存未知神经元（Neurodes）库存未知奥罗金电池（Orokin Cell）库存未知地图与任务开放尚未确认，材料够用不等于可以进入或完成地图与任务开放尚未确认，材料够用不等于可以进入或完成祭品与货币记录或资料未知任务记录或资料未知关系记录或资料未知科腐者几丁质持有量未知殁世线圈持有量未知艾弗旺样本持有量未知"
+
+ ❯ src/test/actions.test.ts:22:90
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 passed (11)
+   Start at  17:09:19
+   Duration  302ms (transform 49%, import 35%, tests 12%, worker 4%)
+

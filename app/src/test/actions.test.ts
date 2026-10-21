@@ -19,7 +19,7 @@ it('explicit focus sorts before stable catalog order and returned items are not 
 it('crafting plus the next Hex rank share exactly the existing calculation, not summed independent deficits',()=>{
  const p=profile();p.craftingTargets={'recipe:forma':1};p.syndicateTargets={'syndicate:hex':5};p.personalFacts={'syndicate:hex:rank':{value:3,recordedAt:'t'},'syndicate:hex:standing':{value:0,recordedAt:'t'}};p.stock.credits=100000;
  const a=deriveActions(p,catalogs),expected=summarizePlans(currentRequirements(catalogs.crafting,p,catalogs.weapons,catalogs.goals,catalogs.syndicates),p.stock);
- expect(a.summary).toEqual(expected);const credit=a.summary.rows.find(x=>x.resourceId==='credits')!;expect(credit.required).toBe(135000);expect(credit.deficit).toBe(35000);expect(a.summary.rows.some(x=>x.resourceId==='material:techrot-motherboard')).toBe(false);expect(a.contributors).toHaveLength(2);
+ expect(a.summary).toEqual(expected);expect(a.items.flatMap(x=>x.unknowns).join('')).not.toContain('blueprint:');const credit=a.summary.rows.find(x=>x.resourceId==='credits')!;expect(credit.required).toBe(135000);expect(credit.deficit).toBe(35000);expect(a.summary.rows.some(x=>x.resourceId==='material:techrot-motherboard')).toBe(false);expect(a.contributors).toHaveLength(2);
  p.stock.credits=null;expect(deriveActions(p,catalogs).summary.rows.find(x=>x.resourceId==='credits')!.deficit).toBeNull();
 });
 it('Hex missing materials and unknown task, relationship and entry conditions remain visible together',()=>{

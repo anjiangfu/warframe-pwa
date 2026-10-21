@@ -1,0 +1,52 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/actions.spec.ts --reporter=line
+
+
+[WebServer] (node:15712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:4084) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/6] e2e\actions.spec.ts:17:1 › blank action list has no historical facts; focus sorting, top three, expansion and browsing are read only
+[2/6] e2e\actions.spec.ts:24:1 › completed and installed targets are excluded; operation and unverified material links use existing guides
+[3/6] e2e\actions.spec.ts:32:1 › shared entry uses one deduction and follows quantity, inventory, next rank and goal status across pages
+[4/6] e2e\actions.spec.ts:41:1 › action navigation preserves unsaved facts, stale writes fail and profile switches do not leak actions
+[5/6] e2e\actions.spec.ts:47:1 › full backup restores business state and derived actions reopen offline with desktop and mobile views
+  1) e2e\actions.spec.ts:47:1 › full backup restores business state and derived actions reopen offline with desktop and mobile views 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('region', { name: '行动清单', exact: true }).getByTestId('action:goal:syndicate:hex').getByRole('button', { name: '查看材料 星币', exact: true })
+
+
+      48 |  await create(page,sharedFixture);const before=(await records(page)).profiles[0];await page.getByRole('button',{name:'备份与恢复',exact:true}).click();const wait=page.waitForEvent('download');await page.getByRole('button',{name:'↓ 导出完整备份',exact:true}).click();const file=(await(await wait).path())!,backup=JSON.parse(await readFile(file,'utf8'));expect(backup.profile).toEqual(before);expect(backup.profile.actions).toBeUndefined();await page.getByLabel('选择存档文件').setInputFiles(file);await page.getByLabel('我已核对目标，确认新建').check();await page.getByRole('button',{name:'确认导入',exact:true}).click();await expect(page.getByRole('status')).toContainText('导入完成');const restoredId=await page.getByLabel('切换档案').inputValue();await page.reload();await page.getByLabel('切换档案').selectOption(restoredId);const restored=(await records(page)).profiles.find(p=>p.id===restoredId)!;expect({...restored,id:before.id,revision:before.revision}).toEqual(before);
+      49 |  await page.getByRole('button',{name:'养成助手',exact:true}).click();await page.screenshot({path:evidencePath('Actions_Desktop.png'),fullPage:true});for(const width of [360,412]){await page.setViewportSize({width,height:860});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:evidencePath(`Actions_Mobile_${width}.png`),fullPage:true});}
+    > 50 |  await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);await context.setOffline(true);await page.close();const offline=await context.newPage();await offline.goto(TEST_ORIGIN+'/#assistant');await offline.getByLabel('切换档案').selectOption(restoredId);await expect(card(offline,'crafting:recipe:forma')).toBeVisible();await card(offline,'goal:syndicate:hex').getByRole('button',{name:'查看材料 星币',exact:true}).click();await expect(offline.getByRole('region',{name:'材料详情'})).toContainText('The Index');
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+      51 |  await writeFile(evidencePath('Actions_Restore_Offline.json'),JSON.stringify({allBusinessEqual:true,derivedActionsNotExported:true,offlineCloseReopen:true,existingRoutesOffline:true},null,2));
+      52 | });
+      53 | test('unsaved overview facts block a production update; cancel keeps the draft and later update retains explicit save',async({page})=>{
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\ac\app\e2e\actions.spec.ts:50:439
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\actions-full-backup-restor-62daa-th-desktop-and-mobile-views\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\actions-full-backup-restor-62daa-th-desktop-and-mobile-views\error-context.md
+
+
+(node:33872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[6/6] e2e\actions.spec.ts:53:1 › unsaved overview facts block a production update; cancel keeps the draft and later update retains explicit save
+  1 failed
+    e2e\actions.spec.ts:47:1 › full backup restores business state and derived actions reopen offline with desktop and mobile views 
+  5 passed (50.3s)
