@@ -1,0 +1,12 @@
+{
+  "app/src/catalog/crafting.v1.json": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+  "app/src/catalog/goals.v1.json": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+  "app/src/catalog/legacy-step-map.v1.json": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+  "app/src/catalog/resources.v1.json": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+  "app/src/catalog/syndicates.v1.json": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+  "app/src/catalog/tech-tree.v1.json": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+  "app/src/catalog/weapon-guides.v1.json": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+  "app/src/domain/model.ts": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+  "app/src/storage/imports.ts": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+  "app/src/storage/db.ts": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf"
+}
