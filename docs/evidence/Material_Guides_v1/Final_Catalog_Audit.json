@@ -1,0 +1,423 @@
+[
+  {
+    "id": "material:pathos-clamp",
+    "name": "苦栓",
+    "routes": [
+      {
+        "id": "farm:clamp",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "双衍王境 → The Lone Story → 奥金魇龙终战",
+        "mode": "普通难度 · 螺旋主线（非无尽回廊）",
+        "sourceIds": [
+          "mg1:w:u33"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:yao-shrub",
+    "name": "瑶丛",
+    "routes": [
+      {
+        "id": "farm:yao",
+        "verification": "unverified",
+        "checkedAt": "2026-10-20",
+        "place": "双衍王境 · Soprano Springs 附近雪地（区域中文名待核）",
+        "mode": "The Duviri Experience · 开放区域探索",
+        "sourceIds": [
+          "mg1:w:yao",
+          "mg1:w:u33"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:eevani",
+    "name": "延凡草",
+    "routes": [
+      {
+        "id": "farm:eevani",
+        "verification": "unverified",
+        "checkedAt": "2026-10-20",
+        "place": "双衍王境 · 言录书院（Archarbor）",
+        "mode": "The Duviri Experience · 开放区域探索",
+        "sourceIds": [
+          "mg1:w:eevani",
+          "mg1:w:eevani-cross",
+          "mg1:w:u33"
+        ]
+      },
+      {
+        "id": "mg1:route:eevani-alt",
+        "verification": "unverified",
+        "checkedAt": "2026-10-20",
+        "place": "双衍王境 · 圆形剧场（Amphitheater）",
+        "mode": "The Duviri Experience · 开放区域探索",
+        "sourceIds": [
+          "mg1:w:eevani",
+          "mg1:w:eevani-cross",
+          "mg1:w:u33"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "credits",
+    "name": "星币",
+    "routes": [
+      {
+        "id": "m1:earn:credits",
+        "verification": "verified",
+        "checkedAt": "2026-10-21",
+        "place": "海王星 · 指数之场（The Index）",
+        "mode": "星图特殊竞技场 · 投入星币参赛",
+        "sourceIds": [
+          "mg1:index"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forma",
+    "name": "福马",
+    "routes": [
+      {
+        "id": "m1:craft:forma",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "飞船 · 铸造厂 → 普通福马蓝图",
+        "mode": "铸造厂交互 · 蓝图消耗制作",
+        "sourceIds": [
+          "mg1:forma"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "blueprint:forma",
+    "name": "福马蓝图",
+    "routes": [
+      {
+        "id": "m1:earn:blueprint",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "导航 · 虚空裂缝列表 → 对应纪元遗物",
+        "mode": "裂缝任务 · 开启遗物（非固定星图节点）",
+        "sourceIds": [
+          "mg1:prime",
+          "mg1:forma"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:morphics",
+    "name": "非晶态合金",
+    "routes": [
+      {
+        "id": "m1:farm:morphics",
+        "verification": "verified",
+        "checkedAt": "2026-10-21",
+        "place": "水星 · 中文节点名待核（Tolstoj）",
+        "mode": "普通星图 · 刺杀",
+        "sourceIds": [
+          "mg1:tolstoj",
+          "mg1:deposits",
+          "mg1:regions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:neural-sensors",
+    "name": "神经传感器",
+    "routes": [
+      {
+        "id": "m1:farm:sensors",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "木星 · 中文节点名待核（Themisto）",
+        "mode": "普通星图 · 刺杀",
+        "sourceIds": [
+          "mg1:themisto",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:neurodes",
+    "name": "神经元",
+    "routes": [
+      {
+        "id": "m1:farm:neurodes",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "地球 · 中文节点名待核（Mariana）",
+        "mode": "普通星图 · 歼灭",
+        "sourceIds": [
+          "mg1:earth",
+          "mg1:deposits",
+          "mg1:regions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:orokin-cell",
+    "name": "奥罗金电池",
+    "routes": [
+      {
+        "id": "m1:farm:cell",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "土星 · 中文节点名待核（Telesto）",
+        "mode": "普通星图 · 歼灭",
+        "sourceIds": [
+          "mg1:telesto",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:efervon-sample",
+    "name": "艾弗旺样本",
+    "routes": [
+      {
+        "id": "mg1:route:efervon",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East",
+        "mode": "普通难度 · 歼灭（清剿者）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:efervon",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:pitchweave-fragment",
+    "name": "霍瓦尼亚沥青布碎片",
+    "routes": [
+      {
+        "id": "mg1:route:pitch",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East",
+        "mode": "普通难度 · 歼灭（清剿者）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:pitch",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:experimental-arc-relay",
+    "name": "实验性电弧继电器",
+    "routes": [
+      {
+        "id": "mg1:route:relay",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East",
+        "mode": "普通难度 · 歼灭（清剿者）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:relay",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:entrati-obols",
+    "name": "英择谛银币",
+    "routes": [
+      {
+        "id": "mg1:route:obols",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "火卫二 · 解剖圣所 → 阿尔布雷希特实验室 · Nex",
+        "mode": "普通星图 · 歼灭（实验室）",
+        "sourceIds": [
+          "mg1:u35",
+          "mg1:nex",
+          "mg1:obols"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:techrot-chitin",
+    "name": "科腐者几丁质",
+    "routes": [
+      {
+        "id": "mg1:route:chitin",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Rhu Manor",
+        "mode": "普通难度 · 歼灭（科腐者）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:rhu",
+          "mg1:chitin",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:necracoil",
+    "name": "殁世线圈",
+    "routes": [
+      {
+        "id": "mg1:route:necracoil",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "火卫二 · 解剖圣所 → 阿尔布雷希特实验室 · Nex",
+        "mode": "普通星图 · 歼灭（实验室）",
+        "sourceIds": [
+          "mg1:u35",
+          "mg1:nex",
+          "mg1:necracoil"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "material:techrot-motherboard",
+    "name": "科腐者主板",
+    "routes": [
+      {
+        "id": "mg1:route:motherboard",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Rhu Manor",
+        "mode": "普通难度 · 歼灭（科腐者）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:rhu",
+          "mg1:motherboard",
+          "mg1:deposits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasure:countessa-comic",
+    "name": "女伯爵漫画",
+    "routes": [
+      {
+        "id": "mg1:route:treasure",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+        "mode": "普通难度 · 歼灭后探索（互动拾取）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:treasures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasure:on-lyne-cd",
+    "name": "线上时代CD",
+    "routes": [
+      {
+        "id": "mg1:route:treasure",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+        "mode": "普通难度 · 歼灭后探索（互动拾取）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:treasures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasure:chuggin-sixpack",
+    "name": "酌趣六瓶装啤酒",
+    "routes": [
+      {
+        "id": "mg1:route:treasure",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+        "mode": "普通难度 · 歼灭后探索（互动拾取）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:treasures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasure:mood-crystal",
+    "name": "心情水晶",
+    "routes": [
+      {
+        "id": "mg1:route:treasure",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+        "mode": "普通难度 · 歼灭后探索（互动拾取）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:treasures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasure:cheddar-crowns",
+    "name": "切达芝士皇冠麦片",
+    "routes": [
+      {
+        "id": "mg1:route:treasure",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+        "mode": "普通难度 · 歼灭后探索（互动拾取）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:treasures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "treasure:35mm-film",
+    "name": "35毫米胶片",
+    "routes": [
+      {
+        "id": "mg1:route:treasure",
+        "verification": "verified",
+        "checkedAt": "2026-10-20",
+        "place": "霍瓦尼亚 · Mausoleum East → 任务内支路房间",
+        "mode": "普通难度 · 歼灭后探索（互动拾取）",
+        "sourceIds": [
+          "hex:u38",
+          "mg1:city-nodes",
+          "mg1:treasures"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "controlledBeforeOffline": true,
+  "pageClosedAndReopened": true,
+  "twoUnverifiedRoutes": true,
+  "noQueryWrites": true
+}

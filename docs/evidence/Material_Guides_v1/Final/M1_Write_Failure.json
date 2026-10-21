@@ -1,0 +1,7 @@
+{
+  "quotaRollback": true,
+  "revisionConflict": true,
+  "updateBarrier": true,
+  "noFalseSuccess": true,
+  "existingDataPreserved": true
+}
