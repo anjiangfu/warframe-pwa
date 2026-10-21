@@ -1,0 +1,1990 @@
+{
+  "catalogVersion": "relics.2026.10.21.1",
+  "upstreamCommit": "3263b2dff8bc1b434a191f0364395b156bd26561",
+  "sources": [
+    {
+      "id": "wfcd-relics",
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-drop-data/3263b2dff8bc1b434a191f0364395b156bd26561/data/relics.json",
+      "checkedAt": "2026-10-21",
+      "snapshotAt": "2026-10-07T15:18:33Z"
+    },
+    {
+      "id": "wfcd-missions",
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-drop-data/3263b2dff8bc1b434a191f0364395b156bd26561/data/missionRewards.json",
+      "checkedAt": "2026-10-21",
+      "snapshotAt": "2026-10-07T15:18:33Z"
+    },
+    {
+      "id": "de-table",
+      "url": "https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html",
+      "checkedAt": "2026-10-21",
+      "snapshotAt": "2026-10-07T15:18:33Z"
+    }
+  ],
+  "relics": [
+    {
+      "id": "relic:lith:c7",
+      "name": "虚空遗物 · Lith C7",
+      "english": "Lith C7 Relic",
+      "tier": "Lith",
+      "code": "C7",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14",
+      "name": "虚空遗物 · Lith G14",
+      "english": "Lith G14 Relic",
+      "tier": "Lith",
+      "code": "G14",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19",
+      "name": "虚空遗物 · Lith S19",
+      "english": "Lith S19 Relic",
+      "tier": "Lith",
+      "code": "S19",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12",
+      "name": "虚空遗物 · Meso A12",
+      "english": "Meso A12 Relic",
+      "tier": "Meso",
+      "code": "A12",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13",
+      "name": "虚空遗物 · Meso V13",
+      "english": "Meso V13 Relic",
+      "tier": "Meso",
+      "code": "V13",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17",
+      "name": "虚空遗物 · Meso V17",
+      "english": "Meso V17 Relic",
+      "tier": "Meso",
+      "code": "V17",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10",
+      "name": "虚空遗物 · Neo C10",
+      "english": "Neo C10 Relic",
+      "tier": "Neo",
+      "code": "C10",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7",
+      "name": "虚空遗物 · Neo C7",
+      "english": "Neo C7 Relic",
+      "tier": "Neo",
+      "code": "C7",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10",
+      "name": "虚空遗物 · Neo K10",
+      "english": "Neo K10 Relic",
+      "tier": "Neo",
+      "code": "K10",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21",
+      "name": "虚空遗物 · Axi A21",
+      "english": "Axi A21 Relic",
+      "tier": "Axi",
+      "code": "A21",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10",
+      "name": "虚空遗物 · Axi P10",
+      "english": "Axi P10 Relic",
+      "tier": "Axi",
+      "code": "P10",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8",
+      "name": "虚空遗物 · Axi S8",
+      "english": "Axi S8 Relic",
+      "tier": "Axi",
+      "code": "S8",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "id": "reward:wfcd:7b51b942f5f3eed9f76370e5c3a534c1",
+      "upstreamId": "7b51b942f5f3eed9f76370e5c3a534c1",
+      "name": "部件 · Cernos Prime Lower Limb",
+      "english": "Cernos Prime Lower Limb",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:2f87fdd9c219d08cb8218e771ca8a700",
+      "upstreamId": "2f87fdd9c219d08cb8218e771ca8a700",
+      "name": "蓝图 · Nyx Prime Systems Blueprint",
+      "english": "Nyx Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:cded061517b20aed22c18d585c97e806",
+      "upstreamId": "cded061517b20aed22c18d585c97e806",
+      "name": "蓝图 · Scindo Prime Blueprint",
+      "english": "Scindo Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:50049628c0d3bd1ceb67f37202c48532",
+      "upstreamId": "50049628c0d3bd1ceb67f37202c48532",
+      "name": "蓝图 · Valkyr Prime Blueprint",
+      "english": "Valkyr Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:2a8861dcb3ce0bed47775bbabc078969",
+      "upstreamId": "2a8861dcb3ce0bed47775bbabc078969",
+      "name": "部件 · Hikou Prime Pouch",
+      "english": "Hikou Prime Pouch",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "blueprint:forma",
+      "upstreamId": "f1d3923651587359f9444f183330e4c2",
+      "name": "福马蓝图",
+      "english": "Forma Blueprint",
+      "type": "blueprint",
+      "nameStatus": "verified"
+    },
+    {
+      "id": "reward:wfcd:bcb4ef9bcd1ce402a4c35983bd9770dc",
+      "upstreamId": "bcb4ef9bcd1ce402a4c35983bd9770dc",
+      "name": "蓝图 · Gyre Prime Neuroptics Blueprint",
+      "english": "Gyre Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:2aeb605b226d5a8caaf58ef1d3d9e537",
+      "upstreamId": "2aeb605b226d5a8caaf58ef1d3d9e537",
+      "name": "部件 · Fang Prime Handle",
+      "english": "Fang Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+      "upstreamId": "d9f88efbe255d169fdb79408e93eea6b",
+      "name": "部件 · Vadarya Prime Receiver",
+      "english": "Vadarya Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+      "upstreamId": "09b661a7b05d22813e35766d6376536c",
+      "name": "蓝图 · Lavos Prime Chassis Blueprint",
+      "english": "Lavos Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "upstreamId": "9d8e76b94105f92d4bfedb4bc15e14fc",
+      "name": "部件 · Paris Prime Lower Limb",
+      "english": "Paris Prime Lower Limb",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:8dac1c4170057091a7cd0cfcf66b8905",
+      "upstreamId": "8dac1c4170057091a7cd0cfcf66b8905",
+      "name": "部件 · Sarofang Prime Blade",
+      "english": "Sarofang Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:fac2551e31071237c99c585dbb387b2b",
+      "upstreamId": "fac2551e31071237c99c585dbb387b2b",
+      "name": "蓝图 · Orthos Prime Blueprint",
+      "english": "Orthos Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:8666500cee4ceb2ca075f4e2b29a7920",
+      "upstreamId": "8666500cee4ceb2ca075f4e2b29a7920",
+      "name": "蓝图 · Citrine Prime Systems Blueprint",
+      "english": "Citrine Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:27b3d3259c2f10457bd73f830ea67069",
+      "upstreamId": "27b3d3259c2f10457bd73f830ea67069",
+      "name": "部件 · Braton Prime Barrel",
+      "english": "Braton Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+      "upstreamId": "48fe1f6902db4e025280c5481068ae49",
+      "name": "部件 · Bronco Prime Receiver",
+      "english": "Bronco Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:9df211334588bd54f29533faec5ff802",
+      "upstreamId": "9df211334588bd54f29533faec5ff802",
+      "name": "部件 · Afentis Prime Blade",
+      "english": "Afentis Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:3535d5eed7720f117b9dee5baaa53af1",
+      "upstreamId": "3535d5eed7720f117b9dee5baaa53af1",
+      "name": "部件 · Bronco Prime Barrel",
+      "english": "Bronco Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:757f0564a054758e392a5e50ff911d6b",
+      "upstreamId": "757f0564a054758e392a5e50ff911d6b",
+      "name": "蓝图 · Voruna Prime Neuroptics Blueprint",
+      "english": "Voruna Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:64f85f8ffff7d9ce68a774addc8ea2ba",
+      "upstreamId": "64f85f8ffff7d9ce68a774addc8ea2ba",
+      "name": "部件 · Sarofang Prime Handle",
+      "english": "Sarofang Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:1d4a93ebd979a7ea3699066a275be94a",
+      "upstreamId": "1d4a93ebd979a7ea3699066a275be94a",
+      "name": "蓝图 · Perigale Prime Blueprint",
+      "english": "Perigale Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:a674788804a65095dfd4fadaa1490ab4",
+      "upstreamId": "a674788804a65095dfd4fadaa1490ab4",
+      "name": "部件 · Venato Prime Blade",
+      "english": "Venato Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:3e8719fda222b72b6f6fb71cb15c6e00",
+      "upstreamId": "3e8719fda222b72b6f6fb71cb15c6e00",
+      "name": "部件 · Burston Prime Barrel",
+      "english": "Burston Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+      "upstreamId": "085dc2caa03edfdbf41d068efa6b72d0",
+      "name": "蓝图 · Caliban Prime Blueprint",
+      "english": "Caliban Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+      "upstreamId": "74a6140f2c1bb7ec7ca14c64e5e3eef5",
+      "name": "蓝图 · Braton Prime Blueprint",
+      "english": "Braton Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:f779c6ea92af1b1dc9011a3949e9b83e",
+      "upstreamId": "f779c6ea92af1b1dc9011a3949e9b83e",
+      "name": "蓝图 · Voruna Prime Systems Blueprint",
+      "english": "Voruna Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:6b65b2d83a1cdc91c169e5c3949fb1f5",
+      "upstreamId": "6b65b2d83a1cdc91c169e5c3949fb1f5",
+      "name": "部件 · Paris Prime Grip",
+      "english": "Paris Prime Grip",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:f26f6851c1ab0465d385228e19981567",
+      "upstreamId": "f26f6851c1ab0465d385228e19981567",
+      "name": "蓝图 · Lavos Prime Blueprint",
+      "english": "Lavos Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:d04c14f2cf28e6707ccb2faae6d6b365",
+      "upstreamId": "d04c14f2cf28e6707ccb2faae6d6b365",
+      "name": "蓝图 · Corufell Prime Blueprint",
+      "english": "Corufell Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:bd60f5414db72b77df25741fb54ccad1",
+      "upstreamId": "bd60f5414db72b77df25741fb54ccad1",
+      "name": "蓝图 · Akbronco Prime Blueprint",
+      "english": "Akbronco Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:a01e2194d22ec638e14cde901c746fc9",
+      "upstreamId": "a01e2194d22ec638e14cde901c746fc9",
+      "name": "部件 · Corufell Prime Receiver",
+      "english": "Corufell Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:42019f4e46cf624e639f03cf6d26a1ad",
+      "upstreamId": "42019f4e46cf624e639f03cf6d26a1ad",
+      "name": "蓝图 · Styanax Prime Systems Blueprint",
+      "english": "Styanax Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:3efad7425a3edc25a3bca401dadea294",
+      "upstreamId": "3efad7425a3edc25a3bca401dadea294",
+      "name": "部件 · Afentis Prime Barrel",
+      "english": "Afentis Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+      "upstreamId": "40e2febc8810c68d9c79b57894928d4d",
+      "name": "蓝图 · Caliban Prime Chassis Blueprint",
+      "english": "Caliban Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:c534d3c6c7c29b9891620a6411234912",
+      "upstreamId": "c534d3c6c7c29b9891620a6411234912",
+      "name": "部件 · Braton Prime Stock",
+      "english": "Braton Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:bf3e81ec9106c5af13d4461761424f3d",
+      "upstreamId": "bf3e81ec9106c5af13d4461761424f3d",
+      "name": "蓝图 · Caliban Prime Neuroptics Blueprint",
+      "english": "Caliban Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "upstreamId": "2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "name": "部件 · Daikyu Prime Upper Limb",
+      "english": "Daikyu Prime Upper Limb",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+      "upstreamId": "fbd093234df1b676f811caa64a5e4381",
+      "name": "蓝图 · Kompressa Prime Blueprint",
+      "english": "Kompressa Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:8c3eb5e7c3acc6072d20440f2c58acc6",
+      "upstreamId": "8c3eb5e7c3acc6072d20440f2c58acc6",
+      "name": "部件 · Kompressa Prime Barrel",
+      "english": "Kompressa Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:3287aecbf624c51485dbbde7a8115d41",
+      "upstreamId": "3287aecbf624c51485dbbde7a8115d41",
+      "name": "蓝图 · Venato Prime Blueprint",
+      "english": "Venato Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:ee3ad24051b9b514797eb2ebaf206aae",
+      "upstreamId": "ee3ad24051b9b514797eb2ebaf206aae",
+      "name": "部件 · Daikyu Prime Lower Limb",
+      "english": "Daikyu Prime Lower Limb",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:c02f4f2d913f96493c8518cdf7248219",
+      "upstreamId": "c02f4f2d913f96493c8518cdf7248219",
+      "name": "蓝图 · Bronco Prime Blueprint",
+      "english": "Bronco Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:29d6d6e54807218cde498fd78a3da3be",
+      "upstreamId": "29d6d6e54807218cde498fd78a3da3be",
+      "name": "蓝图 · Gyre Prime Systems Blueprint",
+      "english": "Gyre Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:ff3c6fe717140cf36d17f502b0c96405",
+      "upstreamId": "ff3c6fe717140cf36d17f502b0c96405",
+      "name": "部件 · Alternox Prime Stock",
+      "english": "Alternox Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:d17679371c2f5d199dedb75fd66b3128",
+      "upstreamId": "d17679371c2f5d199dedb75fd66b3128",
+      "name": "蓝图 · Voruna Prime Chassis Blueprint",
+      "english": "Voruna Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+      "upstreamId": "8ccd89edcf35a4a440935b3b9aee8531",
+      "name": "部件 · Cedo Prime Barrel",
+      "english": "Cedo Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:346b26c8bf197c415ac758b6c6894f04",
+      "upstreamId": "346b26c8bf197c415ac758b6c6894f04",
+      "name": "蓝图 · Styanax Prime Blueprint",
+      "english": "Styanax Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:f7beacbe122fcccb6070344cbe7a60c3",
+      "upstreamId": "f7beacbe122fcccb6070344cbe7a60c3",
+      "name": "部件 · Vadarya Prime Stock",
+      "english": "Vadarya Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:f1c60efa353285c9a6571b88e24c3c4b",
+      "upstreamId": "f1c60efa353285c9a6571b88e24c3c4b",
+      "name": "部件 · Perigale Prime Barrel",
+      "english": "Perigale Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:0e3fbe815c79cfea9ea621f8d439125a",
+      "upstreamId": "0e3fbe815c79cfea9ea621f8d439125a",
+      "name": "部件 · Athodai Prime Receiver",
+      "english": "Athodai Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:fd3f77342b8b03fc9469e44f931eb1d5",
+      "upstreamId": "fd3f77342b8b03fc9469e44f931eb1d5",
+      "name": "蓝图 · Lavos Prime Neuroptics Blueprint",
+      "english": "Lavos Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:371732a7c5612bde4c88027a2224814d",
+      "upstreamId": "371732a7c5612bde4c88027a2224814d",
+      "name": "部件 · Fang Prime Blade",
+      "english": "Fang Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:b08a274cab1ed295fa20cdf977e0dac8",
+      "upstreamId": "b08a274cab1ed295fa20cdf977e0dac8",
+      "name": "部件 · Scindo Prime Blade",
+      "english": "Scindo Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:1d58b996a075ba13126e794ebdcad70e",
+      "upstreamId": "1d58b996a075ba13126e794ebdcad70e",
+      "name": "蓝图 · Venka Prime Blueprint",
+      "english": "Venka Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:27671ce5061f68c945c5791ffcd018ac",
+      "upstreamId": "27671ce5061f68c945c5791ffcd018ac",
+      "name": "蓝图 · Nyx Prime Chassis Blueprint",
+      "english": "Nyx Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:9f4cff0612ac47cdea7a21943b6acbe9",
+      "upstreamId": "9f4cff0612ac47cdea7a21943b6acbe9",
+      "name": "部件 · Cernos Prime Grip",
+      "english": "Cernos Prime Grip",
+      "type": "component",
+      "nameStatus": "unverified"
+    },
+    {
+      "id": "reward:wfcd:832651c58c3e75e7b3aba8324e844965",
+      "upstreamId": "832651c58c3e75e7b3aba8324e844965",
+      "name": "蓝图 · Hikou Prime Blueprint",
+      "english": "Hikou Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified"
+    }
+  ],
+  "relations": [
+    {
+      "id": "relic:lith:c7:reward:7b51b942f5f3eed9f76370e5c3a534c1",
+      "relicId": "relic:lith:c7",
+      "rewardId": "reward:wfcd:7b51b942f5f3eed9f76370e5c3a534c1",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:c7:reward:2f87fdd9c219d08cb8218e771ca8a700",
+      "relicId": "relic:lith:c7",
+      "rewardId": "reward:wfcd:2f87fdd9c219d08cb8218e771ca8a700",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:c7:reward:cded061517b20aed22c18d585c97e806",
+      "relicId": "relic:lith:c7",
+      "rewardId": "reward:wfcd:cded061517b20aed22c18d585c97e806",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:c7:reward:50049628c0d3bd1ceb67f37202c48532",
+      "relicId": "relic:lith:c7",
+      "rewardId": "reward:wfcd:50049628c0d3bd1ceb67f37202c48532",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:c7:reward:2a8861dcb3ce0bed47775bbabc078969",
+      "relicId": "relic:lith:c7",
+      "rewardId": "reward:wfcd:2a8861dcb3ce0bed47775bbabc078969",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:c7:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:lith:c7",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:reward:bcb4ef9bcd1ce402a4c35983bd9770dc",
+      "relicId": "relic:lith:g14",
+      "rewardId": "reward:wfcd:bcb4ef9bcd1ce402a4c35983bd9770dc",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:reward:2aeb605b226d5a8caaf58ef1d3d9e537",
+      "relicId": "relic:lith:g14",
+      "rewardId": "reward:wfcd:2aeb605b226d5a8caaf58ef1d3d9e537",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:reward:d9f88efbe255d169fdb79408e93eea6b",
+      "relicId": "relic:lith:g14",
+      "rewardId": "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:lith:g14",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:reward:09b661a7b05d22813e35766d6376536c",
+      "relicId": "relic:lith:g14",
+      "rewardId": "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:reward:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "relicId": "relic:lith:g14",
+      "rewardId": "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:reward:8dac1c4170057091a7cd0cfcf66b8905",
+      "relicId": "relic:lith:s19",
+      "rewardId": "reward:wfcd:8dac1c4170057091a7cd0cfcf66b8905",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:reward:fac2551e31071237c99c585dbb387b2b",
+      "relicId": "relic:lith:s19",
+      "rewardId": "reward:wfcd:fac2551e31071237c99c585dbb387b2b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:reward:8666500cee4ceb2ca075f4e2b29a7920",
+      "relicId": "relic:lith:s19",
+      "rewardId": "reward:wfcd:8666500cee4ceb2ca075f4e2b29a7920",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:lith:s19",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:reward:27b3d3259c2f10457bd73f830ea67069",
+      "relicId": "relic:lith:s19",
+      "rewardId": "reward:wfcd:27b3d3259c2f10457bd73f830ea67069",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:reward:48fe1f6902db4e025280c5481068ae49",
+      "relicId": "relic:lith:s19",
+      "rewardId": "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:reward:9df211334588bd54f29533faec5ff802",
+      "relicId": "relic:meso:a12",
+      "rewardId": "reward:wfcd:9df211334588bd54f29533faec5ff802",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:reward:3535d5eed7720f117b9dee5baaa53af1",
+      "relicId": "relic:meso:a12",
+      "rewardId": "reward:wfcd:3535d5eed7720f117b9dee5baaa53af1",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:reward:757f0564a054758e392a5e50ff911d6b",
+      "relicId": "relic:meso:a12",
+      "rewardId": "reward:wfcd:757f0564a054758e392a5e50ff911d6b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:reward:64f85f8ffff7d9ce68a774addc8ea2ba",
+      "relicId": "relic:meso:a12",
+      "rewardId": "reward:wfcd:64f85f8ffff7d9ce68a774addc8ea2ba",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:meso:a12",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:reward:1d4a93ebd979a7ea3699066a275be94a",
+      "relicId": "relic:meso:a12",
+      "rewardId": "reward:wfcd:1d4a93ebd979a7ea3699066a275be94a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:reward:a674788804a65095dfd4fadaa1490ab4",
+      "relicId": "relic:meso:v13",
+      "rewardId": "reward:wfcd:a674788804a65095dfd4fadaa1490ab4",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:reward:3e8719fda222b72b6f6fb71cb15c6e00",
+      "relicId": "relic:meso:v13",
+      "rewardId": "reward:wfcd:3e8719fda222b72b6f6fb71cb15c6e00",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:reward:085dc2caa03edfdbf41d068efa6b72d0",
+      "relicId": "relic:meso:v13",
+      "rewardId": "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:reward:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+      "relicId": "relic:meso:v13",
+      "rewardId": "reward:wfcd:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:meso:v13",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:reward:48fe1f6902db4e025280c5481068ae49",
+      "relicId": "relic:meso:v13",
+      "rewardId": "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:reward:f779c6ea92af1b1dc9011a3949e9b83e",
+      "relicId": "relic:meso:v17",
+      "rewardId": "reward:wfcd:f779c6ea92af1b1dc9011a3949e9b83e",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:reward:6b65b2d83a1cdc91c169e5c3949fb1f5",
+      "relicId": "relic:meso:v17",
+      "rewardId": "reward:wfcd:6b65b2d83a1cdc91c169e5c3949fb1f5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:reward:f26f6851c1ab0465d385228e19981567",
+      "relicId": "relic:meso:v17",
+      "rewardId": "reward:wfcd:f26f6851c1ab0465d385228e19981567",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:reward:d04c14f2cf28e6707ccb2faae6d6b365",
+      "relicId": "relic:meso:v17",
+      "rewardId": "reward:wfcd:d04c14f2cf28e6707ccb2faae6d6b365",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:reward:bd60f5414db72b77df25741fb54ccad1",
+      "relicId": "relic:meso:v17",
+      "rewardId": "reward:wfcd:bd60f5414db72b77df25741fb54ccad1",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:meso:v17",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:reward:a01e2194d22ec638e14cde901c746fc9",
+      "relicId": "relic:neo:c10",
+      "rewardId": "reward:wfcd:a01e2194d22ec638e14cde901c746fc9",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:reward:42019f4e46cf624e639f03cf6d26a1ad",
+      "relicId": "relic:neo:c10",
+      "rewardId": "reward:wfcd:42019f4e46cf624e639f03cf6d26a1ad",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:reward:3efad7425a3edc25a3bca401dadea294",
+      "relicId": "relic:neo:c10",
+      "rewardId": "reward:wfcd:3efad7425a3edc25a3bca401dadea294",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:neo:c10",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:reward:40e2febc8810c68d9c79b57894928d4d",
+      "relicId": "relic:neo:c10",
+      "rewardId": "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:reward:c534d3c6c7c29b9891620a6411234912",
+      "relicId": "relic:neo:c10",
+      "rewardId": "reward:wfcd:c534d3c6c7c29b9891620a6411234912",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:reward:bf3e81ec9106c5af13d4461761424f3d",
+      "relicId": "relic:neo:c7",
+      "rewardId": "reward:wfcd:bf3e81ec9106c5af13d4461761424f3d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:reward:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "relicId": "relic:neo:c7",
+      "rewardId": "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:reward:d9f88efbe255d169fdb79408e93eea6b",
+      "relicId": "relic:neo:c7",
+      "rewardId": "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:neo:c7",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:reward:fbd093234df1b676f811caa64a5e4381",
+      "relicId": "relic:neo:c7",
+      "rewardId": "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:reward:27b3d3259c2f10457bd73f830ea67069",
+      "relicId": "relic:neo:c7",
+      "rewardId": "reward:wfcd:27b3d3259c2f10457bd73f830ea67069",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:reward:8c3eb5e7c3acc6072d20440f2c58acc6",
+      "relicId": "relic:neo:k10",
+      "rewardId": "reward:wfcd:8c3eb5e7c3acc6072d20440f2c58acc6",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:reward:3287aecbf624c51485dbbde7a8115d41",
+      "relicId": "relic:neo:k10",
+      "rewardId": "reward:wfcd:3287aecbf624c51485dbbde7a8115d41",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:reward:ee3ad24051b9b514797eb2ebaf206aae",
+      "relicId": "relic:neo:k10",
+      "rewardId": "reward:wfcd:ee3ad24051b9b514797eb2ebaf206aae",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:reward:c02f4f2d913f96493c8518cdf7248219",
+      "relicId": "relic:neo:k10",
+      "rewardId": "reward:wfcd:c02f4f2d913f96493c8518cdf7248219",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:neo:k10",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:reward:29d6d6e54807218cde498fd78a3da3be",
+      "relicId": "relic:neo:k10",
+      "rewardId": "reward:wfcd:29d6d6e54807218cde498fd78a3da3be",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:reward:ff3c6fe717140cf36d17f502b0c96405",
+      "relicId": "relic:axi:a21",
+      "rewardId": "reward:wfcd:ff3c6fe717140cf36d17f502b0c96405",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:reward:d17679371c2f5d199dedb75fd66b3128",
+      "relicId": "relic:axi:a21",
+      "rewardId": "reward:wfcd:d17679371c2f5d199dedb75fd66b3128",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:reward:8ccd89edcf35a4a440935b3b9aee8531",
+      "relicId": "relic:axi:a21",
+      "rewardId": "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:reward:346b26c8bf197c415ac758b6c6894f04",
+      "relicId": "relic:axi:a21",
+      "rewardId": "reward:wfcd:346b26c8bf197c415ac758b6c6894f04",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:axi:a21",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:reward:f7beacbe122fcccb6070344cbe7a60c3",
+      "relicId": "relic:axi:a21",
+      "rewardId": "reward:wfcd:f7beacbe122fcccb6070344cbe7a60c3",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:reward:f1c60efa353285c9a6571b88e24c3c4b",
+      "relicId": "relic:axi:p10",
+      "rewardId": "reward:wfcd:f1c60efa353285c9a6571b88e24c3c4b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:reward:0e3fbe815c79cfea9ea621f8d439125a",
+      "relicId": "relic:axi:p10",
+      "rewardId": "reward:wfcd:0e3fbe815c79cfea9ea621f8d439125a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:reward:fd3f77342b8b03fc9469e44f931eb1d5",
+      "relicId": "relic:axi:p10",
+      "rewardId": "reward:wfcd:fd3f77342b8b03fc9469e44f931eb1d5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:reward:371732a7c5612bde4c88027a2224814d",
+      "relicId": "relic:axi:p10",
+      "rewardId": "reward:wfcd:371732a7c5612bde4c88027a2224814d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:axi:p10",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:reward:40e2febc8810c68d9c79b57894928d4d",
+      "relicId": "relic:axi:p10",
+      "rewardId": "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:reward:b08a274cab1ed295fa20cdf977e0dac8",
+      "relicId": "relic:axi:s8",
+      "rewardId": "reward:wfcd:b08a274cab1ed295fa20cdf977e0dac8",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:reward:1d58b996a075ba13126e794ebdcad70e",
+      "relicId": "relic:axi:s8",
+      "rewardId": "reward:wfcd:1d58b996a075ba13126e794ebdcad70e",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:reward:27671ce5061f68c945c5791ffcd018ac",
+      "relicId": "relic:axi:s8",
+      "rewardId": "reward:wfcd:27671ce5061f68c945c5791ffcd018ac",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:reward:9f4cff0612ac47cdea7a21943b6acbe9",
+      "relicId": "relic:axi:s8",
+      "rewardId": "reward:wfcd:9f4cff0612ac47cdea7a21943b6acbe9",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:reward:832651c58c3e75e7b3aba8324e844965",
+      "relicId": "relic:axi:s8",
+      "rewardId": "reward:wfcd:832651c58c3e75e7b3aba8324e844965",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:reward:f1d3923651587359f9444f183330e4c2",
+      "relicId": "relic:axi:s8",
+      "rewardId": "blueprint:forma",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics",
+        "de-table"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": "location:wfcd:79a7f0cc072fc47b",
+      "planet": "Venus",
+      "node": "Bifrost Echo (Caches)",
+      "mode": "Caches",
+      "modeZh": "秘藏奖励表（触发条件待核）",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:b114580640037b95",
+      "planet": "Venus",
+      "node": "Beacon Shield Ring (Caches)",
+      "mode": "Caches",
+      "modeZh": "秘藏奖励表（触发条件待核）",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:d67c1f3c9012e7ae",
+      "planet": "Mercury",
+      "node": "Apollodorus",
+      "mode": "Survival",
+      "modeZh": "生存",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:b051844f70f18f1f",
+      "planet": "Mercury",
+      "node": "Lares",
+      "mode": "Defense",
+      "modeZh": "防御",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:10cba20f87de79ce",
+      "planet": "Mercury",
+      "node": "Odin",
+      "mode": "Interception",
+      "modeZh": "任务模式待核",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:9757fecaaf0f14c6",
+      "planet": "Venus",
+      "node": "Romula",
+      "mode": "Defense",
+      "modeZh": "防御",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:a034c079edddbbfb",
+      "planet": "Earth",
+      "node": "Coba",
+      "mode": "Defense",
+      "modeZh": "防御",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:d4228fd2a12c360a",
+      "planet": "Mars",
+      "node": "Tyana Pass",
+      "mode": "Defense",
+      "modeZh": "防御",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:8bdd3239f97a4630",
+      "planet": "Jupiter",
+      "node": "Ganymede",
+      "mode": "Disruption",
+      "modeZh": "任务模式待核",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:04f336d0cd639481",
+      "planet": "Pluto",
+      "node": "Khufu Envoy (Caches)",
+      "mode": "Caches",
+      "modeZh": "秘藏奖励表（触发条件待核）",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "location:wfcd:aea8620ee0137be0",
+      "planet": "Pluto",
+      "node": "Seven Sirens (Caches)",
+      "mode": "Caches",
+      "modeZh": "秘藏奖励表（触发条件待核）",
+      "condition": null,
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    }
+  ],
+  "acquisitions": [
+    {
+      "id": "relic:lith:c7:source:location:wfcd:79a7f0cc072fc47b",
+      "relicId": "relic:lith:c7",
+      "locationId": "location:wfcd:79a7f0cc072fc47b",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:c7:source:location:wfcd:b114580640037b95",
+      "relicId": "relic:lith:c7",
+      "locationId": "location:wfcd:b114580640037b95",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:g14",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:g14:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:g14",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:s19",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:s19:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:s19",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:a12",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:a12:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:a12",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:v13",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v13:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:v13",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:v17",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:meso:v17:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:v17",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:c10",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c10:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:c10",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:c7",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:c7:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:c7",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:k10",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:neo:k10:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:k10",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:a21",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:a21:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:a21",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:p10",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:p10:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:p10",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:source:location:wfcd:04f336d0cd639481",
+      "relicId": "relic:axi:s8",
+      "locationId": "location:wfcd:04f336d0cd639481",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    },
+    {
+      "id": "relic:axi:s8:source:location:wfcd:aea8620ee0137be0",
+      "relicId": "relic:axi:s8",
+      "locationId": "location:wfcd:aea8620ee0137be0",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions",
+        "de-table"
+      ]
+    }
+  ]
+}

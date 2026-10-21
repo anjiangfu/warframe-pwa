@@ -1,0 +1,32 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relics.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rl/app
+
+ ❯ src/test/relics.test.ts (11 tests | 1 failed) 61ms
+   × synthetic duplicate identities and duplicate reward relations cannot inflate complete tables 8ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relics.test.ts > synthetic duplicate identities and duplicate reward relations cannot inflate complete tables
+AssertionError: expected [Function] to throw an error
+
+- Expected:
+null
+
++ Received:
+undefined
+
+ ❯ src/test/relics.test.ts:31:366
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 10 passed (11)
+   Start at  19:13:08
+   Duration  325ms (tests 36%, transform 35%, import 26%, worker 3%)
+

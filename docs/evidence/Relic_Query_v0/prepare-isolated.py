@@ -11,7 +11,8 @@ shutil.copytree(root / 'app', isolated / 'app', dirs_exist_ok=True,
 initial = json.loads((root / 'docs/evidence/M0_Input_Hashes.json').read_text(encoding='utf-8'))
 paths = list(initial['files']) + ['data/legacy-step-map.v1.json',
                                  'docs/evidence/M0_Input_Hashes.json',
-                                 'docs/evidence/Material_Guides_v1/Baseline_Contracts.json']
+                                 'docs/evidence/Material_Guides_v1/Baseline_Contracts.json',
+                                 'docs/evidence/Relic_Query_v0/Samples.json']
 for relative in paths:
     target = isolated / relative
     target.parent.mkdir(parents=True, exist_ok=True)

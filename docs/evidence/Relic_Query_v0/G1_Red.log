@@ -1,0 +1,29 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relics.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rl/app
+
+ ❯ src/test/relics.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relics.test.ts [ src/test/relics.test.ts ]
+Error: Cannot find module '../domain/relics' imported from D:/wf/Warframe_PWA_Handoff_20261016/.v/rl/app/src/test/relics.test.ts
+ ❯ src/test/relics.test.ts:4:1
+      2| import {readFileSync} from 'node:fs';
+      3| import {LocalProvider} from '../catalog/provider';
+      4| import {createRelicIndex,relicDetails,rewardRelics,searchRelics,search…
+       | ^
+      5| const catalog=()=>new LocalProvider().getRelicCatalog();
+      6| // All mutations below are synthetic test data and never shipped in th…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  19:11:03
+   Duration  441ms (worker 97%, environment 3%)
+
