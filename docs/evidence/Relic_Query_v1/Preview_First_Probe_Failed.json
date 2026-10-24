@@ -1,0 +1,17 @@
+{
+  "homeStatus": 0,
+  "build": {
+    "build": "m0-5e6434d5e1c9",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "origin": "http://127.0.0.1:4194",
+  "temporaryBuildExposed": false,
+  "url": "http://127.0.0.1:4194/#relics",
+  "pid": 41920,
+  "buildStatus": 200,
+  "realBrowserDatabaseAccessed": false,
+  "readOnlyHttpOnly": true,
+  "otherServicesStopped": false,
+  "checkedAt": "2026-10-24T15:45:36.4183695+08:00"
+}

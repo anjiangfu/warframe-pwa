@@ -1,0 +1,8 @@
+{
+  "unchanged": true,
+  "baseline": "506a6cd2556c36a66828a6cd0313834cf700e6e5",
+  "command": "git diff --exit-code (old e2e, old unit tests, storage, profile model, dependency manifest/lock)",
+  "oldUnitTests": 102,
+  "exitCode": 0,
+  "oldFormalBrowserTests": 48
+}

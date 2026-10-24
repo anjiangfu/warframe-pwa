@@ -257,3 +257,15 @@ node scripts/run-quality.mjs
 本轮全部测试在 `.v/rl/app`、4186及短Chrome目录执行，原4194/dist不提供临时v1/v2构建。复跑从项目根执行 `docs/evidence/Relic_Query_v0/prepare-isolated.py`（Python3），隔离node_modules联接原app/node_modules；进入隔离app，将APP_TEST_PORT设4186、APP_BROWSER_PROFILE_ROOT设.b，APP_EVIDENCE_DIR/M0_EVIDENCE_DIR设为新的绝对证据目录，M0_EVIDENCE_PREFIX用新前缀，再执行 `node scripts/run-quality.mjs`。不要覆盖旧证据，也不要在原服务目录跑临时升级测试。
 
 本机正常预览启动沿用4194命令，已有服务不重复启动或停止；旧页面按提示保存后更新，勿清库。验收与包体变化见 `../docs/Relic_Query_v0_Acceptance.md`。Android真机、可信HTTPS/系统安装及游戏内事实尚未验；本轮本地提交后停止，等待独立复核。
+
+## 虚空遗物查询 v1：中文与获取说明（2026-10-24）
+
+仍在 `http://127.0.0.1:4194/#relics` 查看原12个遗物。四纪元可用古纪／前纪／中纪／后纪或Lith／Meso／Neo／Axi查询，编号不变。56项奖励补了可追溯的中文组合显示，中文、原英文和不带空格的组合都可搜；福马蓝图沿用原实体。39项新增父专名含汉字，另17项上游中文映射仍保留拉丁专名，仅部件／蓝图类型有中文，继续提示“中文名待核”。点开“名称核对依据”可查精确父／部件标识、日期及来源；组合显示不冒称客户端完整官方字符串。
+
+地点分别列入口、基础模式、额外奖励表类别、适用范围、短步骤及轮次解释。普通防御按本轮查得的3波奖励检查，Tyana Pass明确使用双水晶镜像防御特例；中断按导管表现解释，不套AABC。生存任务计时可被旁路加速，不能当现实刷取用时。四航道地点只提供有据的通用结算参考，基础子模式线索、逐节点入口和B表触发仍待核；Caches不是任务模式，B不等于第二轮或第二箱。每个遗物仍只摘录2条来源，当前可获取和账号解锁全部未知。
+
+内置中文、规则及出处日期离线可读，外链需联网。7个普通地点保留精确上游节点关联，其中3个有中文节点名、4个仍为原文；另外4个航道节点中文待核。没有新增遗物或个人字段，没有查询历史、库存、实时轮换或概率／收益计算。独立遗物目录版本为relics.2026.10.24.1，其他目录、DB及备份格式不变。名称仅使用固定MIT包的少量字段，许可全文在应用声明中，来源和未核清单见 `../docs/Relic_Query_v1_Sources.md`。
+
+启动仍使用原app中的 `npm.cmd run build` 及 `npm.cmd run preview -- --host 127.0.0.1 --port 4194 --strictPort`。已有4194服务直接使用；旧页面先处理草稿，按SW提示更新，不清库。自动化回归须在 `.v/rv1/app` 隔离副本运行：从项目根执行 `docs/evidence/Relic_Query_v1/prepare-isolated.py`（Python3），仅联接现有app/node_modules；在隔离app设APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR和M0_EVIDENCE_DIR使用新的绝对证据目录，M0_EVIDENCE_PREFIX使用新前缀，再执行 `node scripts/run-quality.mjs`。不要覆盖本轮证据，不在提供正常预览的原app直接跑临时SW更新测试。
+
+作者命令结果、保护hash、失败记录、桌面截图、独立Hex另计与复跑说明见 `../docs/Relic_Query_v1_Acceptance.md`。作者实跑与随后独立复核分开记录；Android真机、可信HTTPS／系统安装及游戏内核验仍未执行。本轮完成后停止，等待独立复核。

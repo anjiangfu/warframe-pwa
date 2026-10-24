@@ -1,0 +1,21 @@
+{
+  "draft": {
+    "rank": "4",
+    "standing": "12345"
+  },
+  "observed": {
+    "rankInput": "4",
+    "standingInput": "12345",
+    "target": "4",
+    "alert": [
+      "晋升目标尚未保存：集团事实有未保存修改。请先保存集团事实，或重新载入放弃草稿后再设置目标。重新载入档案"
+    ],
+    "persisted": [
+      {
+        "rank": 3,
+        "standing": 65000,
+        "target": 5
+      }
+    ]
+  }
+}

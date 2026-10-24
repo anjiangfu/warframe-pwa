@@ -1,0 +1,18 @@
+{
+  "temporaryBuildExposed": false,
+  "pid": 41920,
+  "earlierProbeNote": "First output invalid homeStatus=0 because collector used a reserved read-only PowerShell variable; original failed output retained separately; no application or database was changed.",
+  "realBrowserDatabaseAccessed": false,
+  "url": "http://127.0.0.1:4194/#relics",
+  "build": {
+    "build": "m0-5e6434d5e1c9",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "buildStatus": 200,
+  "homeStatus": 200,
+  "checkedAt": "2026-10-24T15:46:01.0161936+08:00",
+  "origin": "http://127.0.0.1:4194",
+  "readonlyHttpOnly": true,
+  "otherServicesStopped": false
+}

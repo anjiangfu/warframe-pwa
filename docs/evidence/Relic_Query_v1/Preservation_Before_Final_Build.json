@@ -1,0 +1,579 @@
+{
+  "phase": "Before_Final_Build",
+  "protectedInputs": [
+    {
+      "path": "AGENTS.md",
+      "expected": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a",
+      "actual": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a"
+    },
+    {
+      "path": "README.md",
+      "expected": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09",
+      "actual": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09"
+    },
+    {
+      "path": "data/tech-tree-seed.json",
+      "expected": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2",
+      "actual": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2"
+    },
+    {
+      "path": "docs/Budget_and_Workflow.md",
+      "expected": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de",
+      "actual": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de"
+    },
+    {
+      "path": "docs/Code_Review_Tech_Tree.md",
+      "expected": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6",
+      "actual": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6"
+    },
+    {
+      "path": "docs/M0_Implementation_Plan.md",
+      "expected": "45d0be1f8deaac1a4cd4a0b4b258bf9a8b3b6f1199bbb2b6ee94b2c22d6f13c7",
+      "actual": "45d0be1f8deaac1a4cd4a0b4b258bf9a8b3b6f1199bbb2b6ee94b2c22d6f13c7"
+    },
+    {
+      "path": "docs/Original_PRD_v1.md",
+      "expected": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16",
+      "actual": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16"
+    },
+    {
+      "path": "docs/PRD_v2_Architecture.md",
+      "expected": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b",
+      "actual": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b"
+    },
+    {
+      "path": "docs/Research_and_Reuse.md",
+      "expected": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7",
+      "actual": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7"
+    },
+    {
+      "path": "docs/Short_Action_Sequence.md",
+      "expected": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110",
+      "actual": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110"
+    },
+    {
+      "path": "docs/TennoHub_Audit_Result.md",
+      "expected": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7",
+      "actual": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7"
+    },
+    {
+      "path": "docs/TennoHub_Initial_Audit_2026-10-16.md",
+      "expected": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4",
+      "actual": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4"
+    },
+    {
+      "path": "prompts/LowCost-Agent.md",
+      "expected": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4",
+      "actual": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4"
+    },
+    {
+      "path": "prompts/M0-Codex.md",
+      "expected": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13",
+      "actual": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13"
+    },
+    {
+      "path": "prompts/TennoHub-Audit-Codex-Next.md",
+      "expected": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b",
+      "actual": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b"
+    },
+    {
+      "path": "prompts/TennoHub-Audit-Codex.md",
+      "expected": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9",
+      "actual": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9"
+    },
+    {
+      "path": "reference/Original_Tech_Tree.html",
+      "expected": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef",
+      "actual": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef"
+    }
+  ],
+  "dataContracts": [
+    {
+      "path": "app/src/catalog/crafting.v1.json",
+      "expected": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+      "actual": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475"
+    },
+    {
+      "path": "app/src/catalog/goals.v1.json",
+      "expected": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+      "actual": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736"
+    },
+    {
+      "path": "app/src/catalog/legacy-step-map.v1.json",
+      "expected": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+      "actual": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee"
+    },
+    {
+      "path": "app/src/catalog/resources.v1.json",
+      "expected": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+      "actual": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6"
+    },
+    {
+      "path": "app/src/catalog/syndicates.v1.json",
+      "expected": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+      "actual": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a"
+    },
+    {
+      "path": "app/src/catalog/tech-tree.v1.json",
+      "expected": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+      "actual": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6"
+    },
+    {
+      "path": "app/src/catalog/weapon-guides.v1.json",
+      "expected": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+      "actual": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2"
+    },
+    {
+      "path": "app/src/domain/model.ts",
+      "expected": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+      "actual": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a"
+    },
+    {
+      "path": "app/src/storage/imports.ts",
+      "expected": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+      "actual": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6"
+    },
+    {
+      "path": "app/src/storage/db.ts",
+      "expected": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf",
+      "actual": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf"
+    }
+  ],
+  "testedSourceParity": [
+    {
+      "path": "src/App.tsx",
+      "original": "d1a3121b5176c9eb1b69c7de8250343b7511cc725616e631763820b311155446",
+      "isolated": "d1a3121b5176c9eb1b69c7de8250343b7511cc725616e631763820b311155446"
+    },
+    {
+      "path": "src/main.tsx",
+      "original": "51fc5ff454d2d1a021b10e64dbf2707f9644ce8be3ff49686483e8b88fd60f27",
+      "isolated": "51fc5ff454d2d1a021b10e64dbf2707f9644ce8be3ff49686483e8b88fd60f27"
+    },
+    {
+      "path": "src/styles.css",
+      "original": "68cc22916216ba990c1c8f4aac59ba178db063897a8767b9e4db4b71a0faca8e",
+      "isolated": "68cc22916216ba990c1c8f4aac59ba178db063897a8767b9e4db4b71a0faca8e"
+    },
+    {
+      "path": "src/theme.css",
+      "original": "541407e3bf6e3eca69ca7c680624a9f3299eb772506106ceacc6f59e3d44e12f",
+      "isolated": "541407e3bf6e3eca69ca7c680624a9f3299eb772506106ceacc6f59e3d44e12f"
+    },
+    {
+      "path": "src/catalog/crafting.v1.json",
+      "original": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+      "isolated": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475"
+    },
+    {
+      "path": "src/catalog/goals.v1.json",
+      "original": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+      "isolated": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736"
+    },
+    {
+      "path": "src/catalog/legacy-step-map.v1.json",
+      "original": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+      "isolated": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee"
+    },
+    {
+      "path": "src/catalog/provider.ts",
+      "original": "6c386e50c785a3be083b0f7182b54c96317769532fb05a09b51802a6f51a3ccd",
+      "isolated": "6c386e50c785a3be083b0f7182b54c96317769532fb05a09b51802a6f51a3ccd"
+    },
+    {
+      "path": "src/catalog/relics.v1.json",
+      "original": "bfacdeeaf533adb389915d2156dbc9394fa9c11fbb5c595aba624607e9446aa0",
+      "isolated": "bfacdeeaf533adb389915d2156dbc9394fa9c11fbb5c595aba624607e9446aa0"
+    },
+    {
+      "path": "src/catalog/resources.v1.json",
+      "original": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+      "isolated": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6"
+    },
+    {
+      "path": "src/catalog/syndicates.v1.json",
+      "original": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+      "isolated": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a"
+    },
+    {
+      "path": "src/catalog/tech-tree.v1.json",
+      "original": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+      "isolated": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6"
+    },
+    {
+      "path": "src/catalog/weapon-guides.v1.json",
+      "original": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+      "isolated": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2"
+    },
+    {
+      "path": "src/domain/actions.ts",
+      "original": "b842fc5b5245ecfcd3a7441dcca203b9848ecc88fab758f8bad4b7d2b3dcf1b9",
+      "isolated": "b842fc5b5245ecfcd3a7441dcca203b9848ecc88fab758f8bad4b7d2b3dcf1b9"
+    },
+    {
+      "path": "src/domain/crafting.ts",
+      "original": "00f5835afdd0d38873daab790641f15cda2aee805d3a6443706806f9f8bb893e",
+      "isolated": "00f5835afdd0d38873daab790641f15cda2aee805d3a6443706806f9f8bb893e"
+    },
+    {
+      "path": "src/domain/goals.ts",
+      "original": "6276ad74101fbb73db6570e76132b4a6817bc6e509dfe9ec4618827a212bc500",
+      "isolated": "6276ad74101fbb73db6570e76132b4a6817bc6e509dfe9ec4618827a212bc500"
+    },
+    {
+      "path": "src/domain/material-reference.ts",
+      "original": "bcedbb8a177cd893a960975ed8e1cd9a876473ea94fee34cec13ebd3b5db4300",
+      "isolated": "bcedbb8a177cd893a960975ed8e1cd9a876473ea94fee34cec13ebd3b5db4300"
+    },
+    {
+      "path": "src/domain/model.ts",
+      "original": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+      "isolated": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a"
+    },
+    {
+      "path": "src/domain/relics.ts",
+      "original": "e6ee520d51842f94d7a1c4bc1049a58ff4592e031d87d093413818c01e7326df",
+      "isolated": "e6ee520d51842f94d7a1c4bc1049a58ff4592e031d87d093413818c01e7326df"
+    },
+    {
+      "path": "src/domain/resources.ts",
+      "original": "3fea7327c01f662faff6cb1b00620bda6727097d3143f09584ec7ad010b24416",
+      "isolated": "3fea7327c01f662faff6cb1b00620bda6727097d3143f09584ec7ad010b24416"
+    },
+    {
+      "path": "src/domain/syndicates.ts",
+      "original": "b974c7b010d2027d217e1b440c88bc37dc6fda39f6ff5c8051dd715147e40ad1",
+      "isolated": "b974c7b010d2027d217e1b440c88bc37dc6fda39f6ff5c8051dd715147e40ad1"
+    },
+    {
+      "path": "src/domain/weapon.ts",
+      "original": "1b95e1352f54dd58f973dffe48d5536103e446b05ff8b16b0697ca2ace17dc59",
+      "isolated": "1b95e1352f54dd58f973dffe48d5536103e446b05ff8b16b0697ca2ace17dc59"
+    },
+    {
+      "path": "src/features/ActionOverview.tsx",
+      "original": "477112417e728318f5c8b4a52c557d6c9dd59da9be6ec486b095cd285db0641c",
+      "isolated": "477112417e728318f5c8b4a52c557d6c9dd59da9be6ec486b095cd285db0641c"
+    },
+    {
+      "path": "src/features/BackupPanel.tsx",
+      "original": "0e1b8a71bb096fc0893e8074a3e34a226205a0d3d27b9f9abeeb33d7215e4cdb",
+      "isolated": "0e1b8a71bb096fc0893e8074a3e34a226205a0d3d27b9f9abeeb33d7215e4cdb"
+    },
+    {
+      "path": "src/features/CraftingPage.tsx",
+      "original": "61fcbdd734977cf72fb8d27f269fe88443d7d6eaae9a404fae0f3f85be713a6e",
+      "isolated": "61fcbdd734977cf72fb8d27f269fe88443d7d6eaae9a404fae0f3f85be713a6e"
+    },
+    {
+      "path": "src/features/GoalAssistant.tsx",
+      "original": "d1da9b77d25fa275dea2d928e0a6fa012a3e2ee38aa934e3668f11d6c816d2c1",
+      "isolated": "d1da9b77d25fa275dea2d928e0a6fa012a3e2ee38aa934e3668f11d6c816d2c1"
+    },
+    {
+      "path": "src/features/MaterialDetail.tsx",
+      "original": "7ab87697059389b6075af2de9b0144e3a2400a3b66e649fef30a9c72a7e0876e",
+      "isolated": "7ab87697059389b6075af2de9b0144e3a2400a3b66e649fef30a9c72a7e0876e"
+    },
+    {
+      "path": "src/features/MaterialsPage.tsx",
+      "original": "d0297ad9543b35e03878f16dd5a053f8f8aba94cf53f80b45ef861966640cace",
+      "isolated": "d0297ad9543b35e03878f16dd5a053f8f8aba94cf53f80b45ef861966640cace"
+    },
+    {
+      "path": "src/features/ProfilePanel.tsx",
+      "original": "7f2efc443259500de96c06f84d24a11271cbbdded42c7d6748d297396ed3ae78",
+      "isolated": "7f2efc443259500de96c06f84d24a11271cbbdded42c7d6748d297396ed3ae78"
+    },
+    {
+      "path": "src/features/ProgressDraft.tsx",
+      "original": "1bc7cf8e5c37e3ac1b48f2b0cfe6ea3ad15f7f4139ac5d021112723f16a4376d",
+      "isolated": "1bc7cf8e5c37e3ac1b48f2b0cfe6ea3ad15f7f4139ac5d021112723f16a4376d"
+    },
+    {
+      "path": "src/features/RelicEvidence.tsx",
+      "original": "5ab6268f0fd69ab41ba83b13ff8cca9927ad22f3f33fcf089fb26bfa2ea821e3",
+      "isolated": "5ab6268f0fd69ab41ba83b13ff8cca9927ad22f3f33fcf089fb26bfa2ea821e3"
+    },
+    {
+      "path": "src/features/RelicsPage.tsx",
+      "original": "b075982a2a5bc3ab398dfbe22f5fdb660b719023da9d4d840b66bb93e9fbaf0a",
+      "isolated": "b075982a2a5bc3ab398dfbe22f5fdb660b719023da9d4d840b66bb93e9fbaf0a"
+    },
+    {
+      "path": "src/features/SyndicateFactsEditor.tsx",
+      "original": "e66bcd2d972eb839e3add0162c353d9e8eef148516bcbc8be03d77b24dc1b343",
+      "isolated": "e66bcd2d972eb839e3add0162c353d9e8eef148516bcbc8be03d77b24dc1b343"
+    },
+    {
+      "path": "src/features/SyndicatePage.tsx",
+      "original": "5e83e791a391ff954a5ef362a05687f72457f9cda027fc56bcce488f20c33f4e",
+      "isolated": "5e83e791a391ff954a5ef362a05687f72457f9cda027fc56bcce488f20c33f4e"
+    },
+    {
+      "path": "src/features/TechTree.tsx",
+      "original": "e753adb56636cfa4ddd4577ea26ffcba782d7493486b42f82b1056153a47e7d2",
+      "isolated": "e753adb56636cfa4ddd4577ea26ffcba782d7493486b42f82b1056153a47e7d2"
+    },
+    {
+      "path": "src/features/WeaponAssistant.tsx",
+      "original": "31685344755291f20d664b29c1f7bdd209afdb354ba4ed487628913a248fab81",
+      "isolated": "31685344755291f20d664b29c1f7bdd209afdb354ba4ed487628913a248fab81"
+    },
+    {
+      "path": "src/pwa/UpdateNotice.tsx",
+      "original": "fac9536aae9b269b1713ab980614b2b723cdefc47547a6660631cfccebaa33cf",
+      "isolated": "fac9536aae9b269b1713ab980614b2b723cdefc47547a6660631cfccebaa33cf"
+    },
+    {
+      "path": "src/storage/db.ts",
+      "original": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf",
+      "isolated": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf"
+    },
+    {
+      "path": "src/storage/imports.ts",
+      "original": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+      "isolated": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6"
+    },
+    {
+      "path": "src/test/actions.test.ts",
+      "original": "19971eb7210fb2fbf6aa8d3c313df8dc6e2b1c53c86cdc1730c13b1c02dda659",
+      "isolated": "19971eb7210fb2fbf6aa8d3c313df8dc6e2b1c53c86cdc1730c13b1c02dda659"
+    },
+    {
+      "path": "src/test/backup-boundaries.test.ts",
+      "original": "d55c1355b6d8e1d4a8e616495615c4ecbc691016844c60651a41301dc9c1df6f",
+      "isolated": "d55c1355b6d8e1d4a8e616495615c4ecbc691016844c60651a41301dc9c1df6f"
+    },
+    {
+      "path": "src/test/crafting-storage.test.ts",
+      "original": "aa7a84677e921a274d5e740484a60004f58b77e98b32b812b9315627960c7828",
+      "isolated": "aa7a84677e921a274d5e740484a60004f58b77e98b32b812b9315627960c7828"
+    },
+    {
+      "path": "src/test/crafting.test.ts",
+      "original": "bcf3d6b1b7f3d56b6dcd44b20e6855c19bac7613cc55e4c29f628db21b01470b",
+      "isolated": "bcf3d6b1b7f3d56b6dcd44b20e6855c19bac7613cc55e4c29f628db21b01470b"
+    },
+    {
+      "path": "src/test/data.test.ts",
+      "original": "e1a66fd6d5d4cc83e64ebe6ab952049e6ae71190a86bf31f353874106272ff4a",
+      "isolated": "e1a66fd6d5d4cc83e64ebe6ab952049e6ae71190a86bf31f353874106272ff4a"
+    },
+    {
+      "path": "src/test/goals.test.ts",
+      "original": "d945ec3e968f8ac1b03df95ba9bb1af5045beea290303c5b965acde38c0fafcf",
+      "isolated": "d945ec3e968f8ac1b03df95ba9bb1af5045beea290303c5b965acde38c0fafcf"
+    },
+    {
+      "path": "src/test/material-guides.test.ts",
+      "original": "fed94a3783ce79e62614d6b3054e5f7d706c7b39e26737794e214c33684e5f06",
+      "isolated": "fed94a3783ce79e62614d6b3054e5f7d706c7b39e26737794e214c33684e5f06"
+    },
+    {
+      "path": "src/test/material-reference.test.ts",
+      "original": "e4a79ccccc32c816aacd2168886deb56a137ef6127c2dc8f36e30f01d869d21a",
+      "isolated": "e4a79ccccc32c816aacd2168886deb56a137ef6127c2dc8f36e30f01d869d21a"
+    },
+    {
+      "path": "src/test/relic-localization.test.ts",
+      "original": "bd5915d0e93056fba0cc88082874e5b0fb923af80b8f207f889f70bbf21cd735",
+      "isolated": "bd5915d0e93056fba0cc88082874e5b0fb923af80b8f207f889f70bbf21cd735"
+    },
+    {
+      "path": "src/test/relics.test.ts",
+      "original": "9827417dcee8d0e67560708d6a8f989a59a65059afc7cc0869a6b8d7fddff086",
+      "isolated": "9827417dcee8d0e67560708d6a8f989a59a65059afc7cc0869a6b8d7fddff086"
+    },
+    {
+      "path": "src/test/syndicate-storage.test.ts",
+      "original": "17e2f86494fb3906a2313da41ad617d0c1ec376f23dd5f5433b92314630ba3f0",
+      "isolated": "17e2f86494fb3906a2313da41ad617d0c1ec376f23dd5f5433b92314630ba3f0"
+    },
+    {
+      "path": "src/test/syndicates.test.ts",
+      "original": "9f2b1cd7f71b96d1d1d15ecfc3a488ad41b1673a0f899f1106e1e37fd10d8b4d",
+      "isolated": "9f2b1cd7f71b96d1d1d15ecfc3a488ad41b1673a0f899f1106e1e37fd10d8b4d"
+    },
+    {
+      "path": "src/test/weapon.test.ts",
+      "original": "325414365e24cb25242f0d801327a2644830692338c43bcddc535165a43757be",
+      "isolated": "325414365e24cb25242f0d801327a2644830692338c43bcddc535165a43757be"
+    },
+    {
+      "path": "public/THIRD_PARTY_LICENSES.txt",
+      "original": "4710ccd4895c17e50010bdab05f0907c3c3e8cae3a963e142dba892da90c2e59",
+      "isolated": "4710ccd4895c17e50010bdab05f0907c3c3e8cae3a963e142dba892da90c2e59"
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "original": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb",
+      "isolated": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb"
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "original": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5",
+      "isolated": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5"
+    },
+    {
+      "path": "e2e/actions.spec.ts",
+      "original": "c4cc098892cc1d66a99144875425aa6bdfdd4dc31ef45536b980980c42f3d240",
+      "isolated": "c4cc098892cc1d66a99144875425aa6bdfdd4dc31ef45536b980980c42f3d240"
+    },
+    {
+      "path": "e2e/backup-boundaries.spec.ts",
+      "original": "d426017a914156d32080356c96be1b361f594bc46b4f732f4ba2eb19cafd787a",
+      "isolated": "d426017a914156d32080356c96be1b361f594bc46b4f732f4ba2eb19cafd787a"
+    },
+    {
+      "path": "e2e/crafting-materials.spec.ts",
+      "original": "643db575295bc921a44876ccec7e32403679d6675446c40f25953e10bb735f9a",
+      "isolated": "643db575295bc921a44876ccec7e32403679d6675446c40f25953e10bb735f9a"
+    },
+    {
+      "path": "e2e/current-goals.spec.ts",
+      "original": "8cee0460fb71239b236867bdc41e49209e21ddba836df204ca36b60acfbc625e",
+      "isolated": "8cee0460fb71239b236867bdc41e49209e21ddba836df204ca36b60acfbc625e"
+    },
+    {
+      "path": "e2e/environment.ts",
+      "original": "ffae66321aea5552a20e33c66a018b6f3447c5fd749400ff1e0c3dea929b2354",
+      "isolated": "ffae66321aea5552a20e33c66a018b6f3447c5fd749400ff1e0c3dea929b2354"
+    },
+    {
+      "path": "e2e/material-guides.spec.ts",
+      "original": "92203ee94066c1ee88785063814de6783bab20a3bfadf91dd807c7ada94b23d1",
+      "isolated": "92203ee94066c1ee88785063814de6783bab20a3bfadf91dd807c7ada94b23d1"
+    },
+    {
+      "path": "e2e/material-reference.spec.ts",
+      "original": "e87d297bc8d87b2b0377217034709b46c8f68339df93e315c93a0d3f48d4cb4c",
+      "isolated": "e87d297bc8d87b2b0377217034709b46c8f68339df93e315c93a0d3f48d4cb4c"
+    },
+    {
+      "path": "e2e/pwa.spec.ts",
+      "original": "a91d76e399a100fe43db0977c4916df857a153fcde049430c8008d9d02e90ee1",
+      "isolated": "a91d76e399a100fe43db0977c4916df857a153fcde049430c8008d9d02e90ee1"
+    },
+    {
+      "path": "e2e/relic-localization.spec.ts",
+      "original": "fdbbfc747b692ab9a1427f079a463156996d5eef53246a9597404b1c9ea336a9",
+      "isolated": "fdbbfc747b692ab9a1427f079a463156996d5eef53246a9597404b1c9ea336a9"
+    },
+    {
+      "path": "e2e/relics.spec.ts",
+      "original": "e2bfa6cc9da9c8009abf4044ee74d64a39a427c2b732f63f0e74939ac730c3b2",
+      "isolated": "e2bfa6cc9da9c8009abf4044ee74d64a39a427c2b732f63f0e74939ac730c3b2"
+    },
+    {
+      "path": "e2e/safety.spec.ts",
+      "original": "58c4cc6a1a9a768c47ede398f6b92c4144cb4cb5a7cd381dd2eac9fce2edbe7d",
+      "isolated": "58c4cc6a1a9a768c47ede398f6b92c4144cb4cb5a7cd381dd2eac9fce2edbe7d"
+    },
+    {
+      "path": "e2e/syndicate-drafts.spec.ts",
+      "original": "c755d9ba256fae5b802c851737ed1f830e4ee8213589ad6d4a854d7a8477bff0",
+      "isolated": "c755d9ba256fae5b802c851737ed1f830e4ee8213589ad6d4a854d7a8477bff0"
+    },
+    {
+      "path": "e2e/syndicates.spec.ts",
+      "original": "c36273ee936dd6219ce6bb5a28eb9d3ce6d43188c5dbbc2bf047fc4057bd4b41",
+      "isolated": "c36273ee936dd6219ce6bb5a28eb9d3ce6d43188c5dbbc2bf047fc4057bd4b41"
+    },
+    {
+      "path": "e2e/ui.spec.ts",
+      "original": "eda59b28ce379c0473848eedc5b9d3681c16bc4b7b1e80b17aa59f6b5d067052",
+      "isolated": "eda59b28ce379c0473848eedc5b9d3681c16bc4b7b1e80b17aa59f6b5d067052"
+    },
+    {
+      "path": "e2e/weapon-assistant.spec.ts",
+      "original": "72903e1e00d517039761b71d76425c053eb15a28bbb46b8c6ce390b31e67cce8",
+      "isolated": "72903e1e00d517039761b71d76425c053eb15a28bbb46b8c6ce390b31e67cce8"
+    },
+    {
+      "path": "e2e/zz-update.spec.ts",
+      "original": "9d0ba7de7ad2ccf05aa3403213270369d2fea730d2967413827533dfc7a4a354",
+      "isolated": "9d0ba7de7ad2ccf05aa3403213270369d2fea730d2967413827533dfc7a4a354"
+    },
+    {
+      "path": "scripts/collect-licenses.mjs",
+      "original": "139c6aeb6bb002a9f4ebd98e713fabe03c9ec9d9f6130a02825d7af499fe570c",
+      "isolated": "139c6aeb6bb002a9f4ebd98e713fabe03c9ec9d9f6130a02825d7af499fe570c"
+    },
+    {
+      "path": "scripts/create-icons.mjs",
+      "original": "14bd187327b745d00dd12cd94dfe41eb73195a1f8fe92bcd31aec1097681c49b",
+      "isolated": "14bd187327b745d00dd12cd94dfe41eb73195a1f8fe92bcd31aec1097681c49b"
+    },
+    {
+      "path": "scripts/run-quality.mjs",
+      "original": "e3e8b22808a23eca1773061c10f0332de95adbeb9f7444a106bf4efae04fba4f",
+      "isolated": "e3e8b22808a23eca1773061c10f0332de95adbeb9f7444a106bf4efae04fba4f"
+    },
+    {
+      "path": "scripts/subpath-smoke.mjs",
+      "original": "b5e9928ccfd7fc896abda3d1b201cb4a72f054629b0ce636504bcbe6641426c9",
+      "isolated": "b5e9928ccfd7fc896abda3d1b201cb4a72f054629b0ce636504bcbe6641426c9"
+    },
+    {
+      "path": "scripts/sw-template.js",
+      "original": "3fb5d1c8a7dd1649c94b94d7b5a3d5d2c112d5506443c33b54e4404a32188721",
+      "isolated": "3fb5d1c8a7dd1649c94b94d7b5a3d5d2c112d5506443c33b54e4404a32188721"
+    },
+    {
+      "path": "scripts/verify-delivery.mjs",
+      "original": "a8207583627329cf873e08013bba0ad2d2d763d20e27366a86bc756e0a334ad1",
+      "isolated": "a8207583627329cf873e08013bba0ad2d2d763d20e27366a86bc756e0a334ad1"
+    },
+    {
+      "path": "package-lock.json",
+      "original": "cfaad0878c5663d89ce2d2f478a67f35b3874a16de96efb5e239d34276b420be",
+      "isolated": "cfaad0878c5663d89ce2d2f478a67f35b3874a16de96efb5e239d34276b420be"
+    },
+    {
+      "path": "package.json",
+      "original": "7ddec2d85b19105a226daac2dfeae2e88423de938e54ae776ad5bc1e76496cf4",
+      "isolated": "7ddec2d85b19105a226daac2dfeae2e88423de938e54ae776ad5bc1e76496cf4"
+    },
+    {
+      "path": "playwright.config.ts",
+      "original": "c5ba8facdb56c8888463c8f95d15426f9b14e6e20bdc8442585c7bef72edf82c",
+      "isolated": "c5ba8facdb56c8888463c8f95d15426f9b14e6e20bdc8442585c7bef72edf82c"
+    },
+    {
+      "path": "tsconfig.json",
+      "original": "1ba13bd598fbd4c2dd47537a8b6a042f38aac655df86ed81cc1b4c8efa91538e",
+      "isolated": "1ba13bd598fbd4c2dd47537a8b6a042f38aac655df86ed81cc1b4c8efa91538e"
+    },
+    {
+      "path": "vite.config.ts",
+      "original": "9d28f2d061047133dbc7b0c6a880f8737c68a3b5c40265ecf25cf5b26dd60169",
+      "isolated": "9d28f2d061047133dbc7b0c6a880f8737c68a3b5c40265ecf25cf5b26dd60169"
+    }
+  ],
+  "originalDist": {
+    "build-info.json": "c1bcbcb55caf996210c01edcd5c742fdfdbe2979e3724f14784e16d0f7796fb7",
+    "index.html": "d1662776a87d680874b55810b6e9474c5815e54152234a50e7eb789b12409a96",
+    "manifest.webmanifest": "f012da5557c54aa2cc8ce0ac1625e0783a6160bc864bc83ee06c2b0d1cd0aee4",
+    "sw.js": "6810daaefd5a9dac253008dcaf9173d9ac43751685eb1106ff85d3dbb19fc89b",
+    "THIRD_PARTY_LICENSES.txt": "18c4866f991145c7bb9319a35b2452bbddeb1a01e53a896429a3220849266fb9",
+    "assets/index-Bhjw5-GM.css": "cb6af1da4f8eacc93259e49c9f8b253d921c69f366f70cdabc1a2e9d884d1756",
+    "assets/index-R7PI9-1P.js": "ba1b9d3cb473a8349d1e9062bbbcaf8aae47c710afa1614edce04d46543f9cbf",
+    "icons/icon-192.png": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb",
+    "icons/icon-512.png": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5"
+  },
+  "expectedDist": {
+    "build-info.json": "c1bcbcb55caf996210c01edcd5c742fdfdbe2979e3724f14784e16d0f7796fb7",
+    "index.html": "d1662776a87d680874b55810b6e9474c5815e54152234a50e7eb789b12409a96",
+    "manifest.webmanifest": "f012da5557c54aa2cc8ce0ac1625e0783a6160bc864bc83ee06c2b0d1cd0aee4",
+    "sw.js": "6810daaefd5a9dac253008dcaf9173d9ac43751685eb1106ff85d3dbb19fc89b",
+    "THIRD_PARTY_LICENSES.txt": "18c4866f991145c7bb9319a35b2452bbddeb1a01e53a896429a3220849266fb9",
+    "assets/index-Bhjw5-GM.css": "cb6af1da4f8eacc93259e49c9f8b253d921c69f366f70cdabc1a2e9d884d1756",
+    "assets/index-R7PI9-1P.js": "ba1b9d3cb473a8349d1e9062bbbcaf8aae47c710afa1614edce04d46543f9cbf",
+    "icons/icon-192.png": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb",
+    "icons/icon-512.png": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5"
+  },
+  "distMatches": true,
+  "legacyRelicGraphUnchanged": true,
+  "passed": true
+}

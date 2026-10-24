@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-24",
+  "stage": "G3 before commit",
+  "baseline": "506a6cd2556c36a66828a6cd0313834cf700e6e5",
+  "main": "08fda3880f0cdd796f3b1c9e3d84032083aa0091",
+  "qualityCommandExits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "unitTests": 114,
+  "formalBrowserTests": 53,
+  "extraHexTests": 1,
+  "extraHexExit": 0,
+  "protectedInputCount": 17,
+  "dataContractCount": 10,
+  "testedFiles": 82,
+  "originalDistUntouchedDuringTemporaryTests": true,
+  "finalNormalDistMatchesTested": true,
+  "legacyRelicGraphUnchanged": true,
+  "normalBuild": "m0-5e6434d5e1c9",
+  "previewHTTP": 200,
+  "screenshotsViewed": [
+    "G2_Initial/Relic_V1_Detail_360.png",
+    "Final/Relic_V1_Desktop.png"
+  ],
+  "viewingLimits": "Full long-page captures; actual CSS viewport overflow assertions cover 360/412/landscape. Not Android physical evidence.",
+  "separateReview": "Pending; no next task or automatic repair authorized"
+}

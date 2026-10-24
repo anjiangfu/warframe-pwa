@@ -1,0 +1,6 @@
+{
+  "allBusinessEqual": true,
+  "derivedActionsNotExported": true,
+  "offlineCloseReopen": true,
+  "existingRoutesOffline": true
+}
