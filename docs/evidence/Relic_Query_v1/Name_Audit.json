@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "reward:wfcd:7b51b942f5f3eed9f76370e5c3a534c1",
+    "english": "Cernos Prime Lower Limb",
+    "status": "added",
+    "nameZh": "西诺斯 Prime 下弓臂",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosLowerLimb",
+        "parentEn": "Cernos Prime",
+        "partEn": "Lower Limb",
+        "parentZh": "西诺斯 Prime",
+        "partZh": "下弓臂",
+        "blueprintTypeGlossary": false,
+        "nameZh": "西诺斯 Prime 下弓臂",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:2f87fdd9c219d08cb8218e771ca8a700",
+    "english": "Nyx Prime Systems Blueprint",
+    "status": "added",
+    "nameZh": "Nyx Prime 系统蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Jade/NyxPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
+        "parentEn": "Nyx Prime",
+        "partEn": "Systems",
+        "parentZh": "Nyx Prime",
+        "partZh": "系统蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Nyx Prime 系统蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:cded061517b20aed22c18d585c97e806",
+    "english": "Scindo Prime Blueprint",
+    "status": "added",
+    "nameZh": "分裂斩斧 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/PrimeScindoBlueprint",
+        "parentEn": "Scindo Prime",
+        "partEn": "Blueprint",
+        "parentZh": "分裂斩斧 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "分裂斩斧 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:50049628c0d3bd1ceb67f37202c48532",
+    "english": "Valkyr Prime Blueprint",
+    "status": "added",
+    "nameZh": "Valkyr Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Berserker/ValkyrPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeBlueprint",
+        "parentEn": "Valkyr Prime",
+        "partEn": "Blueprint",
+        "parentZh": "Valkyr Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "Valkyr Prime 蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:2a8861dcb3ce0bed47775bbabc078969",
+    "english": "Hikou Prime Pouch",
+    "status": "added",
+    "nameZh": "飞扬 Prime 镖袋",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+        "parentEn": "Hikou Prime",
+        "partEn": "Pouch",
+        "parentZh": "飞扬 Prime",
+        "partZh": "镖袋",
+        "blueprintTypeGlossary": false,
+        "nameZh": "飞扬 Prime 镖袋",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "blueprint:forma",
+    "english": "Forma Blueprint",
+    "status": "retained",
+    "nameZh": "福马蓝图",
+    "source": "existing-project",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "reward:wfcd:bcb4ef9bcd1ce402a4c35983bd9770dc",
+    "english": "Gyre Prime Neuroptics Blueprint",
+    "status": "added",
+    "nameZh": "Gyre Prime 头部神经光元蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Gyre/GyrePrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeHelmetComponent",
+        "parentEn": "Gyre Prime",
+        "partEn": "Neuroptics",
+        "parentZh": "Gyre Prime",
+        "partZh": "头部神经光元蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Gyre Prime 头部神经光元蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:2aeb605b226d5a8caaf58ef1d3d9e537",
+    "english": "Fang Prime Handle",
+    "status": "added",
+    "nameZh": "狼牙 Prime 握柄",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangHandle",
+        "parentEn": "Fang Prime",
+        "partEn": "Handle",
+        "parentZh": "狼牙 Prime",
+        "partZh": "握柄",
+        "blueprintTypeGlossary": false,
+        "nameZh": "狼牙 Prime 握柄",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+    "english": "Vadarya Prime Receiver",
+    "status": "added",
+    "nameZh": "瓦德雅 Prime 枪机",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunReceiver",
+        "parentEn": "Vadarya Prime",
+        "partEn": "Receiver",
+        "parentZh": "瓦德雅 Prime",
+        "partZh": "枪机",
+        "blueprintTypeGlossary": false,
+        "nameZh": "瓦德雅 Prime 枪机",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+    "english": "Lavos Prime Chassis Blueprint",
+    "status": "added",
+    "nameZh": "Lavos Prime 机体蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Alchemist/LavosPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeChassisComponent",
+        "parentEn": "Lavos Prime",
+        "partEn": "Chassis",
+        "parentZh": "Lavos Prime",
+        "partZh": "机体蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Lavos Prime 机体蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+    "english": "Paris Prime Lower Limb",
+    "status": "added",
+    "nameZh": "帕里斯 Prime 下弓臂",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowLowerLimb",
+        "parentEn": "Paris Prime",
+        "partEn": "Lower Limb",
+        "parentZh": "帕里斯 Prime",
+        "partZh": "下弓臂",
+        "blueprintTypeGlossary": false,
+        "nameZh": "帕里斯 Prime 下弓臂",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:8dac1c4170057091a7cd0cfcf66b8905",
+    "english": "Sarofang Prime Blade",
+    "status": "added",
+    "nameZh": "沙罗之牙 Prime 刀刃",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeBlade",
+        "parentEn": "Sarofang Prime",
+        "partEn": "Blade",
+        "parentZh": "沙罗之牙 Prime",
+        "partZh": "刀刃",
+        "blueprintTypeGlossary": false,
+        "nameZh": "沙罗之牙 Prime 刀刃",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:fac2551e31071237c99c585dbb387b2b",
+    "english": "Orthos Prime Blueprint",
+    "status": "added",
+    "nameZh": "欧特鲁斯 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/PolearmPrimeBlueprint",
+        "parentEn": "Orthos Prime",
+        "partEn": "Blueprint",
+        "parentZh": "欧特鲁斯 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "欧特鲁斯 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:8666500cee4ceb2ca075f4e2b29a7920",
+    "english": "Citrine Prime Systems Blueprint",
+    "status": "added",
+    "nameZh": "Citrine Prime 系统蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Geode/CitrinePrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeSystemsComponent",
+        "parentEn": "Citrine Prime",
+        "partEn": "Systems",
+        "parentZh": "Citrine Prime",
+        "partZh": "系统蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Citrine Prime 系统蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:27b3d3259c2f10457bd73f830ea67069",
+    "english": "Braton Prime Barrel",
+    "status": "added",
+    "nameZh": "布莱顿 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeBarrel",
+        "parentEn": "Braton Prime",
+        "partEn": "Barrel",
+        "parentZh": "布莱顿 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "布莱顿 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+    "english": "Bronco Prime Receiver",
+    "status": "added",
+    "nameZh": "野马 Prime 枪机",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+        "parentEn": "Bronco Prime",
+        "partEn": "Receiver",
+        "parentZh": "野马 Prime",
+        "partZh": "枪机",
+        "blueprintTypeGlossary": false,
+        "nameZh": "野马 Prime 枪机",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:9df211334588bd54f29533faec5ff802",
+    "english": "Afentis Prime Blade",
+    "status": "added",
+    "nameZh": "圣英 Prime 刀刃",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade",
+        "parentEn": "Afentis Prime",
+        "partEn": "Blade",
+        "parentZh": "圣英 Prime",
+        "partZh": "刀刃",
+        "blueprintTypeGlossary": false,
+        "nameZh": "圣英 Prime 刀刃",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:3535d5eed7720f117b9dee5baaa53af1",
+    "english": "Bronco Prime Barrel",
+    "status": "added",
+    "nameZh": "野马 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+        "parentEn": "Bronco Prime",
+        "partEn": "Barrel",
+        "parentZh": "野马 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "野马 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:757f0564a054758e392a5e50ff911d6b",
+    "english": "Voruna Prime Neuroptics Blueprint",
+    "status": "added",
+    "nameZh": "Voruna Prime 头部神经光元蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeHelmetComponent",
+        "parentEn": "Voruna Prime",
+        "partEn": "Neuroptics",
+        "parentZh": "Voruna Prime",
+        "partZh": "头部神经光元蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Voruna Prime 头部神经光元蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:64f85f8ffff7d9ce68a774addc8ea2ba",
+    "english": "Sarofang Prime Handle",
+    "status": "added",
+    "nameZh": "沙罗之牙 Prime 握柄",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeHandle",
+        "parentEn": "Sarofang Prime",
+        "partEn": "Handle",
+        "parentZh": "沙罗之牙 Prime",
+        "partZh": "握柄",
+        "blueprintTypeGlossary": false,
+        "nameZh": "沙罗之牙 Prime 握柄",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:1d4a93ebd979a7ea3699066a275be94a",
+    "english": "Perigale Prime Blueprint",
+    "status": "added",
+    "nameZh": "月面狂风 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
+        "componentId": "/Lotus/Types/Recipes/Weapons/PerigalePrimeBlueprint",
+        "parentEn": "Perigale Prime",
+        "partEn": "Blueprint",
+        "parentZh": "月面狂风 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "月面狂风 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:a674788804a65095dfd4fadaa1490ab4",
+    "english": "Venato Prime Blade",
+    "status": "added",
+    "nameZh": "脉纹 Prime 刀刃",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeBlade",
+        "parentEn": "Venato Prime",
+        "partEn": "Blade",
+        "parentZh": "脉纹 Prime",
+        "partZh": "刀刃",
+        "blueprintTypeGlossary": false,
+        "nameZh": "脉纹 Prime 刀刃",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:3e8719fda222b72b6f6fb71cb15c6e00",
+    "english": "Burston Prime Barrel",
+    "status": "added",
+    "nameZh": "伯斯顿 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeBarrel",
+        "parentEn": "Burston Prime",
+        "partEn": "Barrel",
+        "parentZh": "伯斯顿 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "伯斯顿 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+    "english": "Caliban Prime Blueprint",
+    "status": "added",
+    "nameZh": "Caliban Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Sentient/CalibanPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeBlueprint",
+        "parentEn": "Caliban Prime",
+        "partEn": "Blueprint",
+        "parentZh": "Caliban Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "Caliban Prime 蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+    "english": "Braton Prime Blueprint",
+    "status": "added",
+    "nameZh": "布莱顿 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
+        "componentId": "/Lotus/Types/Recipes/Weapons/BratonPrimeBlueprint",
+        "parentEn": "Braton Prime",
+        "partEn": "Blueprint",
+        "parentZh": "布莱顿 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "布莱顿 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:f779c6ea92af1b1dc9011a3949e9b83e",
+    "english": "Voruna Prime Systems Blueprint",
+    "status": "added",
+    "nameZh": "Voruna Prime 系统蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeSystemsComponent",
+        "parentEn": "Voruna Prime",
+        "partEn": "Systems",
+        "parentZh": "Voruna Prime",
+        "partZh": "系统蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Voruna Prime 系统蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:6b65b2d83a1cdc91c169e5c3949fb1f5",
+    "english": "Paris Prime Grip",
+    "status": "added",
+    "nameZh": "帕里斯 Prime 弓身",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowGrip",
+        "parentEn": "Paris Prime",
+        "partEn": "Grip",
+        "parentZh": "帕里斯 Prime",
+        "partZh": "弓身",
+        "blueprintTypeGlossary": false,
+        "nameZh": "帕里斯 Prime 弓身",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:f26f6851c1ab0465d385228e19981567",
+    "english": "Lavos Prime Blueprint",
+    "status": "added",
+    "nameZh": "Lavos Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Alchemist/LavosPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeBlueprint",
+        "parentEn": "Lavos Prime",
+        "partEn": "Blueprint",
+        "parentZh": "Lavos Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "Lavos Prime 蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:d04c14f2cf28e6707ccb2faae6d6b365",
+    "english": "Corufell Prime Blueprint",
+    "status": "added",
+    "nameZh": "闪劫 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/CorufellPrimeBlueprint",
+        "parentEn": "Corufell Prime",
+        "partEn": "Blueprint",
+        "parentZh": "闪劫 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "闪劫 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:bd60f5414db72b77df25741fb54ccad1",
+    "english": "Akbronco Prime Blueprint",
+    "status": "added",
+    "nameZh": "野马双枪 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+        "componentId": "/Lotus/Types/Recipes/Weapons/AkbroncoPrimeBlueprint",
+        "parentEn": "Akbronco Prime",
+        "partEn": "Blueprint",
+        "parentZh": "野马双枪 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "野马双枪 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:a01e2194d22ec638e14cde901c746fc9",
+    "english": "Corufell Prime Receiver",
+    "status": "added",
+    "nameZh": "闪劫 Prime 枪机",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeReceiver",
+        "parentEn": "Corufell Prime",
+        "partEn": "Receiver",
+        "parentZh": "闪劫 Prime",
+        "partZh": "枪机",
+        "blueprintTypeGlossary": false,
+        "nameZh": "闪劫 Prime 枪机",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:42019f4e46cf624e639f03cf6d26a1ad",
+    "english": "Styanax Prime Systems Blueprint",
+    "status": "added",
+    "nameZh": "Styanax Prime 系统蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent",
+        "parentEn": "Styanax Prime",
+        "partEn": "Systems",
+        "parentZh": "Styanax Prime",
+        "partZh": "系统蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Styanax Prime 系统蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:3efad7425a3edc25a3bca401dadea294",
+    "english": "Afentis Prime Barrel",
+    "status": "added",
+    "nameZh": "圣英 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel",
+        "parentEn": "Afentis Prime",
+        "partEn": "Barrel",
+        "parentZh": "圣英 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "圣英 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+    "english": "Caliban Prime Chassis Blueprint",
+    "status": "added",
+    "nameZh": "Caliban Prime 机体蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Sentient/CalibanPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeChassisComponent",
+        "parentEn": "Caliban Prime",
+        "partEn": "Chassis",
+        "parentZh": "Caliban Prime",
+        "partZh": "机体蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Caliban Prime 机体蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:c534d3c6c7c29b9891620a6411234912",
+    "english": "Braton Prime Stock",
+    "status": "added",
+    "nameZh": "布莱顿 Prime 枪托",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeStock",
+        "parentEn": "Braton Prime",
+        "partEn": "Stock",
+        "parentZh": "布莱顿 Prime",
+        "partZh": "枪托",
+        "blueprintTypeGlossary": false,
+        "nameZh": "布莱顿 Prime 枪托",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:bf3e81ec9106c5af13d4461761424f3d",
+    "english": "Caliban Prime Neuroptics Blueprint",
+    "status": "added",
+    "nameZh": "Caliban Prime 头部神经光元蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Sentient/CalibanPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeHelmetComponent",
+        "parentEn": "Caliban Prime",
+        "partEn": "Neuroptics",
+        "parentZh": "Caliban Prime",
+        "partZh": "头部神经光元蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Caliban Prime 头部神经光元蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+    "english": "Daikyu Prime Upper Limb",
+    "status": "added",
+    "nameZh": "大久和弓 Prime 上弓臂",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuUpperLimb",
+        "parentEn": "Daikyu Prime",
+        "partEn": "Upper Limb",
+        "parentZh": "大久和弓 Prime",
+        "partZh": "上弓臂",
+        "blueprintTypeGlossary": false,
+        "nameZh": "大久和弓 Prime 上弓臂",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+    "english": "Kompressa Prime Blueprint",
+    "status": "added",
+    "nameZh": "卡帕压力枪 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+        "componentId": "/Lotus/Types/Recipes/Weapons/KompressaPrimeBlueprint",
+        "parentEn": "Kompressa Prime",
+        "partEn": "Blueprint",
+        "parentZh": "卡帕压力枪 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "卡帕压力枪 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:8c3eb5e7c3acc6072d20440f2c58acc6",
+    "english": "Kompressa Prime Barrel",
+    "status": "added",
+    "nameZh": "卡帕压力枪 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeBarrel",
+        "parentEn": "Kompressa Prime",
+        "partEn": "Barrel",
+        "parentZh": "卡帕压力枪 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "卡帕压力枪 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:3287aecbf624c51485dbbde7a8115d41",
+    "english": "Venato Prime Blueprint",
+    "status": "added",
+    "nameZh": "脉纹 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe",
+        "componentId": "/Lotus/Types/Recipes/Weapons/VentoPrimeBlueprint",
+        "parentEn": "Venato Prime",
+        "partEn": "Blueprint",
+        "parentZh": "脉纹 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "脉纹 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:ee3ad24051b9b514797eb2ebaf206aae",
+    "english": "Daikyu Prime Lower Limb",
+    "status": "added",
+    "nameZh": "大久和弓 Prime 下弓臂",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuLowerLimb",
+        "parentEn": "Daikyu Prime",
+        "partEn": "Lower Limb",
+        "parentZh": "大久和弓 Prime",
+        "partZh": "下弓臂",
+        "blueprintTypeGlossary": false,
+        "nameZh": "大久和弓 Prime 下弓臂",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:c02f4f2d913f96493c8518cdf7248219",
+    "english": "Bronco Prime Blueprint",
+    "status": "added",
+    "nameZh": "野马 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+        "componentId": "/Lotus/Types/Recipes/Weapons/BroncoPrimeBlueprint",
+        "parentEn": "Bronco Prime",
+        "partEn": "Blueprint",
+        "parentZh": "野马 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "野马 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:29d6d6e54807218cde498fd78a3da3be",
+    "english": "Gyre Prime Systems Blueprint",
+    "status": "added",
+    "nameZh": "Gyre Prime 系统蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Gyre/GyrePrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeSystemsComponent",
+        "parentEn": "Gyre Prime",
+        "partEn": "Systems",
+        "parentZh": "Gyre Prime",
+        "partZh": "系统蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Gyre Prime 系统蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:ff3c6fe717140cf36d17f502b0c96405",
+    "english": "Alternox Prime Stock",
+    "status": "added",
+    "nameZh": "电幻步枪 Prime 枪托",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeStock",
+        "parentEn": "Alternox Prime",
+        "partEn": "Stock",
+        "parentZh": "电幻步枪 Prime",
+        "partZh": "枪托",
+        "blueprintTypeGlossary": false,
+        "nameZh": "电幻步枪 Prime 枪托",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:d17679371c2f5d199dedb75fd66b3128",
+    "english": "Voruna Prime Chassis Blueprint",
+    "status": "added",
+    "nameZh": "Voruna Prime 机体蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeChassisComponent",
+        "parentEn": "Voruna Prime",
+        "partEn": "Chassis",
+        "parentZh": "Voruna Prime",
+        "partZh": "机体蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Voruna Prime 机体蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+    "english": "Cedo Prime Barrel",
+    "status": "added",
+    "nameZh": "塞多 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeBarrel",
+        "parentEn": "Cedo Prime",
+        "partEn": "Barrel",
+        "parentZh": "塞多 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "塞多 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:346b26c8bf197c415ac758b6c6894f04",
+    "english": "Styanax Prime Blueprint",
+    "status": "added",
+    "nameZh": "Styanax Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeBlueprint",
+        "parentEn": "Styanax Prime",
+        "partEn": "Blueprint",
+        "parentZh": "Styanax Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "Styanax Prime 蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:f7beacbe122fcccb6070344cbe7a60c3",
+    "english": "Vadarya Prime Stock",
+    "status": "added",
+    "nameZh": "瓦德雅 Prime 枪托",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunStock",
+        "parentEn": "Vadarya Prime",
+        "partEn": "Stock",
+        "parentZh": "瓦德雅 Prime",
+        "partZh": "枪托",
+        "blueprintTypeGlossary": false,
+        "nameZh": "瓦德雅 Prime 枪托",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:f1c60efa353285c9a6571b88e24c3c4b",
+    "english": "Perigale Prime Barrel",
+    "status": "added",
+    "nameZh": "月面狂风 Prime 枪管",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeBarrel",
+        "parentEn": "Perigale Prime",
+        "partEn": "Barrel",
+        "parentZh": "月面狂风 Prime",
+        "partZh": "枪管",
+        "blueprintTypeGlossary": false,
+        "nameZh": "月面狂风 Prime 枪管",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:0e3fbe815c79cfea9ea621f8d439125a",
+    "english": "Athodai Prime Receiver",
+    "status": "added",
+    "nameZh": "阿索代 Prime 枪机",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver",
+        "parentEn": "Athodai Prime",
+        "partEn": "Receiver",
+        "parentZh": "阿索代 Prime",
+        "partZh": "枪机",
+        "blueprintTypeGlossary": false,
+        "nameZh": "阿索代 Prime 枪机",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:fd3f77342b8b03fc9469e44f931eb1d5",
+    "english": "Lavos Prime Neuroptics Blueprint",
+    "status": "added",
+    "nameZh": "Lavos Prime 头部神经光元蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Alchemist/LavosPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeHelmetComponent",
+        "parentEn": "Lavos Prime",
+        "partEn": "Neuroptics",
+        "parentZh": "Lavos Prime",
+        "partZh": "头部神经光元蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Lavos Prime 头部神经光元蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:371732a7c5612bde4c88027a2224814d",
+    "english": "Fang Prime Blade",
+    "status": "added",
+    "nameZh": "狼牙 Prime 刀刃",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangBlade",
+        "parentEn": "Fang Prime",
+        "partEn": "Blade",
+        "parentZh": "狼牙 Prime",
+        "partZh": "刀刃",
+        "blueprintTypeGlossary": false,
+        "nameZh": "狼牙 Prime 刀刃",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:b08a274cab1ed295fa20cdf977e0dac8",
+    "english": "Scindo Prime Blade",
+    "status": "added",
+    "nameZh": "分裂斩斧 Prime 刀刃",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoBlade",
+        "parentEn": "Scindo Prime",
+        "partEn": "Blade",
+        "parentZh": "分裂斩斧 Prime",
+        "partZh": "刀刃",
+        "blueprintTypeGlossary": false,
+        "nameZh": "分裂斩斧 Prime 刀刃",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:1d58b996a075ba13126e794ebdcad70e",
+    "english": "Venka Prime Blueprint",
+    "status": "added",
+    "nameZh": "凯旋之爪 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws",
+        "componentId": "/Lotus/Types/Recipes/Weapons/PrimeVenkaClawsBlueprint",
+        "parentEn": "Venka Prime",
+        "partEn": "Blueprint",
+        "parentZh": "凯旋之爪 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "凯旋之爪 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:27671ce5061f68c945c5791ffcd018ac",
+    "english": "Nyx Prime Chassis Blueprint",
+    "status": "added",
+    "nameZh": "Nyx Prime 机体蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Powersuits/Jade/NyxPrime",
+        "componentId": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent",
+        "parentEn": "Nyx Prime",
+        "partEn": "Chassis",
+        "parentZh": "Nyx Prime",
+        "partZh": "机体蓝图",
+        "blueprintTypeGlossary": false,
+        "nameZh": "Nyx Prime 机体蓝图",
+        "parentProperNameRemainsLatin": true,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:9f4cff0612ac47cdea7a21943b6acbe9",
+    "english": "Cernos Prime Grip",
+    "status": "added",
+    "nameZh": "西诺斯 Prime 弓身",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
+        "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosGrip",
+        "parentEn": "Cernos Prime",
+        "partEn": "Grip",
+        "parentZh": "西诺斯 Prime",
+        "partZh": "弓身",
+        "blueprintTypeGlossary": false,
+        "nameZh": "西诺斯 Prime 弓身",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  },
+  {
+    "id": "reward:wfcd:832651c58c3e75e7b3aba8324e844965",
+    "english": "Hikou Prime Blueprint",
+    "status": "added",
+    "nameZh": "飞扬 Prime 蓝图",
+    "checkedAt": "2026-10-24",
+    "hits": [
+      {
+        "parentId": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+        "componentId": "/Lotus/Types/Recipes/Weapons/PrimeHikouBlueprint",
+        "parentEn": "Hikou Prime",
+        "partEn": "Blueprint",
+        "parentZh": "飞扬 Prime",
+        "partZh": "蓝图",
+        "blueprintTypeGlossary": true,
+        "nameZh": "飞扬 Prime 蓝图",
+        "parentProperNameRemainsLatin": false,
+        "dropExact": true
+      }
+    ]
+  }
+]

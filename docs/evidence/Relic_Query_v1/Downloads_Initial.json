@@ -1,0 +1,38 @@
+[
+  {
+    "name": "items-license.txt",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/LICENSE",
+    "bytes": 1064,
+    "ok": true
+  },
+  {
+    "name": "items-readme.md",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/README.md",
+    "bytes": 9193,
+    "ok": true
+  },
+  {
+    "name": "zh.json",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/i18n/zh.json",
+    "bytes": 4104257,
+    "ok": true
+  },
+  {
+    "name": "components.json",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Components.json",
+    "bytes": 2942967,
+    "ok": true
+  },
+  {
+    "name": "nodes.json",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Node.json",
+    "bytes": 161861,
+    "ok": true
+  },
+  {
+    "name": "relics.json",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Relics.json",
+    "bytes": 2908339,
+    "ok": true
+  }
+]

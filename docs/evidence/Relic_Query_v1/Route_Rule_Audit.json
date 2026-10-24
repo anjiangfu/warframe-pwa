@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-24",
+  "rules": [
+    {
+      "id": "relic-rule:survival", "title": "普通生存：按任务计时器检查奖励", "verification": "snapshot-checked", "sourceIds": ["pc-survival42", "community-rewards"], "rotationVerification": "snapshot-checked",
+      "scope": "仅此目录的普通生存来源；不是仲裁、任务变体或现实耗时预测。",
+      "steps": ["在星图打开对应节点，启动任务后按指示触发警报。", "击败敌人并维持生命维持系统，观察任务内生存计时器与奖励提示。", "任务内每5分钟刻度检查一次奖励，普通序列为A、A、B、C后重复；使用安全旁路可能推进任务计时，不等于现实等待同样时间。", "已达到撤离条件时走正常撤离点，确认任务结算；不要中止任务强退。"],
+      "rotationNotes": {"A": "每周期前两次奖励检查取A表。", "B": "每周期第3次奖励检查取B表，不是第二次。", "C": "每周期第4次奖励检查取C表；不保证得到某个遗物。"},
+      "limitations": ["安全旁路实际刷新与账号解锁未实测；不按墙上时间承诺刷取时长。"]
+    },
+    {
+      "id": "relic-rule:defense", "title": "普通防御：每3波一次奖励检查", "verification": "snapshot-checked", "sourceIds": ["pc-defense385", "community-rewards"], "rotationVerification": "snapshot-checked",
+      "scope": "仅Lares、Romula、Coba普通节点；不套用于Tyana Pass镜像防御或仲裁等变体。",
+      "steps": ["从星图选择对应节点，核对普通防御或黑暗地带防御的任务面板。", "保住防御目标并清理每波敌人；普通防御已由旧5波改为每3波出现奖励与继续／撤离选择。", "普通奖励检查按A、A、B、C循环；不要把C写成第三轮。", "达到想核对的奖励机会后，按结算界面的撤离选择正常完成；继续后失败仍有丢失奖励风险。"],
+      "rotationNotes": {"A": "周期内第1、2次检查为A；普通防御对应完成3、6波。", "B": "周期内第3次检查为B；普通防御对应完成9波。", "C": "周期内第4次检查为C；普通防御对应完成12波，不保证指定遗物。"},
+      "limitations": ["此说明不是全游戏防御算法，特殊节点应采用各自规则。"]
+    },
+    {
+      "id": "relic-rule:interception", "title": "普通拦截：完成一条讯息算一次检查", "verification": "snapshot-checked", "sourceIds": ["community-interception", "community-rewards"], "rotationVerification": "snapshot-checked",
+      "scope": "仅Odin普通星图拦截，不是Archwing拦截或其他任务变体。",
+      "steps": ["从水星星图选择Odin，进入后占领并保持通信塔控制。", "让己方解码先达到100%，再清理本轮剩余敌人。", "每次成功完成讯息后核对奖励和继续／撤离选择；普通序列A、A、B、C循环。", "在奖励界面明确选择撤离并等待正常结算。"],
+      "rotationNotes": {"A": "每周期前两条成功讯息对应A表。", "B": "每周期第3条成功讯息对应B表；不是占领B塔。", "C": "每周期第4条成功讯息对应C表；不是占领C塔。"},
+      "limitations": ["通信塔A/B/C/D标记与奖励表A/B/C不是同一个含义。"]
+    },
+    {
+      "id": "relic-rule:mirror", "title": "Tyana Pass特例：镜像防御", "verification": "snapshot-checked", "sourceIds": ["pc-mirror32", "community-rewards"], "rotationVerification": "snapshot-checked",
+      "scope": "只用于火星Tyana Pass；原掉落表Defense键不等于普通3波防御。",
+      "steps": ["在火星星图找Tyana Pass；官方历史入口要求完成Heart of Deimos，当前账号是否开放仍须在游戏确认。", "保护一侧水晶，按任务指示穿过虚空通道，再完成另一侧防守。", "两侧都成功防守才完成一次奖励检查；采集晶体碎片帮助保护目标，不能将碎片数当遗物保底。", "按继续／撤离提示完成所需的奖励机会后正常结算，不套普通防御波数。"],
+      "rotationNotes": {"A": "前两次完整双侧防守的奖励检查对应A表。", "B": "第3次完整双侧防守的奖励检查对应B表。", "C": "第4次完整双侧防守的奖励检查对应C表，不是第三轮或3波。"},
+      "limitations": ["只说明机制和表索引，不给现实用时或指定遗物保证。"]
+    },
+    {
+      "id": "relic-rule:disruption", "title": "Ganymede特例：中断按成功导管与回合选表", "verification": "snapshot-checked", "sourceIds": ["pc-disruption25", "community-disruption"], "rotationVerification": "snapshot-checked",
+      "scope": "只解释本目录Ganymede普通中断的C表机会，不推演其他节点或任务变体。",
+      "steps": ["从木星星图选择Ganymede；官方历史要求完成Natah，当前开放情况仍需在游戏确认。", "取得与导管对应的钥匙并启动导管，阻止爆破使抵达并破坏目标。", "每回合处理4根导管；奖励表同时看回合数和成功守住数量，不采用AABC循环。", "完成目标奖励机会后走正常撤离点，查看结算；只成功部分导管并不必然是C表。"],
+      "rotationNotes": {"C": "资料表：第3回合成功守住4根，或第4回合起守住3／4根，可进入C表机会；不保证指定遗物。"},
+      "limitations": ["不自动计算账号能否完成，不提供配装或战斗效率建议。"]
+    },
+    {
+      "id": "relic-rule:railjack-cache", "title": "航道额外兴趣点：Caches是额外奖励表", "verification": "snapshot-checked", "sourceIds": ["official-railjack", "pc-railjack30"], "rotationVerification": "unverified",
+      "scope": "航道星图普通任务中的兴趣点机制；四节点B表的具体触发对应未逐节点核实。",
+      "steps": ["切换到航道星图，按对应比邻星区域和保留的节点原名找入口；当前准入未确认。", "按HUD完成基础任务；如发现可进入的废船／兴趣点，登船按提示完成额外目标并确认反馈。", "额外目标奖励仍须完成主任务才结算；金星废船与冥王星货运结构是不同区域实例。", "主任务完成后通过正常导航返回干船坞并等待结算，不用中止任务代替。"],
+      "rotationNotes": {"B": "B是此处额外奖励表索引，不是第2轮或第2个箱子。具体触发表对应未核，不能保证探索兴趣点就取得本表或指定遗物。"},
+      "limitations": ["基础任务子类型仅有社区节点表线索，仍待游戏面板核对。", "Khufu Envoy涉及奥影玩法；机甲与剧情等具体准入未逐项确认，不因一个通用条件就判定可进入。"]
+    }
+  ]
+}

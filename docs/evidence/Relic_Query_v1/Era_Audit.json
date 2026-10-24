@@ -1,0 +1,38 @@
+[
+  {
+    "tier": "Lith",
+    "status": "added",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionNyxValkyrRailjackABronze",
+    "english": "Lith C7 Intact",
+    "upstreamZh": "古纪 C7 遗物",
+    "nameZh": "古纪",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "tier": "Meso",
+    "status": "added",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionStyanaxPrimeDBronze",
+    "english": "Meso A12 Intact",
+    "upstreamZh": "前纪 A12 遗物",
+    "nameZh": "前纪",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "tier": "Neo",
+    "status": "added",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeABronze",
+    "english": "Neo C10 Intact",
+    "upstreamZh": "中纪 C10 遗物",
+    "nameZh": "中纪",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "tier": "Axi",
+    "status": "added",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionStyanaxPrimeABronze",
+    "english": "Axi A21 Intact",
+    "upstreamZh": "后纪 A21 遗物",
+    "nameZh": "后纪",
+    "checkedAt": "2026-10-24"
+  }
+]

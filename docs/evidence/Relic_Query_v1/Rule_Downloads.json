@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Arch-Melee.json",
+    "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Arch-Melee.json",
+    "bytes": 19521,
+    "sha256": "704df45a33347970c95b8f2e69445e106cf6a1a92e688ca99c13f90b4f94904b",
+    "ok": true
+  },
+  {
+    "name": "mirror.html",
+    "url": "https://www.warframe.com/en/patch-notes/pc/32-3-0",
+    "bytes": 135414,
+    "sha256": "2bc20825a36a335c14a947ea8add284c9e3534a18fea5aa1a68140216284e2af",
+    "ok": true
+  },
+  {
+    "name": "defense.html",
+    "url": "https://www.warframe.com/en/patch-notes/pc/38-5-0",
+    "bytes": 443983,
+    "sha256": "ee6627ac740ecaed137993824581a543578066b053eb36c98b390e3709ea9877",
+    "ok": true
+  },
+  {
+    "name": "survival.html",
+    "url": "https://www.warframe.com/en/patch-notes/pc/42-0-0",
+    "bytes": 469243,
+    "sha256": "cb634906d2d4427335b3b3b7b1c18a9e07d56c4d5b127aa76a721ac36798a504",
+    "ok": true
+  },
+  {
+    "name": "disruption.html",
+    "url": "https://www.warframe.com/en/patch-notes/pc/25-0-0",
+    "bytes": 103805,
+    "sha256": "319ce9ff023f4bd98a90596d59216de1fd3f84d273f374f633c026a1f6b81752",
+    "ok": true
+  },
+  {
+    "name": "railjack.html",
+    "url": "https://support.warframe.com/hc/en-us/articles/38820115630093-Railjack",
+    "error": "HTTP Error 403: Forbidden",
+    "ok": false
+  },
+  {
+    "name": "railjack-pc.html",
+    "url": "https://www.warframe.com/en/patch-notes/pc/30-0-0",
+    "bytes": 89791,
+    "sha256": "a677d13330257d5ccbb5d44fb9f7d2950fcd10fb92faf2cb5a203ca6e76aeedf",
+    "ok": true
+  }
+]

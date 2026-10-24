@@ -1,0 +1,100 @@
+{
+  "package": "@wfcd/items",
+  "version": "1.1276.31",
+  "gitHead": "ec9b91104d7a00c0b8e839d97f6fcff5a4789c99",
+  "declaredTarballIntegrity": "sha512-TI4vUCHDkMeNcdKZp+z80Zrs1dEpV42h22hDEavytcJBUybbaOYkNvLtzAALoRt1NGb1p9qSDAFTVoR4IirVfg==",
+  "tarballDownloaded": false,
+  "checkedAt": "2026-10-24",
+  "files": [
+    {
+      "path": "Arch-Melee.json",
+      "bytes": 19521,
+      "sha256": "704df45a33347970c95b8f2e69445e106cf6a1a92e688ca99c13f90b4f94904b"
+    },
+    {
+      "path": "components.json",
+      "bytes": 2942967,
+      "sha256": "0d91f24cbfd3fcb80d9f10b06f7d997977d993f35df6db90c9157d08c2494a82"
+    },
+    {
+      "path": "defense.html",
+      "bytes": 443983,
+      "sha256": "ee6627ac740ecaed137993824581a543578066b053eb36c98b390e3709ea9877"
+    },
+    {
+      "path": "disruption.html",
+      "bytes": 103805,
+      "sha256": "319ce9ff023f4bd98a90596d59216de1fd3f84d273f374f633c026a1f6b81752"
+    },
+    {
+      "path": "items-license.txt",
+      "bytes": 1064,
+      "sha256": "673c2edd935e4386a055f1a51242917a6bd9d943e0aa8eed2d71accd24095b38"
+    },
+    {
+      "path": "items-readme.md",
+      "bytes": 9193,
+      "sha256": "15d02645dfb50d9d4ae70ee0ed4e225a5b79d19a5089e4fc239997b672f323ae"
+    },
+    {
+      "path": "jsdelivr-package.json",
+      "bytes": 3431,
+      "sha256": "7d377951a9d989b6fa33927dca2f3733b7e603b4713fc225fbf8db24c290b5e7"
+    },
+    {
+      "path": "Melee.json",
+      "bytes": 656859,
+      "sha256": "eced40a4af4af665db1ebe902ffc3dc68b694677967604d537253695101ae741"
+    },
+    {
+      "path": "mirror.html",
+      "bytes": 135414,
+      "sha256": "2bc20825a36a335c14a947ea8add284c9e3534a18fea5aa1a68140216284e2af"
+    },
+    {
+      "path": "nodes.json",
+      "bytes": 161861,
+      "sha256": "07f3d1e200de43aac45fa64c1b1621cbfa28260bb3cc75915aecfd23153b5b56"
+    },
+    {
+      "path": "npm-latest.json",
+      "bytes": 4207,
+      "sha256": "13e27913ec3fa2faee8e866207e9227454a2a9a47120db7cf67cf12dba0b1a85"
+    },
+    {
+      "path": "Primary.json",
+      "bytes": 447008,
+      "sha256": "541d01598d4bb1743d77bc226c16b603d6e4f545f5fc56f71b2ee9802e562e39"
+    },
+    {
+      "path": "railjack-pc.html",
+      "bytes": 89791,
+      "sha256": "a677d13330257d5ccbb5d44fb9f7d2950fcd10fb92faf2cb5a203ca6e76aeedf"
+    },
+    {
+      "path": "relics.json",
+      "bytes": 2908339,
+      "sha256": "45d1e7cec24cbc5de46660613d396c4e6ac1198914bd0a2dfb6ccee72d4c9dae"
+    },
+    {
+      "path": "Secondary.json",
+      "bytes": 325290,
+      "sha256": "86d9ec7e2596bc80cb24000240bfbadb87fb77d2cafe869ef9f45ff75e72b3ec"
+    },
+    {
+      "path": "survival.html",
+      "bytes": 469243,
+      "sha256": "cb634906d2d4427335b3b3b7b1c18a9e07d56c4d5b127aa76a721ac36798a504"
+    },
+    {
+      "path": "Warframes.json",
+      "bytes": 353813,
+      "sha256": "8212da092f96ae1c297676729d800166fedf30dee8b93b00b2195bf72b3a4b6b"
+    },
+    {
+      "path": "zh.json",
+      "bytes": 4104257,
+      "sha256": "0d71ffa75c34a3e8e12bcfb4c7ac8b5e991d309b9a339232debb94f2f4a62c17"
+    }
+  ]
+}
