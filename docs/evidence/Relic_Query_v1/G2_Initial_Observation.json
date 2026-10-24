@@ -1,0 +1,6 @@
+{
+  "stage": "G2_Initial",
+  "runner": "All five cases reached; four generated evidence, one assertion failed. Runner remained in teardown without summary.",
+  "observedAt": "2026-10-24T11:50:37.7423335+08:00",
+  "failure": "New offline test expected 3 Cernos rewards; original catalog contains exactly 2 IDs."
+}

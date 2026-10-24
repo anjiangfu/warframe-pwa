@@ -1,0 +1,49 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relic-localization.spec.ts --grep bilingual --reporter=line
+
+
+[WebServer] (node:9844) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+
+(node:29720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\relic-localization.spec.ts:10:1 › bilingual displays and all 56 added name searches expose exact source evidence without writing profiles
+  1) e2e\relic-localization.spec.ts:10:1 › bilingual displays and all 56 added name searches expose exact source evidence without writing profiles 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('region', { name: '奖励反查结果', exact: true })
+    Expected substring: "西诺斯 Prime 下弓臂"
+    Received string:    "部件 · Cernos Prime Lower LimbCernos Prime Lower Limb · 部件本目录命中1个遗物（仅本目录范围）。这是有限样本，不能当作该奖励的全部来源。虚空遗物 · Lith C7Lith C7 Relic · 当前可获取未知"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('region', { name: '奖励反查结果', exact: true }) with timeout 5000ms
+      - waiting for getByRole('region', { name: '奖励反查结果', exact: true })
+        14 × locator resolved to <section class="panel" role="region" aria-label="奖励反查结果">…</section>
+           - unexpected value "部件 · Cernos Prime Lower LimbCernos Prime Lower Limb · 部件本目录命中1个遗物（仅本目录范围）。这是有限样本，不能当作该奖励的全部来源。虚空遗物 · Lith C7Lith C7 Relic · 当前可获取未知"
+
+
+      10 | test('bilingual displays and all 56 added name searches expose exact source evidence without writing profiles',async({page})=>{
+      11 |  test.setTimeout(90000);await open(page);const before=await records(page);await page.getByRole('button',{name:'按奖励查遗物',exact:true}).click();for(const r of c.rewards.filter(r=>r.display)){
+    > 12 |   for(const q of [r.display!.nameZh.replace(/\s+/g,''),r.english]){await page.getByLabel('奖励名称',{exact:true}).fill(q);await results(page).locator(`button[data-reward-id="${r.id}"]`).click();await expect(reverse(page)).toContainText(r.display!.nameZh);await expect(reverse(page)).toContainText(r.english);}
+         |                                                                                                                                                                                                                           ^
+      13 |   await expect(reverse(page).getByTestId('name-evidence')).toContainText('2026-10-24');await expect(reverse(page).getByTestId('name-evidence')).toContainText(r.display!.upstreamIds[1]);if(r.display!.properNameUntranslated)await expect(reverse(page)).toContainText('专名仍保留原文');
+      14 |  }
+      15 |  await choose(page,'relic:lith:g14');await expect(detail(page)).toContainText('古纪 G14');await expect(detail(page)).toContainText('Lith G14 Relic');expect(await records(page)).toEqual(before);await writeFile(evidencePath('Relic_V1_Names.json'),JSON.stringify({addedNames:56,latinProperNamesRetained:17,chineseAndEnglishQueriesChecked:112,exactUpstreamIdsVisible:true,eraChinese:true,profilesSnapshotsImportsEqual:true},null,2));
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\rv1\app\e2e\relic-localization.spec.ts:12:219
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\relic-localization-bilingu-acb29-ce-without-writing-profiles\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\relic-localization-bilingu-acb29-ce-without-writing-profiles\error-context.md
+
+
+  1 failed
+    e2e\relic-localization.spec.ts:10:1 › bilingual displays and all 56 added name searches expose exact source evidence without writing profiles 

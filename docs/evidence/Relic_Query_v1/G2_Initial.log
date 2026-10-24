@@ -1,0 +1,55 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relic-localization.spec.ts --reporter=line
+
+
+[WebServer] (node:37964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+
+(node:31232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/5] e2e\relic-localization.spec.ts:10:1 › bilingual displays and all 56 added name searches expose exact source evidence without writing profiles
+[2/5] e2e\relic-localization.spec.ts:17:1 › all eleven entries separate base mode, extra table, scoped steps, exception and unverified trigger
+[3/5] e2e\relic-localization.spec.ts:22:1 › Chinese filtering, evidence folds, return and profile switching do not create personal history
+[4/5] e2e\relic-localization.spec.ts:25:1 › all six route rule descriptions and localized queries reopen offline after closing the controlled page
+  1) e2e\relic-localization.spec.ts:25:1 › all six route rule descriptions and localized queries reopen offline after closing the controlled page 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: '遗物查询结果', exact: true }).locator('button[data-reward-id]')
+    Expected: 3
+    Received: 2
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('region', { name: '遗物查询结果', exact: true }).locator('button[data-reward-id]') with timeout 5000ms
+      - waiting for getByRole('region', { name: '遗物查询结果', exact: true }).locator('button[data-reward-id]')
+        14 × locator resolved to 2 elements
+           - unexpected value "2"
+
+
+      24 | });
+      25 | test('all six route rule descriptions and localized queries reopen offline after closing the controlled page',async({page,context})=>{
+    > 26 |  await open(page);await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);const before=await records(page);await context.setOffline(true);await page.close();const offline=await context.newPage();await offline.goto(TEST_ORIGIN+'/#relics');for(const rule of c.routeRules!){const l=c.locations.find(l=>l.guide?.ruleId===rule.id)!,a=c.acquisitions.find(a=>a.locationId===l.id)!;await choose(offline,a.relicId);const view=detail(offline).getByTestId('route-guide:'+l.id);await expect(view).toContainText(rule.title);await expect(view.locator('ol>li')).toHaveCount(4);await expect(view).toContainText('2026-10-24');}await offline.getByRole('button',{name:'按奖励查遗物',exact:true}).click();await offline.getByLabel('奖励名称',{exact:true}).fill('西诺斯');await expect(results(offline).locator('button[data-reward-id]')).toHaveCount(3);expect(await records(offline)).toEqual(before);await offline.screenshot({path:evidencePath('Relic_V1_Offline.png'),fullPage:true});await writeFile(evidencePath('Relic_V1_Offline.json'),JSON.stringify({swControlled:true,closedAndReopened:true,rulesReadable:6,chineseSearch:true,externalSourcesNotOpened:true,readonly:true},null,2));
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+      27 | });
+      28 | test('long Chinese and English names, evidence and mirror route steps wrap on desktop and mobile viewports',async({page})=>{
+      29 |  await open(page);const a=c.acquisitions.find(a=>c.locations.find(l=>l.id===a.locationId)?.node==='Tyana Pass')!;await choose(page,a.relicId);await expect(detail(page)).toContainText('镜像防御');await page.screenshot({path:evidencePath('Relic_V1_Desktop.png'),fullPage:true});await detail(page).screenshot({path:evidencePath('Relic_V1_Detail_Desktop.png')});for(const [width,height]of [[360,860],[412,860],[860,412]]){await page.setViewportSize({width,height});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await detail(page).screenshot({path:evidencePath(`Relic_V1_Detail_${width}.png`)});}await writeFile(evidencePath('Relic_V1_Layout.json'),JSON.stringify({viewports:[[1440,960],[360,860],[412,860],[860,412]],horizontalOverflow:false,androidPhysical:false,gameplayVerified:false},null,2));
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\rv1\app\e2e\relic-localization.spec.ts:26:837
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\relic-localization-all-six-296ae-closing-the-controlled-page\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\relic-localization-all-six-296ae-closing-the-controlled-page\error-context.md
+
+
+
+(node:16936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[5/5] e2e\relic-localization.spec.ts:28:1 › long Chinese and English names, evidence and mirror route steps wrap on desktop and mobile viewports

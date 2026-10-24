@@ -1,0 +1,20 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relic-localization.spec.ts --reporter=line
+
+[WebServer] (node:6836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 5 tests using 1 worker
+
+
+(node:39700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/5] e2e\relic-localization.spec.ts:10:1 › bilingual displays and all 56 added name searches expose exact source evidence without writing profiles
+[2/5] e2e\relic-localization.spec.ts:17:1 › all eleven entries separate base mode, extra table, scoped steps, exception and unverified trigger
+[3/5] e2e\relic-localization.spec.ts:22:1 › Chinese filtering, evidence folds, return and profile switching do not create personal history
+[4/5] e2e\relic-localization.spec.ts:25:1 › all six route rule descriptions and localized queries reopen offline after closing the controlled page
+[5/5] e2e\relic-localization.spec.ts:28:1 › long Chinese and English names, evidence and mirror route steps wrap on desktop and mobile viewports
+  5 passed (12.0s)

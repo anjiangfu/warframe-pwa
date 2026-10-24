@@ -1,0 +1,14 @@
+{
+  "browserDurationSeconds": 12,
+  "initialTeardown": "Runner exited 1 after ending only its verified isolated CLI tree. Green run used unsandboxed process control and exited normally.",
+  "buildExit": 0,
+  "originalDistUnchanged": true,
+  "browserPassed": 5,
+  "lintExit": 0,
+  "stage": "G2",
+  "typecheckExit": 0,
+  "testOrigin": "http://127.0.0.1:4186",
+  "browserExit": 0,
+  "initialFailure": "Offline Cernos query incorrectly expected 3; baseline contains only the exact two IDs now asserted.",
+  "sourceFilesCompared": 82
+}
