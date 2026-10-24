@@ -1,0 +1,32 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-localization.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rv1/app
+
+ ❯ src/test/relic-localization.test.ts (12 tests | 1 failed) 86ms
+   × four verified era names and original era/code queries coexist with independently marked Latin proper names 8ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relic-localization.test.ts > four verified era names and original era/code queries coexist with independently marked Latin proper names
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/test/relic-localization.test.ts:18:488
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 11 passed (12)
+   Start at  11:38:47
+   Duration  357ms (tests 41%, transform 31%, import 26%, worker 2%)
+

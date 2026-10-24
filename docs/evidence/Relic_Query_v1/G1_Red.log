@@ -1,0 +1,132 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-localization.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rv1/app
+
+ ❯ src/test/relic-localization.test.ts (12 tests | 11 failed) 48ms
+   × all 56 audited names are searchable in Chinese combinations and exact old English without changing reverse membership 8ms
+   × four verified era names and original era/code queries coexist with independently marked Latin proper names 4ms
+   × all eleven locations have entry/category/rule evidence while the original Caches and Defense keys remain unchanged 2ms
+   × collected mode descriptions use three-wave defense, timed-game survival, decoded-message interception and performance-based disruption 2ms
+   × legacy catalogs without any optional fields still validate and use the old readable fallback 2ms
+   × synthetic conflicting or unverified names do not silently become trusted aliases 2ms
+   × synthetic optional-field mistakes and unaudited exceptions fail validation instead of upgrading evidence 2ms
+   × synthetic missing rotation notes stay unknown and an explicitly evidenced exception remains separate 2ms
+   × synthetic mixed evidence never upgrades current availability or a conflicting route from translated names 2ms
+   × synthetic identical Chinese display names remain different stable entities 2ms
+   × all public bilingual and rule queries leave the catalog and personal data contract untouched 3ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 11 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relic-localization.test.ts > all 56 audited names are searchable in Chinese combinations and exact old English without changing reverse membership
+AssertionError: expected undefined to be '西诺斯 Prime 下弓臂' // Object.is equality
+
+- Expected:
+"西诺斯 Prime 下弓臂"
+
++ Received:
+undefined
+
+ ❯ src/test/relic-localization.test.ts:15:188
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > four verified era names and original era/code queries coexist with independently marked Latin proper names
+AssertionError: expected [] to deeply equal [ 'relic:lith:c7', …(2) ]
+
+- Expected
++ Received
+
+- [
+-   "relic:lith:c7",
+-   "relic:lith:g14",
+-   "relic:lith:s19",
+- ]
++ []
+
+ ❯ src/test/relic-localization.test.ts:18:167
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > all eleven locations have entry/category/rule evidence while the original Caches and Defense keys remain unchanged
+AssertionError: expected undefined to be truthy
+
+- Expected:
+true
+
++ Received:
+undefined
+
+ ❯ src/test/relic-localization.test.ts:21:71
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > collected mode descriptions use three-wave defense, timed-game survival, decoded-message interception and performance-based disruption
+TypeError: Cannot read properties of undefined (reading 'find')
+ ❯ r src/test/relic-localization.test.ts:26:49
+
+ ❯ src/test/relic-localization.test.ts:26:90
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > legacy catalogs without any optional fields still validate and use the old readable fallback
+TypeError: resolveRelicGuide is not a function
+ ❯ src/test/relic-localization.test.ts:29:76
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > synthetic conflicting or unverified names do not silently become trusted aliases
+TypeError: Cannot read properties of undefined (reading 'display')
+ ❯ src/test/relic-localization.test.ts:32:121
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > synthetic optional-field mistakes and unaudited exceptions fail validation instead of upgrading evidence
+TypeError: Cannot set properties of undefined (setting 'sourceIds')
+ ❯ c.locations.<computed>.guide.ruleId src/test/relic-localization.test.ts:35:62
+
+ ❯ src/test/relic-localization.test.ts:35:364
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > synthetic missing rotation notes stay unknown and an explicitly evidenced exception remains separate
+TypeError: resolveRelicGuide is not a function
+ ❯ src/test/relic-localization.test.ts:38:74
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > synthetic mixed evidence never upgrades current availability or a conflicting route from translated names
+TypeError: Cannot set properties of undefined (setting 'modeVerification')
+ ❯ src/test/relic-localization.test.ts:41:48
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > synthetic identical Chinese display names remain different stable entities
+TypeError: Cannot read properties of undefined (reading 'display')
+ ❯ src/test/relic-localization.test.ts:44:61
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/11]⎯
+
+ FAIL  src/test/relic-localization.test.ts > all public bilingual and rule queries leave the catalog and personal data contract untouched
+TypeError: resolveRelicGuide is not a function
+ ❯ src/test/relic-localization.test.ts:47:152
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/11]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  11 failed | 1 passed (12)
+   Start at  11:36:16
+   Duration  732ms (transform 42%, import 40%, tests 13%, worker 5%)
+
