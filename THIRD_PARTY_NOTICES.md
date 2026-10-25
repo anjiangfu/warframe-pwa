@@ -39,3 +39,6 @@ React运行时还含scheduler（MIT）；运行时完整许可和适用NOTICE保
 虚空遗物查询v0（2026-10-21）：采用WFCD/warframe-drop-data固定提交3263b2dff8bc1b434a191f0364395b156bd26561中12个遗物的基础奖励和24条摘录任务来源，独立适配为本项目小目录。上游MIT，Copyright (c) 2017 Christopher Kaster；完整许可附于app/licenses/THIRD_PARTY_LICENSES.txt及随应用提供的同名public文件。原输入hash、字段、官方表同字节核对和采用范围见docs/Relic_Query_v0_Sources.md。没有复制上游实现、采集脚本、图像、地图或Tenno Hub加工资料；未采用warframe-items数据，不运行第三方更新脚本，无新依赖或第三方AI。MIT不概括授权混合内容；游戏名称/物品事实仍归相关权利人，快照核对不等于当前可获取或游戏内实测。
 
 遗物查询v1（2026-10-24）：采用@wfcd/items固定版本1.1276.31的少量中文名称和精确父/部件、遗物、节点标识。MIT，Copyright (c) 2017 Kaptard；完整许可正文附于本地及public许可汇编。未安装或执行该包，未引入全量目录或图像；源文件hash、版本声明、逐项关联和组合名称局限见docs/Relic_Query_v1_Sources.md。部分专名在上游zh中仍为拉丁字母，不把组合类型名说成官方完整译名。官方补丁/支持与社区页面仅核对少量入口和规则事实，短步骤独立编写，不复制Wiki模块、加工映射或攻略正文；没有Tenno Hub内容、第三方AI、新依赖或素材。来源核验不代表当前可获取、个人账号已解锁或游戏亲测。
+## 遗物查询 v2 补记（2026-10-25）
+
+沿用warframe-drop-data固定提交3263b2dff8bc1b434a191f0364395b156bd26561及@wfcd/items@1.1276.31的MIT资料，未增加第三方依赖、图像或代码。本轮有限静态目录扩至31遗物／117奖励记录，精确来源、hash、中文映射和数量奖励说明见docs/Relic_Query_v2_Sources.md。既有版权与MIT全文继续保留在app/licenses/THIRD_PARTY_LICENSES.txt及app/public/THIRD_PARTY_LICENSES.txt。没有导入全量原始文件、攻略正文或Tenno Hub加工数据；当前获取状态仍未知。

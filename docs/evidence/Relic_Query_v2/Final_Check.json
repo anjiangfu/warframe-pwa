@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-25",
+  "stage": "G3 precommit",
+  "baseline": "d63c72e023b04ddfb8b5053b6378eaffcadd315c",
+  "main": "08fda3880f0cdd796f3b1c9e3d84032083aa0091",
+  "appUnitTests": 120,
+  "converterTests": 7,
+  "formalBrowserTests": 56,
+  "extraHexTests": 1,
+  "qualityCommandExits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "converterExit": 0,
+  "protectedInputs": 17,
+  "oldDataContracts": 10,
+  "testedFiles": 84,
+  "oldRelicRecordsUnchanged": true,
+  "originalDistUnchangedDuringTests": true,
+  "finalDistMatchesTestedNormal": true,
+  "actualCounts": {
+    "relics": 31,
+    "rewards": 117,
+    "relations": 186,
+    "acquisitions": 62,
+    "locations": 11,
+    "routeRules": 6
+  },
+  "catalogSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+  "converterSourceHashes": {
+    "tools\\relic-query-v2\\convert.mjs": "14e8c73d9b27062293d57c7c70e2cbc613d006e24c337ec37a54241c62e48f7d",
+    "tools\\relic-query-v2\\convert.test.mjs": "96a344eb3abf594dc839ad3ec853534bb4e9b3f9cf7271565fc7701bbfaef3cf"
+  },
+  "screenshotsViewed": [
+    "G2_Green/Relic_V2_Results.png",
+    "Final/Relic_V2_Detail_360.png original resolution"
+  ],
+  "normalBuild": "m0-ab7372f47253",
+  "previewHTTP": 200,
+  "physicalAndroid": false,
+  "separateReview": "pending after local delivery; stop, no automatic repair or next milestone"
+}

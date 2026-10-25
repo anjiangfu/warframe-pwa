@@ -1,0 +1,9 @@
+{
+  "workingDirectory": "D:/wf/Warframe_PWA_Handoff_20261016/app",
+  "normalBuild": true,
+  "temporarySWBuild": false,
+  "finishedAt": "2026-10-25T07:21:58.5772163Z",
+  "command": "npm.cmd run build",
+  "exitCode": 0,
+  "startedAt": "2026-10-25T07:21:53.5575074Z"
+}

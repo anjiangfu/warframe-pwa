@@ -1,0 +1,9 @@
+{
+  "newBrowserCount": 3,
+  "newUnitCount": 6,
+  "allowedChanges": "two relic unit files and two relic browser files: count, old-set projection and source date expectations only; reasons in Test_Expectation_Changes.md",
+  "oldUnitCount": 114,
+  "otherTestsStorageProfileProviderPackageScriptsDiffExit": 0,
+  "oldBrowserCount": 53,
+  "baseline": "d63c72e023b04ddfb8b5053b6378eaffcadd315c"
+}

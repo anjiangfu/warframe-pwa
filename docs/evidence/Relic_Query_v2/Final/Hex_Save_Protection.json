@@ -1,0 +1,7 @@
+{
+  "quota": true,
+  "revision": true,
+  "updateBarrier": true,
+  "allPriorStatePreserved": true,
+  "noFalseSuccess": true
+}

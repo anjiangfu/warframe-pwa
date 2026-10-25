@@ -1,0 +1,6 @@
+{
+  "publicQueryIndependentOfProfile": true,
+  "querySelectionRetained": true,
+  "profilesSnapshotsImportsEqual": true,
+  "noRelicInventoryOrHistoryWrites": true
+}

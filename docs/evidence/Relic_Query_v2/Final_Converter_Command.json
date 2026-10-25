@@ -1,0 +1,7 @@
+{
+  "command": "node --test tools/relic-query-v2/convert.test.mjs",
+  "finishedAt": "2026-10-25T07:17:09.4820866Z",
+  "exitCode": 0,
+  "startedAt": "2026-10-25T07:17:08.0463438Z",
+  "expectedTests": 7
+}

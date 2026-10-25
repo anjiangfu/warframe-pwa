@@ -269,3 +269,17 @@ node scripts/run-quality.mjs
 启动仍使用原app中的 `npm.cmd run build` 及 `npm.cmd run preview -- --host 127.0.0.1 --port 4194 --strictPort`。已有4194服务直接使用；旧页面先处理草稿，按SW提示更新，不清库。自动化回归须在 `.v/rv1/app` 隔离副本运行：从项目根执行 `docs/evidence/Relic_Query_v1/prepare-isolated.py`（Python3），仅联接现有app/node_modules；在隔离app设APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR和M0_EVIDENCE_DIR使用新的绝对证据目录，M0_EVIDENCE_PREFIX使用新前缀，再执行 `node scripts/run-quality.mjs`。不要覆盖本轮证据，不在提供正常预览的原app直接跑临时SW更新测试。
 
 作者命令结果、保护hash、失败记录、桌面截图、独立Hex另计与复跑说明见 `../docs/Relic_Query_v1_Acceptance.md`。作者实跑与随后独立复核分开记录；Android真机、可信HTTPS／系统安装及游戏内核验仍未执行。本轮完成后停止，等待独立复核。
+
+## 遗物查询 v2：31项目录扩容（2026-10-25）
+
+打开 `http://127.0.0.1:4194/#relics`。本轮从原七普通地点的固定快照扩到31遗物／117奖励／186关系，纪元分布为古纪8、前纪8、中纪7、后纪8；每个遗物6奖励、摘录2来源，总62。结果仍是有限目录，找不到不代表游戏没有；有表记录不代表现在可刷，当前获取和账号解锁继续未知。11地点及6规则没有扩充，原镜像特例、中断／计时规则与四航道待核保持。
+
+新增19个：Lith A13/C15/L8/S18/V11；Meso C11/D8/D9/K9/Y2；Neo A16/C11/V13/Y2；Axi A22/C12/D6/S21/V14。新增60奖励中59项有精确名称组合证据（45项父专名含汉字，14项仍为拉丁原文并待核）；另一项源记录2X Forma Blueprint显示“2份福马蓝图”，关联原blueprint:forma，说明数量而不自动入库。它与单份福马蓝图可分别反查，不能把两份当成品福马。原56组合和原福马名称保持，中文／原英文／编号／反查及来源日期离线可读，外链需联网。
+
+独立目录版本relics.2026.10.25.1。没有新增地点、规则、遗物／部件库存、目标、历史、实时轮换或概率／价格／收益计算；个人模型、DB和完整备份格式不改。名称、关系和来源分开核验，不能由译名升级当前可刷。v1文档的类型词计数实际15条及package元数据version差异，已补记本轮Sources，旧原始记录保留。
+
+正常启动沿用 `npm.cmd run build` 与 `npm.cmd run preview -- --host 127.0.0.1 --port 4194 --strictPort`；已有4194服务直接使用，不停止或重复启动。旧页面处理草稿后按SW提示更新，勿清库。手动迁入仍先导出、预览、明确新建恢复，不访问其他origin的浏览器数据库。
+
+复跑从项目根执行docs/evidence/Relic_Query_v2/prepare-isolated.py（Python3），只联接现有app/node_modules；在.v/rv2/app设置APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR／M0_EVIDENCE_DIR使用新的绝对证据目录、M0_EVIDENCE_PREFIX使用新前缀，执行node scripts/run-quality.mjs。转换工具及7项测试另见 `../tools/relic-query-v2/README.md`。不要在提供4194的原app跑临时SW构建，不覆盖旧证据或读取真实档案。
+
+来源及逐项审计见 `../docs/Relic_Query_v2_Sources.md`，实际命令、原回归调整理由、失败记录、保护hash和未验项见 `../docs/Relic_Query_v2_Acceptance.md`。本轮最终本地提交后停止待独立复核；Android、可信HTTPS／系统安装与游戏内核验仍未验。

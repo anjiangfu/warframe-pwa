@@ -1,0 +1,226 @@
+npm.cmd run lint exit 0
+
+> tenno-local-planner@0.1.0 lint
+> eslint .
+
+
+npm.cmd test exit 0
+
+> tenno-local-planner@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rv2/app
+
+
+ Test Files  14 passed (14)
+      Tests  120 passed (120)
+   Start at  15:17:19
+   Duration  3.23s (tests 62%, import 26%, transform 9%, worker 2%)
+
+
+npm.cmd run typecheck exit 0
+
+> tenno-local-planner@0.1.0 typecheck
+> tsc --noEmit
+
+
+npm.cmd run build exit 0
+
+> tenno-local-planner@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 53 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.54 kB │ gzip:   0.38 kB
+dist/assets/index-CNp0hn9A.css   30.33 kB │ gzip:   7.36 kB
+dist/assets/index-93ufReZg.js   700.63 kB │ gzip: 186.58 kB
+
+✓ built in 196ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+npm.cmd run test:browser -- --reporter=line exit 0
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test --reporter=line
+
+
+
+Running 56 tests using 1 worker
+
+
+
+[1/56] e2e\actions.spec.ts:17:1 › blank action list has no historical facts; focus sorting, top three, expansion and browsing are read only
+[2/56] e2e\actions.spec.ts:24:1 › completed and installed targets are excluded; operation and unverified material links use existing guides
+[3/56] e2e\actions.spec.ts:32:1 › shared entry uses one deduction and follows quantity, inventory, next rank and goal status across pages
+[4/56] e2e\actions.spec.ts:41:1 › action navigation preserves unsaved facts, stale writes fail and profile switches do not leak actions
+[5/56] e2e\actions.spec.ts:47:1 › full backup restores business state and derived actions reopen offline with desktop and mobile views
+[6/56] e2e\actions.spec.ts:53:1 › unsaved overview facts block a production update; cancel keeps the draft and later update retains explicit save
+[7/56] e2e\backup-boundaries.spec.ts:5:1 › existing oversized document reports export failure, downloads nothing and keeps every note
+[8/56] e2e\backup-boundaries.spec.ts:15:1 › legacy depth-boundary file is downloaded and restored through the actual backup UI
+[9/56] e2e\crafting-materials.spec.ts:6:1 › independent lookup is read only, crafting shares stock, statuses filter and complete backup downloads/restores all fields
+[10/56] e2e\crafting-materials.spec.ts:20:1 › crafting quantity quota/conflict/update failures preserve existing data and do not report success
+[11/56] e2e\crafting-materials.spec.ts:27:1 › independent material and crafting pages reopen offline, search and persist shared stock
+[12/56] e2e\current-goals.spec.ts:9:1 › goal draft: cancel, conflict, revision, selected profile, actual backup restore and tree links
+[13/56] e2e\current-goals.spec.ts:25:1 › draft snapshot failure and update write barrier do not change profiles or report success
+[14/56] e2e\current-goals.spec.ts:31:1 › goal assistant can reopen offline, record progress and display forty-finisher guidance
+[15/56] e2e\material-guides.spec.ts:11:1 › all 23 resources show scoped routes, verification, dates and evidence without profile writes
+[16/56] e2e\material-guides.spec.ts:24:1 › search, crafting, syndicate and assistant use identical material routes and do not change saved business data
+[17/56] e2e\material-guides.spec.ts:34:1 › material routes and explicit unverified alternatives reopen after offline page close
+[18/56] e2e\material-guides.spec.ts:39:1 › detailed routes remain readable on desktop and 360/412 viewports without horizontal overflow
+[19/56] e2e\material-reference.spec.ts:11:1 › saved single project recomputes with cross-page quantity, inventory-only saves and current target status
+[20/56] e2e\material-reference.spec.ts:21:1 › shared reference follows current target membership, status and quantity instead of a numerical snapshot
+[21/56] e2e\material-reference.spec.ts:28:1 › unsaved preview stays explicit and read-only while assistant links follow the current saved plan
+[22/56] e2e\pwa.spec.ts:5:1 › manifest, PNG dimensions, Chrome installability and measured localhost startup
+[23/56] e2e\pwa.spec.ts:11:1 › production PWA controls page, survives offline page close and deep-link reopening
+e2e\pwa.spec.ts:11:1 › production PWA controls page, survives offline page close and deep-link reopening
+CACHE_HEADERS [
+  {
+    url: 'http://127.0.0.1:4186/assets/index-93ufReZg.js',
+    vary: 'Origin'
+  },
+  {
+    url: 'http://127.0.0.1:4186/assets/index-CNp0hn9A.css',
+    vary: 'Origin'
+  },
+  { url: 'http://127.0.0.1:4186/icons/icon-192.png', vary: 'Origin' },
+  { url: 'http://127.0.0.1:4186/icons/icon-512.png', vary: 'Origin' },
+  { url: 'http://127.0.0.1:4186/index.html', vary: 'Origin' },
+  { url: 'http://127.0.0.1:4186/manifest.webmanifest', vary: 'Origin' },
+  {
+    url: 'http://127.0.0.1:4186/THIRD_PARTY_LICENSES.txt',
+    vary: 'Origin'
+  }
+]
+
+[24/56] e2e\relic-expansion.spec.ts:12:1 › all nineteen additions show six exact rewards and sixty new rewards resolve to precise reverse sets in both languages
+[25/56] e2e\relic-expansion.spec.ts:18:1 › all thirty-one complete reward tables reopen offline with finite scope and without personal writes
+[26/56] e2e\relic-expansion.spec.ts:21:1 › quantity reward links the existing Forma blueprint; long evidence and all results wrap at 360/412 and landscape
+[27/56] e2e\relic-localization.spec.ts:10:1 › bilingual displays and all 56 added name searches expose exact source evidence without writing profiles
+[28/56] e2e\relic-localization.spec.ts:17:1 › all eleven entries separate base mode, extra table, scoped steps, exception and unverified trigger
+[29/56] e2e\relic-localization.spec.ts:22:1 › Chinese filtering, evidence folds, return and profile switching do not create personal history
+[30/56] e2e\relic-localization.spec.ts:25:1 › all six route rule descriptions and localized queries reopen offline after closing the controlled page
+[31/56] e2e\relic-localization.spec.ts:28:1 › long Chinese and English names, evidence and mirror route steps wrap on desktop and mobile viewports
+[32/56] e2e\relics.spec.ts:11:1 › without a profile all real samples have six complete rewards, traceable excerpted routes and bounded reverse edges
+[33/56] e2e\relics.spec.ts:19:1 › era and code filters, Forma reverse search and unrecorded queries disclose finite scope
+[34/56] e2e\relics.spec.ts:22:1 › public relic queries survive profile switches without storing inventory, targets or query history
+[35/56] e2e\relics.spec.ts:25:1 › all embedded relic tables and source snapshots reopen offline after a controlled page closes
+[36/56] e2e\relics.spec.ts:28:1 › desktop and 360/412 portrait and landscape layouts keep source limits and unknown conditions readable
+[37/56] e2e\safety.spec.ts:4:1 › save quota failure never claims success; cross-tab drafts stay visible
+[38/56] e2e\safety.spec.ts:8:1 › touch emulation pinch/pan suppresses completion clicks; no external requests
+[39/56] e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (changed and same target)
+[40/56] e2e\syndicate-drafts.spec.ts:36:38 › target submission protects pending facts (first target)
+[41/56] e2e\syndicate-drafts.spec.ts:57:1 › fact drafts survive remote target changes, reject stale revision and reset only on explicit reload or profile/group switch
+[42/56] e2e\syndicate-drafts.spec.ts:73:1 › blocked target keeps fact form dirty for production update, cancellation permits explicit facts save
+[43/56] e2e\syndicates.spec.ts:12:1 › Hex closed loop shares old facts and credits, reviews balance, restores full legacy and new data
+[44/56] e2e\syndicates.spec.ts:25:1 › Hex current-step material source invalidates across rank, target and status changes with new stock
+[45/56] e2e\syndicates.spec.ts:29:1 › Hex target quota, revision and update failures preserve all saved data
+[46/56] e2e\syndicates.spec.ts:34:1 › Hex page reopens offline and saves standing, relationship and shared material
+[47/56] e2e\syndicates.spec.ts:38:1 › unsaved target selection stays explicit across another page saving and cannot overwrite its newer revision
+[48/56] e2e\ui.spec.ts:5:1 › Windows: template, MR-independent completion, HTML text, stock/budget, custom node and file recovery
+[49/56] e2e\ui.spec.ts:16:1 › Windows Chrome: close browser, relaunch same isolated profile, recover IndexedDB
+[50/56] e2e\ui.spec.ts:20:1 › desktop routes/search/collapse/minimap and mobile viewport boundaries
+[51/56] e2e\weapon-assistant.spec.ts:4:1 › weapon pilot: middle stage, shared stock, downloaded backup restore and profile isolation
+[52/56] e2e\weapon-assistant.spec.ts:18:1 › weapon pilot opens offline; failed material writes retain existing data and report failure
+[53/56] e2e\zz-update.spec.ts:7:1 › v1→v2: defer, unsaved form blocks, cancel unlocks, all tabs save and update without data loss
+[54/56] e2e\zz-update.spec.ts:17:1 › update session survives initiator refresh and close; another/reopened page can cancel and write
+[55/56] e2e\zz-update.spec.ts:26:1 › persistent write barrier is cancellable after refresh and loss of the waiting worker session
+[56/56] e2e\zz-update.spec.ts:41:1 › orphaned write barrier with no waiting worker can be explicitly cancelled after reopening
+  56 passed (2.5m)
+[WebServer] (node:35052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:27176) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+npm.cmd run build exit 0
+
+> tenno-local-planner@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 53 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.54 kB │ gzip:   0.38 kB
+dist/assets/index-CNp0hn9A.css   30.33 kB │ gzip:   7.36 kB
+dist/assets/index-93ufReZg.js   700.63 kB │ gzip: 186.58 kB
+
+✓ built in 191ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+node scripts/verify-delivery.mjs exit 0
+{
+  "build": {
+    "build": "m0-ab7372f47253",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "catalog": {
+    "lanes": 7,
+    "nodes": 29,
+    "steps": 87,
+    "recommendedEdges": 30
+  },
+  "protectedInputs": 16,
+  "resources": [
+    {
+      "path": "dist/assets/index-93ufReZg.js",
+      "bytes": 700633,
+      "gzipBytes": 185486
+    },
+    {
+      "path": "dist/assets/index-CNp0hn9A.css",
+      "bytes": 30334,
+      "gzipBytes": 7283
+    },
+    {
+      "path": "dist/build-info.json",
+      "bytes": 70,
+      "gzipBytes": 89
+    },
+    {
+      "path": "dist/icons/icon-192.png",
+      "bytes": 1558,
+      "gzipBytes": 1425
+    },
+    {
+      "path": "dist/icons/icon-512.png",
+      "bytes": 5754,
+      "gzipBytes": 4599
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 545,
+      "gzipBytes": 387
+    },
+    {
+      "path": "dist/manifest.webmanifest",
+      "bytes": 517,
+      "gzipBytes": 294
+    },
+    {
+      "path": "dist/sw.js",
+      "bytes": 4798,
+      "gzipBytes": 1951
+    },
+    {
+      "path": "dist/THIRD_PARTY_LICENSES.txt",
+      "bytes": 17751,
+      "gzipBytes": 4741
+    }
+  ],
+  "totalRawBytes": 761960
+}
+
