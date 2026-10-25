@@ -1,0 +1,29 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-source-checks.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rs/app
+
+ ❯ src/test/relic-source-checks.test.ts (13 tests | 1 failed) 39ms
+   × synthetic malformed hashes, impossible dates or date-only timestamps cannot claim dated evidence 5ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relic-source-checks.test.ts > synthetic malformed hashes, impossible dates or date-only timestamps cannot claim dated evidence
+AssertionError: expected 'listed' to be 'unverified' // Object.is equality
+
+Expected: "unverified"
+Received: "listed"
+
+ ❯ src/test/relic-source-checks.test.ts:20:261
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 12 passed (13)
+   Start at  21:12:07
+   Duration  356ms (transform 42%, import 34%, tests 21%, worker 3%)
+

@@ -1,0 +1,17 @@
+{
+  "applicationUnitTests": 133,
+  "matcherTests": 10,
+  "originalV2ConverterTests": 7,
+  "lintExit": 0,
+  "typecheckExit": 0,
+  "buildExit": 0,
+  "oldCatalogUnchanged": true,
+  "oldV2ConverterOutputByteIdentical": true,
+  "checksGenerationByteIdentical": true,
+  "protectedInputs": 17,
+  "oldContracts": 11,
+  "originalDistUnchanged": true,
+  "newCheckRecords": 62,
+  "sourceHash": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+  "checkFileSHA256": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651"
+}

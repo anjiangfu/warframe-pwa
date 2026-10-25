@@ -1,0 +1,29 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-source-checks.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rs/app
+
+ ❯ src/test/relic-source-checks.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relic-source-checks.test.ts [ src/test/relic-source-checks.test.ts ]
+Error: Cannot find module '../domain/relic-source-checks' imported from D:/wf/Warframe_PWA_Handoff_20261016/.v/rs/app/src/test/relic-source-checks.test.ts
+ ❯ src/test/relic-source-checks.test.ts:4:1
+      2| import {readFileSync} from 'node:fs';
+      3| import {LocalProvider} from '../catalog/provider';
+      4| import {effectiveSourceCheck,matchesSourceCheckFilter,validateSourceCh…
+       | ^
+      5| const provider=new LocalProvider(),c=provider.getRelicCatalog(),checks…
+      6| const audit=JSON.parse(readFileSync('../docs/evidence/Relic_Source_Che…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  21:09:26
+   Duration  553ms (worker 98%, environment 2%)
+
