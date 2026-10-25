@@ -1,0 +1,12 @@
+{
+  "appUnitTests": 120,
+  "converterTests": 7,
+  "lintExit": 0,
+  "typecheckExit": 0,
+  "buildExit": 0,
+  "oldRecordsDeepEqual": true,
+  "repeatedCatalogByteIdentical": true,
+  "catalogSHA256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+  "protectedInputs": 17,
+  "originalDistUnchanged": true
+}

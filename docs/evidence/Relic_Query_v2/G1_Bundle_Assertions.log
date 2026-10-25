@@ -1,0 +1,13 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-expansion.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rv2/app
+
+
+ Test Files  1 passed (1)
+      Tests  6 passed (6)
+   Start at  15:09:01
+   Duration  412ms (tests 49%, transform 29%, import 20%, worker 2%)
+

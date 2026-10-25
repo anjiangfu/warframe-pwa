@@ -1,0 +1,39 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rv2/app
+
+ ❯ src/test/relics.test.ts (11 tests | 1 failed) 180ms
+   × forward names and codes, era filtering and bounded reverse queries are consistent for all relations 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relics.test.ts > forward names and codes, era filtering and bounded reverse queries are consistent for all relations
+AssertionError: expected [ 'blueprint:forma', …(1) ] to deeply equal [ 'blueprint:forma' ]
+
+- Expected
++ Received
+
+  [
+    "blueprint:forma",
++   "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+  ]
+
+ ❯ src/test/relics.test.ts:18:221
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 13 passed (14)
+      Tests  1 failed | 119 passed (120)
+   Start at  15:06:46
+   Duration  3.70s (tests 39%, import 38%, transform 22%, worker 1%)
+
+npm notice
+npm notice New major version of npm available! 11.19.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

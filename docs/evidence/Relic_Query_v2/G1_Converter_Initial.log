@@ -1,0 +1,111 @@
+✖ fixed original inputs produce the independently audited complete rows and exact two-node excerpts (17.8227ms)
+✖ conversion is byte deterministic, nonmutating and preserves all old records including sources (14.7463ms)
+✖ new 59 exact names and the quantity combination match independent identity audit, without fuzzy bindings (15.039ms)
+✖ raw hash mismatch is rejected before parsing or generating a catalog (0.4202ms)
+✖ duplicate Intact, incomplete table, conflicting upstream identity and an unknown item type fail explicitly (15.19ms)
+✖ missing or conflicting exact Chinese evidence stays pending and does not invent translations (16.4541ms)
+✖ missing route or unexpected selected relic is reported, never replaced with invented rows (15.7815ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 0
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 194.3937
+
+✖ failing tests:
+
+test at tools\relic-query-v2\convert.test.mjs:9:1
+✖ fixed original inputs produce the independently audited complete rows and exact two-node excerpts (17.8227ms)
+  Error: 缺固定输入 .v/rl-source/data/relics.json
+      at fail (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:12:28)
+      at get (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:19:39)
+      at loadPinned (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:20:92)
+      at input (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:8:17)
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:10:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tools\relic-query-v2\convert.test.mjs:14:1
+✖ conversion is byte deterministic, nonmutating and preserves all old records including sources (14.7463ms)
+  Error: 缺固定输入 .v/rl-source/data/relics.json
+      at fail (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:12:28)
+      at get (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:19:39)
+      at loadPinned (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:20:92)
+      at input (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:8:17)
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:15:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tools\relic-query-v2\convert.test.mjs:17:1
+✖ new 59 exact names and the quantity combination match independent identity audit, without fuzzy bindings (15.039ms)
+  Error: 缺固定输入 .v/rl-source/data/relics.json
+      at fail (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:12:28)
+      at get (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:19:39)
+      at loadPinned (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:20:92)
+      at input (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:8:17)
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:18:25)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tools\relic-query-v2\convert.test.mjs:20:1
+✖ raw hash mismatch is rejected before parsing or generating a catalog (0.4202ms)
+  TypeError: Cannot set properties of undefined (setting 'sha256')
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:21:91)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at tools\relic-query-v2\convert.test.mjs:23:1
+✖ duplicate Intact, incomplete table, conflicting upstream identity and an unknown item type fail explicitly (15.19ms)
+  Error: 缺固定输入 .v/rl-source/data/relics.json
+      at fail (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:12:28)
+      at get (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:19:39)
+      at loadPinned (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:20:92)
+      at input (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:8:17)
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:24:500)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tools\relic-query-v2\convert.test.mjs:26:1
+✖ missing or conflicting exact Chinese evidence stays pending and does not invent translations (16.4541ms)
+  Error: 缺固定输入 .v/rl-source/data/relics.json
+      at fail (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:12:28)
+      at get (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:19:39)
+      at loadPinned (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:20:92)
+      at input (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:8:17)
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:27:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tools\relic-query-v2\convert.test.mjs:30:1
+✖ missing route or unexpected selected relic is reported, never replaced with invented rows (15.7815ms)
+  Error: 缺固定输入 .v/rl-source/data/relics.json
+      at fail (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:12:28)
+      at get (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:19:39)
+      at loadPinned (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.mjs:20:92)
+      at input (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:8:17)
+      at TestContext.<anonymous> (file:///D:/wf/Warframe_PWA_Handoff_20261016/tools/relic-query-v2/convert.test.mjs:31:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)

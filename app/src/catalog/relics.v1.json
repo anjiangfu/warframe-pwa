@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "relics.2026.10.24.1",
+  "catalogVersion": "relics.2026.10.25.1",
   "upstreamCommit": "3263b2dff8bc1b434a191f0364395b156bd26561",
   "sources": [
     {
@@ -152,6 +152,76 @@
       "checkedAt": "2026-10-24",
       "snapshotAt": null,
       "label": "社区节点事实线索（非导入模块）"
+    },
+    {
+      "id": "wfcd-relics-v2",
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-drop-data/3263b2dff8bc1b434a191f0364395b156bd26561/data/relics.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": "2026-10-07T15:18:33Z",
+      "label": "固定遗物奖励表 · v2核对"
+    },
+    {
+      "id": "items-relics-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Relics.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游遗物身份 · v2核对"
+    },
+    {
+      "id": "items-zh-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/i18n/zh.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游中文映射 1.1276.31 · v2核对"
+    },
+    {
+      "id": "items-components-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Components.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游部件身份 · v2核对"
+    },
+    {
+      "id": "items-Primary-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Primary.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游父实体 Primary · v2核对"
+    },
+    {
+      "id": "items-Warframes-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Warframes.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游父实体 Warframes · v2核对"
+    },
+    {
+      "id": "items-Melee-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Melee.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游父实体 Melee · v2核对"
+    },
+    {
+      "id": "wfcd-missions-v2",
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-drop-data/3263b2dff8bc1b434a191f0364395b156bd26561/data/missionRewards.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": "2026-10-07T15:18:33Z",
+      "label": "固定任务奖励表 · v2核对"
+    },
+    {
+      "id": "items-Arch-Melee-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Arch-Melee.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游父实体 Arch-Melee · v2核对"
+    },
+    {
+      "id": "items-Secondary-v2",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Secondary.json",
+      "checkedAt": "2026-10-25",
+      "snapshotAt": null,
+      "label": "固定上游父实体 Secondary · v2核对"
     }
   ],
   "relics": [
@@ -500,6 +570,538 @@
         "sourceIds": [
           "items-relics",
           "items-zh"
+        ]
+      }
+    },
+    {
+      "id": "relic:lith:a13",
+      "name": "虚空遗物 · Lith A13",
+      "english": "Lith A13 Relic",
+      "tier": "Lith",
+      "code": "A13",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "古纪 A13 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeABronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:lith:c15",
+      "name": "虚空遗物 · Lith C15",
+      "english": "Lith C15 Relic",
+      "tier": "Lith",
+      "code": "C15",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "古纪 C15 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeDBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:lith:l8",
+      "name": "虚空遗物 · Lith L8",
+      "english": "Lith L8 Relic",
+      "tier": "Lith",
+      "code": "L8",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "古纪 L8 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeBBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:lith:s18",
+      "name": "虚空遗物 · Lith S18",
+      "english": "Lith S18 Relic",
+      "tier": "Lith",
+      "code": "S18",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "古纪 S18 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T1VoidProjectionStyanaxPrimeEBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:lith:v11",
+      "name": "虚空遗物 · Lith V11",
+      "english": "Lith V11 Relic",
+      "tier": "Lith",
+      "code": "V11",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "古纪 V11 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T1VoidProjectionStyanaxPrimeCBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:meso:c11",
+      "name": "虚空遗物 · Meso C11",
+      "english": "Meso C11 Relic",
+      "tier": "Meso",
+      "code": "C11",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "前纪 C11 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeABronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:meso:d8",
+      "name": "虚空遗物 · Meso D8",
+      "english": "Meso D8 Relic",
+      "tier": "Meso",
+      "code": "D8",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "前纪 D8 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T2VoidProjectionVorunaPrimeCBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:meso:d9",
+      "name": "虚空遗物 · Meso D9",
+      "english": "Meso D9 Relic",
+      "tier": "Meso",
+      "code": "D9",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "前纪 D9 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeCBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:meso:k9",
+      "name": "虚空遗物 · Meso K9",
+      "english": "Meso K9 Relic",
+      "tier": "Meso",
+      "code": "K9",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "前纪 K9 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeDBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:meso:y2",
+      "name": "虚空遗物 · Meso Y2",
+      "english": "Meso Y2 Relic",
+      "tier": "Meso",
+      "code": "Y2",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "前纪 Y2 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T2VoidProjectionStyanaxPrimeBBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:neo:a16",
+      "name": "虚空遗物 · Neo A16",
+      "english": "Neo A16 Relic",
+      "tier": "Neo",
+      "code": "A16",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "中纪 A16 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeBBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:neo:c11",
+      "name": "虚空遗物 · Neo C11",
+      "english": "Neo C11 Relic",
+      "tier": "Neo",
+      "code": "C11",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "中纪 C11 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeDBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:neo:v13",
+      "name": "虚空遗物 · Neo V13",
+      "english": "Neo V13 Relic",
+      "tier": "Neo",
+      "code": "V13",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "中纪 V13 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeCBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:neo:y2",
+      "name": "虚空遗物 · Neo Y2",
+      "english": "Neo Y2 Relic",
+      "tier": "Neo",
+      "code": "Y2",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "中纪 Y2 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeEBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:axi:a22",
+      "name": "虚空遗物 · Axi A22",
+      "english": "Axi A22 Relic",
+      "tier": "Axi",
+      "code": "A22",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "后纪 A22 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T4VoidProjectionStyanaxPrimeCBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:axi:c12",
+      "name": "虚空遗物 · Axi C12",
+      "english": "Axi C12 Relic",
+      "tier": "Axi",
+      "code": "C12",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "后纪 C12 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T4VoidProjectionCitrinePrimeBBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:axi:d6",
+      "name": "虚空遗物 · Axi D6",
+      "english": "Axi D6 Relic",
+      "tier": "Axi",
+      "code": "D6",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "后纪 D6 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T4VoidProjectionVorunaPrimeBBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:axi:s21",
+      "name": "虚空遗物 · Axi S21",
+      "english": "Axi S21 Relic",
+      "tier": "Axi",
+      "code": "S21",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "后纪 S21 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T4VoidProjectionCitrinePrimeABronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
+        ]
+      }
+    },
+    {
+      "id": "relic:axi:v14",
+      "name": "虚空遗物 · Axi V14",
+      "english": "Axi V14 Relic",
+      "tier": "Axi",
+      "code": "V14",
+      "nameStatus": "unverified",
+      "expectedRewards": 6,
+      "rewardCompleteness": "complete",
+      "availability": "unknown",
+      "sourceScope": "partial",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ],
+      "display": {
+        "nameZh": "后纪 V14 遗物",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Types/Game/Projections/T4VoidProjectionVorunaPrimeEBronze"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-relics-v2",
+          "items-zh-v2"
         ]
       }
     }
@@ -1856,6 +2458,1446 @@
           "items-Secondary"
         ]
       }
+    },
+    {
+      "id": "reward:wfcd:969291d093c7813b41a8eab0a9f2c80f",
+      "upstreamId": "969291d093c7813b41a8eab0a9f2c80f",
+      "name": "蓝图 · Alternox Prime Blueprint",
+      "english": "Alternox Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "电幻步枪 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
+          "/Lotus/Types/Recipes/Weapons/AlternoxPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:20b7f130fdb01e3d4e6e2b1e9d8a9e12",
+      "upstreamId": "20b7f130fdb01e3d4e6e2b1e9d8a9e12",
+      "name": "蓝图 · Gyre Prime Chassis Blueprint",
+      "english": "Gyre Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Gyre Prime 机体蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Gyre/GyrePrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeChassisComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:3336f530a81de4eaacf1aad85d73efd6",
+      "upstreamId": "3336f530a81de4eaacf1aad85d73efd6",
+      "name": "蓝图 · Dual Zoren Prime Blueprint",
+      "english": "Dual Zoren Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "佐伦双斧 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
+          "/Lotus/Types/Recipes/Weapons/DualZorenPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:d154939f4cb78451b15cab4d65b0459f",
+      "upstreamId": "d154939f4cb78451b15cab4d65b0459f",
+      "name": "部件 · Steflos Prime Receiver",
+      "english": "Steflos Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "石晶之花 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:1f87a97213aee80f5f8b4d93be5b88f4",
+      "upstreamId": "1f87a97213aee80f5f8b4d93be5b88f4",
+      "name": "蓝图 · Cedo Prime Blueprint",
+      "english": "Cedo Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "塞多 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+          "/Lotus/Types/Recipes/Weapons/CedoPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:917913507c87e2f53b20c9e500f08d49",
+      "upstreamId": "917913507c87e2f53b20c9e500f08d49",
+      "name": "蓝图 · Yareli Prime Blueprint",
+      "english": "Yareli Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Yareli Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Yareli/YareliPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeBlueprint"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "upstreamId": "d9f5d19082a2b4229a4bcc696099a096",
+      "name": "蓝图 · 2X Forma Blueprint",
+      "english": "2X Forma Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "bundleOf": {
+        "rewardId": "blueprint:forma",
+        "quantity": 2
+      },
+      "display": {
+        "nameZh": "2份福马蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "d9f5d19082a2b4229a4bcc696099a096"
+        ],
+        "properNameUntranslated": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "wfcd-relics-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:9d57488a201b68b9773fd1ffaf3a5613",
+      "upstreamId": "9d57488a201b68b9773fd1ffaf3a5613",
+      "name": "部件 · Corufell Prime Stock",
+      "english": "Corufell Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "闪劫 Prime 枪托",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeBarrel"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Arch-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:98b23d357d7a99755cc011c34bb60482",
+      "upstreamId": "98b23d357d7a99755cc011c34bb60482",
+      "name": "部件 · Burston Prime Receiver",
+      "english": "Burston Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "伯斯顿 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:4efa3135e36a0bf8b65092356d1d27bf",
+      "upstreamId": "4efa3135e36a0bf8b65092356d1d27bf",
+      "name": "部件 · Daikyu Prime String",
+      "english": "Daikyu Prime String",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "大久和弓 Prime 弓弦",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuString"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:62ad58aba414cf6a239f4a66ed0adc2d",
+      "upstreamId": "62ad58aba414cf6a239f4a66ed0adc2d",
+      "name": "蓝图 · Lavos Prime Systems Blueprint",
+      "english": "Lavos Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Lavos Prime 系统蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Alchemist/LavosPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeSystemsComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:6df04cc456c68941793d2c817987114c",
+      "upstreamId": "6df04cc456c68941793d2c817987114c",
+      "name": "部件 · Akbronco Prime Link",
+      "english": "Akbronco Prime Link",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "野马双枪 Prime 连接器",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:1a62164c454b8633cafca261d00c3f1c",
+      "upstreamId": "1a62164c454b8633cafca261d00c3f1c",
+      "name": "部件 · Alternox Prime Barrel",
+      "english": "Alternox Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "电幻步枪 Prime 枪管",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeBarrel"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:0b7ed6b25bd73482918e6ca88ab1c030",
+      "upstreamId": "0b7ed6b25bd73482918e6ca88ab1c030",
+      "name": "部件 · Kestrel Prime Blade",
+      "english": "Kestrel Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "红隼 Prime 刀刃",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeBlade"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:c16dafff7a71a6898079dc3d54921068",
+      "upstreamId": "c16dafff7a71a6898079dc3d54921068",
+      "name": "部件 · Orthos Prime Handle",
+      "english": "Orthos Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "欧特鲁斯 Prime 握柄",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmHandle"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:853e482f74e58b2a5d2f48be8898fca1",
+      "upstreamId": "853e482f74e58b2a5d2f48be8898fca1",
+      "name": "蓝图 · Styanax Prime Neuroptics Blueprint",
+      "english": "Styanax Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Styanax Prime 头部神经光元蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:a595ed9a60268a6e08925157075134cd",
+      "upstreamId": "a595ed9a60268a6e08925157075134cd",
+      "name": "部件 · Vadarya Prime Barrel",
+      "english": "Vadarya Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "瓦德雅 Prime 枪管",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunBarrel"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:5b00ba6ba06a134d04e418354800fdd5",
+      "upstreamId": "5b00ba6ba06a134d04e418354800fdd5",
+      "name": "部件 · Burston Prime Stock",
+      "english": "Burston Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "伯斯顿 Prime 枪托",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeStock"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:2ded7b50acb65154036a8d359bea7aec",
+      "upstreamId": "2ded7b50acb65154036a8d359bea7aec",
+      "name": "蓝图 · Citrine Prime Blueprint",
+      "english": "Citrine Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Citrine Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Geode/CitrinePrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeBlueprint"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:fa5971ba347995f7ffb5ad78a07107ca",
+      "upstreamId": "fa5971ba347995f7ffb5ad78a07107ca",
+      "name": "蓝图 · Paris Prime Blueprint",
+      "english": "Paris Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "帕里斯 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+          "/Lotus/Types/Recipes/Weapons/BowPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:cfb892b209a2720b59f0dd326585ca69",
+      "upstreamId": "cfb892b209a2720b59f0dd326585ca69",
+      "name": "部件 · Daikyu Prime Grip",
+      "english": "Daikyu Prime Grip",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "大久和弓 Prime 弓身",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuGrip"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+      "upstreamId": "cc8a9cc9bf370bea48c56008ef89d81d",
+      "name": "部件 · Dual Zoren Prime Handle",
+      "english": "Dual Zoren Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "佐伦双斧 Prime 握柄",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeHandle"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:69332713a59b6dd9e98fb9db7a1a03de",
+      "upstreamId": "69332713a59b6dd9e98fb9db7a1a03de",
+      "name": "部件 · Dual Zoren Prime Blade",
+      "english": "Dual Zoren Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "佐伦双斧 Prime 刀刃",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeBlade"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:ac767d2757b12d43d91f6ecfd701bc1a",
+      "upstreamId": "ac767d2757b12d43d91f6ecfd701bc1a",
+      "name": "部件 · Steflos Prime Stock",
+      "english": "Steflos Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "石晶之花 Prime 枪托",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeStock"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:61a12221b53f2adcf2a4ef786cd34900",
+      "upstreamId": "61a12221b53f2adcf2a4ef786cd34900",
+      "name": "部件 · Cedo Prime Receiver",
+      "english": "Cedo Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "塞多 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:92cf229954a11b2ece104a08cb8d6a04",
+      "upstreamId": "92cf229954a11b2ece104a08cb8d6a04",
+      "name": "部件 · Afentis Prime Handle",
+      "english": "Afentis Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "圣英 Prime 握柄",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:e61312444582286971e7fa69d81c474f",
+      "upstreamId": "e61312444582286971e7fa69d81c474f",
+      "name": "蓝图 · Burston Prime Blueprint",
+      "english": "Burston Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "伯斯顿 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+          "/Lotus/Types/Recipes/Weapons/BurstonPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:5c6b1c9bf2fef923fdadfa0b395529df",
+      "upstreamId": "5c6b1c9bf2fef923fdadfa0b395529df",
+      "name": "部件 · Paris Prime Upper Limb",
+      "english": "Paris Prime Upper Limb",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "帕里斯 Prime 上弓臂",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowUpperLimb"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:dd7e747ee4f311ff482cd2dcb0d22a5e",
+      "upstreamId": "dd7e747ee4f311ff482cd2dcb0d22a5e",
+      "name": "部件 · Kestrel Prime Grip",
+      "english": "Kestrel Prime Grip",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "红隼 Prime 握把",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeGrip"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:f7b80fd45a790dc8d918b50810cb6cfb",
+      "upstreamId": "f7b80fd45a790dc8d918b50810cb6cfb",
+      "name": "部件 · Perigale Prime Receiver",
+      "english": "Perigale Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "月面狂风 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:5f5d4e8af0e50af9682e2242388abf4a",
+      "upstreamId": "5f5d4e8af0e50af9682e2242388abf4a",
+      "name": "蓝图 · Athodai Prime Blueprint",
+      "english": "Athodai Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "阿索代 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+          "/Lotus/Types/Recipes/Weapons/AthodaiPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:3f4950670b069625ddf79ce92de425a5",
+      "upstreamId": "3f4950670b069625ddf79ce92de425a5",
+      "name": "蓝图 · Fang Prime Blueprint",
+      "english": "Fang Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "狼牙 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
+          "/Lotus/Types/Recipes/Weapons/FangPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:886c04af48eaf4e986c538bb6d0ea5ec",
+      "upstreamId": "886c04af48eaf4e986c538bb6d0ea5ec",
+      "name": "蓝图 · Yareli Prime Chassis Blueprint",
+      "english": "Yareli Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Yareli Prime 机体蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Yareli/YareliPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeChassisComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:1ac602db0f4d3679b878a1c4b8e795a3",
+      "upstreamId": "1ac602db0f4d3679b878a1c4b8e795a3",
+      "name": "蓝图 · Yareli Prime Neuroptics Blueprint",
+      "english": "Yareli Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Yareli Prime 头部神经光元蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Yareli/YareliPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeHelmetComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:99940d573ca5690f21603b568f34ec2b",
+      "upstreamId": "99940d573ca5690f21603b568f34ec2b",
+      "name": "蓝图 · Styanax Prime Chassis Blueprint",
+      "english": "Styanax Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Styanax Prime 机体蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+      "upstreamId": "2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+      "name": "蓝图 · Lex Prime Blueprint",
+      "english": "Lex Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "雷克斯 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+          "/Lotus/Types/Recipes/Weapons/LexPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:e3b04f7452fd6373e26a70acc5f10d37",
+      "upstreamId": "e3b04f7452fd6373e26a70acc5f10d37",
+      "name": "部件 · Athodai Prime Barrel",
+      "english": "Athodai Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "阿索代 Prime 枪管",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:85d15eeae7e37b78ec56b31624416ea3",
+      "upstreamId": "85d15eeae7e37b78ec56b31624416ea3",
+      "name": "蓝图 · Sarofang Prime Blueprint",
+      "english": "Sarofang Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "沙罗之牙 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
+          "/Lotus/Types/Recipes/Weapons/SarofangPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:13e6958cae369b25a72739bcdfdfa13e",
+      "upstreamId": "13e6958cae369b25a72739bcdfdfa13e",
+      "name": "部件 · Perigale Prime Stock",
+      "english": "Perigale Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "月面狂风 Prime 枪托",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeStock"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:707f2127411bf4138b44ec8fc4d36d32",
+      "upstreamId": "707f2127411bf4138b44ec8fc4d36d32",
+      "name": "蓝图 · Caliban Prime Systems Blueprint",
+      "english": "Caliban Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Caliban Prime 系统蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Sentient/CalibanPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeSystemsComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:b3182139dda9df5dc42d018a9692c8d0",
+      "upstreamId": "b3182139dda9df5dc42d018a9692c8d0",
+      "name": "蓝图 · Citrine Prime Chassis Blueprint",
+      "english": "Citrine Prime Chassis Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Citrine Prime 机体蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Geode/CitrinePrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeChassisComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:bd96716dfe22b562f893d0a5446d4512",
+      "upstreamId": "bd96716dfe22b562f893d0a5446d4512",
+      "name": "部件 · Lex Prime Receiver",
+      "english": "Lex Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "雷克斯 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:ef5dec1f909b9860ad93dd95ff7db6e0",
+      "upstreamId": "ef5dec1f909b9860ad93dd95ff7db6e0",
+      "name": "蓝图 · Daikyu Prime Blueprint",
+      "english": "Daikyu Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "大久和弓 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+          "/Lotus/Types/Recipes/Weapons/PrimeDaikyuBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:1c98bd13432b36aa94e43217fade7dcd",
+      "upstreamId": "1c98bd13432b36aa94e43217fade7dcd",
+      "name": "蓝图 · Vadarya Prime Blueprint",
+      "english": "Vadarya Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "瓦德雅 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
+          "/Lotus/Types/Recipes/Weapons/PrimeLightningGunBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:57bdb1307f16a7e25b08b2efc9c3ad2e",
+      "upstreamId": "57bdb1307f16a7e25b08b2efc9c3ad2e",
+      "name": "部件 · Paris Prime String",
+      "english": "Paris Prime String",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "帕里斯 Prime 弓弦",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowString"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:688746ef117b561aafc9560e205e2554",
+      "upstreamId": "688746ef117b561aafc9560e205e2554",
+      "name": "蓝图 · Yareli Prime Systems Blueprint",
+      "english": "Yareli Prime Systems Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Yareli Prime 系统蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Yareli/YareliPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeSystemsComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:f7c86a8bc474dccdfa54a9d49b0d3dd4",
+      "upstreamId": "f7c86a8bc474dccdfa54a9d49b0d3dd4",
+      "name": "蓝图 · Steflos Prime Blueprint",
+      "english": "Steflos Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "石晶之花 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun",
+          "/Lotus/Types/Recipes/Weapons/SteflosPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:0ccb2f31edf63874519f220e2705378f",
+      "upstreamId": "0ccb2f31edf63874519f220e2705378f",
+      "name": "部件 · Venato Prime Handle",
+      "english": "Venato Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "脉纹 Prime 握柄",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeHandle"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:974256a40f39ae17bda3003942351f01",
+      "upstreamId": "974256a40f39ae17bda3003942351f01",
+      "name": "蓝图 · Afentis Prime Blueprint",
+      "english": "Afentis Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "圣英 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+          "/Lotus/Types/Recipes/Weapons/AfentisPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:33374e791ac9f2a6378044d1458f683a",
+      "upstreamId": "33374e791ac9f2a6378044d1458f683a",
+      "name": "部件 · Kompressa Prime Receiver",
+      "english": "Kompressa Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "卡帕压力枪 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:c2223937b88deb1460fb68a01c8689c1",
+      "upstreamId": "c2223937b88deb1460fb68a01c8689c1",
+      "name": "蓝图 · Citrine Prime Neuroptics Blueprint",
+      "english": "Citrine Prime Neuroptics Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Citrine Prime 头部神经光元蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Geode/CitrinePrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeHelmetComponent"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:fc87db6c19fc234aefe4f000b6ee5974",
+      "upstreamId": "fc87db6c19fc234aefe4f000b6ee5974",
+      "name": "蓝图 · Kestrel Prime Blueprint",
+      "english": "Kestrel Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "红隼 Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel",
+          "/Lotus/Types/Recipes/Weapons/KestrelPrimeBlueprint"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:2444ed9772025767c7e4361bd7efa6b0",
+      "upstreamId": "2444ed9772025767c7e4361bd7efa6b0",
+      "name": "部件 · Corufell Prime Handle",
+      "english": "Corufell Prime Handle",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "闪劫 Prime 握柄",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeHandle"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Arch-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:7a694ab7c05e0ee235ee4dd6873dd20f",
+      "upstreamId": "7a694ab7c05e0ee235ee4dd6873dd20f",
+      "name": "部件 · Alternox Prime Receiver",
+      "english": "Alternox Prime Receiver",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "电幻步枪 Prime 枪机",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeReceiver"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:a5e8e0c5993cac61603bd5c97f1e634c",
+      "upstreamId": "a5e8e0c5993cac61603bd5c97f1e634c",
+      "name": "部件 · Orthos Prime Blade",
+      "english": "Orthos Prime Blade",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "欧特鲁斯 Prime 刀刃",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmBlade"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Melee-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:0d8195ec33734a0f3d278a30baff4dd5",
+      "upstreamId": "0d8195ec33734a0f3d278a30baff4dd5",
+      "name": "部件 · Steflos Prime Barrel",
+      "english": "Steflos Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "石晶之花 Prime 枪管",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeBarrel"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:49e5369cbe8a770bac6146363e21a416",
+      "upstreamId": "49e5369cbe8a770bac6146363e21a416",
+      "name": "蓝图 · Gyre Prime Blueprint",
+      "english": "Gyre Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Gyre Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Gyre/GyrePrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeBlueprint"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:d890a5b6f5954ba2e14eb3301e47cc09",
+      "upstreamId": "d890a5b6f5954ba2e14eb3301e47cc09",
+      "name": "部件 · Cedo Prime Stock",
+      "english": "Cedo Prime Stock",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "塞多 Prime 枪托",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeStock"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Primary-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:b1a23514cd5d2600358088084ee576f8",
+      "upstreamId": "b1a23514cd5d2600358088084ee576f8",
+      "name": "蓝图 · Voruna Prime Blueprint",
+      "english": "Voruna Prime Blueprint",
+      "type": "blueprint",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "Voruna Prime 蓝图",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Powersuits/Werewolf/VorunaPrime",
+          "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeBlueprint"
+        ],
+        "properNameUntranslated": true,
+        "typeGlossary": true,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Warframes-v2"
+        ]
+      }
+    },
+    {
+      "id": "reward:wfcd:86ed1787bf3fd50bf9e2b62df683a12c",
+      "upstreamId": "86ed1787bf3fd50bf9e2b62df683a12c",
+      "name": "部件 · Lex Prime Barrel",
+      "english": "Lex Prime Barrel",
+      "type": "component",
+      "nameStatus": "unverified",
+      "display": {
+        "nameZh": "雷克斯 Prime 枪管",
+        "aliases": [],
+        "upstreamIds": [
+          "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+          "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel"
+        ],
+        "properNameUntranslated": false,
+        "typeGlossary": false,
+        "verification": "snapshot-checked",
+        "sourceIds": [
+          "items-zh-v2",
+          "items-components-v2",
+          "items-Secondary-v2"
+        ]
+      }
     }
   ],
   "relations": [
@@ -2722,6 +4764,1260 @@
         "wfcd-relics",
         "de-table"
       ]
+    },
+    {
+      "id": "relic:lith:a13:reward:969291d093c7813b41a8eab0a9f2c80f",
+      "relicId": "relic:lith:a13",
+      "rewardId": "reward:wfcd:969291d093c7813b41a8eab0a9f2c80f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:reward:20b7f130fdb01e3d4e6e2b1e9d8a9e12",
+      "relicId": "relic:lith:a13",
+      "rewardId": "reward:wfcd:20b7f130fdb01e3d4e6e2b1e9d8a9e12",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:reward:3336f530a81de4eaacf1aad85d73efd6",
+      "relicId": "relic:lith:a13",
+      "rewardId": "reward:wfcd:3336f530a81de4eaacf1aad85d73efd6",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:reward:d154939f4cb78451b15cab4d65b0459f",
+      "relicId": "relic:lith:a13",
+      "rewardId": "reward:wfcd:d154939f4cb78451b15cab4d65b0459f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:reward:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "relicId": "relic:lith:a13",
+      "rewardId": "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:reward:371732a7c5612bde4c88027a2224814d",
+      "relicId": "relic:lith:a13",
+      "rewardId": "reward:wfcd:371732a7c5612bde4c88027a2224814d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:reward:1f87a97213aee80f5f8b4d93be5b88f4",
+      "relicId": "relic:lith:c15",
+      "rewardId": "reward:wfcd:1f87a97213aee80f5f8b4d93be5b88f4",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:reward:917913507c87e2f53b20c9e500f08d49",
+      "relicId": "relic:lith:c15",
+      "rewardId": "reward:wfcd:917913507c87e2f53b20c9e500f08d49",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:lith:c15",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:reward:9d57488a201b68b9773fd1ffaf3a5613",
+      "relicId": "relic:lith:c15",
+      "rewardId": "reward:wfcd:9d57488a201b68b9773fd1ffaf3a5613",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:reward:98b23d357d7a99755cc011c34bb60482",
+      "relicId": "relic:lith:c15",
+      "rewardId": "reward:wfcd:98b23d357d7a99755cc011c34bb60482",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:reward:4efa3135e36a0bf8b65092356d1d27bf",
+      "relicId": "relic:lith:c15",
+      "rewardId": "reward:wfcd:4efa3135e36a0bf8b65092356d1d27bf",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:reward:62ad58aba414cf6a239f4a66ed0adc2d",
+      "relicId": "relic:lith:l8",
+      "rewardId": "reward:wfcd:62ad58aba414cf6a239f4a66ed0adc2d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:reward:6df04cc456c68941793d2c817987114c",
+      "relicId": "relic:lith:l8",
+      "rewardId": "reward:wfcd:6df04cc456c68941793d2c817987114c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:reward:1a62164c454b8633cafca261d00c3f1c",
+      "relicId": "relic:lith:l8",
+      "rewardId": "reward:wfcd:1a62164c454b8633cafca261d00c3f1c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:reward:0b7ed6b25bd73482918e6ca88ab1c030",
+      "relicId": "relic:lith:l8",
+      "rewardId": "reward:wfcd:0b7ed6b25bd73482918e6ca88ab1c030",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:reward:1d4a93ebd979a7ea3699066a275be94a",
+      "relicId": "relic:lith:l8",
+      "rewardId": "reward:wfcd:1d4a93ebd979a7ea3699066a275be94a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:reward:c16dafff7a71a6898079dc3d54921068",
+      "relicId": "relic:lith:l8",
+      "rewardId": "reward:wfcd:c16dafff7a71a6898079dc3d54921068",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:reward:853e482f74e58b2a5d2f48be8898fca1",
+      "relicId": "relic:lith:s18",
+      "rewardId": "reward:wfcd:853e482f74e58b2a5d2f48be8898fca1",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:lith:s18",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:reward:a595ed9a60268a6e08925157075134cd",
+      "relicId": "relic:lith:s18",
+      "rewardId": "reward:wfcd:a595ed9a60268a6e08925157075134cd",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:reward:5b00ba6ba06a134d04e418354800fdd5",
+      "relicId": "relic:lith:s18",
+      "rewardId": "reward:wfcd:5b00ba6ba06a134d04e418354800fdd5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:reward:4efa3135e36a0bf8b65092356d1d27bf",
+      "relicId": "relic:lith:s18",
+      "rewardId": "reward:wfcd:4efa3135e36a0bf8b65092356d1d27bf",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:reward:0b7ed6b25bd73482918e6ca88ab1c030",
+      "relicId": "relic:lith:s18",
+      "rewardId": "reward:wfcd:0b7ed6b25bd73482918e6ca88ab1c030",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:reward:f779c6ea92af1b1dc9011a3949e9b83e",
+      "relicId": "relic:lith:v11",
+      "rewardId": "reward:wfcd:f779c6ea92af1b1dc9011a3949e9b83e",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:reward:3336f530a81de4eaacf1aad85d73efd6",
+      "relicId": "relic:lith:v11",
+      "rewardId": "reward:wfcd:3336f530a81de4eaacf1aad85d73efd6",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:reward:085dc2caa03edfdbf41d068efa6b72d0",
+      "relicId": "relic:lith:v11",
+      "rewardId": "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:reward:c534d3c6c7c29b9891620a6411234912",
+      "relicId": "relic:lith:v11",
+      "rewardId": "reward:wfcd:c534d3c6c7c29b9891620a6411234912",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:reward:c16dafff7a71a6898079dc3d54921068",
+      "relicId": "relic:lith:v11",
+      "rewardId": "reward:wfcd:c16dafff7a71a6898079dc3d54921068",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:reward:fbd093234df1b676f811caa64a5e4381",
+      "relicId": "relic:lith:v11",
+      "rewardId": "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:reward:2ded7b50acb65154036a8d359bea7aec",
+      "relicId": "relic:meso:c11",
+      "rewardId": "reward:wfcd:2ded7b50acb65154036a8d359bea7aec",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:reward:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "relicId": "relic:meso:c11",
+      "rewardId": "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:meso:c11",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:reward:09b661a7b05d22813e35766d6376536c",
+      "relicId": "relic:meso:c11",
+      "rewardId": "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:reward:fa5971ba347995f7ffb5ad78a07107ca",
+      "relicId": "relic:meso:c11",
+      "rewardId": "reward:wfcd:fa5971ba347995f7ffb5ad78a07107ca",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:reward:fbd093234df1b676f811caa64a5e4381",
+      "relicId": "relic:meso:c11",
+      "rewardId": "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:reward:cfb892b209a2720b59f0dd326585ca69",
+      "relicId": "relic:meso:d8",
+      "rewardId": "reward:wfcd:cfb892b209a2720b59f0dd326585ca69",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:reward:757f0564a054758e392a5e50ff911d6b",
+      "relicId": "relic:meso:d8",
+      "rewardId": "reward:wfcd:757f0564a054758e392a5e50ff911d6b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:reward:917913507c87e2f53b20c9e500f08d49",
+      "relicId": "relic:meso:d8",
+      "rewardId": "reward:wfcd:917913507c87e2f53b20c9e500f08d49",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:reward:cc8a9cc9bf370bea48c56008ef89d81d",
+      "relicId": "relic:meso:d8",
+      "rewardId": "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:reward:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+      "relicId": "relic:meso:d8",
+      "rewardId": "reward:wfcd:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:reward:3535d5eed7720f117b9dee5baaa53af1",
+      "relicId": "relic:meso:d8",
+      "rewardId": "reward:wfcd:3535d5eed7720f117b9dee5baaa53af1",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:reward:69332713a59b6dd9e98fb9db7a1a03de",
+      "relicId": "relic:meso:d9",
+      "rewardId": "reward:wfcd:69332713a59b6dd9e98fb9db7a1a03de",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:reward:ac767d2757b12d43d91f6ecfd701bc1a",
+      "relicId": "relic:meso:d9",
+      "rewardId": "reward:wfcd:ac767d2757b12d43d91f6ecfd701bc1a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:reward:61a12221b53f2adcf2a4ef786cd34900",
+      "relicId": "relic:meso:d9",
+      "rewardId": "reward:wfcd:61a12221b53f2adcf2a4ef786cd34900",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:reward:92cf229954a11b2ece104a08cb8d6a04",
+      "relicId": "relic:meso:d9",
+      "rewardId": "reward:wfcd:92cf229954a11b2ece104a08cb8d6a04",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:reward:e61312444582286971e7fa69d81c474f",
+      "relicId": "relic:meso:d9",
+      "rewardId": "reward:wfcd:e61312444582286971e7fa69d81c474f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:reward:5c6b1c9bf2fef923fdadfa0b395529df",
+      "relicId": "relic:meso:d9",
+      "rewardId": "reward:wfcd:5c6b1c9bf2fef923fdadfa0b395529df",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:reward:dd7e747ee4f311ff482cd2dcb0d22a5e",
+      "relicId": "relic:meso:k9",
+      "rewardId": "reward:wfcd:dd7e747ee4f311ff482cd2dcb0d22a5e",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:reward:085dc2caa03edfdbf41d068efa6b72d0",
+      "relicId": "relic:meso:k9",
+      "rewardId": "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:reward:f7b80fd45a790dc8d918b50810cb6cfb",
+      "relicId": "relic:meso:k9",
+      "rewardId": "reward:wfcd:f7b80fd45a790dc8d918b50810cb6cfb",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:reward:5f5d4e8af0e50af9682e2242388abf4a",
+      "relicId": "relic:meso:k9",
+      "rewardId": "reward:wfcd:5f5d4e8af0e50af9682e2242388abf4a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:reward:3f4950670b069625ddf79ce92de425a5",
+      "relicId": "relic:meso:k9",
+      "rewardId": "reward:wfcd:3f4950670b069625ddf79ce92de425a5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:reward:886c04af48eaf4e986c538bb6d0ea5ec",
+      "relicId": "relic:meso:k9",
+      "rewardId": "reward:wfcd:886c04af48eaf4e986c538bb6d0ea5ec",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:reward:1ac602db0f4d3679b878a1c4b8e795a3",
+      "relicId": "relic:meso:y2",
+      "rewardId": "reward:wfcd:1ac602db0f4d3679b878a1c4b8e795a3",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:reward:99940d573ca5690f21603b568f34ec2b",
+      "relicId": "relic:meso:y2",
+      "rewardId": "reward:wfcd:99940d573ca5690f21603b568f34ec2b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:reward:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "relicId": "relic:meso:y2",
+      "rewardId": "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:reward:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+      "relicId": "relic:meso:y2",
+      "rewardId": "reward:wfcd:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:reward:48fe1f6902db4e025280c5481068ae49",
+      "relicId": "relic:meso:y2",
+      "rewardId": "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:reward:29d6d6e54807218cde498fd78a3da3be",
+      "relicId": "relic:meso:y2",
+      "rewardId": "reward:wfcd:29d6d6e54807218cde498fd78a3da3be",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:reward:e3b04f7452fd6373e26a70acc5f10d37",
+      "relicId": "relic:neo:a16",
+      "rewardId": "reward:wfcd:e3b04f7452fd6373e26a70acc5f10d37",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:reward:85d15eeae7e37b78ec56b31624416ea3",
+      "relicId": "relic:neo:a16",
+      "rewardId": "reward:wfcd:85d15eeae7e37b78ec56b31624416ea3",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:reward:f26f6851c1ab0465d385228e19981567",
+      "relicId": "relic:neo:a16",
+      "rewardId": "reward:wfcd:f26f6851c1ab0465d385228e19981567",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:reward:13e6958cae369b25a72739bcdfdfa13e",
+      "relicId": "relic:neo:a16",
+      "rewardId": "reward:wfcd:13e6958cae369b25a72739bcdfdfa13e",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:reward:886c04af48eaf4e986c538bb6d0ea5ec",
+      "relicId": "relic:neo:a16",
+      "rewardId": "reward:wfcd:886c04af48eaf4e986c538bb6d0ea5ec",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:reward:cc8a9cc9bf370bea48c56008ef89d81d",
+      "relicId": "relic:neo:a16",
+      "rewardId": "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:reward:707f2127411bf4138b44ec8fc4d36d32",
+      "relicId": "relic:neo:c11",
+      "rewardId": "reward:wfcd:707f2127411bf4138b44ec8fc4d36d32",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:reward:8ccd89edcf35a4a440935b3b9aee8531",
+      "relicId": "relic:neo:c11",
+      "rewardId": "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:reward:d9f88efbe255d169fdb79408e93eea6b",
+      "relicId": "relic:neo:c11",
+      "rewardId": "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:reward:b3182139dda9df5dc42d018a9692c8d0",
+      "relicId": "relic:neo:c11",
+      "rewardId": "reward:wfcd:b3182139dda9df5dc42d018a9692c8d0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:reward:bd96716dfe22b562f893d0a5446d4512",
+      "relicId": "relic:neo:c11",
+      "rewardId": "reward:wfcd:bd96716dfe22b562f893d0a5446d4512",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:reward:ef5dec1f909b9860ad93dd95ff7db6e0",
+      "relicId": "relic:neo:c11",
+      "rewardId": "reward:wfcd:ef5dec1f909b9860ad93dd95ff7db6e0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:reward:1c98bd13432b36aa94e43217fade7dcd",
+      "relicId": "relic:neo:v13",
+      "rewardId": "reward:wfcd:1c98bd13432b36aa94e43217fade7dcd",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:reward:fd3f77342b8b03fc9469e44f931eb1d5",
+      "relicId": "relic:neo:v13",
+      "rewardId": "reward:wfcd:fd3f77342b8b03fc9469e44f931eb1d5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:neo:v13",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:reward:57bdb1307f16a7e25b08b2efc9c3ad2e",
+      "relicId": "relic:neo:v13",
+      "rewardId": "reward:wfcd:57bdb1307f16a7e25b08b2efc9c3ad2e",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:reward:64f85f8ffff7d9ce68a774addc8ea2ba",
+      "relicId": "relic:neo:v13",
+      "rewardId": "reward:wfcd:64f85f8ffff7d9ce68a774addc8ea2ba",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:reward:346b26c8bf197c415ac758b6c6894f04",
+      "relicId": "relic:neo:v13",
+      "rewardId": "reward:wfcd:346b26c8bf197c415ac758b6c6894f04",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:reward:688746ef117b561aafc9560e205e2554",
+      "relicId": "relic:neo:y2",
+      "rewardId": "reward:wfcd:688746ef117b561aafc9560e205e2554",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:reward:f7c86a8bc474dccdfa54a9d49b0d3dd4",
+      "relicId": "relic:neo:y2",
+      "rewardId": "reward:wfcd:f7c86a8bc474dccdfa54a9d49b0d3dd4",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:neo:y2",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:reward:5b00ba6ba06a134d04e418354800fdd5",
+      "relicId": "relic:neo:y2",
+      "rewardId": "reward:wfcd:5b00ba6ba06a134d04e418354800fdd5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:reward:0ccb2f31edf63874519f220e2705378f",
+      "relicId": "relic:neo:y2",
+      "rewardId": "reward:wfcd:0ccb2f31edf63874519f220e2705378f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:reward:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+      "relicId": "relic:neo:y2",
+      "rewardId": "reward:wfcd:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:reward:974256a40f39ae17bda3003942351f01",
+      "relicId": "relic:axi:a22",
+      "rewardId": "reward:wfcd:974256a40f39ae17bda3003942351f01",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:axi:a22",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:reward:33374e791ac9f2a6378044d1458f683a",
+      "relicId": "relic:axi:a22",
+      "rewardId": "reward:wfcd:33374e791ac9f2a6378044d1458f683a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:reward:cc8a9cc9bf370bea48c56008ef89d81d",
+      "relicId": "relic:axi:a22",
+      "rewardId": "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:reward:e61312444582286971e7fa69d81c474f",
+      "relicId": "relic:axi:a22",
+      "rewardId": "reward:wfcd:e61312444582286971e7fa69d81c474f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:reward:0ccb2f31edf63874519f220e2705378f",
+      "relicId": "relic:axi:a22",
+      "rewardId": "reward:wfcd:0ccb2f31edf63874519f220e2705378f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:reward:c2223937b88deb1460fb68a01c8689c1",
+      "relicId": "relic:axi:c12",
+      "rewardId": "reward:wfcd:c2223937b88deb1460fb68a01c8689c1",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:reward:fc87db6c19fc234aefe4f000b6ee5974",
+      "relicId": "relic:axi:c12",
+      "rewardId": "reward:wfcd:fc87db6c19fc234aefe4f000b6ee5974",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:reward:2444ed9772025767c7e4361bd7efa6b0",
+      "relicId": "relic:axi:c12",
+      "rewardId": "reward:wfcd:2444ed9772025767c7e4361bd7efa6b0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:reward:f7beacbe122fcccb6070344cbe7a60c3",
+      "relicId": "relic:axi:c12",
+      "rewardId": "reward:wfcd:f7beacbe122fcccb6070344cbe7a60c3",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:reward:ef5dec1f909b9860ad93dd95ff7db6e0",
+      "relicId": "relic:axi:c12",
+      "rewardId": "reward:wfcd:ef5dec1f909b9860ad93dd95ff7db6e0",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:reward:7a694ab7c05e0ee235ee4dd6873dd20f",
+      "relicId": "relic:axi:c12",
+      "rewardId": "reward:wfcd:7a694ab7c05e0ee235ee4dd6873dd20f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:reward:69332713a59b6dd9e98fb9db7a1a03de",
+      "relicId": "relic:axi:d6",
+      "rewardId": "reward:wfcd:69332713a59b6dd9e98fb9db7a1a03de",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:reward:a5e8e0c5993cac61603bd5c97f1e634c",
+      "relicId": "relic:axi:d6",
+      "rewardId": "reward:wfcd:a5e8e0c5993cac61603bd5c97f1e634c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:reward:8ccd89edcf35a4a440935b3b9aee8531",
+      "relicId": "relic:axi:d6",
+      "rewardId": "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:reward:bd96716dfe22b562f893d0a5446d4512",
+      "relicId": "relic:axi:d6",
+      "rewardId": "reward:wfcd:bd96716dfe22b562f893d0a5446d4512",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:reward:09b661a7b05d22813e35766d6376536c",
+      "relicId": "relic:axi:d6",
+      "rewardId": "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:reward:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "relicId": "relic:axi:d6",
+      "rewardId": "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:reward:0d8195ec33734a0f3d278a30baff4dd5",
+      "relicId": "relic:axi:s21",
+      "rewardId": "reward:wfcd:0d8195ec33734a0f3d278a30baff4dd5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:axi:s21",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:reward:49e5369cbe8a770bac6146363e21a416",
+      "relicId": "relic:axi:s21",
+      "rewardId": "reward:wfcd:49e5369cbe8a770bac6146363e21a416",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:reward:40e2febc8810c68d9c79b57894928d4d",
+      "relicId": "relic:axi:s21",
+      "rewardId": "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:reward:cc8a9cc9bf370bea48c56008ef89d81d",
+      "relicId": "relic:axi:s21",
+      "rewardId": "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:reward:d890a5b6f5954ba2e14eb3301e47cc09",
+      "relicId": "relic:axi:s21",
+      "rewardId": "reward:wfcd:d890a5b6f5954ba2e14eb3301e47cc09",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:reward:b1a23514cd5d2600358088084ee576f8",
+      "relicId": "relic:axi:v14",
+      "rewardId": "reward:wfcd:b1a23514cd5d2600358088084ee576f8",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:reward:33374e791ac9f2a6378044d1458f683a",
+      "relicId": "relic:axi:v14",
+      "rewardId": "reward:wfcd:33374e791ac9f2a6378044d1458f683a",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:reward:d9f5d19082a2b4229a4bcc696099a096",
+      "relicId": "relic:axi:v14",
+      "rewardId": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:reward:7a694ab7c05e0ee235ee4dd6873dd20f",
+      "relicId": "relic:axi:v14",
+      "rewardId": "reward:wfcd:7a694ab7c05e0ee235ee4dd6873dd20f",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:reward:86ed1787bf3fd50bf9e2b62df683a12c",
+      "relicId": "relic:axi:v14",
+      "rewardId": "reward:wfcd:86ed1787bf3fd50bf9e2b62df683a12c",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:reward:3f4950670b069625ddf79ce92de425a5",
+      "relicId": "relic:axi:v14",
+      "rewardId": "reward:wfcd:3f4950670b069625ddf79ce92de425a5",
+      "refinement": "Intact",
+      "openingChancePercent": null,
+      "verification": "snapshot-checked",
+      "sourceIds": [
+        "wfcd-relics-v2"
+      ]
     }
   ],
   "locations": [
@@ -3452,6 +6748,462 @@
       "sourceIds": [
         "wfcd-missions",
         "de-table"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:a13",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:a13:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:a13",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:c15",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:c15:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:c15",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:l8",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:l8:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:l8",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:s18",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:s18:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:s18",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:source:location:wfcd:d67c1f3c9012e7ae",
+      "relicId": "relic:lith:v11",
+      "locationId": "location:wfcd:d67c1f3c9012e7ae",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:lith:v11:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:lith:v11",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "A",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:c11",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:c11:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:c11",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:d8",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d8:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:d8",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:d9",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:d9:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:d9",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:k9",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:k9:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:k9",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:source:location:wfcd:b051844f70f18f1f",
+      "relicId": "relic:meso:y2",
+      "locationId": "location:wfcd:b051844f70f18f1f",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:meso:y2:source:location:wfcd:10cba20f87de79ce",
+      "relicId": "relic:meso:y2",
+      "locationId": "location:wfcd:10cba20f87de79ce",
+      "rotation": "B",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:a16",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:a16:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:a16",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:c11",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:c11:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:c11",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:v13",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:v13:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:v13",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:source:location:wfcd:9757fecaaf0f14c6",
+      "relicId": "relic:neo:y2",
+      "locationId": "location:wfcd:9757fecaaf0f14c6",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:neo:y2:source:location:wfcd:a034c079edddbbfb",
+      "relicId": "relic:neo:y2",
+      "locationId": "location:wfcd:a034c079edddbbfb",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:a22",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:a22:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:a22",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:c12",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:c12:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:c12",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:d6",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:d6:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:d6",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:s21",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:s21:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:s21",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:source:location:wfcd:d4228fd2a12c360a",
+      "relicId": "relic:axi:v14",
+      "locationId": "location:wfcd:d4228fd2a12c360a",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
+      ]
+    },
+    {
+      "id": "relic:axi:v14:source:location:wfcd:8bdd3239f97a4630",
+      "relicId": "relic:axi:v14",
+      "locationId": "location:wfcd:8bdd3239f97a4630",
+      "rotation": "C",
+      "dropChancePercent": null,
+      "verification": "snapshot-checked",
+      "availability": "unknown",
+      "sourceIds": [
+        "wfcd-missions-v2"
       ]
     }
   ],

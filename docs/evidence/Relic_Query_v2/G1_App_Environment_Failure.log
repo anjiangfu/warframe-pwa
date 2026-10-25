@@ -1,0 +1,6 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-expansion.test.ts
+
+'vitest' is not recognized as an internal or external command,
+operable program or batch file.

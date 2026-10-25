@@ -1,0 +1,63 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-expansion.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rv2/app
+
+ ❯ src/test/relic-expansion.test.ts (6 tests | 4 failed) 51ms
+   × expanded public catalog has all 31 audited real tables and 117 exact shared identities 13ms
+   × all new rewards retain original English and checked combinations in search and exact reverse sets 11ms
+   × quantity reward refers to the sole existing Forma blueprint and is not a crafted Forma entity 2ms
+   × synthetic malformed bundle identities and quantities are rejected while old catalogs remain accepted 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relic-expansion.test.ts > expanded public catalog has all 31 audited real tables and 117 exact shared identities
+AssertionError: expected [ …(12) ] to have a length of 31 but got 12
+
+- Expected
++ Received
+
+- 31
++ 12
+
+ ❯ src/test/relic-expansion.test.ts:8:59
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/test/relic-expansion.test.ts > all new rewards retain original English and checked combinations in search and exact reverse sets
+TypeError: Cannot read properties of undefined (reading 'english')
+ ❯ src/test/relic-expansion.test.ts:15:151
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/test/relic-expansion.test.ts > quantity reward refers to the sole existing Forma blueprint and is not a crafted Forma entity
+AssertionError: expected undefined to be defined
+ ❯ src/test/relic-expansion.test.ts:18:85
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/test/relic-expansion.test.ts > synthetic malformed bundle identities and quantities are rejected while old catalogs remain accepted
+AssertionError: expected [Function] to throw an error
+
+- Expected:
+null
+
++ Received:
+undefined
+
+ ❯ src/test/relic-expansion.test.ts:21:472
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 2 passed (6)
+   Start at  15:03:32
+   Duration  759ms (transform 47%, import 36%, tests 13%, worker 4%)
+
