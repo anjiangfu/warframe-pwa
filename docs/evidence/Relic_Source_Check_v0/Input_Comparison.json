@@ -1,0 +1,10 @@
+{
+  "authorOriginal": ".v\\rs-source\\official.online.html",
+  "authorOriginalSha256": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+  "referenceCopy": ".v/rs-source/official.reference.html",
+  "referenceSha256": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+  "bytesChanged": false,
+  "authorAccess": "fresh public HTTPS download; access details in Access_Attempts.json",
+  "oldV2CatalogSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+  "reviewerProgramUsed": false
+}

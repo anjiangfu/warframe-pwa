@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html",
+    "startedAt": "2026-10-25T12:52:31.776849+00:00",
+    "path": ".v\\rs-source\\official.online.html",
+    "method": "urllib public HTTPS, no custom credentials; Jina for disclaimer reading only",
+    "httpStatus": 200,
+    "responseDate": "Sun, 25 Oct 2026 12:52:31 GMT",
+    "responseLastModified": "Thu, 22 Oct 2026 19:04:13 GMT",
+    "bytes": 4484205,
+    "sha256": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+    "retrievedAt": "2026-10-25T12:52:34.735535+00:00",
+    "success": true
+  },
+  {
+    "url": "https://r.jina.ai/https://forums.warframe.com/topic/809777-warframe-drop-rates-data/",
+    "startedAt": "2026-10-25T12:52:34.735535+00:00",
+    "path": ".v\\rs-source\\disclaimer.reader.txt",
+    "method": "urllib public HTTPS, no custom credentials; Jina for disclaimer reading only",
+    "httpStatus": 200,
+    "responseDate": "Sun, 25 Oct 2026 12:52:37 GMT",
+    "responseLastModified": null,
+    "bytes": 510,
+    "sha256": "d3049591f682d0e3e28cabc446ac0c2aa38d4f02a60bf7c47838c9323382e3fa",
+    "retrievedAt": "2026-10-25T12:52:38.514853+00:00",
+    "success": true
+  }
+]

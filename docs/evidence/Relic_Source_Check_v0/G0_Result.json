@@ -1,0 +1,25 @@
+{
+  "baseline": "7f88678ac90a6028ef850a84cf52fe338f6d2c15",
+  "branch": "codex/relic-source-check-v0",
+  "initialWorkingTree": "clean",
+  "main": "08fda3880f0cdd796f3b1c9e3d84032083aa0091",
+  "authorFreshDownload": true,
+  "referenceBytesMatch": true,
+  "matched": 62,
+  "notListed": 0,
+  "conflicting": 0,
+  "unverified": 0,
+  "originalCatalogSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+  "originalCounts": [
+    31,
+    117,
+    186,
+    62,
+    11,
+    6
+  ],
+  "protectedInputs": 17,
+  "oldDataContractsIncludingRelics": 11,
+  "pagePublishedAt": "2026-10-22",
+  "authorAuditCheckedAt": "2026-10-25T12:56:10.820837+00:00"
+}

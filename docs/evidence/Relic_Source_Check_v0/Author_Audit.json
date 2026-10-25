@@ -1,0 +1,1012 @@
+{
+  "checkedAt": "2026-10-25T12:56:10.820837+00:00",
+  "method": "Independent project-authored Python HTMLParser, missionRewards section only; no reviewer program reused",
+  "pagePublishedLabel": "22 October, 2026",
+  "pagePublishedAt": "2026-10-22",
+  "missionHeadingCount": 443,
+  "bytes": 4484205,
+  "sha256": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+  "acquisitions": [
+    {
+      "acquisitionId": "relic:lith:c7:source:location:wfcd:79a7f0cc072fc47b",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Bifrost Echo (Caches)",
+      "rotation": "B",
+      "item": "Lith C7 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith C7 Relic",
+          "sectionRow": 274
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:c7:source:location:wfcd:b114580640037b95",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Beacon Shield Ring (Caches)",
+      "rotation": "B",
+      "item": "Lith C7 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith C7 Relic",
+          "sectionRow": 325
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:g14:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith G14 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith G14 Relic",
+          "sectionRow": 15
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:g14:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith G14 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith G14 Relic",
+          "sectionRow": 40
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:s19:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith S19 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith S19 Relic",
+          "sectionRow": 14
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:s19:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith S19 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith S19 Relic",
+          "sectionRow": 42
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:a12:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso A12 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso A12 Relic",
+          "sectionRow": 53
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:a12:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso A12 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso A12 Relic",
+          "sectionRow": 187
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:v13:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso V13 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso V13 Relic",
+          "sectionRow": 54
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:v13:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso V13 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso V13 Relic",
+          "sectionRow": 186
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:v17:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso V17 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso V17 Relic",
+          "sectionRow": 52
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:v17:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso V17 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso V17 Relic",
+          "sectionRow": 184
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:c10:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo C10 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo C10 Relic",
+          "sectionRow": 934
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:c10:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo C10 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo C10 Relic",
+          "sectionRow": 1343
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:c7:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo C7 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo C7 Relic",
+          "sectionRow": 928
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:c7:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo C7 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo C7 Relic",
+          "sectionRow": 1337
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:k10:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo K10 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo K10 Relic",
+          "sectionRow": 931
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:k10:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo K10 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo K10 Relic",
+          "sectionRow": 1340
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:a21:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi A21 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi A21 Relic",
+          "sectionRow": 1958
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:a21:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi A21 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi A21 Relic",
+          "sectionRow": 2004
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:p10:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi P10 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi P10 Relic",
+          "sectionRow": 1960
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:p10:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi P10 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi P10 Relic",
+          "sectionRow": 2006
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:s8:source:location:wfcd:04f336d0cd639481",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Pluto/Khufu Envoy (Caches)",
+      "rotation": "B",
+      "item": "Axi S8 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Axi S8 Relic",
+          "sectionRow": 5612
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:s8:source:location:wfcd:aea8620ee0137be0",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Pluto/Seven Sirens (Caches)",
+      "rotation": "B",
+      "item": "Axi S8 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Axi S8 Relic",
+          "sectionRow": 5666
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:a13:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith A13 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith A13 Relic",
+          "sectionRow": 12
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:a13:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith A13 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith A13 Relic",
+          "sectionRow": 39
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:c15:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith C15 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith C15 Relic",
+          "sectionRow": 13
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:c15:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith C15 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith C15 Relic",
+          "sectionRow": 38
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:l8:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith L8 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith L8 Relic",
+          "sectionRow": 11
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:l8:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith L8 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith L8 Relic",
+          "sectionRow": 44
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:s18:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith S18 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith S18 Relic",
+          "sectionRow": 16
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:s18:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith S18 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith S18 Relic",
+          "sectionRow": 43
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:v11:source:location:wfcd:d67c1f3c9012e7ae",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Apollodorus (Survival)",
+      "rotation": "B",
+      "item": "Lith V11 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Lith V11 Relic",
+          "sectionRow": 17
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:lith:v11:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "A",
+      "item": "Lith V11 Relic",
+      "matchingRows": [
+        {
+          "rotation": "A",
+          "item": "Lith V11 Relic",
+          "sectionRow": 41
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:c11:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso C11 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso C11 Relic",
+          "sectionRow": 57
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:c11:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso C11 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso C11 Relic",
+          "sectionRow": 189
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:d8:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso D8 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso D8 Relic",
+          "sectionRow": 51
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:d8:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso D8 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso D8 Relic",
+          "sectionRow": 185
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:d9:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso D9 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso D9 Relic",
+          "sectionRow": 58
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:d9:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso D9 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso D9 Relic",
+          "sectionRow": 188
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:k9:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso K9 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso K9 Relic",
+          "sectionRow": 56
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:k9:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso K9 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso K9 Relic",
+          "sectionRow": 183
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:y2:source:location:wfcd:b051844f70f18f1f",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Lares (Defense)",
+      "rotation": "B",
+      "item": "Meso Y2 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso Y2 Relic",
+          "sectionRow": 55
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:meso:y2:source:location:wfcd:10cba20f87de79ce",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mercury/Odin (Interception)",
+      "rotation": "B",
+      "item": "Meso Y2 Relic",
+      "matchingRows": [
+        {
+          "rotation": "B",
+          "item": "Meso Y2 Relic",
+          "sectionRow": 182
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:a16:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo A16 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo A16 Relic",
+          "sectionRow": 929
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:a16:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo A16 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo A16 Relic",
+          "sectionRow": 1338
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:c11:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo C11 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo C11 Relic",
+          "sectionRow": 930
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:c11:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo C11 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo C11 Relic",
+          "sectionRow": 1339
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:v13:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo V13 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo V13 Relic",
+          "sectionRow": 932
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:v13:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo V13 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo V13 Relic",
+          "sectionRow": 1341
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:y2:source:location:wfcd:9757fecaaf0f14c6",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Venus/Romula (Defense)",
+      "rotation": "C",
+      "item": "Neo Y2 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo Y2 Relic",
+          "sectionRow": 933
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:neo:y2:source:location:wfcd:a034c079edddbbfb",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Earth/Coba (Defense)",
+      "rotation": "C",
+      "item": "Neo Y2 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Neo Y2 Relic",
+          "sectionRow": 1342
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:a22:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi A22 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi A22 Relic",
+          "sectionRow": 1959
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:a22:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi A22 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi A22 Relic",
+          "sectionRow": 2005
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:c12:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi C12 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi C12 Relic",
+          "sectionRow": 1956
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:c12:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi C12 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi C12 Relic",
+          "sectionRow": 2002
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:d6:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi D6 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi D6 Relic",
+          "sectionRow": 1954
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:d6:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi D6 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi D6 Relic",
+          "sectionRow": 1996
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:s21:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi S21 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi S21 Relic",
+          "sectionRow": 1953
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:s21:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi S21 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi S21 Relic",
+          "sectionRow": 1995
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:v14:source:location:wfcd:d4228fd2a12c360a",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Mars/Tyana Pass (Defense)",
+      "rotation": "C",
+      "item": "Axi V14 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi V14 Relic",
+          "sectionRow": 1955
+        }
+      ],
+      "headingMatches": 1
+    },
+    {
+      "acquisitionId": "relic:axi:v14:source:location:wfcd:8bdd3239f97a4630",
+      "status": "listed",
+      "section": "missionRewards",
+      "heading": "Jupiter/Ganymede (Disruption)",
+      "rotation": "C",
+      "item": "Axi V14 Relic",
+      "matchingRows": [
+        {
+          "rotation": "C",
+          "item": "Axi V14 Relic",
+          "sectionRow": 1997
+        }
+      ],
+      "headingMatches": 1
+    }
+  ],
+  "statusCounts": {
+    "listed": 62,
+    "not-listed": 0,
+    "conflicting": 0,
+    "unverified": 0
+  },
+  "parsedHeaderBlocks": 443,
+  "distinctLocationHeaders": 436,
+  "headerCountNote": "443 blocks include five Recall week headings without a planet slash and three identical Event headings (2 repeated). 436 unique location headings. Existing 62 target headings match uniquely."
+}
