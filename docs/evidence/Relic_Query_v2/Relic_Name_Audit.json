@@ -1,0 +1,219 @@
+[
+  {
+    "id": "relic:lith:c7",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionNyxValkyrRailjackABronze",
+    "nameZh": "古纪 C7 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith C7 Intact"
+  },
+  {
+    "id": "relic:lith:g14",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionGyrePrimeDBronze",
+    "nameZh": "古纪 G14 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith G14 Intact"
+  },
+  {
+    "id": "relic:lith:s19",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeCBronze",
+    "nameZh": "古纪 S19 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith S19 Intact"
+  },
+  {
+    "id": "relic:meso:a12",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionStyanaxPrimeDBronze",
+    "nameZh": "前纪 A12 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso A12 Intact"
+  },
+  {
+    "id": "relic:meso:v13",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionGyrePrimeABronze",
+    "nameZh": "前纪 V13 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso V13 Intact"
+  },
+  {
+    "id": "relic:meso:v17",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeBBronze",
+    "nameZh": "前纪 V17 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso V17 Intact"
+  },
+  {
+    "id": "relic:neo:c10",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeABronze",
+    "nameZh": "中纪 C10 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo C10 Intact"
+  },
+  {
+    "id": "relic:neo:c7",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionGyrePrimeCBronze",
+    "nameZh": "中纪 C7 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo C7 Intact"
+  },
+  {
+    "id": "relic:neo:k10",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeBBronze",
+    "nameZh": "中纪 K10 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo K10 Intact"
+  },
+  {
+    "id": "relic:axi:a21",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionStyanaxPrimeABronze",
+    "nameZh": "后纪 A21 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi A21 Intact"
+  },
+  {
+    "id": "relic:axi:p10",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionStyanaxPrimeBBronze",
+    "nameZh": "后纪 P10 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi P10 Intact"
+  },
+  {
+    "id": "relic:axi:s8",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionNyxValkyrRailjackBBronze",
+    "nameZh": "后纪 S8 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi S8 Intact"
+  },
+  {
+    "id": "relic:lith:a13",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeABronze",
+    "nameZh": "古纪 A13 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith A13 Intact"
+  },
+  {
+    "id": "relic:lith:c15",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeDBronze",
+    "nameZh": "古纪 C15 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith C15 Intact"
+  },
+  {
+    "id": "relic:lith:l8",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionCitrinePrimeBBronze",
+    "nameZh": "古纪 L8 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith L8 Intact"
+  },
+  {
+    "id": "relic:lith:s18",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionStyanaxPrimeEBronze",
+    "nameZh": "古纪 S18 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith S18 Intact"
+  },
+  {
+    "id": "relic:lith:v11",
+    "upstreamId": "/Lotus/Types/Game/Projections/T1VoidProjectionStyanaxPrimeCBronze",
+    "nameZh": "古纪 V11 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Lith V11 Intact"
+  },
+  {
+    "id": "relic:meso:c11",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeABronze",
+    "nameZh": "前纪 C11 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso C11 Intact"
+  },
+  {
+    "id": "relic:meso:d8",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionVorunaPrimeCBronze",
+    "nameZh": "前纪 D8 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso D8 Intact"
+  },
+  {
+    "id": "relic:meso:d9",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeCBronze",
+    "nameZh": "前纪 D9 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso D9 Intact"
+  },
+  {
+    "id": "relic:meso:k9",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionCitrinePrimeDBronze",
+    "nameZh": "前纪 K9 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso K9 Intact"
+  },
+  {
+    "id": "relic:meso:y2",
+    "upstreamId": "/Lotus/Types/Game/Projections/T2VoidProjectionStyanaxPrimeBBronze",
+    "nameZh": "前纪 Y2 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Meso Y2 Intact"
+  },
+  {
+    "id": "relic:neo:a16",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeBBronze",
+    "nameZh": "中纪 A16 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo A16 Intact"
+  },
+  {
+    "id": "relic:neo:c11",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeDBronze",
+    "nameZh": "中纪 C11 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo C11 Intact"
+  },
+  {
+    "id": "relic:neo:v13",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeCBronze",
+    "nameZh": "中纪 V13 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo V13 Intact"
+  },
+  {
+    "id": "relic:neo:y2",
+    "upstreamId": "/Lotus/Types/Game/Projections/T3VoidProjectionCitrinePrimeEBronze",
+    "nameZh": "中纪 Y2 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Neo Y2 Intact"
+  },
+  {
+    "id": "relic:axi:a22",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionStyanaxPrimeCBronze",
+    "nameZh": "后纪 A22 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi A22 Intact"
+  },
+  {
+    "id": "relic:axi:c12",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionCitrinePrimeBBronze",
+    "nameZh": "后纪 C12 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi C12 Intact"
+  },
+  {
+    "id": "relic:axi:d6",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionVorunaPrimeBBronze",
+    "nameZh": "后纪 D6 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi D6 Intact"
+  },
+  {
+    "id": "relic:axi:s21",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionCitrinePrimeABronze",
+    "nameZh": "后纪 S21 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi S21 Intact"
+  },
+  {
+    "id": "relic:axi:v14",
+    "upstreamId": "/Lotus/Types/Game/Projections/T4VoidProjectionVorunaPrimeEBronze",
+    "nameZh": "后纪 V14 遗物",
+    "checkedAt": "2026-10-25",
+    "exactEnglish": "Axi V14 Intact"
+  }
+]

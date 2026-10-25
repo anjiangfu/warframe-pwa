@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-25",
+  "dropCommit": "3263b2dff8bc1b434a191f0364395b156bd26561",
+  "itemsVersion": "1.1276.31",
+  "networkUsed": false,
+  "files": {
+    ".v\\rl-source\\data\\relics.json": {
+      "sha256": "b77c93d465d205c4b9eead29390c4cf8f9f7b5e58309fa0c92565b7726e5c3cb",
+      "bytes": 2469187,
+      "expectedFrom": "Relic_Query_v0/Source_Adaptation_Final.json"
+    },
+    ".v\\rl-source\\data\\missionRewards.json": {
+      "sha256": "992c80479af48ef4fcd922c2f81125f9232abed6083418b290dc7b706f5133f8",
+      "bytes": 1087021,
+      "expectedFrom": "Relic_Query_v0/Source_Adaptation_Final.json"
+    },
+    ".v\\rl-source\\data\\info.json": {
+      "sha256": "f23416884a22b30ce0fa32f850c3bc902ea35987d22aa6477c1b6e9fee491b59",
+      "bytes": 94,
+      "expectedFrom": "Relic_Query_v0/Source_Adaptation_Final.json"
+    },
+    ".v\\rl-source\\README.md": {
+      "sha256": "d55aeddee37bfa8f51ca200116ac1dd45cc5309a651a7eb86965e01914fc2106",
+      "bytes": 16384,
+      "expectedFrom": "Relic_Query_v0/Source_Adaptation_Final.json"
+    },
+    ".v\\rl-source\\package.json": {
+      "sha256": "b9ba6c9a516b036c64e2bf0944dc8bf03abd47584fc543b98bf3f51b404265f6",
+      "bytes": 1326,
+      "expectedFrom": "Relic_Query_v0/Source_Adaptation_Final.json"
+    },
+    ".v\\rl-source\\data-index.json": {
+      "sha256": "644e8987761335679a9bc1712a99df1cae99965e049318910fa15877e9bb68fd",
+      "bytes": 26641,
+      "expectedFrom": "Relic_Query_v0/Source_Adaptation_Final.json"
+    },
+    ".v\\rl-source\\license.txt": {
+      "sha256": "b57bb7363d9858a2b549e17bb5804c3a18761659f47a8a092e729757d58c3cba",
+      "bytes": 1075
+    },
+    ".v\\rv1-source\\Arch-Melee.json": {
+      "sha256": "704df45a33347970c95b8f2e69445e106cf6a1a92e688ca99c13f90b4f94904b",
+      "bytes": 19521,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\components.json": {
+      "sha256": "0d91f24cbfd3fcb80d9f10b06f7d997977d993f35df6db90c9157d08c2494a82",
+      "bytes": 2942967,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\items-license.txt": {
+      "sha256": "673c2edd935e4386a055f1a51242917a6bd9d943e0aa8eed2d71accd24095b38",
+      "bytes": 1064,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\items-readme.md": {
+      "sha256": "15d02645dfb50d9d4ae70ee0ed4e225a5b79d19a5089e4fc239997b672f323ae",
+      "bytes": 9193,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\jsdelivr-package.json": {
+      "sha256": "7d377951a9d989b6fa33927dca2f3733b7e603b4713fc225fbf8db24c290b5e7",
+      "bytes": 3431,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\Melee.json": {
+      "sha256": "eced40a4af4af665db1ebe902ffc3dc68b694677967604d537253695101ae741",
+      "bytes": 656859,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\nodes.json": {
+      "sha256": "07f3d1e200de43aac45fa64c1b1621cbfa28260bb3cc75915aecfd23153b5b56",
+      "bytes": 161861,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\Primary.json": {
+      "sha256": "541d01598d4bb1743d77bc226c16b603d6e4f545f5fc56f71b2ee9802e562e39",
+      "bytes": 447008,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\relics.json": {
+      "sha256": "45d1e7cec24cbc5de46660613d396c4e6ac1198914bd0a2dfb6ccee72d4c9dae",
+      "bytes": 2908339,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\Secondary.json": {
+      "sha256": "86d9ec7e2596bc80cb24000240bfbadb87fb77d2cafe869ef9f45ff75e72b3ec",
+      "bytes": 325290,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\Warframes.json": {
+      "sha256": "8212da092f96ae1c297676729d800166fedf30dee8b93b00b2195bf72b3a4b6b",
+      "bytes": 353813,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    },
+    ".v\\rv1-source\\zh.json": {
+      "sha256": "0d71ffa75c34a3e8e12bcfb4c7ac8b5e991d309b9a339232debb94f2f4a62c17",
+      "bytes": 4104257,
+      "expectedFrom": "Relic_Query_v1/Source_Manifest.json"
+    }
+  }
+}

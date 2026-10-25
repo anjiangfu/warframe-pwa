@@ -1,0 +1,54 @@
+{
+  "relics": 31,
+  "rewards": 117,
+  "relations": 186,
+  "newRelics": 19,
+  "newRewards": 60,
+  "newAcquisitions": 38,
+  "oldAcquisitions": 24,
+  "locations": 11,
+  "rules": 6,
+  "byTier": {
+    "Lith": [
+      "C7",
+      "G14",
+      "S19",
+      "A13",
+      "C15",
+      "L8",
+      "S18",
+      "V11"
+    ],
+    "Meso": [
+      "A12",
+      "V13",
+      "V17",
+      "C11",
+      "D8",
+      "D9",
+      "K9",
+      "Y2"
+    ],
+    "Neo": [
+      "C10",
+      "C7",
+      "K10",
+      "A16",
+      "C11",
+      "V13",
+      "Y2"
+    ],
+    "Axi": [
+      "A21",
+      "P10",
+      "S8",
+      "A22",
+      "C12",
+      "D6",
+      "S21",
+      "V14"
+    ]
+  },
+  "lessThanTwoNewRoutes": [],
+  "oldTypeGlossaryCount": 15
+}
