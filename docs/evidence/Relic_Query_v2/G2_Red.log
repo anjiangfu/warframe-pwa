@@ -1,0 +1,46 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relic-expansion.spec.ts --grep quantity reward --reporter=line
+
+
+[WebServer] (node:35848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+
+(node:16276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\relic-expansion.spec.ts:21:1 › quantity reward links the existing Forma blueprint; long evidence and all results wrap at 360/412 and landscape
+  1) e2e\relic-expansion.spec.ts:21:1 › quantity reward links the existing Forma blueprint; long evidence and all results wrap at 360/412 and landscape 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('region', { name: '遗物详情', exact: true }).getByTestId('quantity-reward')
+    Expected substring: "2份"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" getByRole('region', { name: '遗物详情', exact: true }).getByTestId('quantity-reward') with timeout 5000ms
+      - waiting for getByRole('region', { name: '遗物详情', exact: true }).getByTestId('quantity-reward')
+
+
+      20 | });
+      21 | test('quantity reward links the existing Forma blueprint; long evidence and all results wrap at 360/412 and landscape',async({page})=>{
+    > 22 |  await open(page);await choose(page,'relic:lith:c15');const quantity=detail(page).getByTestId('quantity-reward');await expect(quantity).toContainText('2份');await expect(quantity).toContainText('福马蓝图');await expect(quantity).toContainText('不会自动入库');await detail(page).getByTestId('name-evidence').first().locator('summary').click();await page.screenshot({path:evidencePath('Relic_V2_Desktop.png'),fullPage:true});for(const [width,height]of [[360,860],[412,860],[860,412]]){await page.setViewportSize({width,height});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await detail(page).screenshot({path:evidencePath(`Relic_V2_Detail_${width}.png`)});}await page.getByRole('button',{name:'清空查询',exact:true}).click();await expect(results(page).locator('button[data-relic-id]')).toHaveCount(31);await page.getByRole('button',{name:'按奖励查遗物',exact:true}).click();await expect(results(page).locator('button[data-reward-id]')).toHaveCount(117);await page.screenshot({path:evidencePath('Relic_V2_Results.png')});await writeFile(evidencePath('Relic_V2_Layout.json'),JSON.stringify({viewports:[[1440,960],[360,860],[412,860],[860,412]],horizontalOverflow:false,expandedEvidence:true,quantityIsBlueprintBundle:true,relicResults:31,rewardResults:117,androidPhysical:false},null,2));
+         |                                                                                                                                         ^
+      23 | });
+      24 |
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\rv2\app\e2e\relic-expansion.spec.ts:22:137
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\relic-expansion-quantity-r-8f7d3-ap-at-360-412-and-landscape\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\relic-expansion-quantity-r-8f7d3-ap-at-360-412-and-landscape\error-context.md
+
+
+  1 failed
+    e2e\relic-expansion.spec.ts:21:1 › quantity reward links the existing Forma blueprint; long evidence and all results wrap at 360/412 and landscape 

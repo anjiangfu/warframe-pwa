@@ -1,0 +1,5 @@
+{
+  "filtersEvidenceReturnsAndProfileSwitches": true,
+  "profilesSnapshotsImportsEqual": true,
+  "noNewInventoryTargetsOrHistory": true
+}

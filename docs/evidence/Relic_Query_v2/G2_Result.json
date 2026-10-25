@@ -1,0 +1,16 @@
+{
+  "buildExit": 0,
+  "oldRelicBrowserTests": 10,
+  "browserPassed": 13,
+  "quantityReferencesExistingForma": true,
+  "originalEvidenceRetained": true,
+  "browserExit": 0,
+  "durationSeconds": 39,
+  "sourceDateChange": "Each relic uses its own source checkedAt; old 12 retain dates, new 19 checked 2026-10-25.",
+  "stage": "G2",
+  "newRewardQueries": 120,
+  "all31Offline": true,
+  "newBrowserTests": 3,
+  "lintExit": 0,
+  "newTableChecks": 19
+}

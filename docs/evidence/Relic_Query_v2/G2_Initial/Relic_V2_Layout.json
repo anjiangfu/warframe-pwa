@@ -1,0 +1,26 @@
+{
+  "viewports": [
+    [
+      1440,
+      960
+    ],
+    [
+      360,
+      860
+    ],
+    [
+      412,
+      860
+    ],
+    [
+      860,
+      412
+    ]
+  ],
+  "horizontalOverflow": false,
+  "expandedEvidence": true,
+  "quantityIsBlueprintBundle": true,
+  "relicResults": 31,
+  "rewardResults": 117,
+  "androidPhysical": false
+}

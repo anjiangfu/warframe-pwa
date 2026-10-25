@@ -1,0 +1,11 @@
+{
+  "locations": 11,
+  "scopedRules": 6,
+  "rawEnglishKeysRetained": true,
+  "mirrorException": true,
+  "threeWaveDefense": true,
+  "gameTimerNotWallTime": true,
+  "disruptionPerformance": true,
+  "railjackBTriggerStillUnknown": true,
+  "readonly": true
+}

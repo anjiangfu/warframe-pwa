@@ -1,6 +1,10 @@
-import {resolveRelicGuide,type RelicCatalog,type RelicDisplay,type RelicLocation} from '../domain/relics';
+import {resolveRelicGuide,relicDisplayName,type RelicCatalog,type RelicDisplay,type RelicLocation,type RelicReward} from '../domain/relics';
 const labels={'snapshot-checked':'已对照资料',unverified:'待核',conflicting:'来源冲突'};
 const sourceLabels:Record<string,string>={'wfcd-relics':'固定遗物奖励表','wfcd-missions':'固定任务掉落表','de-table':'官方公开掉落表'};
+export function RelicBundleExplanation({catalog,reward}:{catalog:Readonly<RelicCatalog>;reward:RelicReward}){
+ const b=reward.bundleOf;if(!b)return null;const target=catalog.rewards.find(r=>r.id===b.rewardId);if(!target)return null;
+ return <p className="guide-notice" data-testid="quantity-reward" data-reward-ref={target.id}>数量奖励：{b.quantity}份 {relicDisplayName(target)}。沿用既有蓝图记录；数量只说明本条奖励内容，不是成品福马，不会自动入库。</p>;
+}
 export function RelicSourceLinks({catalog,ids}:{catalog:Readonly<RelicCatalog>;ids:string[]}){
  return <div className="relic-sources">{ids.map(id=>{const s=catalog.sources.find(s=>s.id===id)!;return <div key={id}><a data-source-id={id} href={s.url} target="_blank" rel="noreferrer">{s.label??sourceLabels[id]??'资料来源'}（联网打开） ↗</a><small>检查：{s.checkedAt??'未核'} · 资料快照：{s.snapshotAt??'未知'}</small></div>;})}</div>;
 }
