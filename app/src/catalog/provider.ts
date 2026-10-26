@@ -6,6 +6,8 @@ import crafting from './crafting.v1.json';
 import syndicates from './syndicates.v1.json';
 import relics from './relics.v1.json';
 import sourceChecks from './relic-source-checks.v1.json';
+import primeEquipment from './prime-equipment.v1.json';
+import {createEquipmentIndex,type EquipmentMetadata} from '../domain/prime-equipment';
 import {validateSourceChecks,type RelicSourceChecks} from '../domain/relic-source-checks';
 import {validateRelicCatalog,type RelicCatalog} from '../domain/relics';
 import type {SyndicateCatalog} from '../domain/syndicates';
@@ -14,7 +16,7 @@ import {positiveInteger,type CraftingCatalog} from '../domain/crafting';
 import type {GoalCatalog} from '../domain/goals';
 import type {WeaponCatalog} from '../domain/weapon';
 import type {Catalog} from '../domain/model';
-export interface DataProvider {getCatalog():Readonly<Catalog>;getWeaponCatalog():Readonly<WeaponCatalog>;getGoalCatalog():Readonly<GoalCatalog>;getResourceCatalog():Readonly<ResourceCatalog>;getCraftingCatalog():Readonly<CraftingCatalog>;getSyndicateCatalog():Readonly<SyndicateCatalog>;getRelicCatalog():Readonly<RelicCatalog>;getRelicSourceChecks?():Readonly<RelicSourceChecks>|undefined}
+export interface DataProvider {getCatalog():Readonly<Catalog>;getWeaponCatalog():Readonly<WeaponCatalog>;getGoalCatalog():Readonly<GoalCatalog>;getResourceCatalog():Readonly<ResourceCatalog>;getCraftingCatalog():Readonly<CraftingCatalog>;getSyndicateCatalog():Readonly<SyndicateCatalog>;getRelicCatalog():Readonly<RelicCatalog>;getRelicSourceChecks?():Readonly<RelicSourceChecks>|undefined;getPrimeEquipmentCatalog?():Readonly<EquipmentMetadata>|undefined}
 function freeze<T>(v:T):T {if(v&&typeof v==='object'){Object.freeze(v);Object.values(v).forEach(freeze);}return v;}
 export class LocalProvider implements DataProvider {
  private catalog:Catalog;
@@ -25,7 +27,8 @@ export class LocalProvider implements DataProvider {
  private syndicates:SyndicateCatalog;
  private relics:RelicCatalog;
  private sourceChecks:RelicSourceChecks|undefined;
- constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog,resourceInput:ResourceCatalog=resources as ResourceCatalog,craftInput:CraftingCatalog=crafting as CraftingCatalog,syndicateInput:SyndicateCatalog=syndicates as SyndicateCatalog,checkInput:RelicSourceChecks|null=sourceChecks as RelicSourceChecks){
+ private equipment:EquipmentMetadata|undefined;
+ constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog,resourceInput:ResourceCatalog=resources as ResourceCatalog,craftInput:CraftingCatalog=crafting as CraftingCatalog,syndicateInput:SyndicateCatalog=syndicates as SyndicateCatalog,checkInput:RelicSourceChecks|null=sourceChecks as RelicSourceChecks,equipmentInput:EquipmentMetadata|null=primeEquipment as EquipmentMetadata){
   const c=structuredClone(input),ids=new Set(c.nodes.map(n=>n.id));
   if(ids.size!==c.nodes.length||new Set(c.lanes.map(l=>l.id)).size!==c.lanes.length)throw Error('目录ID重复');
   const steps=new Set<string>();
@@ -53,6 +56,7 @@ export class LocalProvider implements DataProvider {
   const rc=structuredClone(relics);validateRelicCatalog(rc);this.relics=freeze(rc);
   const checks=checkInput?structuredClone(checkInput):undefined;
   if(checks?.schemaVersion===1&&checks.checkVersion&&checks.catalogVersion&&Array.isArray(checks.records)){validateSourceChecks(checks,rc);this.sourceChecks=freeze(checks);}
+  if(equipmentInput&&createEquipmentIndex(rc,equipmentInput).status==='ready')this.equipment=freeze(structuredClone(equipmentInput));
  }
  getCatalog(){return this.catalog;}
  getWeaponCatalog(){return this.weapons;}
@@ -62,4 +66,5 @@ export class LocalProvider implements DataProvider {
  getSyndicateCatalog(){return this.syndicates;}
  getRelicCatalog(){return this.relics;}
  getRelicSourceChecks(){return this.sourceChecks;}
+ getPrimeEquipmentCatalog(){return this.equipment;}
 }

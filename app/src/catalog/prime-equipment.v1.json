@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "prime-equipment.2026.10.26.1",
+  "relicCatalogVersion": "relics.2026.10.25.1",
+  "checkedAt": "2026-10-26",
+  "sources": [
+    {
+      "id": "Warframes.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Warframes.json",
+      "sha256": "8212da092f96ae1c297676729d800166fedf30dee8b93b00b2195bf72b3a4b6b"
+    },
+    {
+      "id": "Melee.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Melee.json",
+      "sha256": "eced40a4af4af665db1ebe902ffc3dc68b694677967604d537253695101ae741"
+    },
+    {
+      "id": "Primary.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Primary.json",
+      "sha256": "541d01598d4bb1743d77bc226c16b603d6e4f545f5fc56f71b2ee9802e562e39"
+    },
+    {
+      "id": "Secondary.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Secondary.json",
+      "sha256": "86d9ec7e2596bc80cb24000240bfbadb87fb77d2cafe869ef9f45ff75e72b3ec"
+    },
+    {
+      "id": "Arch-Melee.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Arch-Melee.json",
+      "sha256": "704df45a33347970c95b8f2e69445e106cf6a1a92e688ca99c13f90b4f94904b"
+    },
+    {
+      "id": "components.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/Components.json",
+      "sha256": "0d91f24cbfd3fcb80d9f10b06f7d997977d993f35df6db90c9157d08c2494a82"
+    },
+    {
+      "id": "zh.json",
+      "url": "https://cdn.jsdelivr.net/npm/@wfcd/items@1.1276.31/data/json/i18n/zh.json",
+      "sha256": "0d71ffa75c34a3e8e12bcfb4c7ac8b5e991d309b9a339232debb94f2f4a62c17"
+    }
+  ],
+  "parents": [
+    {
+      "id": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
+      "english": "Cernos Prime",
+      "nameZh": "西诺斯 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosGrip"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Jade/NyxPrime",
+      "english": "Nyx Prime",
+      "nameZh": "Nyx Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon",
+      "english": "Scindo Prime",
+      "nameZh": "分裂斩斧 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/PrimeScindoBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoBlade"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Berserker/ValkyrPrime",
+      "english": "Valkyr Prime",
+      "nameZh": "Valkyr Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+      "english": "Hikou Prime",
+      "nameZh": "飞扬 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+        "/Lotus/Types/Recipes/Weapons/PrimeHikouBlueprint"
+      ],
+      "sourceIds": [
+        "Secondary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Gyre/GyrePrime",
+      "english": "Gyre Prime",
+      "nameZh": "Gyre Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeHelmetComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeSystemsComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeChassisComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
+      "english": "Fang Prime",
+      "nameZh": "狼牙 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangBlade",
+        "/Lotus/Types/Recipes/Weapons/FangPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
+      "english": "Vadarya Prime",
+      "nameZh": "瓦德雅 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunBarrel",
+        "/Lotus/Types/Recipes/Weapons/PrimeLightningGunBlueprint"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Alchemist/LavosPrime",
+      "english": "Lavos Prime",
+      "nameZh": "Lavos Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeChassisComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeBlueprint",
+        "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeHelmetComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeSystemsComponent"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+      "english": "Paris Prime",
+      "nameZh": "帕里斯 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowGrip",
+        "/Lotus/Types/Recipes/Weapons/BowPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowUpperLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowString"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
+      "english": "Sarofang Prime",
+      "nameZh": "沙罗之牙 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/SarofangPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+      "english": "Orthos Prime",
+      "nameZh": "欧特鲁斯 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/PolearmPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmBlade"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Geode/CitrinePrime",
+      "english": "Citrine Prime",
+      "nameZh": "Citrine Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeSystemsComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeBlueprint",
+        "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeChassisComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeHelmetComponent"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
+      "english": "Braton Prime",
+      "nameZh": "布莱顿 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/BratonPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeStock"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+      "english": "Bronco Prime",
+      "nameZh": "野马 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/BroncoPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Secondary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+      "english": "Afentis Prime",
+      "nameZh": "圣英 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/AfentisPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+      "english": "Voruna Prime",
+      "nameZh": "Voruna Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeHelmetComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeSystemsComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeChassisComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
+      "english": "Perigale Prime",
+      "nameZh": "月面狂风 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/PerigalePrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeStock"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe",
+      "english": "Venato Prime",
+      "nameZh": "脉纹 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/VentoPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeHandle"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+      "english": "Burston Prime",
+      "nameZh": "伯斯顿 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/BurstonPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Sentient/CalibanPrime",
+      "english": "Caliban Prime",
+      "nameZh": "Caliban Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeBlueprint",
+        "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeChassisComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeHelmetComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeSystemsComponent"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon",
+      "english": "Corufell Prime",
+      "nameZh": "闪劫 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/CorufellPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeHandle"
+      ],
+      "sourceIds": [
+        "Arch-Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+      "english": "Akbronco Prime",
+      "nameZh": "野马双枪 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/AkbroncoPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink"
+      ],
+      "sourceIds": [
+        "Secondary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+      "english": "Styanax Prime",
+      "nameZh": "Styanax Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeBlueprint",
+        "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+      "english": "Daikyu Prime",
+      "nameZh": "大久和弓 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuUpperLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuString",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuGrip",
+        "/Lotus/Types/Recipes/Weapons/PrimeDaikyuBlueprint"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+      "english": "Kompressa Prime",
+      "nameZh": "卡帕压力枪 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/KompressaPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeReceiver"
+      ],
+      "sourceIds": [
+        "Secondary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
+      "english": "Alternox Prime",
+      "nameZh": "电幻步枪 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/AlternoxPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeReceiver"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+      "english": "Cedo Prime",
+      "nameZh": "塞多 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/CedoPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeStock"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+      "english": "Athodai Prime",
+      "nameZh": "阿索代 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/AthodaiPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel"
+      ],
+      "sourceIds": [
+        "Secondary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws",
+      "english": "Venka Prime",
+      "nameZh": "凯旋之爪 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/PrimeVenkaClawsBlueprint"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
+      "english": "Dual Zoren Prime",
+      "nameZh": "佐伦双斧 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/DualZorenPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeBlade"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun",
+      "english": "Steflos Prime",
+      "nameZh": "石晶之花 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/SteflosPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeBarrel"
+      ],
+      "sourceIds": [
+        "Primary.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Powersuits/Yareli/YareliPrime",
+      "english": "Yareli Prime",
+      "nameZh": "Yareli Prime",
+      "namePending": true,
+      "componentIds": [
+        "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeBlueprint",
+        "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeChassisComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeHelmetComponent",
+        "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeSystemsComponent"
+      ],
+      "sourceIds": [
+        "Warframes.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel",
+      "english": "Kestrel Prime",
+      "nameZh": "红隼 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeGrip",
+        "/Lotus/Types/Recipes/Weapons/KestrelPrimeBlueprint"
+      ],
+      "sourceIds": [
+        "Melee.json",
+        "components.json",
+        "zh.json"
+      ]
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+      "english": "Lex Prime",
+      "nameZh": "雷克斯 Prime",
+      "namePending": false,
+      "componentIds": [
+        "/Lotus/Types/Recipes/Weapons/LexPrimeBlueprint",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel"
+      ],
+      "sourceIds": [
+        "Secondary.json",
+        "components.json",
+        "zh.json"
+      ]
+    }
+  ],
+  "excludedRewardIds": [
+    "blueprint:forma",
+    "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096"
+  ]
+}

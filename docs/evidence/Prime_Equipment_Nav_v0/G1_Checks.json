@@ -1,0 +1,17 @@
+[
+  {
+    "command": "npm.cmd test -- src/test/prime-equipment.test.ts",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 test\n> vitest run src/test/prime-equipment.test.ts\n\n\n RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/pg/app\n\n\n Test Files  1 passed (1)\n      Tests  15 passed (15)\n   Start at  16:24:51\n   Duration  793ms (transform 37%, tests 32%, import 30%, worker 1%)\n\nnpm notice\nnpm notice New major version of npm available! 11.19.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+  },
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 lint\n> eslint .\n\n"
+  },
+  {
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 typecheck\n> tsc --noEmit\n\n"
+  }
+]
