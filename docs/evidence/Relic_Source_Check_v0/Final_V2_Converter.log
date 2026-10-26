@@ -1,0 +1,15 @@
+✔ fixed original inputs produce the independently audited complete rows and exact two-node excerpts (189.8269ms)
+✔ conversion is byte deterministic, nonmutating and preserves all old records including sources (367.932ms)
+✔ new 59 exact names and the quantity combination match independent identity audit, without fuzzy bindings (133.0611ms)
+✔ raw hash mismatch is rejected before parsing or generating a catalog (3.0319ms)
+✔ duplicate Intact, incomplete table, conflicting upstream identity and an unknown item type fail explicitly (338.3606ms)
+✔ missing or conflicting exact Chinese evidence stays pending and does not invent translations (265.0142ms)
+✔ missing route or unexpected selected relic is reported, never replaced with invented rows (72.8622ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1495.7245

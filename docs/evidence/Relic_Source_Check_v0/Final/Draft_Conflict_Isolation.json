@@ -1,0 +1,8 @@
+{
+  "remoteDraftPreserved": true,
+  "staleFactsRejected": true,
+  "explicitReloadShowsPersistedFacts": true,
+  "cleanRemoteTargetRefresh": true,
+  "unmatchedGroupAndProfileSwitchIsolated": true,
+  "newProfileHasNoDraft": true
+}

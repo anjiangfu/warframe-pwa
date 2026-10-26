@@ -1,0 +1,9 @@
+{
+  "exitCode": 0,
+  "finishedAt": "2026-10-26T01:29:15.0233363Z",
+  "normalBuild": true,
+  "startedAt": "2026-10-26T01:29:09.4685922Z",
+  "command": "npm.cmd run build",
+  "temporarySWBuild": false,
+  "workingDirectory": "D:/wf/Warframe_PWA_Handoff_20261016/app"
+}

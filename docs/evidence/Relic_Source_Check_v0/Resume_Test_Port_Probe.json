@@ -1,0 +1,6 @@
+{
+  "purpose": "read-only check for occupied isolated test port",
+  "error": "由于目标计算机积极拒绝，无法连接。 (127.0.0.1:4186)",
+  "origin": "http://127.0.0.1:4186",
+  "checkedAt": "2026-10-26T01:18:35.7446218Z"
+}

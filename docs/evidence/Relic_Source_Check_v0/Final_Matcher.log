@@ -1,0 +1,18 @@
+✔ all 62 real rows independently match the author audit within mission acquisition tables (73.3699ms)
+✔ not-listed requires a successfully read exact heading and nonempty exact rotation (0.7962ms)
+✔ a name in relicRewards without the mission section cannot prove acquisition (0.2093ms)
+✔ missing heading and missing rotation are unknown rather than absent rows (0.2952ms)
+✔ malformed rows, unbalanced markup, script content and failed transport cannot become not-listed (0.5846ms)
+✔ duplicate headings or duplicate matching rows are conflicts, not listed (0.319ms)
+✔ missing publication, acquisition or verification date never becomes dated listed evidence (0.3962ms)
+✔ Caches suffix is used once and Tyana keeps original Defense table identity and mirror rule (45.1439ms)
+✔ same name in another location or rotation does not pass and no source probabilities enter output (0.5748ms)
+✔ fixed input processing is deterministic, readonly and hash mismatches fail before parsing (7.9784ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 246.0335

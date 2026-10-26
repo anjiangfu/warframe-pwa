@@ -283,3 +283,19 @@ node scripts/run-quality.mjs
 复跑从项目根执行docs/evidence/Relic_Query_v2/prepare-isolated.py（Python3），只联接现有app/node_modules；在.v/rv2/app设置APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR／M0_EVIDENCE_DIR使用新的绝对证据目录、M0_EVIDENCE_PREFIX使用新前缀，执行node scripts/run-quality.mjs。转换工具及7项测试另见 `../tools/relic-query-v2/README.md`。不要在提供4194的原app跑临时SW构建，不覆盖旧证据或读取真实档案。
 
 来源及逐项审计见 `../docs/Relic_Query_v2_Sources.md`，实际命令、原回归调整理由、失败记录、保护hash和未验项见 `../docs/Relic_Query_v2_Acceptance.md`。本轮最终本地提交后停止待独立复核；Android、可信HTTPS／系统安装与游戏内核验仍未验。
+
+## 遗物来源时效核验 v0（2026-10-26交付，记录核对至2026-10-25）
+
+在虚空遗物 `http://127.0.0.1:4194/#relics` 的既有来源卡片查看“来源核验”。本轮保存官方2026-10-22公开表、作者2026-10-25取得和核对的静态记录；62条精确任务获取行均列出。卡片分别显示发布日期、核对日、原文定位、取得时刻和SHA256，原文与免责声明需联网打开。续工和启动应用不会把核对日改成今天。
+
+“所查官方表列出”只表示保存的表中有该行，非实时可刷、账号解锁或游戏亲测。四种筛选为全部／所查官方表列出／本次表未列出／待核或有冲突。筛选按保存记录，遗物至少一条摘录符合才入选；反查同步过滤。当前保存记录全部列出，所以后两种筛选可以没有命中，不代表游戏中不存在。缺表、缺轮次、网络或解析失败会待核，只有完整读表而缺精确行才是“本次表未列出”。
+
+无附件或字段缺失时旧目录仍可查，明确未附记录或待核。内置核验可离线打开，外链需联网。当前可获取仍未知；四Caches的额外B表触发、入口与基础模式待核不升级，B不是第二箱／轮。Tyana Pass的Defense只是原表分组，实际镜像特例保持。资料非实时，只覆盖本目录和摘录来源，此后更新未核。
+
+31遗物／117奖励／186关系／62摘录／11地点／6规则、原名称和稳定ID、原v2转换JSON不变。附件独立版本relic-checks.2026.10.25.1，通过LocalProvider只读提供；没有自动刷新、后台、通知、库存、收藏、目标、查询历史或游戏账号读取，个人模型／DB／完整备份格式不变。
+
+正常启动仍用原app的 `npm.cmd run build` 和 `npm.cmd run preview -- --host 127.0.0.1 --port 4194 --strictPort`；已有4194服务直接使用，不停止或重复启动。旧页面先处理草稿，再按SW提示更新，勿清库。跨origin迁入仍先导出、预览并明确新建恢复。
+
+自动化只在.v/rs/app隔离副本运行：从项目根执行docs/evidence/Relic_Source_Check_v0/prepare-isolated.py（Python3），仅联接现有app/node_modules；在隔离app设置APP_TEST_PORT=4186、APP_BROWSER_PROFILE_ROOT=.b，APP_EVIDENCE_DIR和M0_EVIDENCE_DIR使用新的绝对证据目录、M0_EVIDENCE_PREFIX用新前缀，再运行node scripts/run-quality.mjs。匹配十测试和v2转换七测试另计，原Hex独立复制复现另计。不要覆盖旧证据或在提供4194的原app运行临时SW更新测试。
+
+来源及官方页面许可／归属边界见 `../docs/Relic_Source_Check_v0_Sources.md`；匹配工具见 `../tools/relic-source-check-v0/README.md`，验收和失败记录见 `../docs/Relic_Source_Check_v0_Acceptance.md`。Android、可信HTTPS／系统安装及游戏内当前事实仍未验。本轮本地提交后停止等待独立复核。

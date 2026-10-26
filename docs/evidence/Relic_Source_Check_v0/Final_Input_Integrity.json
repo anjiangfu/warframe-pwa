@@ -1,0 +1,19 @@
+{
+  "verifiedOn": "2026-10-26",
+  "relicCatalogByteIdenticalToV2Converter": true,
+  "checksRegenerationByteIdentical": true,
+  "oldCatalogSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+  "checksSha256": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+  "sourceSha256": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+  "sourceBytes": 4484205,
+  "sourceCheckedAtUnchanged": "2026-10-25T12:56:10.820837+00:00",
+  "sourcePublishedAtUnchanged": "2026-10-22",
+  "statusCounts": {
+    "listed": 62,
+    "not-listed": 0,
+    "conflicting": 0,
+    "unverified": 0
+  },
+  "newDownloadOnResume": false,
+  "originalSourceAccess": "fresh official HTTPS on 2026-10-25, preserved; Jina disclaimer HTTP200 was a challenge response, not verified page text"
+}

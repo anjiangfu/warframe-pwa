@@ -42,3 +42,6 @@ React运行时还含scheduler（MIT）；运行时完整许可和适用NOTICE保
 ## 遗物查询 v2 补记（2026-10-25）
 
 沿用warframe-drop-data固定提交3263b2dff8bc1b434a191f0364395b156bd26561及@wfcd/items@1.1276.31的MIT资料，未增加第三方依赖、图像或代码。本轮有限静态目录扩至31遗物／117奖励记录，精确来源、hash、中文映射和数量奖励说明见docs/Relic_Query_v2_Sources.md。既有版权与MIT全文继续保留在app/licenses/THIRD_PARTY_LICENSES.txt及app/public/THIRD_PARTY_LICENSES.txt。没有导入全量原始文件、攻略正文或Tenno Hub加工数据；当前获取状态仍未知。
+## 遗物来源时效核验 v0（2026-10-26交付）
+
+仅增加Digital Extremes官方PC公开掉落表的62条必要事实定位、原文hash及日期，保存核对至2026-10-25的静态记录。官方整页、正文、样式、图像和实现不进入应用或Git；没有将原WFCD MIT概括为官方页面许可。应用来源卡保留官方归属、原文与免责声明链接。原依赖和许可全文不变；来源访问、判断边界和完整62条审计见docs/Relic_Source_Check_v0_Sources.md及docs/evidence/Relic_Source_Check_v0/。

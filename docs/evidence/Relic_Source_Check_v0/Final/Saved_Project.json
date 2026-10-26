@@ -1,0 +1,6 @@
+{
+  "sameProfileTwoPages": true,
+  "quantity3Stock1BothGaps2": true,
+  "inventoryOnlySaveKeepsRequirement": true,
+  "completeDeferUnknownAndResumeRecomputes": true
+}

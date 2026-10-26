@@ -1,0 +1,23 @@
+{
+  "viewports": [
+    [
+      1440,
+      960
+    ],
+    [
+      360,
+      860
+    ],
+    [
+      412,
+      860
+    ],
+    [
+      860,
+      412
+    ]
+  ],
+  "horizontalOverflow": false,
+  "androidPhysical": false,
+  "gameplayVerified": false
+}

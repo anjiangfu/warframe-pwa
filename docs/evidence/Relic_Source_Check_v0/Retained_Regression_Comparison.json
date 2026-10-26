@@ -1,0 +1,9 @@
+{
+  "oldAssertionsOrTimeoutsChanged": false,
+  "newUnitTests": 16,
+  "oldTestsStorageProfileCatalogPackageScriptsV2ToolsDiffExit": 0,
+  "baseline": "7f88678ac90a6028ef850a84cf52fe338f6d2c15",
+  "newBrowserTests": 4,
+  "oldFormalBrowserTests": 56,
+  "oldUnitTests": 120
+}

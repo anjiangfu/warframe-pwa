@@ -1,0 +1,60 @@
+{
+  "completedOn": "2026-10-26",
+  "stage": "G3 precommit",
+  "baseline": "7f88678ac90a6028ef850a84cf52fe338f6d2c15",
+  "resumeFrom": "90df66c08e84aa88b0434537add6b4c4c47aacf2",
+  "main": "08fda3880f0cdd796f3b1c9e3d84032083aa0091",
+  "appUnitTests": 136,
+  "formalBrowserTests": 60,
+  "matcherTests": 10,
+  "originalV2ConverterTests": 7,
+  "extraHexTests": 1,
+  "qualityCommandExits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "matcherExit": 0,
+  "converterExit": 0,
+  "extraHexExit": 0,
+  "protectedInputs": 17,
+  "oldDataContracts": 11,
+  "testedFiles": 90,
+  "originalDistUnchangedDuringTests": true,
+  "finalDistMatchesTestedNormal": true,
+  "oldCatalogUnchangedAndReproduced": true,
+  "newAttachmentReproduced": true,
+  "actualOriginalCounts": {
+    "relics": 31,
+    "rewards": 117,
+    "relations": 186,
+    "acquisitions": 62,
+    "locations": 11,
+    "routeRules": 6
+  },
+  "statusCounts": {
+    "listed": 62,
+    "not-listed": 0,
+    "conflicting": 0,
+    "unverified": 0
+  },
+  "pagePublishedAt": "2026-10-22",
+  "sourceRetrievedAt": "2026-10-25T12:52:34.735535+00:00",
+  "sourceCheckedAt": "2026-10-25T12:56:10.820837+00:00",
+  "sourceSha256": "c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9",
+  "catalogSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+  "checksSha256": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+  "screenshotsViewed": [
+    "G2_Final/Source_Check_Card_360.png (2026-10-25)",
+    "Final/Source_Check_Card_360.png original resolution (2026-10-26)"
+  ],
+  "normalBuild": "m0-1e6dc59278e0",
+  "previewHTTP": 200,
+  "realBrowserDatabaseAccessed": false,
+  "androidPhysical": false,
+  "independentReview": "pending; stop after local final commit, no automatic repair or next milestone"
+}

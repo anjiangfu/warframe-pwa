@@ -1,0 +1,10 @@
+{
+  "converterCommand": "node --test tools/relic-query-v2/convert.test.mjs",
+  "matcherExit": 0,
+  "finishedAt": "2026-10-26T01:23:08.6428744Z",
+  "matcherCommand": "node --test tools/relic-source-check-v0/match.test.mjs",
+  "startedAt": "2026-10-26T01:23:06.7478458Z",
+  "converterTests": 7,
+  "matcherTests": 10,
+  "converterExit": 0
+}

@@ -1,0 +1,17 @@
+{
+  "otherServicesStopped": false,
+  "readonlyHttpOnly": true,
+  "temporaryBuildExposed": false,
+  "pid": 3780,
+  "url": "http://127.0.0.1:4194/#relics",
+  "build": {
+    "build": "m0-1e6dc59278e0",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "origin": "http://127.0.0.1:4194",
+  "checkedAt": "2026-10-26T01:31:24.1930137Z",
+  "realBrowserDatabaseAccessed": false,
+  "buildStatus": 200,
+  "homeStatus": 200
+}
