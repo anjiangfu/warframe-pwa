@@ -11,6 +11,8 @@ it('every real dated proof matches the independent 62-row audit and leaves curre
  const a=checks();for(const row of audit.acquisitions){const r=effectiveSourceCheck(c,a,row.acquisitionId);expect(r.status).toBe('listed');expect(r.record?.locator).toMatchObject({section:row.section,heading:row.heading,rotation:row.rotation,item:row.item});}expect(a.document?.publishedAt).toBe('2026-10-22');expect(a.document?.sha256).toBe(audit.sha256);for(const r of c.relics)expect(r.availability).toBe('unknown');for(const r of c.acquisitions)expect(r.availability).toBe('unknown');
 });
 it('old queries without attachment or without a row remain usable and explicitly unverified',()=>{
+ const noAttachment=new LocalProvider(undefined,undefined,undefined,undefined,undefined,undefined,null);expect(noAttachment.getRelicSourceChecks()).toBeUndefined();expect(noAttachment.getRelicCatalog()).toEqual(c);
+ const partial=checks();Reflect.deleteProperty(partial,'records');const missingList=new LocalProvider(undefined,undefined,undefined,undefined,undefined,undefined,partial);expect(missingList.getRelicSourceChecks()).toBeUndefined();expect(missingList.getRelicCatalog()).toEqual(c);
  expect(effectiveSourceCheck(c,undefined,c.acquisitions[0].id)).toMatchObject({status:'unverified',reason:'no-record'});const a=checks();a.records.shift();expect(effectiveSourceCheck(c,a,c.acquisitions[0].id).status).toBe('unverified');
 });
 it('synthetic missing dates or source hash cannot masquerade as listed',()=>{

@@ -1,0 +1,47 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relic-source-checks.spec.ts --grep all sixty-two --reporter=line
+
+
+[WebServer] (node:38500) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+
+(node:11024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/1] e2e\relic-source-checks.spec.ts:11:1 › all sixty-two source cards expose exact dated saved evidence without upgrading current access
+  1) e2e\relic-source-checks.spec.ts:11:1 › all sixty-two source cards expose exact dated saved evidence without upgrading current access 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByTestId('source-check:relic:lith:c7:source:location:wfcd:79a7f0cc072fc47b')
+    Expected substring: "来源核验：所查官方表列出"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" getByTestId('source-check:relic:lith:c7:source:location:wfcd:79a7f0cc072fc47b') with timeout 5000ms
+      - waiting for getByTestId('source-check:relic:lith:c7:source:location:wfcd:79a7f0cc072fc47b')
+
+
+      10 | async function records(p:Page){return p.evaluate(()=>new Promise<unknown>((resolve,reject)=>{const q=indexedDB.open('tenno-planner');q.onerror=()=>reject(q.error);q.onsuccess=()=>{const db=q.result,tx=db.transaction(['profiles','snapshots','imports']),x=tx.objectStore('profiles').getAll(),y=tx.objectStore('snapshots').getAll(),z=tx.objectStore('imports').getAll();tx.oncomplete=()=>{resolve([x.result,y.result,z.result]);db.close();};};}));}
+      11 | test('all sixty-two source cards expose exact dated saved evidence without upgrading current access',async({page})=>{
+    > 12 |  test.setTimeout(90000);await open(page);const before=await records(page);for(const r of c.relics){await choose(page,r.id);for(const link of c.acquisitions.filter(x=>x.relicId===r.id)){const card=proof(page,link.id),row=a.records.find(x=>x.acquisitionId===link.id)!;await expect(card).toContainText('来源核验：所查官方表列出');await expect(card).toContainText(a.document!.publishedAt!);await expect(card).toContainText(a.document!.checkedAt!.slice(0,10));await expect(card).toContainText(row.locator!.heading!);await expect(card).toContainText('Rotation '+link.rotation);await expect(card).toContainText(r.english);await expect(card).toContainText(a.document!.sha256!);await expect(card.getByTestId('official-check-link')).toHaveAttribute('href',a.document!.sourceUrl+'#missionRewards');await expect(detail(page)).toContainText('当前可获取：未知');}}expect(await records(page)).toEqual(before);await writeFile(evidencePath('Source_Check_All_62.json'),JSON.stringify({checked:62,sourceHash:a.document!.sha256,publishedAt:a.document!.publishedAt,checkedAt:a.document!.checkedAt,exactHeadingRotationEnglish:true,currentAvailabilityStillUnknown:true,readonly:true},null,2));
+         |                                                                                                                                                                                                                                                                                              ^
+      13 | });
+      14 | test('saved-evidence filters, reverse search, returns and profile switches are readonly and consistent across entry points',async({page})=>{
+      15 |  await open(page);await page.getByRole('button',{name:'＋ 新建空白档案',exact:true}).click();await expect(page.getByRole('status')).toContainText('已创建');const one=await page.getByLabel('切换档案').inputValue();await page.getByRole('button',{name:'＋ 新建空白档案',exact:true}).click();await expect(page.getByRole('status')).toContainText('已创建');const two=await page.getByLabel('切换档案').inputValue(),before=await records(page);
+        at D:\wf\Warframe_PWA_Handoff_20261016\.v\rs\app\e2e\relic-source-checks.spec.ts:12:286
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\relic-source-checks-all-si-11a61-ut-upgrading-current-access\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\relic-source-checks-all-si-11a61-ut-upgrading-current-access\error-context.md
+
+
+  1 failed
+    e2e\relic-source-checks.spec.ts:11:1 › all sixty-two source cards expose exact dated saved evidence without upgrading current access 

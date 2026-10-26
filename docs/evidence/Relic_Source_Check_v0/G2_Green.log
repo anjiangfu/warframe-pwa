@@ -1,0 +1,19 @@
+
+> tenno-local-planner@0.1.0 test:browser
+> playwright test e2e/relic-source-checks.spec.ts --reporter=line
+
+[WebServer] (node:36444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+
+Running 4 tests using 1 worker
+
+
+(node:32416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] e2e\relic-source-checks.spec.ts:11:1 › all sixty-two source cards expose exact dated saved evidence without upgrading current access
+[2/4] e2e\relic-source-checks.spec.ts:14:1 › saved-evidence filters, reverse search, returns and profile switches are readonly and consistent across entry points
+[3/4] e2e\relic-source-checks.spec.ts:18:1 › all saved source evidence and filtering reopen offline without substituting a fresh verification date
+[4/4] e2e\relic-source-checks.spec.ts:21:1 › Caches warnings and mirror distinction survive readable dated proof at desktop 360 412 and landscape
+  4 passed (11.1s)

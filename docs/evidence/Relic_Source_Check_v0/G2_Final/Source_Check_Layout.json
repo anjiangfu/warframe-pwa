@@ -1,0 +1,25 @@
+{
+  "viewports": [
+    [
+      1440,
+      960
+    ],
+    [
+      360,
+      860
+    ],
+    [
+      412,
+      860
+    ],
+    [
+      860,
+      412
+    ]
+  ],
+  "horizontalOverflow": false,
+  "cachesTriggerPending": true,
+  "mirrorGuideKept": true,
+  "expandedProof": true,
+  "androidPhysical": false
+}

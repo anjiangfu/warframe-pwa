@@ -1,0 +1,39 @@
+
+> tenno-local-planner@0.1.0 test
+> vitest run src/test/relic-source-ui.test.ts
+
+
+ RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/rs/app
+
+ ❯ src/test/relic-source-ui.test.ts (3 tests | 1 failed) 20ms
+   × legacy public query and source cards without an attachment explicitly say no saved verification record 16ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/relic-source-ui.test.ts > legacy public query and source cards without an attachment explicitly say no saved verification record
+TypeError: Cannot read properties of undefined (reading 'find')
+ ❯ effectiveSourceCheck src/domain/relic-source-checks.ts:21:27
+     19| }
+     20| export function effectiveSourceCheck(catalog:Readonly<RelicCatalog>,at…
+     21|  const record=attachment?.records.find(r=>r.acquisitionId===acquisitio…
+       |                           ^
+     22|  const result=(status:SourceCheckStatus,reason:string)=>({status,reaso…
+     23|  if(!record)return result('unverified','no-record');
+ ❯ RelicSourceCheckCard src/features/RelicSourceCheckCard.tsx:6:15
+ ❯ Object.react_stack_bottom_frame ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:10371:18
+ ❯ renderWithHooks ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5361:19
+ ❯ renderElement ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5796:23
+ ❯ retryNode ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6783:21
+ ❯ performWork ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:7919:19
+ ❯ startWork ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:8807:7
+ ❯ renderToStringImpl ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:8933:7
+ ❯ process.env.NODE_ENV.exports.renderToStaticMarkup ../../../app/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:10426:14
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 2 passed (3)
+   Start at  21:24:02
+   Duration  392ms (transform 47%, import 41%, tests 9%, worker 2%)
+

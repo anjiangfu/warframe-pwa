@@ -1,0 +1,14 @@
+{
+  "filters": [
+    "all",
+    "listed",
+    "not-listed",
+    "pending"
+  ],
+  "listedRelics": 31,
+  "pendingRelics": 0,
+  "notListedRelics": 0,
+  "reverseDateConsistent": true,
+  "profileSwitches": true,
+  "profilesSnapshotsImportsEqual": true
+}

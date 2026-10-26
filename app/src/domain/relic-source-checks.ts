@@ -18,7 +18,7 @@ export function validateSourceChecks(value:unknown,catalog:Readonly<RelicCatalog
  const ids=new Set<string>();for(const value of a.records as unknown[]){const r=obj(value);if(typeof r.acquisitionId!=='string'||ids.has(r.acquisitionId)||!catalog.acquisitions.some(a=>a.id===r.acquisitionId))bad();ids.add(r.acquisitionId as string);if(!optional(r.status,v=>typeof v==='string'&&statuses.includes(v))||!optional(r.reason,text))bad();for(const k of ['tableRead','rotationRead'])if(!optional(r[k],v=>typeof v==='boolean'))bad();if(!optional(r.matchCount,v=>typeof v==='number'&&Number.isSafeInteger(v)&&v>=0))bad();if(r.rowOrdinals!==undefined&&(!Array.isArray(r.rowOrdinals)||r.rowOrdinals.some(n=>!Number.isSafeInteger(n)||n<0)))bad();if(r.locator!==undefined){const l=obj(r.locator);for(const k of ['section','heading','rotation','item'])if(!optional(l[k],text))bad();}}
 }
 export function effectiveSourceCheck(catalog:Readonly<RelicCatalog>,attachment:Readonly<RelicSourceChecks>|undefined,acquisitionId:string){
- const record=attachment?.records.find(r=>r.acquisitionId===acquisitionId),document=attachment?.document;
+ const record=attachment?.records?.find(r=>r.acquisitionId===acquisitionId),document=attachment?.document;
  const result=(status:SourceCheckStatus,reason:string)=>({status,reason,record,document});
  if(!record)return result('unverified','no-record');
  if(attachment?.catalogVersion!==catalog.catalogVersion)return result('unverified','catalog-mismatch');

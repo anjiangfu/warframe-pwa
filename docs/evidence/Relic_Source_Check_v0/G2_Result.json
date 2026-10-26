@@ -1,0 +1,17 @@
+{
+  "browserExit": 0,
+  "oldRelicBrowserRun": "G2_Initial: original13 plus new4, 17 passed on 2026-10-25",
+  "buildExit": 0,
+  "lintExit": 0,
+  "browserSeconds": 12,
+  "typecheckExit": 0,
+  "browserNewTests": 4,
+  "originalDistUnchanged": true,
+  "resumeObservation": "HEAD and modified files matched authorized G2 stop point; no unrelated changes detected; dedicated4186 was free.",
+  "contracts": 11,
+  "applicationUnitTests": 136,
+  "originalInputs": 17,
+  "stage": "G2 resumed 2026-10-26",
+  "sourceRecordDatePreserved": "2026-10-25",
+  "sourceCodeParityFiles": 90
+}

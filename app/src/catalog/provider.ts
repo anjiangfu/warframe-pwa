@@ -24,8 +24,8 @@ export class LocalProvider implements DataProvider {
  private crafting:CraftingCatalog;
  private syndicates:SyndicateCatalog;
  private relics:RelicCatalog;
- private sourceChecks:RelicSourceChecks;
- constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog,resourceInput:ResourceCatalog=resources as ResourceCatalog,craftInput:CraftingCatalog=crafting as CraftingCatalog,syndicateInput:SyndicateCatalog=syndicates as SyndicateCatalog){
+ private sourceChecks:RelicSourceChecks|undefined;
+ constructor(input:Catalog=raw as Catalog,weaponInput:WeaponCatalog=guides as WeaponCatalog,goalInput:GoalCatalog=goals as GoalCatalog,resourceInput:ResourceCatalog=resources as ResourceCatalog,craftInput:CraftingCatalog=crafting as CraftingCatalog,syndicateInput:SyndicateCatalog=syndicates as SyndicateCatalog,checkInput:RelicSourceChecks|null=sourceChecks as RelicSourceChecks){
   const c=structuredClone(input),ids=new Set(c.nodes.map(n=>n.id));
   if(ids.size!==c.nodes.length||new Set(c.lanes.map(l=>l.id)).size!==c.lanes.length)throw Error('目录ID重复');
   const steps=new Set<string>();
@@ -51,7 +51,8 @@ export class LocalProvider implements DataProvider {
   for(const d of sc.syndicates){if(!Number.isSafeInteger(d.maxRank)||d.maxRank<1||!d.rankFactId||!d.standingFactId||d.rankFactId===d.standingFactId||new Set(d.members.map(m=>m.id)).size!==d.members.length||d.sourceIds.some(id=>!allSources.has(id)))throw Error('集团定义无效');const adjacent=new Set<number>();for(const step of d.steps){if(stepIds.has(step.id)||adjacent.has(step.from)||!Number.isSafeInteger(step.from)||step.from<0||step.to!==step.from+1||step.to>d.maxRank)throw Error('集团相邻步骤无效');stepIds.add(step.id);adjacent.add(step.from);provenance(step.conditions);if(typeof step.conditions.finale!=='boolean'||typeof step.conditions.likedForFinale!=='boolean')throw Error('集团条件无效');if(new Set(step.sacrifices.map(x=>x.resourceId)).size!==step.sacrifices.length)throw Error('集团祭品重复');for(const a of [step.standing,...step.sacrifices]){provenance(a);if(a.quantity!==null&&(!Number.isSafeInteger(a.quantity)||a.quantity<0))throw Error('集团用量无效');}for(const a of step.sacrifices)if(!resourceIds.has(a.resourceId))throw Error('集团资源引用无效');}}
   this.syndicates=freeze(sc);
   const rc=structuredClone(relics);validateRelicCatalog(rc);this.relics=freeze(rc);
-  const checks=structuredClone(sourceChecks);validateSourceChecks(checks,rc);this.sourceChecks=freeze(checks);
+  const checks=checkInput?structuredClone(checkInput):undefined;
+  if(checks?.schemaVersion===1&&checks.checkVersion&&checks.catalogVersion&&Array.isArray(checks.records)){validateSourceChecks(checks,rc);this.sourceChecks=freeze(checks);}
  }
  getCatalog(){return this.catalog;}
  getWeaponCatalog(){return this.weapons;}
