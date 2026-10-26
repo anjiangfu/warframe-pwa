@@ -1,0 +1,1130 @@
+{
+  "checkedAt": "2026-10-26",
+  "itemsVersion": "1.1276.31",
+  "method": "Exact reward parent/component IDs checked against both pinned parent.components and component.parentUniqueNames; census compared only after recomputation",
+  "inputs": {
+    ".v/rv1-source/Warframes.json": {
+      "sha256": "8212da092f96ae1c297676729d800166fedf30dee8b93b00b2195bf72b3a4b6b",
+      "bytes": 353813
+    },
+    ".v/rv1-source/Melee.json": {
+      "sha256": "eced40a4af4af665db1ebe902ffc3dc68b694677967604d537253695101ae741",
+      "bytes": 656859
+    },
+    ".v/rv1-source/Primary.json": {
+      "sha256": "541d01598d4bb1743d77bc226c16b603d6e4f545f5fc56f71b2ee9802e562e39",
+      "bytes": 447008
+    },
+    ".v/rv1-source/Secondary.json": {
+      "sha256": "86d9ec7e2596bc80cb24000240bfbadb87fb77d2cafe869ef9f45ff75e72b3ec",
+      "bytes": 325290
+    },
+    ".v/rv1-source/Arch-Melee.json": {
+      "sha256": "704df45a33347970c95b8f2e69445e106cf6a1a92e688ca99c13f90b4f94904b",
+      "bytes": 19521
+    },
+    ".v/rv1-source/components.json": {
+      "sha256": "0d91f24cbfd3fcb80d9f10b06f7d997977d993f35df6db90c9157d08c2494a82",
+      "bytes": 2942967
+    },
+    ".v/rv1-source/zh.json": {
+      "sha256": "0d71ffa75c34a3e8e12bcfb4c7ac8b5e991d309b9a339232debb94f2f4a62c17",
+      "bytes": 4104257
+    },
+    ".v/rv1-source/items-license.txt": {
+      "sha256": "673c2edd935e4386a055f1a51242917a6bd9d943e0aa8eed2d71accd24095b38",
+      "bytes": 1064
+    }
+  },
+  "referenceSha256": "6f4320b42b987d702ae0ecd19b06c22e0f8680988da0368be32e28d6b1b1bafc",
+  "groups": [
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
+      "parentEnglish": "Cernos Prime",
+      "parentZh": "西诺斯 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:7b51b942f5f3eed9f76370e5c3a534c1",
+        "reward:wfcd:9f4cff0612ac47cdea7a21943b6acbe9"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:7b51b942f5f3eed9f76370e5c3a534c1",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosLowerLimb",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:9f4cff0612ac47cdea7a21943b6acbe9",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosGrip",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Jade/NyxPrime",
+      "parentEnglish": "Nyx Prime",
+      "parentZh": "Nyx Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:2f87fdd9c219d08cb8218e771ca8a700",
+        "reward:wfcd:27671ce5061f68c945c5791ffcd018ac"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:2f87fdd9c219d08cb8218e771ca8a700",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:27671ce5061f68c945c5791ffcd018ac",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon",
+      "parentEnglish": "Scindo Prime",
+      "parentZh": "分裂斩斧 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:cded061517b20aed22c18d585c97e806",
+        "reward:wfcd:b08a274cab1ed295fa20cdf977e0dac8"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:cded061517b20aed22c18d585c97e806",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PrimeScindoBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:b08a274cab1ed295fa20cdf977e0dac8",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoBlade",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Berserker/ValkyrPrime",
+      "parentEnglish": "Valkyr Prime",
+      "parentZh": "Valkyr Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:50049628c0d3bd1ceb67f37202c48532"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:50049628c0d3bd1ceb67f37202c48532",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/ValkyrPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou",
+      "parentEnglish": "Hikou Prime",
+      "parentZh": "飞扬 Prime",
+      "parentFile": "Secondary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:2a8861dcb3ce0bed47775bbabc078969",
+        "reward:wfcd:832651c58c3e75e7b3aba8324e844965"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:2a8861dcb3ce0bed47775bbabc078969",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:832651c58c3e75e7b3aba8324e844965",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PrimeHikouBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Gyre/GyrePrime",
+      "parentEnglish": "Gyre Prime",
+      "parentZh": "Gyre Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:bcb4ef9bcd1ce402a4c35983bd9770dc",
+        "reward:wfcd:29d6d6e54807218cde498fd78a3da3be",
+        "reward:wfcd:20b7f130fdb01e3d4e6e2b1e9d8a9e12",
+        "reward:wfcd:49e5369cbe8a770bac6146363e21a416"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:bcb4ef9bcd1ce402a4c35983bd9770dc",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeHelmetComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:29d6d6e54807218cde498fd78a3da3be",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeSystemsComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:20b7f130fdb01e3d4e6e2b1e9d8a9e12",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeChassisComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:49e5369cbe8a770bac6146363e21a416",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/GyrePrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger",
+      "parentEnglish": "Fang Prime",
+      "parentZh": "狼牙 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:2aeb605b226d5a8caaf58ef1d3d9e537",
+        "reward:wfcd:371732a7c5612bde4c88027a2224814d",
+        "reward:wfcd:3f4950670b069625ddf79ce92de425a5"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:2aeb605b226d5a8caaf58ef1d3d9e537",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangHandle",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:371732a7c5612bde4c88027a2224814d",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangBlade",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:3f4950670b069625ddf79ce92de425a5",
+          "componentId": "/Lotus/Types/Recipes/Weapons/FangPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeLightningGun/PrimeLightningGun",
+      "parentEnglish": "Vadarya Prime",
+      "parentZh": "瓦德雅 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+        "reward:wfcd:f7beacbe122fcccb6070344cbe7a60c3",
+        "reward:wfcd:a595ed9a60268a6e08925157075134cd",
+        "reward:wfcd:1c98bd13432b36aa94e43217fade7dcd"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:d9f88efbe255d169fdb79408e93eea6b",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:f7beacbe122fcccb6070344cbe7a60c3",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunStock",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:a595ed9a60268a6e08925157075134cd",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:1c98bd13432b36aa94e43217fade7dcd",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PrimeLightningGunBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Alchemist/LavosPrime",
+      "parentEnglish": "Lavos Prime",
+      "parentZh": "Lavos Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+        "reward:wfcd:f26f6851c1ab0465d385228e19981567",
+        "reward:wfcd:fd3f77342b8b03fc9469e44f931eb1d5",
+        "reward:wfcd:62ad58aba414cf6a239f4a66ed0adc2d"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:09b661a7b05d22813e35766d6376536c",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeChassisComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:f26f6851c1ab0465d385228e19981567",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:fd3f77342b8b03fc9469e44f931eb1d5",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeHelmetComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:62ad58aba414cf6a239f4a66ed0adc2d",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/LavosPrimeSystemsComponent",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeHuntingBow",
+      "parentEnglish": "Paris Prime",
+      "parentZh": "帕里斯 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+        "reward:wfcd:6b65b2d83a1cdc91c169e5c3949fb1f5",
+        "reward:wfcd:fa5971ba347995f7ffb5ad78a07107ca",
+        "reward:wfcd:5c6b1c9bf2fef923fdadfa0b395529df",
+        "reward:wfcd:57bdb1307f16a7e25b08b2efc9c3ad2e"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:9d8e76b94105f92d4bfedb4bc15e14fc",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowLowerLimb",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:6b65b2d83a1cdc91c169e5c3949fb1f5",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowGrip",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:fa5971ba347995f7ffb5ad78a07107ca",
+          "componentId": "/Lotus/Types/Recipes/Weapons/BowPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:5c6b1c9bf2fef923fdadfa0b395529df",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowUpperLimb",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:57bdb1307f16a7e25b08b2efc9c3ad2e",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowString",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
+      "parentEnglish": "Sarofang Prime",
+      "parentZh": "沙罗之牙 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:8dac1c4170057091a7cd0cfcf66b8905",
+        "reward:wfcd:64f85f8ffff7d9ce68a774addc8ea2ba",
+        "reward:wfcd:85d15eeae7e37b78ec56b31624416ea3"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:8dac1c4170057091a7cd0cfcf66b8905",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeBlade",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:64f85f8ffff7d9ce68a774addc8ea2ba",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeHandle",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:85d15eeae7e37b78ec56b31624416ea3",
+          "componentId": "/Lotus/Types/Recipes/Weapons/SarofangPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+      "parentEnglish": "Orthos Prime",
+      "parentZh": "欧特鲁斯 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:fac2551e31071237c99c585dbb387b2b",
+        "reward:wfcd:c16dafff7a71a6898079dc3d54921068",
+        "reward:wfcd:a5e8e0c5993cac61603bd5c97f1e634c"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:fac2551e31071237c99c585dbb387b2b",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PolearmPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:c16dafff7a71a6898079dc3d54921068",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmHandle",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:a5e8e0c5993cac61603bd5c97f1e634c",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmBlade",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Geode/CitrinePrime",
+      "parentEnglish": "Citrine Prime",
+      "parentZh": "Citrine Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:8666500cee4ceb2ca075f4e2b29a7920",
+        "reward:wfcd:2ded7b50acb65154036a8d359bea7aec",
+        "reward:wfcd:b3182139dda9df5dc42d018a9692c8d0",
+        "reward:wfcd:c2223937b88deb1460fb68a01c8689c1"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:8666500cee4ceb2ca075f4e2b29a7920",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeSystemsComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:2ded7b50acb65154036a8d359bea7aec",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:b3182139dda9df5dc42d018a9692c8d0",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeChassisComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:c2223937b88deb1460fb68a01c8689c1",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CitrinePrimeHelmetComponent",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Rifle/BratonPrime",
+      "parentEnglish": "Braton Prime",
+      "parentZh": "布莱顿 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:27b3d3259c2f10457bd73f830ea67069",
+        "reward:wfcd:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+        "reward:wfcd:c534d3c6c7c29b9891620a6411234912"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:27b3d3259c2f10457bd73f830ea67069",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:74a6140f2c1bb7ec7ca14c64e5e3eef5",
+          "componentId": "/Lotus/Types/Recipes/Weapons/BratonPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:c534d3c6c7c29b9891620a6411234912",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeStock",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Pistol/BroncoPrime",
+      "parentEnglish": "Bronco Prime",
+      "parentZh": "野马 Prime",
+      "parentFile": "Secondary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+        "reward:wfcd:3535d5eed7720f117b9dee5baaa53af1",
+        "reward:wfcd:c02f4f2d913f96493c8518cdf7248219"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:48fe1f6902db4e025280c5481068ae49",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:3535d5eed7720f117b9dee5baaa53af1",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:c02f4f2d913f96493c8518cdf7248219",
+          "componentId": "/Lotus/Types/Recipes/Weapons/BroncoPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAfentis/PrimeAfentisWeapon",
+      "parentEnglish": "Afentis Prime",
+      "parentZh": "圣英 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:9df211334588bd54f29533faec5ff802",
+        "reward:wfcd:3efad7425a3edc25a3bca401dadea294",
+        "reward:wfcd:92cf229954a11b2ece104a08cb8d6a04",
+        "reward:wfcd:974256a40f39ae17bda3003942351f01"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:9df211334588bd54f29533faec5ff802",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:3efad7425a3edc25a3bca401dadea294",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:92cf229954a11b2ece104a08cb8d6a04",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:974256a40f39ae17bda3003942351f01",
+          "componentId": "/Lotus/Types/Recipes/Weapons/AfentisPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Werewolf/VorunaPrime",
+      "parentEnglish": "Voruna Prime",
+      "parentZh": "Voruna Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:757f0564a054758e392a5e50ff911d6b",
+        "reward:wfcd:f779c6ea92af1b1dc9011a3949e9b83e",
+        "reward:wfcd:d17679371c2f5d199dedb75fd66b3128",
+        "reward:wfcd:b1a23514cd5d2600358088084ee576f8"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:757f0564a054758e392a5e50ff911d6b",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeHelmetComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:f779c6ea92af1b1dc9011a3949e9b83e",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeSystemsComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:d17679371c2f5d199dedb75fd66b3128",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeChassisComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:b1a23514cd5d2600358088084ee576f8",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/VorunaPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimePerigale/PrimePerigaleSniper",
+      "parentEnglish": "Perigale Prime",
+      "parentZh": "月面狂风 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:1d4a93ebd979a7ea3699066a275be94a",
+        "reward:wfcd:f1c60efa353285c9a6571b88e24c3c4b",
+        "reward:wfcd:f7b80fd45a790dc8d918b50810cb6cfb",
+        "reward:wfcd:13e6958cae369b25a72739bcdfdfa13e"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:1d4a93ebd979a7ea3699066a275be94a",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PerigalePrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:f1c60efa353285c9a6571b88e24c3c4b",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:f7b80fd45a790dc8d918b50810cb6cfb",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:13e6958cae369b25a72739bcdfdfa13e",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeStock",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe",
+      "parentEnglish": "Venato Prime",
+      "parentZh": "脉纹 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:a674788804a65095dfd4fadaa1490ab4",
+        "reward:wfcd:3287aecbf624c51485dbbde7a8115d41",
+        "reward:wfcd:0ccb2f31edf63874519f220e2705378f"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:a674788804a65095dfd4fadaa1490ab4",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeBlade",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:3287aecbf624c51485dbbde7a8115d41",
+          "componentId": "/Lotus/Types/Recipes/Weapons/VentoPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:0ccb2f31edf63874519f220e2705378f",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeHandle",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeBurston/PrimeBurston",
+      "parentEnglish": "Burston Prime",
+      "parentZh": "伯斯顿 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:3e8719fda222b72b6f6fb71cb15c6e00",
+        "reward:wfcd:98b23d357d7a99755cc011c34bb60482",
+        "reward:wfcd:5b00ba6ba06a134d04e418354800fdd5",
+        "reward:wfcd:e61312444582286971e7fa69d81c474f"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:3e8719fda222b72b6f6fb71cb15c6e00",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:98b23d357d7a99755cc011c34bb60482",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:5b00ba6ba06a134d04e418354800fdd5",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeStock",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:e61312444582286971e7fa69d81c474f",
+          "componentId": "/Lotus/Types/Recipes/Weapons/BurstonPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Sentient/CalibanPrime",
+      "parentEnglish": "Caliban Prime",
+      "parentZh": "Caliban Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+        "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+        "reward:wfcd:bf3e81ec9106c5af13d4461761424f3d",
+        "reward:wfcd:707f2127411bf4138b44ec8fc4d36d32"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:085dc2caa03edfdbf41d068efa6b72d0",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:40e2febc8810c68d9c79b57894928d4d",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeChassisComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:bf3e81ec9106c5af13d4461761424f3d",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeHelmetComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:707f2127411bf4138b44ec8fc4d36d32",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/CalibanPrimeSystemsComponent",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon",
+      "parentEnglish": "Corufell Prime",
+      "parentZh": "闪劫 Prime",
+      "parentFile": "Arch-Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:d04c14f2cf28e6707ccb2faae6d6b365",
+        "reward:wfcd:a01e2194d22ec638e14cde901c746fc9",
+        "reward:wfcd:9d57488a201b68b9773fd1ffaf3a5613",
+        "reward:wfcd:2444ed9772025767c7e4361bd7efa6b0"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:d04c14f2cf28e6707ccb2faae6d6b365",
+          "componentId": "/Lotus/Types/Recipes/Weapons/CorufellPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:a01e2194d22ec638e14cde901c746fc9",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:9d57488a201b68b9773fd1ffaf3a5613",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:2444ed9772025767c7e4361bd7efa6b0",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeHandle",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun",
+      "parentEnglish": "Akbronco Prime",
+      "parentZh": "野马双枪 Prime",
+      "parentFile": "Secondary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:bd60f5414db72b77df25741fb54ccad1",
+        "reward:wfcd:6df04cc456c68941793d2c817987114c"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:bd60f5414db72b77df25741fb54ccad1",
+          "componentId": "/Lotus/Types/Recipes/Weapons/AkbroncoPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:6df04cc456c68941793d2c817987114c",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Hoplite/StyanaxPrime",
+      "parentEnglish": "Styanax Prime",
+      "parentZh": "Styanax Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:42019f4e46cf624e639f03cf6d26a1ad",
+        "reward:wfcd:346b26c8bf197c415ac758b6c6894f04",
+        "reward:wfcd:853e482f74e58b2a5d2f48be8898fca1",
+        "reward:wfcd:99940d573ca5690f21603b568f34ec2b"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:42019f4e46cf624e639f03cf6d26a1ad",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeSystemsComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:346b26c8bf197c415ac758b6c6894f04",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:853e482f74e58b2a5d2f48be8898fca1",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeHelmetComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:99940d573ca5690f21603b568f34ec2b",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/StyanaxPrimeChassisComponent",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Bows/PrimeDaikyu/PrimeDaikyuBow",
+      "parentEnglish": "Daikyu Prime",
+      "parentZh": "大久和弓 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+        "reward:wfcd:ee3ad24051b9b514797eb2ebaf206aae",
+        "reward:wfcd:4efa3135e36a0bf8b65092356d1d27bf",
+        "reward:wfcd:cfb892b209a2720b59f0dd326585ca69",
+        "reward:wfcd:ef5dec1f909b9860ad93dd95ff7db6e0"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:2f1a526a94cf4e5e64a3e8781f8dd3cf",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuUpperLimb",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:ee3ad24051b9b514797eb2ebaf206aae",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuLowerLimb",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:4efa3135e36a0bf8b65092356d1d27bf",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuString",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:cfb892b209a2720b59f0dd326585ca69",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuGrip",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:ef5dec1f909b9860ad93dd95ff7db6e0",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PrimeDaikyuBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa",
+      "parentEnglish": "Kompressa Prime",
+      "parentZh": "卡帕压力枪 Prime",
+      "parentFile": "Secondary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+        "reward:wfcd:8c3eb5e7c3acc6072d20440f2c58acc6",
+        "reward:wfcd:33374e791ac9f2a6378044d1458f683a"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:fbd093234df1b676f811caa64a5e4381",
+          "componentId": "/Lotus/Types/Recipes/Weapons/KompressaPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:8c3eb5e7c3acc6072d20440f2c58acc6",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:33374e791ac9f2a6378044d1458f683a",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeReceiver",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeAlternox/PrimeAlternoxWeapon",
+      "parentEnglish": "Alternox Prime",
+      "parentZh": "电幻步枪 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:ff3c6fe717140cf36d17f502b0c96405",
+        "reward:wfcd:969291d093c7813b41a8eab0a9f2c80f",
+        "reward:wfcd:1a62164c454b8633cafca261d00c3f1c",
+        "reward:wfcd:7a694ab7c05e0ee235ee4dd6873dd20f"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:ff3c6fe717140cf36d17f502b0c96405",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeStock",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:969291d093c7813b41a8eab0a9f2c80f",
+          "componentId": "/Lotus/Types/Recipes/Weapons/AlternoxPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:1a62164c454b8633cafca261d00c3f1c",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:7a694ab7c05e0ee235ee4dd6873dd20f",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeReceiver",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeCedo/PrimeCedoWeapon",
+      "parentEnglish": "Cedo Prime",
+      "parentZh": "塞多 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+        "reward:wfcd:1f87a97213aee80f5f8b4d93be5b88f4",
+        "reward:wfcd:61a12221b53f2adcf2a4ef786cd34900",
+        "reward:wfcd:d890a5b6f5954ba2e14eb3301e47cc09"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:8ccd89edcf35a4a440935b3b9aee8531",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeBarrel",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:1f87a97213aee80f5f8b4d93be5b88f4",
+          "componentId": "/Lotus/Types/Recipes/Weapons/CedoPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:61a12221b53f2adcf2a4ef786cd34900",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:d890a5b6f5954ba2e14eb3301e47cc09",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeStock",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon",
+      "parentEnglish": "Athodai Prime",
+      "parentZh": "阿索代 Prime",
+      "parentFile": "Secondary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:0e3fbe815c79cfea9ea621f8d439125a",
+        "reward:wfcd:5f5d4e8af0e50af9682e2242388abf4a",
+        "reward:wfcd:e3b04f7452fd6373e26a70acc5f10d37"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:0e3fbe815c79cfea9ea621f8d439125a",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:5f5d4e8af0e50af9682e2242388abf4a",
+          "componentId": "/Lotus/Types/Recipes/Weapons/AthodaiPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:e3b04f7452fd6373e26a70acc5f10d37",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws",
+      "parentEnglish": "Venka Prime",
+      "parentZh": "凯旋之爪 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:1d58b996a075ba13126e794ebdcad70e"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:1d58b996a075ba13126e794ebdcad70e",
+          "componentId": "/Lotus/Types/Recipes/Weapons/PrimeVenkaClawsBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon",
+      "parentEnglish": "Dual Zoren Prime",
+      "parentZh": "佐伦双斧 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:3336f530a81de4eaacf1aad85d73efd6",
+        "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+        "reward:wfcd:69332713a59b6dd9e98fb9db7a1a03de"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:3336f530a81de4eaacf1aad85d73efd6",
+          "componentId": "/Lotus/Types/Recipes/Weapons/DualZorenPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:cc8a9cc9bf370bea48c56008ef89d81d",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeHandle",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:69332713a59b6dd9e98fb9db7a1a03de",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeBlade",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun",
+      "parentEnglish": "Steflos Prime",
+      "parentZh": "石晶之花 Prime",
+      "parentFile": "Primary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:d154939f4cb78451b15cab4d65b0459f",
+        "reward:wfcd:ac767d2757b12d43d91f6ecfd701bc1a",
+        "reward:wfcd:f7c86a8bc474dccdfa54a9d49b0d3dd4",
+        "reward:wfcd:0d8195ec33734a0f3d278a30baff4dd5"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:d154939f4cb78451b15cab4d65b0459f",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:ac767d2757b12d43d91f6ecfd701bc1a",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeStock",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:f7c86a8bc474dccdfa54a9d49b0d3dd4",
+          "componentId": "/Lotus/Types/Recipes/Weapons/SteflosPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:0d8195ec33734a0f3d278a30baff4dd5",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeBarrel",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Powersuits/Yareli/YareliPrime",
+      "parentEnglish": "Yareli Prime",
+      "parentZh": "Yareli Prime",
+      "parentFile": "Warframes",
+      "namePending": true,
+      "rewardIds": [
+        "reward:wfcd:917913507c87e2f53b20c9e500f08d49",
+        "reward:wfcd:886c04af48eaf4e986c538bb6d0ea5ec",
+        "reward:wfcd:1ac602db0f4d3679b878a1c4b8e795a3",
+        "reward:wfcd:688746ef117b561aafc9560e205e2554"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:917913507c87e2f53b20c9e500f08d49",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:886c04af48eaf4e986c538bb6d0ea5ec",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeChassisComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:1ac602db0f4d3679b878a1c4b8e795a3",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeHelmetComponent",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:688746ef117b561aafc9560e205e2554",
+          "componentId": "/Lotus/Types/Recipes/WarframeRecipes/YareliPrimeSystemsComponent",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel",
+      "parentEnglish": "Kestrel Prime",
+      "parentZh": "红隼 Prime",
+      "parentFile": "Melee",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:0b7ed6b25bd73482918e6ca88ab1c030",
+        "reward:wfcd:dd7e747ee4f311ff482cd2dcb0d22a5e",
+        "reward:wfcd:fc87db6c19fc234aefe4f000b6ee5974"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:0b7ed6b25bd73482918e6ca88ab1c030",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeBlade",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:dd7e747ee4f311ff482cd2dcb0d22a5e",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeGrip",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:fc87db6c19fc234aefe4f000b6ee5974",
+          "componentId": "/Lotus/Types/Recipes/Weapons/KestrelPrimeBlueprint",
+          "type": "blueprint"
+        }
+      ]
+    },
+    {
+      "parentUniqueName": "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex",
+      "parentEnglish": "Lex Prime",
+      "parentZh": "雷克斯 Prime",
+      "parentFile": "Secondary",
+      "namePending": false,
+      "rewardIds": [
+        "reward:wfcd:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+        "reward:wfcd:bd96716dfe22b562f893d0a5446d4512",
+        "reward:wfcd:86ed1787bf3fd50bf9e2b62df683a12c"
+      ],
+      "links": [
+        {
+          "rewardId": "reward:wfcd:2b7cff1b49e8ae5d7fb5fd77e602ad0f",
+          "componentId": "/Lotus/Types/Recipes/Weapons/LexPrimeBlueprint",
+          "type": "blueprint"
+        },
+        {
+          "rewardId": "reward:wfcd:bd96716dfe22b562f893d0a5446d4512",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+          "type": "component"
+        },
+        {
+          "rewardId": "reward:wfcd:86ed1787bf3fd50bf9e2b62df683a12c",
+          "componentId": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel",
+          "type": "component"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "blueprint:forma",
+      "english": "Forma Blueprint"
+    },
+    {
+      "id": "reward:wfcd:d9f5d19082a2b4229a4bcc696099a096",
+      "english": "2X Forma Blueprint"
+    }
+  ],
+  "groupCount": 35,
+  "rewardLinkCount": 115,
+  "pendingNames": 9
+}
