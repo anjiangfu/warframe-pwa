@@ -1,0 +1,1190 @@
+{
+  "reason": "Only M0 screenshots and records are committed; additional unchanged-feature regression outputs remain in ignored isolated workspace. Full command logs retain all 60 assertions.",
+  "artifacts": [
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Desktop.png",
+      "sha256": "7f997cd2de57c8dac19b64ceab253c0932f13bee83f775e816a3658d583d0181",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Draft_Protection.json",
+      "sha256": "5e5a76ab70012d22a99544390e4b2d52cb12939387366cefdd221f204226b219",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Draft_Protection.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Guides.json",
+      "sha256": "656faf249259c123d043e15c9be54d280e9762170bbd9ae76b186a4dc0f68735",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Guides.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Live.json",
+      "sha256": "4a6cc1cff1670660ac914823802cd3c11248c4645a93e6e106dc55d58bfbadc2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Live.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Mobile_360.png",
+      "sha256": "1d6bb1bc6c67c8558b1504a6af707a2dc0759560a5080b955ee45b6f66e29c92",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Mobile_412.png",
+      "sha256": "f95c86502a6bec2bbff5b6811a508fb4ea2a1922a73394b9188f4630bec1631c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Overview_Desktop.png",
+      "sha256": "d0887fca1740cf9ddfd2e754dde4b51d822f07a7074b9bdb4ff5b920c5880370",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Overview_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Overview_Mobile_360.png",
+      "sha256": "f53f0ff43e4378a6402664f51d1ac512e1e7ef353fb18c0fdf4d2b55d5f8c08c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Overview_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Overview_Mobile_412.png",
+      "sha256": "0895be7abbe76416f860f90348a449ee27138cfd9cc963d59177cc9c76f93dc5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Overview_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Readonly.json",
+      "sha256": "12589dcbf66af90f43417b7ab9b972dcbfc29b0373bf676772bf6e50cd782231",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Actions_Restore_Offline.json",
+      "sha256": "658a851e5bb3ff50b17b87efee7d4a606ded3babe2831c4362773f4d1219d427",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Actions_Restore_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_5_Blocked.png",
+      "sha256": "3495f0633bdc9116e0f11cf0393ecd1746402e3e7c467610f4703465cab6d015",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_5_Blocked.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_5_Observed.json",
+      "sha256": "07820ddb6350ebacac7e3f053cf4cc52059f99dbd520ede3a4ce6c15f08baedd",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_5_Observed.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_5_Result.json",
+      "sha256": "19e123039e561b9a6a741eed82b3f16f001da3e79a8d9ce7d2f193dc136b231c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_5_Result.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_Conflict_Isolation.json",
+      "sha256": "bb252b28194d1127719bf22b452015f4700c77fb4a0e4378461f52b5afcbf2fa",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_Conflict_Isolation.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_first_Blocked.png",
+      "sha256": "ac91a03b94ed92d5630046608b0371b2639c058cfdfd04724b2733a66317c30b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_first_Blocked.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_first_Observed.json",
+      "sha256": "033a41ed267ff4806b82c16e8733b653e78ce550c1782f2d48bcedeb79b00bb6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_first_Observed.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_first_Result.json",
+      "sha256": "19e123039e561b9a6a741eed82b3f16f001da3e79a8d9ce7d2f193dc136b231c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_first_Result.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Draft_Update.json",
+      "sha256": "ef4de2e51d3a856bcc62f62f9dac582cca1a236b6981b50bac23c679763d055c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Draft_Update.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Desktop_IV.png",
+      "sha256": "d024af66113ada55467514e0d11e46922e53becd2e371e95ccf0da23609c1409",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Desktop_IV.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Draft_Conflict.png",
+      "sha256": "84b24914e93a7935db4700816a691c1de64b6810d10b9ba2709fa41de99ed9a8",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Draft_Conflict.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_IV_Detail.png",
+      "sha256": "69c9f938ad5a580436bce033240ea0d8d8e9fe1d362ce7bbe31bc37f3eb88a33",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_IV_Detail.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Mobile_360_Top.png",
+      "sha256": "6d4a3683c268e95fd1941835bf04e70a715ac3fef671f2f53a439ccc1a711273",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Mobile_360.png",
+      "sha256": "106dc698090d311324031a7a929c20416496505e0c1632dd352cb2c01c22e0db",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Mobile_412_Top.png",
+      "sha256": "379bcd6ae98bdfcef54f735c53f7be5ec35e20c82072865376b384134f780a61",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Mobile_412.png",
+      "sha256": "250705d12c7423bcfdd52f32836743c17d10946495577d68e53dc3fc95a28a24",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Offline.json",
+      "sha256": "21299208d03bcddb8e9b7ec672f5c1b5511823509e7a89b9a645a3e192118c8b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Offline.png",
+      "sha256": "48097381a6424956a6744a04f2bb7d67caee451804b8fb125079af2c3de5bd84",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Restore.json",
+      "sha256": "ff76e9b181670ce7ace41c9111de94e369cfe27375650cf8027f70b9735623a2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Goals_Write_Protection.json",
+      "sha256": "01ad34538455d1c3fbdb50fc9dd107d2c4ee332aa7bec11d2bd8e72fbd17adb8",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Goals_Write_Protection.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_23_Audit.json",
+      "sha256": "1357add38edd007117a27d3e6c5e0802922e11f4f99f29658acf92ac6554989e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_23_Audit.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Desktop.png",
+      "sha256": "6525ac3a570b962000e918a1666185504d5a535d21c1d8e9d5943a83d5003606",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Entry_Consistency.json",
+      "sha256": "0db285af80e804e7ea8bc32ff68d073c6c7e0277aeca854deb9425e4bbc710c4",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Entry_Consistency.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Mobile_360_Top.png",
+      "sha256": "791b0d4922219e2e9ca918c3aabc09876783975d4c5d64533618d14011298ba0",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Mobile_360.png",
+      "sha256": "e0c054587d4ba45d1c19e1d43baed4c1b28d0841a0a6491e07d4e94f41a8ce6e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Mobile_412_Top.png",
+      "sha256": "c7e2eab06fd0788917e9eaf4b2a59ca6abd44aac42ad45dfa9f00b1eb29300e9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Mobile_412.png",
+      "sha256": "375a442cf0f0f343679acc89409a2480ccd7c6b6aff3606a787811a399cc83bc",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Offline.json",
+      "sha256": "d2f1ec1fd8bafdb7aa188e9a3c6735b1fd8b9bac9e2842ef5be2ba0608d9bbc2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Guides_Offline.png",
+      "sha256": "6515649c94e80f47cc75c74178b7ba003ca0cbfe98c9f032e116473959dec6cb",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Guides_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Desktop.png",
+      "sha256": "de49c31f12d403344d1520eccfd0008ec1a277144fcfe5c6eb163e7887d42535",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Material_Live.json",
+      "sha256": "ab285bab4a72b0c655193d00830bb8a7835fee44ccaab8a60cf5c70f10f6d9d2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Material_Live.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Material_Live.png",
+      "sha256": "0efb30b0777406c94443906dd934469a21e71decc6e3a62803114bfbd59fc7d6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Material_Live.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Mobile_360_Top.png",
+      "sha256": "da89ff4325a9c23835012d3e2a90a6b86bf3130cf075fe2d86eff28e14ba2840",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Mobile_360.png",
+      "sha256": "0eba4b6faa29cbba3c147aded91d1bae139ccd6ef934efb2528704e10d1984fe",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Mobile_412_Top.png",
+      "sha256": "ff19cc9a5548c2960de80c72baa992f40d8a4e9b648a4c0feb0e8544ca2967e7",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Mobile_412.png",
+      "sha256": "5ee4203f882d4eeb31694bd97b4b0bdcca3dcf0acafbea9246271a5e8df32543",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Offline.json",
+      "sha256": "eee5d66e98f110337dfce4961ac4f6ce3bdf9d092787706c5a335b3630aebfcf",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Offline.png",
+      "sha256": "c8c6e137f0338721d8903d67ec25491c9d7b96655ca8f493d65201abc1217266",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Restore.json",
+      "sha256": "1a93a9f92200cb563b691155c6eaf2928fe2ae0d58927a3b5a209a0e00aa448a",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Save_Protection.json",
+      "sha256": "9f345f7c228368c766884af3c0f78dba31145d7f1b4d0bfaa99b1c8c67403c52",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Save_Protection.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Hex_Target_Draft.json",
+      "sha256": "513138590a129edb8c9ba22412346a20bc4c269fc75cb25536573a67e5ce83c5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Hex_Target_Draft.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Desktop_Crafting.png",
+      "sha256": "cd168edd79c9aa2076e2710e0a18631a51d41d1aa5d3e913a4032584c8086c5b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Desktop_Crafting.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Mobile_360_Top.png",
+      "sha256": "330922df91bab1025f0fd3dcb43956c0e2b934a0a3914e62b3e0d37a127e2fc3",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Mobile_360.png",
+      "sha256": "6924dda5eac477292c2638e96eb289d7317da723c5c0d399dd3a16fbb1628658",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Mobile_412_Top.png",
+      "sha256": "8fbf288bb4aaa90adf637920371a1d88cd9c985e552cdeb6acbbd0429f411e72",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Mobile_412.png",
+      "sha256": "ed9ad7eaa8ca25c3b05cedf306d4c246f5c235ea8900006a4ffc9eb45affe9d5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Offline_Material.png",
+      "sha256": "c53704a40f3bbf8c54b7f1ea4cade893cf9e538ad7445533cf242dc588909e7e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Offline_Material.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Offline.json",
+      "sha256": "ebf5ea41299ba43bd38f27d95fdd37adb15ac8f378b992a2723fa5f5c5a28712",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Restore.json",
+      "sha256": "8647819419df9b41d7d23949bc89ec7ab79cb9f6f5030e4f1c8a4c989262181d",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\M1_Write_Failure.json",
+      "sha256": "4f76569864618e38685f81ac8230b7b849e9a1c036b585420781e459d02b4f96",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\M1_Write_Failure.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Desktop.png",
+      "sha256": "158210d19e2b46d634d0b5b85c5be57b2ede58125a8c228bddaec5d1605b0f31",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Material_Mobile.png",
+      "sha256": "aa06ea2942cf06e4a87cba942fb98cb6684c8433c97b824fc82d91210c8f88aa",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Material_Mobile.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Mobile_360_Top.png",
+      "sha256": "175ec152a59b8bf477d1100fe7a7c18bc6c5a13b10925a7c1244e0f972db53fd",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Mobile_360.png",
+      "sha256": "88ccba0fd4dc71e04e6ac7fed484b7b120a3f9ab25b00b14de89bf788ad1aecb",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Mobile_412_Top.png",
+      "sha256": "cf647ee80552419ecbb2a840662c57c4506bc980534bb18dffe7a37325b43b19",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Mobile_412.png",
+      "sha256": "f9550df41a1cb9fd3e7508973a5777b98e0b9d7f8c64559bfafcaf71350993c9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Offline_Failure.png",
+      "sha256": "5546e57c09b4bcb63e1019e16a31b92b0fc81ebf1e4f41edb752b35b7e2261f1",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Offline_Failure.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Offline.json",
+      "sha256": "d6b50425b7304b3eccb607672ada8c21f74d74610430b6be09f69965d435ba2b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Pilot_Restore.json",
+      "sha256": "ba3720bd767f0765c3a20c9c55c4e485ea5deb470e9427e1d66269a06b442404",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Pilot_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Preview_Assistant.json",
+      "sha256": "fda9d2f4862640688e1f55e715a08583a5d1710da8d757457ce6e35c46e9956b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Preview_Assistant.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Desktop.png",
+      "sha256": "dfab4a90b5044ee1f448622c88e19d0ebfe2b7858ad2620345043cad0a1c7183",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Detail_360.png",
+      "sha256": "e2bf124ac4bb35a2c9cccde1ab3e70bf62e261d7e2ad18401ec38d0c4fbaabd6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Detail_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Detail_412.png",
+      "sha256": "3f17772032a64282992665838a5fcf616e7898c9a7e7c954880593d38f13e407",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Detail_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Detail_860.png",
+      "sha256": "283bc128942c46530a3c863fae39f5ec97d4532feaa243f96fdb6596d926aaf1",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Detail_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Detail_Desktop.png",
+      "sha256": "df5d3eb0b62313ea2f082b900e8f13cf12fb3c8b1580314b096d6c1f389c5715",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Detail_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Layout.json",
+      "sha256": "4b0fa88d0d77e339d669dfab977e3c3772bdaa6e3ef00fa6b8ddbd98f900ab0a",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Names.json",
+      "sha256": "6bda4d205d4f7b26f69fc0883735ce65cfee100da9f7a426a36bf3e2fedd1b84",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Names.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Offline.json",
+      "sha256": "bbe07c5248375a6fb1de512315072448600695d49833501f4a776ff2674eacb1",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Offline.png",
+      "sha256": "1f2a54f3eac0000e4480c1f64eae8452c6ffe542f12f91821b46b17707c8a547",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Readonly.json",
+      "sha256": "49d4c0a559ae24a1c76c65c3b6e930204cf78dd3300a3cc8740724f60c3d81f9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V1_Routes.json",
+      "sha256": "c5b33d9414aa3a241cd7122d9f47cab0c011cf37c2239e6ac27bf1a04f31a7ee",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V1_Routes.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_All_Added.json",
+      "sha256": "79bca60d6171ac9113f587c5e08ed5b0f1e6b65e25935905bf356501aa5e6610",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_All_Added.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Desktop.png",
+      "sha256": "52864e9883008b28bf58671a32283fa6ffa8204670a76fd17dcaa2be99c28012",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Detail_360.png",
+      "sha256": "ed8b75c3f692689bc1c5590dc1040205430894586207aa1f710586f7cc84dc24",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Detail_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Detail_412.png",
+      "sha256": "8b312696c59286cc06e00e3ddb13b5df7d8aa8ae1fdfd202c56f86313f0613a3",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Detail_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Detail_860.png",
+      "sha256": "6d4f6c191496b67628dfdee1d43cde0916f932410fd5067d9a4bf4f178206ffb",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Detail_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Layout.json",
+      "sha256": "bf3b88100d5340adcd46a649dacc9667b13098eff9c150249ee48a8aa10e30f2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Offline.json",
+      "sha256": "47314b90c3a6e842d0065cf22d749279e5257ea94b34250939865baf07869cf9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Offline.png",
+      "sha256": "24f2ebbe75a7b237172f2f50e51a533c9fc7dce3dbe280e624ee86ff464aad79",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relic_V2_Results.png",
+      "sha256": "9a54c51aa770b4b9e6497433ed2450c6024405ef9d156840c6045e7f18a7d0da",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relic_V2_Results.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_All_Samples.json",
+      "sha256": "d1c3b9c9fc52aa404c51bf6248ed3278a6ee5701e2f34d7b6424c57d5b7a3fd5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_All_Samples.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Desktop.png",
+      "sha256": "9228ebc446de2d98dde969139e3062861695615ab49ddbb5efd97610b8f18d48",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Detail_360.png",
+      "sha256": "6926f078387221281dc0b56f3688ea01df1920edde5f7fc4ea828df97a754b77",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Detail_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Detail_412.png",
+      "sha256": "78c22dd72b470e319f3627bd66ed5ea2f094c2ccc1aab631b7c68eac0f63dd04",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Detail_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Detail_860.png",
+      "sha256": "da56df053f0accfb33549a8bb6e5edf6552edc5dabb8c895b9b686e160be0604",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Detail_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Detail_Desktop.png",
+      "sha256": "ae61b1549042e47e47b9822595c41297aee64b0a6d6410551f94370a84377e5c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Detail_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Layout.json",
+      "sha256": "a25a926a2da9f5e5adf40fb97877c477adce53acce1fe6efd18ef2f868245622",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Offline.json",
+      "sha256": "b0a6c6f7897152b8b5586c5d92e2a3ff83828a0f81d855e39d9e8088b6f11808",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Offline.png",
+      "sha256": "80ba0200fa90d4fca01100325a25747659b3e1132d6a93a7a11f8d89ff6b288d",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Profile_Readonly.json",
+      "sha256": "af4741e5cda4ded3820b63cb10bfa9f4553ef422d5b0e8b697653d8ca6bb549c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Profile_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Search_Scope.json",
+      "sha256": "2d4dfa0f9f901c0d895017cade3154ab54accccbb1664cc69958f034f521798f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Search_Scope.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Viewport_360.png",
+      "sha256": "4a0f1fbf26daeca7ee531dabe8ad13d556d533bb6c7744afaa09e9a713a7ddbc",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Viewport_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Viewport_412.png",
+      "sha256": "548d5460b0a14307f25c0f5ae38b171edc9edf9be4d7ebe2ebe4e00a542586a9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Viewport_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Relics_Viewport_860.png",
+      "sha256": "e5dff2fd8863994b5d4a805dd7380e088e4d40e14a1ecfcf89d134f98bce820e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Relics_Viewport_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Saved_Project_A.png",
+      "sha256": "9d8631f1d2d5bc279712963a685299b0ccf3974e3f6b34a82da5475b3d63ee1f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Saved_Project_A.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Saved_Project_B.png",
+      "sha256": "9d8631f1d2d5bc279712963a685299b0ccf3974e3f6b34a82da5475b3d63ee1f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Saved_Project_B.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Saved_Project.json",
+      "sha256": "255a0789f6a24b50bff96a79435ff58cac2270f65042ac18b7772452cb33ad2e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Saved_Project.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Shared_Project.json",
+      "sha256": "de1b5943fcc8d324fb0960ed4c1a31b8c434d6b20c8a9230e7d7518a750f546b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Shared_Project.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Shared_Project.png",
+      "sha256": "a9c0bf55708e88b24375f26082ee8f08e196f88fac3a23e214b5f4a101546564",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Shared_Project.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_All_62.json",
+      "sha256": "520a635ab5ccf48b65ac1453eade89d196ac2c392bc669ef0037fe2354c325bb",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_All_62.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Card_360.png",
+      "sha256": "e737fed9a5a0c02ddbb265f82757e65e7f62cc2d8d139da76e1741b64ddda82e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Card_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Card_412.png",
+      "sha256": "da35dde74c65c10ab2fedd4284616e22f41929f22136b8cb5a181ebac2eda99e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Card_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Card_860.png",
+      "sha256": "2671eaea718ed041858c77c59a102d1360d4de1cd1060a8b97da789a93900e07",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Card_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Desktop.png",
+      "sha256": "c9f16b6d9c58ac875462fd3bfa62bf01111a446533bc6ad9cf1f4092295d6bab",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Layout.json",
+      "sha256": "fdef31c80e2d644b415aade7354ab2e59b3c762a2e967e21a04456874ac6572e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Offline.json",
+      "sha256": "4ae35be5f1d8dfbf57cbfdbf07d8d228f76d9480460577f3720e5fea2689cec2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Offline.png",
+      "sha256": "3d86d8c7c8f6f75630261d1f77004ffc393af1be905de5153cf4f7da580be482",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Browser\\Source_Check_Readonly.json",
+      "sha256": "f85eeb1bc07b135fc0ed364e2df369d307a6e1040345e34bebcb082e4834e490",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Browser\\Source_Check_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Desktop.png",
+      "sha256": "ad31382a5bb5f94970c7916d73ad34a0ba725af8c52611eb1926be621f084161",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Draft_Protection.json",
+      "sha256": "5e5a76ab70012d22a99544390e4b2d52cb12939387366cefdd221f204226b219",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Draft_Protection.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Guides.json",
+      "sha256": "656faf249259c123d043e15c9be54d280e9762170bbd9ae76b186a4dc0f68735",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Guides.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Live.json",
+      "sha256": "4a6cc1cff1670660ac914823802cd3c11248c4645a93e6e106dc55d58bfbadc2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Live.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Mobile_360.png",
+      "sha256": "1d6bb1bc6c67c8558b1504a6af707a2dc0759560a5080b955ee45b6f66e29c92",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Mobile_412.png",
+      "sha256": "f95c86502a6bec2bbff5b6811a508fb4ea2a1922a73394b9188f4630bec1631c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Overview_Desktop.png",
+      "sha256": "d0887fca1740cf9ddfd2e754dde4b51d822f07a7074b9bdb4ff5b920c5880370",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Overview_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Overview_Mobile_360.png",
+      "sha256": "f53f0ff43e4378a6402664f51d1ac512e1e7ef353fb18c0fdf4d2b55d5f8c08c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Overview_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Overview_Mobile_412.png",
+      "sha256": "0895be7abbe76416f860f90348a449ee27138cfd9cc963d59177cc9c76f93dc5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Overview_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Readonly.json",
+      "sha256": "12589dcbf66af90f43417b7ab9b972dcbfc29b0373bf676772bf6e50cd782231",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Restore_Offline.json",
+      "sha256": "658a851e5bb3ff50b17b87efee7d4a606ded3babe2831c4362773f4d1219d427",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Restore_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Actions_Update.json",
+      "sha256": "ee664c45f9b72406a9a2c33d4d081cf6f108d813b91f192c50c18d729778278f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Actions_Update.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_5_Blocked.png",
+      "sha256": "3495f0633bdc9116e0f11cf0393ecd1746402e3e7c467610f4703465cab6d015",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_5_Blocked.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_5_Observed.json",
+      "sha256": "7b3e12517737d85c5f521da3570385ab6be933df580812a04747ad9936d51d4c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_5_Observed.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_5_Result.json",
+      "sha256": "19e123039e561b9a6a741eed82b3f16f001da3e79a8d9ce7d2f193dc136b231c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_5_Result.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_Conflict_Isolation.json",
+      "sha256": "bb252b28194d1127719bf22b452015f4700c77fb4a0e4378461f52b5afcbf2fa",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_Conflict_Isolation.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_first_Blocked.png",
+      "sha256": "ac91a03b94ed92d5630046608b0371b2639c058cfdfd04724b2733a66317c30b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_first_Blocked.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_first_Observed.json",
+      "sha256": "301b1578902dabf6b8a122b0db10c8ffe719db9be4ac571f72a61e49503e93df",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_first_Observed.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_first_Result.json",
+      "sha256": "19e123039e561b9a6a741eed82b3f16f001da3e79a8d9ce7d2f193dc136b231c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_first_Result.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Draft_Update.json",
+      "sha256": "ef4de2e51d3a856bcc62f62f9dac582cca1a236b6981b50bac23c679763d055c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Draft_Update.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Desktop_IV.png",
+      "sha256": "d024af66113ada55467514e0d11e46922e53becd2e371e95ccf0da23609c1409",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Desktop_IV.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Draft_Conflict.png",
+      "sha256": "103c24b5916d9805eaccdf7a3b815a757c0259d55dce03e4b60faa8da55e2da6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Draft_Conflict.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_IV_Detail.png",
+      "sha256": "69c9f938ad5a580436bce033240ea0d8d8e9fe1d362ce7bbe31bc37f3eb88a33",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_IV_Detail.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Mobile_360_Top.png",
+      "sha256": "6d4a3683c268e95fd1941835bf04e70a715ac3fef671f2f53a439ccc1a711273",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Mobile_360.png",
+      "sha256": "981766fc46aae727ea119a6f927317ed3b41fdbfdf908481ac467353c85da0f0",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Mobile_412_Top.png",
+      "sha256": "379bcd6ae98bdfcef54f735c53f7be5ec35e20c82072865376b384134f780a61",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Mobile_412.png",
+      "sha256": "250705d12c7423bcfdd52f32836743c17d10946495577d68e53dc3fc95a28a24",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Offline.json",
+      "sha256": "21299208d03bcddb8e9b7ec672f5c1b5511823509e7a89b9a645a3e192118c8b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Offline.png",
+      "sha256": "11ade9e863773a036f15e9b816e450e5ceefeb38465c7fe2ce6aba977bb35e99",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Restore.json",
+      "sha256": "ff76e9b181670ce7ace41c9111de94e369cfe27375650cf8027f70b9735623a2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Goals_Write_Protection.json",
+      "sha256": "01ad34538455d1c3fbdb50fc9dd107d2c4ee332aa7bec11d2bd8e72fbd17adb8",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Goals_Write_Protection.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_23_Audit.json",
+      "sha256": "1357add38edd007117a27d3e6c5e0802922e11f4f99f29658acf92ac6554989e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_23_Audit.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Desktop.png",
+      "sha256": "939f12862b9a2113ca33e7a37f4226919e5c0a7cb3f67c8a5b1f44ae52fb4a8d",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Entry_Consistency.json",
+      "sha256": "0db285af80e804e7ea8bc32ff68d073c6c7e0277aeca854deb9425e4bbc710c4",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Entry_Consistency.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Mobile_360_Top.png",
+      "sha256": "791b0d4922219e2e9ca918c3aabc09876783975d4c5d64533618d14011298ba0",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Mobile_360.png",
+      "sha256": "e0c054587d4ba45d1c19e1d43baed4c1b28d0841a0a6491e07d4e94f41a8ce6e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Mobile_412_Top.png",
+      "sha256": "c7e2eab06fd0788917e9eaf4b2a59ca6abd44aac42ad45dfa9f00b1eb29300e9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Mobile_412.png",
+      "sha256": "375a442cf0f0f343679acc89409a2480ccd7c6b6aff3606a787811a399cc83bc",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Offline.json",
+      "sha256": "d2f1ec1fd8bafdb7aa188e9a3c6735b1fd8b9bac9e2842ef5be2ba0608d9bbc2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Guides_Offline.png",
+      "sha256": "f837ac57134f5e0f6eaa7c79648324557313b7a2ad756603b3e56f022d268719",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Guides_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Desktop.png",
+      "sha256": "de49c31f12d403344d1520eccfd0008ec1a277144fcfe5c6eb163e7887d42535",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Material_Live.json",
+      "sha256": "ab285bab4a72b0c655193d00830bb8a7835fee44ccaab8a60cf5c70f10f6d9d2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Material_Live.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Material_Live.png",
+      "sha256": "0efb30b0777406c94443906dd934469a21e71decc6e3a62803114bfbd59fc7d6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Material_Live.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Mobile_360_Top.png",
+      "sha256": "da89ff4325a9c23835012d3e2a90a6b86bf3130cf075fe2d86eff28e14ba2840",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Mobile_360.png",
+      "sha256": "0eba4b6faa29cbba3c147aded91d1bae139ccd6ef934efb2528704e10d1984fe",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Mobile_412_Top.png",
+      "sha256": "ff19cc9a5548c2960de80c72baa992f40d8a4e9b648a4c0feb0e8544ca2967e7",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Mobile_412.png",
+      "sha256": "5ee4203f882d4eeb31694bd97b4b0bdcca3dcf0acafbea9246271a5e8df32543",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Offline.json",
+      "sha256": "eee5d66e98f110337dfce4961ac4f6ce3bdf9d092787706c5a335b3630aebfcf",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Offline.png",
+      "sha256": "89dc3c3b25a51c083f33dcc997868532afa9d79ec8c3714de8a7b1e3bc97beb2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Restore.json",
+      "sha256": "1a93a9f92200cb563b691155c6eaf2928fe2ae0d58927a3b5a209a0e00aa448a",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Save_Protection.json",
+      "sha256": "9f345f7c228368c766884af3c0f78dba31145d7f1b4d0bfaa99b1c8c67403c52",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Save_Protection.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Hex_Target_Draft.json",
+      "sha256": "513138590a129edb8c9ba22412346a20bc4c269fc75cb25536573a67e5ce83c5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Hex_Target_Draft.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Desktop_Crafting.png",
+      "sha256": "b1ff015e6ea6e6f2e34d06640e6ebd4e28a15d6c7b0eecc6c7f205b37ad9afd7",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Desktop_Crafting.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Mobile_360_Top.png",
+      "sha256": "330922df91bab1025f0fd3dcb43956c0e2b934a0a3914e62b3e0d37a127e2fc3",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Mobile_360.png",
+      "sha256": "6924dda5eac477292c2638e96eb289d7317da723c5c0d399dd3a16fbb1628658",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Mobile_412_Top.png",
+      "sha256": "8fbf288bb4aaa90adf637920371a1d88cd9c985e552cdeb6acbbd0429f411e72",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Mobile_412.png",
+      "sha256": "ed9ad7eaa8ca25c3b05cedf306d4c246f5c235ea8900006a4ffc9eb45affe9d5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Offline_Material.png",
+      "sha256": "8d8182ab5cfc62bca4e6670bb61aee79c51020b6ce9241ab32b962b53939340b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Offline_Material.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Offline.json",
+      "sha256": "ebf5ea41299ba43bd38f27d95fdd37adb15ac8f378b992a2723fa5f5c5a28712",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Restore.json",
+      "sha256": "8647819419df9b41d7d23949bc89ec7ab79cb9f6f5030e4f1c8a4c989262181d",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\M1_Write_Failure.json",
+      "sha256": "4f76569864618e38685f81ac8230b7b849e9a1c036b585420781e459d02b4f96",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\M1_Write_Failure.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Desktop.png",
+      "sha256": "121a92ba332ef340759b1a1e74d8c5dd038c7d0ea049d4d378cf82bf28680683",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Material_Mobile.png",
+      "sha256": "de4bf18c196da9038e2305f9c26e93edabe0e8cbc1cc69c7fd845695f741d72f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Material_Mobile.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Mobile_360_Top.png",
+      "sha256": "175ec152a59b8bf477d1100fe7a7c18bc6c5a13b10925a7c1244e0f972db53fd",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Mobile_360_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Mobile_360.png",
+      "sha256": "ce316a4ec85fb1afe922fe5cb01638f50c926eb64386f9a8e3bc2188b06ccebc",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Mobile_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Mobile_412_Top.png",
+      "sha256": "cf647ee80552419ecbb2a840662c57c4506bc980534bb18dffe7a37325b43b19",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Mobile_412_Top.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Mobile_412.png",
+      "sha256": "bdf1c2191f55caaaa2a6673775bb9c8cab9ca0250e675bf64659be92fdbd85d6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Mobile_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Offline_Failure.png",
+      "sha256": "c862a0bebc8b64a52df4bc8331c0ae28b7c685b937df35e6d31d55f963555db9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Offline_Failure.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Offline.json",
+      "sha256": "d6b50425b7304b3eccb607672ada8c21f74d74610430b6be09f69965d435ba2b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Pilot_Restore.json",
+      "sha256": "ba3720bd767f0765c3a20c9c55c4e485ea5deb470e9427e1d66269a06b442404",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Pilot_Restore.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Preview_Assistant.json",
+      "sha256": "fda9d2f4862640688e1f55e715a08583a5d1710da8d757457ce6e35c46e9956b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Preview_Assistant.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Desktop.png",
+      "sha256": "4630c5bb489d60d3e668bf1e09a45fdcf321a071f36acd74ec83c0797c7bef28",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Detail_360.png",
+      "sha256": "e2bf124ac4bb35a2c9cccde1ab3e70bf62e261d7e2ad18401ec38d0c4fbaabd6",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Detail_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Detail_412.png",
+      "sha256": "3f17772032a64282992665838a5fcf616e7898c9a7e7c954880593d38f13e407",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Detail_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Detail_860.png",
+      "sha256": "283bc128942c46530a3c863fae39f5ec97d4532feaa243f96fdb6596d926aaf1",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Detail_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Detail_Desktop.png",
+      "sha256": "df5d3eb0b62313ea2f082b900e8f13cf12fb3c8b1580314b096d6c1f389c5715",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Detail_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Layout.json",
+      "sha256": "4b0fa88d0d77e339d669dfab977e3c3772bdaa6e3ef00fa6b8ddbd98f900ab0a",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Names.json",
+      "sha256": "6bda4d205d4f7b26f69fc0883735ce65cfee100da9f7a426a36bf3e2fedd1b84",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Names.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Offline.json",
+      "sha256": "bbe07c5248375a6fb1de512315072448600695d49833501f4a776ff2674eacb1",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Offline.png",
+      "sha256": "3c4980ae680eafa505245d8c9c5f3533c0f614e481743f2cde076204fba952e2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Readonly.json",
+      "sha256": "49d4c0a559ae24a1c76c65c3b6e930204cf78dd3300a3cc8740724f60c3d81f9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V1_Routes.json",
+      "sha256": "c5b33d9414aa3a241cd7122d9f47cab0c011cf37c2239e6ac27bf1a04f31a7ee",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V1_Routes.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_All_Added.json",
+      "sha256": "79bca60d6171ac9113f587c5e08ed5b0f1e6b65e25935905bf356501aa5e6610",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_All_Added.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Desktop.png",
+      "sha256": "52864e9883008b28bf58671a32283fa6ffa8204670a76fd17dcaa2be99c28012",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Detail_360.png",
+      "sha256": "ed8b75c3f692689bc1c5590dc1040205430894586207aa1f710586f7cc84dc24",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Detail_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Detail_412.png",
+      "sha256": "8b312696c59286cc06e00e3ddb13b5df7d8aa8ae1fdfd202c56f86313f0613a3",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Detail_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Detail_860.png",
+      "sha256": "6d4f6c191496b67628dfdee1d43cde0916f932410fd5067d9a4bf4f178206ffb",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Detail_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Layout.json",
+      "sha256": "bf3b88100d5340adcd46a649dacc9667b13098eff9c150249ee48a8aa10e30f2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Offline.json",
+      "sha256": "47314b90c3a6e842d0065cf22d749279e5257ea94b34250939865baf07869cf9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Offline.png",
+      "sha256": "24f2ebbe75a7b237172f2f50e51a533c9fc7dce3dbe280e624ee86ff464aad79",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relic_V2_Results.png",
+      "sha256": "cb666bed2f35f3ed6619c2f7dab2e3a0c81c2bc096fb935b18c3e5e38d6b9090",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relic_V2_Results.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_All_Samples.json",
+      "sha256": "d1c3b9c9fc52aa404c51bf6248ed3278a6ee5701e2f34d7b6424c57d5b7a3fd5",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_All_Samples.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Desktop.png",
+      "sha256": "11ab56304e65ff417f7c5d656337f7a1953f93bfe056add0cdea6ad1d73ecba8",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Detail_360.png",
+      "sha256": "6926f078387221281dc0b56f3688ea01df1920edde5f7fc4ea828df97a754b77",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Detail_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Detail_412.png",
+      "sha256": "78c22dd72b470e319f3627bd66ed5ea2f094c2ccc1aab631b7c68eac0f63dd04",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Detail_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Detail_860.png",
+      "sha256": "da56df053f0accfb33549a8bb6e5edf6552edc5dabb8c895b9b686e160be0604",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Detail_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Detail_Desktop.png",
+      "sha256": "ae61b1549042e47e47b9822595c41297aee64b0a6d6410551f94370a84377e5c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Detail_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Layout.json",
+      "sha256": "a25a926a2da9f5e5adf40fb97877c477adce53acce1fe6efd18ef2f868245622",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Offline.json",
+      "sha256": "b0a6c6f7897152b8b5586c5d92e2a3ff83828a0f81d855e39d9e8088b6f11808",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Offline.png",
+      "sha256": "55c7932a01955fd67347c7b5b3a5afa3c94739ebb3afd094800e60061579ffca",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Profile_Readonly.json",
+      "sha256": "af4741e5cda4ded3820b63cb10bfa9f4553ef422d5b0e8b697653d8ca6bb549c",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Profile_Readonly.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Search_Scope.json",
+      "sha256": "2d4dfa0f9f901c0d895017cade3154ab54accccbb1664cc69958f034f521798f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Search_Scope.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Viewport_360.png",
+      "sha256": "4a0f1fbf26daeca7ee531dabe8ad13d556d533bb6c7744afaa09e9a713a7ddbc",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Viewport_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Viewport_412.png",
+      "sha256": "548d5460b0a14307f25c0f5ae38b171edc9edf9be4d7ebe2ebe4e00a542586a9",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Viewport_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Relics_Viewport_860.png",
+      "sha256": "e5dff2fd8863994b5d4a805dd7380e088e4d40e14a1ecfcf89d134f98bce820e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Relics_Viewport_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Saved_Project_A.png",
+      "sha256": "9d8631f1d2d5bc279712963a685299b0ccf3974e3f6b34a82da5475b3d63ee1f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Saved_Project_A.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Saved_Project_B.png",
+      "sha256": "9d8631f1d2d5bc279712963a685299b0ccf3974e3f6b34a82da5475b3d63ee1f",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Saved_Project_B.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Saved_Project.json",
+      "sha256": "255a0789f6a24b50bff96a79435ff58cac2270f65042ac18b7772452cb33ad2e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Saved_Project.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Shared_Project.json",
+      "sha256": "de1b5943fcc8d324fb0960ed4c1a31b8c434d6b20c8a9230e7d7518a750f546b",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Shared_Project.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Shared_Project.png",
+      "sha256": "a9c0bf55708e88b24375f26082ee8f08e196f88fac3a23e214b5f4a101546564",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Shared_Project.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_All_62.json",
+      "sha256": "520a635ab5ccf48b65ac1453eade89d196ac2c392bc669ef0037fe2354c325bb",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_All_62.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Card_360.png",
+      "sha256": "e737fed9a5a0c02ddbb265f82757e65e7f62cc2d8d139da76e1741b64ddda82e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Card_360.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Card_412.png",
+      "sha256": "da35dde74c65c10ab2fedd4284616e22f41929f22136b8cb5a181ebac2eda99e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Card_412.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Card_860.png",
+      "sha256": "2671eaea718ed041858c77c59a102d1360d4de1cd1060a8b97da789a93900e07",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Card_860.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Desktop.png",
+      "sha256": "c9f16b6d9c58ac875462fd3bfa62bf01111a446533bc6ad9cf1f4092295d6bab",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Desktop.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Layout.json",
+      "sha256": "fdef31c80e2d644b415aade7354ab2e59b3c762a2e967e21a04456874ac6572e",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Layout.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Offline.json",
+      "sha256": "4ae35be5f1d8dfbf57cbfdbf07d8d228f76d9480460577f3720e5fea2689cec2",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Offline.json"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Offline.png",
+      "sha256": "3d86d8c7c8f6f75630261d1f77004ffc393af1be905de5153cf4f7da580be482",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Offline.png"
+    },
+    {
+      "destination": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\m0r\\extra-evidence\\Final_Browser\\Source_Check_Readonly.json",
+      "sha256": "f85eeb1bc07b135fc0ed364e2df369d307a6e1040345e34bebcb082e4834e490",
+      "source": "D:\\wf\\Warframe_PWA_Handoff_20261016\\docs\\evidence\\M0_Repair_Recheck_20261026\\Final_Browser\\Source_Check_Readonly.json"
+    }
+  ]
+}

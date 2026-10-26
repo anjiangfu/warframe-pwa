@@ -1,0 +1,12 @@
+{
+  "trustedHttpsTested": false,
+  "browserProfileRoot": "D:/wf/Warframe_PWA_Handoff_20261016/.v/m0r/app/.b",
+  "npm": "11.19.0",
+  "chrome": "156.0.8078.47",
+  "osInstallationTested": false,
+  "checkedAt": "2026-10-26T07:16:52.0192991Z",
+  "physicalAndroidTested": false,
+  "testPort": 4188,
+  "os": "Microsoft Windows NT 10.0.26300.0",
+  "node": "v24.21.0"
+}

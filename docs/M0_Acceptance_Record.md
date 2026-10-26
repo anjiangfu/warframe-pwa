@@ -203,3 +203,45 @@ Chrome生产测试从8项扩为13项，全部通过；新增5项：
 本轮直接在原执行目录运行，持久Chrome测试档案使用 `app/.test-browser/<随机ID>` 及 `manifest-<随机ID>`。隔离复跑应使用简短的专用profile路径并记录路径前缀；长路径隔离副本的SW就绪差异不据此当作产品缺陷，也不据此修改SW、放宽超时或更改浏览器安全配置。本轮原目录环境完整通过。
 
 17项保护输入相对本轮开始保持原字节，见 [hash对照](evidence/M0_Repair_R1_Protected_Inputs.json)。不推送、不合并main、不公开部署、不请求或实施M1—M4。Android真机及既有安装待验项维持原状态；本轮只完成M0测试可靠性返修，提交后停止。
+
+## 10. M0 修复续办核查（2026-10-26）
+
+用户要求继续 M0 修复与补充验收。当前实际基线为 `7cc1e17279217f81fb781e75444cb90ac2f55022`，工作区开始时干净，已包含第8节修复提交 `f56bfdca6aabc51307edf2ec41fe7fd28b5b1fa5` 和第9节夹具修正 `0827042ce31bffb4638abe2a8b4cad9d18b8c3e7`，以及之后已经存在的其他功能。本轮未重复实施这些功能，也未改动任何 app 文件；在本地新分支 `codex/m0-repair-recheck-20261026` 完成当前代码的重新验收，新增本节及独立证据提交。最终提交 hash 见交付回复及本节所在 Git 提交。
+
+执行前已阅读 AGENTS.md、PRD 和原科技树审查。隔离副本为 `.v/m0r/app`，锁文件 SHA256 `cfaad0878c5663d89ce2d2f478a67f35b3874a16de96efb5e239d34276b420be` 与根目录一致，复用已有依赖、未安装新依赖；测试端口4188，Chrome专用短路径 `.v/m0r/app/.b/`。新证据目录 [M0_Repair_Recheck_20261026](evidence/M0_Repair_Recheck_20261026/Plan.md)，历史证据未覆盖，真实用户数据库未访问。
+
+### 本次结果
+
+| 要求 | 本次实际验证 |
+|---|---|
+| 保存、导出、导入统一容量 | 8项 `backup-boundaries.test.ts` 全部通过：29×100000中文字明确拒绝且不截断；业务负载8,386,560字节实际保存→导出→解析→事务恢复成功，+1拒绝且旧状态保持；完整文件8MiB与+1、50,000个值与+1均覆盖。 |
+| 深度和旧档完整往返 | profile根深度0、最大20；18层child有效，19层一致拒绝。旧档2MiB边界和18层child迁移后，笔记、日志、未知字段、原件字节仍能完整恢复。原U01—U10的16项同时通过，包括29节点/87步骤、显式0、日志顺序、自定义节点、并发/事务失败和原件hash。 |
+| 真实备份页面 | 超限档案先从DB重新载入并在页面核对100000字笔记，点击导出明确提示“备份未生成”，下载数0、29条笔记原字完整；另实际导入18层旧档→下载新备份→选择下载文件→确认新建→刷新，未知字段、原件和日志时间保持。[导出失败记录](evidence/M0_Repair_Recheck_20261026/Final_Browser/M0_Repair_R1_Backup_Failure.json)、[深度恢复记录](evidence/M0_Repair_Recheck_20261026/Final_Browser/M0_Fix_Depth_Restore.json)。 |
+| 更新中刷新、关闭、重开 | 排空阶段发起页刷新/关闭后，其他页能取消并保存，重开可写；实际写屏障建立后停止worker、刷新/关闭/重开，新页取消并解锁其他页，保存MR17后刷新保持；没有waiting worker的孤立屏障也能明确取消并保存MR18。[刷新](evidence/M0_Repair_Recheck_20261026/Final_Browser/M0_Fix_Update_Refresh.json)、[屏障](evidence/M0_Repair_Recheck_20261026/Final_Browser/M0_Fix_Update_Barrier.json)、[孤立恢复](evidence/M0_Repair_Recheck_20261026/Final_Browser/M0_Fix_Update_Orphan.json)。未发现本次用例覆盖下无法解除的写保护。 |
+| 实际持久化、离线、安全失败 | Windows真实Chrome关闭浏览器后重启同一专用profile恢复IndexedDB通过；断网关页、深链接重开树/档案/备份通过；配额失败、跨页冲突不假报成功；HTML笔记按文本显示。[真实关闭重启记录](evidence/M0_Repair_Recheck_20261026/Final_Browser/M0_Browser.json)。 |
+
+### 命令、首次失败和复跑
+
+首次 [Recheck_Commands.json](evidence/M0_Repair_Recheck_20261026/Recheck_Commands.json)：lint、136项单测、typecheck、build均退出0；完整浏览器59/60通过、退出1。唯一失败是现存 `actions.spec.ts:55` 在更新开始之前等待 `navigator.serviceWorker.controller` 首次接管，5000ms超时；本次13项M0浏览器用例均通过。保存了[失败上下文](evidence/M0_Repair_Recheck_20261026/Initial_Failure/error-context.md)及截图。该次测试无运行用例后，服务收尾进程仍驻留，已只读核对PID/路径后仅停止本次隔离预览27824，未停止其他服务。[进程身份记录](evidence/M0_Repair_Recheck_20261026/Initial_Test_Preview_Teardown.json)。
+
+随后在相同副本、相同代码/断言、相同端口和短profile设置下，以正常Windows进程权限完整复跑，使用不同证据名，未放宽超时、未改断言、未添加测试重试。最终七项命令均退出0，服务正常结束。首次SW超时原因仍未确定，复跑通过不代表已经修复该波动。
+
+| 最终实跑命令 | 退出码 | 结果 |
+|---|---|---|
+| npm.cmd run lint | 0 | 通过 |
+| npm.cmd test | 0 | 非watch；16文件、136/136，含M0的24项 |
+| npm.cmd run typecheck | 0 | TypeScript通过 |
+| npm.cmd run build | 0 | 生产构建，56模块 |
+| npm.cmd run test:browser -- --reporter=line | 0 | Windows Chrome 156.0.8078.47；60/60，2.6分钟，含M0的13项 |
+| npm.cmd run build（测试后） | 0 | 普通生产构建，移除隔离副本中的测试更新构建 |
+| node scripts/verify-delivery.mjs | 0 | 原始输入、7/29/87/30映射、manifest/图标及资源检查通过 |
+
+完整stdout/stderr、UTC起止时间见 [Recheck_Final_Commands.json](evidence/M0_Repair_Recheck_20261026/Recheck_Final_Commands.json)。其他既有功能的测试仅作回归，没有实施M1—M4新功能。为限制本次提交范围，保留M0截图/记录和完整60项命令日志，其余回归截图留在忽略的隔离目录，[逐文件位置/hash](evidence/M0_Repair_Recheck_20261026/Additional_Regression_Artifact_Locations.json)可核查。
+
+### 完整性和待验项
+
+[Final.json](evidence/M0_Repair_Recheck_20261026/Final.json)确认：17项原始保护输入、11项既有数据契约、94个已跟踪app文件全部hash不变；根目录9个生产文件未被测试触碰，且与隔离副本最后普通构建逐字节相同。正常build ID仍为 `m0-1e6dc59278e0`，base `/`，9个文件合计788,929字节；缓存应用壳7项，不含全量第三方原始资料。[资源清单](evidence/M0_Repair_Recheck_20261026/Recheck_Final_Build.json)。构建保留既有单JS超过500kB的警告，本轮未扩展为性能重构。
+
+测试环境为Windows `10.0.26300.0`、真实Chrome headless；启动测量仅代表无节流localhost的新测试上下文，不能外推到手机。Android真机、手机信任的HTTPS及Windows/Android系统级安装仍未验收；360/412与触屏操作仅为桌面模拟。结论仍为“M0实现完成、实机验收未完成”。本轮仅本地提交，不推送、不合并主分支、不公开部署；提交后停止。
+
+提交前已检查diff：验收正文、脚本、JSON通过空白检查；Playwright原始失败上下文的两行代码摘录自带尾空白，保留其原始字节，仅该原始证据单独排除于格式检查，不篡改失败记录。
