@@ -21,7 +21,7 @@ export function createEquipmentIndex(catalog:Readonly<RelicCatalog>,metadata:unk
   }
   const excluded=new Set(m.excludedRewardIds),rewardIds=new Set<string>();if(excluded.size!==m.excludedRewardIds.length)throw Error();
   for(const reward of catalog.rewards){
-   if(rewardIds.has(reward.id))throw Error();rewardIds.add(reward.id);if(excluded.has(reward.id))continue;
+   if(rewardIds.has(reward.id))throw Error();rewardIds.add(reward.id);if(excluded.has(reward.id)){if(reward.id!=='blueprint:forma'&&reward.bundleOf?.rewardId!=='blueprint:forma')throw Error();continue;}
    const d=reward.display;if(!d||d.verification!=='snapshot-checked'||d.upstreamIds.length!==2||reward.type==='unknown'||reward.bundleOf)throw Error();
    const [parentId,componentId]=d.upstreamIds,group=byParent.get(parentId),key=JSON.stringify([parentId,componentId]);
    if(!group||!group.parent.componentIds.includes(componentId)||pairs.has(key))throw Error();pairs.add(key);group.rewards.push(reward);

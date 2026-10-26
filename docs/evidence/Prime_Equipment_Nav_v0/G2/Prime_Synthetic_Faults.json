@@ -1,0 +1,10 @@
+{
+  "synthetic": true,
+  "missingOldConflictOriginalQueryInteractive": true,
+  "partial": {
+    "parent": "/Lotus/Weapons/Tenno/Bows/PrimeCernos/PrimeCernos",
+    "N": 2,
+    "M": 1
+  },
+  "productionCatalogUnmodified": true
+}

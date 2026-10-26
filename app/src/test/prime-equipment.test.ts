@@ -23,6 +23,7 @@ describe('Prime equipment real catalog',()=>{
  });
 });
 describe('Prime equipment synthetic faults (not game facts)',()=>{
+ it('cannot disguise an ordinary Prime reward as an excluded Forma identity',()=>{const metadata=structuredClone(attachment()!),data=structuredClone(catalog),reward=data.rewards.find(r=>r.display?.upstreamIds[0]===metadata.parents[0].id)!;metadata.excludedRewardIds.push(reward.id);metadata.parents[0].componentIds=metadata.parents[0].componentIds.filter(id=>id!==reward.display!.upstreamIds[1]);expect(createEquipmentIndex(data,metadata).status).toBe('invalid');});
  it('missing attachment, missing root fields and legacy catalog safely disable only the new index',()=>{
   expect(createEquipmentIndex(catalog,undefined).status).toBe('unavailable');expect(createEquipmentIndex(catalog,{}).status).not.toBe('ready');expect(createEquipmentIndex({...catalog,catalogVersion:'legacy'},attachment()).status).toBe('unavailable');
  });

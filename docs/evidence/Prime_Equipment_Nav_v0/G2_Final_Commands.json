@@ -1,0 +1,27 @@
+[
+  {
+    "command": "npm.cmd test -- src/test/prime-equipment.test.ts",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 test\n> vitest run src/test/prime-equipment.test.ts\n\n\n RUN  v5.0.5 D:/wf/Warframe_PWA_Handoff_20261016/.v/pg/app\n\n\n Test Files  1 passed (1)\n      Tests  16 passed (16)\n   Start at  16:47:48\n   Duration  517ms (tests 55%, transform 24%, import 20%, worker 1%)\n\n"
+  },
+  {
+    "command": "npm.cmd run lint",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 lint\n> eslint .\n\n"
+  },
+  {
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 typecheck\n> tsc --noEmit\n\n"
+  },
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 59 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.39 kB\ndist/assets/index-zS_Vl8mG.css   31.22 kB │ gzip:   7.52 kB\ndist/assets/index-BCnOHzjJ.js   748.82 kB │ gzip: 195.64 kB\n\n✓ built in 235ms\n[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+  },
+  {
+    "command": "npm.cmd run test:browser -- prime-equipment.spec.ts --reporter=line",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 test:browser\n> playwright test prime-equipment.spec.ts --reporter=line\n\n\n\nRunning 5 tests using 1 worker\n\n\n\n[1/5] e2e\\prime-equipment.spec.ts:13:1 › all 35 exact parents and 115 original reward links are searchable in Chinese and English without a profile\n[2/5] e2e\\prime-equipment.spec.ts:24:1 › equipment → original reward reverse → relic → dated source → return preserves memory context and expansion\n[3/5] e2e\\prime-equipment.spec.ts:30:1 › query navigation and two-profile switching never write profiles snapshots imports\n[4/5] e2e\\prime-equipment.spec.ts:34:1 › offline controlled page close/reopen and 360/412/landscape keep bounded names and saved dates readable\n[5/5] e2e\\prime-equipment.spec.ts:39:1 › synthetic missing/old/conflicting attachments keep original interactive queries working; partial evidence shows exact N/M\n  5 passed (10.6s)\n[WebServer] (node:30928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:41160) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+]

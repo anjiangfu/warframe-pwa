@@ -1,0 +1,254 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: prime-equipment.spec.ts >> query navigation and two-profile switching never write profiles snapshots imports
+- Location: e2e\prime-equipment.spec.ts:30:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ✦
+      - generic [ref=e7]:
+        - text: 天诺星图
+        - generic [ref=e8]: 本地行动档案
+    - generic [ref=e9]:
+      - text: 当前档案
+      - combobox "切换档案" [ref=e10]:
+        - option "尚未创建" [disabled]
+        - option "空白行动档案"
+        - option "空白行动档案" [selected]
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: MR
+          - strong [ref=e14]: "?"
+        - generic [ref=e15]:
+          - text: 目标 未知
+          - generic [ref=e16]: 未知 分钟 / 日
+      - paragraph [ref=e18]: 0 项目标已完成
+    - navigation [ref=e19]:
+      - button "养成助手" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ✧
+        - text: 养成助手
+        - generic [ref=e22]: ↗
+      - button "互动科技树" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: ◇
+        - text: 互动科技树
+        - generic [ref=e25]: ↗
+      - button "材料查询" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: ⌕
+        - text: 材料查询
+        - generic [ref=e28]: ↗
+      - button "制作缺口" [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]: ▱
+        - text: 制作缺口
+        - generic [ref=e31]: ↗
+      - button "集团晋升" [ref=e32] [cursor=pointer]:
+        - generic [ref=e33]: ⊙
+        - text: 集团晋升
+        - generic [ref=e34]: ↗
+      - button "虚空遗物" [ref=e35] [cursor=pointer]:
+        - generic [ref=e36]: ◈
+        - text: 虚空遗物
+        - generic [ref=e37]: ↗
+      - button "档案与物资" [ref=e38] [cursor=pointer]:
+        - generic [ref=e39]: ▤
+        - text: 档案与物资
+        - generic [ref=e40]: ↗
+      - button "备份与恢复" [ref=e41] [cursor=pointer]:
+        - generic [ref=e42]: ⇅
+        - text: 备份与恢复
+        - generic [ref=e43]: ↗
+      - button "行动日志" [ref=e44] [cursor=pointer]:
+        - generic [ref=e45]: ≡
+        - text: 行动日志
+        - generic [ref=e46]: ↗
+    - generic [ref=e47]:
+      - text: 个人资料仅存此设备
+      - paragraph [ref=e49]: 动态资料：尚未同步
+      - button "＋ 新建空白档案" [ref=e50] [cursor=pointer]
+  - main [ref=e51]:
+    - generic [ref=e52]: 构建 m0-1f9e312471c4 · 离线应用壳已就绪
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - paragraph [ref=e55]: TENNO / 个人进度终端
+        - heading "把下一步，变成自己的路线。" [level=1] [ref=e56]
+        - paragraph [ref=e57]: 记录养成，保留选择。无需游戏账号或云端登录。
+      - generic [ref=e58]:
+        - text: ● 浏览器在线
+        - generic [ref=e59]: 档案在本机
+    - generic [ref=e60]:
+      - status [ref=e61]: 已创建本地档案
+      - generic [ref=e62]: 用户模板 · 事实待核实
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - paragraph [ref=e67]: 内置资料快照 / 双向只读查询
+          - heading "虚空遗物" [level=2] [ref=e68]
+        - generic [ref=e69]: 本轮已收录31个遗物
+      - generic [ref=e70]:
+        - paragraph [ref=e71]: 奖励反查仅本目录范围。无结果不代表游戏不存在；掉落表快照不等于当前可刷，也不代表账号已解锁。
+        - paragraph [ref=e72]: 只查询奖励与摘录来源，不记录遗物库存、精炼、目标或查询历史。
+        - generic [ref=e73]: 独立目录：relics.2026.10.25.1 · 中文组合名与原英文都可查；上游保留拉丁专名时仍注明待核。
+      - paragraph [ref=e75]: 资料非实时；只覆盖本目录及已摘录来源。来源核验依据已保存记录，不是在线探测；此后更新未核。
+      - paragraph [ref=e77]: 本目录收录35组装备的关联奖励。按装备找部件仅为有限资料导航，不是完整制作配方／全套清单，不核算制作数量。
+      - region "遗物查询方式" [ref=e78]:
+        - generic [ref=e79]:
+          - button "按遗物查奖励" [ref=e80] [cursor=pointer]
+          - button "按奖励查遗物" [ref=e81] [cursor=pointer]
+          - button "按装备找部件" [pressed] [ref=e82] [cursor=pointer]
+        - generic [ref=e83]:
+          - text: 装备名称
+          - textbox "装备名称" [ref=e84]:
+            - /placeholder: 例如 伯斯顿 Prime 或 Burston Prime
+        - generic [ref=e85]:
+          - text: 来源核验筛选
+          - combobox "来源核验筛选" [ref=e86]:
+            - option "全部" [selected]
+            - option "所查官方表列出"
+            - option "本次表未列出"
+            - option "待核或有冲突"
+        - generic [ref=e87]: 筛选依据保存的核验记录；遗物至少一条摘录来源符合时入选。
+        - button "清空查询" [ref=e88] [cursor=pointer]
+      - generic [ref=e89]:
+        - region "遗物查询结果" [ref=e90]:
+          - heading "装备查询结果" [level=3] [ref=e91]
+          - paragraph [ref=e92]: 35项命中 · 仅本目录范围
+          - generic [ref=e93]:
+            - button "西诺斯 Prime（Cernos Prime） 未筛总数 2 项 · 筛选后 2 项" [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: 西诺斯 Prime（Cernos Prime）
+              - generic [ref=e96]: 未筛总数 2 项 · 筛选后 2 项
+            - button "Nyx Prime 未筛总数 2 项 · 筛选后 2 项 · 中文专名待核" [ref=e97] [cursor=pointer]:
+              - text: Nyx Prime
+              - generic [ref=e98]: 未筛总数 2 项 · 筛选后 2 项 · 中文专名待核
+            - button "分裂斩斧 Prime（Scindo Prime） 未筛总数 2 项 · 筛选后 2 项" [ref=e99] [cursor=pointer]:
+              - generic [ref=e100]: 分裂斩斧 Prime（Scindo Prime）
+              - generic [ref=e101]: 未筛总数 2 项 · 筛选后 2 项
+            - button "Valkyr Prime 未筛总数 1 项 · 筛选后 1 项 · 中文专名待核" [ref=e102] [cursor=pointer]:
+              - text: Valkyr Prime
+              - generic [ref=e103]: 未筛总数 1 项 · 筛选后 1 项 · 中文专名待核
+            - button "飞扬 Prime（Hikou Prime） 未筛总数 2 项 · 筛选后 2 项" [ref=e104] [cursor=pointer]:
+              - generic [ref=e105]: 飞扬 Prime（Hikou Prime）
+              - generic [ref=e106]: 未筛总数 2 项 · 筛选后 2 项
+            - button "Gyre Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e107] [cursor=pointer]:
+              - text: Gyre Prime
+              - generic [ref=e108]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "狼牙 Prime（Fang Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e109] [cursor=pointer]:
+              - generic [ref=e110]: 狼牙 Prime（Fang Prime）
+              - generic [ref=e111]: 未筛总数 3 项 · 筛选后 3 项
+            - button "瓦德雅 Prime（Vadarya Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e112] [cursor=pointer]:
+              - generic [ref=e113]: 瓦德雅 Prime（Vadarya Prime）
+              - generic [ref=e114]: 未筛总数 4 项 · 筛选后 4 项
+            - button "Lavos Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e115] [cursor=pointer]:
+              - text: Lavos Prime
+              - generic [ref=e116]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "帕里斯 Prime（Paris Prime） 未筛总数 5 项 · 筛选后 5 项" [ref=e117] [cursor=pointer]:
+              - generic [ref=e118]: 帕里斯 Prime（Paris Prime）
+              - generic [ref=e119]: 未筛总数 5 项 · 筛选后 5 项
+            - button "沙罗之牙 Prime（Sarofang Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e120] [cursor=pointer]:
+              - generic [ref=e121]: 沙罗之牙 Prime（Sarofang Prime）
+              - generic [ref=e122]: 未筛总数 3 项 · 筛选后 3 项
+            - button "欧特鲁斯 Prime（Orthos Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e123] [cursor=pointer]:
+              - generic [ref=e124]: 欧特鲁斯 Prime（Orthos Prime）
+              - generic [ref=e125]: 未筛总数 3 项 · 筛选后 3 项
+            - button "Citrine Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e126] [cursor=pointer]:
+              - text: Citrine Prime
+              - generic [ref=e127]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "布莱顿 Prime（Braton Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e128] [cursor=pointer]:
+              - generic [ref=e129]: 布莱顿 Prime（Braton Prime）
+              - generic [ref=e130]: 未筛总数 3 项 · 筛选后 3 项
+            - button "野马 Prime（Bronco Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e131] [cursor=pointer]:
+              - generic [ref=e132]: 野马 Prime（Bronco Prime）
+              - generic [ref=e133]: 未筛总数 3 项 · 筛选后 3 项
+            - button "圣英 Prime（Afentis Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e134] [cursor=pointer]:
+              - generic [ref=e135]: 圣英 Prime（Afentis Prime）
+              - generic [ref=e136]: 未筛总数 4 项 · 筛选后 4 项
+            - button "Voruna Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e137] [cursor=pointer]:
+              - text: Voruna Prime
+              - generic [ref=e138]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "月面狂风 Prime（Perigale Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e139] [cursor=pointer]:
+              - generic [ref=e140]: 月面狂风 Prime（Perigale Prime）
+              - generic [ref=e141]: 未筛总数 4 项 · 筛选后 4 项
+            - button "脉纹 Prime（Venato Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e142] [cursor=pointer]:
+              - generic [ref=e143]: 脉纹 Prime（Venato Prime）
+              - generic [ref=e144]: 未筛总数 3 项 · 筛选后 3 项
+            - button "伯斯顿 Prime（Burston Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]: 伯斯顿 Prime（Burston Prime）
+              - generic [ref=e147]: 未筛总数 4 项 · 筛选后 4 项
+            - button "Caliban Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e148] [cursor=pointer]:
+              - text: Caliban Prime
+              - generic [ref=e149]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "闪劫 Prime（Corufell Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e150] [cursor=pointer]:
+              - generic [ref=e151]: 闪劫 Prime（Corufell Prime）
+              - generic [ref=e152]: 未筛总数 4 项 · 筛选后 4 项
+            - button "野马双枪 Prime（Akbronco Prime） 未筛总数 2 项 · 筛选后 2 项" [ref=e153] [cursor=pointer]:
+              - generic [ref=e154]: 野马双枪 Prime（Akbronco Prime）
+              - generic [ref=e155]: 未筛总数 2 项 · 筛选后 2 项
+            - button "Styanax Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e156] [cursor=pointer]:
+              - text: Styanax Prime
+              - generic [ref=e157]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "大久和弓 Prime（Daikyu Prime） 未筛总数 5 项 · 筛选后 5 项" [ref=e158] [cursor=pointer]:
+              - generic [ref=e159]: 大久和弓 Prime（Daikyu Prime）
+              - generic [ref=e160]: 未筛总数 5 项 · 筛选后 5 项
+            - button "卡帕压力枪 Prime（Kompressa Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e161] [cursor=pointer]:
+              - generic [ref=e162]: 卡帕压力枪 Prime（Kompressa Prime）
+              - generic [ref=e163]: 未筛总数 3 项 · 筛选后 3 项
+            - button "电幻步枪 Prime（Alternox Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e164] [cursor=pointer]:
+              - generic [ref=e165]: 电幻步枪 Prime（Alternox Prime）
+              - generic [ref=e166]: 未筛总数 4 项 · 筛选后 4 项
+            - button "塞多 Prime（Cedo Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e167] [cursor=pointer]:
+              - generic [ref=e168]: 塞多 Prime（Cedo Prime）
+              - generic [ref=e169]: 未筛总数 4 项 · 筛选后 4 项
+            - button "阿索代 Prime（Athodai Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e170] [cursor=pointer]:
+              - generic [ref=e171]: 阿索代 Prime（Athodai Prime）
+              - generic [ref=e172]: 未筛总数 3 项 · 筛选后 3 项
+            - button "凯旋之爪 Prime（Venka Prime） 未筛总数 1 项 · 筛选后 1 项" [ref=e173] [cursor=pointer]:
+              - generic [ref=e174]: 凯旋之爪 Prime（Venka Prime）
+              - generic [ref=e175]: 未筛总数 1 项 · 筛选后 1 项
+            - button "佐伦双斧 Prime（Dual Zoren Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e176] [cursor=pointer]:
+              - generic [ref=e177]: 佐伦双斧 Prime（Dual Zoren Prime）
+              - generic [ref=e178]: 未筛总数 3 项 · 筛选后 3 项
+            - button "石晶之花 Prime（Steflos Prime） 未筛总数 4 项 · 筛选后 4 项" [ref=e179] [cursor=pointer]:
+              - generic [ref=e180]: 石晶之花 Prime（Steflos Prime）
+              - generic [ref=e181]: 未筛总数 4 项 · 筛选后 4 项
+            - button "Yareli Prime 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核" [ref=e182] [cursor=pointer]:
+              - text: Yareli Prime
+              - generic [ref=e183]: 未筛总数 4 项 · 筛选后 4 项 · 中文专名待核
+            - button "红隼 Prime（Kestrel Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e184] [cursor=pointer]:
+              - generic [ref=e185]: 红隼 Prime（Kestrel Prime）
+              - generic [ref=e186]: 未筛总数 3 项 · 筛选后 3 项
+            - button "雷克斯 Prime（Lex Prime） 未筛总数 3 项 · 筛选后 3 项" [ref=e187] [cursor=pointer]:
+              - generic [ref=e188]: 雷克斯 Prime（Lex Prime）
+              - generic [ref=e189]: 未筛总数 3 项 · 筛选后 3 项
+        - region "装备关联奖励" [ref=e191]:
+          - paragraph [ref=e192]: 装备 → 关联奖励 → 遗物 → 来源摘录
+          - heading "西诺斯 Prime（Cernos Prime）" [level=3] [ref=e193]
+          - paragraph [ref=e194]: 仅本目录关联奖励种类。不是完整制作配方／全套清单，不核算制作数量；未列出不代表游戏不存在或不能获取。
+          - paragraph [ref=e195]: 未筛总数 2 项 · 筛选后 2 项
+          - paragraph [ref=e196]: 以下仅显示符合当前来源核验筛选的奖励种类，不代表完整部件表。蓝图、部件、成品／物品分别标注；不记录个人持有或进度。
+          - generic [ref=e197]:
+            - button "西诺斯 Prime 下弓臂（Cernos Prime Lower Limb） 部件 · 查看原奖励反查" [ref=e198] [cursor=pointer]:
+              - text: 西诺斯 Prime 下弓臂（Cernos Prime Lower Limb）
+              - generic [ref=e199]: 部件 · 查看原奖励反查
+            - button "西诺斯 Prime 弓身（Cernos Prime Grip） 部件 · 查看原奖励反查" [ref=e200] [cursor=pointer]:
+              - text: 西诺斯 Prime 弓身（Cernos Prime Grip）
+              - generic [ref=e201]: 部件 · 查看原奖励反查
+          - group [ref=e202]:
+            - generic "父装备名称与关联出处" [ref=e203]
+    - generic [ref=e204]:
+      - text: 天诺星图 · 材料与制作 v0
+      - generic [ref=e205]: 中文优先 / 你的数据由你保管
+```
