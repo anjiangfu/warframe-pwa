@@ -1,0 +1,42 @@
+[
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/outputs/Prime装备部件导航_v0_已批准范围与验收.md",
+    "sha256": "8c355c2845964c203ddabb6ea458cf08e58751c234edd98a54c54fe724f10c82",
+    "bytes": 9658
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/prime-equipment-nav-v0-message.txt",
+    "sha256": "bbf8fc2b51297acccad04d7bf77d4f3b104e75830252a95686ae34ce6a75dc29",
+    "bytes": 6977
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/planning-references-20261026/equipment-group-census.json",
+    "sha256": "6f4320b42b987d702ae0ecd19b06c22e0f8680988da0368be32e28d6b1b1bafc",
+    "bytes": 15954
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/planning-references-20261026/github-references.json",
+    "sha256": "dce57875c28f35d9d46f0df3c4159ed5b15a63617b7666914f958feb74757d76",
+    "bytes": 982
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/planning-references-20261026/NadavNV__Warframe-Relic-Manager-LICENSE.txt",
+    "sha256": "148a69e53323955933de0cde06eb05bc16230418bc172539f621503ad4bf4fa4",
+    "bytes": 1067
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/planning-references-20261026/NadavNV__Warframe-Relic-Manager-README.md",
+    "sha256": "150dc0d3befc2943f0c6e3fffc5870bc1b6a651df6a5c43281914b21ac123f59",
+    "bytes": 3802
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/planning-references-20261026/WalkmanOfWar__warframe-farming-planner-LICENSE.txt",
+    "sha256": "6f71972e1446ce3d21ca0a6e3c95d108943dfe68195bddd9949698f974451659",
+    "bytes": 1069
+  },
+  {
+    "path": "C:/Users/21904/Documents/Codex/2026-10-16/referenced-chatgpt-conversation-this-is-an-2/work/planning-references-20261026/WalkmanOfWar__warframe-farming-planner-README.md",
+    "sha256": "9f137613e21653b319fa75b8958149b8ae407f08c5d573942e8df41880f2022c",
+    "bytes": 6726
+  }
+]

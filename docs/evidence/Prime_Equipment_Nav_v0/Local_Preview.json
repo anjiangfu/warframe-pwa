@@ -1,0 +1,13 @@
+{
+  "build": {
+    "build": "m0-745511b205b8",
+    "catalogVersion": "2026.10.21.1",
+    "base": "/"
+  },
+  "normalProductionBuild": true,
+  "realUserBrowserOpened": false,
+  "url": "http://127.0.0.1:4194/",
+  "httpStatus": 200,
+  "pid": "19288",
+  "binding": "127.0.0.1"
+}

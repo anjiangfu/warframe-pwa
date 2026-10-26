@@ -45,3 +45,7 @@ React运行时还含scheduler（MIT）；运行时完整许可和适用NOTICE保
 ## 遗物来源时效核验 v0（2026-10-26交付）
 
 仅增加Digital Extremes官方PC公开掉落表的62条必要事实定位、原文hash及日期，保存核对至2026-10-25的静态记录。官方整页、正文、样式、图像和实现不进入应用或Git；没有将原WFCD MIT概括为官方页面许可。应用来源卡保留官方归属、原文与免责声明链接。原依赖和许可全文不变；来源访问、判断边界和完整62条审计见docs/Relic_Source_Check_v0_Sources.md及docs/evidence/Relic_Source_Check_v0/。
+
+## Prime 装备部件导航 v0（2026-10-26）
+
+从固定 @wfcd/items@1.1276.31 同ID父实体字段选取35组父名和115条本目录组件身份，独立编写派生索引及界面。沿用 MIT、Copyright (c) 2017 Kaptard，完整许可保留于 app/licenses/THIRD_PARTY_LICENSES.txt 和 app/public/THIRD_PARTY_LICENSES.txt。未复制第三方实现、整套源文件、图像、攻略或译名加工表；NadavNV 与 WalkmanOfWar 的固定MIT仓库仅提供抽象导航思路，未取代码。来源与hash见 docs/Prime_Equipment_Nav_v0_Sources.md，9个父装备中文专名仍待核。所有分组均为有限奖励种类关联，不是完整配方、制作数量或当前获取结论。

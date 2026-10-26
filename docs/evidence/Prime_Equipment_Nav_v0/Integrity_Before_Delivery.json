@@ -1,0 +1,786 @@
+{
+  "protectedInputs": [
+    {
+      "path": "AGENTS.md",
+      "expected": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a",
+      "actual": "6053362dafb5af9d1529a812eac8d4d5c58c7f9d7c0d9b0ee859dbaf5388059a",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "expected": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09",
+      "actual": "cf1a3c5d9e002994bffbe7fc103cc04860b5bbaafcf3e62d8f6e9c6f2b998b09",
+      "unchanged": true
+    },
+    {
+      "path": "data/tech-tree-seed.json",
+      "expected": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2",
+      "actual": "f357c6e8f29a875d40425cdd18584bd1afe2200c8476bb8102a1d41185e75fe2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Budget_and_Workflow.md",
+      "expected": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de",
+      "actual": "c1ed326b3836943540a13455196ef23bb6bb1a89c0452009aa528c3a7164f0de",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Code_Review_Tech_Tree.md",
+      "expected": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6",
+      "actual": "ba9b08ea253e642d02241c96b08b5dbeb65097aa41977fdc130a2984194361a6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/M0_Implementation_Plan.md",
+      "expected": "45d0be1f8deaac1a4cd4a0b4b258bf9a8b3b6f1199bbb2b6ee94b2c22d6f13c7",
+      "actual": "45d0be1f8deaac1a4cd4a0b4b258bf9a8b3b6f1199bbb2b6ee94b2c22d6f13c7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Original_PRD_v1.md",
+      "expected": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16",
+      "actual": "2fd3b014b586f2966e7fd7354a7fbc7789102bc6ec856a2c19a57d8ca0188f16",
+      "unchanged": true
+    },
+    {
+      "path": "docs/PRD_v2_Architecture.md",
+      "expected": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b",
+      "actual": "17979945ba73ccd33cda66d28d0e8a496d7ded046f103984ae767b005e3f144b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Research_and_Reuse.md",
+      "expected": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7",
+      "actual": "f46059186d4c29b0c2aa6998b0b66addfb7765855dce02cdd8184f79a6f0efa7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/Short_Action_Sequence.md",
+      "expected": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110",
+      "actual": "d429f0f40b45832689e1c4040af85fc7b3887eda063bad8cafeb57b6fb1d6110",
+      "unchanged": true
+    },
+    {
+      "path": "docs/TennoHub_Audit_Result.md",
+      "expected": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7",
+      "actual": "938a2c9791deb7a25a59b99dedb5d2f76328c0ac7906e0e2c73105c3daf797c7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/TennoHub_Initial_Audit_2026-10-16.md",
+      "expected": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4",
+      "actual": "3e561a72384ee3878b04dc556a98dc406ad6f27d5463d1be9291904ac93a75a4",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/LowCost-Agent.md",
+      "expected": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4",
+      "actual": "92683cdfaf4dbb9f7749a27eb32d8c11a175a80e2fa6d1718f6245fe808dc2d4",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/M0-Codex.md",
+      "expected": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13",
+      "actual": "1797fe15ddb38f9f683d78b456684efa1a17673c09dffc66c60746a78f9d8e13",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/TennoHub-Audit-Codex-Next.md",
+      "expected": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b",
+      "actual": "0319c53869e3a359de1ce1ccb409a0926d9eae28ab89f460abd20267a722341b",
+      "unchanged": true
+    },
+    {
+      "path": "prompts/TennoHub-Audit-Codex.md",
+      "expected": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9",
+      "actual": "c7988088fabc858c0b91fa2d8237ac1b7adf763d45906005d41969042a4898a9",
+      "unchanged": true
+    },
+    {
+      "path": "reference/Original_Tech_Tree.html",
+      "expected": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef",
+      "actual": "21e08edc277e7bf6ed9fdfca74ea96d2ed8e56c049cb422e976663c6c28c44ef",
+      "unchanged": true
+    }
+  ],
+  "contracts": [
+    {
+      "path": "app/src/catalog/crafting.v1.json",
+      "expected": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+      "actual": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/goals.v1.json",
+      "expected": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+      "actual": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/legacy-step-map.v1.json",
+      "expected": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+      "actual": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/resources.v1.json",
+      "expected": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+      "actual": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/syndicates.v1.json",
+      "expected": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+      "actual": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/tech-tree.v1.json",
+      "expected": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+      "actual": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/weapon-guides.v1.json",
+      "expected": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+      "actual": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/model.ts",
+      "expected": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+      "actual": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/storage/imports.ts",
+      "expected": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+      "actual": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/storage/db.ts",
+      "expected": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf",
+      "actual": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/relics.v1.json",
+      "expected": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+      "actual": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/relic-source-checks.v1.json",
+      "expected": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+      "actual": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+      "unchanged": true
+    }
+  ],
+  "preservedAppFiles": [
+    {
+      "path": "app/e2e/actions.spec.ts",
+      "before": "c4cc098892cc1d66a99144875425aa6bdfdd4dc31ef45536b980980c42f3d240",
+      "after": "c4cc098892cc1d66a99144875425aa6bdfdd4dc31ef45536b980980c42f3d240",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/backup-boundaries.spec.ts",
+      "before": "d426017a914156d32080356c96be1b361f594bc46b4f732f4ba2eb19cafd787a",
+      "after": "d426017a914156d32080356c96be1b361f594bc46b4f732f4ba2eb19cafd787a",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/crafting-materials.spec.ts",
+      "before": "643db575295bc921a44876ccec7e32403679d6675446c40f25953e10bb735f9a",
+      "after": "643db575295bc921a44876ccec7e32403679d6675446c40f25953e10bb735f9a",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/current-goals.spec.ts",
+      "before": "8cee0460fb71239b236867bdc41e49209e21ddba836df204ca36b60acfbc625e",
+      "after": "8cee0460fb71239b236867bdc41e49209e21ddba836df204ca36b60acfbc625e",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/environment.ts",
+      "before": "ffae66321aea5552a20e33c66a018b6f3447c5fd749400ff1e0c3dea929b2354",
+      "after": "ffae66321aea5552a20e33c66a018b6f3447c5fd749400ff1e0c3dea929b2354",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/material-guides.spec.ts",
+      "before": "92203ee94066c1ee88785063814de6783bab20a3bfadf91dd807c7ada94b23d1",
+      "after": "92203ee94066c1ee88785063814de6783bab20a3bfadf91dd807c7ada94b23d1",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/material-reference.spec.ts",
+      "before": "e87d297bc8d87b2b0377217034709b46c8f68339df93e315c93a0d3f48d4cb4c",
+      "after": "e87d297bc8d87b2b0377217034709b46c8f68339df93e315c93a0d3f48d4cb4c",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/pwa.spec.ts",
+      "before": "a91d76e399a100fe43db0977c4916df857a153fcde049430c8008d9d02e90ee1",
+      "after": "a91d76e399a100fe43db0977c4916df857a153fcde049430c8008d9d02e90ee1",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/relic-expansion.spec.ts",
+      "before": "fd652a814e32dd7078f148ea7fc424df593f7ca5debe35089b27d269b839c6d0",
+      "after": "fd652a814e32dd7078f148ea7fc424df593f7ca5debe35089b27d269b839c6d0",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/relic-localization.spec.ts",
+      "before": "cf6399b4104f06812534e5a768cf99577d7e202096c5f2d5b441c81565b50798",
+      "after": "cf6399b4104f06812534e5a768cf99577d7e202096c5f2d5b441c81565b50798",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/relic-source-checks.spec.ts",
+      "before": "7ba6b24f808c6d5cac4014bf8e48fe5be62fda9c124d02f50711707e4567f2e8",
+      "after": "7ba6b24f808c6d5cac4014bf8e48fe5be62fda9c124d02f50711707e4567f2e8",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/relics.spec.ts",
+      "before": "23fffe0a31ed933ca6b86469a63bb6460f04f56e23c14d40ad66bd9d893538ce",
+      "after": "23fffe0a31ed933ca6b86469a63bb6460f04f56e23c14d40ad66bd9d893538ce",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/safety.spec.ts",
+      "before": "58c4cc6a1a9a768c47ede398f6b92c4144cb4cb5a7cd381dd2eac9fce2edbe7d",
+      "after": "58c4cc6a1a9a768c47ede398f6b92c4144cb4cb5a7cd381dd2eac9fce2edbe7d",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/syndicate-drafts.spec.ts",
+      "before": "c755d9ba256fae5b802c851737ed1f830e4ee8213589ad6d4a854d7a8477bff0",
+      "after": "c755d9ba256fae5b802c851737ed1f830e4ee8213589ad6d4a854d7a8477bff0",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/syndicates.spec.ts",
+      "before": "c36273ee936dd6219ce6bb5a28eb9d3ce6d43188c5dbbc2bf047fc4057bd4b41",
+      "after": "c36273ee936dd6219ce6bb5a28eb9d3ce6d43188c5dbbc2bf047fc4057bd4b41",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/ui.spec.ts",
+      "before": "eda59b28ce379c0473848eedc5b9d3681c16bc4b7b1e80b17aa59f6b5d067052",
+      "after": "eda59b28ce379c0473848eedc5b9d3681c16bc4b7b1e80b17aa59f6b5d067052",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/weapon-assistant.spec.ts",
+      "before": "72903e1e00d517039761b71d76425c053eb15a28bbb46b8c6ce390b31e67cce8",
+      "after": "72903e1e00d517039761b71d76425c053eb15a28bbb46b8c6ce390b31e67cce8",
+      "unchanged": true
+    },
+    {
+      "path": "app/e2e/zz-update.spec.ts",
+      "before": "9d0ba7de7ad2ccf05aa3403213270369d2fea730d2967413827533dfc7a4a354",
+      "after": "9d0ba7de7ad2ccf05aa3403213270369d2fea730d2967413827533dfc7a4a354",
+      "unchanged": true
+    },
+    {
+      "path": "app/eslint.config.js",
+      "before": "8bdec06d8e8bb94edb6611865cef2c138874d0e70c47cf382b0d058da1b1002a",
+      "after": "8bdec06d8e8bb94edb6611865cef2c138874d0e70c47cf382b0d058da1b1002a",
+      "unchanged": true
+    },
+    {
+      "path": "app/index.html",
+      "before": "39d63025b971154460dc24108f24a7992fa59373ab2e4c31ec24f1ed6c432a23",
+      "after": "39d63025b971154460dc24108f24a7992fa59373ab2e4c31ec24f1ed6c432a23",
+      "unchanged": true
+    },
+    {
+      "path": "app/licenses/THIRD_PARTY_LICENSES.txt",
+      "before": "7aa947c516a2a5c20909d0e926a175db0eeb3f8f0785bfc1debc2ab18439b430",
+      "after": "7aa947c516a2a5c20909d0e926a175db0eeb3f8f0785bfc1debc2ab18439b430",
+      "unchanged": true
+    },
+    {
+      "path": "app/package-lock.json",
+      "before": "cfaad0878c5663d89ce2d2f478a67f35b3874a16de96efb5e239d34276b420be",
+      "after": "cfaad0878c5663d89ce2d2f478a67f35b3874a16de96efb5e239d34276b420be",
+      "unchanged": true
+    },
+    {
+      "path": "app/package.json",
+      "before": "7ddec2d85b19105a226daac2dfeae2e88423de938e54ae776ad5bc1e76496cf4",
+      "after": "7ddec2d85b19105a226daac2dfeae2e88423de938e54ae776ad5bc1e76496cf4",
+      "unchanged": true
+    },
+    {
+      "path": "app/playwright.config.ts",
+      "before": "c5ba8facdb56c8888463c8f95d15426f9b14e6e20bdc8442585c7bef72edf82c",
+      "after": "c5ba8facdb56c8888463c8f95d15426f9b14e6e20bdc8442585c7bef72edf82c",
+      "unchanged": true
+    },
+    {
+      "path": "app/public/THIRD_PARTY_LICENSES.txt",
+      "before": "4710ccd4895c17e50010bdab05f0907c3c3e8cae3a963e142dba892da90c2e59",
+      "after": "4710ccd4895c17e50010bdab05f0907c3c3e8cae3a963e142dba892da90c2e59",
+      "unchanged": true
+    },
+    {
+      "path": "app/public/icons/icon-192.png",
+      "before": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb",
+      "after": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb",
+      "unchanged": true
+    },
+    {
+      "path": "app/public/icons/icon-512.png",
+      "before": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5",
+      "after": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5",
+      "unchanged": true
+    },
+    {
+      "path": "app/scripts/collect-licenses.mjs",
+      "before": "139c6aeb6bb002a9f4ebd98e713fabe03c9ec9d9f6130a02825d7af499fe570c",
+      "after": "139c6aeb6bb002a9f4ebd98e713fabe03c9ec9d9f6130a02825d7af499fe570c",
+      "unchanged": true
+    },
+    {
+      "path": "app/scripts/create-icons.mjs",
+      "before": "14bd187327b745d00dd12cd94dfe41eb73195a1f8fe92bcd31aec1097681c49b",
+      "after": "14bd187327b745d00dd12cd94dfe41eb73195a1f8fe92bcd31aec1097681c49b",
+      "unchanged": true
+    },
+    {
+      "path": "app/scripts/run-quality.mjs",
+      "before": "e3e8b22808a23eca1773061c10f0332de95adbeb9f7444a106bf4efae04fba4f",
+      "after": "e3e8b22808a23eca1773061c10f0332de95adbeb9f7444a106bf4efae04fba4f",
+      "unchanged": true
+    },
+    {
+      "path": "app/scripts/subpath-smoke.mjs",
+      "before": "b5e9928ccfd7fc896abda3d1b201cb4a72f054629b0ce636504bcbe6641426c9",
+      "after": "b5e9928ccfd7fc896abda3d1b201cb4a72f054629b0ce636504bcbe6641426c9",
+      "unchanged": true
+    },
+    {
+      "path": "app/scripts/sw-template.js",
+      "before": "3fb5d1c8a7dd1649c94b94d7b5a3d5d2c112d5506443c33b54e4404a32188721",
+      "after": "3fb5d1c8a7dd1649c94b94d7b5a3d5d2c112d5506443c33b54e4404a32188721",
+      "unchanged": true
+    },
+    {
+      "path": "app/scripts/verify-delivery.mjs",
+      "before": "a8207583627329cf873e08013bba0ad2d2d763d20e27366a86bc756e0a334ad1",
+      "after": "a8207583627329cf873e08013bba0ad2d2d763d20e27366a86bc756e0a334ad1",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/crafting.v1.json",
+      "before": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+      "after": "fc62de7c199ac9ddf736e70026493787bb85c7871c08ee5dbac91594200fb475",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/goals.v1.json",
+      "before": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+      "after": "6c3f9ebc840aed87f53cc61bb4372c2099ce9849564435a046a1d80ffa808736",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/legacy-step-map.v1.json",
+      "before": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+      "after": "214f6e7fd8115483b3f30009dbf96dae0968fda7bb2569023d17b94b52b2fcee",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/relic-source-checks.v1.json",
+      "before": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+      "after": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/relics.v1.json",
+      "before": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+      "after": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/resources.v1.json",
+      "before": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+      "after": "5e67a42c9e76e43c3b4a6e2eaea352c0295b9ff246cb96963a0d0a220266c4c6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/syndicates.v1.json",
+      "before": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+      "after": "c5dd6536a641a0546d9297f2f4aa5c0df8bd2e818d3e3656e36fe21e3eec1f9a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/tech-tree.v1.json",
+      "before": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+      "after": "917ee13b3cad4482ac7fd3489c5c6d46ca1944719c2ba13d6235dd59902d32f6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/catalog/weapon-guides.v1.json",
+      "before": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+      "after": "a5d120d60362074b81f9f26203bc4c457be92850cc9cd27c4dc865971a1836d2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/actions.ts",
+      "before": "b842fc5b5245ecfcd3a7441dcca203b9848ecc88fab758f8bad4b7d2b3dcf1b9",
+      "after": "b842fc5b5245ecfcd3a7441dcca203b9848ecc88fab758f8bad4b7d2b3dcf1b9",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/crafting.ts",
+      "before": "00f5835afdd0d38873daab790641f15cda2aee805d3a6443706806f9f8bb893e",
+      "after": "00f5835afdd0d38873daab790641f15cda2aee805d3a6443706806f9f8bb893e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/goals.ts",
+      "before": "6276ad74101fbb73db6570e76132b4a6817bc6e509dfe9ec4618827a212bc500",
+      "after": "6276ad74101fbb73db6570e76132b4a6817bc6e509dfe9ec4618827a212bc500",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/material-reference.ts",
+      "before": "bcedbb8a177cd893a960975ed8e1cd9a876473ea94fee34cec13ebd3b5db4300",
+      "after": "bcedbb8a177cd893a960975ed8e1cd9a876473ea94fee34cec13ebd3b5db4300",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/model.ts",
+      "before": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+      "after": "4a2e0fa719151a75e5ac0556769364fdabc7f54f89a1bb4e107dc361e735b86a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/relic-source-checks.ts",
+      "before": "250ff04901f10bac89e9d92baaf6ea32af2843e9ce1e21a5925cb0f6a1afd2d4",
+      "after": "250ff04901f10bac89e9d92baaf6ea32af2843e9ce1e21a5925cb0f6a1afd2d4",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/relics.ts",
+      "before": "a72ded5688691902d7291aeade90944e06dd68e1a9ad6856c25e31960bffd22e",
+      "after": "a72ded5688691902d7291aeade90944e06dd68e1a9ad6856c25e31960bffd22e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/resources.ts",
+      "before": "3fea7327c01f662faff6cb1b00620bda6727097d3143f09584ec7ad010b24416",
+      "after": "3fea7327c01f662faff6cb1b00620bda6727097d3143f09584ec7ad010b24416",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/syndicates.ts",
+      "before": "b974c7b010d2027d217e1b440c88bc37dc6fda39f6ff5c8051dd715147e40ad1",
+      "after": "b974c7b010d2027d217e1b440c88bc37dc6fda39f6ff5c8051dd715147e40ad1",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/domain/weapon.ts",
+      "before": "1b95e1352f54dd58f973dffe48d5536103e446b05ff8b16b0697ca2ace17dc59",
+      "after": "1b95e1352f54dd58f973dffe48d5536103e446b05ff8b16b0697ca2ace17dc59",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/ActionOverview.tsx",
+      "before": "477112417e728318f5c8b4a52c557d6c9dd59da9be6ec486b095cd285db0641c",
+      "after": "477112417e728318f5c8b4a52c557d6c9dd59da9be6ec486b095cd285db0641c",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/BackupPanel.tsx",
+      "before": "0e1b8a71bb096fc0893e8074a3e34a226205a0d3d27b9f9abeeb33d7215e4cdb",
+      "after": "0e1b8a71bb096fc0893e8074a3e34a226205a0d3d27b9f9abeeb33d7215e4cdb",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/CraftingPage.tsx",
+      "before": "61fcbdd734977cf72fb8d27f269fe88443d7d6eaae9a404fae0f3f85be713a6e",
+      "after": "61fcbdd734977cf72fb8d27f269fe88443d7d6eaae9a404fae0f3f85be713a6e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/GoalAssistant.tsx",
+      "before": "d1da9b77d25fa275dea2d928e0a6fa012a3e2ee38aa934e3668f11d6c816d2c1",
+      "after": "d1da9b77d25fa275dea2d928e0a6fa012a3e2ee38aa934e3668f11d6c816d2c1",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/MaterialDetail.tsx",
+      "before": "7ab87697059389b6075af2de9b0144e3a2400a3b66e649fef30a9c72a7e0876e",
+      "after": "7ab87697059389b6075af2de9b0144e3a2400a3b66e649fef30a9c72a7e0876e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/MaterialsPage.tsx",
+      "before": "d0297ad9543b35e03878f16dd5a053f8f8aba94cf53f80b45ef861966640cace",
+      "after": "d0297ad9543b35e03878f16dd5a053f8f8aba94cf53f80b45ef861966640cace",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/ProfilePanel.tsx",
+      "before": "7f2efc443259500de96c06f84d24a11271cbbdded42c7d6748d297396ed3ae78",
+      "after": "7f2efc443259500de96c06f84d24a11271cbbdded42c7d6748d297396ed3ae78",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/ProgressDraft.tsx",
+      "before": "1bc7cf8e5c37e3ac1b48f2b0cfe6ea3ad15f7f4139ac5d021112723f16a4376d",
+      "after": "1bc7cf8e5c37e3ac1b48f2b0cfe6ea3ad15f7f4139ac5d021112723f16a4376d",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/RelicEvidence.tsx",
+      "before": "be055df876ed1374d818565af29a1cc9e84150139e15f0361b1cbc472402e265",
+      "after": "be055df876ed1374d818565af29a1cc9e84150139e15f0361b1cbc472402e265",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/RelicSourceCheckCard.tsx",
+      "before": "abe64b8399afe0cafbfd1d9771d702bc2ae38b414bd00da308c891ddc0ce7a94",
+      "after": "abe64b8399afe0cafbfd1d9771d702bc2ae38b414bd00da308c891ddc0ce7a94",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/SyndicateFactsEditor.tsx",
+      "before": "e66bcd2d972eb839e3add0162c353d9e8eef148516bcbc8be03d77b24dc1b343",
+      "after": "e66bcd2d972eb839e3add0162c353d9e8eef148516bcbc8be03d77b24dc1b343",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/SyndicatePage.tsx",
+      "before": "5e83e791a391ff954a5ef362a05687f72457f9cda027fc56bcce488f20c33f4e",
+      "after": "5e83e791a391ff954a5ef362a05687f72457f9cda027fc56bcce488f20c33f4e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/TechTree.tsx",
+      "before": "e753adb56636cfa4ddd4577ea26ffcba782d7493486b42f82b1056153a47e7d2",
+      "after": "e753adb56636cfa4ddd4577ea26ffcba782d7493486b42f82b1056153a47e7d2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/features/WeaponAssistant.tsx",
+      "before": "31685344755291f20d664b29c1f7bdd209afdb354ba4ed487628913a248fab81",
+      "after": "31685344755291f20d664b29c1f7bdd209afdb354ba4ed487628913a248fab81",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main.tsx",
+      "before": "51fc5ff454d2d1a021b10e64dbf2707f9644ce8be3ff49686483e8b88fd60f27",
+      "after": "51fc5ff454d2d1a021b10e64dbf2707f9644ce8be3ff49686483e8b88fd60f27",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/pwa/UpdateNotice.tsx",
+      "before": "fac9536aae9b269b1713ab980614b2b723cdefc47547a6660631cfccebaa33cf",
+      "after": "fac9536aae9b269b1713ab980614b2b723cdefc47547a6660631cfccebaa33cf",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/storage/db.ts",
+      "before": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf",
+      "after": "982ea6698be6c92e2873ef497fef673c8814b29776164ec0f959f102cbe18cdf",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/storage/imports.ts",
+      "before": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+      "after": "2a2a5ada3980a38bdfc20a77e2d58070f6cfe8b930b1120b907f848b135149a6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/actions.test.ts",
+      "before": "19971eb7210fb2fbf6aa8d3c313df8dc6e2b1c53c86cdc1730c13b1c02dda659",
+      "after": "19971eb7210fb2fbf6aa8d3c313df8dc6e2b1c53c86cdc1730c13b1c02dda659",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/backup-boundaries.test.ts",
+      "before": "d55c1355b6d8e1d4a8e616495615c4ecbc691016844c60651a41301dc9c1df6f",
+      "after": "d55c1355b6d8e1d4a8e616495615c4ecbc691016844c60651a41301dc9c1df6f",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/crafting-storage.test.ts",
+      "before": "aa7a84677e921a274d5e740484a60004f58b77e98b32b812b9315627960c7828",
+      "after": "aa7a84677e921a274d5e740484a60004f58b77e98b32b812b9315627960c7828",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/crafting.test.ts",
+      "before": "bcf3d6b1b7f3d56b6dcd44b20e6855c19bac7613cc55e4c29f628db21b01470b",
+      "after": "bcf3d6b1b7f3d56b6dcd44b20e6855c19bac7613cc55e4c29f628db21b01470b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/data.test.ts",
+      "before": "e1a66fd6d5d4cc83e64ebe6ab952049e6ae71190a86bf31f353874106272ff4a",
+      "after": "e1a66fd6d5d4cc83e64ebe6ab952049e6ae71190a86bf31f353874106272ff4a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/goals.test.ts",
+      "before": "d945ec3e968f8ac1b03df95ba9bb1af5045beea290303c5b965acde38c0fafcf",
+      "after": "d945ec3e968f8ac1b03df95ba9bb1af5045beea290303c5b965acde38c0fafcf",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/material-guides.test.ts",
+      "before": "fed94a3783ce79e62614d6b3054e5f7d706c7b39e26737794e214c33684e5f06",
+      "after": "fed94a3783ce79e62614d6b3054e5f7d706c7b39e26737794e214c33684e5f06",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/material-reference.test.ts",
+      "before": "e4a79ccccc32c816aacd2168886deb56a137ef6127c2dc8f36e30f01d869d21a",
+      "after": "e4a79ccccc32c816aacd2168886deb56a137ef6127c2dc8f36e30f01d869d21a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/relic-expansion.test.ts",
+      "before": "bc4455107a879b5636aad737fa5fe19890043ef5f62bfb3b1be62faa3b1c413e",
+      "after": "bc4455107a879b5636aad737fa5fe19890043ef5f62bfb3b1be62faa3b1c413e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/relic-localization.test.ts",
+      "before": "dbf5b43ffd0b27516e4ca14c60116e802fade56bc53ea6b6de9c30be21a4e6fd",
+      "after": "dbf5b43ffd0b27516e4ca14c60116e802fade56bc53ea6b6de9c30be21a4e6fd",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/relic-source-checks.test.ts",
+      "before": "f09d1806186149372d707c2623728ade0ea76d1e7ca9dfdfe4c118af48673a63",
+      "after": "f09d1806186149372d707c2623728ade0ea76d1e7ca9dfdfe4c118af48673a63",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/relic-source-ui.test.ts",
+      "before": "1634abf5bbff306d20e342de99966be08fbca53064a3fc0a22ce8d37503d2f82",
+      "after": "1634abf5bbff306d20e342de99966be08fbca53064a3fc0a22ce8d37503d2f82",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/relics.test.ts",
+      "before": "2ef23c307fc4551734389a84fe97db66c764f09d77d028860d0fe5f4fbc5d571",
+      "after": "2ef23c307fc4551734389a84fe97db66c764f09d77d028860d0fe5f4fbc5d571",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/syndicate-storage.test.ts",
+      "before": "17e2f86494fb3906a2313da41ad617d0c1ec376f23dd5f5433b92314630ba3f0",
+      "after": "17e2f86494fb3906a2313da41ad617d0c1ec376f23dd5f5433b92314630ba3f0",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/syndicates.test.ts",
+      "before": "9f2b1cd7f71b96d1d1d15ecfc3a488ad41b1673a0f899f1106e1e37fd10d8b4d",
+      "after": "9f2b1cd7f71b96d1d1d15ecfc3a488ad41b1673a0f899f1106e1e37fd10d8b4d",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/test/weapon.test.ts",
+      "before": "325414365e24cb25242f0d801327a2644830692338c43bcddc535165a43757be",
+      "after": "325414365e24cb25242f0d801327a2644830692338c43bcddc535165a43757be",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/theme.css",
+      "before": "541407e3bf6e3eca69ca7c680624a9f3299eb772506106ceacc6f59e3d44e12f",
+      "after": "541407e3bf6e3eca69ca7c680624a9f3299eb772506106ceacc6f59e3d44e12f",
+      "unchanged": true
+    },
+    {
+      "path": "app/tsconfig.json",
+      "before": "1ba13bd598fbd4c2dd47537a8b6a042f38aac655df86ed81cc1b4c8efa91538e",
+      "after": "1ba13bd598fbd4c2dd47537a8b6a042f38aac655df86ed81cc1b4c8efa91538e",
+      "unchanged": true
+    },
+    {
+      "path": "app/vite.config.ts",
+      "before": "9d28f2d061047133dbc7b0c6a880f8737c68a3b5c40265ecf25cf5b26dd60169",
+      "after": "9d28f2d061047133dbc7b0c6a880f8737c68a3b5c40265ecf25cf5b26dd60169",
+      "unchanged": true
+    }
+  ],
+  "authorizedAppChanges": [
+    {
+      "path": "app/README.md",
+      "before": "03cb1d00139b44fc9b742e904cc04faaa846e30ff0e861cacd84af3cb1ab7a84",
+      "after": "e84f0f04b95b248459f73372d638abdf3342fc0c3baddd4e5fded2866a95a6ab",
+      "unchanged": false
+    },
+    {
+      "path": "app/src/App.tsx",
+      "before": "7b0e221e6d50ea52dca2240a3d55fcb7dd2ddc366996b9e70842028238246a3b",
+      "after": "358405993229dd7b371181fa8434169b78b67d10ddb17beb91f07cf5dfa1f6d0",
+      "unchanged": false
+    },
+    {
+      "path": "app/src/catalog/provider.ts",
+      "before": "2017ce70a764b8a3a73d5ec371824516e1276dbca46ce5c75bd5ccbfad13db66",
+      "after": "6895b5f79eb14f6cc6fe8c13eeef501f2ec49aeaf4ccb193b3cbfb8862f6a2ad",
+      "unchanged": false
+    },
+    {
+      "path": "app/src/features/RelicsPage.tsx",
+      "before": "d883b9e570c4f1eaacaede515242078a9639c339a620050d3712264824e9788e",
+      "after": "1665987eb103e02b8b7066738d0adcc0ec1a413bb2cc13f8dfc7980fd4eda02c",
+      "unchanged": false
+    },
+    {
+      "path": "app/src/styles.css",
+      "before": "5eb37b8826e4542eb0f3a4ec481ac108cd09ab8379b67a7ece69d553c060355a",
+      "after": "929ad761b2a4e4939a0e60c5bac8bb1c6ca4efa25bbd2884654eb10c0067726c",
+      "unchanged": false
+    }
+  ],
+  "rootDist": [
+    {
+      "path": "app/dist/build-info.json",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/manifest.webmanifest",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/sw.js",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/THIRD_PARTY_LICENSES.txt",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/assets/index-B2ullN-d.css",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/assets/index-BHKp6uh5.js",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/icons/icon-192.png",
+      "unchanged": true
+    },
+    {
+      "path": "app/dist/icons/icon-512.png",
+      "unchanged": true
+    }
+  ]
+}

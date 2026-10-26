@@ -1,0 +1,11 @@
+{
+  "app/dist/build-info.json": "bf5d1e42d37bcdcc4327d43b200c28f6437abcfc38e1357b34a0b1a865fac107",
+  "app/dist/index.html": "877e12a0b780258bf2ae381a72524ac515b1e504e0c306308cddf82a027758d2",
+  "app/dist/manifest.webmanifest": "f012da5557c54aa2cc8ce0ac1625e0783a6160bc864bc83ee06c2b0d1cd0aee4",
+  "app/dist/sw.js": "1953165622ab146351f6c001f91547b8f42798bb4cb3dd5692fd7e5c06136a46",
+  "app/dist/THIRD_PARTY_LICENSES.txt": "4710ccd4895c17e50010bdab05f0907c3c3e8cae3a963e142dba892da90c2e59",
+  "app/dist/assets/index-B2ullN-d.css": "d585a7cb3c17fa052b4a8274bf8dcb573c6975748cda54ae32b47f31d1ac5963",
+  "app/dist/assets/index-BHKp6uh5.js": "9724982be3c9b70ecb3bba59a650d82688e8a6b35e226092e070ee05dc7224ef",
+  "app/dist/icons/icon-192.png": "eb7af66286f75266432a6c827dc76873586b53f6745707fd412b1331251257fb",
+  "app/dist/icons/icon-512.png": "00e570a8f41dcd2502d965b1db5689ff6b8c8464fdee95af130ff950966c2ce5"
+}

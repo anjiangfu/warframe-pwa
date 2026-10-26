@@ -1,0 +1,12 @@
+[
+  {
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 build\n> tsc --noEmit && vite build\n\nvite v8.3.4 building client environment for production...\ntransforming...\n✓ 59 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.54 kB │ gzip:   0.39 kB\ndist/assets/index-zS_Vl8mG.css   31.22 kB │ gzip:   7.52 kB\ndist/assets/index-BCnOHzjJ.js   748.82 kB │ gzip: 195.64 kB\n\n✓ built in 218ms\n[plugin builtin:vite-reporter] \n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n"
+  },
+  {
+    "command": "npm.cmd run test:browser -- _independent-hex-draft.spec.ts --reporter=line",
+    "exitCode": 0,
+    "output": "\n> tenno-local-planner@0.1.0 test:browser\n> playwright test _independent-hex-draft.spec.ts --reporter=line\n\n\n\nRunning 1 test using 1 worker\n\n\n\n[1/1] e2e\\_independent-hex-draft.spec.ts:4:1 › saving a target must preserve an unsaved rank and standing draft\n  1 passed (4.2s)\n[WebServer] (node:41660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:23064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+]

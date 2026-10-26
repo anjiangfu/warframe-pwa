@@ -1,0 +1,27 @@
+[
+  {
+    "command": "node --test tools/relic-source-check-v0/match.test.mjs",
+    "exitCode": 0,
+    "output": "✔ all 62 real rows independently match the author audit within mission acquisition tables (63.2378ms)\n✔ not-listed requires a successfully read exact heading and nonempty exact rotation (0.9017ms)\n✔ a name in relicRewards without the mission section cannot prove acquisition (0.2523ms)\n✔ missing heading and missing rotation are unknown rather than absent rows (0.3339ms)\n✔ malformed rows, unbalanced markup, script content and failed transport cannot become not-listed (0.6037ms)\n✔ duplicate headings or duplicate matching rows are conflicts, not listed (0.3428ms)\n✔ missing publication, acquisition or verification date never becomes dated listed evidence (0.42ms)\n✔ Caches suffix is used once and Tyana keeps original Defense table identity and mirror rule (46.4393ms)\n✔ same name in another location or rotation does not pass and no source probabilities enter output (0.6161ms)\n✔ fixed input processing is deterministic, readonly and hash mismatches fail before parsing (9.1408ms)\nℹ tests 10\nℹ suites 0\nℹ pass 10\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 230.9357\n"
+  },
+  {
+    "command": "node --test tools/relic-query-v2/convert.test.mjs",
+    "exitCode": 0,
+    "output": "✔ fixed original inputs produce the independently audited complete rows and exact two-node excerpts (190.8253ms)\n✔ conversion is byte deterministic, nonmutating and preserves all old records including sources (437.201ms)\n✔ new 59 exact names and the quantity combination match independent identity audit, without fuzzy bindings (122.6443ms)\n✔ raw hash mismatch is rejected before parsing or generating a catalog (3.4461ms)\n✔ duplicate Intact, incomplete table, conflicting upstream identity and an unknown item type fail explicitly (336.0854ms)\n✔ missing or conflicting exact Chinese evidence stays pending and does not invent translations (283.0849ms)\n✔ missing route or unexpected selected relic is reported, never replaced with invented rows (75.9037ms)\nℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1583.2652\n"
+  },
+  {
+    "command": "node tools/relic-query-v2/convert.mjs .v/pg/relics.check.json",
+    "exitCode": 0,
+    "output": "{\"output\":\"D:\\\\wf\\\\Warframe_PWA_Handoff_20261016\\\\.v\\\\pg\\\\relics.check.json\",\"relics\":31,\"rewards\":117,\"relations\":186,\"acquisitions\":62}\n"
+  },
+  {
+    "command": "node tools/relic-source-check-v0/generate.mjs .v/pg/source-checks.check.json",
+    "exitCode": 0,
+    "output": "{\"output\":\"D:\\\\wf\\\\Warframe_PWA_Handoff_20261016\\\\.v\\\\pg\\\\source-checks.check.json\",\"records\":62,\"statuses\":{\"listed\":62,\"not-listed\":0,\"conflicting\":0,\"unverified\":0},\"sha256\":\"c31c421954adbd46ec962d40f71d7e7360df3248bd43ce8885d89b7375ddd3d9\"}\n"
+  },
+  {
+    "command": "node tools/prime-equipment-v0/generate.mjs .v/pg/equipment.check.json",
+    "exitCode": 0,
+    "output": "Generated bounded parent metadata, not recipes: 35\n"
+  }
+]

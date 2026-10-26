@@ -1,0 +1,9 @@
+{
+  "browser": "156.0.8078.47",
+  "platform": "win32",
+  "headless": true,
+  "profile": "isolated test profile",
+  "actualProfilePath": "D:\\wf\\Warframe_PWA_Handoff_20261016\\.v\\pg\\app\\.b\\f0ec4a98",
+  "realCloseAndRelaunch": true,
+  "date": "2026-10-26T08:58:29.318Z"
+}

@@ -1,0 +1,18 @@
+{
+  "cause": "First G1 red vitest command incorrectly ran in root app. Existing Vite closeBundle plugin also writes SW/build-info when its test server closes. This is an operator isolation error, not the historical SW-ready timeout. No real browser or DB used by unit tests.",
+  "changes": [
+    {
+      "path": "app/dist/build-info.json",
+      "expected": "bf5d1e42d37bcdcc4327d43b200c28f6437abcfc38e1357b34a0b1a865fac107",
+      "observed": "72a042eb575aad2d208c4e6772e1f578aec687276d47844419cd6a9ff852582f",
+      "restoredFrom": ".v/m0r/app/dist/build-info.json"
+    },
+    {
+      "path": "app/dist/sw.js",
+      "expected": "1953165622ab146351f6c001f91547b8f42798bb4cb3dd5692fd7e5c06136a46",
+      "observed": "9901a87ba5f20ed08e9e4f576afd739cc9313488f503a8eedf68401d7135590b",
+      "restoredFrom": ".v/m0r/app/dist/sw.js"
+    }
+  ],
+  "allNineRestored": true
+}

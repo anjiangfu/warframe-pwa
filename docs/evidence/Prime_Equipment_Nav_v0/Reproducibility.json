@@ -1,0 +1,23 @@
+[
+  {
+    "original": "app/src/catalog/relics.v1.json",
+    "regenerated": ".v/pg/relics.check.json",
+    "originalSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+    "regeneratedSha256": "3d096dc77c3b7102c8b9bcf125918f33f54e35e97d997d667c0d3e69b7710a05",
+    "equal": true
+  },
+  {
+    "original": "app/src/catalog/relic-source-checks.v1.json",
+    "regenerated": ".v/pg/source-checks.check.json",
+    "originalSha256": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+    "regeneratedSha256": "79cf02628467b1f53d6b6896229e56c926136f4c9b3a8ef3379d4cd8cd600651",
+    "equal": true
+  },
+  {
+    "original": "app/src/catalog/prime-equipment.v1.json",
+    "regenerated": ".v/pg/equipment.check.json",
+    "originalSha256": "534e2314d5987304f786771ebc33572772ddad8c20979dbc44d926131e844084",
+    "regeneratedSha256": "534e2314d5987304f786771ebc33572772ddad8c20979dbc44d926131e844084",
+    "equal": true
+  }
+]
