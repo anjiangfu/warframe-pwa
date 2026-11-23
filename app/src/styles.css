@@ -188,3 +188,71 @@
   .candidate-actions select{max-width:100%;flex:1 1 130px}
   .sidebar nav button{font-size:9px;padding:5px 2px;min-height:40px}
 }
+
+/* Collapsible legacy sidebar group & Live Wiki / Helminth pages */
+.sidebar-more{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.sidebar-more summary{cursor:pointer;font-size:11px;color:#7895ae;padding:6px 8px;list-style:none}
+.sidebar-more summary::before{content:'▸ ';display:inline-block}
+.sidebar-more[open] summary::before{content:'▾ '}
+.sidebar-more-list{display:grid;gap:3px;margin-top:6px}
+.sidebar-more-list button{display:flex;align-items:center;gap:8px;text-align:left;background:transparent;border-color:transparent;color:#7e98b0;min-height:34px;padding:4px 10px;font-size:12px}
+.sidebar-more-list button span{font-size:15px;width:20px}
+.sidebar-more-list button i{margin-left:auto;font-style:normal;opacity:.4}
+.sidebar-more-list button.active{background:#14303d;border-color:#2b5966;color:#9fede3}
+.live-wiki-page{display:grid;gap:18px;min-width:0}
+.wiki-mode-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.wiki-mode-tabs button[aria-selected=true]{border-color:var(--cyan);color:var(--cyan);background:#153140}
+.wiki-search-box{display:grid;gap:12px}
+.wiki-search-form{display:flex;gap:10px;flex-wrap:wrap}
+.wiki-search-form input{flex:1 1 240px;min-width:0}
+.wiki-quick-chips{margin-top:2px}
+.wiki-recent-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wiki-recent-row small{color:var(--muted);font-size:11px}
+.wiki-columns{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:18px;align-items:start}
+.wiki-results-col h3{margin:0 0 12px;font-size:16px;font-weight:500}
+.wiki-result-list{display:grid;gap:8px;max-height:70dvh;overflow-y:auto}
+.wiki-result-list button{text-align:left;display:grid;gap:4px;padding:10px 12px;background:#0b182a;border:1px solid #263f54}
+.wiki-result-list button.active,.wiki-result-list button:hover{border-color:var(--cyan);background:#132b3d}
+.wiki-result-list strong{font-size:14px;color:#eaf6ff;overflow-wrap:anywhere}
+.wiki-result-list small{font-size:11px;color:var(--muted);overflow-wrap:anywhere}
+.wiki-detail-col{display:grid;gap:16px;min-width:0;overflow-wrap:anywhere}
+.wiki-detail-actions{display:flex;gap:8px;flex-wrap:wrap}
+.wiki-desc{margin:0;color:#b7cedf;line-height:1.8;font-size:13px}
+.wiki-ext-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 12px;background:#0a1728;border:1px solid #29445b;border-radius:8px;font-size:12px;color:var(--muted)}
+.wiki-ext-bar a{color:var(--cyan);text-decoration:none;padding:4px 8px;border:1px solid #2d5164;border-radius:6px;background:#112536}
+.wiki-ext-bar a:hover{border-color:var(--cyan)}
+.wiki-helminth-box{padding:14px;border-left:3px solid #b8df75;background:#13262a;border-radius:6px}
+.wiki-helminth-box strong{display:block;font-size:16px;color:#ddf6b9;margin:4px 0 6px}
+.wiki-helminth-box p{margin:0;font-size:12px;color:#c2d7cf;line-height:1.7}
+.wiki-section{border-top:1px solid var(--line);padding-top:14px;display:grid;gap:10px}
+.wiki-section h4{margin:0;font-size:15px;color:#dceef5}
+.wiki-comp-list{display:grid;gap:10px}
+.wiki-comp-card{background:#0b182a;border:1px solid #284258;border-radius:8px;padding:12px;display:grid;gap:6px}
+.wiki-comp-head{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.wiki-comp-head button{min-height:34px;padding:4px 10px;font-size:11px}
+.wiki-loc-hint{margin:0;font-size:12px;color:#93d6c9}
+.wiki-drop-ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.wiki-drop-ul li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;font-size:12px;padding:6px 8px;background:#0f2033;border-radius:6px;color:#c6daea}
+.wiki-drop-ul li b{color:var(--cyan);font-family:Consolas,monospace;font-size:11px}
+.wiki-ability-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.wiki-ability-card{background:#0b182a;border:1px solid #263e52;border-radius:8px;padding:12px}
+.wiki-ability-card strong{display:block;font-size:13px;color:#e4f4ff;margin-bottom:6px}
+.wiki-ability-card p{margin:0;font-size:12px;color:#adc5d8;line-height:1.7}
+.helminth-panel{display:grid;gap:14px}
+.helminth-controls{display:grid;gap:10px}
+.helminth-controls input{width:100%}
+.helminth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px}
+.helminth-card{background:#0b1929;border:1px solid #29445a;border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;line-height:1.7}
+.helminth-card h4{margin:4px 0 0;font-size:16px;color:#eaf6ff}
+.helminth-card p{margin:0;font-size:12px;color:#b8cedf}
+.helminth-source b{color:#dceef5}
+@media(max-width:900px){.wiki-columns{grid-template-columns:minmax(0,1fr)}.wiki-ability-grid{grid-template-columns:1fr}}
+@media(max-width:700px){
+  .sidebar-more{margin-top:6px;padding-top:4px;border-top:1px solid #1e3147}
+  .sidebar-more summary{font-size:10px;padding:4px 2px}
+  .sidebar-more-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+  .sidebar-more-list button{justify-content:center;padding:5px 4px;font-size:10px;min-height:36px;border:1px solid #23384d}
+  .sidebar-more-list button span,.sidebar-more-list button i{display:none}
+  .wiki-search-form button{width:100%}
+  .live-wiki-page,.wiki-search-box,.wiki-results-col,.wiki-detail-col,.helminth-panel{min-width:0;max-width:100%}
+}

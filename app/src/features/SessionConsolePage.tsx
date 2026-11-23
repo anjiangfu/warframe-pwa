@@ -31,6 +31,7 @@ import {
   saveActivityReview,
   type ActivityReviewMap,
 } from '../storage/activity-review-store';
+import type {PinnedWikiTarget} from '../storage/pinned-targets-store';
 import {ActivityReviewPanel} from './ActivityReviewPanel';
 
 interface Props {
@@ -42,6 +43,11 @@ interface Props {
   worldStateLoading: boolean;
   worldStateError: string;
   online: boolean;
+  busy?: boolean;
+  pinnedTargets?: PinnedWikiTarget[];
+  onRemovePinnedTarget?: (id: string) => void;
+  onOpenWiki?: () => void;
+  onBumpMasteryRank?: () => void;
   onSyncWorldState: () => void;
   onNavigate: (target: ConsoleNavTarget) => void;
   onCreateProfile: (template: boolean) => void;
@@ -83,6 +89,11 @@ export function SessionConsolePage({
   worldStateLoading,
   worldStateError,
   online,
+  busy = false,
+  pinnedTargets = [],
+  onRemovePinnedTarget,
+  onOpenWiki,
+  onBumpMasteryRank,
   onSyncWorldState,
   onNavigate,
   onCreateProfile,
@@ -181,8 +192,8 @@ export function SessionConsolePage({
   }, [activeWorld, fissureFilter]);
 
   const rawCandidates = useMemo(
-    () => buildConsoleCandidates(profile, catalog, actionCatalogs, worldState, nowMs, reviews),
-    [profile, catalog, actionCatalogs, worldState, nowMs, reviews],
+    () => buildConsoleCandidates(profile, catalog, actionCatalogs, worldState, nowMs, reviews, pinnedTargets),
+    [profile, catalog, actionCatalogs, worldState, nowMs, reviews, pinnedTargets],
   );
 
   const sortedCandidates = useMemo(
@@ -299,6 +310,21 @@ export function SessionConsolePage({
           </p>
         </div>
         <div className="console-sync-actions">
+          {profile && onBumpMasteryRank && (
+            <button
+              type="button"
+              disabled={busy}
+              onClick={onBumpMasteryRank}
+              data-testid="quick-mr-bump"
+            >
+              MR{profile.masteryRank ?? '?'} · ＋1 涨段位
+            </button>
+          )}
+          {onOpenWiki && (
+            <button type="button" onClick={onOpenWiki} data-testid="console-open-wiki">
+              ⌕ 全能速查
+            </button>
+          )}
           <button
             className="primary"
             disabled={worldStateLoading || !online}
@@ -841,6 +867,15 @@ export function SessionConsolePage({
                         onClick={() => jumpToReviewEditor(candidate.eventId!)}
                       >
                         {candidate.reviewRecord ? '编辑活动评估' : '核实并录入细则'}
+                      </button>
+                    )}
+
+                    {candidate.pinnedId && onRemovePinnedTarget && (
+                      <button
+                        type="button"
+                        onClick={() => onRemovePinnedTarget(candidate.pinnedId!)}
+                      >
+                        移除自选
                       </button>
                     )}
 

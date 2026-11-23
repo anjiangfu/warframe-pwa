@@ -13,6 +13,7 @@ import {
   isExpired,
   type WorldStateSnapshot,
 } from './worldstate';
+import type {PinnedWikiTarget} from '../storage/pinned-targets-store';
 
 export type SessionPreference = 'priority' | 'done_today' | 'deferred' | 'skip';
 
@@ -64,6 +65,7 @@ export interface ConsoleCandidate {
   navTarget?: ConsoleNavTarget;
   actionItem?: ActionItem;
   eventId?: string;
+  pinnedId?: string;
   recommendation?: ActivityRecommendation;
   reviewRecord?: ActivityReviewRecord;
 }
@@ -103,8 +105,29 @@ export function buildConsoleCandidates(
   worldState: WorldStateSnapshot | null,
   nowMs = Date.now(),
   activityReviews: Record<string, ActivityReviewRecord> = {},
+  pinnedTargets: PinnedWikiTarget[] = [],
 ): ConsoleCandidate[] {
   const candidates: ConsoleCandidate[] = [];
+
+  for (const pin of pinnedTargets) {
+    candidates.push({
+      id: pin.id,
+      sourceKind: 'profile-action',
+      title: `自选速查目标 · ${pin.title}`,
+      where: pin.where,
+      why: pin.why,
+      whatNext: pin.whatNext,
+      focused: true,
+      eligibility: 'unverified',
+      eligibilityNote: '你从全能速查加入的个人目标，请以游戏内实际段位与前置为准',
+      credibility: 'personal-record',
+      credibilityLabel: '全能速查 · 自选目标',
+      expiry: null,
+      externalUrl: pin.externalUrl,
+      unknowns: [],
+      pinnedId: pin.id,
+    });
+  }
 
   if (profile) {
     const derived = deriveActions(profile, actionCatalogs);
