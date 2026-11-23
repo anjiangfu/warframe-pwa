@@ -1,6 +1,7 @@
 import type {OnlineCacheMeta} from './model';
 
-export const WFCD_PC_ENDPOINT = 'https://api.warframestat.us/pc?language=zh';
+export const WFCD_PC_ENDPOINT = 'https://api.warframestat.us/pc/?language=zh';
+export const WFCD_PC_FALLBACK_ENDPOINT = 'https://api.warframestat.us/pc/';
 export const DEFAULT_WORLDSTATE_TTL_MS = 5 * 60 * 1000;
 
 export interface CycleSummary {
@@ -587,7 +588,7 @@ export function parseWorldStatePayload(
       expiresAt,
       sourceUrl,
       reviewedAt: null,
-      gamePatch: null,
+      gamePatch: asString(root.buildLabel),
     },
     cycles,
     voidTrader: parseVoidTrader(root.voidTrader),

@@ -2,6 +2,7 @@ import 'fake-indexeddb/auto';
 import {describe,expect,it} from 'vitest';
 import {
   DEFAULT_WORLDSTATE_TTL_MS,
+  WFCD_PC_ENDPOINT,
   filterActiveSnapshot,
   formatRemaining,
   getCacheFreshness,
@@ -197,7 +198,9 @@ describe('WFCD worldstate parser & cache', () => {
     const dbName = 'ws-test-' + crypto.randomUUID();
     const db = await openDatabase(dbName);
     let capturedCredentials: RequestCredentials | undefined;
-    const mockFetch: typeof fetch = async (_input, init) => {
+    let capturedUrl = '';
+    const mockFetch: typeof fetch = async (input, init) => {
+      capturedUrl = String(input);
       capturedCredentials = init?.credentials;
       return new Response(JSON.stringify(samplePayload), {
         status: 200,
@@ -210,6 +213,8 @@ describe('WFCD worldstate parser & cache', () => {
         fetcher: mockFetch,
         now: () => new Date('2026-11-23T07:10:00.000Z'),
       });
+      expect(capturedUrl).toBe(WFCD_PC_ENDPOINT);
+      expect(capturedUrl).toContain('/pc/?language=zh');
       expect(capturedCredentials).toBe('omit');
       const reloaded = await loadWorldStateCache(db);
       expect(reloaded?.meta.fetchedAt).toBe(saved.meta.fetchedAt);

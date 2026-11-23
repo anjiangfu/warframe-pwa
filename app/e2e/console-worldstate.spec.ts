@@ -74,7 +74,7 @@ test('WFCD worldstate sync, activity manual review priority, and 90-minute bucke
   page,
   context,
 }) => {
-  await page.route('https://api.warframestat.us/pc*', async route => {
+  await page.route('https://api.warframestat.us/pc/**', async route => {
     await route.fulfill({
       status: 200,
       contentType: 'application/json',
@@ -134,16 +134,16 @@ test('WFCD worldstate sync, activity manual review priority, and 90-minute bucke
   await expect(eventCandidate).toContainText('官方活动页人工确认');
   await expect(eventCandidate).toContainText('活动限定纹章');
 
-  // Add to today's bucket, set manual minutes = 45, switch budget = 60.
+  // Add to today's checklist and toggle done (no time-box budget UI)
   await eventCandidate.getByRole('button', {name: '＋ 加入今日清单'}).click();
   const bucketRow = page.getByTestId('bucket:ws:event:ev-active-e2e');
-  await bucketRow.locator('input[type="number"]').fill('45');
-  await page.getByRole('button', {name: '60分'}).click();
-  await expect(page.getByTestId('console-allocated-minutes')).toHaveText('45 分');
+  await expect(page.getByTestId('console-today-list')).toContainText('已完成 0 / 1');
+  await bucketRow.locator('input[type="checkbox"]').check();
+  await expect(page.getByTestId('console-today-list')).toContainText('已完成 1 / 1');
 
   // Reload and verify IndexedDB persistence even when offline.
   await page.reload();
-  await expect(page.getByTestId('console-allocated-minutes')).toHaveText('45 分');
+  await expect(page.getByTestId('console-today-list')).toContainText('已完成 1 / 1');
   await expect(page.getByTestId('worldstate-freshness')).toContainText('缓存有效');
   await expect(page.getByTestId('saved-review:ev-active-e2e')).toContainText('活动限定纹章');
 

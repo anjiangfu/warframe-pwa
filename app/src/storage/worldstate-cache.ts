@@ -2,6 +2,7 @@ import type {PlannerDB} from './db';
 import {
   DEFAULT_WORLDSTATE_TTL_MS,
   WFCD_PC_ENDPOINT,
+  WFCD_PC_FALLBACK_ENDPOINT,
   parseWorldStatePayload,
   type WorldStateSnapshot,
 } from '../domain/worldstate';
@@ -34,34 +35,19 @@ export interface FetchWorldStateOptions {
   now?: () => Date;
 }
 
-export async function fetchAndCacheWorldState(
-  db?: PlannerDB,
-  options: FetchWorldStateOptions = {},
-): Promise<WorldStateSnapshot> {
-  const endpoint = options.endpoint ?? WFCD_PC_ENDPOINT;
-  const fetcher = options.fetcher ?? globalThis.fetch;
-  const timeoutMs = options.timeoutMs ?? 12000;
-  const ttlMs = options.ttlMs ?? DEFAULT_WORLDSTATE_TTL_MS;
-  const nowIso = (options.now?.() ?? new Date()).toISOString();
-
+async function fetchJsonOnce(url: string, fetcher: typeof fetch, timeoutMs: number): Promise<unknown> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetcher(endpoint, {
+    const response = await fetcher(url, {
       method: 'GET',
       credentials: 'omit',
-      headers: {Accept: 'application/json'},
       signal: controller.signal,
     });
     if (!response.ok) {
       throw new Error(`WFCD 世界状态请求失败（HTTP ${response.status}）`);
     }
-    const json: unknown = await response.json();
-    const snapshot = parseWorldStatePayload(json, nowIso, endpoint, ttlMs);
-    if (db && !db.unavailable) {
-      await saveWorldStateCache(db, snapshot);
-    }
-    return snapshot;
+    return await response.json();
   } catch (error) {
     if (error instanceof Error && error.name === 'AbortError') {
       throw new Error('WFCD 世界状态同步超时，已保留上次缓存。', {cause: error});
@@ -70,4 +56,34 @@ export async function fetchAndCacheWorldState(
   } finally {
     clearTimeout(timer);
   }
+}
+
+export async function fetchAndCacheWorldState(
+  db?: PlannerDB,
+  options: FetchWorldStateOptions = {},
+): Promise<WorldStateSnapshot> {
+  const endpoint = options.endpoint ?? WFCD_PC_ENDPOINT;
+  const fetcher = options.fetcher ?? globalThis.fetch;
+  const timeoutMs = options.timeoutMs ?? 18000;
+  const ttlMs = options.ttlMs ?? DEFAULT_WORLDSTATE_TTL_MS;
+  const nowIso = (options.now?.() ?? new Date()).toISOString();
+
+  let usedEndpoint = endpoint;
+  let json: unknown;
+  try {
+    json = await fetchJsonOnce(endpoint, fetcher, timeoutMs);
+  } catch (firstError) {
+    if (!options.endpoint && endpoint !== WFCD_PC_FALLBACK_ENDPOINT) {
+      usedEndpoint = WFCD_PC_FALLBACK_ENDPOINT;
+      json = await fetchJsonOnce(WFCD_PC_FALLBACK_ENDPOINT, fetcher, timeoutMs);
+    } else {
+      throw firstError;
+    }
+  }
+
+  const snapshot = parseWorldStatePayload(json, nowIso, usedEndpoint, ttlMs);
+  if (db && !db.unavailable) {
+    await saveWorldStateCache(db, snapshot);
+  }
+  return snapshot;
 }
