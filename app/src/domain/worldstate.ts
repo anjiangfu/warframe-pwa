@@ -26,6 +26,7 @@ export interface VoidTraderSummary {
   expiry: string | null;
   inventoryCount: number;
   inventorySample: VoidTraderInventoryItem[];
+  inventoryItems?: VoidTraderInventoryItem[];
 }
 
 export interface WorldEventSummary {
@@ -88,6 +89,7 @@ export interface FissureSummary {
   normalCount: number;
   byTier: Record<string, number>;
   highlights: FissureHighlight[];
+  allActive?: FissureHighlight[];
 }
 
 export interface NewsItemSummary {
@@ -115,6 +117,8 @@ export interface WorldStateSnapshot {
 
 export type CacheFreshness = 'empty' | 'fresh' | 'stale';
 
+const HAS_CJK = /[\u4e00-\u9fff]/;
+
 const STATE_LABELS: Record<string, string> = {
   day: '白昼（Day）',
   night: '夜晚（Night）',
@@ -138,6 +142,72 @@ const TIER_LABELS: Record<string, string> = {
   Axi: '后纪（Axi）',
   Requiem: '安魂（Requiem）',
   Omnia: '全能（Omnia）',
+};
+
+const MISSION_TYPE_LABELS: Record<string, string> = {
+  capture: '捕获（Capture）',
+  exterminate: '歼灭（Exterminate）',
+  extermination: '歼灭（Exterminate）',
+  survival: '生存（Survival）',
+  defense: '防御（Defense）',
+  'mobile defense': '移动防御（Mobile Defense）',
+  spy: '间谍（Spy）',
+  rescue: '救援（Rescue）',
+  sabotage: '破坏（Sabotage）',
+  disruption: '中断（Disruption）',
+  interception: '拦截（Interception）',
+  excavation: '挖掘（Excavation）',
+  hijack: '劫持（Hijack）',
+  assassination: '刺杀（Assassination）',
+  defection: '叛逃（Defection）',
+  alchemy: '炼金（Alchemy）',
+  'void cascade': '虚空覆涌（Void Cascade）',
+  'void flood': '虚空洪流（Void Flood）',
+  'void armageddon': '虚空末日（Void Armageddon）',
+  'mirror defense': '镜像防御（Mirror Defense）',
+  'conjunction survival': '结合生存（Conjunction Survival）',
+  skirmish: '前哨战（Skirmish）',
+  volatile: '爆发（Volatile）',
+  orpheus: '奥菲斯（Orphix）',
+  orphix: '奥菲斯（Orphix）',
+  'crossfire exterminate': '多方交战歼灭（Crossfire Exterminate）',
+  hive: '清巢（Hive）',
+  infested: '感染者清剿（Infested）',
+};
+
+const FACTION_LABELS: Record<string, string> = {
+  grineer: 'Grineer（克隆尼）',
+  corpus: 'Corpus（科普斯）',
+  infested: 'Infested（感染者）',
+  corrupted: 'Corrupted（堕落者）',
+  orokin: 'Orokin（奥罗金）',
+  narmer: '合一众（Narmer）',
+  'the murmur': '低语者（The Murmur）',
+  murmur: '低语者（The Murmur）',
+  scaldra: '炽蛇军（Scaldra）',
+  techrot: '科腐者（Techrot）',
+  crossfire: '多方交战（Crossfire）',
+};
+
+const MODIFIER_LABELS: Record<string, string> = {
+  'augmented enemy armor': '敌人护甲强化（Augmented Enemy Armor）',
+  'augmented enemy shields': '敌人护盾强化（Augmented Enemy Shields）',
+  'energy reduction': '能量上限降低（Energy Reduction）',
+  'eximus stronghold': '卓越者大本营（Eximus Stronghold）',
+  'extreme cold': '极度寒冷（Extreme Cold）',
+  'dense fog': '浓雾（Dense Fog）',
+  'radiation hazard': '辐射灾害（Radiation Hazard）',
+  'cryogenic leakage': '低温泄漏（Cryogenic Leakage）',
+  'electromagnetic anomalies': '电磁异常（Electromagnetic Anomalies）',
+  'fire': '火灾环境（Fire）',
+  'low gravity': '低重力（Low Gravity）',
+  'weapon restriction: melee only': '武器限制：仅近战（Melee Only）',
+  'weapon restriction: primary only': '武器限制：仅主武器（Primary Only）',
+  'weapon restriction: secondary only': '武器限制：仅副武器（Secondary Only）',
+  'weapon restriction: sniper only': '武器限制：仅狙击枪（Sniper Only）',
+  'weapon restriction: bow only': '武器限制：仅弓箭（Bow Only）',
+  'weapon restriction: shotgun only': '武器限制：仅霰弹枪（Shotgun Only）',
+  'weapon restriction: assault rifle only': '武器限制：仅突击步枪（Assault Rifle Only）',
 };
 
 function asObject(v: unknown): Record<string, unknown> | null {
@@ -164,7 +234,33 @@ function translateState(raw: string): string {
 }
 
 export function translateFissureTier(tier: string): string {
+  if (HAS_CJK.test(tier)) return tier;
   return TIER_LABELS[tier] ?? tier;
+}
+
+export function translateMissionType(raw: string): string {
+  if (HAS_CJK.test(raw)) return raw;
+  return MISSION_TYPE_LABELS[raw.trim().toLowerCase()] ?? raw;
+}
+
+export function translateFaction(raw: string): string {
+  if (HAS_CJK.test(raw)) return raw;
+  return FACTION_LABELS[raw.trim().toLowerCase()] ?? raw;
+}
+
+export function translateModifier(raw: string): string {
+  if (HAS_CJK.test(raw)) return raw;
+  const lower = raw.trim().toLowerCase();
+  if (MODIFIER_LABELS[lower]) return MODIFIER_LABELS[lower];
+  if (lower.startsWith('enemy elemental enhancement:')) {
+    const elem = raw.slice(raw.indexOf(':') + 1).trim();
+    return `敌人元素强化：${elem}（${raw}）`;
+  }
+  if (lower.startsWith('enemy physical enhancement:')) {
+    const phys = raw.slice(raw.indexOf(':') + 1).trim();
+    return `敌人物理强化：${phys}（${raw}）`;
+  }
+  return raw;
 }
 
 export function isExpired(expiry: string | null | undefined, nowMs = Date.now()): boolean {
@@ -227,25 +323,31 @@ function parseVoidTrader(raw: unknown): VoidTraderSummary | null {
   const obj = asObject(raw);
   if (!obj) return null;
   const inventoryRaw = Array.isArray(obj.inventory) ? obj.inventory : [];
-  const inventorySample: VoidTraderInventoryItem[] = [];
-  for (const entry of inventoryRaw.slice(0, 8)) {
+  const inventoryItems: VoidTraderInventoryItem[] = [];
+  for (const entry of inventoryRaw.slice(0, 60)) {
     const row = asObject(entry);
     const item = asString(row?.item);
     if (!item) continue;
-    inventorySample.push({
+    inventoryItems.push({
       item,
       ducats: asNumber(row?.ducats),
       credits: asNumber(row?.credits),
     });
   }
+  const rawChar = asString(obj.character);
+  const character =
+    rawChar && rawChar.toLowerCase() === "baro ki'teer"
+      ? "虚空商人（Baro Ki'Teer）"
+      : rawChar ?? "虚空商人（Baro Ki'Teer）";
   return {
     active: Boolean(obj.active),
-    character: asString(obj.character) ?? "虚空商人（Baro Ki'Teer）",
+    character,
     location: asString(obj.location) ?? '位置待公布',
     activation: asIsoDate(obj.activation),
     expiry: asIsoDate(obj.expiry),
     inventoryCount: inventoryRaw.length,
-    inventorySample,
+    inventorySample: inventoryItems.slice(0, 8),
+    inventoryItems,
   };
 }
 
@@ -274,10 +376,11 @@ function parseEvents(raw: unknown): WorldEventSummary[] {
     else if (score !== null && maxScore !== null && maxScore > 0) {
       progressPercent = Math.max(0, Math.min(100, Math.round((score / maxScore) * 100)));
     }
+    const rawFaction = asString(obj.faction);
     list.push({
       id,
       title,
-      faction: asString(obj.faction),
+      faction: rawFaction ? translateFaction(rawFaction) : null,
       node: asString(obj.node) ?? asString(obj.victimNode),
       description: asString(obj.tooltip),
       expiry: asIsoDate(obj.expiry),
@@ -331,16 +434,18 @@ function parseSortie(raw: unknown): SortieSummary | null {
       const missionType = asString(row?.missionType);
       const node = asString(row?.node);
       if (!missionType || !node) return null;
+      const rawModifier = asString(row?.modifier);
       return {
-        missionType,
-        modifier: asString(row?.modifier) ?? '无附加词条',
+        missionType: translateMissionType(missionType),
+        modifier: rawModifier ? translateModifier(rawModifier) : '无附加词条',
         node,
       };
     })
     .filter((v): v is {missionType: string; modifier: string; node: string} => v !== null);
+  const rawFaction = asString(obj.faction);
   return {
     boss,
-    faction: asString(obj.faction) ?? '未知派系',
+    faction: rawFaction ? translateFaction(rawFaction) : '未知派系',
     expiry: asIsoDate(obj.expiry),
     variants,
   };
@@ -358,22 +463,30 @@ function parseArchonHunt(raw: unknown): ArchonHuntSummary | null {
       const type = asString(row?.type);
       const node = asString(row?.node);
       if (!type || !node) return null;
-      return {type, node};
+      return {type: translateMissionType(type), node};
     })
     .filter((v): v is {type: string; node: string} => v !== null);
+  const rawFaction = asString(obj.faction);
   return {
     boss,
-    faction: asString(obj.faction) ?? '合一众（Narmer）',
+    faction: rawFaction ? translateFaction(rawFaction) : '合一众（Narmer）',
     expiry: asIsoDate(obj.expiry),
     missions,
   };
 }
 
 function parseFissures(raw: unknown): FissureSummary {
-  const empty: FissureSummary = {totalActive: 0, steelPathCount: 0, normalCount: 0, byTier: {}, highlights: []};
+  const empty: FissureSummary = {
+    totalActive: 0,
+    steelPathCount: 0,
+    normalCount: 0,
+    byTier: {},
+    highlights: [],
+    allActive: [],
+  };
   if (!Array.isArray(raw)) return empty;
   const byTier: Record<string, number> = {};
-  const highlights: FissureHighlight[] = [];
+  const allActive: FissureHighlight[] = [];
   let steelPathCount = 0;
   let normalCount = 0;
 
@@ -390,27 +503,33 @@ function parseFissures(raw: unknown): FissureSummary {
     if (isHard) steelPathCount += 1;
     else normalCount += 1;
     byTier[tier] = (byTier[tier] ?? 0) + 1;
-    highlights.push({
+    const rawEnemy = asString(row.enemy);
+    allActive.push({
       id,
       tier,
       tierZh: translateFissureTier(tier),
-      missionType,
+      missionType: translateMissionType(missionType),
       node,
-      enemy: asString(row.enemy) ?? '未知派系',
+      enemy: rawEnemy ? translateFaction(rawEnemy) : '未知派系',
       isHard,
       isStorm,
       expiry: asIsoDate(row.expiry),
     });
   }
 
-  highlights.sort((a, b) => Number(b.tier === 'Omnia') - Number(a.tier === 'Omnia') || Number(b.isHard) - Number(a.isHard));
+  allActive.sort(
+    (a, b) =>
+      Number(b.tier === 'Omnia') - Number(a.tier === 'Omnia') ||
+      Number(b.isHard) - Number(a.isHard),
+  );
 
   return {
     totalActive: steelPathCount + normalCount,
     steelPathCount,
     normalCount,
     byTier,
-    highlights: highlights.slice(0, 8),
+    highlights: allActive.slice(0, 8),
+    allActive,
   };
 }
 
@@ -484,7 +603,8 @@ export function parseWorldStatePayload(
 export function filterActiveSnapshot(snapshot: WorldStateSnapshot, nowMs = Date.now()) {
   const activeEvents = snapshot.events.filter(e => !isExpired(e.expiry, nowMs));
   const expiredEventsCount = snapshot.events.length - activeEvents.length;
-  const activeFissures = snapshot.fissures.highlights.filter(f => !isExpired(f.expiry, nowMs));
+  const sourceFissures = snapshot.fissures.allActive ?? snapshot.fissures.highlights;
+  const activeFissures = sourceFissures.filter(f => !isExpired(f.expiry, nowMs));
   const activeChallenges = snapshot.nightwave?.activeChallenges.filter(c => !isExpired(c.expiry, nowMs)) ?? [];
   const sortieActive = snapshot.sortie && !isExpired(snapshot.sortie.expiry, nowMs) ? snapshot.sortie : null;
   const archonActive = snapshot.archonHunt && !isExpired(snapshot.archonHunt.expiry, nowMs) ? snapshot.archonHunt : null;

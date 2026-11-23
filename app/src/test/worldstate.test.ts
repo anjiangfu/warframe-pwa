@@ -147,6 +147,52 @@ describe('WFCD worldstate parser & cache', () => {
     expect(formatRemaining('2026-11-23T07:00:00.000Z', laterMs)).toContain('已过截止时间');
   });
 
+  it('translates English mission types, factions and sortie modifiers into bilingual Chinese while keeping existing Chinese intact', () => {
+    const englishPayload = {
+      voidTrader: {
+        active: true,
+        character: "Baro Ki'Teer",
+        location: 'Kronia Relay',
+        expiry: '2026-11-24T13:00:00.000Z',
+        inventory: Array.from({length: 10}, (_, i) => ({
+          item: `Primed Mod ${i + 1}`,
+          ducats: 300 + i * 10,
+          credits: 100000,
+        })),
+      },
+      sortie: {
+        boss: 'Sargas Ruk',
+        faction: 'Grineer',
+        expiry: '2026-11-23T16:00:00.000Z',
+        variants: [
+          {missionType: 'Capture', modifier: 'Augmented Enemy Armor', node: 'Saturn'},
+          {missionType: 'Void Cascade', modifier: 'Enemy Elemental Enhancement: Heat', node: 'Zariman'},
+        ],
+      },
+      fissures: [
+        {
+          id: 'fis-en',
+          tier: 'Axi',
+          missionType: 'Disruption',
+          node: 'Lua - Apollo',
+          enemy: 'Corrupted',
+          isHard: true,
+          expiry: '2026-11-23T08:00:00.000Z',
+        },
+      ],
+    };
+    const snapshot = parseWorldStatePayload(englishPayload, '2026-11-23T07:10:00.000Z');
+    expect(snapshot.voidTrader?.character).toBe("虚空商人（Baro Ki'Teer）");
+    expect(snapshot.voidTrader?.inventoryItems).toHaveLength(10);
+    expect(snapshot.sortie?.faction).toBe('Grineer（克隆尼）');
+    expect(snapshot.sortie?.variants[0].missionType).toBe('捕获（Capture）');
+    expect(snapshot.sortie?.variants[0].modifier).toContain('敌人护甲强化');
+    expect(snapshot.sortie?.variants[1].missionType).toBe('虚空覆涌（Void Cascade）');
+    expect(snapshot.sortie?.variants[1].modifier).toContain('敌人元素强化：Heat');
+    expect(snapshot.fissures.allActive?.[0].missionType).toBe('中断（Disruption）');
+    expect(snapshot.fissures.allActive?.[0].enemy).toBe('Corrupted（堕落者）');
+  });
+
   it('fetches without credentials and caches snapshot in IndexedDB meta without touching profiles', async () => {
     const dbName = 'ws-test-' + crypto.randomUUID();
     const db = await openDatabase(dbName);

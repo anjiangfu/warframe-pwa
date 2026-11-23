@@ -2,6 +2,11 @@ import {useEffect,useMemo,useState} from 'react';
 import type {Catalog,ProfileDocument} from '../domain/model';
 import type {ActionCatalogs} from '../domain/actions';
 import {
+  CREDIBILITY_LABELS,
+  RECOMMENDATION_LABELS,
+  type ActivityReviewRecord,
+} from '../domain/activity-review';
+import {
   filterActiveSnapshot,
   formatRemaining,
   getCacheFreshness,
@@ -20,6 +25,13 @@ import {
 } from '../domain/session-planner';
 import type {PlannerDB} from '../storage/db';
 import {loadDailySessionPlan,saveDailySessionPlan} from '../storage/session-plan-store';
+import {
+  deleteActivityReview,
+  loadActivityReviews,
+  saveActivityReview,
+  type ActivityReviewMap,
+} from '../storage/activity-review-store';
+import {ActivityReviewPanel} from './ActivityReviewPanel';
 
 interface Props {
   db?: PlannerDB;
@@ -77,7 +89,10 @@ export function SessionConsolePage({
 }: Props) {
   const defaultBudget = profile?.dailyMinutes ?? 90;
   const [plan, setPlan] = useState<DailySessionPlan>(() => createEmptySessionPlan(defaultBudget));
+  const [reviews, setReviews] = useState<ActivityReviewMap>({});
+  const [editingEventId, setEditingEventId] = useState<string | null>(null);
   const [filterKind, setFilterKind] = useState<'all' | 'profile' | 'worldstate'>('all');
+  const [fissureFilter, setFissureFilter] = useState<'all' | 'steel' | 'normal' | 'omnia'>('all');
   const [showSkipped, setShowSkipped] = useState(false);
   const [worldTab, setWorldTab] = useState<'cycles' | 'events' | 'missions' | 'news'>('cycles');
   const [nowMs, setNowMs] = useState(() => Date.now());
@@ -101,6 +116,17 @@ export function SessionConsolePage({
     };
   }, [db, profile?.id, defaultBudget]);
 
+  useEffect(() => {
+    let active = true;
+    if (!db) return;
+    void loadActivityReviews(db).then(loaded => {
+      if (active) setReviews(loaded);
+    });
+    return () => {
+      active = false;
+    };
+  }, [db]);
+
   function updatePlan(updater: (prev: DailySessionPlan) => DailySessionPlan) {
     setPlan(prev => {
       const next = {...updater(prev), updatedAt: new Date().toISOString()};
@@ -111,15 +137,52 @@ export function SessionConsolePage({
     });
   }
 
+  async function handleSaveReview(record: ActivityReviewRecord) {
+    if (db && !db.unavailable) {
+      const updated = await saveActivityReview(db, record);
+      setReviews(updated);
+    } else {
+      setReviews(prev => ({...prev, [record.eventId]: record}));
+    }
+  }
+
+  async function handleDeleteReview(eventId: string) {
+    if (db && !db.unavailable) {
+      const updated = await deleteActivityReview(db, eventId);
+      setReviews(updated);
+    } else {
+      setReviews(prev => {
+        const next = {...prev};
+        delete next[eventId];
+        return next;
+      });
+    }
+  }
+
+  function jumpToReviewEditor(eventId: string) {
+    setEditingEventId(eventId);
+    requestAnimationFrame(() => {
+      document.querySelector('.activity-review-panel')?.scrollIntoView({block: 'start', behavior: 'smooth'});
+    });
+  }
+
   const freshness = getCacheFreshness(worldState?.meta, nowMs);
   const activeWorld = useMemo(
     () => (worldState ? filterActiveSnapshot(worldState, nowMs) : null),
     [worldState, nowMs],
   );
 
+  const filteredFissures = useMemo(() => {
+    const base = activeWorld?.activeFissures ?? [];
+    if (fissureFilter === 'steel') return base.filter(f => f.isHard);
+    if (fissureFilter === 'normal') return base.filter(f => !f.isHard);
+    if (fissureFilter === 'omnia') return base.filter(f => f.tier === 'Omnia');
+    return base;
+  }, [activeWorld, fissureFilter]);
+
   const rawCandidates = useMemo(
-    () => buildConsoleCandidates(profile, catalog, actionCatalogs, worldState, nowMs),
-    [profile, catalog, actionCatalogs, worldState, nowMs],
+    () => buildConsoleCandidates(profile, catalog, actionCatalogs, worldState, nowMs, reviews),
+    [profile, catalog, actionCatalogs, worldState, nowMs, reviews],
   );
 
   const sortedCandidates = useMemo(
@@ -134,7 +197,7 @@ export function SessionConsolePage({
 
   const visibleCandidates = useMemo(() => {
     return sortedCandidates.filter(c => {
-      const pref = plan.preferences[c.id];
+      const pref = plan.preferences[c.id] as SessionPreference | undefined;
       if (!showSkipped && pref === 'skip') return false;
       if (filterKind === 'profile') {
         return c.sourceKind === 'profile-action' || c.sourceKind === 'tree-progress';
@@ -223,6 +286,8 @@ export function SessionConsolePage({
       ? Math.min(100, Math.round((budgetSummary.allocatedMinutes / budgetSummary.budgetMinutes) * 100))
       : 0;
 
+  const traderItems = worldState?.voidTrader?.inventoryItems ?? worldState?.voidTrader?.inventorySample ?? [];
+
   return (
     <section className="console-page" aria-label="90 分钟行动台与世界状态">
       <header className="section-heading">
@@ -230,7 +295,7 @@ export function SessionConsolePage({
           <p className="eyebrow">TODAY CONSOLE · 90 分钟行动台 &amp; WFCD 实时世界状态</p>
           <h2>今日行动台</h2>
           <p>
-            把你的本地养成进度与 WFCD 实时世界状态放到同一张工作台。系统不臆造每局耗时与未核实活动奖励；今日排程仅存本机，不修改游戏账号。
+            把你的本地养成进度与 WFCD 实时世界状态放到同一张工作台。系统不臆造每局耗时与未核实活动奖励；今日排程与活动人工核实仅存本机，不修改游戏账号。
           </p>
         </div>
         <div className="console-sync-actions">
@@ -469,7 +534,7 @@ export function SessionConsolePage({
               {worldTab === 'events' && (
                 <div className="ws-list">
                   {activeWorld.expiredEventsCount > 0 && (
-                    <p className="microcopy warning">
+                    <p className="microcopy warning" data-testid="expired-events-notice">
                       已自动隐藏 {activeWorld.expiredEventsCount} 条已过截止时间的旧缓存活动，不作为进行中活动展示。
                     </p>
                   )}
@@ -484,33 +549,55 @@ export function SessionConsolePage({
                           ? formatRemaining(worldState.voidTrader.expiry, nowMs)
                           : `到达：${formatRemaining(worldState.voidTrader.activation, nowMs)}`}
                       </p>
-                      {worldState.voidTrader.inventorySample.length > 0 && (
-                        <small>
-                          在售示例（共 {worldState.voidTrader.inventoryCount} 项）：
-                          {worldState.voidTrader.inventorySample
-                            .map(i => `${i.item}${i.ducats !== null ? ` (${i.ducats}杜卡德)` : ''}`)
-                            .join('、')}
-                        </small>
+                      {traderItems.length > 0 && (
+                        <details className="ws-trader-details">
+                          <summary>
+                            查看在售清单（共 {worldState.voidTrader.inventoryCount} 项，已载入 {traderItems.length} 项）
+                          </summary>
+                          <ul>
+                            {traderItems.map((i, idx) => (
+                              <li key={idx}>
+                                {i.item}
+                                {i.ducats !== null ? ` · ${i.ducats} 杜卡德` : ''}
+                                {i.credits !== null ? ` + ${i.credits.toLocaleString()} 星币` : ''}
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
                       )}
                     </article>
                   )}
                   {activeWorld.activeEvents.length === 0 ? (
                     <p className="microcopy">当前缓存内没有未过期的限时活动摘要。</p>
                   ) : (
-                    activeWorld.activeEvents.map(ev => (
-                      <article key={ev.id} className="ws-item">
-                        <h4>{ev.title}</h4>
-                        <p>
-                          {ev.node ? `地点：${ev.node} · ` : ''}
-                          {ev.progressPercent !== null ? `进度：${ev.progressPercent}% · ` : ''}
-                          {formatRemaining(ev.expiry, nowMs)}
-                        </p>
-                        {ev.rewardSummary.length > 0 && (
-                          <small>API 摘要奖励：{ev.rewardSummary.join('、')}</small>
-                        )}
-                        <small>可信度：官方实时 API 摘要（任务步骤与兑换优先级请对照官方公告核实）</small>
-                      </article>
-                    ))
+                    activeWorld.activeEvents.map(ev => {
+                      const review = reviews[ev.id];
+                      return (
+                        <article key={ev.id} className="ws-item" data-testid={'ws-event:' + ev.id}>
+                          <h4>{ev.title}</h4>
+                          <p>
+                            {ev.node ? `地点：${ev.node} · ` : ''}
+                            {ev.progressPercent !== null ? `进度：${ev.progressPercent}% · ` : ''}
+                            {formatRemaining(ev.expiry, nowMs)}
+                          </p>
+                          {ev.rewardSummary.length > 0 && (
+                            <small>API 摘要奖励：{ev.rewardSummary.join('、')}</small>
+                          )}
+                          {review ? (
+                            <small className="ws-verified-line">
+                              已人工核实：{RECOMMENDATION_LABELS[review.recommendation]} · {CREDIBILITY_LABELS[review.credibility]}
+                            </small>
+                          ) : (
+                            <small>可信度：官方实时 API 摘要（任务步骤与兑换优先级请对照官方公告核实）</small>
+                          )}
+                          <div className="ws-item-actions">
+                            <button type="button" onClick={() => jumpToReviewEditor(ev.id)}>
+                              {review ? '✎ 编辑活动评估' : '＋ 核实并录入细则'}
+                            </button>
+                          </div>
+                        </article>
+                      );
+                    })
                   )}
                 </div>
               )}
@@ -520,7 +607,9 @@ export function SessionConsolePage({
                   {activeWorld.archonActive ? (
                     <article className="ws-item">
                       <h4>执刑官猎杀 · {activeWorld.archonActive.boss}</h4>
-                      <p>{formatRemaining(activeWorld.archonActive.expiry, nowMs)}</p>
+                      <p>
+                        {activeWorld.archonActive.faction} · {formatRemaining(activeWorld.archonActive.expiry, nowMs)}
+                      </p>
                       <small>
                         {activeWorld.archonActive.missions.map(m => `${m.type}（${m.node}）`).join(' → ')}
                       </small>
@@ -531,10 +620,12 @@ export function SessionConsolePage({
                   {activeWorld.sortieActive ? (
                     <article className="ws-item">
                       <h4>每日突击 · {activeWorld.sortieActive.boss}</h4>
-                      <p>{formatRemaining(activeWorld.sortieActive.expiry, nowMs)}</p>
+                      <p>
+                        {activeWorld.sortieActive.faction} · {formatRemaining(activeWorld.sortieActive.expiry, nowMs)}
+                      </p>
                       <small>
                         {activeWorld.sortieActive.variants
-                          .map(v => `${v.missionType}（${v.modifier}）`)
+                          .map(v => `${v.missionType} · ${v.modifier}（${v.node}）`)
                           .join(' → ')}
                       </small>
                     </article>
@@ -546,14 +637,37 @@ export function SessionConsolePage({
                       虚空裂缝 · 共 {worldState.fissures.totalActive} 个（普通 {worldState.fissures.normalCount} / 钢铁之路{' '}
                       {worldState.fissures.steelPathCount}）
                     </h4>
-                    <div className="chips">
-                      {activeWorld.activeFissures.slice(0, 6).map(f => (
-                        <span key={f.id}>
-                          {f.tierZh} {f.missionType}
-                          {f.isHard ? ' [钢铁]' : ''}
-                          <b>{formatRemaining(f.expiry, nowMs)}</b>
-                        </span>
+                    <div className="ws-fissure-filters">
+                      {(
+                        [
+                          ['all', '全部'],
+                          ['steel', '仅钢铁之路'],
+                          ['normal', '仅普通'],
+                          ['omnia', '仅全能'],
+                        ] as const
+                      ).map(([k, label]) => (
+                        <button
+                          key={k}
+                          type="button"
+                          aria-pressed={fissureFilter === k}
+                          onClick={() => setFissureFilter(k)}
+                        >
+                          {label}
+                        </button>
                       ))}
+                    </div>
+                    <div className="chips">
+                      {filteredFissures.length === 0 ? (
+                        <small>当前筛选下暂无未过期的虚空裂缝。</small>
+                      ) : (
+                        filteredFissures.slice(0, 12).map(f => (
+                          <span key={f.id}>
+                            {f.tierZh} {f.missionType}
+                            {f.isHard ? ' [钢铁]' : ''} · {f.enemy}
+                            <b>{formatRemaining(f.expiry, nowMs)}</b>
+                          </span>
+                        ))
+                      )}
                     </div>
                   </article>
                 </div>
@@ -579,6 +693,17 @@ export function SessionConsolePage({
           )}
         </section>
       </div>
+
+      {/* 官方活动人工核实与奖励兑换评估 */}
+      <ActivityReviewPanel
+        key={editingEventId ?? 'idle'}
+        activeEvents={activeWorld?.activeEvents ?? []}
+        reviews={reviews}
+        editingEventId={editingEventId}
+        onStartEdit={setEditingEventId}
+        onSave={handleSaveReview}
+        onDelete={handleDeleteReview}
+      />
 
       {/* 下方：候选行动池 */}
       <section className="panel console-pool" aria-label="行动候选池">
@@ -623,7 +748,7 @@ export function SessionConsolePage({
         {!profile && (
           <div className="guide-notice">
             <p>
-              当前尚未创建个人档案，因此候选池仅展示 WFCD 世界状态机会。创建 MR12 模板档案或导入旧存档后，这里会自动联动你的关注目标、制作缺口与集团晋升。
+              当前尚未创建个人档案，因此候选池仅展示 WFCD 世界状态与人工核实活动。创建 MR12 模板档案或导入旧存档后，这里会自动联动你的关注目标、制作缺口与集团晋升。
             </p>
             <div className="actions">
               <button type="button" className="primary" onClick={() => onCreateProfile(true)}>
@@ -657,7 +782,7 @@ export function SessionConsolePage({
                       {ELIGIBILITY_LABELS[candidate.eligibility]}
                     </span>
                     <span className="tag-cred">{candidate.credibilityLabel}</span>
-                    {candidate.focused && <span className="tag-focus">已关注</span>}
+                    {candidate.focused && <span className="tag-focus">已关注 / 必拿</span>}
                     {pref !== 'normal' && <span className="tag-pref">{PREF_LABELS[pref]}</span>}
                   </div>
 
@@ -709,6 +834,26 @@ export function SessionConsolePage({
                       <option value="done_today">今日已完成</option>
                       <option value="skip">不想刷（隐藏）</option>
                     </select>
+
+                    {candidate.eventId && (
+                      <button
+                        type="button"
+                        onClick={() => jumpToReviewEditor(candidate.eventId!)}
+                      >
+                        {candidate.reviewRecord ? '编辑活动评估' : '核实并录入细则'}
+                      </button>
+                    )}
+
+                    {candidate.externalUrl && (
+                      <a
+                        className="candidate-ext-link"
+                        href={candidate.externalUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        官方原文 ↗
+                      </a>
+                    )}
 
                     {candidate.navTarget && (
                       <button

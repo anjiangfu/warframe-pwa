@@ -1,6 +1,13 @@
 import type {Catalog, ProfileDocument} from './model';
 import {deriveActions, type ActionCatalogs, type ActionItem} from './actions';
 import {
+  CREDIBILITY_LABELS,
+  RECOMMENDATION_LABELS,
+  summarizePendingRewards,
+  type ActivityRecommendation,
+  type ActivityReviewRecord,
+} from './activity-review';
+import {
   filterActiveSnapshot,
   formatRemaining,
   isExpired,
@@ -56,6 +63,9 @@ export interface ConsoleCandidate {
   unknowns: string[];
   navTarget?: ConsoleNavTarget;
   actionItem?: ActionItem;
+  eventId?: string;
+  recommendation?: ActivityRecommendation;
+  reviewRecord?: ActivityReviewRecord;
 }
 
 export interface SessionBudgetSummary {
@@ -92,6 +102,7 @@ export function buildConsoleCandidates(
   actionCatalogs: ActionCatalogs,
   worldState: WorldStateSnapshot | null,
   nowMs = Date.now(),
+  activityReviews: Record<string, ActivityReviewRecord> = {},
 ): ConsoleCandidate[] {
   const candidates: ConsoleCandidate[] = [];
 
@@ -148,31 +159,82 @@ export function buildConsoleCandidates(
     }
   }
 
+  const matchedEventIds = new Set<string>();
+
   if (worldState) {
     const active = filterActiveSnapshot(worldState, nowMs);
     const staleNote =
       active.freshness === 'stale' ? '（当前为过期缓存，请联网刷新后再确认剩余时间）' : '';
 
     for (const ev of active.activeEvents) {
-      const rewardNote =
-        ev.rewardSummary.length > 0
-          ? `API 摘要奖励：${ev.rewardSummary.join('、')}`
-          : 'API 未提供完整奖励与兑换明细，请对照官方公告核实';
-      candidates.push({
-        id: 'ws:event:' + ev.id,
-        sourceKind: 'worldstate-event',
-        title: `限时活动 · ${ev.title}`,
-        where: ev.node ?? ev.faction ?? '星图活动面板',
-        why: `${rewardNote}${staleNote}`,
-        whatNext: `核对活动入场条件与官方公告后再决定是否投入时间（${formatRemaining(ev.expiry, nowMs)}）`,
-        focused: false,
-        eligibility: 'unverified',
-        eligibilityNote: '未核实入场前提（以游戏内活动页为准）',
-        credibility: 'unverified-detail',
-        credibilityLabel: '官方 API 摘要 · 细则待核实',
-        expiry: ev.expiry,
-        unknowns: ['WFCD 仅返回活动概要，不臆造奖励清单或兑换优先级', ...(staleNote ? ['缓存可能已过期'] : [])],
-      });
+      matchedEventIds.add(ev.id);
+      const review = activityReviews[ev.id];
+      if (review) {
+        const pending = summarizePendingRewards(review);
+        const rewardHint =
+          pending.remaining > 0
+            ? `优先兑换（余 ${pending.remaining}/${pending.total}）：${pending.topPendingNames.join(' → ')}`
+            : pending.total > 0
+              ? '已录入的兑换奖励均已标记完成'
+              : '尚未录入具体奖励兑换项';
+        candidates.push({
+          id: 'ws:event:' + ev.id,
+          sourceKind: 'worldstate-event',
+          title: `限时活动（${RECOMMENDATION_LABELS[review.recommendation]}）· ${review.titleZh}`,
+          where: ev.node ?? ev.faction ?? '星图活动面板',
+          why: `${review.recommendationReason}；${rewardHint}${staleNote}`,
+          whatNext: review.howToPlay
+            ? `${review.howToPlay}（${formatRemaining(ev.expiry, nowMs)}）`
+            : `按已核实优先级推进兑换（${formatRemaining(ev.expiry, nowMs)}）`,
+          focused: review.recommendation === 'must-get',
+          eligibility: review.eligibility,
+          eligibilityNote:
+            review.eligibilityDetail ||
+            (review.eligibility === 'ready'
+              ? '你已核实满足活动入场条件'
+              : review.eligibility === 'missing-prereq'
+                ? '你已标记缺入场前置'
+                : '尚未核实入场条件'),
+          credibility:
+            review.credibility === 'official-page-verified'
+              ? 'official-api-summary'
+              : 'unverified-detail',
+          credibilityLabel: CREDIBILITY_LABELS[review.credibility],
+          expiry: ev.expiry,
+          externalUrl: review.sourceUrl || undefined,
+          unknowns: [
+            ...(review.credibility === 'unverified' ? ['该活动细则仍标为未核实草案，请对照官方公告复核'] : []),
+            ...(staleNote ? ['WFCD 倒计时缓存可能已过期'] : []),
+          ],
+          eventId: ev.id,
+          recommendation: review.recommendation,
+          reviewRecord: review,
+        });
+      } else {
+        const rewardNote =
+          ev.rewardSummary.length > 0
+            ? `API 摘要奖励：${ev.rewardSummary.join('、')}`
+            : 'API 未提供完整奖励与兑换明细，请对照官方公告核实';
+        candidates.push({
+          id: 'ws:event:' + ev.id,
+          sourceKind: 'worldstate-event',
+          title: `限时活动 · ${ev.title}`,
+          where: ev.node ?? ev.faction ?? '星图活动面板',
+          why: `${rewardNote}${staleNote}`,
+          whatNext: `核对活动入场条件与官方公告后再决定是否投入时间（${formatRemaining(ev.expiry, nowMs)}）`,
+          focused: false,
+          eligibility: 'unverified',
+          eligibilityNote: '未核实入场前提（以游戏内活动页为准）',
+          credibility: 'unverified-detail',
+          credibilityLabel: '官方 API 摘要 · 细则待核实',
+          expiry: ev.expiry,
+          unknowns: [
+            'WFCD 仅返回活动概要，不臆造奖励清单或兑换优先级；可点击「核实并录入细则」补充',
+            ...(staleNote ? ['缓存可能已过期'] : []),
+          ],
+          eventId: ev.id,
+        });
+      }
     }
 
     if (worldState.voidTrader && !isExpired(worldState.voidTrader.expiry, nowMs)) {
@@ -296,6 +358,40 @@ export function buildConsoleCandidates(
         unknowns: ['是否已完成该电波任务以游戏内电波面板为准'],
       });
     }
+  }
+
+  // Include standalone manually entered official announcement activities (not tied to expired WFCD cache).
+  for (const review of Object.values(activityReviews)) {
+    if (!review.eventId.startsWith('manual:') || matchedEventIds.has(review.eventId)) continue;
+    const pending = summarizePendingRewards(review);
+    const rewardHint =
+      pending.remaining > 0
+        ? `优先兑换（余 ${pending.remaining}/${pending.total}）：${pending.topPendingNames.join(' → ')}`
+        : pending.total > 0
+          ? '已录入的兑换奖励均已标记完成'
+          : '尚未录入具体奖励兑换项';
+    candidates.push({
+      id: 'ws:event:' + review.eventId,
+      sourceKind: 'worldstate-event',
+      title: `人工录入活动（${RECOMMENDATION_LABELS[review.recommendation]}）· ${review.titleZh}`,
+      where: '官方公告人工录入活动',
+      why: `${review.recommendationReason}；${rewardHint}`,
+      whatNext: review.howToPlay || '对照官方活动页与上方兑换清单推进',
+      focused: review.recommendation === 'must-get',
+      eligibility: review.eligibility,
+      eligibilityNote: review.eligibilityDetail || '按你手动核实的入场条件为准',
+      credibility:
+        review.credibility === 'official-page-verified'
+          ? 'official-api-summary'
+          : 'unverified-detail',
+      credibilityLabel: CREDIBILITY_LABELS[review.credibility],
+      expiry: null,
+      externalUrl: review.sourceUrl || undefined,
+      unknowns: ['该活动为人工录入记录，请定期核对官方结束时间'],
+      eventId: review.eventId,
+      recommendation: review.recommendation,
+      reviewRecord: review,
+    });
   }
 
   return candidates;
