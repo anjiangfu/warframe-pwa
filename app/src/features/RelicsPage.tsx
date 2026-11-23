@@ -7,13 +7,14 @@ import {createRelicIndex,relicDisplayName,relicDetails,rewardRelics,searchRelics
 const typeLabels={blueprint:'蓝图',component:'部件',item:'成品／物品',unknown:'类型待核'};
 const proofLabels={'snapshot-checked':'表快照已对照',unverified:'资料待核',conflicting:'来源有冲突，需重新核对'};
 import {RelicSourceLinks,RelicNameEvidence,RelicRouteExplanation,RelicBundleExplanation,relicNameStatus} from './RelicEvidence';
-export function RelicsPage({catalog,checks,equipment}:{catalog:Readonly<RelicCatalog>;checks?:Readonly<RelicSourceChecks>;equipment?:Readonly<EquipmentMetadata>}){
+export interface RelicInitialFocus {mode:'relic'|'reward'|'equipment';query?:string;id?:string}
+export function RelicsPage({catalog,checks,equipment,initialFocus}:{catalog:Readonly<RelicCatalog>;checks?:Readonly<RelicSourceChecks>;equipment?:Readonly<EquipmentMetadata>;initialFocus?:RelicInitialFocus}){
  const index=useMemo(()=>createRelicIndex(catalog),[catalog]);
  const [checkFilter,setCheckFilter]=useState<SourceCheckFilter>('all');
  const matches=(id:string)=>matchesSourceCheckFilter(catalog,checks,id,checkFilter);
- const [mode,setMode]=useState<'relic'|'reward'|'equipment'>('relic'),[query,setQuery]=useState(''),[tier,setTier]=useState(''),[selected,setSelected]=useState<string>(),[rewardId,setRewardId]=useState<string>();
+ const [mode,setMode]=useState<'relic'|'reward'|'equipment'>(initialFocus?.mode??'relic'),[query,setQuery]=useState(initialFocus?.query??''),[tier,setTier]=useState(''),[selected,setSelected]=useState<string|undefined>(initialFocus?.mode==='relic'?initialFocus.id:undefined),[rewardId,setRewardId]=useState<string|undefined>(initialFocus?.mode==='reward'?initialFocus.id:undefined);
  const equipmentIndex=useMemo(()=>createEquipmentIndex(catalog,equipment),[catalog,equipment]);
- const [equipmentId,setEquipmentId]=useState<string>(),[equipmentExpanded,setEquipmentExpanded]=useState(false);
+ const [equipmentId,setEquipmentId]=useState<string|undefined>(initialFocus?.mode==='equipment'?initialFocus.id:undefined),[equipmentExpanded,setEquipmentExpanded]=useState(false);
  const foundEquipment=filterEquipment(equipmentIndex,query,checks,checkFilter),equipmentGroup=equipmentIndex.groups.find(g=>g.parent.id===equipmentId);
  const visibleEquipment=filterEquipment(equipmentIndex,'',checks,checkFilter).find(x=>x.group===equipmentGroup)?.visible??[];
  const queryLabel=mode==='equipment'?'装备名称':mode==='relic'?'遗物名称或编号':'奖励名称';
